@@ -33,9 +33,9 @@ export function FinalCTA() {
         {/* CTA button */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="mailto:hello@structured.co"
+            href="/apply"
             className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
-            aria-label="Send application email to hello@structured.co"
+            aria-label="Go to the application page"
           >
             Apply to Work With Us
             <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
