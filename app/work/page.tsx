@@ -8,18 +8,18 @@ import { WorkPatternsSection } from '@/components/work-page/patterns-section'
 import { WorkFinalCTA } from '@/components/work-page/final-cta'
 
 export const metadata: Metadata = {
-  title: 'Work | Real Problems. Real Fixes.',
+  title: 'Selected Work | Pressense',
   description:
     'Selected work from strategy, GTM, and systems engagements. See how we diagnose root cause and build solutions that stick. Anonymised examples from real engagements.',
   openGraph: {
-    title: 'Work | Real Problems. Real Fixes.',
+    title: 'Selected Work | Pressense',
     description:
       'Selected work from strategy, GTM, and systems engagements. See how we diagnose root cause and build solutions that stick.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Work | Real Problems. Real Fixes.',
+    title: 'Selected Work | Pressense',
     description:
       'Selected work from strategy, GTM, and systems engagements. See how we diagnose root cause and build solutions that stick.',
   },

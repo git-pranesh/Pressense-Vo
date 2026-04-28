@@ -1,42 +1,50 @@
 const workItems = [
   {
-    category: 'Enterprise GTM',
-    title: 'Product Narrative & GTM Clarity',
-    context: 'Mid-market SaaS vendor with unclear product positioning.',
-    problem: 'Sales team confused about customer use cases. Technical content scattered. GTM strategy existed but wasn\'t operationalized.',
+    category: 'Enterprise SaaS / Product GTM',
+    title: 'Clarifying use cases for a complex low-code platform',
+    context: 'Worked with an enterprise SaaS team on a low-code platform where the challenge was translating broad product capability into clear customer use cases, technical content, and GTM narratives.',
+    problem: 'Low-code platforms are powerful because they can be adapted to many use cases. But that flexibility also makes them harder to explain, position, and sell without sharp use-case-led communication.',
     activities: [
-      'Facilitated 6-week diagnostic with sales, product, and marketing leaders',
-      'Mapped customer jobs-to-be-done and competitive gaps',
-      'Built unified product narrative and customer use case library',
-      'Designed GTM workflows and content sprints for ongoing execution',
+      'Studied the product from a real user and buyer perspective',
+      'Identified practical use cases across customer segments',
+      'Helped translate technical capability into clearer market-facing narratives',
+      'Supported landing page, technical content, and GTM direction',
+      'Contributed to market and competitor understanding',
+      'Helped sharpen decisions around positioning, content, and expansion',
     ],
-    outcome: 'Sales cycle shortened. Win rate improved. Team clarity on what they sell and to whom.',
+    outcome: 'The team gained clearer language, stronger use-case direction, and a better foundation for explaining the product to different buyer segments.',
+    playbook: 'Complex products need use-case-led GTM. If buyers cannot quickly understand how the product applies to their world, even a strong product becomes harder to sell.',
   },
   {
-    category: 'Founder-Led Scale',
-    title: 'Revenue Leakage & Operations Rebuild',
-    context: 'Founder-led business hitting revenue plateau despite growth ambitions.',
-    problem: 'Undefined pricing model. Inconsistent onboarding. No customer success system. Founder bottleneck on all decisions.',
+    category: 'Founder-Led Business / Operations',
+    title: 'Creating structure inside a profitable but fragile business',
+    context: 'Worked with a founder-led business that had demand and revenue, but was heavily dependent on paid ads, founder involvement, manual coordination, and disconnected execution.',
+    problem: 'The business was growing, but the operating model was fragile. Too much depended on individual effort, unclear ownership, and weak systems.',
     activities: [
-      'Conducted customer and internal deep dives',
-      'Audited pricing strategy and revenue leakage points',
-      'Rebuilt customer onboarding and success playbooks',
-      'Implemented ops cadences and decision-making frameworks',
+      'Reviewed business model and growth bottlenecks',
+      'Identified revenue leakage across marketing, sales, and operations',
+      'Helped restructure priorities and internal ownership',
+      'Supported website, content, SEO, and digital presence direction',
+      'Helped plan automation, systems, and operating visibility',
+      'Created a clearer operating blueprint for scale',
     ],
-    outcome: 'Revenue recovery of 18%. Founder freed from execution. Scalable systems in place for next growth phase.',
+    outcome: 'The founder gained better clarity on what was broken, what needed to be fixed first, and how to move toward a more structured growth model.',
+    playbook: 'A profitable business can still be fragile. Before scaling harder, founders need to fix leakage, ownership, systems, and operating rhythm.',
   },
   {
-    category: 'Expert Growth',
-    title: 'Personal Brand & Market Expansion',
-    context: 'Expert professional looking to scale visibility and revenue without a team.',
-    problem: 'No systematic approach to visibility. Ad-hoc client work only. No leverage or productization.',
+    category: 'Expert-Led Growth / Professional Services',
+    title: 'Building visibility systems for time-constrained experts',
+    context: 'Worked with doctors and expert professionals who had strong expertise but limited time to manage branding, content, digital presence, automation, and growth execution.',
+    problem: 'The expertise was already present, but the system around it was weak. Visibility, authority, content, operations, and lead generation needed structure.',
     activities: [
-      'Mapped market opportunities and positioning',
-      'Built content and visibility system',
-      'Designed repeatable service offerings',
-      'Implemented automation for lead flow and follow-up',
+      'Built clearer positioning and digital presence direction',
+      'Supported website, content, branding, and personal authority systems',
+      'Helped create AI-assisted workflows for content and execution',
+      'Supported PR, market expansion, and operational structure',
+      'Reduced dependence on the expert manually handling every growth activity',
     ],
-    outcome: 'Consistent inbound pipeline. Revenue doubled year-over-year. Built system for sustainable leverage.',
+    outcome: 'The experts gained a more structured way to communicate expertise, build visibility, and support growth without manually managing every activity.',
+    playbook: 'Experts do not need more random content. They need a visibility system that turns expertise into trust, demand, and operational leverage.',
   },
 ]
 
@@ -65,7 +73,7 @@ export function WorkGrid() {
                 </div>
                 
                 <div>
-                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3 font-medium">What We Did</p>
+                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2 font-medium">What We Did</p>
                   <ul className="space-y-2">
                     {work.activities.map((activity, j) => (
                       <li key={j} className="text-base text-muted-foreground leading-relaxed flex gap-3">
@@ -77,8 +85,13 @@ export function WorkGrid() {
                 </div>
                 
                 <div className="pt-4 border-t border-border/40">
-                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2 font-medium">Outcome</p>
+                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2 font-medium">What Changed</p>
                   <p className="text-base text-foreground font-medium leading-relaxed">{work.outcome}</p>
+                </div>
+
+                <div className="pt-4 border-t border-border/40">
+                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2 font-medium">Playbook Extracted</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{work.playbook}</p>
                 </div>
               </div>
             </article>

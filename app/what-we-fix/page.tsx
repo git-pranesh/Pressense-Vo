@@ -12,18 +12,18 @@ import { WhenNotSection } from '@/components/what-we-fix/when-not-section'
 import { WhatWeFixCTA } from '@/components/what-we-fix/final-cta'
 
 export const metadata: Metadata = {
-  title: 'What We Fix | Structured — Strategy & Systems for Scaling Businesses',
+  title: 'What We Fix | Pressense',
   description:
     'Positioning, offers, acquisition systems, delivery operations, team structure, financial clarity, and founder dependency. We diagnose and fix the structural issues holding your business back.',
   openGraph: {
-    title: 'What We Fix | Structured',
+    title: 'What We Fix | Pressense',
     description:
       'Seven structural problems that keep businesses stuck — and how we help you fix them.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What We Fix | Structured',
+    title: 'What We Fix | Pressense',
     description:
       'Seven structural problems that keep businesses stuck — and how we help you fix them.',
   },

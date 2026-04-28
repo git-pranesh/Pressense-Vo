@@ -7,11 +7,11 @@ export function WorkFinalCTA() {
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-[1.08]" id="cta-heading">
-            Does your business have one of these problems?
+            See a pattern in your business?
           </h2>
 
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed text-pretty">
-            The first step is a focused conversation. We&apos;ll help you understand whether a diagnostic, advisory support, or implementation sprint is the right next step.
+            Start with a focused diagnostic. We will help identify whether the real constraint is strategy, GTM, operations, systems, or execution.
           </p>
 
           {/* CTA button */}
@@ -21,7 +21,7 @@ export function WorkFinalCTA() {
               className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
               aria-label="Go to the application page"
             >
-              Start a Conversation
+              Start With a Diagnostic
               <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
                   <path d="M2 5h6M5 2l3 3-3 3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />

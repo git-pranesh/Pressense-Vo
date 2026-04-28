@@ -13,7 +13,7 @@ export function Footer() {
             </svg>
           </div>
           <span className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">
-            Structured
+            Pressense
           </span>
         </div>
 
@@ -38,7 +38,7 @@ export function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-text-dim">
-          &copy; {new Date().getFullYear()} Structured. All rights reserved.
+          &copy; {new Date().getFullYear()} Pressense. All rights reserved.
         </p>
       </div>
     </footer>

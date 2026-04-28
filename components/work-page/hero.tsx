@@ -12,7 +12,7 @@ export function WorkHero() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
-            Selected work from strategy, GTM, and systems engagements.
+            Selected Work
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
