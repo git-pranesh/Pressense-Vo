@@ -154,12 +154,18 @@
 
 /* Marquee scroll animation */
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 0px));
+  }
 }
 
 .animate-marquee {
-  animation: marquee 28s linear infinite;
+  animation: marquee 40s linear infinite;
+  display: flex;
+  width: fit-content;
 }
 
 .animate-marquee:hover {

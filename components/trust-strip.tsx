@@ -7,32 +7,34 @@ const brands = [
   'One Magnify',
 ]
 
-// Duplicate for seamless infinite scroll
-const marqueeItems = [...brands, ...brands]
-
 export function TrustStrip() {
   return (
-    <section className="py-14 border-y border-border/40 overflow-hidden" aria-label="Trusted by leading companies">
+    <section className="py-14 border-y border-border/40" aria-label="Trusted by leading companies">
       {/* Label */}
       <p className="text-xs uppercase tracking-widest text-muted-foreground text-center mb-10">
-        Trusted by
+        Trusted by brands including
       </p>
 
-      {/* Scrolling marquee — pauses on hover */}
-      <div
-        className="relative flex"
-        style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)' }}
-      >
-        <div
-          className="flex items-center gap-0 animate-marquee whitespace-nowrap"
-          aria-hidden="true"
-        >
-          {marqueeItems.map((name, i) => (
-            <span key={i} className="flex items-center">
-              <span className="text-sm font-medium tracking-wide text-primary px-10">
+      {/* Scrolling marquee container */}
+      <div className="relative w-full overflow-hidden">
+        <div className="flex animate-marquee gap-0">
+          {/* First set of brands */}
+          {brands.map((name, i) => (
+            <span key={`first-${i}`} className="flex items-center flex-shrink-0">
+              <span className="text-sm font-medium tracking-wide text-primary px-8 lg:px-12 whitespace-nowrap">
                 {name}
               </span>
-              <span className="text-primary/30 text-xs select-none">·</span>
+              <span className="text-primary/30 text-xs flex-shrink-0">·</span>
+            </span>
+          ))}
+          
+          {/* Second set of brands (duplicate for seamless loop) */}
+          {brands.map((name, i) => (
+            <span key={`second-${i}`} className="flex items-center flex-shrink-0">
+              <span className="text-sm font-medium tracking-wide text-primary px-8 lg:px-12 whitespace-nowrap">
+                {name}
+              </span>
+              <span className="text-primary/30 text-xs flex-shrink-0">·</span>
             </span>
           ))}
         </div>
