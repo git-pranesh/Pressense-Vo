@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 const navLinks = [
-  { label: 'What We Fix', href: '#what-we-fix' },
-  { label: 'How We Work', href: '#how-we-work' },
-  { label: 'Case Studies', href: '#case-studies' },
+  { label: 'What We Fix', href: '/what-we-fix' },
+  { label: 'How We Work', href: '/#how-we-work' },
+  { label: 'Case Studies', href: '/#case-studies' },
 ]
 
 export function Header() {
@@ -46,13 +46,13 @@ export function Header() {
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -93,14 +93,14 @@ export function Header() {
       {menuOpen && (
         <div className="md:hidden glass-card border-t border-border/40 px-6 py-5 flex flex-col gap-4">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="text-sm text-muted-foreground hover:text-foreground py-1"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <Link
             href="/apply"
