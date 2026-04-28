@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { StructuredData } from '@/components/structured-data'
 import './globals.css'
 
 const inter = Inter({
@@ -49,6 +50,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-background">
+      <head>
+        <StructuredData />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <a href="#main-content" className="sr-only focus:not-sr-only">
           Skip to main content

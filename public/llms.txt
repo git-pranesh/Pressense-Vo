@@ -1,0 +1,59 @@
+# Pressense - Strategy & Systems Partner
+
+> We help serious businesses move from scattered growth to structured scale.
+
+## About
+
+Pressense is a strategy and systems consultancy that works with founders, operators, and enterprise teams to fix growth bottlenecks, remove revenue leakage, and build scalable infrastructure.
+
+We do not just advise — we diagnose, fix, and build.
+
+## What We Fix
+
+- Unclear positioning that fails to resonate with buyers
+- Scattered sales pipelines with no visibility or accountability
+- Marketing that generates activity but not revenue
+- Manual workflows that drain capacity and block scale
+- Misaligned teams working on disconnected priorities
+- Systems and tools that no longer fit the current stage
+
+## How We Work
+
+Our approach follows four phases:
+
+1. Diagnose — Understand what is actually broken through audits, interviews, and data review
+2. Build the Plan — Define the fix with clear milestones and ownership
+3. Execute — Implement the solution with hands-on involvement
+4. Measure — Track impact and iterate based on results
+
+## Services
+
+- Strategy Clarity — Positioning, messaging, GTM strategy
+- Revenue Systems — Sales process, pipeline, CRM automation
+- Growth Infrastructure — Internal tools, workflows, dashboards
+
+## Engagement Types
+
+- Focused Diagnostic — 2-week deep audit of one constraint
+- Strategy Sprint — 4-6 week positioning and GTM overhaul
+- Systems Pilot — 6-8 week build and implementation
+- Advisory Support — Ongoing fractional strategic guidance
+
+## Who We Work With
+
+- Scaling founders who built something that works and need systems to grow
+- Operators and COOs who own execution but need help rebuilding the engine
+- Enterprise teams with strategy that exists but execution that is stalled
+
+## Contact
+
+To work with us, apply at: https://v0-pressense.vercel.app/apply
+
+## Pages
+
+- Home: https://v0-pressense.vercel.app/
+- What We Fix: https://v0-pressense.vercel.app/what-we-fix
+- How We Work: https://v0-pressense.vercel.app/how-we-work
+- Work: https://v0-pressense.vercel.app/work
+- Playbooks: https://v0-pressense.vercel.app/playbooks
+- Apply: https://v0-pressense.vercel.app/apply

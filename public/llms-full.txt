@@ -1,0 +1,246 @@
+# Pressense - Strategy & Systems Partner (Full Context)
+
+> We help serious businesses move from scattered growth to structured scale.
+
+---
+
+## Company Overview
+
+Pressense is a strategy and systems consultancy that partners with founders, operators, and enterprise teams to fix growth bottlenecks, remove revenue leakage, and build scalable infrastructure.
+
+We are selective about fit. We work with businesses that have:
+- A clear problem blocking growth
+- A committed decision-maker present throughout the engagement
+- Willingness to act on recommendations
+
+We do not just advise — we diagnose, fix, and build.
+
+---
+
+## Problems We Fix
+
+### 1. Positioning Gaps
+The offer is real but the message does not land. Buyers do not understand why this and why now.
+
+Symptoms:
+- Sales cycles are long and unpredictable
+- Prospects compare you to cheaper alternatives
+- Marketing generates clicks but not qualified leads
+
+### 2. Pipeline Leakage
+Leads come in but deals do not close. The funnel has cracks no one is tracking.
+
+Symptoms:
+- No visibility into deal stages
+- Reps working from memory, not systems
+- Revenue forecasts consistently miss
+
+### 3. Founder Bottleneck
+Growth is capped by founder capacity. Nothing moves without one person.
+
+Symptoms:
+- Every decision requires founder approval
+- Team cannot execute without direct guidance
+- Hiring does not reduce workload
+
+### 4. Team Misalignment
+The org chart says one thing. The work says another.
+
+Symptoms:
+- Repeated miscommunication between teams
+- Duplicate work, dropped balls
+- Strategy exists but execution is fragmented
+
+### 5. Revenue Model Confusion
+Pricing does not match value. Margins are eroding. The model is unclear.
+
+Symptoms:
+- Discounting is the default
+- Upsell and expansion are ad hoc
+- Finance and sales disagree on what is profitable
+
+### 6. Manual Overload
+The team is buried in manual work that should not require humans.
+
+Symptoms:
+- Same tasks done repeatedly by hand
+- Tools are disconnected or underused
+- Scaling means hiring, not automating
+
+### 7. Systems Debt
+The tools that got you here are now slowing you down.
+
+Symptoms:
+- Multiple sources of truth
+- Reports take hours to compile
+- Onboarding new hires is a mess
+
+---
+
+## How We Work
+
+### Phase 1: Diagnose (2-3 weeks)
+We start by understanding what is actually broken — not what it looks like on the surface.
+
+Activities:
+- Stakeholder interviews
+- Process and systems audit
+- Data and metrics review
+- Competitive and market scan
+
+Deliverables:
+- Diagnostic report with prioritized findings
+- Root cause analysis
+- Quick wins identification
+
+### Phase 2: Build the Plan (2-4 weeks)
+We define the fix with clear milestones, owners, and success metrics.
+
+Activities:
+- Solution design workshops
+- Resource and timeline planning
+- Stakeholder alignment sessions
+- Risk identification
+
+Deliverables:
+- Implementation roadmap
+- Role and responsibility matrix
+- Success metrics framework
+
+### Phase 3: Execute (4-12 weeks)
+We build and implement the solution with hands-on involvement.
+
+Activities:
+- Process redesign and documentation
+- Tool configuration and integration
+- Team training and enablement
+- Change management support
+
+Deliverables:
+- Implemented systems and processes
+- Training materials
+- Handoff documentation
+
+### Phase 4: Measure (Ongoing)
+We track impact and iterate based on results.
+
+Activities:
+- Performance tracking
+- Regular review cadences
+- Optimization recommendations
+- Capacity building
+
+Deliverables:
+- Dashboard and reporting setup
+- Performance review reports
+- Iteration recommendations
+
+---
+
+## Services
+
+### Strategy Clarity
+Positioning, messaging, and go-to-market strategy that resonates with buyers and differentiates from competitors.
+
+### Revenue Systems
+Sales process design, pipeline management, CRM automation, and revenue operations that create predictable growth.
+
+### Growth Infrastructure
+Internal tools, workflows, dashboards, and systems that remove manual work and enable scale.
+
+---
+
+## Engagement Types
+
+### Focused Diagnostic
+A 2-week deep audit of one specific constraint. Includes stakeholder interviews, systems review, and a prioritized findings report with recommendations.
+
+Best for: Teams that know something is broken but need clarity on what and why.
+
+### Strategy Sprint
+A 4-6 week intensive focused on positioning, messaging, or GTM strategy. Includes research, workshops, and deliverable documentation.
+
+Best for: Businesses preparing for a launch, rebrand, or market expansion.
+
+### Systems Pilot
+A 6-8 week engagement to build and implement a specific system or process. Includes design, build, training, and handoff.
+
+Best for: Teams ready to operationalize a known solution.
+
+### Advisory Support
+Ongoing fractional strategic guidance with regular check-ins, async support, and access to expertise as needed.
+
+Best for: Founders and operators who want a thinking partner on retainer.
+
+---
+
+## Playbooks Available
+
+1. **Founder Bottleneck Playbook** — Diagnose, delegate, and document to unlock founder capacity
+2. **Pricing Strategy Playbook** — Research, model, test, and roll out pricing changes
+3. **Sales-Marketing Alignment Playbook** — Shared definitions, SLAs, feedback loops
+4. **Customer Onboarding Playbook** — Activation milestones, automation, success metrics
+5. **Personal Brand Playbook** — Positioning, content engine, distribution strategy
+6. **Systems Audit Playbook** — Inventory, evaluate, consolidate, and document
+
+---
+
+## Work Examples
+
+### Enterprise GTM Transformation
+A B2B SaaS company entering enterprise market struggled with positioning and sales process.
+
+Problem: Product-led motion not working for enterprise buyers. Long sales cycles, unclear differentiators.
+
+What we did:
+- Repositioned from feature-led to outcome-led messaging
+- Built enterprise sales playbook with qualification criteria
+- Designed customer success handoff process
+- Created sales enablement materials
+
+Outcome: Shortened enterprise sales cycle. Improved win rate on qualified opportunities. Clear positioning that resonated with buyers.
+
+### Founder-Led Business Scale
+A founder-led professional services firm hit a growth ceiling.
+
+Problem: Every client relationship, every major decision, every strategic initiative required the founder. Growth meant burnout.
+
+What we did:
+- Documented core processes and decision frameworks
+- Built client relationship management system
+- Trained senior team on client leadership
+- Created escalation protocols
+
+Outcome: Founder reclaimed strategic time. Senior team owns client relationships. Business can grow without founder bottleneck.
+
+### Expert-Led Growth System
+A subject matter expert built an audience but struggled to monetize.
+
+Problem: Large following, no clear offer. Revenue was unpredictable and came from one-off projects.
+
+What we did:
+- Clarified positioning and productized offer
+- Built content-to-conversion system
+- Designed lead qualification process
+- Created onboarding automation
+
+Outcome: Predictable pipeline from content. Clear offer that converts. Systems that run without manual intervention.
+
+---
+
+## Contact and Apply
+
+To explore working together, apply at: https://v0-pressense.vercel.app/apply
+
+The application helps us understand your business, the problem you are facing, and whether we are the right fit.
+
+---
+
+## Site Structure
+
+- Home: https://v0-pressense.vercel.app/
+- What We Fix: https://v0-pressense.vercel.app/what-we-fix
+- How We Work: https://v0-pressense.vercel.app/how-we-work
+- Work: https://v0-pressense.vercel.app/work
+- Playbooks: https://v0-pressense.vercel.app/playbooks
+- Apply: https://v0-pressense.vercel.app/apply
