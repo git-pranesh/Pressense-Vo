@@ -1,0 +1,28 @@
+export function PlaybooksHero() {
+  return (
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="Playbooks and implementation guides">
+      {/* Grid background */}
+      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
+
+      <div className="container mx-auto px-5 sm:px-8 relative z-10">
+        <div className="max-w-3xl">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Playbooks</span>
+          </div>
+
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+            Playbooks for the constraints that slow growth.
+          </h1>
+
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+            From diagnosis to implementation. Structured frameworks for fixing the problems we see repeatedly.
+          </p>
+        </div>
+      </div>
+
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background via-transparent to-background/60" aria-hidden="true" />
+    </section>
+  )
+}

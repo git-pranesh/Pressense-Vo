@@ -7,7 +7,6 @@ import { ApproachSection } from '@/components/approach-section'
 import { StartFocusedSection } from '@/components/start-focused-section'
 import { ServicesSection } from '@/components/services-section'
 import { WhoSection } from '@/components/who-section'
-import { CaseStudiesSection } from '@/components/case-studies-section'
 import { FinalCTA } from '@/components/final-cta'
 import { Footer } from '@/components/footer'
 
@@ -23,7 +22,6 @@ export default function HomePage() {
       <StartFocusedSection />
       <ServicesSection />
       <WhoSection />
-      <CaseStudiesSection />
       <FinalCTA />
       <Footer />
     </main>
