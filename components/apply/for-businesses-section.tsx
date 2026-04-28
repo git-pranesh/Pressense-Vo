@@ -1,18 +1,18 @@
 const businessTypes = [
   {
-    title: 'Scaling Founders',
+    title: 'Clear Problem',
     description:
-      'You built something that works — now you need the systems to grow it without losing control.',
+      'You know something is blocking growth or causing friction. You don\'t need all the answers — just clarity on what to fix first.',
   },
   {
-    title: 'Operators & COOs',
+    title: 'Committed Decision-Maker',
     description:
-      'You own execution, but the current systems are blocking scale. Time to rebuild the engine.',
+      'Someone on the team has authority to move forward and will be present throughout the engagement.',
   },
   {
-    title: 'Enterprise Teams',
+    title: 'Willingness to Act',
     description:
-      'A function or department needs restructuring. Strategy exists — execution is stalled.',
+      'You\'re ready to implement the recommendations and build the systems we define. Theory alone doesn\'t create change.',
   },
 ]
 
@@ -33,7 +33,7 @@ export function ForBusinessesSection() {
             className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance max-w-xl"
             id="for-businesses-heading"
           >
-            This is for businesses that are ready to move.
+            We are selective about fit.
           </h2>
         </div>
 

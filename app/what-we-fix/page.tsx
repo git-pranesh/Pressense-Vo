@@ -6,6 +6,7 @@ import { IntroSection } from '@/components/what-we-fix/intro-section'
 import { ProblemsGrid } from '@/components/what-we-fix/problems-grid'
 import { DiagnosticApproach } from '@/components/what-we-fix/diagnostic-approach'
 import { BecomesSection } from '@/components/what-we-fix/becomes-section'
+import { FixOneFirstSection } from '@/components/what-we-fix/fix-one-first-section'
 import { WhenSection } from '@/components/what-we-fix/when-section'
 import { WhenNotSection } from '@/components/what-we-fix/when-not-section'
 import { WhatWeFixCTA } from '@/components/what-we-fix/final-cta'
@@ -38,6 +39,7 @@ export default function WhatWeFixPage() {
         <ProblemsGrid />
         <DiagnosticApproach />
         <BecomesSection />
+        <FixOneFirstSection />
         <WhenSection />
         <WhenNotSection />
         <WhatWeFixCTA />

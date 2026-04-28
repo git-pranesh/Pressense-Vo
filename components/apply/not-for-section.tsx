@@ -1,6 +1,6 @@
 const notForItems = [
   'Looking for a quick fix or silver bullet',
-  'Not ready to invest in real change',
+  'Not ready to act on the recommendations',
   'Want advice without accountability',
   'Need a full-time hire instead of a strategic partner',
   'Prefer theory over implementation',
@@ -27,9 +27,9 @@ export function NotForSection() {
               This is not for everyone.
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-md">
-              We turn down most inquiries. Not because we&apos;re exclusive —
-              because real transformation requires commitment from both sides.
-              If any of these describe you, we&apos;re likely not the right fit.
+              We are selective about fit because the work succeeds only when there is a
+              clear problem, a committed decision-maker, and willingness to implement. If
+              any of these describe you, we&apos;re likely not the right fit.
             </p>
           </div>
 

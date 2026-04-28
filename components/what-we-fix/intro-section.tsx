@@ -14,9 +14,9 @@ export function IntroSection() {
             We see the same patterns again and again.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            These aren&apos;t surface-level problems. They&apos;re structural
-            issues that compound over time, eroding profitability, morale, and
-            the ability to scale.
+            These are the constraints that most often block growth — unclear positioning,
+            weak handoffs, manual processes, misaligned teams, and systems that don&apos;t fit
+            the current stage. The good news: they&apos;re fixable.
           </p>
         </div>
       </div>

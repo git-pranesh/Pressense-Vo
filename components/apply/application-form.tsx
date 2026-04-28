@@ -43,6 +43,14 @@ const timelineOptions = [
   { value: '3-plus', label: '3+ months' },
 ]
 
+const startingPointOptions = [
+  { value: 'diagnostic', label: 'Focused Diagnostic' },
+  { value: 'strategy-sprint', label: 'Strategy Sprint' },
+  { value: 'systems-pilot', label: 'Systems Pilot' },
+  { value: 'advisory-support', label: 'Advisory Support' },
+  { value: 'not-sure', label: 'Not sure yet' },
+]
+
 interface FormData {
   name: string
   company: string
@@ -56,6 +64,7 @@ interface FormData {
   supportType: string
   budget: string
   timeline: string
+  startingPoint: string
 }
 
 const initialFormData: FormData = {
@@ -71,6 +80,7 @@ const initialFormData: FormData = {
   supportType: '',
   budget: '',
   timeline: '',
+  startingPoint: '',
 }
 
 export function ApplicationForm() {
@@ -490,6 +500,29 @@ export function ApplicationForm() {
                   )}
                 </div>
               </div>
+
+              {/* Preferred Starting Point */}
+              <fieldset className="space-y-4">
+                <legend className="text-sm font-medium text-foreground">
+                  Preferred starting point
+                </legend>
+                <RadioGroup
+                  value={formData.startingPoint}
+                  onValueChange={(value) => updateField('startingPoint', value)}
+                >
+                  {startingPointOptions.map((option) => (
+                    <div key={option.value} className="flex items-center gap-3">
+                      <RadioGroupItem value={option.value} id={option.value} />
+                      <Label
+                        htmlFor={option.value}
+                        className="font-normal cursor-pointer"
+                      >
+                        {option.label}
+                      </Label>
+                    </div>
+                  ))}
+                </RadioGroup>
+              </fieldset>
             </div>
           </div>
 

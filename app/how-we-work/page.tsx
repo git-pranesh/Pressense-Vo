@@ -7,7 +7,7 @@ import { DiagnosePhase } from '@/components/how-we-work/diagnose-phase'
 import { BuildPlanPhase } from '@/components/how-we-work/build-plan-phase'
 import { ExecutePhase } from '@/components/how-we-work/execute-phase'
 import { MeasurePhase } from '@/components/how-we-work/measure-phase'
-import { InvestmentSection } from '@/components/how-we-work/investment-section'
+import { EngagementStartSection } from '@/components/how-we-work/engagement-start-section'
 import { HowWeWorkCTA } from '@/components/how-we-work/final-cta'
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function HowWeWorkPage() {
         <BuildPlanPhase />
         <ExecutePhase />
         <MeasurePhase />
-        <InvestmentSection />
+        <EngagementStartSection />
         <HowWeWorkCTA />
       </main>
       <Footer />

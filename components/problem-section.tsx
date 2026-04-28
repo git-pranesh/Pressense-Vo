@@ -27,8 +27,8 @@ export function ProblemSection() {
               <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">The Problem</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-[1.15] tracking-tight text-foreground text-balance" id="problem-heading">
-              Most businesses don&apos;t fail because of lack of effort.
-              <span className="text-muted-foreground font-light"> They struggle because the fundamentals are broken.</span>
+              Most growth problems are not caused by lack of effort.
+              <span className="text-muted-foreground font-light"> They usually come from unclear positioning, weak handoffs, manual workflows, misaligned teams, or systems that no longer fit the stage of the business.</span>
             </h2>
 
             <div className="mt-10 p-6 rounded-xl border border-border/60 bg-secondary/20">

@@ -22,12 +22,11 @@ export function FinalCTA() {
 
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-[1.08]" id="apply-heading">
           If your business is growing but feels unstructured,{' '}
-          <span className="text-primary font-light italic">we should talk.</span>
+          <span className="text-primary font-light italic">start with a focused conversation.</span>
         </h2>
 
         <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed text-pretty">
-          We work with a small number of serious clients who are ready to fix what&apos;s
-          broken and build for scale.
+          We&apos;ll help you understand whether the right next step is a diagnostic, advisory support, or a practical implementation sprint.
         </p>
 
         {/* CTA button */}
