@@ -15,7 +15,7 @@ const notForItems = [
 
 export function WhoSection() {
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40">
+    <section id="who-we-work-with" className="py-28 lg:py-36 border-t border-border/40" aria-labelledby="who-heading">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="mb-16">
@@ -23,7 +23,7 @@ export function WhoSection() {
             <div className="h-px w-8 bg-accent opacity-60" />
             <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">Who We Work With</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-2xl">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-2xl" id="who-heading">
             We work with a select number of serious businesses.
           </h2>
         </div>

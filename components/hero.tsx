@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden" aria-label="Introduction and value proposition">
       {/* Grid background */}
       <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
 
@@ -71,6 +71,7 @@ export function Hero() {
           <a
             href="#apply"
             className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            aria-label="Apply to work with our strategy and systems team"
           >
             Apply to Work With Us
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -80,6 +81,7 @@ export function Hero() {
           <a
             href="#how-we-work"
             className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
+            aria-label="Learn about our four-step approach"
           >
             See How We Work
           </a>

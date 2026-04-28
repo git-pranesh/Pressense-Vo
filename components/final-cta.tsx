@@ -1,6 +1,6 @@
 export function FinalCTA() {
   return (
-    <section id="apply" className="py-28 lg:py-40 relative overflow-hidden">
+    <section id="apply" className="py-28 lg:py-40 relative overflow-hidden" aria-labelledby="apply-heading">
       {/* Background glow */}
       <div
         className="absolute inset-0 opacity-[0.06]"
@@ -20,7 +20,7 @@ export function FinalCTA() {
           <div className="h-px w-8 bg-accent opacity-60" />
         </div>
 
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-[1.08]">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-[1.08]" id="apply-heading">
           If your business is growing but feels unstructured,{' '}
           <span className="text-primary font-light italic">we should talk.</span>
         </h2>
@@ -35,6 +35,7 @@ export function FinalCTA() {
           <a
             href="mailto:hello@structured.co"
             className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            aria-label="Send application email to hello@structured.co"
           >
             Apply to Work With Us
             <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">

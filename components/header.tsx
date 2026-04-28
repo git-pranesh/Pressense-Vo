@@ -61,6 +61,7 @@ export function Header() {
           <a
             href="#apply"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors duration-200"
+            aria-label="Apply to work with our team"
           >
             Apply
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
@@ -105,6 +106,7 @@ export function Header() {
             href="#apply"
             className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground w-fit"
             onClick={() => setMenuOpen(false)}
+            aria-label="Apply to work with our team"
           >
             Apply
           </a>

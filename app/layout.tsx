@@ -50,7 +50,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body className={`${inter.variable} font-sans antialiased`}>
-        {children}
+        <a href="#main-content" className="sr-only focus:not-sr-only">
+          Skip to main content
+        </a>
+        <div id="main-content">{children}</div>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

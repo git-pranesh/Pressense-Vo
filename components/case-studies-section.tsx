@@ -78,7 +78,7 @@ const caseStudies = [
 
 export function CaseStudiesSection() {
   return (
-    <section id="case-studies" className="py-28 lg:py-36 border-t border-border/40">
+    <section id="case-studies" className="py-28 lg:py-36 border-t border-border/40" aria-labelledby="case-studies-heading">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
@@ -87,7 +87,7 @@ export function CaseStudiesSection() {
               <div className="h-px w-8 bg-accent opacity-60" />
               <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">Work</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-md">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-md" id="case-studies-heading">
               Results across industries.
             </h2>
           </div>

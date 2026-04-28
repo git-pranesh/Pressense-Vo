@@ -47,7 +47,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section className="py-28 lg:py-36 relative">
+    <section id="services" className="py-28 lg:py-36 relative" aria-labelledby="services-heading">
       {/* Faint dot grid accent */}
       <div
         className="absolute inset-0 opacity-[0.018]"
@@ -66,7 +66,7 @@ export function ServicesSection() {
               <div className="h-px w-8 bg-accent opacity-60" />
               <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">Services</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-lg">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-lg" id="services-heading">
               Three areas. One unified system.
             </h2>
           </div>

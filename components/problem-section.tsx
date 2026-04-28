@@ -10,7 +10,7 @@ const problems = [
 
 export function ProblemSection() {
   return (
-    <section id="what-we-fix" className="py-28 lg:py-36 relative">
+    <section id="what-we-fix" className="py-28 lg:py-36 relative" aria-labelledby="problem-heading">
       {/* Subtle side accent */}
       <div
         className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-48 opacity-20"
@@ -26,7 +26,7 @@ export function ProblemSection() {
               <div className="h-px w-8 bg-accent opacity-60" />
               <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">The Problem</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-[1.15] tracking-tight text-foreground text-balance">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-[1.15] tracking-tight text-foreground text-balance" id="problem-heading">
               Most businesses don&apos;t fail because of lack of effort.
               <span className="text-muted-foreground font-light"> They struggle because the fundamentals are broken.</span>
             </h2>
