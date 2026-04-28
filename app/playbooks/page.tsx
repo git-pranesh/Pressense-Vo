@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer'
 import { PlaybooksHero } from '@/components/playbooks-page/hero'
 import { PlaybooksIntroSection } from '@/components/playbooks-page/intro-section'
 import { PlaybooksGrid } from '@/components/playbooks-page/playbooks-grid'
-import { PlaybooksImplementationSection } from '@/components/playbooks-page/implementation-section'
+import { PlaybookDetails } from '@/components/playbooks-page/playbook-details'
 import { PlaybooksFinalCTA } from '@/components/playbooks-page/final-cta'
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function PlaybooksPage() {
         <PlaybooksHero />
         <PlaybooksIntroSection />
         <PlaybooksGrid />
-        <PlaybooksImplementationSection />
+        <PlaybookDetails />
         <PlaybooksFinalCTA />
       </main>
       <Footer />
