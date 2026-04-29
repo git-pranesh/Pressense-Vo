@@ -1,12 +1,12 @@
 export function WhatWeBuildSection() {
   const buildItems = [
-    'Website copy systems',
-    'Technical and product content',
-    'SEO content systems',
-    'Authority content',
-    'Content workflows',
-    'AI-assisted content systems',
-    'Industry-specific content',
+    { title: 'Website copy systems', description: 'Clear, structured messaging across homepage, landing pages, and product pages.' },
+    { title: 'Technical and product content', description: 'Use-case-driven content for SaaS, tools, platforms, and complex services.' },
+    { title: 'SEO content systems', description: 'Content designed around real search intent, not just keywords.' },
+    { title: 'Authority content', description: 'Thought leadership, founder-led content, and expertise-driven narratives.' },
+    { title: 'Content workflows', description: 'Repeatable systems for ideation, writing, review, and publishing.' },
+    { title: 'AI-assisted content systems', description: 'Workflows that use AI to speed up production without losing depth or clarity.' },
+    { title: 'Industry-specific content', description: 'Healthcare, professional services, SaaS, and other expertise-driven domains.' },
   ]
 
   return (
@@ -17,9 +17,9 @@ export function WhatWeBuildSection() {
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {buildItems.map((item) => (
-            <div key={item} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300 flex items-center gap-4">
-              <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
-              <h3 className="text-base font-medium text-foreground">{item}</h3>
+            <div key={item.title} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
+              <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{item.description}</p>
             </div>
           ))}
         </div>

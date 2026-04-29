@@ -4,7 +4,7 @@ export function ContentAuthorityHero() {
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-4xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6 font-medium">
-            Solutions, Content & Authority Systems
+            Solutions / Content & Authority Systems
           </p>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
             Content systems that turn expertise into visibility, trust, and demand.
