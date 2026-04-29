@@ -37,7 +37,7 @@ export function DiagnosticApproach() {
               </p>
               <p>
                 Then we work alongside you to fix what&apos;s broken and build
-                what&apos;s missing — not as consultants who leave you with a
+                what&apos;s missing, not as consultants who leave you with a
                 deck, but as operators who help you execute.
               </p>
             </div>

@@ -20,7 +20,7 @@ export function WhatWeDo() {
           <span className="text-primary font-light italic">We diagnose, fix, and build.</span>
         </h2>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
-          We work with businesses that are already moving — but need clarity, direction, and
+          We work with businesses that are already moving, but need clarity, direction, and
           execution to scale properly. From strategy to systems to execution, everything is
           aligned with how the business actually operates.
         </p>

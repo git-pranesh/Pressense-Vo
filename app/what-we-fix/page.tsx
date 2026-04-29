@@ -18,14 +18,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'What We Fix | Pressense',
     description:
-      'Seven structural problems that keep businesses stuck — and how we help you fix them.',
+      'Seven structural problems that keep businesses stuck, and how we help you fix them.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'What We Fix | Pressense',
     description:
-      'Seven structural problems that keep businesses stuck — and how we help you fix them.',
+      'Seven structural problems that keep businesses stuck, and how we help you fix them.',
   },
 }
 

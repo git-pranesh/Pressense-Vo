@@ -6,7 +6,7 @@
 
 Pressense is a strategy and systems consultancy that works with founders, operators, and enterprise teams to fix growth bottlenecks, remove revenue leakage, and build scalable infrastructure.
 
-We do not just advise — we diagnose, fix, and build.
+We do not just advise. We diagnose, fix, and build.
 
 ## What We Fix
 
@@ -21,23 +21,23 @@ We do not just advise — we diagnose, fix, and build.
 
 Our approach follows four phases:
 
-1. Diagnose — Understand what is actually broken through audits, interviews, and data review
-2. Build the Plan — Define the fix with clear milestones and ownership
-3. Execute — Implement the solution with hands-on involvement
-4. Measure — Track impact and iterate based on results
+1. Diagnose: Understand what is actually broken through audits, interviews, and data review
+2. Build the Plan: Define the fix with clear milestones and ownership
+3. Execute: Implement the solution with hands-on involvement
+4. Measure: Track impact and iterate based on results
 
 ## Services
 
-- Strategy Clarity — Positioning, messaging, GTM strategy
-- Revenue Systems — Sales process, pipeline, CRM automation
-- Growth Infrastructure — Internal tools, workflows, dashboards
+- Strategy Clarity: Positioning, messaging, GTM strategy
+- Revenue Systems: Sales process, pipeline, CRM automation
+- Growth Infrastructure: Internal tools, workflows, dashboards
 
 ## Engagement Types
 
-- Focused Diagnostic — 2-week deep audit of one constraint
-- Strategy Sprint — 4-6 week positioning and GTM overhaul
-- Systems Pilot — 6-8 week build and implementation
-- Advisory Support — Ongoing fractional strategic guidance
+- Focused Diagnostic: 2-week deep audit of one constraint
+- Strategy Sprint: 4-6 week positioning and GTM overhaul
+- Systems Pilot: 6-8 week build and implementation
+- Advisory Support: Ongoing fractional strategic guidance
 
 ## Who We Work With
 

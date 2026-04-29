@@ -71,7 +71,7 @@ export function ServicesSection() {
             </h2>
           </div>
           <p className="text-base text-muted-foreground max-w-sm leading-relaxed">
-            Every engagement is tailored to where your business actually is — not a generic playbook.
+            Every engagement is tailored to where your business actually is, not a generic playbook.
           </p>
         </div>
 

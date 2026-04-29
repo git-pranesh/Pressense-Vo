@@ -60,7 +60,7 @@ export function InvestmentSection() {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             We work on a project basis, not hourly. Pricing is based on scope, complexity,
-            and timeline. Below are typical engagement structures — your actual proposal
+            and timeline. Below are typical engagement structures. Your actual proposal
             will be customized after our diagnostic conversation.
           </p>
         </div>
@@ -125,7 +125,7 @@ export function InvestmentSection() {
           <p className="text-sm text-muted-foreground">
             <span className="font-medium text-foreground">Pricing transparency:</span>{' '}
             Engagements typically range from $15,000 to $75,000+ depending on scope. We
-            provide detailed proposals after an initial conversation — no surprises, no
+            provide detailed proposals after an initial conversation. No surprises, no
             hidden fees.
           </p>
         </div>

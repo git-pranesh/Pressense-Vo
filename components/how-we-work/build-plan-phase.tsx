@@ -7,7 +7,7 @@ const planComponents = [
   {
     title: 'Operational Playbooks',
     description:
-      'Step-by-step systems for repeatable processes — sales, onboarding, delivery, support.',
+      'Step-by-step systems for repeatable processes: sales, onboarding, delivery, support.',
   },
   {
     title: 'Team Structure Blueprint',
@@ -55,7 +55,7 @@ export function BuildPlanPhase() {
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             Based on the diagnostic, we design a custom system architecture for your
             business. This isn&apos;t a generic strategy deck. It&apos;s an executable
-            blueprint — specific, sequenced, and built for your exact situation.
+            blueprint: specific, sequenced, and built for your exact situation.
           </p>
 
           {/* Timeline */}

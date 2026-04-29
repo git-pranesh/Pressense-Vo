@@ -3,7 +3,7 @@ const problems = [
     id: 'positioning',
     title: 'Weak or Unclear Positioning',
     description:
-      "You can't articulate why someone should choose you over any alternative — including doing nothing.",
+      "You can't articulate why someone should choose you over any alternative, including doing nothing.",
     symptoms: [
       'Competing on price instead of value',
       'Messaging that sounds like everyone else',

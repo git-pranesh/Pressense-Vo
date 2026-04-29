@@ -13,7 +13,7 @@ We are selective about fit. We work with businesses that have:
 - A committed decision-maker present throughout the engagement
 - Willingness to act on recommendations
 
-We do not just advise — we diagnose, fix, and build.
+We do not just advise. We diagnose, fix, and build.
 
 ---
 
@@ -80,7 +80,7 @@ Symptoms:
 ## How We Work
 
 ### Phase 1: Diagnose (2-3 weeks)
-We start by understanding what is actually broken — not what it looks like on the surface.
+We start by understanding what is actually broken, not what it looks like on the surface.
 
 Activities:
 - Stakeholder interviews
@@ -176,12 +176,12 @@ Best for: Founders and operators who want a thinking partner on retainer.
 
 ## Playbooks Available
 
-1. **Founder Bottleneck Playbook** — Diagnose, delegate, and document to unlock founder capacity
-2. **Pricing Strategy Playbook** — Research, model, test, and roll out pricing changes
-3. **Sales-Marketing Alignment Playbook** — Shared definitions, SLAs, feedback loops
-4. **Customer Onboarding Playbook** — Activation milestones, automation, success metrics
-5. **Personal Brand Playbook** — Positioning, content engine, distribution strategy
-6. **Systems Audit Playbook** — Inventory, evaluate, consolidate, and document
+1. **Founder Bottleneck Playbook**: Diagnose, delegate, and document to unlock founder capacity
+2. **Pricing Strategy Playbook**: Research, model, test, and roll out pricing changes
+3. **Sales-Marketing Alignment Playbook**: Shared definitions, SLAs, feedback loops
+4. **Customer Onboarding Playbook**: Activation milestones, automation, success metrics
+5. **Personal Brand Playbook**: Positioning, content engine, distribution strategy
+6. **Systems Audit Playbook**: Inventory, evaluate, consolidate, and document
 
 ---
 

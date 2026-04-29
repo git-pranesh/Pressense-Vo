@@ -27,7 +27,7 @@ export function WhatWeFixCTA() {
 
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10">
             Start with a conversation. We&apos;ll help you understand what&apos;s
-            really holding you back — and whether we&apos;re the right team to
+            really holding you back, and whether we&apos;re the right team to
             help.
           </p>
 

@@ -81,6 +81,61 @@ export function StructuredData() {
     },
   }
 
+  const faqData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What does Pressense do?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pressense is a strategy and systems consultancy that helps serious businesses move from scattered growth to structured scale. We diagnose growth bottlenecks, fix broken systems, and build scalable infrastructure for founders, operators, and enterprise teams.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What problems does Pressense fix?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We fix seven core problems: weak or unclear positioning, no defined or scalable offer, no predictable acquisition system, broken delivery operations, teams without structure or accountability, financial blind spots, and founder bottleneck where the business cannot run without the founder.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Pressense work?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our approach follows four phases: 1) Diagnose to understand what is actually broken, 2) Build the Plan to define the fix with clear milestones, 3) Execute to implement the solution hands-on, and 4) Measure to track impact and iterate based on results.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What types of engagements does Pressense offer?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We offer four engagement types: Focused Diagnostic (2-week deep audit), Strategy Sprint (4-6 week positioning and GTM overhaul), Systems Pilot (6-8 week build and implementation), and Advisory Support (ongoing fractional strategic guidance).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who does Pressense work with?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We work with scaling founders who built something that works and need systems to grow, operators and COOs who own execution but need help rebuilding the engine, and enterprise teams with strategy that exists but execution that is stalled.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much does it cost to work with Pressense?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Engagements typically range from $15,000 to $75,000+ depending on scope, complexity, and timeline. We provide detailed proposals after an initial conversation with no surprises or hidden fees.',
+        },
+      },
+    ],
+  }
+
   return (
     <>
       <script
@@ -93,6 +148,12 @@ export function StructuredData() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(websiteData),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqData),
         }}
       />
     </>

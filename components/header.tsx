@@ -40,7 +40,7 @@ export function Header() {
             </svg>
           </div>
           <span className="text-sm font-semibold tracking-wide text-foreground">
-            STRUCTURED
+            PRESSENSE
           </span>
         </Link>
 

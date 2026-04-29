@@ -62,7 +62,7 @@ export function Hero() {
 
         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12 text-pretty">
           We identify what&apos;s broken in your business, fix your strategy, and build the
-          systems needed to scale — from GTM to internal tools, automation, content, and
+          systems needed to scale, from GTM to internal tools, automation, content, and
           execution.
         </p>
 

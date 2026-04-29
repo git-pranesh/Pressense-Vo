@@ -64,7 +64,7 @@ export function ExecutePhase() {
 
             <p className="text-muted-foreground leading-relaxed mb-8">
               Execution happens in focused sprints. Each week has clear objectives,
-              deliverables, and checkpoints. You&apos;ll see tangible progress —
+              deliverables, and checkpoints. You&apos;ll see tangible progress,
               not endless meetings about progress.
             </p>
 
@@ -99,19 +99,19 @@ export function ExecutePhase() {
               </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">—</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   Weekly working sessions with your team
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">—</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   Async support via Slack or your preferred channel
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">—</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   Sprint reviews to demo completed work
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">—</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   Documentation of everything we build
                 </li>
               </ul>

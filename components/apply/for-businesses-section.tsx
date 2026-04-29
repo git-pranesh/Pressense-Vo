@@ -2,7 +2,7 @@ const businessTypes = [
   {
     title: 'Clear Problem',
     description:
-      'You know something is blocking growth or causing friction. You don\'t need all the answers — just clarity on what to fix first.',
+      'You know something is blocking growth or causing friction. You don\'t need all the answers, just clarity on what to fix first.',
   },
   {
     title: 'Committed Decision-Maker',

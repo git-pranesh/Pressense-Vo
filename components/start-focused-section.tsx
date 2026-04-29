@@ -40,7 +40,7 @@ export function StartFocusedSection() {
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             You do not need to begin with a full business transformation. Most clients start
-            with a focused diagnostic, strategy sprint, or pilot project — one business
+            with a focused diagnostic, strategy sprint, or pilot project, one business
             constraint, one clear roadmap, and one practical next step.
           </p>
         </div>

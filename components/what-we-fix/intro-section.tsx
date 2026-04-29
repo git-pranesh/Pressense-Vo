@@ -14,7 +14,7 @@ export function IntroSection() {
             We see the same patterns again and again.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            These are the constraints that most often block growth — unclear positioning,
+            These are the constraints that most often block growth: unclear positioning,
             weak handoffs, manual processes, misaligned teams, and systems that don&apos;t fit
             the current stage. The good news: they&apos;re fixable.
           </p>
