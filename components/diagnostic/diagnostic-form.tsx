@@ -124,11 +124,34 @@ export function DiagnosticForm() {
 
     setIsSubmitting(true)
 
-    // Simulate submission - replace with actual API call
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const response = await fetch('/api/diagnostic', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          role: formData.whatDoes,
+          teamSize: formData.timeline,
+          revenue: formData.budget,
+          constraint: formData.problem,
+          website: '',
+          context: `Area: ${formData.area}\n\nWhat they've tried: ${formData.attempts}\n\nDesired outcome: ${formData.outcome}`,
+        }),
+      })
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+      if (!response.ok) {
+        throw new Error('Submission failed')
+      }
+
+      setIsSubmitted(true)
+    } catch (error) {
+      console.error('Form submission error:', error)
+      alert('There was an error submitting your request. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
