@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server'
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 // The email address where you want to receive diagnostic submissions
-const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL?.trim()
+const NOTIFICATION_EMAIL = 'updates@pressense.co'
 
 export async function POST(request: Request) {
   try {
@@ -13,14 +13,6 @@ export async function POST(request: Request) {
       console.error('[v0] RESEND_API_KEY is not set')
       return NextResponse.json(
         { error: 'Email service not configured' },
-        { status: 500 }
-      )
-    }
-    
-    if (!NOTIFICATION_EMAIL || !NOTIFICATION_EMAIL.includes('@')) {
-      console.error('[v0] NOTIFICATION_EMAIL is invalid:', NOTIFICATION_EMAIL)
-      return NextResponse.json(
-        { error: 'Notification email not configured correctly' },
         { status: 500 }
       )
     }
