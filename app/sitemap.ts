@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { allPlaybooks } from '@/lib/playbooks-data'
+import { playbooks } from '@/lib/playbooks-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.pressense.co'
@@ -85,7 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Individual playbook pages
-  const playbookPages: MetadataRoute.Sitemap = allPlaybooks.map((playbook) => ({
+  const playbookPages: MetadataRoute.Sitemap = playbooks.map((playbook) => ({
     url: `${baseUrl}/playbooks/${playbook.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
