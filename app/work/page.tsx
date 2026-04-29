@@ -11,7 +11,10 @@ import { WorkFAQSection } from '@/components/work-page/faq-section'
 export const metadata: Metadata = {
   title: 'Selected Work | Pressense',
   description:
-    'Selected work from strategy, GTM, and systems engagements. See how we diagnose root cause and build solutions that stick. Anonymised examples from real engagements.',
+    'Selected work from strategy, GTM, and systems engagements. See how we diagnose root cause and build solutions that stick.',
+  alternates: {
+    canonical: '/work',
+  },
   openGraph: {
     title: 'Selected Work | Pressense',
     description:

@@ -20,7 +20,10 @@ import { WebsitesFAQSection } from '@/components/websites-conversion-page/faq-se
 export const metadata: Metadata = {
   title: 'Websites & Conversion Systems | Pressense',
   description:
-    'Pressense builds positioning-led websites and conversion systems that clarify value, guide buyers, support sales, and turn traffic into qualified demand.',
+    'Positioning-led websites and conversion systems that clarify value, guide buyers, support sales, and turn traffic into demand.',
+  alternates: {
+    canonical: '/websites-conversion-systems',
+  },
   openGraph: {
     title: 'Websites & Conversion Systems | Pressense',
     description:

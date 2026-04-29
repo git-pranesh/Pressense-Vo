@@ -12,7 +12,10 @@ import { PageStructuredData } from '@/components/page-structured-data'
 export const metadata: Metadata = {
   title: 'Playbooks | Diagnostic Frameworks for Growth Constraints | Pressense',
   description:
-    'Diagnostic frameworks for fixing common growth constraints. Founder bottlenecks, pricing leakage, GTM alignment, customer onboarding, personal brand, systems debt, CRM adoption, AI workflow readiness.',
+    'Diagnostic frameworks for growth constraints. Founder bottlenecks, pricing leakage, GTM alignment, customer onboarding, personal brand, systems debt, CRM adoption.',
+  alternates: {
+    canonical: '/playbooks',
+  },
   openGraph: {
     title: 'Playbooks | Diagnostic Frameworks for Growth Constraints',
     description:

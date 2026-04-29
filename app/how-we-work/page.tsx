@@ -14,7 +14,10 @@ import { HowWeWorkFAQSection } from '@/components/how-we-work/faq-section'
 export const metadata: Metadata = {
   title: 'How We Work | Pressense',
   description:
-    'We diagnose, plan, execute, and measure. Learn about our structured approach to building systems that help businesses scale from scattered growth to operational clarity.',
+    'We diagnose, plan, execute, and measure. Our structured approach helps businesses scale from scattered growth to operational clarity.',
+  alternates: {
+    canonical: '/how-we-work',
+  },
   openGraph: {
     title: 'How We Work | Pressense',
     description:

@@ -19,7 +19,10 @@ import { ContentFAQSection } from '@/components/content-authority-page/faq-secti
 export const metadata: Metadata = {
   title: 'Content & Authority Systems | Pressense',
   description:
-    'Pressense builds content and authority systems that turn expertise into clear market communication, trust, search visibility, and demand.',
+    'Content and authority systems that turn expertise into clear market communication, trust, search visibility, and demand.',
+  alternates: {
+    canonical: '/content-authority-systems',
+  },
   openGraph: {
     title: 'Content & Authority Systems | Pressense',
     description:

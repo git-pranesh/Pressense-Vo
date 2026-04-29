@@ -20,7 +20,10 @@ import { AIWorkflowsFAQSection } from '@/components/ai-workflows-page/faq-sectio
 export const metadata: Metadata = {
   title: 'AI Workflows & Automation | Pressense',
   description:
-    'Pressense designs practical AI workflows and automation systems that reduce manual work, improve consistency, and help teams execute with more clarity.',
+    'Practical AI workflows and automation systems that reduce manual work, improve consistency, and help teams execute with clarity.',
+  alternates: {
+    canonical: '/ai-workflows-automation',
+  },
   openGraph: {
     title: 'AI Workflows & Automation | Pressense',
     description:

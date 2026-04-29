@@ -20,7 +20,10 @@ import { CrmErpFAQSection } from '@/components/crm-erp-page/faq-section'
 export const metadata: Metadata = {
   title: 'CRM & ERP Systems | Pressense',
   description:
-    'Pressense designs CRM and ERP-lite systems for growing businesses that need better visibility, ownership, reporting, workflows, and operational structure.',
+    'CRM and ERP-lite systems for businesses that need better visibility, ownership, reporting, workflows, and operational structure.',
+  alternates: {
+    canonical: '/crm-erp-systems',
+  },
   openGraph: {
     title: 'CRM & ERP Systems | Pressense',
     description:

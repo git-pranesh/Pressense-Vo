@@ -15,7 +15,10 @@ import { WhatWeFixFAQSection } from '@/components/what-we-fix/faq-section'
 export const metadata: Metadata = {
   title: 'What We Fix | Pressense',
   description:
-    'Positioning, offers, acquisition systems, delivery operations, team structure, financial clarity, and founder dependency. We diagnose and fix the structural issues holding your business back.',
+    'Positioning, offers, acquisition systems, delivery operations, team structure, and founder dependency. We fix structural issues holding your business back.',
+  alternates: {
+    canonical: '/what-we-fix',
+  },
   openGraph: {
     title: 'What We Fix | Pressense',
     description:

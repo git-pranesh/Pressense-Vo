@@ -14,11 +14,14 @@ import { Spinner } from '@/components/ui/spinner'
 export const metadata: Metadata = {
   title: 'Start Diagnostic | Pressense Strategy & Systems',
   description:
-    'Tell us what feels unclear, broken, or stuck. We will use the context to understand whether the next step should be advisory, a workflow, website, content system, CRM/ERP layer, internal tool, AI workflow, or something simpler.',
+    'Tell us what feels unclear, broken, or stuck. We help identify the right next step: advisory, workflow, website, content system, or tools.',
+  alternates: {
+    canonical: '/diagnostic',
+  },
   openGraph: {
     title: 'Start Diagnostic | Pressense Strategy & Systems',
     description:
-      'Tell us what feels unclear, broken, or stuck. We will use the context to understand whether the next step should be advisory, a workflow, website, content system, CRM/ERP layer, internal tool, AI workflow, or something simpler.',
+      'Tell us what feels unclear, broken, or stuck. We help identify the right next step for your business.',
     type: 'website',
   },
   twitter: {

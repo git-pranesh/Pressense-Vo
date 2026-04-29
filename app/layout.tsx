@@ -16,9 +16,6 @@ export const metadata: Metadata = {
   description:
     'We help serious businesses fix growth bottlenecks, understand customers, remove revenue leakage, and build the systems needed to scale.',
   generator: 'v0.app',
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     title: 'Pressense | Strategy & Systems Partner for Structured Scale',
     description:

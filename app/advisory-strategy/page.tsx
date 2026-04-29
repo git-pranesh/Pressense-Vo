@@ -16,7 +16,10 @@ import { AdvisoryFAQSection } from '@/components/advisory-strategy-page/faq-sect
 export const metadata: Metadata = {
   title: 'Advisory & Strategy for Founder-Led Businesses, Pressense',
   description:
-    'Strategic advisory for founders and teams who need clarity on growth bottlenecks, GTM, revenue leakage, market entry, positioning, operations, and execution priorities.',
+    'Strategic advisory for founders needing clarity on growth bottlenecks, GTM, revenue leakage, positioning, and execution priorities.',
+  alternates: {
+    canonical: '/advisory-strategy',
+  },
   openGraph: {
     title: 'Advisory & Strategy for Founder-Led Businesses, Pressense',
     description:
