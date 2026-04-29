@@ -6,6 +6,7 @@ import { WorkIntroSection } from '@/components/work-page/intro-section'
 import { WorkGrid } from '@/components/work-page/work-grid'
 import { WorkPatternsSection } from '@/components/work-page/patterns-section'
 import { WorkFinalCTA } from '@/components/work-page/final-cta'
+import { WorkFAQSection } from '@/components/work-page/faq-section'
 
 export const metadata: Metadata = {
   title: 'Selected Work | Pressense',
@@ -34,6 +35,7 @@ export default function WorkPage() {
         <WorkIntroSection />
         <WorkGrid />
         <WorkPatternsSection />
+        <WorkFAQSection />
         <WorkFinalCTA />
       </main>
       <Footer />

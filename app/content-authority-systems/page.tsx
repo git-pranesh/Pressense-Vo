@@ -14,6 +14,7 @@ import { StructuredScaleSection } from '@/components/content-authority-page/stru
 import { NotWritingServiceSection } from '@/components/content-authority-page/not-writing-service-section'
 import { EngagementPathSection } from '@/components/content-authority-page/engagement-path-section'
 import { ContentAuthorityCTA } from '@/components/content-authority-page/final-cta'
+import { ContentFAQSection } from '@/components/content-authority-page/faq-section'
 
 export const metadata: Metadata = {
   title: 'Content & Authority Systems | Pressense',
@@ -50,6 +51,7 @@ export default function ContentAuthoritySystemsPage() {
         <StructuredScaleSection />
         <NotWritingServiceSection />
         <EngagementPathSection />
+        <ContentFAQSection />
         <ContentAuthorityCTA />
       </main>
       <Footer />

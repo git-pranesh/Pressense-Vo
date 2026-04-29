@@ -7,6 +7,7 @@ import { WhatWeHelpWithSection } from '@/components/apply/what-we-help-with'
 import { NotForSection } from '@/components/apply/not-for-section'
 import { ProcessSection } from '@/components/apply/process-section'
 import { ApplicationForm } from '@/components/apply/application-form'
+import { ApplyFAQSection } from '@/components/apply/faq-section'
 
 export const metadata: Metadata = {
   title: 'Apply to Work With Us | Strategy & Systems Consulting',
@@ -36,6 +37,7 @@ export default function ApplyPage() {
         <WhatWeHelpWithSection />
         <NotForSection />
         <ProcessSection />
+        <ApplyFAQSection />
         <ApplicationForm />
       </main>
       <Footer />

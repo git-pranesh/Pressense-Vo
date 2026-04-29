@@ -6,6 +6,7 @@ import { PlaybooksIntroSection } from '@/components/playbooks-page/intro-section
 import { PlaybooksGrid } from '@/components/playbooks-page/playbooks-grid'
 import { PlaybookDetails } from '@/components/playbooks-page/playbook-details'
 import { PlaybooksFinalCTA } from '@/components/playbooks-page/final-cta'
+import { PlaybooksFAQSection } from '@/components/playbooks-page/faq-section'
 
 export const metadata: Metadata = {
   title: 'Playbooks | Implementation Guides for Growth Constraints',
@@ -34,6 +35,7 @@ export default function PlaybooksPage() {
         <PlaybooksIntroSection />
         <PlaybooksGrid />
         <PlaybookDetails />
+        <PlaybooksFAQSection />
         <PlaybooksFinalCTA />
       </main>
       <Footer />

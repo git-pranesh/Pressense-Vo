@@ -10,6 +10,7 @@ import { FixOneFirstSection } from '@/components/what-we-fix/fix-one-first-secti
 import { WhenSection } from '@/components/what-we-fix/when-section'
 import { WhenNotSection } from '@/components/what-we-fix/when-not-section'
 import { WhatWeFixCTA } from '@/components/what-we-fix/final-cta'
+import { WhatWeFixFAQSection } from '@/components/what-we-fix/faq-section'
 
 export const metadata: Metadata = {
   title: 'What We Fix | Pressense',
@@ -42,6 +43,7 @@ export default function WhatWeFixPage() {
         <FixOneFirstSection />
         <WhenSection />
         <WhenNotSection />
+        <WhatWeFixFAQSection />
         <WhatWeFixCTA />
       </main>
       <Footer />

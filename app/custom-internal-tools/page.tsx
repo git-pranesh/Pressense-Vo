@@ -12,6 +12,7 @@ import { WhenNotSection } from '@/components/custom-tools-page/when-not-section'
 import { StructuredScaleSection } from '@/components/custom-tools-page/structured-scale-section'
 import { EngagementPathSection } from '@/components/custom-tools-page/engagement-path-section'
 import { CustomToolsFinalCTA } from '@/components/custom-tools-page/final-cta'
+import { CustomToolsFAQSection } from '@/components/custom-tools-page/faq-section'
 
 export const metadata: Metadata = {
   title: 'Custom Internal Tools for Growing Businesses, Pressense',
@@ -46,6 +47,7 @@ export default function CustomInternalToolsPage() {
         <WhenNotSection />
         <StructuredScaleSection />
         <EngagementPathSection />
+        <CustomToolsFAQSection />
         <CustomToolsFinalCTA />
       </main>
       <Footer />

@@ -9,6 +9,7 @@ import { ServicesSection } from '@/components/services-section'
 import { WhoSection } from '@/components/who-section'
 import { FinalCTA } from '@/components/final-cta'
 import { Footer } from '@/components/footer'
+import { HomeFAQSection } from '@/components/home-faq-section'
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
       <StartFocusedSection />
       <ServicesSection />
       <WhoSection />
+      <HomeFAQSection />
       <FinalCTA />
       <Footer />
     </main>

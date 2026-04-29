@@ -5,7 +5,7 @@ export function StructuredData() {
     name: 'Pressense',
     description:
       'Strategy and systems consultancy that helps serious businesses move from scattered growth to structured scale.',
-    url: 'https://v0-pressense.vercel.app',
+    url: 'https://pressense.co',
     serviceType: [
       'Business Consulting',
       'Strategy Consulting',
@@ -71,14 +71,27 @@ export function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Pressense',
-    url: 'https://v0-pressense.vercel.app',
+    url: 'https://pressense.co',
     description:
       'Strategy and systems consultancy for structured scale.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://v0-pressense.vercel.app/?q={search_term_string}',
+      target: 'https://pressense.co/?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
+  }
+
+  const breadcrumbData = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://pressense.co',
+      },
+    ],
   }
 
   const faqData = {
@@ -87,50 +100,50 @@ export function StructuredData() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What does Pressense do?',
+        name: 'What does Pressense actually do?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Pressense is a strategy and systems consultancy that helps serious businesses move from scattered growth to structured scale. We diagnose growth bottlenecks, fix broken systems, and build scalable infrastructure for founders, operators, and enterprise teams.',
+          text: 'Pressense helps founder-led and growing businesses find what is blocking growth, then build the strategy, systems, websites, content, workflows, and tools needed to scale with more clarity. We do not start with execution. We start by diagnosing the real constraint.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What problems does Pressense fix?',
+        name: 'Is Pressense a consulting firm or an execution partner?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We fix seven core problems: weak or unclear positioning, no defined or scalable offer, no predictable acquisition system, broken delivery operations, teams without structure or accountability, financial blind spots, and founder bottleneck where the business cannot run without the founder.',
+          text: 'Pressense sits between strategic advisory and execution. We help clarify the problem first, then support implementation where useful. That could mean a website, content system, internal tool, CRM workflow, AI automation, or operating roadmap.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How does Pressense work?',
+        name: 'Who is Pressense best suited for?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Our approach follows four phases: 1) Diagnose to understand what is actually broken, 2) Build the Plan to define the fix with clear milestones, 3) Execute to implement the solution hands-on, and 4) Measure to track impact and iterate based on results.',
+          text: 'Pressense is best suited for founders, operators, and growing teams dealing with scattered growth, unclear positioning, weak systems, revenue leakage, manual workflows, or execution bottlenecks. It is not ideal for businesses looking only for isolated low-cost tasks.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What types of engagements does Pressense offer?',
+        name: 'Why do you start with a diagnostic?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We offer four engagement types: Focused Diagnostic (2-week deep audit), Strategy Sprint (4-6 week positioning and GTM overhaul), Systems Pilot (6-8 week build and implementation), and Advisory Support (ongoing fractional strategic guidance).',
+          text: 'Many businesses waste money solving the wrong problem. A diagnostic helps identify whether the real issue is strategy, positioning, workflow, sales visibility, website clarity, content, systems, or execution. This makes the next step more precise.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Who does Pressense work with?',
+        name: 'Can Pressense help with both strategy and implementation?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We work with scaling founders who built something that works and need systems to grow, operators and COOs who own execution but need help rebuilding the engine, and enterprise teams with strategy that exists but execution that is stalled.',
+          text: 'Yes. The work usually starts with strategy and diagnosis, then moves into implementation where needed. Pressense can support advisory, websites, content systems, internal tools, CRM and ERP-lite systems, and AI workflows.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How much does it cost to work with Pressense?',
+        name: 'What should we do if we are not sure what we need yet?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Engagements typically range from $15,000 to $75,000+ depending on scope, complexity, and timeline. We provide detailed proposals after an initial conversation with no surprises or hidden fees.',
+          text: 'Start with the diagnostic. It is designed for businesses that feel something is not working but are not sure whether the issue is marketing, operations, positioning, systems, people, tools, or execution.',
         },
       },
     ],
@@ -148,6 +161,12 @@ export function StructuredData() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(websiteData),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbData),
         }}
       />
       <script

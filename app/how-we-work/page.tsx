@@ -9,6 +9,7 @@ import { ExecutePhase } from '@/components/how-we-work/execute-phase'
 import { MeasurePhase } from '@/components/how-we-work/measure-phase'
 import { EngagementStartSection } from '@/components/how-we-work/engagement-start-section'
 import { HowWeWorkCTA } from '@/components/how-we-work/final-cta'
+import { HowWeWorkFAQSection } from '@/components/how-we-work/faq-section'
 
 export const metadata: Metadata = {
   title: 'How We Work | Pressense',
@@ -39,6 +40,7 @@ export default function HowWeWorkPage() {
         <ExecutePhase />
         <MeasurePhase />
         <EngagementStartSection />
+        <HowWeWorkFAQSection />
         <HowWeWorkCTA />
       </main>
       <Footer />

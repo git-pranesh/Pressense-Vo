@@ -15,6 +15,7 @@ import { WebsitesStructuredScaleSection } from '@/components/websites-conversion
 import { NotWebDesignSection } from '@/components/websites-conversion-page/not-web-design-section'
 import { EngagementPathSection } from '@/components/websites-conversion-page/engagement-path-section'
 import { WebsitesConversionFinalCTA } from '@/components/websites-conversion-page/final-cta'
+import { WebsitesFAQSection } from '@/components/websites-conversion-page/faq-section'
 
 export const metadata: Metadata = {
   title: 'Websites & Conversion Systems | Pressense',
@@ -52,6 +53,7 @@ export default function WebsitesConversionSystemsPage() {
         <WebsitesStructuredScaleSection />
         <NotWebDesignSection />
         <EngagementPathSection />
+        <WebsitesFAQSection />
         <WebsitesConversionFinalCTA />
       </main>
       <Footer />

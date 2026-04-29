@@ -15,6 +15,7 @@ import { CrmErpStructuredScaleSection } from '@/components/crm-erp-page/structur
 import { CrmErpNotSetupSection } from '@/components/crm-erp-page/not-setup-section'
 import { CrmErpEngagementPathSection } from '@/components/crm-erp-page/engagement-path-section'
 import { CrmErpFinalCTA } from '@/components/crm-erp-page/final-cta'
+import { CrmErpFAQSection } from '@/components/crm-erp-page/faq-section'
 
 export const metadata: Metadata = {
   title: 'CRM & ERP Systems | Pressense',
@@ -52,6 +53,7 @@ export default function CrmErpSystemsPage() {
         <CrmErpStructuredScaleSection />
         <CrmErpNotSetupSection />
         <CrmErpEngagementPathSection />
+        <CrmErpFAQSection />
         <CrmErpFinalCTA />
       </main>
       <Footer />

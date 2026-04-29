@@ -15,6 +15,7 @@ import { AIStructuredScaleSection } from '@/components/ai-workflows-page/structu
 import { AIWorkflowsNotImplementationSection } from '@/components/ai-workflows-page/not-implementation-section'
 import { AIWorkflowsEngagementPathSection } from '@/components/ai-workflows-page/engagement-path-section'
 import { AIWorkflowsFinalCTA } from '@/components/ai-workflows-page/final-cta'
+import { AIWorkflowsFAQSection } from '@/components/ai-workflows-page/faq-section'
 
 export const metadata: Metadata = {
   title: 'AI Workflows & Automation | Pressense',
@@ -52,6 +53,7 @@ export default function AIWorkflowsAutomationPage() {
         <AIStructuredScaleSection />
         <AIWorkflowsNotImplementationSection />
         <AIWorkflowsEngagementPathSection />
+        <AIWorkflowsFAQSection />
         <AIWorkflowsFinalCTA />
       </main>
       <Footer />

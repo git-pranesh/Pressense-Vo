@@ -11,6 +11,7 @@ import { WalkAwaySection } from '@/components/advisory-strategy-page/walk-away-s
 import { NotTheorySection } from '@/components/advisory-strategy-page/not-theory-section'
 import { EngagementFormatsSection } from '@/components/advisory-strategy-page/engagement-formats-section'
 import { AdvisoryStrategyCTA } from '@/components/advisory-strategy-page/final-cta'
+import { AdvisoryFAQSection } from '@/components/advisory-strategy-page/faq-section'
 
 export const metadata: Metadata = {
   title: 'Advisory & Strategy for Founder-Led Businesses, Pressense',
@@ -44,6 +45,7 @@ export default function AdvisoryStrategyPage() {
         <WalkAwaySection />
         <NotTheorySection />
         <EngagementFormatsSection />
+        <AdvisoryFAQSection />
         <AdvisoryStrategyCTA />
       </main>
       <Footer />
