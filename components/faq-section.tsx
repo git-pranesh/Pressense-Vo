@@ -13,16 +13,18 @@ export interface FAQItem {
 }
 
 interface FAQSectionProps {
+  eyebrow?: string
   headline: string
   faqs: FAQItem[]
+  className?: string
 }
 
-export function FAQSection({ headline, faqs }: FAQSectionProps) {
+export function FAQSection({ eyebrow = 'FAQ', headline, faqs, className = '' }: FAQSectionProps) {
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className={`py-20 md:py-28 border-t border-border/40 ${className}`}>
       <div className="container max-w-4xl mx-auto px-6">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
-          FAQ
+          {eyebrow}
         </p>
         <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-10">
           {headline}
