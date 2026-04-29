@@ -1,35 +1,33 @@
-import Link from 'next/link'
-
 export function AIWorkflowsHero() {
   return (
-    <section className="pt-32 pb-20 lg:pt-44 lg:pb-28">
-      <div className="container mx-auto px-5 sm:px-8">
-        <div className="max-w-4xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6 font-medium">
-            Solutions / AI Workflows & Automation
-          </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
-            AI workflows that reduce manual work and improve execution clarity.
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="AI workflows and automation">
+      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
+      <div className="container mx-auto px-5 sm:px-8 relative z-10">
+        <div className="max-w-3xl">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Solutions / AI Workflows & Automation</span>
+          </div>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+            AI workflows that reduce manual work without adding more noise.
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-            AI is not useful by itself. It becomes valuable when it is part of a structured workflow. We help businesses use AI to remove repetitive work, improve speed, and support better execution.
+            AI becomes useful only when it is applied to the right workflow, with clear inputs, ownership, review, and outcomes. We help businesses use AI and automation to reduce repeated work, improve consistency, and support execution where it actually makes sense.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/apply"
-              className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
+            <a href="/apply" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
               Start With a Diagnostic
-            </Link>
-            <Link
-              href="/how-we-work"
-              className="inline-flex items-center justify-center rounded-full border border-border bg-secondary/50 px-8 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
-            >
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+            <a href="/how-we-work" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200">
               See How We Work
-            </Link>
+            </a>
           </div>
         </div>
       </div>
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background via-transparent to-background/60" aria-hidden="true" />
     </section>
   )
 }

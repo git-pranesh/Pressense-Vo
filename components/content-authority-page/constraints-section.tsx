@@ -1,25 +1,48 @@
-export function ConstraintsSection() {
-  const constraints = [
-    { title: 'Generic content', description: 'Content sounds like everyone else and does not reflect real expertise.' },
-    { title: 'Inconsistent output', description: 'Content depends on time, mood, or availability instead of a system.' },
-    { title: 'Unclear positioning', description: 'The business itself is not clearly defined, so content lacks direction.' },
-    { title: 'Weak website communication', description: 'The website does not explain what the business actually does in a clear, structured way.' },
-    { title: 'Technical gap', description: 'Complex products or services are not translated into understandable use cases.' },
-    { title: 'No authority layer', description: 'There is no consistent signal of expertise, trust, or credibility in the market.' },
-  ]
+const constraints = [
+  {
+    title: 'Untranslated expertise',
+    description: 'The business knows more than the market can see. Knowledge stays inside calls, documents, delivery, or founder memory.',
+  },
+  {
+    title: 'Generic output',
+    description: 'Content is being produced, but it could belong to almost any company in the category.',
+  },
+  {
+    title: 'Weak positioning',
+    description: 'The business has not clearly defined what it should be known for, so content lacks direction.',
+  },
+  {
+    title: 'Disconnected website and content',
+    description: 'The website, articles, landing pages, and founder content do not reinforce the same story.',
+  },
+  {
+    title: 'Technical complexity',
+    description: 'Products, services, or expertise are accurate internally but difficult for buyers to understand externally.',
+  },
+  {
+    title: 'No authority system',
+    description: 'There is no repeatable way to turn insight, experience, case knowledge, and point of view into trust-building communication.',
+  },
+]
 
+export function ConstraintsSection() {
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40">
+    <section className="py-24 lg:py-32 bg-secondary/20" aria-label="Common constraints">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">
-          The constraint we usually see
-        </h2>
+        <div className="max-w-xl mb-12">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4">
+            The constraint we usually see.
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            These are the communication patterns that prevent expertise from reaching the market.
+          </p>
+        </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {constraints.map((constraint) => (
-            <div key={constraint.title} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-foreground mb-3">{constraint.title}</h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">{constraint.description}</p>
-            </div>
+          {constraints.map((item, i) => (
+            <article key={i} className="glass-card rounded-2xl p-6 border border-border/40">
+              <h3 className="text-lg font-semibold text-foreground mb-3">{item.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+            </article>
           ))}
         </div>
       </div>
