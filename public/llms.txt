@@ -47,13 +47,13 @@ Our approach follows four phases:
 
 ## Contact
 
-To work with us, apply at: https://v0-pressense.vercel.app/apply
+To work with us, start with a diagnostic at: https://www.pressense.co/diagnostic
 
 ## Pages
 
-- Home: https://v0-pressense.vercel.app/
-- What We Fix: https://v0-pressense.vercel.app/what-we-fix
-- How We Work: https://v0-pressense.vercel.app/how-we-work
-- Work: https://v0-pressense.vercel.app/work
-- Playbooks: https://v0-pressense.vercel.app/playbooks
-- Apply: https://v0-pressense.vercel.app/apply
+- Home: https://www.pressense.co/
+- What We Fix: https://www.pressense.co/what-we-fix
+- How We Work: https://www.pressense.co/how-we-work
+- Work: https://www.pressense.co/work
+- Playbooks: https://www.pressense.co/playbooks
+- Diagnostic: https://www.pressense.co/diagnostic

@@ -11,21 +11,36 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.pressense.co'),
   title: 'Pressense | Strategy & Systems Partner for Structured Scale',
   description:
     'We help serious businesses fix growth bottlenecks, understand customers, remove revenue leakage, and build the systems needed to scale.',
   generator: 'v0.app',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Pressense | Strategy & Systems Partner for Structured Scale',
     description:
       'We help serious businesses fix growth bottlenecks, understand customers, remove revenue leakage, and build the systems needed to scale.',
     type: 'website',
+    url: 'https://www.pressense.co',
+    siteName: 'Pressense',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Pressense - Strategy & Systems Partner for Structured Scale',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pressense | Strategy & Systems Partner for Structured Scale',
     description:
       'We help serious businesses fix growth bottlenecks, understand customers, remove revenue leakage, and build the systems needed to scale.',
+    images: ['/og-image.jpg'],
   },
   icons: {
     icon: '/icon.svg',

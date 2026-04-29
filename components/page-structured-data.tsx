@@ -23,7 +23,7 @@ export function PageStructuredData({
   pageName,
   pageDescription,
 }: PageStructuredDataProps) {
-  const baseUrl = 'https://pressense.co'
+  const baseUrl = 'https://www.pressense.co'
 
   const breadcrumbData = {
     '@context': 'https://schema.org',

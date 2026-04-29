@@ -228,19 +228,19 @@ Outcome: Predictable pipeline from content. Clear offer that converts. Systems t
 
 ---
 
-## Contact and Apply
+## Contact
 
-To explore working together, apply at: https://v0-pressense.vercel.app/apply
+To explore working together, start with a diagnostic at: https://www.pressense.co/diagnostic
 
-The application helps us understand your business, the problem you are facing, and whether we are the right fit.
+The diagnostic helps us understand your business, the problem you are facing, and whether we are the right fit.
 
 ---
 
 ## Site Structure
 
-- Home: https://v0-pressense.vercel.app/
-- What We Fix: https://v0-pressense.vercel.app/what-we-fix
-- How We Work: https://v0-pressense.vercel.app/how-we-work
-- Work: https://v0-pressense.vercel.app/work
-- Playbooks: https://v0-pressense.vercel.app/playbooks
-- Apply: https://v0-pressense.vercel.app/apply
+- Home: https://www.pressense.co/
+- What We Fix: https://www.pressense.co/what-we-fix
+- How We Work: https://www.pressense.co/how-we-work
+- Work: https://www.pressense.co/work
+- Playbooks: https://www.pressense.co/playbooks
+- Diagnostic: https://www.pressense.co/diagnostic

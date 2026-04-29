@@ -5,7 +5,8 @@ export function StructuredData() {
     name: 'Pressense',
     description:
       'Strategy and systems consultancy that helps serious businesses move from scattered growth to structured scale.',
-    url: 'https://pressense.co',
+    url: 'https://www.pressense.co',
+    logo: 'https://www.pressense.co/icon.svg',
     serviceType: [
       'Business Consulting',
       'Strategy Consulting',
@@ -65,18 +66,21 @@ export function StructuredData() {
       'Growth Systems',
       'Operations Optimization',
     ],
+    sameAs: [
+      'https://www.linkedin.com/company/pressense',
+    ],
   }
 
   const websiteData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Pressense',
-    url: 'https://pressense.co',
+    url: 'https://www.pressense.co',
     description:
       'Strategy and systems consultancy for structured scale.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://pressense.co/?q={search_term_string}',
+      target: 'https://www.pressense.co/?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   }
@@ -89,7 +93,7 @@ export function StructuredData() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://pressense.co',
+        item: 'https://www.pressense.co',
       },
     ],
   }
