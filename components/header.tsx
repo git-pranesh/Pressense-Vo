@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const navLinks = [
@@ -8,17 +8,39 @@ const navLinks = [
   { label: 'How We Work', href: '/how-we-work' },
   { label: 'Work', href: '/work' },
   { label: 'Playbooks', href: '/playbooks' },
-  { label: 'Solutions', href: '/custom-internal-tools' },
+]
+
+const solutionsDropdown = [
+  { label: 'Advisory & Strategy', href: '/advisory-strategy' },
+  { label: 'Internal Tools & Systems', href: '/custom-internal-tools' },
+  { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
+  { label: 'Content & Authority Systems', href: '/content-authority-systems' },
+  { label: 'Websites & Conversion Systems', href: '/websites-conversion-systems' },
+  { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
 ]
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [solutionsOpen, setSolutionsOpen] = useState(false)
+  const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 24)
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setSolutionsOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
   return (
@@ -56,6 +78,43 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+          
+          {/* Solutions Dropdown */}
+          <div className="relative" ref={dropdownRef}>
+            <button
+              onClick={() => setSolutionsOpen(!solutionsOpen)}
+              className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide"
+              aria-expanded={solutionsOpen}
+              aria-haspopup="true"
+            >
+              Solutions
+              <svg 
+                width="10" 
+                height="10" 
+                viewBox="0 0 10 10" 
+                fill="none" 
+                className={`transition-transform duration-200 ${solutionsOpen ? 'rotate-180' : ''}`}
+                aria-hidden="true"
+              >
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            
+            {solutionsOpen && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 glass-card rounded-xl border border-border/60 p-2 shadow-xl">
+                {solutionsDropdown.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg transition-colors duration-150"
+                    onClick={() => setSolutionsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
 
         {/* CTA */}
@@ -104,6 +163,46 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+          
+          {/* Mobile Solutions Accordion */}
+          <div>
+            <button
+              onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
+              className="flex items-center justify-between w-full text-sm text-muted-foreground hover:text-foreground py-1"
+              aria-expanded={mobileSolutionsOpen}
+            >
+              Solutions
+              <svg 
+                width="10" 
+                height="10" 
+                viewBox="0 0 10 10" 
+                fill="none" 
+                className={`transition-transform duration-200 ${mobileSolutionsOpen ? 'rotate-180' : ''}`}
+                aria-hidden="true"
+              >
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            
+            {mobileSolutionsOpen && (
+              <div className="mt-2 ml-3 flex flex-col gap-2 border-l border-border/40 pl-4">
+                {solutionsDropdown.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="text-sm text-muted-foreground hover:text-foreground py-1"
+                    onClick={() => {
+                      setMenuOpen(false)
+                      setMobileSolutionsOpen(false)
+                    }}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+          
           <Link
             href="/apply"
             className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground w-fit"
