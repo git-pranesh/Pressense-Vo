@@ -100,7 +100,7 @@ Reply directly to this email to respond to ${name}.
 
     // Send email notification
     const { error } = await resend.emails.send({
-      from: 'Pressense Diagnostic <diagnostics@pressense.co>',
+      from: 'Pressense Diagnostic <noreply@updates.pressense.co>',
       to: [NOTIFICATION_EMAIL],
       replyTo: email,
       subject: `New Diagnostic: ${name} from ${company}`,
