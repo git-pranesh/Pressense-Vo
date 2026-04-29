@@ -60,7 +60,7 @@ const crmErpFAQs = [
     answer: (
       <>
         Pressense may not recommend a new system if the real issue is poor sales discipline, unclear ownership, weak process, lack of data hygiene, or leadership not being ready to enforce usage.{' '}
-        <Link href="/apply" className="text-primary hover:underline">Start with a system diagnostic</Link>.
+        <Link href="/diagnostic" className="text-primary hover:underline">Start with a system diagnostic</Link>.
       </>
     ),
   },

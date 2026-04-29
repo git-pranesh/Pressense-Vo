@@ -399,10 +399,10 @@ export function PlaybookDetails() {
               {/* CTA */}
               <div className="pt-8 border-t border-border/40">
                 <a
-                  href="/apply"
+                  href={`/diagnostic?constraint=${playbook.id}`}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
                 >
-                  Apply this playbook
+                  Diagnose This Constraint
                   <svg
                     width="14"
                     height="14"

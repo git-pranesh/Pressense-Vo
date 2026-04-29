@@ -7,7 +7,7 @@ const howWeWorkFAQs = [
     answer: (
       <>
         Pressense usually starts with a{' '}
-        <Link href="/apply" className="text-primary hover:underline">diagnostic</Link>. We study the business, market, customer, offer, website, content, workflows, systems, and execution gaps to understand what is actually blocking progress before recommending what to build or change.
+        <Link href="/diagnostic" className="text-primary hover:underline">diagnostic</Link>. We study the business, market, customer, offer, website, content, workflows, systems, and execution gaps to understand what is actually blocking progress before recommending what to build or change.
       </>
     ),
   },

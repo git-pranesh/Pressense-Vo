@@ -51,7 +51,7 @@ const contentFAQs = [
     answer: (
       <>
         Pressense may advise against more content if the offer is unclear, the ideal buyer is undefined, the website cannot explain the business, the team is only chasing keywords, or the positioning problem needs to be fixed first.{' '}
-        <Link href="/apply" className="text-primary hover:underline">Start with a communication diagnostic</Link>.
+        <Link href="/diagnostic" className="text-primary hover:underline">Start with a communication diagnostic</Link>.
       </>
     ),
   },

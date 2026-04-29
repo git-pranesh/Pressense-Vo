@@ -7,7 +7,7 @@ const homeFAQs = [
     answer: (
       <>
         Pressense helps founder-led and growing businesses find what is blocking growth, then build the strategy, systems, websites, content, workflows, and tools needed to scale with more clarity. We do not start with execution. We start by{' '}
-        <Link href="/apply" className="text-primary hover:underline">diagnosing the real constraint</Link>.
+        <Link href="/diagnostic" className="text-primary hover:underline">diagnosing the real constraint</Link>.
       </>
     ),
   },
@@ -37,7 +37,7 @@ const homeFAQs = [
     answer: (
       <>
         Many businesses waste money solving the wrong problem. A{' '}
-        <Link href="/apply" className="text-primary hover:underline">diagnostic</Link>{' '}
+        <Link href="/diagnostic" className="text-primary hover:underline">diagnostic</Link>{' '}
         helps identify whether the real issue is strategy, positioning, workflow, sales visibility, website clarity, content, systems, or execution. This makes the next step more precise.
       </>
     ),
@@ -61,7 +61,7 @@ const homeFAQs = [
     answer: (
       <>
         Start with the{' '}
-        <Link href="/apply" className="text-primary hover:underline">diagnostic</Link>. It is designed for businesses that feel something is not working but are not sure whether the issue is marketing, operations, positioning, systems, people, tools, or execution.
+        <Link href="/diagnostic" className="text-primary hover:underline">diagnostic</Link>. It is designed for businesses that feel something is not working but are not sure whether the issue is marketing, operations, positioning, systems, people, tools, or execution.
       </>
     ),
   },

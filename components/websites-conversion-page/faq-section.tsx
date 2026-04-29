@@ -60,7 +60,7 @@ const websitesFAQs = [
     answer: (
       <>
         Pressense may not recommend starting with a website if the offer is unclear, the ideal buyer is undefined, the business model needs strategic work first, or a focused messaging sprint would solve the immediate problem.{' '}
-        <Link href="/apply" className="text-primary hover:underline">Start with a website diagnostic</Link>.
+        <Link href="/diagnostic" className="text-primary hover:underline">Start with a website diagnostic</Link>.
       </>
     ),
   },

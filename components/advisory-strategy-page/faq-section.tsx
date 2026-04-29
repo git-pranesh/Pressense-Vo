@@ -53,7 +53,7 @@ const advisoryFAQs = [
     answer: (
       <>
         Yes. Some clients need ongoing strategic support while implementation happens. Pressense can help review decisions, sharpen priorities, support execution, and ensure the work stays connected to the real business constraint.{' '}
-        <Link href="/apply" className="text-primary hover:underline">Start with a diagnostic</Link>.
+        <Link href="/diagnostic" className="text-primary hover:underline">Start with a diagnostic</Link>.
       </>
     ),
   },

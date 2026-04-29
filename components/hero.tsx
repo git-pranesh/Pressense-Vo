@@ -69,19 +69,19 @@ export function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href="/apply"
+            href="/diagnostic"
             className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
-            aria-label="Apply to work with our strategy and systems team"
+            aria-label="Start a diagnostic"
           >
-            Apply to Work With Us
+            Start With a Diagnostic
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
               <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
           <a
-            href="#how-we-work"
+            href="/how-we-work"
             className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
-            aria-label="Learn about our four-step approach"
+            aria-label="Learn about our approach"
           >
             See How We Work
           </a>

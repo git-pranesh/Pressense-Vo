@@ -45,7 +45,7 @@ const workFAQs = [
     answer: (
       <>
         Buyers should look for evidence of judgment: whether the problem was diagnosed properly, whether the solution matched the stage of the business, and whether the work created more clarity, visibility, consistency, or execution leverage. Ready to{' '}
-        <Link href="/apply" className="text-primary hover:underline">discuss a similar problem</Link>?
+        <Link href="/diagnostic" className="text-primary hover:underline">discuss a similar problem</Link>?
       </>
     ),
   },

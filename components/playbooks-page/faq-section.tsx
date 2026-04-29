@@ -35,7 +35,7 @@ const playbooksFAQs = [
     answer: (
       <>
         No. Playbooks can help you think better, but they cannot fully assess your business context. A{' '}
-        <Link href="/apply" className="text-primary hover:underline">diagnostic</Link>{' '}
+        <Link href="/diagnostic" className="text-primary hover:underline">diagnostic</Link>{' '}
         is more specific because it looks at your actual market, offer, team, systems, workflows, and execution gaps.
       </>
     ),

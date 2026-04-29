@@ -75,7 +75,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'How We Work', href: '/how-we-work' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'What is a founder bottleneck?', answer: 'A founder bottleneck happens when too many decisions, approvals, relationships, or workflows depend on the founder. The business may be growing, but execution slows because the team cannot move without founder input.' },
@@ -164,7 +164,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'Advisory & Strategy', href: '/advisory-strategy' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'What is pricing leakage?', answer: 'Pricing leakage happens when the business loses value through underpricing, excessive discounts, unclear packages, poor qualification, or delivery effort that is not reflected in the price.' },
@@ -254,7 +254,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'Advisory & Strategy', href: '/advisory-strategy' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'Why do sales and marketing get disconnected?', answer: 'They often work from different definitions of the buyer, offer, problem, and success. Without shared language and feedback, marketing creates activity while sales handles objections separately.' },
@@ -344,7 +344,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'What is customer onboarding?', answer: 'Customer onboarding is the process that helps a new customer understand, adopt, and get value from what they purchased. Good onboarding creates clarity, confidence, and early success.' },
@@ -434,7 +434,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
       { name: 'Advisory & Strategy', href: '/advisory-strategy' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'What is a visibility system?', answer: 'A visibility system is a repeatable way to turn expertise into market-facing content, website clarity, trust signals, and authority assets.' },
@@ -524,7 +524,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
       { name: 'How We Work', href: '/how-we-work' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'What is systems debt?', answer: 'Systems debt is the operational mess that builds when a business grows on top of spreadsheets, manual work, disconnected tools, unclear ownership, and undocumented processes.' },
@@ -617,7 +617,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Advisory & Strategy', href: '/advisory-strategy' },
       { name: 'What We Fix', href: '/what-we-fix' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'Why do good-looking websites fail?', answer: 'A website can look polished and still fail if buyers do not understand what the business does, who it helps, why it matters, and what to do next.' },
@@ -708,7 +708,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
       { name: 'Advisory & Strategy', href: '/advisory-strategy' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'Why do CRMs fail?', answer: 'CRMs often fail because the process is unclear, fields are poorly designed, ownership is weak, data quality is low, or the team does not see value in using the system.' },
@@ -798,7 +798,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'What is AI workflow readiness?', answer: 'AI workflow readiness means a process has clear inputs, outputs, ownership, review standards, and enough repetition for AI to support it without creating more confusion.' },
@@ -888,7 +888,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
       { name: 'How We Work', href: '/how-we-work' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'When should a business build an internal tool?', answer: 'Build when the workflow is repeated, important, painful, involves multiple people, affects revenue or delivery, and is not handled well by current tools.' },
@@ -979,7 +979,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'What is GTM clarity?', answer: 'GTM clarity means the business knows who it is targeting, what problem it solves, how to position the offer, what message to lead with, and which channels deserve focus.' },
@@ -1071,7 +1071,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
-      { name: 'Apply', href: '/apply' },
+      { name: 'Start Diagnostic', href: '/diagnostic' },
     ],
     faqs: [
       { question: 'What is revenue leakage?', answer: 'Revenue leakage is value lost through missed leads, slow follow-up, poor qualification, excessive discounting, weak handoffs, unclear margins, delivery inefficiency, or poor retention.' },

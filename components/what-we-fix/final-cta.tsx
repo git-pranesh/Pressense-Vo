@@ -33,11 +33,11 @@ export function WhatWeFixCTA() {
 
           {/* CTA button */}
           <Link
-            href="/apply"
+            href="/diagnostic"
             className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
-            aria-label="Go to the application page"
+            aria-label="Start a diagnostic"
           >
-            Apply to Work With Us
+            Start With a Diagnostic
             <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
               <svg
                 width="10"

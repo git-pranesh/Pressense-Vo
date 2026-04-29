@@ -15,7 +15,7 @@ export function CustomToolsHero() {
             When growth creates operational chaos, the answer is not always another SaaS subscription. We help teams diagnose broken workflows, design better systems, and build internal tools that create visibility, ownership, and scale.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="/apply" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
+            <a href="/diagnostic" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
               Start With a Diagnostic
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                 <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

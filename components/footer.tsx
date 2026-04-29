@@ -24,7 +24,7 @@ export function Footer() {
             { label: 'How We Work', href: '/how-we-work' },
             { label: 'Work', href: '/work' },
             { label: 'Playbooks', href: '/playbooks' },
-            { label: 'Apply', href: '/apply' },
+            { label: 'Start Diagnostic', href: '/diagnostic' },
           ].map((link) => (
             <a
               key={link.label}

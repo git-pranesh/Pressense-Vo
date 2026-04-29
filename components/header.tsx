@@ -120,11 +120,11 @@ export function Header() {
         {/* CTA */}
         <div className="hidden md:block">
           <Link
-            href="/apply"
+            href="/diagnostic"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors duration-200"
-            aria-label="Apply to work with our team"
+            aria-label="Start a diagnostic"
           >
-            Apply
+            Start Diagnostic
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -204,12 +204,12 @@ export function Header() {
           </div>
           
           <Link
-            href="/apply"
+            href="/diagnostic"
             className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground w-fit"
             onClick={() => setMenuOpen(false)}
-            aria-label="Apply to work with our team"
+            aria-label="Start a diagnostic"
           >
-            Apply
+            Start Diagnostic
           </Link>
         </div>
       )}

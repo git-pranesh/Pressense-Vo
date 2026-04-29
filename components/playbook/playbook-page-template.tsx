@@ -145,10 +145,10 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
 
                 <div className="mt-8 pt-8 border-t border-border/40">
                   <Link
-                    href="/apply"
+                    href="/diagnostic"
                     className="inline-flex items-center justify-center w-full gap-2 px-4 py-3 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
                   >
-                    Start a diagnostic
+                    Start Diagnostic
                   </Link>
                 </div>
               </div>
@@ -316,23 +316,23 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
                 <section className="pt-8 border-t border-border/40">
                   <div className="glass-card rounded-2xl p-8 border border-border/40 text-center">
                     <h2 className="text-2xl font-semibold text-foreground mb-4">
-                      Ready to apply this playbook?
+                      Want to diagnose this in your business?
                     </h2>
                     <p className="text-base text-muted-foreground mb-6">
-                      Start with a diagnostic to understand your specific situation.
+                      If this constraint feels familiar, start with a diagnostic. We will look at the business context before recommending a system, workflow, website, content layer, or advisory path.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Link
-                        href="/apply"
+                        href={`/diagnostic?constraint=${playbook.slug}`}
                         className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
                       >
-                        Start a diagnostic
+                        Start With a Diagnostic
                       </Link>
                       <Link
                         href="/playbooks"
                         className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-base font-medium bg-secondary text-foreground hover:bg-secondary/80 border border-border/40 transition-all duration-200"
                       >
-                        Back to playbooks
+                        Back to Playbooks
                       </Link>
                     </div>
                   </div>

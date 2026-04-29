@@ -15,7 +15,7 @@ export function CrmErpHero() {
             Most businesses do not need more software. They need a clearer operating system for leads, customers, delivery, finance, reporting, ownership, and follow-up. We help design and build CRM and ERP-lite systems that reflect how the business actually runs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="/apply" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
+            <a href="/diagnostic" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
               Start With a Diagnostic
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                 <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
