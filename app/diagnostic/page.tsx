@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { DiagnosticHero } from '@/components/diagnostic/diagnostic-hero'
@@ -8,6 +9,7 @@ import { NotForSection } from '@/components/apply/not-for-section'
 import { ProcessSection } from '@/components/apply/process-section'
 import { DiagnosticForm } from '@/components/diagnostic/diagnostic-form'
 import { DiagnosticFAQSection } from '@/components/diagnostic/faq-section'
+import { Spinner } from '@/components/ui/spinner'
 
 export const metadata: Metadata = {
   title: 'Start Diagnostic | Pressense Strategy & Systems',
@@ -38,7 +40,9 @@ export default function DiagnosticPage() {
         <NotForSection />
         <ProcessSection />
         <DiagnosticFAQSection />
-        <DiagnosticForm />
+        <Suspense fallback={<div className="py-20 flex justify-center"><Spinner className="h-8 w-8" /></div>}>
+          <DiagnosticForm />
+        </Suspense>
       </main>
       <Footer />
     </>
