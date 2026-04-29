@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'How We Work', href: '/how-we-work' },
   { label: 'Work', href: '/work' },
   { label: 'Playbooks', href: '/playbooks' },
+  { label: 'Solutions', href: '/custom-internal-tools' },
 ]
 
 export function Header() {
