@@ -101,7 +101,7 @@ export function Header() {
             </button>
             
             {solutionsOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 glass-card rounded-xl border border-border/60 p-2 shadow-xl">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-background rounded-xl border border-border/60 p-2 shadow-xl">
                 {solutionsDropdown.map((item) => (
                   <Link
                     key={item.label}
@@ -152,7 +152,7 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden glass-card border-t border-border/40 px-6 py-5 flex flex-col gap-4">
+        <div className="md:hidden fixed inset-0 top-16 bg-background border-t border-border/40 px-6 py-5 flex flex-col gap-4 overflow-y-auto">
           {navLinks.map((link) => (
             <Link
               key={link.label}
