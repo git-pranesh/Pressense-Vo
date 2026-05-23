@@ -8,6 +8,15 @@ import BurnRateCalculator from './calculators/burn-rate-calculator'
 import ChurnRateCalculator from './calculators/churn-rate-calculator'
 import NRRCalculator from './calculators/nrr-calculator'
 import SaasGrowthCalculator from './calculators/saas-growth-calculator'
+import CACPaybackCalculator from './calculators/cac-payback-calculator'
+import ARRMRRCalculator from './calculators/arr-mrr-calculator'
+import SaasValuationCalculator from './calculators/saas-valuation-calculator'
+import ICPScoreCalculator from './calculators/icp-score-calculator'
+import GTMROICalculator from './calculators/gtm-roi-calculator'
+import ContentMarketingROICalculator from './calculators/content-marketing-roi-calculator'
+import LeadScoringCalculator from './calculators/lead-scoring-calculator'
+import FunnelConversionCalculator from './calculators/funnel-conversion-calculator'
+import BreakEvenCalculator from './calculators/break-even-calculator'
 
 const CALCULATOR_COMPONENTS: Record<string, React.ComponentType> = {
   'cac-calculator': CACCalculator,
@@ -17,6 +26,15 @@ const CALCULATOR_COMPONENTS: Record<string, React.ComponentType> = {
   'churn-rate-calculator': ChurnRateCalculator,
   'nrr-calculator': NRRCalculator,
   'saas-growth-calculator': SaasGrowthCalculator,
+  'cac-payback-calculator': CACPaybackCalculator,
+  'arr-mrr-calculator': ARRMRRCalculator,
+  'saas-valuation-calculator': SaasValuationCalculator,
+  'icp-score-calculator': ICPScoreCalculator,
+  'gtm-roi-calculator': GTMROICalculator,
+  'content-marketing-roi-calculator': ContentMarketingROICalculator,
+  'lead-scoring-calculator': LeadScoringCalculator,
+  'funnel-conversion-calculator': FunnelConversionCalculator,
+  'break-even-calculator': BreakEvenCalculator,
 }
 
 interface Props {

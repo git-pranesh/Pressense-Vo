@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { playbooks } from '@/lib/playbooks-data'
+import { calculatorsData } from '@/lib/calculators'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.pressense.co'
@@ -92,5 +93,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...corePages, ...solutionPages, ...playbookPages]
+  // Tools index page
+  const toolsIndexPage: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/tools`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+  ]
+
+  // Individual calculator pages
+  const calculatorPages: MetadataRoute.Sitemap = calculatorsData.map((calc) => ({
+    url: `${baseUrl}/tools/${calc.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  return [...corePages, ...solutionPages, ...playbookPages, ...toolsIndexPage, ...calculatorPages]
 }

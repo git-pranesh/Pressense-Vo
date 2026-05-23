@@ -219,6 +219,267 @@ export const calculatorsData: CalculatorMeta[] = [
       },
     ],
   },
+  {
+    id: 'cac-payback',
+    slug: 'cac-payback-calculator',
+    title: 'CAC Payback Period Calculator',
+    shortDescription: 'Find out how long it takes to recover acquisition costs.',
+    description:
+      'Calculate the number of months required to earn back the cash spent acquiring a customer. A crucial metric for capital efficiency.',
+    category: 'Unit Economics',
+    formula: 'Payback Months = CAC / (ARPU × Gross Margin %)',
+    benchmarks: 'Excellent: < 12 months. Good: 12-18 months. Poor: > 24 months.',
+    relatedSlugs: ['cac-calculator', 'ltv-cac-ratio-calculator', 'burn-rate-calculator'],
+    faqs: [
+      {
+        question: 'Why does payback period matter?',
+        answer:
+          'Payback period determines how fast capital recycles. A 12-month payback means you can reinvest each acquisition dollar in growth within a year. A 36-month payback means scaling requires far more cash on hand for the same growth rate.',
+      },
+      {
+        question: 'How does gross margin affect payback?',
+        answer:
+          'If your gross margin is 50%, only half of each revenue dollar goes toward paying back CAC. Going from 50% to 80% gross margin compresses payback by 37%. Margin improvement is often the highest-leverage way to fix payback.',
+      },
+      {
+        question: 'Should I use ARR or MRR for payback?',
+        answer:
+          'Use monthly contribution margin (MRR × gross margin). The output is in months, which is the unit operators and investors actually use to compare across companies. Annual numbers obscure cash timing.',
+      },
+    ],
+  },
+  {
+    id: 'arr-mrr',
+    slug: 'arr-mrr-calculator',
+    title: 'ARR / MRR Calculator',
+    shortDescription: 'Decompose MRR into new, expansion, contraction, and churn.',
+    description:
+      'Convert between MRR and ARR while breaking down the four movements that drive net new MRR. Includes SaaS Quick Ratio for growth-quality scoring.',
+    category: 'SaaS Growth',
+    formula: 'Net New MRR = New + Expansion - Contraction - Churn. Quick Ratio = (New + Expansion) / (Contraction + Churn).',
+    benchmarks: 'Quick Ratio: 4+ excellent, 2-4 healthy, 1-2 at risk, <1 unsustainable.',
+    relatedSlugs: ['nrr-calculator', 'saas-growth-calculator', 'churn-rate-calculator'],
+    faqs: [
+      {
+        question: "What's the difference between MRR and ARR?",
+        answer:
+          'MRR is monthly recurring revenue; ARR is MRR x 12. ARR is the standard metric for board reporting and valuation. MRR is the operational metric for tracking month-over-month movement. Both numbers describe the same business, just at different cadences.',
+      },
+      {
+        question: 'What is the SaaS Quick Ratio?',
+        answer:
+          "Quick Ratio = (New MRR + Expansion MRR) / (Contraction MRR + Churned MRR). It measures growth efficiency: a ratio of 4 means you're adding $4 of revenue for every $1 leaking out. Public-grade SaaS companies generally run 3-4+.",
+      },
+      {
+        question: 'What counts as expansion vs new?',
+        answer:
+          "New MRR is from a brand-new logo. Expansion MRR is revenue growth from an existing customer (more seats, higher tier, add-on modules). Drawing this line clearly is essential — investors will ask, and conflating them hides the health of your retention motion.",
+      },
+    ],
+  },
+  {
+    id: 'saas-valuation',
+    slug: 'saas-valuation-calculator',
+    title: 'SaaS Valuation Calculator',
+    shortDescription: 'Estimate SaaS company value from ARR, growth, and NRR.',
+    description:
+      'Apply growth-adjusted ARR multiples plus NRR and Rule of 40 modifiers to estimate enterprise value. The same framework used by SaaS investors and acquirers.',
+    category: 'Finance',
+    formula: 'Valuation = ARR × Multiple. Multiple driven by growth rate, NRR, and Rule of 40.',
+    benchmarks: 'Public SaaS median: 6-8x ARR. Top quartile: 12x+ at high growth and NRR > 120%.',
+    relatedSlugs: ['arr-mrr-calculator', 'nrr-calculator', 'saas-growth-calculator'],
+    faqs: [
+      {
+        question: "What's the Rule of 40?",
+        answer:
+          'Growth Rate % + Profit Margin % >= 40. It captures the tradeoff between growth and efficiency: a company can be 50% growth and -10% margin (40), or 20% growth and 20% margin (40), and both clear the bar. Below 40 typically gets a valuation discount.',
+      },
+      {
+        question: 'Why does NRR matter so much for valuation?',
+        answer:
+          'NRR > 100% means the existing book grows even with zero new logos — a near-zero-CAC growth engine. Public markets reward this with multiple expansion: companies at 130%+ NRR consistently trade at 1.3-1.5x the multiple of comparable companies at 100% NRR.',
+      },
+      {
+        question: 'Are these multiples realistic in current markets?',
+        answer:
+          'Multiples compress and expand with capital markets. The framework here uses normalized post-2023 multiples. In hot markets, multiply outputs by 1.3-1.5x; in cold markets, by 0.6-0.8x. Use this as a relative benchmark, not an absolute number.',
+      },
+    ],
+  },
+  {
+    id: 'icp-score',
+    slug: 'icp-score-calculator',
+    title: 'Ideal Customer Profile Score',
+    shortDescription: 'Grade prospects against your ideal customer criteria.',
+    description:
+      'Evaluate how well a prospect matches your Ideal Customer Profile. Focus sales resources on high-probability, high-value accounts.',
+    category: 'Strategy',
+    formula: 'ICP Score = Weighted sum of firmographic and demographic fit.',
+    benchmarks: 'Tier A: >85. Tier B: 70-85. Tier C/D: <70.',
+    relatedSlugs: ['lead-scoring-calculator', 'funnel-conversion-calculator'],
+    faqs: [
+      {
+        question: 'What makes a good ICP?',
+        answer:
+          "A good ICP describes who gets the most value from your product, who is fastest to close, and who has the highest retention. Look at your top-decile customers by NRR and tenure — that's your real ICP, not your wishlist.",
+      },
+      {
+        question: 'Should we reject low ICP scores?',
+        answer:
+          'Not always reject, but always prioritize. Tier A gets senior AE attention. Tier B gets standard cycles. Tier C/D should go to automated low-touch nurture or be referred out. Burning AE cycles on misfit accounts is the most expensive mistake in sales.',
+      },
+      {
+        question: 'How is ICP different from a buyer persona?',
+        answer:
+          'ICP describes the company (firmographics: size, industry, tech stack, growth stage). Persona describes the buyer (role, seniority, pain). You need both — ICP determines whether to pursue an account; persona determines how to sell into it.',
+      },
+    ],
+  },
+  {
+    id: 'gtm-roi',
+    slug: 'gtm-roi-calculator',
+    title: 'Go-to-Market ROI Calculator',
+    shortDescription: 'Measure the return on your overall GTM investments.',
+    description:
+      'Assess the efficiency of your combined sales, marketing, and product-led growth spend relative to the revenue generated.',
+    category: 'GTM/Marketing',
+    formula: 'GTM ROI = ((Revenue - GTM Spend) / GTM Spend) × 100',
+    benchmarks: 'Target >3x multiple for sustainable growth.',
+    relatedSlugs: ['cac-calculator', 'content-marketing-roi-calculator', 'funnel-conversion-calculator'],
+    faqs: [
+      {
+        question: 'What is included in GTM Spend?',
+        answer:
+          'All marketing program spend, sales commissions, GTM tooling, agency fees, events, and fully loaded salaries for the entire revenue org (sales, marketing, sales development, partner). If it touches a prospect or customer pre-close, it counts.',
+      },
+      {
+        question: "What's a healthy GTM ROI multiple?",
+        answer:
+          "3x is the sustainable benchmark — every $1 of GTM spend returns $3 in new revenue. Below 2x suggests you're scaling unprofitably. Above 5x usually means you're under-investing in growth and competitors will out-pace you.",
+      },
+      {
+        question: 'How do I improve GTM ROI quickly?',
+        answer:
+          'Three highest-leverage moves: kill the bottom 20% of channel spend (almost always recoverable), tighten ICP to raise close rates, and cut sales cycle by removing handoff friction. All three improve ROI without requiring more spend.',
+      },
+    ],
+  },
+  {
+    id: 'content-roi',
+    slug: 'content-marketing-roi-calculator',
+    title: 'Content Marketing ROI Calculator',
+    shortDescription: 'Evaluate the financial impact of your content efforts.',
+    description:
+      'Translate content views, leads, and conversion rates into actual revenue and ROI. Prove the value of inbound marketing.',
+    category: 'GTM/Marketing',
+    formula: 'ROI = ((Content Revenue - Content Spend) / Content Spend) × 100',
+    benchmarks: 'Content takes 6-12mo to show strong positive ROI.',
+    relatedSlugs: ['gtm-roi-calculator', 'funnel-conversion-calculator', 'lead-scoring-calculator'],
+    faqs: [
+      {
+        question: 'How do I attribute revenue to content?',
+        answer:
+          "Use first-touch attribution to measure top-of-funnel impact, last-touch for bottom-of-funnel, and multi-touch for the full picture. Different attribution models tell different stories — track all three and don't optimize for any single one in isolation.",
+      },
+      {
+        question: 'How long until content shows positive ROI?',
+        answer:
+          "Typical SEO-driven content takes 6-12 months to rank and start generating meaningful pipeline. If you're earlier than 6 months, expect to be in negative ROI territory; the math works on the back end. Investors who push for short-term content ROI usually break the asset.",
+      },
+      {
+        question: 'What content types drive the highest ROI?',
+        answer:
+          'High-intent comparison pages and tools/calculators (like this one) typically convert at 5-10x the rate of top-of-funnel blog posts. They capture late-stage buyers actively evaluating solutions. Lead with intent, not volume.',
+      },
+    ],
+  },
+  {
+    id: 'lead-scoring',
+    slug: 'lead-scoring-calculator',
+    title: 'B2B Lead Scoring Calculator',
+    shortDescription: 'Rank inbound leads to prioritize sales outreach.',
+    description:
+      'Apply BANT or CHAMP frameworks to quantify prospect readiness. Ensure sales reps spend time on leads that will actually close.',
+    category: 'GTM/Marketing',
+    formula: 'Score = Sum of criteria points (Budget, Authority, Need, Timeline)',
+    benchmarks: 'Hot: >80 (Immediate action). Warm: 50-80 (Nurture).',
+    relatedSlugs: ['icp-score-calculator', 'funnel-conversion-calculator', 'content-marketing-roi-calculator'],
+    faqs: [
+      {
+        question: 'BANT vs CHAMP — which should I use?',
+        answer:
+          "BANT (Budget, Authority, Need, Timeline) is seller-centric and works in well-defined buying processes. CHAMP (Challenges, Authority, Money, Prioritization) leads with the prospect's pain and works better for consultative sales and modern PLG-influenced buyers.",
+      },
+      {
+        question: 'When should marketing pass a lead to sales?',
+        answer:
+          "When the lead crosses the agreed MQL threshold (fit + intent). The exact score depends on your pipeline conversion math — calibrate it backwards from the close rate you need, not by gut feel.",
+      },
+      {
+        question: "What's the cost of bad lead scoring?",
+        answer:
+          "Reps waste cycles on cold leads, hot leads cool while waiting, and the funnel quietly leaks revenue. The single most powerful lever in B2B sales is response time — getting a hot lead to a rep within 5 minutes can lift conversion 5-10x vs. 24 hours.",
+      },
+    ],
+  },
+  {
+    id: 'funnel-conversion',
+    slug: 'funnel-conversion-calculator',
+    title: 'Full-Funnel Conversion Calculator',
+    shortDescription: 'Identify leaks in your revenue generation engine.',
+    description:
+      'Map your conversion rates from raw visitor all the way to closed-won customer. Find exactly where prospects are falling out of the pipeline.',
+    category: 'GTM/Marketing',
+    formula: 'Overall Conversion = Customers / Total Top-of-Funnel Visitors',
+    benchmarks: 'Visitor to Lead: 2-5%. Lead to MQL: 10-30%. MQL to SQL: 20-50%. SQL to Close: 20-30%.',
+    relatedSlugs: ['lead-scoring-calculator', 'content-marketing-roi-calculator', 'gtm-roi-calculator'],
+    faqs: [
+      {
+        question: 'How do I fix a leaky funnel?',
+        answer:
+          'Find the single stage with the largest drop-off relative to benchmarks and fix that one first. Optimization at the weakest stage compounds through every later stage. Optimizing already-strong stages produces diminishing returns.',
+      },
+      {
+        question: 'Why track revenue per visitor?',
+        answer:
+          'RPV normalizes funnel efficiency into a single number. If your RPV is $5, you can profitably spend up to $4.99 per visitor on ads. Tracking RPV over time reveals whether funnel improvements are real or just driven by traffic mix changes.',
+      },
+      {
+        question: 'What are MQL vs SQL definitions?',
+        answer:
+          "MQL (Marketing Qualified Lead) meets a fit + intent threshold but hasn't been validated by sales. SQL (Sales Qualified Lead) has been actively reviewed and accepted by an AE. The handoff between MQL and SQL is where the most pipeline silently dies.",
+      },
+    ],
+  },
+  {
+    id: 'break-even',
+    slug: 'break-even-calculator',
+    title: 'Break-Even Calculator',
+    shortDescription: 'Calculate when your business becomes profitable.',
+    description:
+      'Determine the unit volume or time required to cover fixed and variable costs. Essential for pricing decisions and profitability planning.',
+    category: 'Finance',
+    formula: 'Break-Even Units = Fixed Costs / (Price - Variable Cost per Unit)',
+    benchmarks: 'Earlier break-even = lower risk. Target break-even within 12-18 months for startups.',
+    relatedSlugs: ['burn-rate-calculator', 'saas-pricing-calculator'],
+    faqs: [
+      {
+        question: 'What are fixed vs variable costs?',
+        answer:
+          'Fixed costs stay constant regardless of sales volume (rent, salaries, software). Variable costs scale with each unit sold (hosting per user, payment processing fees). SaaS businesses typically have high fixed costs and low variable costs.',
+      },
+      {
+        question: 'How does contribution margin affect break-even?',
+        answer:
+          'Higher contribution margin (price minus variable cost) means fewer units needed to break even. Increasing price or reducing variable costs directly compresses your break-even point.',
+      },
+      {
+        question: 'Should I include one-time costs?',
+        answer:
+          'Include them in your initial break-even analysis to understand total cash required. But track ongoing break-even (excluding sunk costs) separately — that tells you when the business is self-sustaining.',
+      },
+    ],
+  },
 ]
 
 export function getCalculatorBySlug(slug: string): CalculatorMeta | undefined {
