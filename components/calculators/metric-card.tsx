@@ -1,5 +1,28 @@
 import type { ReactNode } from 'react'
 
+interface MetricCardProps {
+  label: string
+  value: ReactNode
+  sublabel?: ReactNode
+  accent?: 'primary' | 'secondary' | 'default'
+}
+
+export function MetricCard({ label, value, sublabel, accent = 'default' }: MetricCardProps) {
+  const colorClass =
+    accent === 'primary' ? 'text-primary' : accent === 'secondary' ? 'text-secondary' : 'text-foreground'
+  return (
+    <div className="rounded-xl border border-border/60 bg-background/40 p-4">
+      <p className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-2">{label}</p>
+      <p className={`text-xl sm:text-2xl font-semibold tracking-tight ${colorClass}`}>{value}</p>
+      {sublabel && <p className="mt-1 text-xs text-muted-foreground">{sublabel}</p>}
+    </div>
+  )
+}
+
+export function MetricGrid({ children }: { children: ReactNode }) {
+  return <div className="grid gap-3 grid-cols-2 lg:grid-cols-4">{children}</div>
+}
+
 interface PrimaryProps {
   label: string
   value: ReactNode
