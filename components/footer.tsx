@@ -24,6 +24,7 @@ export function Footer() {
             { label: 'How We Work', href: '/how-we-work' },
             { label: 'Work', href: '/work' },
             { label: 'Playbooks', href: '/playbooks' },
+            { label: 'Tools', href: '/tools' },
             { label: 'Start Diagnostic', href: '/diagnostic' },
           ].map((link) => (
             <a
