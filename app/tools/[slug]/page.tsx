@@ -1,40 +1,151 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { calculatorsData, getCalculatorBySlug } from '@/lib/calculators'
+
+// Unit Economics
 import CACCalculator from './calculators/cac-calculator'
 import LTVCalculator from './calculators/ltv-calculator'
 import LTVCACRatioCalculator from './calculators/ltv-cac-ratio-calculator'
-import BurnRateCalculator from './calculators/burn-rate-calculator'
+import CACPaybackCalculator from './calculators/cac-payback-calculator'
+
+// SaaS Growth
+import SaasGrowthCalculator from './calculators/saas-growth-calculator'
+import ARRMRRCalculator from './calculators/arr-mrr-calculator'
+
+// Retention
 import ChurnRateCalculator from './calculators/churn-rate-calculator'
 import NRRCalculator from './calculators/nrr-calculator'
-import SaasGrowthCalculator from './calculators/saas-growth-calculator'
-import CACPaybackCalculator from './calculators/cac-payback-calculator'
-import ARRMRRCalculator from './calculators/arr-mrr-calculator'
+import CustomerHealthScoreCalculator from './calculators/customer-health-score'
+import RevenueChurnCalculator from './calculators/revenue-churn-calculator'
+import CustomerRetentionCostCalculator from './calculators/customer-retention-cost-calculator'
+import ExpansionRevenueCalculator from './calculators/expansion-revenue-calculator'
+import AtRiskCustomerIdentifierCalculator from './calculators/at-risk-customer-identifier'
+
+// Finance
+import BurnRateCalculator from './calculators/burn-rate-calculator'
+import BreakEvenCalculator from './calculators/break-even-calculator'
 import SaasValuationCalculator from './calculators/saas-valuation-calculator'
-import ICPScoreCalculator from './calculators/icp-score-calculator'
+import CashRunwayCalculator from './calculators/cash-runway-calculator'
+import CapTableCalculator from './calculators/cap-table-calculator'
+import SAFENoteCalculator from './calculators/safe-note-calculator'
+import FounderDilutionCalculator from './calculators/founder-dilution-calculator'
+import CoFounderEquitySplitCalculator from './calculators/co-founder-equity-split-calculator'
+import SaasPricingCalculator from './calculators/saas-pricing-calculator'
+import PriceElasticityCalculator from './calculators/price-elasticity-calculator'
+import PricingTierOptimizerCalculator from './calculators/pricing-tier-optimizer'
+
+// GTM/Marketing
 import GTMROICalculator from './calculators/gtm-roi-calculator'
 import ContentMarketingROICalculator from './calculators/content-marketing-roi-calculator'
 import LeadScoringCalculator from './calculators/lead-scoring-calculator'
 import FunnelConversionCalculator from './calculators/funnel-conversion-calculator'
-import BreakEvenCalculator from './calculators/break-even-calculator'
+import MarketingROICalculator from './calculators/marketing-roi-calculator'
+import PPCAdROICalculator from './calculators/ppc-ad-roi-calculator'
+import ContentPublishingROICalculator from './calculators/content-publishing-roi-calculator'
+import LinkedInPersonalBrandROICalculator from './calculators/linkedin-personal-brand-roi-calculator'
+import ThoughtLeadershipImpactCalculator from './calculators/thought-leadership-impact-calculator'
+import ConversionRateCalculator from './calculators/conversion-rate-calculator'
+import LeadToCustomerCalculator from './calculators/lead-to-customer-calculator'
+import MQLtoSQLCalculator from './calculators/mql-to-sql-calculator'
+import LeadQualificationMatrixCalculator from './calculators/lead-qualification-matrix'
+import PipelineCoverageCalculator from './calculators/pipeline-coverage-calculator'
+import SalesFunnelVelocityCalculator from './calculators/sales-funnel-velocity-calculator'
+
+// Strategy
+import ICPScoreCalculator from './calculators/icp-score-calculator'
+import CustomerInterviewROICalculator from './calculators/customer-interview-roi-calculator'
+import ValuePropositionCalculator from './calculators/value-proposition-calculator'
+import DecisionSpeedCalculator from './calculators/decision-speed-calculator'
+import ShouldYouPivotCalculator from './calculators/should-you-pivot-calculator'
+import MarketEntryReadinessScoreCalculator from './calculators/market-entry-readiness-score'
+
+// People & Ops
+import QuotaAttainmentCalculator from './calculators/quota-attainment-calculator'
+import SalesCommissionCalculator from './calculators/sales-commission-calculator'
+import SalesRampTimeCalculator from './calculators/sales-ramp-time-calculator'
+import WorkflowAutomationROICalculator from './calculators/workflow-automation-roi-calculator'
+import NoCodeBuildVsBuyCalculator from './calculators/no-code-build-vs-buy-calculator'
+import SystemIntegrationROICalculator from './calculators/system-integration-roi-calculator'
+import ManualVsAutomatedProcessCalculator from './calculators/manual-vs-automated-process-calculator'
+import TechnicalDebtCalculator from './calculators/technical-debt-calculator'
+import TeamCapacityCalculator from './calculators/team-capacity-calculator'
+import HiringROICalculator from './calculators/hiring-roi-calculator'
+import MeetingCostCalculator from './calculators/meeting-cost-calculator'
+import FounderBurnoutRiskCalculator from './calculators/founder-burnout-risk-calculator'
+import RemoteVsOfficeROICalculator from './calculators/remote-vs-office-roi-calculator'
 
 const CALCULATOR_COMPONENTS: Record<string, React.ComponentType> = {
+  // Unit Economics
   'cac-calculator': CACCalculator,
   'ltv-calculator': LTVCalculator,
   'ltv-cac-ratio-calculator': LTVCACRatioCalculator,
-  'burn-rate-calculator': BurnRateCalculator,
+  'cac-payback-calculator': CACPaybackCalculator,
+  
+  // SaaS Growth
+  'saas-growth-calculator': SaasGrowthCalculator,
+  'arr-mrr-calculator': ARRMRRCalculator,
+  
+  // Retention
   'churn-rate-calculator': ChurnRateCalculator,
   'nrr-calculator': NRRCalculator,
-  'saas-growth-calculator': SaasGrowthCalculator,
-  'cac-payback-calculator': CACPaybackCalculator,
-  'arr-mrr-calculator': ARRMRRCalculator,
+  'customer-health-score': CustomerHealthScoreCalculator,
+  'revenue-churn-calculator': RevenueChurnCalculator,
+  'customer-retention-cost-calculator': CustomerRetentionCostCalculator,
+  'expansion-revenue-calculator': ExpansionRevenueCalculator,
+  'at-risk-customer-identifier': AtRiskCustomerIdentifierCalculator,
+  
+  // Finance
+  'burn-rate-calculator': BurnRateCalculator,
+  'break-even-calculator': BreakEvenCalculator,
   'saas-valuation-calculator': SaasValuationCalculator,
-  'icp-score-calculator': ICPScoreCalculator,
+  'cash-runway-calculator': CashRunwayCalculator,
+  'cap-table-calculator': CapTableCalculator,
+  'safe-note-calculator': SAFENoteCalculator,
+  'founder-dilution-calculator': FounderDilutionCalculator,
+  'co-founder-equity-split-calculator': CoFounderEquitySplitCalculator,
+  'saas-pricing-calculator': SaasPricingCalculator,
+  'price-elasticity-calculator': PriceElasticityCalculator,
+  'pricing-tier-optimizer': PricingTierOptimizerCalculator,
+  
+  // GTM/Marketing
   'gtm-roi-calculator': GTMROICalculator,
   'content-marketing-roi-calculator': ContentMarketingROICalculator,
   'lead-scoring-calculator': LeadScoringCalculator,
   'funnel-conversion-calculator': FunnelConversionCalculator,
-  'break-even-calculator': BreakEvenCalculator,
+  'marketing-roi-calculator': MarketingROICalculator,
+  'ppc-ad-roi-calculator': PPCAdROICalculator,
+  'content-publishing-roi-calculator': ContentPublishingROICalculator,
+  'linkedin-personal-brand-roi-calculator': LinkedInPersonalBrandROICalculator,
+  'thought-leadership-impact-calculator': ThoughtLeadershipImpactCalculator,
+  'conversion-rate-calculator': ConversionRateCalculator,
+  'lead-to-customer-calculator': LeadToCustomerCalculator,
+  'mql-to-sql-calculator': MQLtoSQLCalculator,
+  'lead-qualification-matrix': LeadQualificationMatrixCalculator,
+  'pipeline-coverage-calculator': PipelineCoverageCalculator,
+  'sales-funnel-velocity-calculator': SalesFunnelVelocityCalculator,
+  
+  // Strategy
+  'icp-score-calculator': ICPScoreCalculator,
+  'customer-interview-roi-calculator': CustomerInterviewROICalculator,
+  'value-proposition-calculator': ValuePropositionCalculator,
+  'decision-speed-calculator': DecisionSpeedCalculator,
+  'should-you-pivot-calculator': ShouldYouPivotCalculator,
+  'market-entry-readiness-score': MarketEntryReadinessScoreCalculator,
+  
+  // People & Ops
+  'quota-attainment-calculator': QuotaAttainmentCalculator,
+  'sales-commission-calculator': SalesCommissionCalculator,
+  'sales-ramp-time-calculator': SalesRampTimeCalculator,
+  'workflow-automation-roi-calculator': WorkflowAutomationROICalculator,
+  'no-code-build-vs-buy-calculator': NoCodeBuildVsBuyCalculator,
+  'system-integration-roi-calculator': SystemIntegrationROICalculator,
+  'manual-vs-automated-process-calculator': ManualVsAutomatedProcessCalculator,
+  'technical-debt-calculator': TechnicalDebtCalculator,
+  'team-capacity-calculator': TeamCapacityCalculator,
+  'hiring-roi-calculator': HiringROICalculator,
+  'meeting-cost-calculator': MeetingCostCalculator,
+  'founder-burnout-risk-calculator': FounderBurnoutRiskCalculator,
+  'remote-vs-office-roi-calculator': RemoteVsOfficeROICalculator,
 }
 
 interface Props {
