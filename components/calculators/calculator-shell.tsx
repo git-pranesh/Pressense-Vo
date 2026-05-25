@@ -7,20 +7,30 @@ import type { CalculatorMeta } from '@/lib/calculators/types'
 import { calculatorsData } from '@/lib/calculators/data'
 
 interface Props {
-  meta: CalculatorMeta
-  inputs: ReactNode
-  results: ReactNode
-  interpretation: string
+  meta?: CalculatorMeta
+  calculator?: CalculatorMeta
+  children?: ReactNode
+  inputs?: ReactNode
+  results?: ReactNode
+  interpretation?: string
 }
 
 const FINANCIAL_CATEGORIES = new Set(['Unit Economics', 'Finance', 'SaaS Growth', 'Retention'])
 
-export function CalculatorShell({ meta, inputs, results, interpretation }: Props) {
-  const related = meta.relatedSlugs
+export function CalculatorShell({ meta, calculator, children, inputs, results, interpretation }: Props) {
+  const calcMeta = meta || calculator
+  if (!calcMeta) {
+    return <div className="p-8 text-center text-muted-foreground">Calculator not found</div>
+  }
+  
+  const related = (calcMeta.relatedSlugs || [])
     .map((slug) => calculatorsData.find((c) => c.slug === slug))
     .filter(Boolean) as CalculatorMeta[]
 
-  const isFinancial = FINANCIAL_CATEGORIES.has(meta.category)
+  const isFinancial = FINANCIAL_CATEGORIES.has(calcMeta.category)
+
+  // Support both old interface (inputs/results/interpretation) and new children pattern
+  const hasOldInterface = inputs !== undefined || results !== undefined
 
   return (
     <article>
@@ -37,13 +47,13 @@ export function CalculatorShell({ meta, inputs, results, interpretation }: Props
               Tools
             </Link>
             <ChevronRight className="h-3 w-3" />
-            <span className="text-foreground">{meta.title}</span>
+            <span className="text-foreground">{calcMeta.title}</span>
           </nav>
-          <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">{meta.category}</p>
+          <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">{calcMeta.category}</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6 max-w-4xl leading-[1.05]">
-            {meta.title}
+            {calcMeta.title}
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl leading-relaxed">{meta.description}</p>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl leading-relaxed">{calcMeta.description}</p>
           <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
             <span>
               By{' '}
@@ -64,50 +74,71 @@ export function CalculatorShell({ meta, inputs, results, interpretation }: Props
             What this calculator does
           </h2>
           <p className="text-base sm:text-lg text-foreground leading-relaxed">
-            The <strong>{meta.title}</strong>{' '}
-            {meta.shortDescription.charAt(0).toLowerCase() + meta.shortDescription.slice(1).replace(/\.$/, '')}, then
-            compares your result against operator benchmarks ({meta.benchmarks}). Enter your numbers below and
+            The <strong>{calcMeta.title}</strong>{' '}
+            {calcMeta.shortDescription.charAt(0).toLowerCase() + calcMeta.shortDescription.slice(1).replace(/\.$/, '')}, then
+            compares your result against operator benchmarks ({calcMeta.benchmarks}). Enter your numbers below and
             you&apos;ll get a result, a benchmark band, and a plain-English interpretation in under two minutes.
           </p>
         </div>
       </section>
 
-      {/* Calculator */}
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-5">
-          <Card className="lg:col-span-2 bg-card border-card-border">
-            <CardContent className="p-6 sm:p-8">
-              <h2 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">Inputs</h2>
-              {inputs}
-            </CardContent>
-          </Card>
-          <Card className="lg:col-span-3 bg-card border-card-border">
-            <CardContent className="p-6 sm:p-8" aria-live="polite">
-              <h2 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">Results</h2>
-              {results}
-            </CardContent>
-          </Card>
-        </div>
+      {/* Calculator - handle both old and new interface */}
+      {hasOldInterface ? (
+        <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div className="grid gap-6 lg:grid-cols-5">
+            <Card className="lg:col-span-2 bg-card border-card-border">
+              <CardContent className="p-6 sm:p-8">
+                <h2 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">Inputs</h2>
+                {inputs}
+              </CardContent>
+            </Card>
+            <Card className="lg:col-span-3 bg-card border-card-border">
+              <CardContent className="p-6 sm:p-8" aria-live="polite">
+                <h2 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">Results</h2>
+                {results}
+              </CardContent>
+            </Card>
+          </div>
 
-        {/* Interpretation */}
-        <div className="mt-8 rounded-2xl border border-primary/30 bg-primary/[0.04] p-6 sm:p-8">
-          <h3 className="text-xs font-semibold tracking-widest uppercase text-primary mb-3">What this means</h3>
-          <p className="text-base sm:text-lg text-foreground leading-relaxed">{interpretation}</p>
-        </div>
+          {/* Interpretation */}
+          {interpretation && (
+            <div className="mt-8 rounded-2xl border border-primary/30 bg-primary/[0.04] p-6 sm:p-8">
+              <h3 className="text-xs font-semibold tracking-widest uppercase text-primary mb-3">What this means</h3>
+              <p className="text-base sm:text-lg text-foreground leading-relaxed">{interpretation}</p>
+            </div>
+          )}
 
-        {/* Formula */}
-        <div className="mt-6 rounded-xl border border-border/60 bg-card/40 p-5">
-          <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-2">Formula</p>
-          <code className="text-sm font-mono text-foreground/90 break-words">{meta.formula}</code>
-          <p className="text-xs text-muted-foreground mt-3">
-            <span className="font-semibold text-foreground/80">Benchmarks:</span> {meta.benchmarks}
-          </p>
-          <p className="text-xs text-muted-foreground mt-2">
-            <span className="font-semibold text-foreground/80">Sources:</span> OpenView 2024 SaaS Benchmarks, ChartMogul
-            Retention Reports, ProfitWell Pricing Studies, and Pressense operator data.
-          </p>
-        </div>
-      </section>
+          {/* Formula */}
+          <div className="mt-6 rounded-xl border border-border/60 bg-card/40 p-5">
+            <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-2">Formula</p>
+            <code className="text-sm font-mono text-foreground/90 break-words">{calcMeta.formula}</code>
+            <p className="text-xs text-muted-foreground mt-3">
+              <span className="font-semibold text-foreground/80">Benchmarks:</span> {calcMeta.benchmarks}
+            </p>
+            <p className="text-xs text-muted-foreground mt-2">
+              <span className="font-semibold text-foreground/80">Sources:</span> OpenView 2024 SaaS Benchmarks, ChartMogul
+              Retention Reports, ProfitWell Pricing Studies, and Pressense operator data.
+            </p>
+          </div>
+        </section>
+      ) : (
+        <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          {children}
+          
+          {/* Formula */}
+          <div className="mt-6 rounded-xl border border-border/60 bg-card/40 p-5">
+            <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-2">Formula</p>
+            <code className="text-sm font-mono text-foreground/90 break-words">{calcMeta.formula}</code>
+            <p className="text-xs text-muted-foreground mt-3">
+              <span className="font-semibold text-foreground/80">Benchmarks:</span> {calcMeta.benchmarks}
+            </p>
+            <p className="text-xs text-muted-foreground mt-2">
+              <span className="font-semibold text-foreground/80">Sources:</span> OpenView 2024 SaaS Benchmarks, ChartMogul
+              Retention Reports, ProfitWell Pricing Studies, and Pressense operator data.
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* FAQs */}
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8 border-t border-border/40">
@@ -115,7 +146,7 @@ export function CalculatorShell({ meta, inputs, results, interpretation }: Props
           Frequently asked questions
         </h2>
         <div className="space-y-3">
-          {meta.faqs.map((faq, i) => (
+          {(calcMeta.faqs || []).map((faq, i) => (
             <details
               key={i}
               open={i === 0}
@@ -192,7 +223,7 @@ export function CalculatorShell({ meta, inputs, results, interpretation }: Props
           <div className="relative max-w-3xl">
             <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">Pressense Diagnostic</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
-              Want help fixing this <em className="text-primary not-italic">{categoryToLabel(meta.category)}</em> metric?
+              Want help fixing this <em className="text-primary not-italic">{categoryToLabel(calcMeta.category)}</em> metric?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
               Pressense partners with operators to turn metric problems into <em>structured systems</em>. Start with a
