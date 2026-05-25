@@ -4,17 +4,20 @@ interface MetricCardProps {
   label: string
   value: ReactNode
   sublabel?: ReactNode
+  description?: ReactNode
   accent?: 'primary' | 'secondary' | 'default'
+  className?: string
 }
 
-export function MetricCard({ label, value, sublabel, accent = 'default' }: MetricCardProps) {
+export function MetricCard({ label, value, sublabel, description, accent = 'default', className }: MetricCardProps) {
   const colorClass =
     accent === 'primary' ? 'text-primary' : accent === 'secondary' ? 'text-secondary' : 'text-foreground'
+  const displaySublabel = sublabel || description
   return (
-    <div className="rounded-xl border border-border/60 bg-background/40 p-4">
+    <div className={`rounded-xl border border-border/60 bg-background/40 p-4 ${className || ''}`}>
       <p className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-2">{label}</p>
       <p className={`text-xl sm:text-2xl font-semibold tracking-tight ${colorClass}`}>{value}</p>
-      {sublabel && <p className="mt-1 text-xs text-muted-foreground">{sublabel}</p>}
+      {displaySublabel && <p className="mt-1 text-xs text-muted-foreground">{displaySublabel}</p>}
     </div>
   )
 }
@@ -27,12 +30,14 @@ interface PrimaryProps {
   label: string
   value: ReactNode
   sublabel?: ReactNode
+  comparison?: ReactNode
   accent?: 'primary' | 'secondary' | 'default'
 }
 
-export function PrimaryMetric({ label, value, sublabel, accent = 'primary' }: PrimaryProps) {
+export function PrimaryMetric({ label, value, sublabel, comparison, accent = 'primary' }: PrimaryProps) {
   const colorClass =
     accent === 'primary' ? 'text-primary' : accent === 'secondary' ? 'text-secondary' : 'text-foreground'
+  const displaySublabel = sublabel || comparison
   return (
     <div className="rounded-2xl border border-border/60 bg-background/40 p-6 sm:p-8">
       <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-3">{label}</p>
@@ -42,7 +47,7 @@ export function PrimaryMetric({ label, value, sublabel, accent = 'primary' }: Pr
       >
         {value}
       </p>
-      {sublabel && <p className="mt-3 text-sm text-muted-foreground">{sublabel}</p>}
+      {displaySublabel && <p className="mt-3 text-sm text-muted-foreground">{displaySublabel}</p>}
     </div>
   )
 }

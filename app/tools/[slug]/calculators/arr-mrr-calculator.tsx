@@ -18,13 +18,6 @@ export default function ARRMRRCalculator() {
 
   const results = calculateARRMRR({ baseMRR, newMRR, expansionMRR, contractionMRR, churnedMRR })
 
-  const getQualityColor = () => {
-    if (results.quality === 'Strong') return 'text-green-600'
-    if (results.quality === 'Healthy') return 'text-blue-600'
-    if (results.quality === 'At risk') return 'text-yellow-600'
-    return 'text-red-600'
-  }
-
   return (
     <CalculatorShell meta={meta}>
       <div className="grid gap-8 lg:grid-cols-2">
@@ -32,6 +25,7 @@ export default function ARRMRRCalculator() {
         <div className="space-y-6">
           <h3 className="text-lg font-semibold text-foreground">MRR Movements</h3>
           <NumberField
+            id="baseMRR"
             label="Starting MRR"
             value={baseMRR}
             onChange={setBaseMRR}
@@ -41,6 +35,7 @@ export default function ARRMRRCalculator() {
           />
           <div className="grid gap-4 sm:grid-cols-2">
             <NumberField
+              id="newMRR"
               label="New MRR"
               value={newMRR}
               onChange={setNewMRR}
@@ -49,6 +44,7 @@ export default function ARRMRRCalculator() {
               step={500}
             />
             <NumberField
+              id="expansionMRR"
               label="Expansion MRR"
               value={expansionMRR}
               onChange={setExpansionMRR}
@@ -59,6 +55,7 @@ export default function ARRMRRCalculator() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <NumberField
+              id="contractionMRR"
               label="Contraction MRR"
               value={contractionMRR}
               onChange={setContractionMRR}
@@ -67,6 +64,7 @@ export default function ARRMRRCalculator() {
               step={500}
             />
             <NumberField
+              id="churnedMRR"
               label="Churned MRR"
               value={churnedMRR}
               onChange={setChurnedMRR}
@@ -84,24 +82,22 @@ export default function ARRMRRCalculator() {
             <MetricCard
               label="Net New MRR"
               value={formatCurrency(results.netNewMRR)}
-              description={results.netNewMRR >= 0 ? 'Growth' : 'Decline'}
-              className={results.netNewMRR >= 0 ? 'text-green-600' : 'text-red-600'}
+              sublabel={results.netNewMRR >= 0 ? 'Growth' : 'Decline'}
             />
             <MetricCard
               label="Ending MRR"
               value={formatCurrency(results.endingMRR)}
-              description="Base + Net New"
+              sublabel="Base + Net New"
             />
             <MetricCard
               label="Ending ARR"
               value={formatCurrency(results.endingARR)}
-              description="MRR × 12"
+              sublabel="MRR × 12"
             />
             <MetricCard
               label="Quick Ratio"
               value={isFinite(results.quickRatio) ? formatNumber(results.quickRatio, 1) : '∞'}
-              description={results.quality}
-              className={getQualityColor()}
+              sublabel={results.quality}
             />
           </MetricGrid>
 

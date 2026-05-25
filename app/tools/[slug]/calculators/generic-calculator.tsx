@@ -13,14 +13,7 @@ interface Props {
 
 export function GenericCalculator({ calculator }: Props) {
   return (
-    <CalculatorShell
-      title={calculator.title}
-      description={calculator.description}
-      category={calculator.category}
-      formula={calculator.formula}
-      benchmarks={calculator.benchmarks}
-      faqs={calculator.faqs}
-    >
+    <CalculatorShell calculator={calculator}>
       <div className="space-y-6">
         {/* Coming Soon Notice */}
         <Card className="border-dashed border-amber-500/50 bg-amber-500/5">
