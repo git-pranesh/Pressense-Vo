@@ -7,12 +7,13 @@ import { calculatorsData, CALCULATOR_CATEGORIES, CATEGORY_DESCRIPTIONS } from '@
 export const metadata: Metadata = {
   title: 'Free SaaS Calculators & Tools | Pressense',
   description:
-    'Free, instant SaaS calculators for unit economics, growth modeling, retention, and GTM. Calculate CAC, LTV, churn, NRR, burn rate, and more with operator-grade benchmarks.',
+    'Free SaaS calculators for CAC, LTV, churn, NRR, burn rate, and more. Instant results with operator-grade benchmarks.',
   openGraph: {
     title: 'Free SaaS Calculators & Tools | Pressense',
     description: 'Calculate CAC, LTV, churn, NRR, burn rate, and more with operator-grade benchmarks. Free, instant, no signup.',
     url: '/tools',
     type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Free Calculators' }],
   },
   alternates: {
     canonical: '/tools',

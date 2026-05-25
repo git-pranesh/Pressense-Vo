@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     description:
       'Pressense designs CRM and ERP-lite systems for growing businesses that need better visibility, ownership, reporting, workflows, and operational structure.',
     type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense CRM & ERP Systems' }],
   },
   twitter: {
     card: 'summary_large_image',

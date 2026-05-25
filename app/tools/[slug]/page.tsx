@@ -162,14 +162,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
+  // Generate SEO-friendly description (max 155 chars)
+  const seoDescription = calculator.description.length > 120
+    ? `${calculator.description.slice(0, 117)}...`
+    : `${calculator.description} Free, instant.`
+
   return {
     title: `${calculator.title} | Pressense Tools`,
-    description: `${calculator.description} Free, instant, no signup required. ${calculator.benchmarks}`,
+    description: seoDescription,
     openGraph: {
       title: `${calculator.title} | Pressense Tools`,
       description: calculator.description,
       url: `/tools/${calculator.slug}`,
       type: 'website',
+      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: calculator.title }],
     },
     alternates: {
       canonical: `/tools/${calculator.slug}`,

@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description:
       'We help growing businesses replace spreadsheets, manual workflows, and scattered SaaS tools with custom internal tools and systems.',
     type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Custom Internal Tools' }],
   },
   twitter: {
     card: 'summary_large_image',
