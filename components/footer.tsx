@@ -37,10 +37,18 @@ export function Footer() {
           ))}
         </nav>
 
-        {/* Copyright */}
-        <p className="text-xs text-text-dim">
-          &copy; {new Date().getFullYear()} Pressense. All rights reserved.
-        </p>
+        {/* Legal & Copyright */}
+        <div className="flex items-center gap-6">
+          <a href="/privacy" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">
+            Privacy
+          </a>
+          <a href="/terms" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">
+            Terms
+          </a>
+          <p className="text-xs text-text-dim">
+            &copy; {new Date().getFullYear()} Pressense
+          </p>
+        </div>
       </div>
     </footer>
   )
