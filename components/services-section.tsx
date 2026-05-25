@@ -104,7 +104,7 @@ export function ServicesSection() {
                 {service.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-2.5 py-1 rounded-md bg-secondary/60 text-muted-foreground border border-border/50"
+                    className="text-xs px-2.5 py-1 rounded-md bg-primary/10 text-foreground border border-primary/20"
                   >
                     {tag}
                   </span>
