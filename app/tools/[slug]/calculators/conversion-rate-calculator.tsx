@@ -28,7 +28,7 @@ export default function ConversionRateCalculator() {
       <PrimaryMetric
         label="Conversion Rate"
         value={formatPercent(result.rate)}
-        comparison={`${result.rating} — Revenue per visitor: ${formatCurrency(result.revenuePerVisitor)}`}
+        comparison={`${result.rating}, Revenue per visitor: ${formatCurrency(result.revenuePerVisitor)}`}
       />
 
       <MetricGrid>

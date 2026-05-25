@@ -18,7 +18,7 @@ export default function SaasGrowthCalculator() {
 
   const interpretation =
     growthRatePercent >= 10
-      ? `At ${formatPercent(growthRatePercent)} monthly growth, you'll reach ${formatCurrency(result.endingARR, { compact: true })} ARR in ${months} months — a ${growthMultiple.toFixed(1)}x increase. This is strong early-stage growth that compounds rapidly.`
+      ? `At ${formatPercent(growthRatePercent)} monthly growth, you'll reach ${formatCurrency(result.endingARR, { compact: true })} ARR in ${months} months, a ${growthMultiple.toFixed(1)}x increase. This is strong early-stage growth that compounds rapidly.`
       : growthRatePercent >= 5
         ? `${formatPercent(growthRatePercent)} monthly growth will get you to ${formatCurrency(result.endingARR, { compact: true })} ARR. This is healthy growth-stage trajectory. Consider what levers could push you toward 10%+.`
         : growthRatePercent >= 2

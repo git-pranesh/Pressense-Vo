@@ -87,7 +87,7 @@ export default function GTMROICalculator() {
             <h4 className="font-medium text-foreground mb-2">Interpretation</h4>
             <p className="text-sm text-muted-foreground">
               {results.roiMultiple >= 5
-                ? "Excellent GTM efficiency. You may be under-investing in growth — competitors could outspend you. Consider scaling your best-performing channels."
+                ? "Excellent GTM efficiency. You may be under-investing in growth, competitors could outspend you. Consider scaling your best-performing channels."
                 : results.roiMultiple >= 3
                 ? "Good GTM efficiency. Your spend is generating sustainable returns. Look for opportunities to improve conversion rates and expand winning channels."
                 : results.roiMultiple >= 1

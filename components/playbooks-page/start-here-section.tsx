@@ -61,7 +61,7 @@ export function StartHereSection() {
                 </span>
                 <div className="flex-1">
                   <span className="text-base text-muted-foreground">{item.condition}</span>
-                  <span className="text-base text-muted-foreground"> — </span>
+                  <span className="text-base text-muted-foreground">, </span>
                   <span className="text-base text-foreground font-medium group-hover:text-primary transition-colors">{item.playbook}</span>
                 </div>
               </Link>

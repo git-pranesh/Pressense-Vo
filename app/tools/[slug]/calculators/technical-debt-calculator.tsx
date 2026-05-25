@@ -32,7 +32,7 @@ export default function TechnicalDebtCalculator() {
       <PrimaryMetric
         label="Annual Interest Cost"
         value={formatCurrency(result.annualInterestCost)}
-        comparison={`${result.rating} — Monthly cost: ${formatCurrency(result.monthlyInterestCost)}`}
+        comparison={`${result.rating}, Monthly cost: ${formatCurrency(result.monthlyInterestCost)}`}
       />
 
       <MetricGrid>

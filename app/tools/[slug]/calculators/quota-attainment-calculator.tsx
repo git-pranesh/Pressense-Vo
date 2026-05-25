@@ -32,7 +32,7 @@ export default function QuotaAttainmentCalculator() {
       <PrimaryMetric
         label="Quota Attainment"
         value={formatPercent(result.attainment)}
-        comparison={`${result.rating} — Total comp: ${formatCurrency(result.totalComp)}`}
+        comparison={`${result.rating}, Total comp: ${formatCurrency(result.totalComp)}`}
       />
 
       <MetricGrid>

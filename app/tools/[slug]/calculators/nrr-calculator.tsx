@@ -17,11 +17,11 @@ export default function NRRCalculator() {
 
   const interpretation =
     result.nrrPercent >= 120
-      ? `${formatPercent(result.nrrPercent)} NRR is best-in-class — you grow even without new customers. This is the ultimate SaaS flywheel. Your expansion motion is working.`
+      ? `${formatPercent(result.nrrPercent)} NRR is best-in-class, you grow even without new customers. This is the ultimate SaaS flywheel. Your expansion motion is working.`
       : result.nrrPercent >= 110
-        ? `${formatPercent(result.nrrPercent)} NRR is strong — you're generating net revenue growth from existing customers. Continue investing in expansion and upsell motions.`
+        ? `${formatPercent(result.nrrPercent)} NRR is strong, you're generating net revenue growth from existing customers. Continue investing in expansion and upsell motions.`
         : result.nrrPercent >= 100
-          ? `${formatPercent(result.nrrPercent)} NRR means you're holding steady — expansion offsets churn. Push harder on upsells and usage-based pricing to break through 110%.`
+          ? `${formatPercent(result.nrrPercent)} NRR means you're holding steady, expansion offsets churn. Push harder on upsells and usage-based pricing to break through 110%.`
           : `${formatPercent(result.nrrPercent)} NRR means your customer base is shrinking. Churn and contraction outpace expansion. Focus on retention before adding new customers.`
 
   return (

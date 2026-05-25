@@ -32,7 +32,7 @@ export default function MeetingCostCalculator() {
       <PrimaryMetric
         label="Cost per Meeting"
         value={formatCurrency(result.costPerMeeting)}
-        comparison={`${result.rating} — Cost per decision: ${formatCurrency(result.costPerDecision)}`}
+        comparison={`${result.rating}, Cost per decision: ${formatCurrency(result.costPerDecision)}`}
       />
 
       <MetricGrid>

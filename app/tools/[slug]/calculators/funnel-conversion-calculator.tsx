@@ -122,7 +122,7 @@ export default function FunnelConversionCalculator() {
               {results.weakestStage.includes('Lead to MQL') && ' Your lead quality may be low, or your MQL criteria too strict. Review what signals actually predict conversion.'}
               {results.weakestStage.includes('MQL to SQL') && ' The marketing-to-sales handoff is leaking pipeline. Align on MQL definitions and improve lead enrichment.'}
               {results.weakestStage.includes('SQL to Opp') && ' Sales development may need better qualification or follow-up cadences.'}
-              {results.weakestStage.includes('Opp to Customer') && ' Your close rate needs work — focus on objection handling, pricing clarity, or competitive positioning.'}
+              {results.weakestStage.includes('Opp to Customer') && ' Your close rate needs work, focus on objection handling, pricing clarity, or competitive positioning.'}
             </p>
           </div>
         </div>

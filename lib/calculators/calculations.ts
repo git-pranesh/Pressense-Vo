@@ -531,7 +531,7 @@ export function calculatePriceElasticity({ oldPrice, newPrice, oldQuantity, newQ
   const elasticity = priceChangePct !== 0 ? Math.abs(quantityChangePct / priceChangePct) : 0
   const oldRevenue = oldPrice * oldQuantity
   const newRevenue = newPrice * newQuantity
-  const interpretation = elasticity > 1 ? 'Elastic — demand is price sensitive' : elasticity < 1 ? 'Inelastic — demand is price insensitive' : 'Unit elastic'
+  const interpretation = elasticity > 1 ? 'Elastic, demand is price sensitive' : elasticity < 1 ? 'Inelastic, demand is price insensitive' : 'Unit elastic'
   return { priceChangePct, quantityChangePct, elasticity, oldRevenue, newRevenue, interpretation }
 }
 

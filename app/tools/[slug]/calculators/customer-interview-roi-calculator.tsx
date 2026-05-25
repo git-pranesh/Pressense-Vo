@@ -36,7 +36,7 @@ export default function CustomerInterviewROICalculator() {
       <PrimaryMetric
         label="Interview ROI"
         value={formatPercent(result.roiPercent)}
-        comparison={`${result.rating} — ${result.ratio.toFixed(1)}x return`}
+        comparison={`${result.rating}, ${result.ratio.toFixed(1)}x return`}
       />
 
       <MetricGrid>

@@ -16,7 +16,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'Should salaries be included in CAC?',
         answer:
-          'Yes. Fully-loaded CAC must include salaries, commissions, benefits, tools, and overhead for your sales and marketing teams — not just ad spend. Excluding people cost is the most common way teams flatter their CAC.',
+          'Yes. Fully-loaded CAC must include salaries, commissions, benefits, tools, and overhead for your sales and marketing teams, not just ad spend. Excluding people cost is the most common way teams flatter their CAC.',
       },
       {
         question: "What's the difference between blended and channel CAC?",
@@ -26,7 +26,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'Should organic customers be included in CAC?',
         answer:
-          "There are two valid approaches. 'Paid CAC' divides paid spend by paid customers only — useful for ad efficiency. 'Blended CAC' includes everyone — useful for understanding the real cost-to-acquire across your business model.",
+          "There are two valid approaches. 'Paid CAC' divides paid spend by paid customers only, useful for ad efficiency. 'Blended CAC' includes everyone, useful for understanding the real cost-to-acquire across your business model.",
       },
       {
         question: "What's a healthy CAC by ACV?",
@@ -36,7 +36,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'How do I lower CAC without hurting growth?',
         answer:
-          "Audit channel-by-channel CAC and shut off the worst 20% of spend — usually it's a non-trivial portion. Improve mid-funnel conversion (demo show rate, proposal-to-close). Compress sales cycle by raising lead quality through sharper ICP filtering.",
+          "Audit channel-by-channel CAC and shut off the worst 20% of spend, usually it's a non-trivial portion. Improve mid-funnel conversion (demo show rate, proposal-to-close). Compress sales cycle by raising lead quality through sharper ICP filtering.",
       },
     ],
   },
@@ -55,7 +55,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'Why include gross margin in LTV?',
         answer:
-          'Gross margin accounts for the cost of delivering your software (hosting, support, payment processing, customer success). Revenue is not all profit — only the margin is what your business actually retains and can reinvest.',
+          'Gross margin accounts for the cost of delivering your software (hosting, support, payment processing, customer success). Revenue is not all profit, only the margin is what your business actually retains and can reinvest.',
       },
       {
         question: 'How do I increase LTV?',
@@ -65,12 +65,12 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: "What's wrong with the simple LTV formula?",
         answer:
-          'The formula assumes constant churn and ARPU forever. In reality, both change — surviving customers tend to churn less and expand more. For investor-grade LTV, use cohort-based analysis, not steady-state formulas.',
+          'The formula assumes constant churn and ARPU forever. In reality, both change, surviving customers tend to churn less and expand more. For investor-grade LTV, use cohort-based analysis, not steady-state formulas.',
       },
       {
         question: 'Should I use customer or revenue churn for LTV?',
         answer:
-          'Use net revenue churn (after expansion) if you have strong expansion motion — it produces a more accurate, often much higher, LTV. Use gross customer churn for a conservative number you can defend.',
+          'Use net revenue churn (after expansion) if you have strong expansion motion, it produces a more accurate, often much higher, LTV. Use gross customer churn for a conservative number you can defend.',
       },
     ],
   },
@@ -89,7 +89,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: "Why is a ratio greater than 5 considered 'under-investing'?",
         answer:
-          "If your ratio is extremely high, you're likely leaving growth on the table — competitors will out-spend you and capture market share. Press the gas: increase ad spend, hire more reps, or expand into adjacent channels.",
+          "If your ratio is extremely high, you're likely leaving growth on the table, competitors will out-spend you and capture market share. Press the gas: increase ad spend, hire more reps, or expand into adjacent channels.",
       },
       {
         question: 'How to fix a poor LTV:CAC ratio?',
@@ -176,7 +176,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'Why is NRR over 100% important?',
         answer:
-          "It indicates 'net negative churn' — your existing book grows even with zero new logos. This is the single highest-leverage growth lever in SaaS, because expansion has near-zero CAC compared to new acquisition.",
+          "It indicates 'net negative churn', your existing book grows even with zero new logos. This is the single highest-leverage growth lever in SaaS, because expansion has near-zero CAC compared to new acquisition.",
       },
       {
         question: 'How do I improve NRR?',
@@ -210,7 +210,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'How does MRR compound?',
         answer:
-          "SaaS revenue growth is exponential, not linear. A 10% monthly growth rate doesn't mean 120% annual growth — it means roughly 214% annual growth, because each month's growth is calculated against the prior month's larger base.",
+          "SaaS revenue growth is exponential, not linear. A 10% monthly growth rate doesn't mean 120% annual growth, it means roughly 214% annual growth, because each month's growth is calculated against the prior month's larger base.",
       },
       {
         question: 'Should I prioritize growth rate or efficiency?',
@@ -273,7 +273,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'What counts as expansion vs new?',
         answer:
-          "New MRR is from a brand-new logo. Expansion MRR is revenue growth from an existing customer (more seats, higher tier, add-on modules). Drawing this line clearly is essential — investors will ask, and conflating them hides the health of your retention motion.",
+          "New MRR is from a brand-new logo. Expansion MRR is revenue growth from an existing customer (more seats, higher tier, add-on modules). Drawing this line clearly is essential, investors will ask, and conflating them hides the health of your retention motion.",
       },
     ],
   },
@@ -297,7 +297,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'Why does NRR matter so much for valuation?',
         answer:
-          'NRR > 100% means the existing book grows even with zero new logos — a near-zero-CAC growth engine. Public markets reward this with multiple expansion: companies at 130%+ NRR consistently trade at 1.3-1.5x the multiple of comparable companies at 100% NRR.',
+          'NRR > 100% means the existing book grows even with zero new logos, a near-zero-CAC growth engine. Public markets reward this with multiple expansion: companies at 130%+ NRR consistently trade at 1.3-1.5x the multiple of comparable companies at 100% NRR.',
       },
       {
         question: 'Are these multiples realistic in current markets?',
@@ -321,7 +321,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'What makes a good ICP?',
         answer:
-          "A good ICP describes who gets the most value from your product, who is fastest to close, and who has the highest retention. Look at your top-decile customers by NRR and tenure — that's your real ICP, not your wishlist.",
+          "A good ICP describes who gets the most value from your product, who is fastest to close, and who has the highest retention. Look at your top-decile customers by NRR and tenure, that's your real ICP, not your wishlist.",
       },
       {
         question: 'Should we reject low ICP scores?',
@@ -331,7 +331,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'How is ICP different from a buyer persona?',
         answer:
-          'ICP describes the company (firmographics: size, industry, tech stack, growth stage). Persona describes the buyer (role, seniority, pain). You need both — ICP determines whether to pursue an account; persona determines how to sell into it.',
+          'ICP describes the company (firmographics: size, industry, tech stack, growth stage). Persona describes the buyer (role, seniority, pain). You need both, ICP determines whether to pursue an account; persona determines how to sell into it.',
       },
     ],
   },
@@ -355,7 +355,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: "What's a healthy GTM ROI multiple?",
         answer:
-          "3x is the sustainable benchmark — every $1 of GTM spend returns $3 in new revenue. Below 2x suggests you're scaling unprofitably. Above 5x usually means you're under-investing in growth and competitors will out-pace you.",
+          "3x is the sustainable benchmark, every $1 of GTM spend returns $3 in new revenue. Below 2x suggests you're scaling unprofitably. Above 5x usually means you're under-investing in growth and competitors will out-pace you.",
       },
       {
         question: 'How do I improve GTM ROI quickly?',
@@ -379,7 +379,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'How do I attribute revenue to content?',
         answer:
-          "Use first-touch attribution to measure top-of-funnel impact, last-touch for bottom-of-funnel, and multi-touch for the full picture. Different attribution models tell different stories — track all three and don't optimize for any single one in isolation.",
+          "Use first-touch attribution to measure top-of-funnel impact, last-touch for bottom-of-funnel, and multi-touch for the full picture. Different attribution models tell different stories, track all three and don't optimize for any single one in isolation.",
       },
       {
         question: 'How long until content shows positive ROI?',
@@ -406,19 +406,19 @@ export const calculatorsData: CalculatorMeta[] = [
     relatedSlugs: ['icp-score-calculator', 'funnel-conversion-calculator', 'content-marketing-roi-calculator'],
     faqs: [
       {
-        question: 'BANT vs CHAMP — which should I use?',
+        question: 'BANT vs CHAMP, which should I use?',
         answer:
           "BANT (Budget, Authority, Need, Timeline) is seller-centric and works in well-defined buying processes. CHAMP (Challenges, Authority, Money, Prioritization) leads with the prospect's pain and works better for consultative sales and modern PLG-influenced buyers.",
       },
       {
         question: 'When should marketing pass a lead to sales?',
         answer:
-          "When the lead crosses the agreed MQL threshold (fit + intent). The exact score depends on your pipeline conversion math — calibrate it backwards from the close rate you need, not by gut feel.",
+          "When the lead crosses the agreed MQL threshold (fit + intent). The exact score depends on your pipeline conversion math, calibrate it backwards from the close rate you need, not by gut feel.",
       },
       {
         question: "What's the cost of bad lead scoring?",
         answer:
-          "Reps waste cycles on cold leads, hot leads cool while waiting, and the funnel quietly leaks revenue. The single most powerful lever in B2B sales is response time — getting a hot lead to a rep within 5 minutes can lift conversion 5-10x vs. 24 hours.",
+          "Reps waste cycles on cold leads, hot leads cool while waiting, and the funnel quietly leaks revenue. The single most powerful lever in B2B sales is response time, getting a hot lead to a rep within 5 minutes can lift conversion 5-10x vs. 24 hours.",
       },
     ],
   },
@@ -476,7 +476,7 @@ export const calculatorsData: CalculatorMeta[] = [
       {
         question: 'Should I include one-time costs?',
         answer:
-          'Include them in your initial break-even analysis to understand total cash required. But track ongoing break-even (excluding sunk costs) separately — that tells you when the business is self-sustaining.',
+          'Include them in your initial break-even analysis to understand total cash required. But track ongoing break-even (excluding sunk costs) separately, that tells you when the business is self-sustaining.',
       },
     ],
   },
@@ -506,7 +506,7 @@ export const calculatorsData: CalculatorMeta[] = [
     benchmarks: 'Net negative churn (<0%) is best-in-class. Gross churn under 2% monthly is healthy.',
     relatedSlugs: ['nrr-calculator', 'churn-rate-calculator', 'expansion-revenue-calculator'],
     faqs: [
-      { question: 'What is negative net churn?', answer: 'Expansion revenue exceeds churn and contraction — your existing base grows automatically even without new logos.' },
+      { question: 'What is negative net churn?', answer: 'Expansion revenue exceeds churn and contraction, your existing base grows automatically even without new logos.' },
     ],
   },
   {

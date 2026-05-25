@@ -171,7 +171,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
             <Link href="/" className="text-primary hover:underline">
               Pressense
             </Link>{' '}
-            team — a strategy and systems partner working with B2B SaaS operators on unit economics, retention, GTM, and
+            team, a strategy and systems partner working with B2B SaaS operators on unit economics, retention, GTM, and
             positioning. Every calculator in this library uses public benchmarks from OpenView, ChartMogul, ProfitWell,
             and KeyBanc, supplemented with anonymised data from the operators we partner with.
           </p>
@@ -180,7 +180,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
               <Info className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" aria-hidden="true" />
               <p className="text-xs">
                 <strong className="text-foreground">Disclaimer:</strong> This calculator is for educational and planning
-                purposes only. Outputs are estimates based on the inputs you provide and industry benchmarks — not
+                purposes only. Outputs are estimates based on the inputs you provide and industry benchmarks, not
                 financial, tax, legal, or investment advice. Validate all results with a qualified professional before
                 making decisions about funding, valuation, hiring, or capital allocation.
               </p>
@@ -225,7 +225,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
               Pressense partners with operators to turn metric problems into <em>structured systems</em>. Start with a
-              free 30-minute diagnostic — we&apos;ll map where you&apos;re leaking growth and what to fix first.
+              free 30-minute diagnostic, we&apos;ll map where you&apos;re leaking growth and what to fix first.
             </p>
             <Link href="/diagnostic">
               <Button size="lg" className="rounded-2xl text-base font-medium">

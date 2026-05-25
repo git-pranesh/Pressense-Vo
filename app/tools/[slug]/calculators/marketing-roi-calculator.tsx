@@ -32,7 +32,7 @@ export default function MarketingROICalculator() {
       <PrimaryMetric
         label="Marketing ROI"
         value={formatPercent(roi)}
-        comparison={`${rating} — ${revenueMultiple.toFixed(1)}x revenue per dollar spent`}
+        comparison={`${rating}, ${revenueMultiple.toFixed(1)}x revenue per dollar spent`}
       />
 
       <MetricGrid>

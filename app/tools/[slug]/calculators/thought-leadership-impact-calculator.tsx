@@ -36,7 +36,7 @@ export default function ThoughtLeadershipImpactCalculator() {
       <PrimaryMetric
         label="Impact Score"
         value={result.impactScore.toFixed(0)}
-        comparison={`${result.tier} — ROI: ${formatPercent(result.roiPercent)}`}
+        comparison={`${result.tier}, ROI: ${formatPercent(result.roiPercent)}`}
       />
 
       <MetricGrid>

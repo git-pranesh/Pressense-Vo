@@ -15,7 +15,7 @@ export default function ChurnRateCalculator() {
 
   const interpretation =
     result.churnPercent < 2
-      ? `${formatPercent(result.churnPercent)} monthly churn is excellent — enterprise-level retention. You have a sticky product. Focus on expansion revenue to maximize LTV.`
+      ? `${formatPercent(result.churnPercent)} monthly churn is excellent, enterprise-level retention. You have a sticky product. Focus on expansion revenue to maximize LTV.`
       : result.churnPercent < 5
         ? `${formatPercent(result.churnPercent)} monthly churn is healthy for SMB/mid-market SaaS. There's room to improve through better onboarding and customer success.`
         : result.churnPercent < 7

@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Dark-neutral premium palette — always dark */
+  /* Dark-neutral premium palette, always dark */
   --background: oklch(0.13 0.006 60);           /* deep charcoal #1a1916 */
   --foreground: oklch(0.92 0.012 75);            /* warm off-white #eceae4 */
   --card: oklch(0.17 0.007 55);                  /* slightly lighter charcoal */

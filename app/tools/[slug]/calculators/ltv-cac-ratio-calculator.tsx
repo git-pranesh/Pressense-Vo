@@ -17,7 +17,7 @@ export default function LTVCACRatioCalculator() {
     result.healthLabel === 'unhealthy'
       ? `A ratio of ${formatRatio(result.ratio)} means you're spending more to acquire customers than they're worth. Urgent action needed: reduce CAC or improve retention to raise LTV.`
       : result.healthLabel === 'okay'
-        ? `${formatRatio(result.ratio)} is marginal — you're barely breaking even on acquisition. Focus on improving both LTV (via retention) and reducing CAC (via channel efficiency).`
+        ? `${formatRatio(result.ratio)} is marginal, you're barely breaking even on acquisition. Focus on improving both LTV (via retention) and reducing CAC (via channel efficiency).`
         : result.healthLabel === 'healthy'
           ? `${formatRatio(result.ratio)} is the SaaS gold standard. You have a sustainable unit economics engine. Consider scaling acquisition spend.`
           : `${formatRatio(result.ratio)} suggests you may be under-investing in growth. Competitors with more aggressive spend could capture market share. Consider increasing acquisition investment.`
@@ -57,12 +57,12 @@ export default function LTVCACRatioCalculator() {
             value={formatRatio(result.ratio)}
             sublabel={
               result.healthLabel === 'unhealthy'
-                ? 'Unsustainable — losing money on each customer'
+                ? 'Unsustainable, losing money on each customer'
                 : result.healthLabel === 'okay'
-                  ? 'Marginal — room for improvement'
+                  ? 'Marginal, room for improvement'
                   : result.healthLabel === 'healthy'
-                    ? 'Healthy — sustainable growth'
-                    : 'Under-investing — consider scaling spend'
+                    ? 'Healthy, sustainable growth'
+                    : 'Under-investing, consider scaling spend'
             }
             accent={result.healthLabel === 'healthy' ? 'primary' : result.healthLabel === 'unhealthy' ? 'default' : 'secondary'}
           />

@@ -34,7 +34,7 @@ export default function LinkedInPersonalBrandROICalculator() {
       <PrimaryMetric
         label="LinkedIn ROI"
         value={formatPercent(result.roiPercent)}
-        comparison={`${result.rating} — ${result.ratio.toFixed(1)}x return on time`}
+        comparison={`${result.rating}, ${result.ratio.toFixed(1)}x return on time`}
       />
 
       <MetricGrid>

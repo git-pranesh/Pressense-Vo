@@ -28,7 +28,7 @@ export default function LeadToCustomerCalculator() {
       <PrimaryMetric
         label="Lead to Customer Rate"
         value={formatPercent(result.rate)}
-        comparison={`${result.rating} — Value per lead: ${formatCurrency(result.valuePerLead)}`}
+        comparison={`${result.rating}, Value per lead: ${formatCurrency(result.valuePerLead)}`}
       />
 
       <MetricGrid>

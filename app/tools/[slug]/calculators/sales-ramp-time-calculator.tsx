@@ -30,7 +30,7 @@ export default function SalesRampTimeCalculator() {
       <PrimaryMetric
         label="Total Ramp Cost"
         value={formatCurrency(result.totalRampCost)}
-        comparison={`${result.rating} — Break-even: ${formatNumber(result.breakevenMonths)} months`}
+        comparison={`${result.rating}, Break-even: ${formatNumber(result.breakevenMonths)} months`}
       />
 
       <MetricGrid>

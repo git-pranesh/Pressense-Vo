@@ -66,11 +66,11 @@ export default function ToolsPage() {
             <p className="text-xs font-semibold tracking-widest uppercase text-secondary">Tools Library</p>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6 max-w-4xl leading-[1.05]">
-            Free SaaS calculators with operator-grade benchmarks
+            Free calculators with operator-grade benchmarks
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl leading-relaxed mb-8">
             Calculate your unit economics, model growth scenarios, and benchmark against industry standards. No signup
-            required — just enter your numbers and get instant insights.
+            required, just enter your numbers and get instant insights.
           </p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
             <span className="font-medium text-foreground">{calculatorsData.length} calculators</span>
@@ -122,7 +122,7 @@ export default function ToolsPage() {
               Need help interpreting your numbers?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-              Calculators give you the data — but knowing what to do with it is where the value lives. Book a free
+              Calculators give you the data, but knowing what to do with it is where the value lives. Book a free
               30-minute diagnostic and we&apos;ll map where you&apos;re leaking growth.
             </p>
             <Link href="/diagnostic">

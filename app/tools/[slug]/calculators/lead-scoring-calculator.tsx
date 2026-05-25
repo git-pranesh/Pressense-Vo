@@ -89,10 +89,10 @@ export default function LeadScoringCalculator() {
             <h4 className="font-medium text-foreground mb-2">Recommended Action</h4>
             <p className="text-sm text-muted-foreground">
               {results.tier === 'Hot'
-                ? "Hot lead — immediate sales contact required. This lead shows strong qualification across all BANT criteria. Route to your best available rep and aim for contact within 5 minutes. Every hour of delay reduces conversion probability."
+                ? "Hot lead, immediate sales contact required. This lead shows strong qualification across all BANT criteria. Route to your best available rep and aim for contact within 5 minutes. Every hour of delay reduces conversion probability."
                 : results.tier === 'Warm'
-                ? "Warm lead — MQL nurture sequence. This lead shows promise but isn't fully qualified. Add to your best-performing nurture sequence and monitor for increased engagement. They may need more education before sales contact."
-                : "Cold lead — disqualify or long-term nurture. This lead doesn't currently meet qualification criteria. Either disqualify entirely or add to a low-touch, long-term nurture track. Don't waste sales cycles here."}
+                ? "Warm lead, MQL nurture sequence. This lead shows promise but isn't fully qualified. Add to your best-performing nurture sequence and monitor for increased engagement. They may need more education before sales contact."
+                : "Cold lead, disqualify or long-term nurture. This lead doesn't currently meet qualification criteria. Either disqualify entirely or add to a low-touch, long-term nurture track. Don't waste sales cycles here."}
             </p>
           </div>
 

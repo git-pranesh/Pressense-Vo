@@ -30,7 +30,7 @@ export default function RevenueChurnCalculator() {
       <PrimaryMetric
         label="Net Revenue Churn"
         value={formatPercent(result.netChurnPercent)}
-        comparison={result.isNegativeNetChurn ? 'Negative churn — expansion exceeds losses' : 'Positive churn — losses exceed expansion'}
+        comparison={result.isNegativeNetChurn ? 'Negative churn, expansion exceeds losses' : 'Positive churn, losses exceed expansion'}
       />
 
       <MetricGrid>

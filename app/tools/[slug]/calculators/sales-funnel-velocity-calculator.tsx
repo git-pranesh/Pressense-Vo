@@ -30,7 +30,7 @@ export default function SalesFunnelVelocityCalculator() {
       <PrimaryMetric
         label="Monthly Velocity"
         value={formatCurrency(result.monthlyVelocity)}
-        comparison={`${result.rating} — Daily: ${formatCurrency(result.dailyVelocity)}`}
+        comparison={`${result.rating}, Daily: ${formatCurrency(result.dailyVelocity)}`}
       />
 
       <MetricGrid>

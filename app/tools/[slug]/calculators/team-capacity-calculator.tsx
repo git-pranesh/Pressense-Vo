@@ -34,7 +34,7 @@ export default function TeamCapacityCalculator() {
       <PrimaryMetric
         label="Effective Hours"
         value={formatNumber(result.effectiveHours)}
-        comparison={`${result.rating} — Utilization: ${formatPercent(result.utilizationPercent)}`}
+        comparison={`${result.rating}, Utilization: ${formatPercent(result.utilizationPercent)}`}
       />
 
       <MetricGrid>

@@ -28,7 +28,7 @@ export default function CustomerRetentionCostCalculator() {
       <PrimaryMetric
         label="Customer Retention Cost"
         value={formatCurrency(result.crc)}
-        comparison={`${result.rating} — CRC is ${formatPercent(result.ratio * 100)} of CAC`}
+        comparison={`${result.rating}, CRC is ${formatPercent(result.ratio * 100)} of CAC`}
       />
 
       <MetricGrid>

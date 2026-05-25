@@ -32,7 +32,7 @@ export default function MQLtoSQLCalculator() {
       <PrimaryMetric
         label="MQL to SQL Rate"
         value={formatPercent(result.mqlToSqlRate)}
-        comparison={`${result.rating} — Value per MQL: ${formatCurrency(result.valuePerMQL)}`}
+        comparison={`${result.rating}, Value per MQL: ${formatCurrency(result.valuePerMQL)}`}
       />
 
       <MetricGrid>

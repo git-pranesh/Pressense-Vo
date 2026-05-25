@@ -20,11 +20,11 @@ export default function BurnRateCalculator() {
 
   const interpretation =
     result.netBurn <= 0
-      ? `Congratulations — you're cash flow positive with ${formatCurrency(Math.abs(result.netBurn))} in monthly surplus. You have infinite runway and can grow without external funding.`
+      ? `Congratulations, you're cash flow positive with ${formatCurrency(Math.abs(result.netBurn))} in monthly surplus. You have infinite runway and can grow without external funding.`
       : result.runwayMonths < 6
         ? `${runwayDisplay} of runway is critical. You need to either raise immediately, cut costs drastically, or both. Every week matters at this stage.`
         : result.runwayMonths < 12
-          ? `${runwayDisplay} of runway is tight. Start fundraising conversations now — a typical raise takes 4-6 months. Identify which expenses can be reduced if needed.`
+          ? `${runwayDisplay} of runway is tight. Start fundraising conversations now, a typical raise takes 4-6 months. Identify which expenses can be reduced if needed.`
           : result.runwayMonths < 18
             ? `${runwayDisplay} is acceptable but not comfortable. Plan your next raise within 3-6 months to maintain leverage in negotiations.`
             : `${runwayDisplay} of runway gives you breathing room. Focus on hitting milestones that will improve your next round's valuation.`

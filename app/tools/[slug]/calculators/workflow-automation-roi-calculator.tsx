@@ -32,7 +32,7 @@ export default function WorkflowAutomationROICalculator() {
       <PrimaryMetric
         label="Automation ROI"
         value={formatPercent(result.roiPercent)}
-        comparison={`${result.rating} — Payback: ${formatNumber(result.paybackMonths)} months`}
+        comparison={`${result.rating}, Payback: ${formatNumber(result.paybackMonths)} months`}
       />
 
       <MetricGrid>

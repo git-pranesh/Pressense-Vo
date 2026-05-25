@@ -16,7 +16,7 @@ export default function CACCalculator() {
 
   const interpretation =
     result.cac < 500
-      ? `A CAC of ${formatCurrency(result.cac)} is highly efficient for B2B SaaS — you're firmly in self-serve / SMB territory. Watch whether scaling spend keeps efficiency or whether the next dollar of ad spend brings less efficient customers.`
+      ? `A CAC of ${formatCurrency(result.cac)} is highly efficient for B2B SaaS, you're firmly in self-serve / SMB territory. Watch whether scaling spend keeps efficiency or whether the next dollar of ad spend brings less efficient customers.`
       : result.cac < 1500
         ? `${formatCurrency(result.cac)} is healthy mid-market CAC. The lever now is LTV: pair this with strong retention and expansion to make payback fast.`
         : `${formatCurrency(result.cac)} is enterprise-scale CAC. Justified only with high ARPU and multi-year contracts. If your deal sizes don't match, audit which channels are inflating blended CAC.`

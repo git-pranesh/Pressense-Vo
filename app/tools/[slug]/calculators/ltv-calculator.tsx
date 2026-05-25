@@ -18,7 +18,7 @@ export default function LTVCalculator() {
     result.ltv < 5000
       ? `An LTV of ${formatCurrency(result.ltv)} is typical for SMB SaaS. To move upmarket, focus on reducing churn and expanding ARPU through upsells and cross-sells.`
       : result.ltv < 25000
-        ? `${formatCurrency(result.ltv)} is healthy mid-market LTV. You have room to invest in CAC — pair this with your payback period to optimize spend.`
+        ? `${formatCurrency(result.ltv)} is healthy mid-market LTV. You have room to invest in CAC, pair this with your payback period to optimize spend.`
         : `${formatCurrency(result.ltv)} is strong enterprise LTV. This justifies significant sales and onboarding investment. Focus on maintaining retention to protect this value.`
 
   return (

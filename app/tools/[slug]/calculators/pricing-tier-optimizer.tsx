@@ -30,7 +30,7 @@ export default function PricingTierOptimizerCalculator() {
       <PrimaryMetric
         label="Recommended Tiers"
         value={`${formatCurrency(result.goodPrice)} / ${formatCurrency(result.betterPrice)} / ${formatCurrency(result.bestPrice)}`}
-        comparison={result.decoyEffect ? 'Decoy effect active — Better tier looks like best value' : 'Consider adjusting value scores for decoy effect'}
+        comparison={result.decoyEffect ? 'Decoy effect active, Better tier looks like best value' : 'Consider adjusting value scores for decoy effect'}
       />
 
       <MetricGrid>

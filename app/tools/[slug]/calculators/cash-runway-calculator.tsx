@@ -30,7 +30,7 @@ export default function CashRunwayCalculator() {
       <PrimaryMetric
         label="Adjusted Runway"
         value={`${formatNumber(result.adjustedRunway)} months`}
-        comparison={`${runwayStatus} — Base runway: ${formatNumber(result.baseRunway)} months`}
+        comparison={`${runwayStatus}, Base runway: ${formatNumber(result.baseRunway)} months`}
       />
 
       <MetricGrid>

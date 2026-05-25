@@ -39,7 +39,7 @@ export default function PPCAdROICalculator() {
       <PrimaryMetric
         label="Profit ROAS"
         value={`${profitRoas.toFixed(2)}x`}
-        comparison={`${rating} — Revenue ROAS: ${roas.toFixed(2)}x`}
+        comparison={`${rating}, Revenue ROAS: ${roas.toFixed(2)}x`}
       />
 
       <MetricGrid>

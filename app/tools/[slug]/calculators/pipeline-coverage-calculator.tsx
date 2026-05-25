@@ -30,7 +30,7 @@ export default function PipelineCoverageCalculator() {
       <PrimaryMetric
         label="Pipeline Coverage"
         value={`${result.rawCoverage.toFixed(1)}x`}
-        comparison={`${result.health} — Gap to quota: ${formatCurrency(result.gap)}`}
+        comparison={`${result.health}, Gap to quota: ${formatCurrency(result.gap)}`}
       />
 
       <MetricGrid>
