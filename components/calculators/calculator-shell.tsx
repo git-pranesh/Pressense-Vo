@@ -61,8 +61,6 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
                 the Pressense team
               </Link>
             </span>
-            <span aria-hidden="true">·</span>
-            <span>Free · No signup</span>
           </div>
         </div>
       </section>

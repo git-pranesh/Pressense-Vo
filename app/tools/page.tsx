@@ -74,12 +74,6 @@ export default function ToolsPage() {
           </p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
             <span className="font-medium text-foreground">{calculatorsData.length} calculators</span>
-            <span aria-hidden="true">·</span>
-            <span>Free forever</span>
-            <span aria-hidden="true">·</span>
-            <span>No signup</span>
-            <span aria-hidden="true">·</span>
-            <span>Instant results</span>
           </div>
         </div>
       </section>
