@@ -6,9 +6,10 @@ import Link from 'next/link'
 const navLinks = [
   { label: 'What We Fix', href: '/what-we-fix' },
   { label: 'How We Work', href: '/how-we-work' },
-  { label: 'Work', href: '/work' },
+  { label: 'Packages', href: '/packages' },
   { label: 'Playbooks', href: '/playbooks' },
   { label: 'Tools', href: '/tools' },
+  { label: 'Blog', href: '/blog' },
 ]
 
 const solutionsDropdown = [
