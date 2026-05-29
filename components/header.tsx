@@ -12,12 +12,14 @@ const navLinks = [
 ]
 
 const solutionsDropdown = [
+  { label: 'AI Automation Agency', href: '/ai-automation-agency' },
+  { label: 'Workflow Automation', href: '/workflow-automation-consulting' },
+  { label: 'Business Process Automation', href: '/business-process-automation-consulting' },
+  { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
+  { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
+  { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
   { label: 'Advisory & Strategy', href: '/advisory-strategy' },
   { label: 'Internal Tools & Systems', href: '/custom-internal-tools' },
-  { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-  { label: 'Content & Authority Systems', href: '/content-authority-systems' },
-  { label: 'Websites & Conversion Systems', href: '/websites-conversion-systems' },
-  { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
 ]
 
 export function Header() {
