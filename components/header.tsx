@@ -6,17 +6,50 @@ import Link from 'next/link'
 const navLinks = [
   { label: 'What We Fix', href: '/what-we-fix' },
   { label: 'How We Work', href: '/how-we-work' },
-  { label: 'Work', href: '/work' },
-  { label: 'Playbooks', href: '/playbooks' },
+  { label: 'Packages', href: '/packages' },
+  { label: 'Blog', href: '/blog' },
 ]
 
-const solutionsDropdown = [
-  { label: 'Advisory & Strategy', href: '/advisory-strategy' },
-  { label: 'Internal Tools & Systems', href: '/custom-internal-tools' },
-  { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-  { label: 'Content & Authority Systems', href: '/content-authority-systems' },
-  { label: 'Websites & Conversion Systems', href: '/websites-conversion-systems' },
-  { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
+const solutionsByCategory = [
+  {
+    category: 'Strategy & Growth',
+    items: [
+      { label: 'AI Automation Agency', href: '/ai-automation-agency' },
+      { label: 'SaaS Go-to-Market Strategy', href: '/saas-go-to-market-strategy' },
+      { label: 'Revenue Operations Consulting', href: '/revenue-operations-consulting' },
+      { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
+      { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
+      { label: 'Small Business Strategy Consultant', href: '/small-business-strategy-consultant' },
+      { label: 'Consulting Firm for Startups', href: '/consulting-firm-for-startups' },
+    ],
+  },
+  {
+    category: 'Marketing & Brand',
+    items: [
+      { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
+      { label: 'Fractional CMO Advisor', href: '/fractional-cmo-advisor' },
+      { label: 'Content & Authority Systems', href: '/content-authority-systems' },
+    ],
+  },
+  {
+    category: 'Implementation & Build',
+    items: [
+      { label: 'AI Implementation for Small Business', href: '/ai-implementation-small-business' },
+      { label: 'MVP Development for Startups', href: '/mvp-development-for-startups' },
+      { label: 'Framer Website Agency', href: '/framer-website-agency' },
+      { label: 'Replit Developer for Hire', href: '/replit-developer-for-hire' },
+      { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { label: 'Websites & Conversion Systems', href: '/websites-conversion-systems' },
+    ],
+  },
+  {
+    category: 'Workflow Automation',
+    items: [
+      { label: 'Workflow Automation Consulting', href: '/workflow-automation-consulting' },
+      { label: 'Business Process Automation', href: '/business-process-automation-consulting' },
+      { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
+    ],
+  },
 ]
 
 export function Header() {
@@ -101,17 +134,29 @@ export function Header() {
             </button>
             
             {solutionsOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 glass-card rounded-xl border border-border/60 p-2 shadow-xl">
-                {solutionsDropdown.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg transition-colors duration-150"
-                    onClick={() => setSolutionsOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-fit max-w-4xl glass-card rounded-xl border border-border/60 p-6 shadow-xl">
+                <div className="grid grid-cols-4 gap-8">
+                  {solutionsByCategory.map((section) => (
+                    <div key={section.category}>
+                      <h3 className="text-xs font-semibold uppercase tracking-widest text-foreground/60 mb-4">
+                        {section.category}
+                      </h3>
+                      <ul className="space-y-2">
+                        {section.items.map((item) => (
+                          <li key={item.label}>
+                            <Link
+                              href={item.href}
+                              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
+                              onClick={() => setSolutionsOpen(false)}
+                            >
+                              {item.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -185,19 +230,29 @@ export function Header() {
             </button>
             
             {mobileSolutionsOpen && (
-              <div className="mt-2 ml-3 flex flex-col gap-2 border-l border-border/40 pl-4">
-                {solutionsDropdown.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="text-sm text-muted-foreground hover:text-foreground py-1"
-                    onClick={() => {
-                      setMenuOpen(false)
-                      setMobileSolutionsOpen(false)
-                    }}
-                  >
-                    {item.label}
-                  </Link>
+              <div className="mt-2 ml-3 flex flex-col gap-4 border-l border-border/40 pl-4">
+                {solutionsByCategory.map((section) => (
+                  <div key={section.category}>
+                    <h4 className="text-xs font-semibold uppercase tracking-widest text-foreground/60 mb-2">
+                      {section.category}
+                    </h4>
+                    <ul className="space-y-1 ml-2">
+                      {section.items.map((item) => (
+                        <li key={item.label}>
+                          <Link
+                            href={item.href}
+                            className="text-sm text-muted-foreground hover:text-foreground py-1 block"
+                            onClick={() => {
+                              setMenuOpen(false)
+                              setMobileSolutionsOpen(false)
+                            }}
+                          >
+                            {item.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
               </div>
             )}
