@@ -4,10 +4,11 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const navLinks = [
-  { label: 'What We Fix', href: '/what-we-fix' },
-  { label: 'How We Work', href: '/how-we-work' },
-  { label: 'Work', href: '/work' },
+  { label: 'Solutions', href: '/solutions', dropdown: true },
+  { label: 'Tools', href: '/tools' },
   { label: 'Playbooks', href: '/playbooks' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'About', href: '/about' },
 ]
 
 const solutionsDropdown = [
@@ -69,16 +70,6 @@ export function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide"
-            >
-              {link.label}
-            </Link>
-          ))}
-          
           {/* Solutions Dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
@@ -101,20 +92,32 @@ export function Header() {
             </button>
             
             {solutionsOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 glass-card rounded-xl border border-border/60 p-2 shadow-xl">
-                {solutionsDropdown.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg transition-colors duration-150"
-                    onClick={() => setSolutionsOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-0 mt-3 w-80 glass-card rounded-xl border border-border/60 p-3 shadow-xl z-50">
+                <div className="grid grid-cols-2 gap-2">
+                  {solutionsDropdown.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg transition-colors duration-150"
+                      onClick={() => setSolutionsOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
+
+          {navLinks.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide"
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
         {/* CTA */}
