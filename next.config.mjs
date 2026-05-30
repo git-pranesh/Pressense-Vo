@@ -3,16 +3,22 @@
 // DO NOT MODIFY THIS FILE DIRECTLY.
 // EDIT THE USER CONFIG IN ./next.user-config.mjs INSTEAD.
 
-import userConfigImport from './next.user-config.mjs'
 import { fileURLToPath } from 'url'
 import path from 'path'
 
 const __v0_turbopack_root = undefined ?? path.dirname(fileURLToPath(import.meta.url))
 
 export default async function v0NextConfig(phase, { defaultConfig }) {
-  const userConfig = typeof userConfigImport === 'function'
-    ? await userConfigImport(phase, { defaultConfig })
-    : userConfigImport
+  let userConfig = {}
+  try {
+    const userConfigImport = await import('./next.user-config.mjs')
+    userConfig = typeof userConfigImport.default === 'function'
+      ? await userConfigImport.default(phase, { defaultConfig })
+      : userConfigImport.default || {}
+  } catch (e) {
+    // next.user-config.mjs not found or error loading it, use empty config
+    userConfig = {}
+  }
 
   return {
   ...userConfig,
