@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Dark-neutral premium palette, always dark */
+  /* Dark-neutral premium palette — always dark */
   --background: oklch(0.13 0.006 60);           /* deep charcoal #1a1916 */
   --foreground: oklch(0.92 0.012 75);            /* warm off-white #eceae4 */
   --card: oklch(0.17 0.007 55);                  /* slightly lighter charcoal */
@@ -13,7 +13,7 @@
   --popover-foreground: oklch(0.92 0.012 75);
   --primary: oklch(0.82 0.05 80);                /* muted warm sand/beige */
   --primary-foreground: oklch(0.13 0.006 60);
-  --secondary: oklch(0.72 0.06 75);              /* warm sand - visible label color */
+  --secondary: oklch(0.22 0.008 55);             /* warm dark grey */
   --secondary-foreground: oklch(0.92 0.012 75);
   --muted: oklch(0.20 0.007 55);
   --muted-foreground: oklch(0.62 0.015 70);      /* warm medium grey */
@@ -58,7 +58,7 @@
   --popover-foreground: oklch(0.92 0.012 75);
   --primary: oklch(0.82 0.05 80);
   --primary-foreground: oklch(0.13 0.006 60);
-  --secondary: oklch(0.72 0.06 75);
+  --secondary: oklch(0.22 0.008 55);
   --secondary-foreground: oklch(0.92 0.012 75);
   --muted: oklch(0.20 0.007 55);
   --muted-foreground: oklch(0.62 0.015 70);

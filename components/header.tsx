@@ -6,21 +6,17 @@ import Link from 'next/link'
 const navLinks = [
   { label: 'What We Fix', href: '/what-we-fix' },
   { label: 'How We Work', href: '/how-we-work' },
-  { label: 'Packages', href: '/packages' },
+  { label: 'Work', href: '/work' },
   { label: 'Playbooks', href: '/playbooks' },
-  { label: 'Tools', href: '/tools' },
-  { label: 'Blog', href: '/blog' },
 ]
 
 const solutionsDropdown = [
-  { label: 'AI Automation Agency', href: '/ai-automation-agency' },
-  { label: 'Workflow Automation', href: '/workflow-automation-consulting' },
-  { label: 'Business Process Automation', href: '/business-process-automation-consulting' },
-  { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
-  { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
-  { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
   { label: 'Advisory & Strategy', href: '/advisory-strategy' },
   { label: 'Internal Tools & Systems', href: '/custom-internal-tools' },
+  { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
+  { label: 'Content & Authority Systems', href: '/content-authority-systems' },
+  { label: 'Websites & Conversion Systems', href: '/websites-conversion-systems' },
+  { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
 ]
 
 export function Header() {
@@ -105,7 +101,7 @@ export function Header() {
             </button>
             
             {solutionsOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-background rounded-xl border border-border/60 p-2 shadow-xl">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 glass-card rounded-xl border border-border/60 p-2 shadow-xl">
                 {solutionsDropdown.map((item) => (
                   <Link
                     key={item.label}
@@ -156,7 +152,7 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden fixed inset-0 top-16 bg-background border-t border-border/40 px-6 py-5 flex flex-col gap-4 overflow-y-auto">
+        <div className="md:hidden glass-card border-t border-border/40 px-6 py-5 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.label}

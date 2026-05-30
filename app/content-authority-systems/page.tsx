@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     description:
       'Pressense builds content and authority systems that turn expertise into clear market communication, trust, search visibility, and demand.',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Content Systems' }],
   },
   twitter: {
     card: 'summary_large_image',

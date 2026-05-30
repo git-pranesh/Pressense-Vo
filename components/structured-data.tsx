@@ -15,14 +15,30 @@ export function StructuredData() {
     description:
       'Strategy and systems consultancy that helps serious businesses move from scattered growth to structured scale.',
     url: baseUrl,
-    logo: `${baseUrl}/icon.svg`,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${baseUrl}/icon.svg`,
+      width: 512,
+      height: 512,
+    },
     image: `${baseUrl}/og-image.jpg`,
+    telephone: '',
     priceRange: '$$$$',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'IN',
     },
-    areaServed: 'Worldwide',
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 12.9716,
+      longitude: 77.5946,
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '18:00',
+    },
     serviceType: [
       'Business Consulting',
       'Strategy Consulting',
@@ -30,6 +46,10 @@ export function StructuredData() {
       'Growth Strategy',
       'Revenue Operations',
     ],
+    areaServed: {
+      '@type': 'Place',
+      name: 'Worldwide',
+    },
     knowsAbout: [
       'Business Strategy',
       'Go-to-Market Strategy',

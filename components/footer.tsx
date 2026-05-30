@@ -24,7 +24,6 @@ export function Footer() {
             { label: 'How We Work', href: '/how-we-work' },
             { label: 'Work', href: '/work' },
             { label: 'Playbooks', href: '/playbooks' },
-            { label: 'Tools', href: '/tools' },
             { label: 'Start Diagnostic', href: '/diagnostic' },
           ].map((link) => (
             <a
@@ -37,18 +36,10 @@ export function Footer() {
           ))}
         </nav>
 
-        {/* Legal & Copyright */}
-        <div className="flex items-center gap-6">
-          <a href="/privacy" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">
-            Privacy
-          </a>
-          <a href="/terms" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">
-            Terms
-          </a>
-          <p className="text-xs text-text-dim">
-            &copy; {new Date().getFullYear()} Pressense
-          </p>
-        </div>
+        {/* Copyright */}
+        <p className="text-xs text-text-dim">
+          &copy; {new Date().getFullYear()} Pressense. All rights reserved.
+        </p>
       </div>
     </footer>
   )

@@ -12,7 +12,7 @@ import { PageStructuredData } from '@/components/page-structured-data'
 export const metadata: Metadata = {
   title: 'Playbooks | Diagnostic Frameworks for Growth Constraints | Pressense',
   description:
-    'Diagnostic frameworks for growth constraints: founder bottlenecks, pricing leakage, GTM alignment, onboarding, and more.',
+    'Diagnostic frameworks for growth constraints. Founder bottlenecks, pricing leakage, GTM alignment, customer onboarding, personal brand, systems debt, CRM adoption.',
   alternates: {
     canonical: '/playbooks',
   },
@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     description:
       'Diagnostic frameworks for fixing common growth constraints. From diagnosis to implementation.',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Playbooks' }],
   },
   twitter: {
     card: 'summary_large_image',

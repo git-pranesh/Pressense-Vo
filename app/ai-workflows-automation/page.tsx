@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     description:
       'Pressense designs practical AI workflows and automation systems that reduce manual work, improve consistency, and help teams execute with more clarity.',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense AI Workflows' }],
   },
   twitter: {
     card: 'summary_large_image',

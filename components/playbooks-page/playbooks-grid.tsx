@@ -30,7 +30,7 @@ export function PlaybooksGrid() {
               className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300 flex flex-col cursor-pointer group"
             >
               <div className="flex items-center gap-2 mb-4">
-                <span className="text-xs px-2.5 py-1 rounded-md bg-primary/10 text-foreground border border-primary/20">
+                <span className="text-xs px-2.5 py-1 rounded-md bg-secondary/50 text-muted-foreground border border-border/40">
                   {playbook.relatedService}
                 </span>
               </div>

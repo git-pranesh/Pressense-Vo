@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     description:
       'Pressense builds positioning-led websites and conversion systems that clarify value, guide buyers, support sales, and turn traffic into qualified demand.',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Websites & Conversion' }],
   },
   twitter: {
     card: 'summary_large_image',

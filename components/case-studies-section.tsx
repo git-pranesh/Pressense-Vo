@@ -117,7 +117,7 @@ export function CaseStudiesSection() {
                   {study.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-xs px-2.5 py-1 rounded-md bg-primary/10 text-foreground border border-primary/20"
+                      className="text-xs px-2.5 py-1 rounded-md bg-secondary/50 text-muted-foreground border border-border/40"
                     >
                       {tag}
                     </span>
