@@ -1,14 +1,6 @@
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { FractionalCMOHero } from '@/components/framer-page/hero'
-import { ProblemSection } from '@/components/framer-page/problem-section'
-import { AdvantagesSection } from '@/components/framer-page/advantages'
-import { ServicesSection } from '@/components/framer-page/services'
-import { WhoItsForSection } from '@/components/framer-page/who-its-for'
-import { ProcessSection } from '@/components/framer-page/process'
-import { FractionalCMOFAQSection } from '@/components/framer-page/faq-section'
-import { FractionalCMOCTA } from '@/components/framer-page/final-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -47,14 +39,38 @@ export default function FramerAgencyPage() {
       <StructuredData data={schema} />
       <Header />
       <main className="min-h-screen">
-        <FractionalCMOHero />
-        <ProblemSection />
-        <AdvantagesSection />
-        <ServicesSection />
-        <WhoItsForSection />
-        <ProcessSection />
-        <FractionalCMOFAQSection />
-        <FractionalCMOCTA />
+        <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">Framer Website Agency</h1>
+          <p className="text-xl text-muted-foreground mb-12">
+            Beautiful, interactive, conversion-optimized websites built with Framer. Modern design, smooth animations, and fast deployment.
+          </p>
+
+          <div className="space-y-12">
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">Why Framer?</h2>
+              <p className="text-muted-foreground">
+                Framer combines design and code seamlessly. Build stunning, interactive websites with built-in hosting, analytics, and CMS capabilities without traditional deployment complexity.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">What We Build</h2>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-2">
+                <li>High-conversion landing pages and homepages</li>
+                <li>Interactive product showcases and portfolios</li>
+                <li>Animated UI components and smooth transitions</li>
+                <li>CMS-enabled content sites with fast deployment</li>
+              </ul>
+            </section>
+
+            <section className="mt-16 p-8 bg-secondary/30 rounded-lg border border-border/50">
+              <h2 className="text-xl font-semibold mb-4">Ready for a Beautiful Website?</h2>
+              <a href="/contact" className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold">
+                Let's Design Together
+              </a>
+            </section>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

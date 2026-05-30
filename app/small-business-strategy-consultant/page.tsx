@@ -1,14 +1,6 @@
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { FractionalCMOHero } from '@/components/smb-strategy-page/hero'
-import { ProblemSection } from '@/components/smb-strategy-page/problem-section'
-import { StrategicAreasSection } from '@/components/smb-strategy-page/strategic-areas'
-import { EngagementModelsSection } from '@/components/smb-strategy-page/engagement-models'
-import { WhoItsForSection } from '@/components/smb-strategy-page/who-its-for'
-import { ProcessSection } from '@/components/smb-strategy-page/process'
-import { FractionalCMOFAQSection } from '@/components/smb-strategy-page/faq-section'
-import { FractionalCMOCTA } from '@/components/smb-strategy-page/final-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -47,14 +39,38 @@ export default function SMBStrategyPage() {
       <StructuredData data={schema} />
       <Header />
       <main className="min-h-screen">
-        <FractionalCMOHero />
-        <ProblemSection />
-        <StrategicAreasSection />
-        <EngagementModelsSection />
-        <WhoItsForSection />
-        <ProcessSection />
-        <FractionalCMOFAQSection />
-        <FractionalCMOCTA />
+        <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">Small Business Strategy Consultant</h1>
+          <p className="text-xl text-muted-foreground mb-12">
+            Strategic guidance for small business owners. Scale revenue, optimize operations, and build systems that work without you.
+          </p>
+
+          <div className="space-y-12">
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">The SMB Bottleneck</h2>
+              <p className="text-muted-foreground">
+                Many small business owners are stuck in their own operations. We help you build scalable systems, delegate effectively, and focus on strategic growth instead of daily firefighting.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">Strategic Focus Areas</h2>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-2">
+                <li>Revenue optimization and pricing strategy</li>
+                <li>Operations and process documentation</li>
+                <li>Team scaling and delegation systems</li>
+                <li>Market positioning and competitive advantage</li>
+              </ul>
+            </section>
+
+            <section className="mt-16 p-8 bg-secondary/30 rounded-lg border border-border/50">
+              <h2 className="text-xl font-semibold mb-4">Ready to Scale Your Business?</h2>
+              <a href="/contact" className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold">
+                Schedule Strategy Call
+              </a>
+            </section>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

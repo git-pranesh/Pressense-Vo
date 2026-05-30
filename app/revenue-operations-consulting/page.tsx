@@ -1,14 +1,6 @@
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { SystemsHero } from '@/components/revops-page/hero'
-import { ProblemSection } from '@/components/revops-page/problem-section'
-import { SolutionSection } from '@/components/revops-page/solution-section'
-import { WhoItsForSection } from '@/components/revops-page/who-its-for'
-import { FrameworkSection } from '@/components/revops-page/framework'
-import { ProcessSection } from '@/components/revops-page/process'
-import { SystemsFAQSection } from '@/components/revops-page/faq-section'
-import { SystemsCTA } from '@/components/revops-page/final-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -47,14 +39,39 @@ export default function RevOpsPage() {
       <StructuredData data={schema} />
       <Header />
       <main className="min-h-screen">
-        <SystemsHero />
-        <ProblemSection />
-        <SolutionSection />
-        <FrameworkSection />
-        <WhoItsForSection />
-        <ProcessSection />
-        <SystemsFAQSection />
-        <SystemsCTA />
+        <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">Revenue Operations Consulting</h1>
+          <p className="text-xl text-muted-foreground mb-12">
+            Align sales, marketing, and customer success around revenue goals. Build the processes, tools, and accountability framework for predictable growth.
+          </p>
+
+          <div className="space-y-12">
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">The RevOps Challenge</h2>
+              <p className="text-muted-foreground">
+                Siloed teams, fragmented data, and misaligned metrics kill growth. Without RevOps, your GTM is reactive rather than strategic. We build the operational backbone that connects revenue teams and drives predictable, scalable growth.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">What We Do</h2>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-2">
+                <li>Revenue process design and optimization</li>
+                <li>CRM implementation and data architecture</li>
+                <li>Sales forecasting and pipeline management</li>
+                <li>KPI definition and reporting dashboards</li>
+                <li>Cross-functional alignment and accountability</li>
+              </ul>
+            </section>
+
+            <section className="mt-16 p-8 bg-secondary/30 rounded-lg border border-border/50">
+              <h2 className="text-xl font-semibold mb-4">Build Your Revenue Engine</h2>
+              <a href="/contact" className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold">
+                Schedule Consultation
+              </a>
+            </section>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

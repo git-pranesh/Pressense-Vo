@@ -1,14 +1,6 @@
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { FractionalCMOHero } from '@/components/ai-impl-page/hero'
-import { ProblemSection } from '@/components/ai-impl-page/problem-section'
-import { OpportunitiesSection } from '@/components/ai-impl-page/opportunities'
-import { ProcessSection } from '@/components/ai-impl-page/process'
-import { ROISection } from '@/components/ai-impl-page/roi'
-import { WhoItsForSection } from '@/components/ai-impl-page/who-its-for'
-import { FractionalCMOFAQSection } from '@/components/ai-impl-page/faq-section'
-import { FractionalCMOCTA } from '@/components/ai-impl-page/final-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -47,14 +39,38 @@ export default function AIImplementationPage() {
       <StructuredData data={schema} />
       <Header />
       <main className="min-h-screen">
-        <FractionalCMOHero />
-        <ProblemSection />
-        <OpportunitiesSection />
-        <ProcessSection />
-        <ROISection />
-        <WhoItsForSection />
-        <FractionalCMOFAQSection />
-        <FractionalCMOCTA />
+        <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">AI Implementation for Small Business</h1>
+          <p className="text-xl text-muted-foreground mb-12">
+            Integrate AI tools and automation into your business workflows. Compete with larger enterprises by doing more with less.
+          </p>
+
+          <div className="space-y-12">
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">AI for SMBs</h2>
+              <p className="text-muted-foreground">
+                AI isn't just for enterprises anymore. Small businesses can leverage AI to automate admin tasks, improve customer service, generate content, and scale operations without hiring more staff.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">Implementation Areas</h2>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-2">
+                <li>Content generation and marketing automation</li>
+                <li>Customer service chatbots and automation</li>
+                <li>Data analysis and reporting systems</li>
+                <li>Process automation and workflow optimization</li>
+              </ul>
+            </section>
+
+            <section className="mt-16 p-8 bg-secondary/30 rounded-lg border border-border/50">
+              <h2 className="text-xl font-semibold mb-4">Get AI Working for Your Business</h2>
+              <a href="/contact" className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold">
+                Schedule Audit
+              </a>
+            </section>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

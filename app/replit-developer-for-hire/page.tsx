@@ -1,15 +1,6 @@
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { FractionalCMOHero } from '@/components/replit-page/hero'
-import { ProblemSection } from '@/components/replit-page/problem-section'
-import { SolutionSection } from '@/components/replit-page/solution-section'
-import { ServiceMenuSection } from '@/components/replit-page/service-menu'
-import { ComparisonSection } from '@/components/replit-page/comparison'
-import { WhoItsForSection } from '@/components/replit-page/who-its-for'
-import { ProcessSection } from '@/components/replit-page/process'
-import { FractionalCMOFAQSection } from '@/components/replit-page/faq-section'
-import { FractionalCMOCTA } from '@/components/replit-page/final-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -48,14 +39,38 @@ export default function ReplyitDeveloperPage() {
       <StructuredData data={schema} />
       <Header />
       <main className="min-h-screen">
-        <FractionalCMOHero />
-        <ProblemSection />
-        <ServiceMenuSection />
-        <ComparisonSection />
-        <WhoItsForSection />
-        <ProcessSection />
-        <FractionalCMOFAQSection />
-        <FractionalCMOCTA />
+        <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">Replit Developer for Hire</h1>
+          <p className="text-xl text-muted-foreground mb-12">
+            Expert Replit developers for rapid prototyping, MVP development, and full-stack web applications. Cloud-based, collaborative development without setup friction.
+          </p>
+
+          <div className="space-y-12">
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">Why Replit for Development?</h2>
+              <p className="text-muted-foreground">
+                Replit eliminates setup overhead and enables instant collaboration. Perfect for MVPs, prototypes, and projects that need to ship fast without worrying about deployment infrastructure.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">What We Build</h2>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-2">
+                <li>Full-stack web applications and APIs</li>
+                <li>Real-time collaborative projects</li>
+                <li>AI-powered tools and automations</li>
+                <li>Rapid prototypes and proof-of-concepts</li>
+              </ul>
+            </section>
+
+            <section className="mt-16 p-8 bg-secondary/30 rounded-lg border border-border/50">
+              <h2 className="text-xl font-semibold mb-4">Ready to Build on Replit?</h2>
+              <a href="/contact" className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold">
+                Start Your Project
+              </a>
+            </section>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
