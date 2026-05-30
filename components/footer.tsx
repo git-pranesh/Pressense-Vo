@@ -1,44 +1,69 @@
 import Link from 'next/link'
 
-const footerLinks = {
-  company: [
-    { label: 'What We Fix', href: '/what-we-fix' },
-    { label: 'How We Work', href: '/how-we-work' },
-    { label: 'Packages', href: '/packages' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Start Diagnostic', href: '/diagnostic' },
-  ],
-  resources: [
-    { label: 'Playbooks', href: '/playbooks' },
-    { label: 'AI Readiness Audit', href: '/playbooks/ai-readiness-audit' },
-    { label: 'Founder Bottleneck', href: '/playbooks/founder-bottleneck-diagnostic' },
-    { label: 'GTM Alignment', href: '/playbooks/gtm-alignment' },
-  ],
-  services: [
-    { label: 'AI Automation Agency', href: '/ai-automation-agency' },
-    { label: 'Fractional CMO', href: '/fractional-cmo-services' },
-    { label: 'GTM Strategy', href: '/gtm-strategy-consultant' },
-    { label: 'MVP Development', href: '/mvp-development-for-startups' },
-    { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
-  ],
-  locations: [
-    { label: 'San Francisco', href: '/ai-automation-agency-san-francisco' },
-    { label: 'New York', href: '/ai-automation-agency-new-york' },
-    { label: 'Austin', href: '/ai-automation-agency-austin' },
-    { label: 'London', href: '/ai-automation-agency-london' },
-    { label: 'Chicago', href: '/ai-automation-agency-chicago' },
-    { label: 'Miami', href: '/ai-automation-agency-miami' },
-  ],
-}
+const footerSections = [
+  {
+    heading: 'Company',
+    links: [
+      { label: 'About', href: '/about' },
+      { label: 'What We Fix', href: '/what-we-fix' },
+      { label: 'How We Work', href: '/how-we-work' },
+      { label: 'Packages & Pricing', href: '/packages' },
+      { label: 'Start Diagnostic', href: '/diagnostic' },
+    ],
+  },
+  {
+    heading: 'Services',
+    links: [
+      { label: 'AI Automation Agency', href: '/ai-automation-agency' },
+      { label: 'Fractional CMO', href: '/fractional-cmo-services' },
+      { label: 'GTM Strategy', href: '/gtm-strategy-consultant' },
+      { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
+      { label: 'Workflow Automation', href: '/workflow-automation-consulting' },
+      { label: 'MVP Development', href: '/mvp-development-for-startups' },
+      { label: 'Business Process Automation', href: '/business-process-automation-consulting' },
+    ],
+  },
+  {
+    heading: 'Tools & Resources',
+    links: [
+      { label: 'Free Calculators', href: '/tools' },
+      { label: 'Playbooks', href: '/playbooks' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'AI Readiness Audit', href: '/playbooks/ai-readiness-audit' },
+      { label: 'Founder Bottleneck', href: '/playbooks/founder-bottleneck-diagnostic' },
+      { label: 'Sales Process Audit', href: '/playbooks/sales-process-audit' },
+      { label: 'GTM Alignment', href: '/playbooks/gtm-alignment' },
+    ],
+  },
+  {
+    heading: 'Locations',
+    links: [
+      { label: 'AI Agency — San Francisco', href: '/ai-automation-agency-san-francisco' },
+      { label: 'AI Agency — New York', href: '/ai-automation-agency-new-york' },
+      { label: 'AI Agency — Austin', href: '/ai-automation-agency-austin' },
+      { label: 'AI Agency — London', href: '/ai-automation-agency-london' },
+      { label: 'AI Agency — Chicago', href: '/ai-automation-agency-chicago' },
+      { label: 'AI Agency — Miami', href: '/ai-automation-agency-miami' },
+      { label: 'AI Agency — Seattle', href: '/ai-automation-agency-seattle' },
+      { label: 'Fractional CMO — San Francisco', href: '/fractional-cmo-san-francisco' },
+      { label: 'Fractional CMO — New York', href: '/fractional-cmo-new-york' },
+      { label: 'GTM Consultant — San Francisco', href: '/gtm-consultant-san-francisco' },
+      { label: 'Strategy Consultant — London', href: '/business-strategy-consultant-london' },
+      { label: 'Systems Consultant — Boston', href: '/business-systems-consultant-boston' },
+    ],
+  },
+]
 
 export function Footer() {
   return (
     <footer className="border-t border-border/40 pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        {/* Footer Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
-          {/* Logo & Description */}
-          <div className="col-span-2 md:col-span-1">
+
+        {/* Top section: logo + columns */}
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-12">
+
+          {/* Brand */}
+          <div className="col-span-2 md:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-6 h-6 rounded border border-primary/30 flex items-center justify-center">
                 <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -50,82 +75,48 @@ export function Footer() {
               </div>
               <span className="text-sm font-semibold tracking-wide">PRESSENSE</span>
             </div>
-            <p className="text-xs text-muted-foreground leading-relaxed">
-              AI automation and GTM consulting for scaling founders.
+            <p className="text-xs text-muted-foreground leading-relaxed max-w-[220px]">
+              AI automation and GTM strategy for founders scaling past the founder-bottleneck.
             </p>
           </div>
 
-          {/* Company */}
-          <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/70 mb-4">Company</h4>
-            <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/70 mb-4">Resources</h4>
-            <ul className="space-y-2">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/70 mb-4">Services</h4>
-            <ul className="space-y-2">
-              {footerLinks.services.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Locations */}
-          <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/70 mb-4">Locations</h4>
-            <ul className="space-y-2">
-              {footerLinks.locations.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Link columns */}
+          {footerSections.map((section) => (
+            <div key={section.heading} className="col-span-1">
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/60 mb-4">
+                {section.heading}
+              </h4>
+              <ul className="space-y-2.5">
+                {section.links.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="text-xs text-muted-foreground hover:text-foreground transition-colors leading-snug block"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bottom bar */}
         <div className="border-t border-border/40 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
             &copy; {new Date().getFullYear()} Pressense. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
             <Link href="/privacy" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-              Privacy
+              Privacy Policy
             </Link>
             <Link href="/terms" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-              Terms
+              Terms of Use
             </Link>
           </div>
         </div>
+
       </div>
     </footer>
   )
