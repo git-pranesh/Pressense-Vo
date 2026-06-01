@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const navLinks = [
-  { label: 'Solutions', href: '/solutions', dropdown: true },
   { label: 'Tools', href: '/tools' },
   { label: 'Playbooks', href: '/playbooks' },
   { label: 'Blog', href: '/blog' },
@@ -12,12 +11,15 @@ const navLinks = [
 ]
 
 const solutionsDropdown = [
-  { label: 'Advisory & Strategy', href: '/advisory-strategy' },
-  { label: 'Internal Tools & Systems', href: '/custom-internal-tools' },
-  { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-  { label: 'Content & Authority Systems', href: '/content-authority-systems' },
-  { label: 'Websites & Conversion Systems', href: '/websites-conversion-systems' },
-  { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
+  { label: 'AI Automation Agency', href: '/ai-automation-agency' },
+  { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
+  { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
+  { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
+  { label: 'Workflow Automation', href: '/workflow-automation-consulting' },
+  { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
+  { label: 'MVP Development', href: '/mvp-development-for-startups' },
+  { label: 'Framer Website Agency', href: '/framer-website-agency' },
+  { label: 'Replit Developer', href: '/replit-developer-for-hire' },
 ]
 
 export function Header() {
@@ -69,8 +71,8 @@ export function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-          {/* Solutions Dropdown */}
+        <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
+          {/* Solutions Dropdown - First */}
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setSolutionsOpen(!solutionsOpen)}
@@ -92,8 +94,8 @@ export function Header() {
             </button>
             
             {solutionsOpen && (
-              <div className="absolute top-full left-0 mt-3 w-80 glass-card rounded-xl border border-border/60 p-3 shadow-xl z-50">
-                <div className="grid grid-cols-2 gap-2">
+              <div className="absolute top-full left-0 mt-3 w-72 glass-card rounded-xl border border-border/60 p-3 shadow-xl z-50">
+                <div className="grid grid-cols-1 gap-1">
                   {solutionsDropdown.map((item) => (
                     <Link
                       key={item.label}
@@ -109,6 +111,7 @@ export function Header() {
             )}
           </div>
 
+          {/* Other nav links */}
           {navLinks.map((link) => (
             <Link
               key={link.label}
