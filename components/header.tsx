@@ -4,22 +4,19 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const navLinks = [
-  { label: 'Tools', href: '/tools' },
+  { label: 'What We Fix', href: '/what-we-fix' },
+  { label: 'How We Work', href: '/how-we-work' },
+  { label: 'Work', href: '/work' },
   { label: 'Playbooks', href: '/playbooks' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '/about' },
 ]
 
 const solutionsDropdown = [
-  { label: 'AI Automation Agency', href: '/ai-automation-agency' },
-  { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
-  { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
-  { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
-  { label: 'Workflow Automation', href: '/workflow-automation-consulting' },
-  { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
-  { label: 'MVP Development', href: '/mvp-development-for-startups' },
-  { label: 'Framer Website Agency', href: '/framer-website-agency' },
-  { label: 'Replit Developer', href: '/replit-developer-for-hire' },
+  { label: 'Advisory & Strategy', href: '/advisory-strategy' },
+  { label: 'Internal Tools & Systems', href: '/custom-internal-tools' },
+  { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
+  { label: 'Content & Authority Systems', href: '/content-authority-systems' },
+  { label: 'Websites & Conversion Systems', href: '/websites-conversion-systems' },
+  { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
 ]
 
 export function Header() {
@@ -71,8 +68,18 @@ export function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
-          {/* Solutions Dropdown - First */}
+        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
+          {navLinks.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide"
+            >
+              {link.label}
+            </Link>
+          ))}
+          
+          {/* Solutions Dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setSolutionsOpen(!solutionsOpen)}
@@ -94,33 +101,20 @@ export function Header() {
             </button>
             
             {solutionsOpen && (
-              <div className="absolute top-full left-0 mt-3 w-72 glass-card rounded-xl border border-border/60 p-3 shadow-xl z-50">
-                <div className="grid grid-cols-1 gap-1">
-                  {solutionsDropdown.map((item) => (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg transition-colors duration-150"
-                      onClick={() => setSolutionsOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 glass-card rounded-xl border border-border/60 p-2 shadow-xl">
+                {solutionsDropdown.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg transition-colors duration-150"
+                    onClick={() => setSolutionsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
-
-          {/* Other nav links */}
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide"
-            >
-              {link.label}
-            </Link>
-          ))}
         </nav>
 
         {/* CTA */}
