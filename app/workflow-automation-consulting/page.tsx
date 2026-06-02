@@ -1,21 +1,21 @@
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { GTMHero } from '@/components/workflow-automation-page/hero'
+import { WorkflowAutomationHero } from '@/components/workflow-automation-page/hero'
 import { ProblemSection } from '@/components/workflow-automation-page/problem-section'
 import { SolutionSection } from '@/components/workflow-automation-page/solution-section'
 import { WhoItsForSection } from '@/components/workflow-automation-page/who-its-for-section'
 import { GTMFAQSection } from '@/components/workflow-automation-page/faq-section'
-import { GTMCTA } from '@/components/workflow-automation-page/final-cta'
+import { WorkflowAutomationCTA } from '@/components/workflow-automation-page/final-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Workflow Automation Consulting | Pressense',
-  description: 'Workflow automation consulting that reduces manual work, improves consistency, and empowers teams.',
+  description: 'Workflow automation consulting that reduces manual work, improves consistency, and saves operations teams 20+ hours per week.',
   openGraph: {
     title: 'Workflow Automation Consulting | Pressense',
     description:
-      'Workflow automation consulting. Design AI-powered workflows, reduce manual work, improve operational efficiency.',
+      'Workflow automation consulting. Design AI-powered workflows, reduce manual work, improve operational efficiency. Save 20+ hours/week.',
     url: '/workflow-automation-consulting',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Workflow Automation' }],
@@ -31,7 +31,7 @@ export default function WorkflowAutomationPage() {
     '@type': 'LocalBusiness',
     '@id': 'https://pressense.co/workflow-automation-consulting',
     name: 'Pressense - Workflow Automation Consulting',
-    description: 'Workflow automation consulting for growing businesses.',
+    description: 'Workflow automation consulting and implementation services for growing businesses.',
     url: 'https://pressense.co/workflow-automation-consulting',
     serviceArea: {
       '@type': 'Place',
@@ -46,12 +46,12 @@ export default function WorkflowAutomationPage() {
       <StructuredData data={schema} />
       <Header />
       <main className="min-h-screen">
-        <GTMHero />
+        <WorkflowAutomationHero />
         <ProblemSection />
         <SolutionSection />
         <WhoItsForSection />
         <GTMFAQSection />
-        <GTMCTA />
+        <WorkflowAutomationCTA />
       </main>
       <Footer />
     </>

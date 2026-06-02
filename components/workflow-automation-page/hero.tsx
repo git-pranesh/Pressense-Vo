@@ -1,23 +1,23 @@
 import Link from 'next/link'
 
-export function GTMHero() {
+export function WorkflowAutomationHero() {
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="GTM Strategy Consultant">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="Workflow Automation Consulting">
       <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-8">
-            A GTM strategy consultant helps businesses diagnose why their go-to-market approach is not converting and builds a strategy that aligns positioning, channels, and sales motion. Pressense provides GTM consulting for founder-led businesses that have product-market fit but struggle to scale revenue predictably.
+            Workflow automation consulting designs and builds automated systems that replace manual, repetitive processes. We help ops teams, finance departments, and GTM operations reduce manual work by 50%+ while improving consistency and reliability.
           </p>
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">GTM Strategy Consultant</span>
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Workflow Automation Consulting</span>
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
-            Go-to-market strategy that actually converts.
+            Automated workflows that scale without adding headcount.
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12">
-            You have a product that works. But your sales cycle is too long, your positioning is unclear, or your channels are not producing. We diagnose the GTM bottleneck and fix it.
+            Your operations team spends 50-70% of their time on repetitive tasks. We design workflows that eliminate the manual work, improve speed, and reduce errors.
           </p>
           <div className="flex flex-col sm:flex-row items-start gap-4">
             <Link href="/diagnostic" className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
@@ -26,7 +26,7 @@ export function GTMHero() {
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5h6M5 2l3 3-3 3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </span>
             </Link>
-            <Link href="/tools/sales-velocity-calculator" className="group inline-flex items-center gap-2 px-9 py-5 rounded-2xl text-base font-semibold border border-border/40 text-foreground hover:border-primary/40 transition-all duration-200">Calculate Sales Velocity</Link>
+            <Link href="/tools/system-integration-roi-calculator" className="group inline-flex items-center gap-2 px-9 py-5 rounded-2xl text-base font-semibold border border-border/40 text-foreground hover:border-primary/40 transition-all duration-200">Calculate ROI</Link>
           </div>
         </div>
       </div>

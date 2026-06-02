@@ -1,12 +1,12 @@
 const deliverables = [
-  'GTM strategy and positioning',
-  'Marketing system design',
-  'Channel prioritization',
-  'Team and agency oversight',
-  'Metrics and reporting frameworks',
-  'Content strategy direction',
-  'Campaign planning and review',
-  'Founder leverage and support',
+  'Workflow audit and ROI analysis',
+  'AI system design and architecture',
+  'Integration with your existing tools',
+  'Implementation and testing',
+  'Team training and documentation',
+  'Performance monitoring dashboard',
+  'Ongoing optimization and support',
+  'Scaling guide for future automation',
 ]
 
 export function WhatYouGetSection() {
@@ -15,7 +15,7 @@ export function WhatYouGetSection() {
       <div className="container mx-auto px-5 sm:px-8">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">What you get</h2>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mb-12">
-          Fractional CMO engagements are tailored to your stage and needs. Common deliverables include:
+          AI automation projects include the full implementation, not just consulting. We deliver working systems, not recommendations.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {deliverables.map((item, i) => (

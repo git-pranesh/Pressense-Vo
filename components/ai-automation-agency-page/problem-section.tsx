@@ -4,13 +4,16 @@ export function ProblemSection() {
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">
-            Marketing without leadership is just activity.
+            Your team&apos;s time is being stolen by busywork.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            You have tried agencies, contractors, and junior hires. Campaigns run. Content gets published. But growth is inconsistent because no one is connecting marketing to actual business outcomes.
+            Manual data entry. Running reports. Sending emails. Organizing information. Your team does these tasks because they&apos;re necessary, not because they&apos;re valuable.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-            You need someone who can diagnose what is actually working, cut what is not, and build marketing that compounds. That is what a CMO does. You just do not need one 40 hours a week.
+            Meanwhile, founders spend 5-10 hours just managing these processes. Mistakes happen because execution is manual. And scaling is impossible without adding more headcount.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+            AI workflows eliminate this—automating the tasks, removing the manual steps, and giving your team focus on decisions that matter.
           </p>
         </div>
       </div>

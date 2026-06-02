@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
-export function GTMCTA() {
+export function WorkflowAutomationCTA() {
   return (
     <section className="py-28 lg:py-36">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-[1.08]">Stop guessing. Start converting.</h2>
-          <p className="text-lg text-muted-foreground mb-12 leading-relaxed text-pretty">Your product works. Your GTM should too. Let us diagnose where it breaks and build a strategy that converts.</p>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-[1.08]">Reclaim your operations team&apos;s time.</h2>
+          <p className="text-lg text-muted-foreground mb-12 leading-relaxed text-pretty">Most businesses can reclaim 20+ hours per week by automating just 3-5 workflows. We&apos;ll audit your processes and show you exactly which workflows create the most impact.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/diagnostic" className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
               Start Your Diagnostic

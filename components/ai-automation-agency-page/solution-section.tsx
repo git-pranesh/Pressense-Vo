@@ -1,19 +1,19 @@
 import Link from 'next/link'
 
 const solutionPoints = [
-  { title: 'Strategic direction', description: 'Clear priorities, positioning, and GTM strategy. Not more tactics, but better decisions about which tactics matter.' },
-  { title: 'Marketing system design', description: 'Build the processes, metrics, and infrastructure that make marketing predictable and scalable.' },
-  { title: 'Team and agency oversight', description: 'Direct your existing team, manage agencies, and ensure execution matches strategy.' },
-  { title: 'Founder leverage', description: 'Get marketing leadership on your calendar when you need it, without the overhead when you do not.' },
+  { title: 'Workflow diagnosis', description: 'Identify which manual processes actually cost you time and money. Quantify the ROI of automating each one.' },
+  { title: 'AI system design', description: 'Map out the workflow, choose the right AI tools, and design integrations that fit your stack.' },
+  { title: 'Implementation & training', description: 'Build the workflows, integrate with your existing tools, and train your team on the new process.' },
+  { title: 'Ongoing optimization', description: 'Monitor performance, fix issues, and iterate as your business evolves.' },
 ]
 
 export function SolutionSection() {
   return (
     <section className="py-20 lg:py-28 border-b border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">What fractional CMO services include</h2>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">How we build AI automation</h2>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mb-16">
-          Pressense fractional CMO engagements focus on strategy and systems, not just execution oversight. See <Link href="/how-we-work" className="text-primary hover:underline">how we work</Link>.
+          Most AI automation projects fail because they focus on technology instead of process. We start with your workflows, then apply AI only where it creates real value. See <Link href="/playbooks" className="text-primary hover:underline">our playbooks</Link> for specifics.
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           {solutionPoints.map((point, i) => (

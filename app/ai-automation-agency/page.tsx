@@ -1,21 +1,21 @@
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { FractionalCMOHero } from '@/components/ai-automation-agency-page/hero'
+import { AIAutomationAgencyHero } from '@/components/ai-automation-agency-page/hero'
 import { ProblemSection } from '@/components/ai-automation-agency-page/problem-section'
 import { SolutionSection } from '@/components/ai-automation-agency-page/solution-section'
 import { WhoItsForSection } from '@/components/ai-automation-agency-page/who-its-for-section'
+import { WhatYouGetSection } from '@/components/ai-automation-agency-page/what-you-get-section'
 import { FractionalCMOFAQSection } from '@/components/ai-automation-agency-page/faq-section'
-import { FractionalCMOCTA } from '@/components/ai-automation-agency-page/final-cta'
+import { AIAutomationAgencyCTA } from '@/components/ai-automation-agency-page/final-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'AI Automation Agency | Pressense',
-  description: 'AI automation services that diagnose broken workflows and build AI-powered solutions in 1 week.',
+  description: 'AI automation consulting that diagnoses broken workflows and builds AI-powered solutions in 1-2 weeks. Save 15+ hours per week.',
   openGraph: {
     title: 'AI Automation Agency | Pressense',
-    description:
-      'AI-powered automation consulting. Diagnose workflow bottlenecks, build AI solutions, scale operations faster.',
+    description: 'AI automation consulting. Automate manual workflows, eliminate busywork, scale operations. Save 15+ hours per week.',
     url: '/ai-automation-agency',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense AI Automation Agency' }],
@@ -31,7 +31,7 @@ export default function AIAutomationAgencyPage() {
     '@type': 'LocalBusiness',
     '@id': 'https://pressense.co/ai-automation-agency',
     name: 'Pressense - AI Automation Agency',
-    description: 'AI automation consulting and implementation services for growing businesses.',
+    description: 'AI automation consulting and implementation services. Build workflows that eliminate manual work.',
     url: 'https://pressense.co/ai-automation-agency',
     serviceArea: {
       '@type': 'Place',
@@ -46,12 +46,13 @@ export default function AIAutomationAgencyPage() {
       <StructuredData data={schema} />
       <Header />
       <main className="min-h-screen">
-        <FractionalCMOHero />
+        <AIAutomationAgencyHero />
         <ProblemSection />
         <SolutionSection />
         <WhoItsForSection />
+        <WhatYouGetSection />
         <FractionalCMOFAQSection />
-        <FractionalCMOCTA />
+        <AIAutomationAgencyCTA />
       </main>
       <Footer />
     </>

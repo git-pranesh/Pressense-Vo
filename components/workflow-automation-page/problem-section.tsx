@@ -4,13 +4,16 @@ export function ProblemSection() {
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">
-            Good products fail because of bad GTM.
+            Manual workflows crush your team&apos;s productivity.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            You built something valuable. Customers who use it love it. But growth is inconsistent, sales cycles drag on, and you are not sure which channels to double down on or which to cut.
+            Email confirmations. Moving data between systems. Running reports. Following up on tasks. Your operations people spend 30-40 hours per week on work that doesn&apos;t require their thinking.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-            The problem is rarely the product. It is positioning that does not land, a sales motion that does not fit the buyer, or channels that attract the wrong leads. GTM strategy fixes these problems.
+            This isn&apos;t just a time problem—it creates inconsistency, errors, and missed deadlines. As you scale, you either add more people or accept worse service.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+            Workflow automation eliminates the manual step entirely. Your systems talk to each other, decisions get routed automatically, and your team focuses on judgment calls.
           </p>
         </div>
       </div>

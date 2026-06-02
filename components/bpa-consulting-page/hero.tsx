@@ -1,23 +1,23 @@
 import Link from 'next/link'
 
-export function SystemsHero() {
+export function BPAHero() {
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="Business Systems Consultant">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="Business Process Automation Consulting">
       <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-8">
-            A business systems consultant helps companies diagnose operational chaos and build systems that make work predictable and scalable. Pressense provides systems consulting for founder-led businesses that have outgrown their current infrastructure but are not ready for enterprise complexity.
+            Business process automation consulting diagnoses inefficient operations and builds automated systems that reduce costs, improve consistency, and free up your team for strategic work. We help growing businesses transform manual, error-prone processes into reliable, scalable workflows.
           </p>
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Business Systems Consultant</span>
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Business Process Automation</span>
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
-            Build systems that scale before they break.
+            Automate processes that don&apos;t scale.
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12">
-            Your business has outgrown spreadsheets and tribal knowledge. We build the operational infrastructure that lets you grow without everything depending on you.
+            Manual processes that worked for 10 people break at 50. We build automation that scales your operations without scaling your headcount.
           </p>
           <div className="flex flex-col sm:flex-row items-start gap-4">
             <Link href="/diagnostic" className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">

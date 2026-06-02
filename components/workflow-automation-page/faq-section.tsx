@@ -2,14 +2,14 @@ import Link from 'next/link'
 import { FAQSection } from '@/components/faq-section'
 
 const gtmFAQs = [
-  { question: 'What is a GTM strategy consultant?', answer: 'A GTM strategy consultant helps businesses diagnose why their go-to-market approach is not converting and builds a strategy that aligns positioning, channels, and sales motion to drive predictable revenue growth.' },
-  { question: 'What does GTM strategy include?', answer: (<>GTM strategy covers positioning, channel selection, sales motion design, pricing, messaging, and the systems that connect marketing to sales to revenue. Use our <Link href="/tools/sales-velocity-calculator" className="text-primary hover:underline">sales velocity calculator</Link> to identify where your current GTM is leaking.</>) },
-  { question: 'How is this different from marketing consulting?', answer: 'Marketing consulting often focuses on tactics and campaigns. GTM strategy focuses on the overall system: how positioning, channels, and sales work together to convert leads into revenue. It is strategic, not just executional.' },
-  { question: 'How long does a GTM engagement take?', answer: 'Most GTM engagements run 4-8 weeks for the initial diagnostic and strategy. Implementation support can extend longer depending on scope. We focus on clarity first, then execution.' },
-  { question: 'What if we have already tried GTM consultants?', answer: (<>Most GTM failures happen because the diagnosis was wrong. We start with understanding where your specific GTM breaks down, not generic frameworks. <Link href="/diagnostic" className="text-primary hover:underline">Start with a diagnostic</Link>.</>) },
-  { question: 'What results should we expect?', answer: 'Typical outcomes include shorter sales cycles, higher conversion rates, clearer positioning, and more predictable pipeline. The specific impact depends on where your current GTM is broken.' },
+  { question: 'What types of workflows can be automated?', answer: 'Data movement between systems, email notifications, approval routing, document generation, report scheduling, customer onboarding checklists, lead qualification, and routine follow-ups. Basically anything repetitive and rules-based.' },
+  { question: 'How long does workflow automation take to build?', answer: 'Simple workflows: 1-2 weeks. Complex multi-step workflows with 3+ integrations: 3-4 weeks. We prioritize quick wins first so you see ROI fast.' },
+  { question: 'Will I need to change my existing tools?', answer: 'No. We build automation that connects your existing systems (Salesforce, HubSpot, Stripe, etc.). We use Make, Zapier, or custom APIs depending on your needs.' },
+  { question: 'What happens if something breaks?', answer: (<>We include 30 days of support and monitoring post-launch. Most clients keep us on retainer for ongoing adjustments and new workflow builds. <Link href="/diagnostic" className="text-primary hover:underline">Ask about support packages</Link>.</>) },
+  { question: 'How much does workflow automation cost?', answer: (<>Projects typically range from $5K-$30K depending on complexity. Tool subscriptions add $20-$200/month. See <Link href="/packages" className="text-primary hover:underline">pricing</Link> for details.</>) },
+  { question: 'Will automation eliminate my team&apos;s jobs?', answer: 'No. It eliminates tasks, not people. Your team shifts from manual work to analysis, strategy, and exception handling. Most clients use the freed-up time for higher-value work.' },
 ]
 
 export function GTMFAQSection() {
-  return <FAQSection headline="Questions about GTM strategy consulting" faqs={gtmFAQs} />
+  return <FAQSection headline="Questions about workflow automation" faqs={gtmFAQs} />
 }
