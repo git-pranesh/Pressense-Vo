@@ -1,7 +1,7 @@
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { SystemsHero } from '@/components/bpa-consulting-page/hero'
+import { BPAHero } from '@/components/bpa-consulting-page/hero'
 import { ProblemSection } from '@/components/bpa-consulting-page/problem-section'
 import { SolutionSection } from '@/components/bpa-consulting-page/solution-section'
 import { WhoItsForSection } from '@/components/bpa-consulting-page/who-its-for-section'
@@ -11,11 +11,11 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Business Process Automation Consulting | Pressense',
-  description: 'Business process automation consulting that streamlines operations and improves organizational efficiency.',
+  description: 'Business process automation consulting that reduces manual work, improves consistency, and scales operations without proportional headcount growth.',
   openGraph: {
     title: 'Business Process Automation Consulting | Pressense',
     description:
-      'Business process automation consulting. Streamline operations, reduce costs, improve compliance and efficiency.',
+      'Business process automation consulting. Automate inefficient operations, reduce manual work, improve consistency and reduce costs.',
     url: '/business-process-automation-consulting',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Business Process Automation' }],
@@ -31,7 +31,7 @@ export default function BPAConsultingPage() {
     '@type': 'LocalBusiness',
     '@id': 'https://pressense.co/business-process-automation-consulting',
     name: 'Pressense - Business Process Automation',
-    description: 'Business process automation consulting for growing businesses.',
+    description: 'Business process automation consulting and implementation services for growing businesses.',
     url: 'https://pressense.co/business-process-automation-consulting',
     serviceArea: {
       '@type': 'Place',
@@ -46,7 +46,7 @@ export default function BPAConsultingPage() {
       <StructuredData data={schema} />
       <Header />
       <main className="min-h-screen">
-        <SystemsHero />
+        <BPAHero />
         <ProblemSection />
         <SolutionSection />
         <WhoItsForSection />
