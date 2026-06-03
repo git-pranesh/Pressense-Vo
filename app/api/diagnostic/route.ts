@@ -1,8 +1,6 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 // The email address where you want to receive diagnostic submissions
 const NOTIFICATION_EMAIL = 'hello@pressense.co'
 
@@ -16,7 +14,9 @@ export async function POST(request: Request) {
         { status: 500 }
       )
     }
-    
+
+    // Instantiate Resend only when needed
+    const resend = new Resend(process.env.RESEND_API_KEY)
     const data = await request.json()
     
     const {
