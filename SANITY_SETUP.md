@@ -1,3 +1,4 @@
+
 # Sanity CMS Schema Setup
 
 This guide shows you the schemas you need to create in your Sanity Studio to use the modular page builder.
