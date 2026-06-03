@@ -124,11 +124,11 @@ export default function BuildVsBuyPlaybook() {
                   </thead>
                   <tbody>
                     <tr className="border-b border-border">
-                      <td className="p-3">Common workflow, SaaS available, <$50K/year</td>
+                      <td className="p-3">{"Common workflow, SaaS available, <$50K/year"}</td>
                       <td className="p-3 font-semibold text-green-600">Buy SaaS</td>
                     </tr>
                     <tr className="border-b border-border">
-                      <td className="p-3">Unique workflow, no SaaS alternative, <$100K build cost</td>
+                      <td className="p-3">{"Unique workflow, no SaaS alternative, <$100K build cost"}</td>
                       <td className="p-3 font-semibold text-green-600">Build</td>
                     </tr>
                     <tr className="border-b border-border">

@@ -2,7 +2,11 @@
 
 import { usePathname } from 'next/navigation'
 
-export function StructuredData() {
+interface StructuredDataProps {
+  data?: Record<string, unknown>
+}
+
+export function StructuredData({ data }: StructuredDataProps = {}) {
   const pathname = usePathname()
   const baseUrl = 'https://www.pressense.co'
   const currentUrl = `${baseUrl}${pathname}`
@@ -181,6 +185,14 @@ export function StructuredData() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(faqData),
+          }}
+        />
+      )}
+      {data && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(data),
           }}
         />
       )}

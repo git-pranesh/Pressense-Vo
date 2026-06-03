@@ -93,7 +93,7 @@ export default function SalesProcessAuditPlaybook() {
                 <li>Lead to Discovery: 5-7 days (then you're losing them)</li>
                 <li>Discovery to Proposal: 3-5 days</li>
                 <li>Proposal to Close: 7-14 days</li>
-                <li>Total cycle: 15-30 days (should be <40 days)</li>
+                <li>{"Total cycle: 15-30 days (should be <40 days)"}</li>
               </ul>
             </section>
 

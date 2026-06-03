@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Founder Bottleneck Diagnostic Playbook | Pressense',
-  description: 'Diagnose what's slowing your growth: operational chaos, unclear prioritization, or team misalignment. Free diagnostic framework.',
+  description: "Diagnose what's slowing your growth: operational chaos, unclear prioritization, or team misalignment. Free diagnostic framework.",
   openGraph: {
     title: 'Founder Bottleneck Diagnostic Playbook | Pressense',
     description: 'Free playbook: Identify the root cause of your growth slowdown. Operational, strategic, or execution bottleneck?',
