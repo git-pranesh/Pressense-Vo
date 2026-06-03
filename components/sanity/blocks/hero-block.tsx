@@ -1,48 +1,50 @@
+import Link from 'next/link'
+
+interface CTA { text?: string; href?: string }
+
 interface HeroBlockProps {
+  eyebrow?: string
   title?: string
   subtitle?: string
   description?: string
+  primaryCta?: CTA
+  secondaryCta?: CTA
   ctaText?: string
   ctaUrl?: string
   ctaText2?: string
   ctaUrl2?: string
-  backgroundImage?: string
-  textColor?: string
 }
 
-export function HeroBlock({
-  title,
-  subtitle,
-  description,
-  ctaText,
-  ctaUrl,
-  ctaText2,
-  ctaUrl2,
-}: HeroBlockProps) {
+export function HeroBlock({ eyebrow, title, subtitle, description, primaryCta, secondaryCta, ctaText, ctaUrl, ctaText2, ctaUrl2 }: HeroBlockProps) {
+  const primary = primaryCta?.text ? primaryCta : ctaText ? { text: ctaText, href: ctaUrl } : null
+  const secondary = secondaryCta?.text ? secondaryCta : ctaText2 ? { text: ctaText2, href: ctaUrl2 } : null
+
   return (
-    <section className="w-full py-20 md:py-32 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
-      <div className="max-w-5xl mx-auto px-4 md:px-6 text-center">
-        {subtitle && <p className="text-lg md:text-xl text-slate-300 mb-4">{subtitle}</p>}
-        {title && <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">{title}</h1>}
-        {description && <p className="text-xl md:text-2xl text-slate-200 mb-8 max-w-3xl mx-auto text-balance">{description}</p>}
-        
-        {(ctaText || ctaText2) && (
+    <section className="relative min-h-[70vh] flex flex-col justify-center overflow-hidden pt-20 pb-16 px-6 lg:px-10">
+      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
+      <div className="relative max-w-4xl mx-auto text-center">
+        {eyebrow && (
+          <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-xs font-medium text-primary/80 tracking-wider uppercase mb-6">
+            {eyebrow}
+          </p>
+        )}
+        {title && <h1 className="text-4xl lg:text-6xl font-semibold text-foreground tracking-tight mb-6 text-balance">{title}</h1>}
+        {(subtitle || description) && (
+          <p className="text-lg lg:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-balance leading-relaxed">
+            {subtitle || description}
+          </p>
+        )}
+        {(primary || secondary) && (
           <div className="flex flex-wrap gap-4 justify-center">
-            {ctaText && (
-              <a
-                href={ctaUrl || '#'}
-                className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition"
-              >
-                {ctaText}
-              </a>
+            {primary && (
+              <Link href={primary.href || '/diagnostic'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-colors">
+                {primary.text}
+              </Link>
             )}
-            {ctaText2 && (
-              <a
-                href={ctaUrl2 || '#'}
-                className="px-8 py-3 border-2 border-white hover:bg-white hover:text-slate-900 text-white font-semibold rounded-lg transition"
-              >
-                {ctaText2}
-              </a>
+            {secondary && (
+              <Link href={secondary.href || '#'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold border border-border/60 text-foreground hover:border-primary/40 transition-colors">
+                {secondary.text}
+              </Link>
             )}
           </div>
         )}

@@ -9,81 +9,28 @@ export default defineType({
     { name: 'seo', title: 'SEO' },
   ],
   fields: [
-    // Content Fields
-    defineField({
-      name: 'title',
-      title: 'Page Title',
-      type: 'string',
-      group: 'content',
-      validation: (Rule) => Rule.required(),
-    }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      group: 'content',
-      options: {
-        source: 'title',
-        maxLength: 96,
-      },
-      validation: (Rule) => Rule.required(),
-    }),
+    defineField({ name: 'title', title: 'Page Title', type: 'string', group: 'content', validation: (Rule) => Rule.required() }),
+    defineField({ name: 'slug', title: 'Slug', type: 'slug', group: 'content', options: { source: 'title', maxLength: 96 }, validation: (Rule) => Rule.required() }),
     defineField({
       name: 'blocks',
       title: 'Page Blocks',
+      description: 'Add, remove, and reorder blocks to build the page.',
       type: 'array',
       group: 'content',
       of: [
-        { type: 'heroBlock' },
-        { type: 'richTextBlock' },
-        { type: 'faqBlock' },
-        { type: 'processStepsBlock' },
-        { type: 'ctaBannerBlock' },
-        { type: 'statsGridBlock' },
+        { type: 'heroBlock' }, { type: 'richTextBlock' }, { type: 'faqBlock' },
+        { type: 'processStepsBlock' }, { type: 'ctaBannerBlock' }, { type: 'statsGridBlock' },
+        { type: 'comparisonTableBlock' }, { type: 'testimonialsBlock' },
+        { type: 'imageTextBlock' }, { type: 'whoItsForBlock' }, { type: 'videoBlock' },
       ],
     }),
-
-    // SEO Fields
-    defineField({
-      name: 'metaTitle',
-      title: 'Meta Title',
-      type: 'string',
-      group: 'seo',
-      description: 'Title for search engines (50-60 characters recommended)',
-      validation: (Rule) => Rule.max(60).warning('Should be under 60 characters'),
-    }),
-    defineField({
-      name: 'metaDescription',
-      title: 'Meta Description',
-      type: 'text',
-      group: 'seo',
-      rows: 3,
-      description: 'Description for search engines (150-160 characters recommended)',
-      validation: (Rule) => Rule.max(160).warning('Should be under 160 characters'),
-    }),
-    defineField({
-      name: 'canonicalUrl',
-      title: 'Canonical URL',
-      type: 'url',
-      group: 'seo',
-      description: 'Optional: Override the canonical URL for this page',
-    }),
-    defineField({
-      name: 'noIndex',
-      title: 'No Index',
-      type: 'boolean',
-      group: 'seo',
-      description: 'Hide this page from search engines',
-      initialValue: false,
-    }),
+    defineField({ name: 'metaTitle', title: 'Meta Title', type: 'string', group: 'seo', validation: (Rule) => Rule.max(60).warning('Under 60 chars') }),
+    defineField({ name: 'metaDescription', title: 'Meta Description', type: 'text', rows: 3, group: 'seo', validation: (Rule) => Rule.max(160).warning('Under 160 chars') }),
+    defineField({ name: 'canonicalUrl', title: 'Canonical URL', type: 'url', group: 'seo' }),
+    defineField({ name: 'noIndex', title: 'No Index', type: 'boolean', group: 'seo', initialValue: false }),
   ],
   preview: {
     select: { title: 'title', slug: 'slug.current' },
-    prepare({ title, slug }) {
-      return {
-        title: title,
-        subtitle: slug ? `/services/${slug}` : 'No slug',
-      }
-    },
+    prepare({ title, slug }) { return { title, subtitle: slug ? `/services/${slug}` : 'No slug' } },
   },
 })
