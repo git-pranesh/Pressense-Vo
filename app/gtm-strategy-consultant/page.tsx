@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { GTMHero } from '@/components/gtm-consultant-page/hero'
 import { ProblemSection } from '@/components/gtm-consultant-page/problem-section'
 import { SolutionSection } from '@/components/gtm-consultant-page/solution-section'
@@ -36,7 +34,7 @@ export default function GTMStrategyConsultantPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <Header />
+      
       <main>
         <GTMHero />
         <ProblemSection />
@@ -45,7 +43,7 @@ export default function GTMStrategyConsultantPage() {
         <GTMFAQSection />
         <GTMCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

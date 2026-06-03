@@ -1,6 +1,4 @@
 import { StructuredData } from '@/components/structured-data'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { WorkflowAutomationHero } from '@/components/workflow-automation-page/hero'
 import { ProblemSection } from '@/components/workflow-automation-page/problem-section'
 import { SolutionSection } from '@/components/workflow-automation-page/solution-section'
@@ -44,7 +42,7 @@ export default function WorkflowAutomationPage() {
   return (
     <>
       <StructuredData data={schema} />
-      <Header />
+      
       <main className="min-h-screen">
         <WorkflowAutomationHero />
         <ProblemSection />
@@ -53,7 +51,7 @@ export default function WorkflowAutomationPage() {
         <GTMFAQSection />
         <WorkflowAutomationCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

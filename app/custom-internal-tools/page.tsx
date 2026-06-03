@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { CustomToolsHero } from '@/components/custom-tools-page/hero'
 import { ManualSystemsSection } from '@/components/custom-tools-page/manual-systems-section'
 import { ConstraintsSection } from '@/components/custom-tools-page/constraints-section'
@@ -38,7 +36,7 @@ export const metadata: Metadata = {
 export default function CustomInternalToolsPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <CustomToolsHero />
         <ManualSystemsSection />
@@ -53,7 +51,7 @@ export default function CustomInternalToolsPage() {
         <CustomToolsFAQSection />
         <CustomToolsFinalCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

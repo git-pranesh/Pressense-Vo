@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { ContentAuthorityHero } from '@/components/content-authority-page/hero'
 import { TranslationSection } from '@/components/content-authority-page/translation-section'
 import { ConstraintsSection } from '@/components/content-authority-page/constraints-section'
@@ -40,7 +38,7 @@ export const metadata: Metadata = {
 export default function ContentAuthoritySystemsPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <ContentAuthorityHero />
         <TranslationSection />
@@ -57,7 +55,7 @@ export default function ContentAuthoritySystemsPage() {
         <ContentFAQSection />
         <ContentAuthorityCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

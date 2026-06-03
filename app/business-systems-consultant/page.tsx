@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { SystemsHero } from '@/components/business-systems-page/hero'
 import { ProblemSection } from '@/components/business-systems-page/problem-section'
 import { SolutionSection } from '@/components/business-systems-page/solution-section'
@@ -36,7 +34,7 @@ export default function BusinessSystemsConsultantPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <Header />
+      
       <main>
         <SystemsHero />
         <ProblemSection />
@@ -45,7 +43,7 @@ export default function BusinessSystemsConsultantPage() {
         <SystemsFAQSection />
         <SystemsCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

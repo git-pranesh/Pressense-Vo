@@ -1,5 +1,3 @@
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { StructuredData } from '@/components/structured-data'
 import { getAllPosts } from '@/lib/blog/cms'
 import Link from 'next/link'
@@ -53,7 +51,7 @@ export default async function BlogPage() {
   return (
     <>
       <StructuredData data={schema} />
-      <Header />
+      
       <main className="min-h-screen">
         {/* Hero */}
         <section className="py-20 sm:py-28 px-6 lg:px-10">
@@ -151,7 +149,7 @@ export default async function BlogPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      
     </>
   )
 }

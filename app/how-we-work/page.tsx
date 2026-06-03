@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { HowWeWorkHero } from '@/components/how-we-work/hero'
 import { DiagnosePhase } from '@/components/how-we-work/diagnose-phase'
 import { BuildPlanPhase } from '@/components/how-we-work/build-plan-phase'
@@ -35,7 +33,7 @@ export const metadata: Metadata = {
 export default function HowWeWorkPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <HowWeWorkHero />
         <DiagnosePhase />
@@ -46,7 +44,7 @@ export default function HowWeWorkPage() {
         <HowWeWorkFAQSection />
         <HowWeWorkCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

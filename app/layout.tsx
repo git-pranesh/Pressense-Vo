@@ -1,14 +1,9 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { StructuredData } from '@/components/structured-data'
+import { Header } from '@/components/header'
+import { MegaFooter } from '@/components/mega-footer'
 import './globals.css'
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.pressense.co'),
@@ -60,12 +55,17 @@ export default function RootLayout({
     <html lang="en" className="bg-background">
       <head>
         <StructuredData />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         <a href="#main-content" className="sr-only focus:not-sr-only">
           Skip to main content
         </a>
+        <Header />
         <div id="main-content">{children}</div>
+        <MegaFooter />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

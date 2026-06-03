@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { FractionalCMOHero } from '@/components/fractional-cmo-page/hero'
 import { ProblemSection } from '@/components/fractional-cmo-page/problem-section'
 import { SolutionSection } from '@/components/fractional-cmo-page/solution-section'
@@ -37,7 +35,7 @@ export default function FractionalCMOServicesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <Header />
+      
       <main>
         <FractionalCMOHero />
         <ProblemSection />
@@ -47,7 +45,7 @@ export default function FractionalCMOServicesPage() {
         <FractionalCMOFAQSection />
         <FractionalCMOCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

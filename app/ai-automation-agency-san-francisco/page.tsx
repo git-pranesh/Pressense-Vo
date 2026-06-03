@@ -1,5 +1,3 @@
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { StructuredData } from '@/components/structured-data'
 import type { Metadata } from 'next'
 
@@ -41,7 +39,7 @@ export default function AISFPage() {
   return (
     <>
       <StructuredData data={schema} />
-      <Header />
+      
       <main className="min-h-screen">
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
           <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">
@@ -136,7 +134,7 @@ export default function AISFPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      
     </>
   )
 }

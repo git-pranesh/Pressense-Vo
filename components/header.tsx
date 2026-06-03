@@ -4,26 +4,66 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const navLinks = [
-  { label: 'What We Fix', href: '/what-we-fix' },
-  { label: 'How We Work', href: '/how-we-work' },
-  { label: 'Work', href: '/work' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Playbooks', href: '/playbooks' },
+  { label: 'Tools', href: '/tools' },
+  { label: 'Packages', href: '/packages' },
+  { label: 'Work', href: '/work' },
 ]
 
-const solutionsDropdown = [
-  { label: 'Advisory & Strategy', href: '/advisory-strategy' },
-  { label: 'Internal Tools & Systems', href: '/custom-internal-tools' },
-  { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-  { label: 'Content & Authority Systems', href: '/content-authority-systems' },
-  { label: 'Websites & Conversion Systems', href: '/websites-conversion-systems' },
-  { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
+const servicesColumns = [
+  {
+    heading: 'AI & Automation',
+    links: [
+      { label: 'AI Automation Agency', href: '/ai-automation-agency' },
+      { label: 'Workflow Automation Consulting', href: '/workflow-automation-consulting' },
+      { label: 'Business Process Automation', href: '/business-process-automation-consulting' },
+      { label: 'AI Implementation for SMBs', href: '/ai-implementation-small-business' },
+      { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
+    ],
+  },
+  {
+    heading: 'Strategy & GTM',
+    links: [
+      { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
+      { label: 'Fractional CMO Advisor', href: '/fractional-cmo-advisor' },
+      { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
+      { label: 'SaaS Go-to-Market Strategy', href: '/saas-go-to-market-strategy' },
+      { label: 'Revenue Operations Consulting', href: '/revenue-operations-consulting' },
+      { label: 'Small Business Strategy', href: '/small-business-strategy-consultant' },
+    ],
+  },
+  {
+    heading: 'Systems & Build',
+    links: [
+      { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
+      { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
+      { label: 'MVP Development for Startups', href: '/mvp-development-for-startups' },
+      { label: 'Replit Developer / Vibe Coding', href: '/replit-developer-for-hire' },
+      { label: 'Framer Website Agency', href: '/framer-website-agency' },
+    ],
+  },
+  {
+    heading: 'By Location',
+    links: [
+      { label: 'San Francisco', href: '/ai-automation-agency-san-francisco' },
+      { label: 'New York', href: '/ai-automation-agency-new-york' },
+      { label: 'Austin', href: '/ai-automation-agency-austin' },
+      { label: 'London', href: '/ai-automation-agency-london' },
+      { label: 'Chicago', href: '/ai-automation-agency-chicago' },
+      { label: 'Miami', href: '/ai-automation-agency-miami' },
+      { label: 'Seattle', href: '/ai-automation-agency-seattle' },
+      { label: 'Boston (Systems)', href: '/business-systems-consultant-boston' },
+    ],
+  },
 ]
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [solutionsOpen, setSolutionsOpen] = useState(false)
-  const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false)
+  const [servicesOpen, setServicesOpen] = useState(false)
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -32,15 +72,20 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setSolutionsOpen(false)
+        setServicesOpen(false)
       }
     }
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
+  // Close menu on route change
+  useEffect(() => {
+    setMenuOpen(false)
+    setServicesOpen(false)
   }, [])
 
   return (
@@ -53,7 +98,7 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group" aria-label="Homepage">
+        <Link href="/" className="flex items-center gap-2.5 group" aria-label="Pressense homepage">
           <div className="w-7 h-7 rounded border border-primary/40 flex items-center justify-center group-hover:border-primary transition-colors">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
               <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
@@ -62,13 +107,77 @@ export function Header() {
               <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
             </svg>
           </div>
-          <span className="text-sm font-semibold tracking-wide text-foreground">
-            PRESSENSE
-          </span>
+          <span className="text-sm font-semibold tracking-wide text-foreground">PRESSENSE</span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+          {/* Services mega menu trigger */}
+          <div className="relative" ref={dropdownRef}>
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide"
+              aria-expanded={servicesOpen}
+              aria-haspopup="true"
+            >
+              Services
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                className={`transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}
+                aria-hidden="true"
+              >
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            {/* Mega menu */}
+            {servicesOpen && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[780px] glass-card rounded-xl border border-border/60 p-6 shadow-2xl">
+                <div className="grid grid-cols-4 gap-6">
+                  {servicesColumns.map((col) => (
+                    <div key={col.heading}>
+                      <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-3">
+                        {col.heading}
+                      </p>
+                      <ul className="space-y-1.5">
+                        {col.links.map((link) => (
+                          <li key={link.href}>
+                            <Link
+                              href={link.href}
+                              className="block text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg px-2 py-1.5 transition-colors duration-150"
+                              onClick={() => setServicesOpen(false)}
+                            >
+                              {link.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-5 pt-4 border-t border-border/40 flex items-center justify-between">
+                  <Link
+                    href="/packages"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    onClick={() => setServicesOpen(false)}
+                  >
+                    View all packages & pricing →
+                  </Link>
+                  <Link
+                    href="/how-we-work"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    onClick={() => setServicesOpen(false)}
+                  >
+                    How we work →
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
+
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -78,47 +187,10 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          
-          {/* Solutions Dropdown */}
-          <div className="relative" ref={dropdownRef}>
-            <button
-              onClick={() => setSolutionsOpen(!solutionsOpen)}
-              className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide"
-              aria-expanded={solutionsOpen}
-              aria-haspopup="true"
-            >
-              Solutions
-              <svg 
-                width="10" 
-                height="10" 
-                viewBox="0 0 10 10" 
-                fill="none" 
-                className={`transition-transform duration-200 ${solutionsOpen ? 'rotate-180' : ''}`}
-                aria-hidden="true"
-              >
-                <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-            
-            {solutionsOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 glass-card rounded-xl border border-border/60 p-2 shadow-xl">
-                {solutionsDropdown.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg transition-colors duration-150"
-                    onClick={() => setSolutionsOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
         </nav>
 
         {/* CTA */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Link
             href="/diagnostic"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors duration-200"
@@ -133,7 +205,7 @@ export function Header() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-muted-foreground hover:text-foreground"
+          className="lg:hidden p-2 text-muted-foreground hover:text-foreground"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -152,62 +224,67 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden glass-card border-t border-border/40 px-6 py-5 flex flex-col gap-4">
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground py-1"
-              onClick={() => setMenuOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
-          
-          {/* Mobile Solutions Accordion */}
+        <div className="lg:hidden glass-card border-t border-border/40 px-6 py-5 flex flex-col gap-3 max-h-[80vh] overflow-y-auto">
+          {/* Mobile Services Accordion */}
           <div>
             <button
-              onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
-              className="flex items-center justify-between w-full text-sm text-muted-foreground hover:text-foreground py-1"
-              aria-expanded={mobileSolutionsOpen}
+              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+              className="flex items-center justify-between w-full text-sm text-muted-foreground hover:text-foreground py-2"
+              aria-expanded={mobileServicesOpen}
             >
-              Solutions
-              <svg 
-                width="10" 
-                height="10" 
-                viewBox="0 0 10 10" 
-                fill="none" 
-                className={`transition-transform duration-200 ${mobileSolutionsOpen ? 'rotate-180' : ''}`}
+              Services
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                className={`transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`}
                 aria-hidden="true"
               >
                 <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
-            
-            {mobileSolutionsOpen && (
-              <div className="mt-2 ml-3 flex flex-col gap-2 border-l border-border/40 pl-4">
-                {solutionsDropdown.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="text-sm text-muted-foreground hover:text-foreground py-1"
-                    onClick={() => {
-                      setMenuOpen(false)
-                      setMobileSolutionsOpen(false)
-                    }}
-                  >
-                    {item.label}
-                  </Link>
+
+            {mobileServicesOpen && (
+              <div className="mt-2 flex flex-col gap-4 border-l border-border/40 pl-4 ml-1">
+                {servicesColumns.map((col) => (
+                  <div key={col.heading}>
+                    <p className="text-xs font-semibold tracking-widest uppercase text-primary/60 mb-2">
+                      {col.heading}
+                    </p>
+                    <div className="flex flex-col gap-1">
+                      {col.links.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className="text-sm text-muted-foreground hover:text-foreground py-1"
+                          onClick={() => { setMenuOpen(false); setMobileServicesOpen(false) }}
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             )}
           </div>
-          
+
+          {navLinks.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="text-sm text-muted-foreground hover:text-foreground py-2 border-t border-border/20"
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+
           <Link
             href="/diagnostic"
             className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground w-fit"
             onClick={() => setMenuOpen(false)}
-            aria-label="Start a diagnostic"
           >
             Start Diagnostic
           </Link>

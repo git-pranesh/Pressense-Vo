@@ -1,5 +1,3 @@
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { StructuredData } from '@/components/structured-data'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -59,7 +57,7 @@ export default function StrategySprintPackagePage() {
   return (
     <>
       <StructuredData data={schema} />
-      <Header />
+      
       <main className="min-h-screen">
         {/* Hero */}
         <section className="py-20 sm:py-28 px-6 lg:px-10">
@@ -170,7 +168,7 @@ export default function StrategySprintPackagePage() {
           </div>
         </section>
       </main>
-      <Footer />
+      
     </>
   )
 }

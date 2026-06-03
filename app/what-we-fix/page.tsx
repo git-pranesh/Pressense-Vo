@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { WhatWeFixHero } from '@/components/what-we-fix/hero'
 import { IntroSection } from '@/components/what-we-fix/intro-section'
 import { ProblemsGrid } from '@/components/what-we-fix/problems-grid'
@@ -36,7 +34,7 @@ export const metadata: Metadata = {
 export default function WhatWeFixPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <WhatWeFixHero />
         <IntroSection />
@@ -49,7 +47,7 @@ export default function WhatWeFixPage() {
         <WhatWeFixFAQSection />
         <WhatWeFixCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

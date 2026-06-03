@@ -1,22 +1,42 @@
 import Link from 'next/link'
 import { calculatorsData, CALCULATOR_CATEGORIES } from '@/lib/calculators'
 
-const footerLinks = [
-  { label: 'What We Fix', href: '/what-we-fix' },
+const companyLinks = [
   { label: 'How We Work', href: '/how-we-work' },
-  { label: 'Work', href: '/work' },
+  { label: 'Work / Case Studies', href: '/work' },
   { label: 'Playbooks', href: '/playbooks' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Tools', href: '/tools' },
+  { label: 'Packages & Pricing', href: '/packages' },
   { label: 'Start Diagnostic', href: '/diagnostic' },
 ]
 
-const solutionsLinks = [
-  { label: 'Advisory & Strategy', href: '/advisory-strategy' },
-  { label: 'Internal Tools & Systems', href: '/custom-internal-tools' },
-  { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-  { label: 'Content & Authority Systems', href: '/content-authority-systems' },
-  { label: 'Websites & Conversion Systems', href: '/websites-conversion-systems' },
-  { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
+const serviceLinks = [
+  { label: 'AI Automation Agency', href: '/ai-automation-agency' },
+  { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
+  { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
+  { label: 'Workflow Automation', href: '/workflow-automation-consulting' },
+  { label: 'Business Process Automation', href: '/business-process-automation-consulting' },
+  { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
+  { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
+  { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
+  { label: 'MVP Development', href: '/mvp-development-for-startups' },
+  { label: 'Framer Website Agency', href: '/framer-website-agency' },
+]
+
+const localLinks = [
+  { label: 'AI Automation — San Francisco', href: '/ai-automation-agency-san-francisco' },
+  { label: 'AI Automation — New York', href: '/ai-automation-agency-new-york' },
+  { label: 'AI Automation — Austin', href: '/ai-automation-agency-austin' },
+  { label: 'AI Automation — London', href: '/ai-automation-agency-london' },
+  { label: 'AI Automation — Chicago', href: '/ai-automation-agency-chicago' },
+  { label: 'AI Automation — Miami', href: '/ai-automation-agency-miami' },
+  { label: 'AI Automation — Seattle', href: '/ai-automation-agency-seattle' },
+  { label: 'Fractional CMO — San Francisco', href: '/fractional-cmo-san-francisco' },
+  { label: 'Fractional CMO — New York', href: '/fractional-cmo-new-york' },
+  { label: 'GTM Consultant — San Francisco', href: '/gtm-consultant-san-francisco' },
+  { label: 'Business Strategy — London', href: '/business-strategy-consultant-london' },
+  { label: 'Systems Consultant — Boston', href: '/business-systems-consultant-boston' },
 ]
 
 export function MegaFooter() {
@@ -27,129 +47,132 @@ export function MegaFooter() {
 
   return (
     <footer className="border-t border-border/40 bg-background">
-      {/* Calculator Links Section */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 border-b border-border/40">
-        <div className="mb-8">
-          <h2 className="text-lg font-semibold text-foreground mb-2">All Calculators</h2>
-          <p className="text-sm text-muted-foreground">
-            {calculatorsData.length} free SaaS calculators with operator-grade benchmarks
-          </p>
-        </div>
-        
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {calculatorsByCategory.map((group) => (
-            <div key={group.category}>
-              <h3 className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">
-                {group.category}
+      {/* Services grid */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-14 border-b border-border/40">
+        <div className="grid gap-10 lg:grid-cols-3">
+          {/* Services */}
+          <div>
+            <h3 className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
+              Services
+            </h3>
+            <ul className="space-y-2">
+              {serviceLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Local pages */}
+          <div>
+            <h3 className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
+              Locations
+            </h3>
+            <ul className="space-y-2">
+              {localLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company + CTA */}
+          <div className="flex flex-col gap-8">
+            <div>
+              <h3 className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
+                Company
               </h3>
               <ul className="space-y-2">
-                {group.calculators.map((calc) => (
-                  <li key={calc.slug}>
-                    <Link
-                      href={`/tools/${calc.slug}`}
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                    >
-                      {calc.title.replace(' Calculator', '')}
+                {companyLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                      {link.label}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
-          ))}
+
+            <div className="p-5 rounded-xl border border-border/60 bg-card">
+              <p className="text-sm font-medium text-foreground mb-1">Ready to scale?</p>
+              <p className="text-sm text-muted-foreground mb-4">
+                Book a free diagnostic to map your top 3 growth constraints.
+              </p>
+              <Link
+                href="/diagnostic"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors"
+              >
+                Start Diagnostic
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Main Footer Section */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-10">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 mb-10">
-          {/* Logo & Description */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-7 h-7 rounded border border-primary/40 flex items-center justify-center">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
-                  <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.5" />
-                  <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.5" />
-                  <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
-                </svg>
+      {/* Calculators section */}
+      {calculatorsByCategory.length > 0 && (
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 border-b border-border/40">
+          <div className="mb-6 flex items-center justify-between">
+            <div>
+              <h2 className="text-sm font-semibold text-foreground">Free Business Calculators</h2>
+              <p className="text-xs text-muted-foreground mt-0.5">{calculatorsData.length} calculators with operator-grade benchmarks</p>
+            </div>
+            <Link href="/tools" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+              View all tools →
+            </Link>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {calculatorsByCategory.map((group) => (
+              <div key={group.category}>
+                <h3 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground/60 mb-3">
+                  {group.category}
+                </h3>
+                <ul className="space-y-1.5">
+                  {group.calculators.map((calc) => (
+                    <li key={calc.slug}>
+                      <Link
+                        href={`/tools/${calc.slug}`}
+                        className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        {calc.title.replace(' Calculator', '')}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <span className="text-sm font-semibold tracking-wide text-foreground">PRESSENSE</span>
-            </Link>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Strategy and systems partner for B2B SaaS operators. We fix growth bottlenecks and build systems that scale.
-            </p>
-          </div>
-
-          {/* Navigation */}
-          <div>
-            <h3 className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">
-              Company
-            </h3>
-            <ul className="space-y-2">
-              {footerLinks.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Solutions */}
-          <div>
-            <h3 className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">
-              Solutions
-            </h3>
-            <ul className="space-y-2">
-              {solutionsLinks.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact & CTA */}
-          <div>
-            <h3 className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">
-              Get Started
-            </h3>
-            <p className="text-sm text-muted-foreground mb-4">
-              Book a free 30-minute diagnostic to map where you&apos;re leaking growth.
-            </p>
-            <Link
-              href="/diagnostic"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors"
-            >
-              Start Diagnostic
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </Link>
+            ))}
           </div>
         </div>
+      )}
 
-        {/* Bottom bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-border/40">
-          <p className="text-xs text-text-dim">
-            &copy; {new Date().getFullYear()} Pressense. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6">
-            <Link href="/privacy" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">
-              Terms of Service
-            </Link>
+      {/* Bottom bar */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <Link href="/" className="flex items-center gap-2.5">
+            <div className="w-6 h-6 rounded border border-primary/30 flex items-center justify-center">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.8" />
+                <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.4" />
+                <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.4" />
+                <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.8" />
+              </svg>
+            </div>
+            <span className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">Pressense</span>
+          </Link>
+          <p className="text-xs text-text-dim">&copy; {new Date().getFullYear()} Pressense. All rights reserved.</p>
+          <div className="flex items-center gap-5">
+            <Link href="/privacy" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">Privacy</Link>
+            <Link href="/terms" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">Terms</Link>
+            <Link href="/sitemap.xml" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">Sitemap</Link>
           </div>
         </div>
       </div>

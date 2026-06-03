@@ -1,6 +1,4 @@
 import { StructuredData } from '@/components/structured-data'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { BPAHero } from '@/components/bpa-consulting-page/hero'
 import { ProblemSection } from '@/components/bpa-consulting-page/problem-section'
 import { SolutionSection } from '@/components/bpa-consulting-page/solution-section'
@@ -44,7 +42,7 @@ export default function BPAConsultingPage() {
   return (
     <>
       <StructuredData data={schema} />
-      <Header />
+      
       <main className="min-h-screen">
         <BPAHero />
         <ProblemSection />
@@ -53,7 +51,7 @@ export default function BPAConsultingPage() {
         <SystemsFAQSection />
         <SystemsCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

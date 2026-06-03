@@ -1,5 +1,3 @@
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -20,7 +18,7 @@ export const metadata: Metadata = {
 export default function FounderBottleneckPlaybook() {
   return (
     <>
-      <Header />
+      
       <main className="min-h-screen">
         <section className="max-w-3xl mx-auto px-6 lg:px-10 py-20">
           <h1 className="text-4xl font-bold tracking-tight mb-6">Founder Bottleneck Diagnostic Playbook</h1>
@@ -127,7 +125,7 @@ export default function FounderBottleneckPlaybook() {
           </div>
         </section>
       </main>
-      <Footer />
+      
     </>
   )
 }

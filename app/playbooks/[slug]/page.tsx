@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { PlaybookPageTemplate } from '@/components/playbook/playbook-page-template'
 import { getPlaybookBySlug, getAllPlaybookSlugs } from '@/lib/playbooks-data'
 
@@ -53,11 +51,11 @@ export default async function PlaybookPage({ params }: PlaybookPageProps) {
 
   return (
     <>
-      <Header />
+      
       <main>
         <PlaybookPageTemplate playbook={playbook} />
       </main>
-      <Footer />
+      
     </>
   )
 }

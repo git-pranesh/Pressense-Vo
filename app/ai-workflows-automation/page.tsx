@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { AIWorkflowsHero } from '@/components/ai-workflows-page/hero'
 import { AIWorkflowsAmplifiesSection } from '@/components/ai-workflows-page/amplifies-section'
 import { AIWhereWrongSection } from '@/components/ai-workflows-page/where-wrong-section'
@@ -41,7 +39,7 @@ export const metadata: Metadata = {
 export default function AIWorkflowsAutomationPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <AIWorkflowsHero />
         <AIWorkflowsAmplifiesSection />
@@ -59,7 +57,7 @@ export default function AIWorkflowsAutomationPage() {
         <AIWorkflowsFAQSection />
         <AIWorkflowsFinalCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

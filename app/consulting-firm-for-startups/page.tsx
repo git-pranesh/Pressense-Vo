@@ -1,6 +1,4 @@
 import { StructuredData } from '@/components/structured-data'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle2, Lightbulb, TrendingUp, Users, Zap } from 'lucide-react'
 import Link from 'next/link'
@@ -40,7 +38,7 @@ export default function StartupConsultingPage() {
   return (
     <>
       <StructuredData data={schema} />
-      <Header />
+      
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative py-20 lg:py-28 overflow-hidden">
@@ -259,7 +257,7 @@ export default function StartupConsultingPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      
     </>
   )
 }

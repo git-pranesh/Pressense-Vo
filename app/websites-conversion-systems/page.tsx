@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { WebsitesConversionHero } from '@/components/websites-conversion-page/hero'
 import { ClaritySection } from '@/components/websites-conversion-page/clarity-section'
 import { ConstraintsSection } from '@/components/websites-conversion-page/constraints-section'
@@ -41,7 +39,7 @@ export const metadata: Metadata = {
 export default function WebsitesConversionSystemsPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <WebsitesConversionHero />
         <ClaritySection />
@@ -59,7 +57,7 @@ export default function WebsitesConversionSystemsPage() {
         <WebsitesFAQSection />
         <WebsitesConversionFinalCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

@@ -1,6 +1,4 @@
 import { StructuredData } from '@/components/structured-data'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -37,7 +35,7 @@ export default function SaaSGTMPage() {
   return (
     <>
       <StructuredData data={schema} />
-      <Header />
+      
       <main className="min-h-screen">
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
           <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">SaaS Go-to-Market Strategy</h1>
@@ -73,7 +71,7 @@ export default function SaaSGTMPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      
     </>
   )
 }

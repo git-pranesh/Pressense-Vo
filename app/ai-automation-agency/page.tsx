@@ -1,6 +1,4 @@
 import { StructuredData } from '@/components/structured-data'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { AIAutomationAgencyHero } from '@/components/ai-automation-agency-page/hero'
 import { ProblemSection } from '@/components/ai-automation-agency-page/problem-section'
 import { SolutionSection } from '@/components/ai-automation-agency-page/solution-section'
@@ -44,7 +42,7 @@ export default function AIAutomationAgencyPage() {
   return (
     <>
       <StructuredData data={schema} />
-      <Header />
+      
       <main className="min-h-screen">
         <AIAutomationAgencyHero />
         <ProblemSection />
@@ -54,7 +52,7 @@ export default function AIAutomationAgencyPage() {
         <FractionalCMOFAQSection />
         <AIAutomationAgencyCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }
