@@ -52,7 +52,7 @@ export function ServicesSection() {
       <div
         className="absolute inset-0 opacity-[0.018]"
         style={{
-          backgroundImage: 'radial-gradient(oklch(0.82 0.05 80) 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(#C4BFB8 1px, transparent 1px)',
           backgroundSize: '28px 28px',
         }}
         aria-hidden="true"

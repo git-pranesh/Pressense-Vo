@@ -7,7 +7,7 @@ export function Hero() {
       {/* Radial glow — top center */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full opacity-[0.07]"
-        style={{ background: 'radial-gradient(ellipse at center, oklch(0.82 0.05 80) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(ellipse at center, #D4CFC8 0%, transparent 70%)' }}
         aria-hidden="true"
       />
 

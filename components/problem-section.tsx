@@ -14,7 +14,7 @@ export function ProblemSection() {
       {/* Subtle side accent */}
       <div
         className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-48 opacity-20"
-        style={{ background: 'linear-gradient(to bottom, transparent, oklch(0.72 0.08 75), transparent)' }}
+        style={{ background: 'linear-gradient(to bottom, transparent, #D4CFC8, transparent)' }}
         aria-hidden="true"
       />
 
@@ -48,7 +48,7 @@ export function ProblemSection() {
               >
                 <div className="mt-0.5 w-5 h-5 rounded-md border border-accent/30 flex items-center justify-center flex-shrink-0 group-hover:border-accent/60 transition-colors">
                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden="true">
-                    <path d="M1.5 4.5L3 6l3.5-4" stroke="oklch(0.72 0.08 75)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M1.5 4.5L3 6l3.5-4" stroke="#0A0A0A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <span className="text-sm sm:text-base text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
