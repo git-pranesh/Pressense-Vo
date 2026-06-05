@@ -17,10 +17,10 @@ export default function AIAustinPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'How long does an AI automation project take?',
+        name: 'How long does an AI automation project actually take in Austin?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Most projects run one to two weeks from diagnostic to delivery. We\'ve done bigger builds in three to four weeks. The timeline depends on how complex your integrations are, not on how many manual steps you have.'
+          text: 'Most projects run one to two weeks from diagnostic to delivery. Bigger builds involving multiple system integrations run three to four weeks. Speed depends on how complex your tech stack is and how much custom logic you need, not how many manual steps you currently have. We move fast because we don\'t overthink the architecture.'
         }
       },
       {
@@ -28,23 +28,31 @@ export default function AIAustinPage() {
         name: 'Do you work with non-tech companies in Austin?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yeah. We\'ve worked with manufacturing shops, real estate companies, professional services firms, e-commerce operations. The tools change but the principle stays the same: find the work that should be automated and build a system to do it.'
+          text: 'Yeah, we do. We\'ve worked with manufacturing operations in Round Rock, real estate companies, professional services firms, e-commerce shops in East Austin. The automation principles are the same across industries. What changes is the tool stack and the specific integrations. A manufacturing company automates production scheduling. A real estate firm automates lease document generation and tenant communication. The logic is identical.'
         }
       },
       {
         '@type': 'Question',
-        name: 'What if we don\'t have the right tools in place?',
+        name: 'What if we don\'t have the right tools or systems in place?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We help you figure out what you actually need. Sometimes it\'s integrating systems you already have. Sometimes it means adding a tool or two. We never push vendors or over-engineer the solution.'
+          text: 'We help you figure out what you actually need. Sometimes you already have good tools and they just aren\'t connected. Sometimes you need to add one tool. Rarely do you need to rebuild your entire tech stack. We assess what\'s worth integrating, what\'s worth replacing, and what\'s worth leaving alone. We don\'t sell you tools you don\'t need.'
         }
       },
       {
         '@type': 'Question',
-        name: 'Do we need to be in Austin to work with you?',
+        name: 'Do we have to be physically located in Austin?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No. We work remote-first with companies across the US and UK. Being in Austin means you get the same engagement model as our clients in New York, San Francisco, and London.'
+          text: 'No. We work entirely remote with companies across the US and UK. Austin clients get the exact same engagement as our teams in New York, San Francisco, and London. We have video calls, shared documentation, and delivery happens over the same systems. Location doesn\'t matter.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you handle the diagnostic process?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We spend two to three hours with your team asking questions and observing actual workflows. Not asking what you think the problem is, but actually watching people work. We look at which tasks repeat, where people complain about friction, where quality issues show up. From that we write a simple report showing top three automation opportunities and estimated time and cost to fix each one.'
         }
       }
     ]
@@ -60,13 +68,16 @@ export default function AIAustinPage() {
         {/* Hero */}
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-20">
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 text-pretty">
-            AI Automation for Austin's Growing Businesses
+            AI Automation Agency for Austin Businesses
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Austin moves fast. The tech corridor on Sixth Street keeps expanding. Round Rock and the suburbs are filling up with manufacturing and logistics companies. Everyone's scaling. But scaling always hits the same problem: more business means more manual work, not less. More data entry. More emails. More status update meetings. More coordination friction between teams.
+            Austin grows fast. The tech corridor keeps expanding along Sixth Street and south toward the Domain. Round Rock has become a manufacturing and logistics hub. Suburbs keep pushing out as real estate gets expensive downtown. Companies here are scaling quickly, and they're all hitting the same wall: growth doesn't mean less work. It means more work. More manual data entry. More emails bouncing between people. More meetings to coordinate what should happen automatically.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            Most Austin companies solve this by hiring more people. That works until it doesn't. You hit a point where hiring another ops person costs more than building a system to eliminate the manual work entirely. That's where we come in.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            We work with Austin companies to find those manual workflows and build AI systems that eliminate them. We don't sell features. We sell time back to your team.
+            We help Austin businesses find the workflows that should be automated and build AI systems that actually do the work. Not plans. Not recommendations. Working systems. We deliver working software that saves your team hours every week.
           </p>
         </section>
 
@@ -76,61 +87,88 @@ export default function AIAustinPage() {
             Who we work with in Austin
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            We've worked with SaaS companies in the Domain who need CRM automation but don't want to hire a whole operations team. Professional services firms downtown dealing with proposal automation and client onboarding. E-commerce shops in East Austin that need inventory and order management connected. Manufacturing companies in Round Rock struggling with production scheduling and supply chain coordination.
+            We've worked with SaaS companies in the Domain that got product-market fit but didn't plan for operations infrastructure. They need CRM automation, pipeline visibility, contract generation, but they don't want to hire an entire operations team just to manage data entry and reporting. We build the systems that let two people manage what would normally require four.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            What they all have in common: they're founder-led, they're scaling fast, and they've hit the point where manual processes are actually slowing them down. If your team spends more than ten hours a week on work that could be automated, we can help.
+            We've worked with professional services firms downtown dealing with the coordination mess. Proposals that take manual work to build. Client onboarding that requires someone to shepherd new clients through five different processes. Time tracking that nobody actually does. We automate the entire client lifecycle from proposal to kickoff to reporting.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            E-commerce shops in East Austin have a different problem: inventory and orders in different systems with no integration. They're manually syncing product catalogs to three platforms. Orders come in through Amazon, Shopify, and their own site but they're all being entered into a spreadsheet for fulfillment. We connect their systems so orders flow automatically from anywhere straight into their fulfillment process.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            Manufacturing companies in Round Rock and the suburbs deal with production scheduling, supply chain coordination, and inventory management spread across multiple disconnected systems. Someone's job becomes managing the bridge between those systems. We automate that bridge so information flows without human intervention.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            What all these companies share: they're founder-led or founder-influenced, they're scaling, and they've hit that specific inflection point where manual work is their actual growth bottleneck. If your team spends more than ten hours a week on work that follows a pattern and could be automated, we're the right fit.
           </p>
         </section>
 
         {/* What slows them down */}
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 border-t border-border/40">
           <h2 className="text-3xl font-bold text-foreground mb-8">
-            What we actually see in Austin companies
+            The specific bottlenecks we see in Austin companies
           </h2>
-          <div className="space-y-6">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            These aren't theoretical problems. These are things we see every week.
+          </p>
+          <div className="space-y-8">
             <div>
               <h3 className="font-semibold text-lg text-foreground mb-3">
-                Sales teams manually logging data into your CRM after every call
+                Sales teams manually logging every piece of data into your CRM
               </h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                Your sales leader wants visibility into the pipeline. Your sales reps hate updating the CRM because it takes time away from selling. You end up with bad data and actually no pipeline visibility. Worse, you waste time chasing reps to update records instead of giving them good tools.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                Your sales leader wants visibility. Your reps hate updating the CRM. You end up with bad data and no real pipeline visibility. We build systems that pull call recordings, transcribe them, extract the important stuff, and log it automatically.
+                We build systems that pull call recordings from your phone system, transcribe them, pull out the important information, and log it automatically into your CRM with the next steps and deal stage. Your reps spend zero time on data entry. You get clean data. Everyone wins.
               </p>
             </div>
             
             <div>
               <h3 className="font-semibold text-lg text-foreground mb-3">
-                Operations managers running reports manually every week
+                Operations managers running weekly reports manually
               </h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                Every Tuesday morning someone's job is to pull data from your CRM, your accounting software, your project management tool, and your email. They clean it. They format it. They create charts. They put it into a presentation for the leadership meeting. This takes three to four hours.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                Someone spends Tuesday morning pulling data from five different systems, cleaning it, formatting it, and getting it into a spreadsheet for the leadership meeting. That person could be doing actual operations work. We automate the whole report generation.
+                That person could be doing actual operations work. We automate the entire report generation. Systems talk to each other. Data flows. Charts generate themselves. Your leadership team gets the same report but it costs zero manual hours.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg text-foreground mb-3">
-                Customer onboarding that requires manual emails and check-ins
+                Customer onboarding that's 80 percent manual coordination
               </h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                You close a customer on a Friday. Monday morning someone needs to send onboarding emails, schedule the kickoff call, create project folders, add people to your communication systems, send access links, assign tasks. Then they spend the week chasing down customers who miss a step.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                You close a deal on Friday. Monday morning someone has to manually send onboarding emails, schedule kickoff calls, create project folders, add people to Slack. Then chase them down if they miss a step. Build it once, run it forever.
+                We build the automation once and it runs forever. Customer signs agreement. Automation creates their account, sends welcome emails, schedules their kickoff, sets up folders, sends access, all in the first hour. Your team deals with actual support questions instead of logistics.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg text-foreground mb-3">
-                Founders stuck in coordination work instead of doing their actual job
+                Founders spending ten hours a week on coordination work
               </h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                You hired managers and team leads so you could focus on strategy and growth. But you end up spending Monday through Wednesday handling approvals, connecting teams, tracking status, answering the same questions repeatedly. That's time you can't spend on actual growth work.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                You hired people so you could focus on strategy and growth. Instead you're spending ten hours a week connecting people, managing approvals, tracking status, answering the same questions. None of that needs a human. Automate it.
+                None of that needs a human. You can automate approval workflows, automatic status updates, automated reminders for pending items. Your job becomes strategy. Coordination happens without you.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg text-foreground mb-3">
-                Finance teams copying data between spreadsheets and accounting systems
+                Finance teams copying numbers between systems every month
               </h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                At the end of every month someone pulls revenue numbers from Stripe and Shopify, manually enters them into your accounting system, creates a P&L sheet, and sends it to leadership. If something was wrong they do it all over again. In December they do it twice because people need updated forecasts mid-month.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                Someone pulls monthly numbers from Stripe and Shopify, manually inputs them into QuickBooks, creates a P&L sheet for leadership. They do this every month. Twice a month if something went wrong. Integrate it once and it runs automatically forever.
+                We integrate your payment systems and accounting system. Data flows automatically. You can look at real numbers anytime. No manual entry. No delays. No mistakes.
               </p>
             </div>
           </div>
@@ -139,43 +177,46 @@ export default function AIAustinPage() {
         {/* How we work */}
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 border-t border-border/40">
           <h2 className="text-3xl font-bold text-foreground mb-8">
-            How we work
+            How we actually work
           </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            This is what sets us apart from other automation consultants. We don't sell hours. We sell completed systems.
+          </p>
           
           <div className="space-y-8">
             <div>
               <h3 className="font-semibold text-lg text-foreground mb-3">
-                Step 1: Diagnose what's actually broken
+                We start with a real diagnostic
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We spend time understanding your workflows. Not the workflows you think are slow. The actual ones. We talk to the people doing the work, see where the friction is, understand what gets in the way. We don't assume we know the problem.
+                We don't assume we know the problem. We talk to the people actually doing the work. We watch them work. We see which tasks repeat, where people get frustrated, where errors happen. We look at your systems. We understand what data actually exists and where it lives. Then we write a report showing your top three automation opportunities with rough time and cost estimates for each.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg text-foreground mb-3">
-                Step 2: Design the automation architecture
+                We design the entire system before building
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We map out exactly how the automation works, what systems talk to each other, where decisions get made, what happens when something goes wrong. You see the whole design before we build anything.
+                You get to see how the automation works. What systems talk to each other. Where decisions get made. What happens if something goes wrong. We don't just build in a black box. You understand the design before we write any code.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg text-foreground mb-3">
-                Step 3: Build and implement
+                We build, test, and deliver the working system
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We build the system, test it with your data, train your team on how it works, and hand it over. Most projects take one to two weeks from start to finish. You get a working system, not a recommendation.
+                We build it using your real data. We test it with edge cases. We train your team on how it works and what to do if something breaks. We hand it over and it works. Most projects take one to two weeks from diagnostic to delivery. Bigger integrations take three to four weeks. You get a working system, not recommendations or consulting advice.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg text-foreground mb-3">
-                Step 4: Measure and iterate
+                We measure what actually happens
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We track what actually happens after the automation goes live. Did it save the time we expected? Did anything break? What needs to be adjusted? We iterate based on real results.
+                After the system goes live we track what happens. Did it save the time we predicted. Did anything break. What needs adjustment. We iterate based on real results, not assumptions.
               </p>
             </div>
           </div>
@@ -189,54 +230,63 @@ export default function AIAustinPage() {
           
           <div className="space-y-8">
             <div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">
-                How long does an AI automation project take?
+              <h3 className="font-semibold text-lg text-foreground mb-3">
+                How long does an AI automation project actually take in Austin?
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Most projects run one to two weeks from diagnostic to delivery. We've done bigger builds in three to four weeks. The timeline depends on how complex your integrations are, not on how many manual steps you have.
+                Most projects run one to two weeks from diagnostic to delivery. Bigger builds involving multiple system integrations run three to four weeks. Speed depends on how complex your tech stack is and how much custom logic you need, not how many manual steps you currently have. We move fast because we don't overthink the architecture.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">
+              <h3 className="font-semibold text-lg text-foreground mb-3">
                 Do you work with non-tech companies in Austin?
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Yeah. We've worked with manufacturing shops, real estate companies, professional services firms, e-commerce operations. The tools change but the principle stays the same: find the work that should be automated and build a system to do it.
+                Yeah, we do. We've worked with manufacturing operations in Round Rock, real estate companies, professional services firms, e-commerce shops in East Austin. The automation principles are the same across industries. What changes is the tool stack and the specific integrations. A manufacturing company automates production scheduling. A real estate firm automates lease document generation and tenant communication. The logic is identical.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">
-                What if we don't have the right tools in place?
+              <h3 className="font-semibold text-lg text-foreground mb-3">
+                What if we don't have the right tools or systems in place?
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We help you figure out what you actually need. Sometimes it's integrating systems you already have. Sometimes it means adding a tool or two. We never push vendors or over-engineer the solution.
+                We help you figure out what you actually need. Sometimes you already have good tools and they just aren't connected. Sometimes you need to add one tool. Rarely do you need to rebuild your entire tech stack. We assess what's worth integrating, what's worth replacing, and what's worth leaving alone. We don't sell you tools you don't need.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">
-                Do we need to be in Austin to work with you?
+              <h3 className="font-semibold text-lg text-foreground mb-3">
+                Do we have to be physically located in Austin?
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                No. We work remote-first with companies across the US and UK. Being in Austin means you get the same engagement model as our clients in New York, San Francisco, and London.
+                No. We work entirely remote with companies across the US and UK. Austin clients get the exact same engagement as our teams in New York, San Francisco, and London. We have video calls, shared documentation, and delivery happens over the same systems. Location doesn't matter.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-lg text-foreground mb-3">
+                How do you handle the diagnostic process?
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                We spend two to three hours with your team asking questions and observing actual workflows. Not asking what you think the problem is, but actually watching people work. We look at which tasks repeat, where people complain about friction, where quality issues show up. From that we write a simple report showing top three automation opportunities and estimated time and cost to fix each one.
               </p>
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 border-t border-border/40">
+        <section className="max-w-4xl mx-auto px-6 lg:px-10 py-20 border-t border-border/40">
           <h2 className="text-3xl font-bold text-foreground mb-6">
             Let's talk about your workflow
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Start with a diagnostic. We'll spend time understanding what's actually slowing you down, show you exactly where automation creates value, and tell you what it costs to fix it.
+          <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
+            Start with a diagnostic. We'll spend time understanding what's actually slowing you down, identify your top three automation opportunities with estimated impact and cost, and you'll know exactly whether automation makes sense for your business. No charge for the diagnostic. No obligation to move forward.
           </p>
           <a
             href="/diagnostic"
-            className="inline-flex px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+            className="inline-flex px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-lg"
           >
             Start Your Diagnostic
           </a>
