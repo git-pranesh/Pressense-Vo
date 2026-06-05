@@ -39,6 +39,7 @@ export default function AISFPage() {
   return (
     <>
       <StructuredData data={schema} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":["LocalBusiness","ProfessionalService"],"name":"Pressense — AI Automation Agency San Francisco","description":"AI automation consulting for San Francisco and Bay Area founder-led businesses.","url":"https://www.pressense.co/ai-automation-agency-san-francisco","areaServed":{"@type":"City","name":"San Francisco"},"serviceType":"AI Automation Consulting","parentOrganization":{"@type":"Organization","name":"Pressense","url":"https://www.pressense.co"}}) }} />
       
       <main className="min-h-screen">
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
