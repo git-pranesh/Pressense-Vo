@@ -41,6 +41,15 @@ export default function RevOpsPage() {
   return (
     <>
       <StructuredData data={schema} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Revenue Operations Consulting",
+        "provider": { "@type": "Organization", "name": "Pressense", "url": "https://www.pressense.co" },
+        "description": "Revenue operations consulting that aligns sales, marketing, and customer success into a unified growth system.",
+        "url": "https://www.pressense.co/revenue-operations-consulting",
+        "areaServed": "United States"
+      }) }} />
       
       <main className="min-h-screen">
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">

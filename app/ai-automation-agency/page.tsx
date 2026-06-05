@@ -48,6 +48,15 @@ export default function AIAutomationAgencyPage() {
   return (
     <>
       <StructuredData data={schema} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Automation Agency",
+        "provider": { "@type": "Organization", "name": "Pressense", "url": "https://www.pressense.co" },
+        "description": "AI automation consulting that diagnoses broken workflows and builds AI-powered solutions in 1-2 weeks.",
+        "url": "https://www.pressense.co/ai-automation-agency",
+        "areaServed": "United States"
+      }) }} />
       
       <main className="min-h-screen">
         <AIAutomationAgencyHero />

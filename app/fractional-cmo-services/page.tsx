@@ -42,6 +42,15 @@ export default function FractionalCMOServicesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Fractional CMO Services",
+        "provider": { "@type": "Organization", "name": "Pressense", "url": "https://www.pressense.co" },
+        "description": "Fractional CMO services providing embedded strategic marketing leadership for scaling founder-led businesses.",
+        "url": "https://www.pressense.co/fractional-cmo-services",
+        "areaServed": "United States"
+      }) }} />
       
       <main>
         <FractionalCMOHero />

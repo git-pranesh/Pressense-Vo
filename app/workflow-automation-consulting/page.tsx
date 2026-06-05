@@ -48,6 +48,15 @@ export default function WorkflowAutomationPage() {
   return (
     <>
       <StructuredData data={schema} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Workflow Automation Consulting",
+        "provider": { "@type": "Organization", "name": "Pressense", "url": "https://www.pressense.co" },
+        "description": "Workflow automation consulting that maps, designs, and builds automated systems to eliminate manual work.",
+        "url": "https://www.pressense.co/workflow-automation-consulting",
+        "areaServed": "United States"
+      }) }} />
       
       <main className="min-h-screen">
         <WorkflowAutomationHero />
