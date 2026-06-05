@@ -21,6 +21,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/workflow-automation-consulting',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Workflow Automation Consulting | Pressense',
+    description: 'Workflow automation consulting that reduces manual work, improves consistency, and saves operations teams 20+ hours per week.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function WorkflowAutomationPage() {

@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/revenue-operations-consulting',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Revenue Operations Consulting | RevOps Strategy | Pressense',
+    description: 'Build an integrated revenue operating model: Align marketing, sales, success, finance. Improve forecasting and revenue predictability.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function RevOpsPage() {

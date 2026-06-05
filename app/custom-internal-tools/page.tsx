@@ -29,7 +29,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Custom Internal Tools for Growing Businesses, Pressense',
     description:
-      'We help growing businesses replace spreadsheets, manual workflows, and scattered SaaS tools with custom internal tools and systems.',
+      'Replace spreadsheets and scattered SaaS tools with custom internal tools, dashboards, automation, and workflow systems built for scale.',
+    images: ['/og-image.jpg'],
   },
 }
 

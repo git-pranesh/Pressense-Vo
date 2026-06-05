@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/framer-website-agency',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Framer Website Agency | Conversion-Focused Design | Pressense',
+    description: 'Framer website design and development for SaaS and startups. Launch in 2 weeks with animations, interactions, and real-time collaboration.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function FramerAgencyPage() {

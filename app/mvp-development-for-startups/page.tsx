@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/mvp-development-for-startups',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MVP Development for Startups | Launch in 2-4 Weeks | Pressense',
+    description: 'Build and launch your MVP in 2-4 weeks: From hypothesis to users. Modern tech stack, lean methodology, founder-focused.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function MVPDevelopmentPage() {

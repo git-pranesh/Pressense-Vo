@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     url: '/business-systems-consultant',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Business Systems Consultant - Pressense' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Business Systems Consultant for Growing Companies | Pressense',
+    description:
+      'Business systems consultant for $1M-$8M companies. We diagnose operational chaos and build systems that scale.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const jsonLd = {

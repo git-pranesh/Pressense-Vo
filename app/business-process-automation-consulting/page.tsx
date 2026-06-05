@@ -21,6 +21,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/business-process-automation-consulting',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Business Process Automation Consulting | Pressense',
+    description: 'Business process automation consulting that reduces manual work, improves consistency, and scales operations without proportional headcount growth.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function BPAConsultingPage() {

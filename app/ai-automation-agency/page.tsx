@@ -21,6 +21,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/ai-automation-agency',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Automation Agency | Pressense',
+    description: 'AI automation consulting that diagnoses broken workflows and builds AI-powered solutions in 1-2 weeks. Save 15+ hours per week.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function AIAutomationAgencyPage() {
