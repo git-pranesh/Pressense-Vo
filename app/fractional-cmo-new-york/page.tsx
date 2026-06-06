@@ -2,7 +2,7 @@ import { StructuredData } from '@/components/structured-data'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  robots: 'noindex',
+  robots: { index: false, follow: false },
   title: 'Fractional CMO in New York | Part-Time Marketing Leadership | Pressense',
   description: 'Fractional CMO services for NYC startups. Executive marketing strategy and leadership on demand.',
   openGraph: { title: 'Fractional CMO in New York | Pressense', url: '/fractional-cmo-new-york', type: 'website' },

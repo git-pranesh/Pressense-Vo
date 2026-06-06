@@ -24,21 +24,6 @@ const serviceLinks = [
   { label: 'Framer Website Agency', href: '/framer-website-agency' },
 ]
 
-const localLinks = [
-  { label: 'AI Automation — San Francisco', href: '/ai-automation-agency-san-francisco' },
-  { label: 'AI Automation — New York', href: '/ai-automation-agency-new-york' },
-  { label: 'AI Automation — Austin', href: '/ai-automation-agency-austin' },
-  { label: 'AI Automation — London', href: '/ai-automation-agency-london' },
-  { label: 'AI Automation — Chicago', href: '/ai-automation-agency-chicago' },
-  { label: 'AI Automation — Miami', href: '/ai-automation-agency-miami' },
-  { label: 'AI Automation — Seattle', href: '/ai-automation-agency-seattle' },
-  { label: 'Fractional CMO — San Francisco', href: '/fractional-cmo-san-francisco' },
-  { label: 'Fractional CMO — New York', href: '/fractional-cmo-new-york' },
-  { label: 'GTM Consultant — San Francisco', href: '/gtm-consultant-san-francisco' },
-  { label: 'Business Strategy — London', href: '/business-strategy-consultant-london' },
-  { label: 'Systems Consultant — Boston', href: '/business-systems-consultant-boston' },
-]
-
 export function MegaFooter() {
   const calculatorsByCategory = CALCULATOR_CATEGORIES.map((category) => ({
     category,
@@ -49,7 +34,7 @@ export function MegaFooter() {
     <footer className="border-t border-border/40 bg-background">
       {/* Services grid */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-14 border-b border-border/40">
-        <div className="grid gap-10 lg:grid-cols-3">
+        <div className="grid gap-10 lg:grid-cols-2">
           {/* Services */}
           <div>
             <h3 className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
@@ -57,22 +42,6 @@ export function MegaFooter() {
             </h3>
             <ul className="space-y-2">
               {serviceLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Local pages */}
-          <div>
-            <h3 className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
-              Locations
-            </h3>
-            <ul className="space-y-2">
-              {localLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {link.label}

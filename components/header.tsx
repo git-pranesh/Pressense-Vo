@@ -44,19 +44,6 @@ const servicesColumns = [
       { label: 'Framer Website Agency', href: '/framer-website-agency' },
     ],
   },
-  {
-    heading: 'By Location',
-    links: [
-      { label: 'San Francisco', href: '/ai-automation-agency-san-francisco' },
-      { label: 'New York', href: '/ai-automation-agency-new-york' },
-      { label: 'Austin', href: '/ai-automation-agency-austin' },
-      { label: 'London', href: '/ai-automation-agency-london' },
-      { label: 'Chicago', href: '/ai-automation-agency-chicago' },
-      { label: 'Miami', href: '/ai-automation-agency-miami' },
-      { label: 'Seattle', href: '/ai-automation-agency-seattle' },
-      { label: 'Boston (Systems)', href: '/business-systems-consultant-boston' },
-    ],
-  },
 ]
 
 export function Header() {

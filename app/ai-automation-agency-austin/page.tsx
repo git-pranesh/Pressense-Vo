@@ -2,7 +2,7 @@ import { StructuredData } from '@/components/structured-data'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  robots: 'noindex',
+  robots: { index: false, follow: false },
   title: 'AI Automation Agency in Austin | Pressense',
   description: 'AI automation services for Austin tech startups and companies. Custom AI solutions built fast.',
   openGraph: { title: 'AI Automation Agency in Austin | Pressense', url: '/ai-automation-agency-austin', type: 'website' },

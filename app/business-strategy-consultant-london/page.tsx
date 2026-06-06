@@ -2,7 +2,7 @@ import { StructuredData } from '@/components/structured-data'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  robots: 'noindex',
+  robots: { index: false, follow: false },
   title: 'Business Strategy Consultant in London | Pressense',
   description: 'Strategic business consulting for London companies. Growth strategy, operations, founder coaching.',
   openGraph: { title: 'Business Strategy Consultant in London | Pressense', url: '/business-strategy-consultant-london', type: 'website' },
