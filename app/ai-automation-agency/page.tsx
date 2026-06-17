@@ -3,6 +3,7 @@ import { AIAutomationAgencyHero } from '@/components/ai-automation-agency-page/h
 import { ProblemSection } from '@/components/ai-automation-agency-page/problem-section'
 import { SolutionSection } from '@/components/ai-automation-agency-page/solution-section'
 import { WhoItsForSection } from '@/components/ai-automation-agency-page/who-its-for-section'
+import { MethodologySection } from '@/components/ai-automation-agency-page/methodology-section'
 import { WhatYouGetSection } from '@/components/ai-automation-agency-page/what-you-get-section'
 import { FractionalCMOFAQSection } from '@/components/ai-automation-agency-page/faq-section'
 import { AIAutomationAgencyCTA } from '@/components/ai-automation-agency-page/final-cta'
@@ -123,6 +124,7 @@ export default function AIAutomationAgencyPage() {
         <ProblemSection />
         <SolutionSection />
         <WhoItsForSection />
+        <MethodologySection />
         <WhatYouGetSection />
         <FractionalCMOFAQSection />
         <AIAutomationAgencyCTA />

@@ -20,9 +20,14 @@ export function AIAutomationAgencyHero() {
           </div>
 
           {/* H1 */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-4">
             AI Automation Agency for Founder-Led Businesses
           </h1>
+
+          {/* Outcome statement */}
+          <p className="text-xl sm:text-2xl font-medium text-foreground mb-6">
+            We save founder-led teams 20+ hours a week by automating the workflows nobody wants to do manually.
+          </p>
 
           {/* AEO answer block */}
           <div className="border-l-2 border-primary/50 pl-5 mb-8">
