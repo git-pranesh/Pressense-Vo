@@ -2,12 +2,34 @@ import Link from 'next/link'
 import { FAQSection } from '@/components/faq-section'
 
 const gtmFAQs = [
-  { question: 'What is a GTM strategy consultant?', answer: 'A GTM strategy consultant helps businesses diagnose why their go-to-market approach is not converting and builds a strategy that aligns positioning, channels, and sales motion to drive predictable revenue growth.' },
-  { question: 'What does GTM strategy include?', answer: (<>GTM strategy covers positioning, channel selection, sales motion design, pricing, messaging, and the systems that connect marketing to sales to revenue. Use our <Link href="/tools/sales-velocity-calculator" className="text-primary hover:underline">sales velocity calculator</Link> to identify where your current GTM is leaking.</>) },
-  { question: 'How is this different from marketing consulting?', answer: 'Marketing consulting often focuses on tactics and campaigns. GTM strategy focuses on the overall system: how positioning, channels, and sales work together to convert leads into revenue. It is strategic, not just executional.' },
-  { question: 'How long does a GTM engagement take?', answer: 'Most GTM engagements run 4-8 weeks for the initial diagnostic and strategy. Implementation support can extend longer depending on scope. We focus on clarity first, then execution.' },
-  { question: 'What if we have already tried GTM consultants?', answer: (<>Most GTM failures happen because the diagnosis was wrong. We start with understanding where your specific GTM breaks down, not generic frameworks. <Link href="/diagnostic" className="text-primary hover:underline">Start with a diagnostic</Link>.</>) },
-  { question: 'What results should we expect?', answer: 'Typical outcomes include shorter sales cycles, higher conversion rates, clearer positioning, and more predictable pipeline. The specific impact depends on where your current GTM is broken.' },
+  {
+    question: 'What is a GTM consultant?',
+    answer: 'A GTM consultant diagnoses why your go-to-market approach is failing to convert and designs the strategy to fix it. This covers positioning, ICP definition, channel selection, sales motion design, and the revenue operations infrastructure that makes the system measurable. A GTM consultant works across marketing, sales, and customer success, not just one function.',
+  },
+  {
+    question: 'What are the 5 pillars of GTM strategy?',
+    answer: 'The five pillars are Ideal Customer Profile, Positioning, Channel Strategy, Sales Enablement, and Revenue Operations. ICP defines exactly who you sell to. Positioning defines why they should choose you. Channel strategy identifies how you reach them at purchase intent. Sales enablement equips your team to close consistently. Revenue operations builds the metrics and feedback loops that make the whole system improvable.',
+  },
+  {
+    question: 'How much does GTM consulting cost?',
+    answer: 'GTM consulting costs vary by scope and engagement model. Project-based strategy sprints typically run from $5,000 to $15,000. Monthly retainers for ongoing strategic support range from $4,000 to $18,000 per month. Full-scope engagements covering strategy through implementation, like the Pressense PRESS Framework, start from $5,000 per month for an eight-week engagement.',
+  },
+  {
+    question: 'What is the difference between a GTM consultant and a fractional CMO?',
+    answer: 'A GTM consultant focuses specifically on go-to-market strategy design and the revenue system. A fractional CMO takes broader operational ownership of the marketing function, including team management, budget ownership, and campaign execution. GTM consulting is typically project-scoped. A fractional CMO is an ongoing leadership role. Many companies start with GTM consulting and move to a fractional CMO once strategy is clear.',
+  },
+  {
+    question: 'How long does a GTM engagement take?',
+    answer: 'Most GTM strategy engagements take four to eight weeks from diagnostic to a complete, implemented strategy. The Pressense PRESS Framework is structured across eight weeks with a named deliverable in each phase. Implementation support and team training extend through the eighth week, followed by a 30-day review to catch gaps before full handover.',
+  },
+  {
+    question: 'Do you work with businesses outside the US?',
+    answer: 'Yes. Pressense works with B2B SaaS and scaling businesses across India, the UK, the US, and globally. The PRESS Framework applies regardless of geography. We have particular depth in the India B2B SaaS market, where GTM challenges around positioning for both domestic and US enterprise buyers are common.',
+  },
+  {
+    question: 'When should you hire a GTM consultant?',
+    answer: (<>Most companies benefit most from GTM consulting at three moments: when growth stalls after initial traction, when entering a new market or segment, or when a funding round creates pressure to scale revenue faster than the current GTM can support. If you are not sure which applies, <Link href="/diagnostic" className="text-primary hover:underline">start with a diagnostic</Link> and we will tell you honestly.</>),
+  },
 ]
 
 export function GTMFAQSection() {
