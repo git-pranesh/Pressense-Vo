@@ -67,7 +67,7 @@ export function ServicesSection() {
               <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">Services</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-lg" id="services-heading">
-              Three areas. One unified system.
+              We advise. We build. We execute. In that order.
             </h2>
           </div>
           <p className="text-base text-muted-foreground max-w-sm leading-relaxed">

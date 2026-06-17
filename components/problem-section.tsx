@@ -33,8 +33,8 @@ export function ProblemSection() {
 
             <div className="mt-10 p-6 rounded-xl border border-border/60 bg-secondary/20">
               <p className="text-base text-muted-foreground leading-relaxed">
-                You don&apos;t need more activity. You need{' '}
-                <span className="text-foreground font-medium">clarity, structure, and the right systems.</span>
+                This isn&apos;t a resources problem. It&apos;s a clarity problem. Before you hire more people, run more ads, or build more tools, you need someone to sit inside your business for a week and tell you{' '}
+                <span className="text-foreground font-medium">what&apos;s actually broken.</span>
               </p>
             </div>
           </div>
