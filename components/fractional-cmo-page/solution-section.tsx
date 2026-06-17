@@ -1,28 +1,77 @@
-import Link from 'next/link'
+// Comparison table: Full-time CMO vs Fractional CMO vs Marketing Agency
+// AEO target: differentiation questions
 
-const solutionPoints = [
-  { title: 'Strategic direction', description: 'Clear priorities, positioning, and GTM strategy. Not more tactics, but better decisions about which tactics matter.' },
-  { title: 'Marketing system design', description: 'Build the processes, metrics, and infrastructure that make marketing predictable and scalable.' },
-  { title: 'Team and agency oversight', description: 'Direct your existing team, manage agencies, and ensure execution matches strategy.' },
-  { title: 'Founder leverage', description: 'Get marketing leadership on your calendar when you need it, without the overhead when you do not.' },
+type Row = {
+  label: string
+  fullTime: string
+  fractional: string
+  agency: string
+  highlight?: boolean
+}
+
+const rows: Row[] = [
+  { label: 'Monthly cost', fullTime: '$20K-$35K', fractional: '$5K-$15K', agency: '$3K-$25K', highlight: true },
+  { label: 'Strategy ownership', fullTime: 'Yes', fractional: 'Yes', agency: 'No' },
+  { label: 'Embedded in your team', fullTime: 'Yes', fractional: 'Yes', agency: 'No' },
+  { label: 'Accountable for revenue outcomes', fullTime: 'Yes', fractional: 'Yes', agency: 'Rarely' },
+  { label: 'Scales with your stage', fullTime: 'No', fractional: 'Yes', agency: 'Yes' },
+  { label: 'Time to onboard', fullTime: '3-6 months', fractional: '1-2 weeks', agency: '2-4 weeks' },
+  { label: 'Long-term commitment', fullTime: 'Yes', fractional: 'No', agency: 'Sometimes' },
+  { label: 'Good fit at 0-to-1 stage', fullTime: 'Rarely', fractional: 'Yes', agency: 'Partially' },
 ]
 
 export function SolutionSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28 border-b border-border/40" aria-labelledby="comparison-heading">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">What fractional CMO services include</h2>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mb-16">
-          Pressense fractional CMO engagements focus on strategy and systems, not just execution oversight. See <Link href="/how-we-work" className="text-primary hover:underline">how we work</Link>.
-        </p>
-        <div className="grid md:grid-cols-2 gap-6">
-          {solutionPoints.map((point, i) => (
-            <div key={i} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-foreground mb-3">{point.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{point.description}</p>
-            </div>
-          ))}
+
+        <div className="max-w-3xl mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Cost and value comparison</span>
+          </div>
+          <h2
+            id="comparison-heading"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-4"
+          >
+            Full-time CMO vs Fractional CMO vs Marketing Agency
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Most B2B SaaS startups and founder-led businesses do not need a full-time CMO. They need a fractional CMO services engagement that gives them senior strategy at the hours their stage requires. Here is how the options compare.
+          </p>
         </div>
+
+        {/* Comparison table */}
+        <div className="overflow-x-auto rounded-2xl border border-border/40">
+          <table className="w-full text-sm" role="table" aria-label="CMO hiring options comparison">
+            <thead>
+              <tr className="border-b border-border/40 bg-card/40">
+                <th className="text-left px-6 py-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Factor</th>
+                <th className="px-6 py-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">Full-time CMO</th>
+                <th className="px-6 py-4 text-center text-xs font-semibold uppercase tracking-widest text-primary bg-primary/5">Fractional CMO</th>
+                <th className="px-6 py-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">Marketing Agency</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, i) => (
+                <tr
+                  key={i}
+                  className={`border-b border-border/30 last:border-0 ${row.highlight ? 'bg-primary/3' : ''}`}
+                >
+                  <td className="px-6 py-4 font-medium text-foreground">{row.label}</td>
+                  <td className="px-6 py-4 text-center text-muted-foreground">{row.fullTime}</td>
+                  <td className="px-6 py-4 text-center font-semibold text-primary bg-primary/5">{row.fractional}</td>
+                  <td className="px-6 py-4 text-center text-muted-foreground">{row.agency}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-sm text-muted-foreground mt-5 max-w-2xl">
+          Fractional CMO pricing at Pressense starts from $2,000 per month for advisory-only engagements. Full embedded leadership engagements typically run $5,000 to $12,000 per month depending on hours and scope.
+        </p>
+
       </div>
     </section>
   )
