@@ -138,8 +138,8 @@ export default function FramerWebsiteDesignPage() {
                     <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </a>
-                <a href="/framer-website-agency" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200">
-                  See our Framer agency page
+                <a href="/work" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200">
+                  See our work
                 </a>
               </div>
               <div className="grid grid-cols-3 gap-6 max-w-xl">

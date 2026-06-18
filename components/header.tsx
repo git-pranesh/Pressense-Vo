@@ -48,7 +48,6 @@ const servicesColumns = [
     links: [
       { label: 'Claude API Integration', href: '/claude-api-integration' },
       { label: 'OpenAI Integration Services', href: '/openai-integration-services' },
-      { label: 'Framer Website Agency', href: '/framer-website-agency' },
       { label: 'Consulting for Startups', href: '/consulting-firm-for-startups' },
     ],
   },

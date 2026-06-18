@@ -59,10 +59,10 @@ export function FramerDesignHero() {
               </svg>
             </Link>
             <Link
-              href="/framer-website-agency"
+              href="/framer-website-design"
               className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
             >
-              See our Framer agency page
+              See our Framer work
             </Link>
           </div>
         </div>

@@ -21,7 +21,7 @@ const serviceLinks = [
   { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
   { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
   { label: 'MVP Development', href: '/mvp-development-for-startups' },
-  { label: 'Framer Website Agency', href: '/framer-website-agency' },
+  { label: 'Framer Website Design', href: '/framer-website-design' },
 ]
 
 export function MegaFooter() {
