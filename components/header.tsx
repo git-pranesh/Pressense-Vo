@@ -7,7 +7,6 @@ const navLinks = [
   { label: 'Blog', href: '/blog' },
   { label: 'Playbooks', href: '/playbooks' },
   { label: 'Tools', href: '/tools' },
-  { label: 'Packages', href: '/packages' },
   { label: 'Work', href: '/work' },
 ]
 
@@ -152,14 +151,7 @@ export function Header() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-5 pt-4 border-t border-border/40 flex items-center justify-between">
-                  <Link
-                    href="/packages"
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                    onClick={() => setServicesOpen(false)}
-                  >
-                    View all packages & pricing →
-                  </Link>
+                <div className="mt-5 pt-4 border-t border-border/40 flex items-center justify-end">
                   <Link
                     href="/how-we-work"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
