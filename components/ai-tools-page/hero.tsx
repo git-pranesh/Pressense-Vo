@@ -21,8 +21,8 @@ export function AIToolsHero() {
 
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-6">
             No black boxes. Every tool we use, every reason we chose it, and the exact outcome it creates for our clients.
-            We work with Claude, GPT-4o, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion. Here is how
-            each one earns its place in our stack — and when we recommend something different.
+            Our stack evolves as the tools do — we adopt what genuinely improves outcomes, and we drop what does not. Here
+            is how each tool earns its place, and when we recommend something different.
           </p>
 
           {/* AEO Answer Block */}
@@ -56,7 +56,7 @@ export function AIToolsHero() {
 
           <div className="grid grid-cols-3 gap-6 max-w-xl">
             {[
-              { stat: '10', label: 'Tools in our stack' },
+              { stat: '12+', label: 'Tools in active use' },
               { stat: '2', label: 'AI model partners' },
               { stat: '100%', label: 'You own the output' },
             ].map((item) => (

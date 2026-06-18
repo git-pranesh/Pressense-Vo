@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'Is Replit good for production apps?',
-    a: 'Yes. Replit runs on Google Cloud infrastructure and supports production deployments at scale. Code built in Replit is standard TypeScript or Python with no proprietary framework. For production web applications we deploy via Vercel, which handles CI/CD, edge functions, and preview deployments. The code can be moved to any hosting environment at any time — there is no lock-in.',
+    a: 'Yes — when built correctly. Replit is a cloud development and deployment environment. Code is standard TypeScript or Python with no proprietary framework, and production web apps are deployed to Vercel for CI/CD, edge performance, and preview deployments. The key is how the app is built: production readiness requires proper auth, parameterised queries, managed database connections (we use Neon or Supabase), and secret management. Replit-native apps built without these are not production-ready. Ours are.',
   },
   {
     q: 'What is Airtable used for in agency workflows?',

@@ -6,13 +6,13 @@ import { ToolsFAQSection } from '@/components/ai-tools-page/faq-section'
 import { FinalCTA } from '@/components/final-cta'
 
 export const metadata: Metadata = {
-  title: 'AI Tools We Use: Claude, Replit, Vercel, n8n & More | Pressense',
+  title: 'AI Tools We Use: Claude, GPT-4o, Next.js, Neon, Vercel & More | Pressense',
   description:
-    'The exact AI tools Pressense uses to build for founder-led businesses: Claude API, GPT-4o, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion — with every use case explained.',
+    'The evolving Pressense tech stack: Claude API, GPT-4o, Next.js, TypeScript, Neon, Supabase, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion — with every use case explained.',
   openGraph: {
-    title: 'AI Tools We Use: Claude, Replit, Vercel, n8n & More | Pressense',
+    title: 'AI Tools We Use: Claude, GPT-4o, Next.js, Neon, Vercel & More | Pressense',
     description:
-      'Every tool in the Pressense stack: how we use Claude, GPT-4o, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion to build for growing businesses.',
+      'Every tool in the Pressense stack: how we use Claude, GPT-4o, Next.js, Neon, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion to build for growing businesses.',
     url: '/ai-tools-we-use',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense AI Tools Stack' }],
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Tools We Use: Claude, Replit, Vercel, n8n & More | Pressense',
+    title: 'AI Tools We Use: Claude, GPT-4o, Next.js, Neon, Vercel & More | Pressense',
     description:
-      'The exact AI tools Pressense uses to build for founder-led businesses: Claude API, GPT-4o, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion.',
+      'The evolving Pressense tech stack: Claude API, GPT-4o, Next.js, TypeScript, Neon, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion.',
     images: ['/og-image.jpg'],
   },
 }
@@ -68,10 +68,10 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Is Replit good for production apps?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Replit runs on Google Cloud infrastructure and supports production deployments at scale. Code built in Replit is standard TypeScript or Python with no proprietary framework. For production web applications we deploy via Vercel, which handles CI/CD, edge functions, and preview deployments. The code can be moved to any hosting environment at any time.',
-      },
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes — when built correctly. Replit is a cloud development and deployment environment. Code is standard TypeScript or Python with no proprietary framework, and production web apps are deployed to Vercel for CI/CD, edge performance, and preview deployments. Production readiness requires proper auth, parameterised queries, managed database connections (Neon or Supabase), and secret management. Replit-native apps built without these are not production-ready. Ours are.',
+        },
     },
     {
       '@type': 'Question',

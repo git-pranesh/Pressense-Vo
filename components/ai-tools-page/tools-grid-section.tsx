@@ -92,6 +92,29 @@ const tools = [
     ],
   },
   {
+    category: 'Foundation Stack',
+    items: [
+      {
+        name: 'Next.js + TypeScript',
+        slug: 'nextjs',
+        subpage: null,
+        use: 'Full-stack web framework for all custom software and web applications.',
+        outcome: 'Every custom application Pressense builds uses Next.js with TypeScript. App Router, server components, and API routes give us a single, coherent stack for the full application — no context switching between frontend and backend frameworks. TypeScript catches bugs at compile time, not in production. The output is a maintainable, team-readable codebase.',
+        icp: 'Founders who want their codebase to be understandable, extendable, and handoff-ready from day one.',
+        badge: null,
+      },
+      {
+        name: 'Neon + Drizzle ORM',
+        slug: 'neon',
+        subpage: null,
+        use: 'Managed PostgreSQL database with type-safe ORM for all persistent data.',
+        outcome: 'Neon is a serverless PostgreSQL platform — a real relational database, not a spreadsheet wrapper. Drizzle ORM provides type-safe queries so database errors are caught before they reach production. We use this combination for every custom build that needs a data layer. Supabase is used when the client needs built-in auth, real-time, or Row Level Security policies.',
+        icp: 'Founders who need their data in a real, portable, queryable database — not locked inside a SaaS platform.',
+        badge: null,
+      },
+    ],
+  },
+  {
     category: 'Data and Operations',
     items: [
       {
