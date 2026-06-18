@@ -3,7 +3,7 @@ import Link from 'next/link'
 const tiers = [
   {
     name: 'Focused Integration',
-    price: 'From $2,500',
+    price: 'From $2,000',
     timeline: '2–3 weeks',
     note: 'Fixed-price build',
     features: [
@@ -57,7 +57,7 @@ export function ClaudeApiPricingSection() {
           What does Claude API integration cost?
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
-          Claude API integration with Pressense starts from $2,500 for a focused single-use-case build. This is the cost of our integration work — not Anthropic&apos;s API usage, which is billed separately by the token.
+          Claude API integration with Pressense starts from $2,000 for a focused single-use-case build. This is the cost of our integration work — not Anthropic&apos;s API usage, which is billed separately by the token.
         </p>
         <p className="text-base text-muted-foreground leading-relaxed mb-14 max-w-2xl">
           Enterprise AI agencies charge $30K–$100K for comparable integrations. We serve founder-led businesses that need production-quality AI tools without enterprise pricing. Every engagement starts with a fixed-price estimate after the diagnostic.

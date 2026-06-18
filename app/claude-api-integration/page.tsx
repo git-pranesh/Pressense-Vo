@@ -9,7 +9,7 @@ import { FinalCTA } from '@/components/final-cta'
 export const metadata: Metadata = {
   title: 'Claude API Integration Services | Pressense',
   description:
-    "Claude API integration for founder-led businesses. Build AI document analysers, internal assistants, and decision-support tools on Anthropic's Claude. From $2,500.",
+    "Claude API integration for founder-led businesses. Build AI document analysers, internal assistants, and decision-support tools on Anthropic's Claude. From $2,000.",
   openGraph: {
     title: 'Claude API Integration Services | Pressense',
     description:
@@ -46,7 +46,7 @@ const serviceSchema = {
         name: 'Focused Integration',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '2500',
+          price: '2000',
           priceCurrency: 'USD',
           unitText: 'project from',
         },
@@ -92,7 +92,7 @@ const faqSchema = {
       name: 'How much does Claude API integration cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pressense Claude API integrations start from $2,500 for a focused single-use-case integration. Custom multi-use integrations start from $5,000. You also pay Anthropic directly for API usage, which is token-based and typically $10–$60 per million tokens depending on the model tier.',
+        text: 'Pressense Claude API integrations start from $2,000 for a focused single-use-case integration. Custom multi-use integrations start from $5,000. You also pay Anthropic directly for API usage, which is token-based and typically $10–$60 per million tokens depending on the model tier.',
       },
     },
     {

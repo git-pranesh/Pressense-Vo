@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: 'How much does Claude API integration cost?',
-    a: 'Pressense Claude API integrations start from $2,500 for a focused single-use-case integration (e.g. a document analysis tool or a content generation assistant). Custom multi-use integrations start from $5,000. You also pay Anthropic directly for API usage, which is token-based and typically $10–$60 per million tokens depending on the model tier. Most business integrations cost $20–$200/month in API usage at standard volumes.',
+    a: 'Pressense Claude API integrations start from $2,000 for a focused single-use-case integration (e.g. a document analysis tool or a content generation assistant). Custom multi-use integrations start from $5,000. You also pay Anthropic directly for API usage, which is token-based and typically $10–$60 per million tokens depending on the model tier. Most business integrations cost $20–$200/month in API usage at standard volumes.',
   },
   {
     q: 'What does a Claude API integration include?',
