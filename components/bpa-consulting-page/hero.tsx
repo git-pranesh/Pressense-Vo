@@ -37,8 +37,8 @@ export function BPAHero() {
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $1,200</span>
-              <span className="text-sm text-muted-foreground">process audit and roadmap</span>
+              <span className="text-2xl font-bold text-foreground">From $3,000</span>
+              <span className="text-sm text-muted-foreground">process audit and implementation</span>
             </div>
           </div>
 

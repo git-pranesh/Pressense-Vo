@@ -12,7 +12,7 @@ import { SystemsCTA } from '@/components/bpa-consulting-page/final-cta'
 export const metadata: Metadata = {
   title: 'Business Process Automation Consulting | n8n, Make & Zapier | Pressense',
   description:
-    'Business process automation consulting: audit, roadmap, and implementation using n8n, Make, and Zapier. Reduces manual work and scales operations without growing headcount. From $1,200.',
+    'Business process automation consulting: audit, roadmap, and implementation using n8n, Make, and Zapier. Reduces manual work and scales operations without growing headcount. From $3,000.',
   openGraph: {
     title: 'Business Process Automation Consulting | n8n, Make & Zapier | Pressense',
     description:
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Business Process Automation Consulting | n8n, Make & Zapier | Pressense',
     description:
-      'Business process automation consulting: audit, roadmap, and implementation using n8n, Make, and Zapier. From $1,200.',
+      'Business process automation consulting: audit, roadmap, and implementation using n8n, Make, and Zapier. From $3,000.',
     images: ['/og-image.jpg'],
   },
 }
@@ -48,7 +48,7 @@ export default function BPAConsultingPage() {
       name: 'Process Audit and Automation Roadmap',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '1200',
+        price: '3000',
         priceCurrency: 'USD',
         unitText: 'per engagement',
       },
