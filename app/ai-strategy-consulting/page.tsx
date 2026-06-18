@@ -11,11 +11,11 @@ import { AIStrategyFAQ } from '@/components/ai-strategy-page/faq-section'
 export const metadata: Metadata = {
   title: 'AI Strategy Consulting for Growing Businesses | Pressense',
   description:
-    'AI strategy consulting that ends with working pilots, not slide decks. Roadmap + two built pilots in 4 weeks. From $5,000. Book a free diagnostic.',
+    'AI strategy consulting that ends with working pilots, not slide decks. Roadmap + two built pilots in 4 weeks. From $1,500. Book a free diagnostic.',
   openGraph: {
     title: 'AI Strategy Consulting for Growing Businesses | Pressense',
     description:
-      'AI strategy consulting that ends with working pilots, not slide decks. Roadmap + two built pilots in 4 weeks. From $5,000.',
+      'AI strategy consulting that ends with working pilots, not slide decks. Roadmap + two built pilots in 4 weeks. From $1,500.',
     url: '/ai-strategy-consulting',
     type: 'website',
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI Strategy Consulting for Growing Businesses | Pressense',
     description:
-      'AI strategy consulting that ends with working pilots, not slide decks. Roadmap + two built pilots in 4 weeks. From $5,000.',
+      'AI strategy consulting that ends with working pilots, not slide decks. Roadmap + two built pilots in 4 weeks. From $1,500.',
     images: ['/og-image.jpg'],
   },
 }
@@ -80,7 +80,7 @@ export default function AIStrategyConsultingPage() {
           },
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '3500',
+            price: '2500',
             priceCurrency: 'USD',
             unitText: 'fixed project',
           },
@@ -139,7 +139,7 @@ export default function AIStrategyConsultingPage() {
         name: 'How much does AI strategy consulting cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A focused AI strategy sprint costs from $5,000 and takes two weeks to deliver an opportunity map and roadmap. A strategy-plus-pilots engagement costs from $12,000 and takes four weeks, ending with two working AI systems your team uses from day one. Monthly retainers start at $3,500 for ongoing builds and optimisation. Enterprise firms charge $25,000 to $250,000 for strategy decks. We charge less and include the build.',
+          text: 'A focused AI strategy sprint starts from $1,500 and takes two weeks to deliver an opportunity map and roadmap. A strategy-plus-pilots engagement starts from $2,500 and takes four weeks, ending with two working AI systems your team uses from day one. Monthly retainers start from $1,500 for ongoing builds and optimisation. Enterprise firms charge $25,000 to $250,000 for strategy decks. We charge less and include the build.',
         },
       },
       {

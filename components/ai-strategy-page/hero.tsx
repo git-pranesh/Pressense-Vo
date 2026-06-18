@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const stats = [
-  { value: '$5K–$15K', label: 'strategy engagement' },
+  { value: 'From $1,500', label: 'strategy engagement' },
   { value: '2–4 weeks', label: 'to a working roadmap' },
   { value: '100%', label: 'implementation-ready output' },
 ]

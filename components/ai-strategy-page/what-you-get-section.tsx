@@ -15,7 +15,7 @@ const tiers = [
   },
   {
     name: 'Strategy + Pilots',
-    price: 'From $3,500',
+    price: 'From $2,500',
     timeline: '4 weeks',
     highlight: true,
     deliverables: [
