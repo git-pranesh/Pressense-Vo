@@ -40,7 +40,7 @@ export function WorkflowAutomationHero() {
           <div className="flex flex-wrap gap-6 mb-10">
             {[
               { value: '20+ hrs/week', label: 'reclaimed per client on average' },
-              { value: '$3K–$15K', label: 'typical project cost' },
+              { value: 'From $1,200', label: 'audit and roadmap' },
               { value: '1–4 weeks', label: 'average build timeline' },
             ].map((stat) => (
               <div key={stat.value}>

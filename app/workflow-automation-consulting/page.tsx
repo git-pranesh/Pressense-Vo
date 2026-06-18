@@ -12,11 +12,11 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Workflow Automation Consulting | Pressense',
   description:
-    'Workflow automation consulting for B2B startups and scaling teams. Audit, design, and build automated systems that save 20+ hours per week. From $3,000.',
+    'Workflow automation consulting for B2B startups and scaling teams. Audit, design, and build automated systems that save 20+ hours per week. From $1,200.',
   openGraph: {
     title: 'Workflow Automation Consulting | Pressense',
     description:
-      'Workflow automation consulting for B2B startups and scaling teams. Audit, design, and build automated systems that save 20+ hours per week. From $3,000.',
+      'Workflow automation consulting for B2B startups and scaling teams. Audit, design, and build automated systems that save 20+ hours per week. From $1,200.',
     url: '/workflow-automation-consulting',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Workflow Automation Consulting' }],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Workflow Automation Consulting | Pressense',
     description:
-      'Workflow automation consulting for B2B startups and scaling teams. Audit, design, and build automated systems that save 20+ hours per week. From $3,000.',
+      'Workflow automation consulting for B2B startups and scaling teams. Audit, design, and build automated systems that save 20+ hours per week. From $1,200.',
     images: ['/og-image.jpg'],
   },
 }
@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'How much does workflow automation consulting cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For small businesses and scaling startups, scoped workflow automation builds typically range from $3,000 to $15,000 depending on the number of workflows and integration complexity. Multi-system implementations with custom API development can range from $15,000 to $50,000 or more. Pressense offers project engagements from $3,000 and ongoing retainer options from $2,500 per month.',
+        text: 'A Pressense workflow automation consulting engagement starts from $1,200 for a process audit and roadmap — this is the starting point before any build work begins. Implementation projects are scoped after the diagnostic and priced based on the number of workflows and integration complexity. Book a free diagnostic call to get a fixed-price estimate for your specific situation.',
       },
     },
     {
@@ -112,17 +112,10 @@ export default function WorkflowAutomationPage() {
       itemListElement: [
         {
           '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: 'Workflow Automation Project' },
-          price: '3000',
+          itemOffered: { '@type': 'Service', name: 'Workflow Automation Audit and Roadmap' },
+          price: '1200',
           priceCurrency: 'USD',
-          priceSpecification: { '@type': 'UnitPriceSpecification', price: '3000', priceCurrency: 'USD', unitText: 'project' },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: 'Ongoing Workflow Automation Retainer' },
-          price: '2500',
-          priceCurrency: 'USD',
-          priceSpecification: { '@type': 'UnitPriceSpecification', price: '2500', priceCurrency: 'USD', unitText: 'month' },
+          priceSpecification: { '@type': 'UnitPriceSpecification', price: '1200', priceCurrency: 'USD', unitText: 'fixed-price from' },
         },
       ],
     },

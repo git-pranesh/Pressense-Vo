@@ -10,7 +10,7 @@ const workflowFAQs = [
   {
     question: 'How much does workflow automation consulting cost?',
     answer:
-      'For small businesses and scaling startups, scoped workflow automation builds typically range from $3,000 to $15,000 depending on the number of workflows and integration complexity. Multi-system implementations with custom API development can range from $15,000 to $50,000 or more. Pressense offers project engagements from $3,000 and ongoing retainer options from $2,500 per month for teams that want continuous workflow development. See our packages page for current pricing.',
+      'A Pressense workflow automation consulting engagement starts from $1,200 for a process audit and roadmap. This is the starting point before any build work begins — the audit identifies your highest-impact workflows and produces a scoped, fixed-price estimate for implementation. Book a free diagnostic call to understand what your specific situation would cost.',
   },
   {
     question: 'How long does workflow automation take to implement?',

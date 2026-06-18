@@ -26,7 +26,7 @@ export function WhatYouGetSection() {
           <Link href="/packages" className="text-primary hover:underline">
             $1,200 for an audit and roadmap
           </Link>
-          , with project builds from $2,500 and retainer options for ongoing workflow development.
+          . Implementation is scoped and quoted after the diagnostic call.
         </p>
 
         {/* Timeline table */}
@@ -57,7 +57,7 @@ export function WhatYouGetSection() {
           {[
             '5-week engagement',
             'Consulting from $1,200',
-            'Projects from $2,500',
+            'Implementation scoped on call',
             'India + Global clients',
             'Works with your existing tools',
           ].map((badge) => (
