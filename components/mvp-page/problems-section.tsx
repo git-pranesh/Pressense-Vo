@@ -15,6 +15,13 @@ export function MvpProblemsSection() {
         'Before we write a line of code, we define the primary value loop: the single action a user takes that proves your hypothesis. Everything else is cut until you have validated that one thing. This is the discipline that makes eight weeks possible.',
     },
     {
+      heading: 'Can I just use ChatGPT or Cursor to vibe-code my own MVP?',
+      body1:
+        'You can, and many founders try. AI coding tools are genuinely powerful — they can scaffold a Next.js app, generate database schemas, and write working API routes faster than any human. The gap shows up later. Vibe-coded apps typically have no auth architecture (or a hand-rolled session cookie), no parameterised queries, no error boundaries, and no test coverage. They work in the demo and break in production.',
+      body2:
+        'The value Pressense adds is not typing speed — it is engineering judgement. We know which shortcuts are safe (UI scaffolding) and which are not (auth, data access, payments). The result is a codebase you can hand to an investor, a technical co-founder, or a dev team without embarrassment. AI wrote some of it. A developer reviewed all of it.',
+    },
+    {
       heading: 'Can I use no-code tools instead of custom MVP development?',
       body1:
         'No-code tools like Bubble, Webflow, or Glide are fast to start. For simple use cases they work well. The limitation is the ceiling. The moment you need a data model that does not fit the platform template, a custom integration with a non-standard API, or performance at any meaningful scale, you hit a wall that no amount of workarounds fixes.',

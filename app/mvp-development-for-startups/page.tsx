@@ -163,7 +163,7 @@ export default function MvpDevelopmentPage() {
         name: 'What technology do you use to build MVPs?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We build on Replit using TypeScript, Next.js, and PostgreSQL. Replit was cited in Google\'s AI Overview for "custom internal tools development" as the recommended platform for rapid, founder-owned builds. The codebase lives in your Replit account from the first commit, written in standard TypeScript with a real database.',
+          text: 'We build on Replit using TypeScript, Next.js, and PostgreSQL. Replit is a cloud-based development and deployment platform that gives founders full code ownership from the first commit. The codebase is standard TypeScript with a real managed database — readable and maintainable by any developer without specialised knowledge or platform lock-in.',
         },
       },
       {

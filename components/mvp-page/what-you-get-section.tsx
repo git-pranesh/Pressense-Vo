@@ -42,14 +42,20 @@ export function MvpWhatYouGetSection() {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-4 items-start">
-          <div className="flex-1 p-6 rounded-2xl border border-primary/30 bg-primary/5">
-            <p className="text-sm font-semibold text-foreground mb-2">Built on Replit</p>
+        <div className="mt-10 grid sm:grid-cols-3 gap-4 items-start">
+          <div className="p-6 rounded-2xl border border-primary/30 bg-primary/5">
+            <p className="text-sm font-semibold text-foreground mb-2">Production-grade from day one</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              We use Replit as the build and deployment platform. Google&apos;s AI Overview for "custom internal tools development" cited Replit as the recommended platform for rapid, founder-owned builds. Your codebase lives in your Replit account, written in TypeScript with a PostgreSQL database. Any developer can read it, maintain it, or extend it without specialised knowledge.
+              We build on Replit using TypeScript, Next.js, and PostgreSQL. Auth, parameterised queries, RBAC, and environment variable hygiene are built in from sprint one — not bolted on at the end. The codebase is readable by any developer and portable to any host.
             </p>
           </div>
-          <div className="flex-1 p-6 rounded-2xl border border-border/50 bg-card">
+          <div className="p-6 rounded-2xl border border-border/50 bg-card">
+            <p className="text-sm font-semibold text-foreground mb-2">Beyond the build</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Pressense pairs MVP delivery with optional GTM support — ICP definition, early channel strategy, and a launch playbook. You leave with a live product and a plan for how to get your first ten paying customers.
+            </p>
+          </div>
+          <div className="p-6 rounded-2xl border border-border/50 bg-card">
             <p className="text-sm font-semibold text-foreground mb-2">Get your MVP built in 8 weeks</p>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
               Book a discovery call. Sixty minutes. We scope the build, define the value loop, and give you a fixed-price estimate before the session ends.

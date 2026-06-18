@@ -21,16 +21,16 @@ export function MvpMethodologySection() {
       name: 'Build',
       tagline: 'Ship in two-week sprints with working software each cycle',
       description:
-        'Weeks three through six are two-week sprints. At the end of each sprint you have working software to test against real users or internal reviewers. We do not show you a demo environment. We deploy to production early so feedback is grounded in real behaviour. The core MVP is live and functional by the end of week six.',
-      deliverable: 'Live MVP with core value loop and primary user journey',
+        'Weeks three through six are two-week sprints. At the end of each sprint you have working software to test against real users or internal reviewers. We do not show you a demo environment. We deploy to production early so feedback is grounded in real behaviour. Production readiness is built in from the first sprint — not added at the end. Auth uses a proven library, the database uses parameterised queries throughout, secrets never appear in source code, and role-based access is scoped at the data layer. The core MVP is live and production-grade by the end of week six.',
+      deliverable: 'Live, production-grade MVP with core value loop and primary user journey',
     },
     {
       number: '04',
       name: 'Scale',
       tagline: 'Iterate based on real user data',
       description:
-        'Weeks seven and eight are stabilisation and the first iteration cycle. We fix anything the initial user feedback surfaces, add the one or two secondary features that testing reveals are essential, and set up analytics so you can track the behaviour that matters. After week eight you have a stable, live product and a clear next-step roadmap.',
-      deliverable: 'Stable live product + iteration roadmap + analytics setup',
+        'Weeks seven and eight are stabilisation and the first iteration cycle. We fix anything the initial user feedback surfaces, add the one or two secondary features that testing reveals are essential, and set up analytics so you can track the behaviour that matters. Beyond the code, Pressense can optionally layer in GTM support — ICP definition, early channel strategy, and a launch playbook — so you leave week eight with a go-to-market plan alongside a live product. After week eight you have a stable, production-grade product and a clear next-step roadmap.',
+      deliverable: 'Stable live product + iteration roadmap + analytics + optional GTM playbook',
     },
   ]
 

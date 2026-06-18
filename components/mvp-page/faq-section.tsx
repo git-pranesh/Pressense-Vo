@@ -22,7 +22,12 @@ const faqs = [
   {
     question: 'What technology do you use to build MVPs?',
     answer:
-      'We build on Replit using TypeScript, Next.js, and PostgreSQL. Replit was cited in Google&apos;s AI Overview for "custom internal tools development" as the recommended platform for rapid, founder-owned builds. The codebase lives in your Replit account from the first commit. It is written in standard TypeScript, uses a real database, and can be maintained or extended by any developer without specialised knowledge or platform lock-in.',
+      'We build on Replit using TypeScript, Next.js, and PostgreSQL. Replit is a cloud-based development and deployment platform that gives founders full code ownership from the first commit. The codebase is standard TypeScript with a real managed database — readable and maintainable by any developer without specialised knowledge or platform lock-in.',
+  },
+  {
+    question: 'Can I just use AI tools to vibe-code my own MVP instead?',
+    answer:
+      'You can, and many founders try. AI coding tools are genuinely fast at scaffolding — they can generate a Next.js app, database schema, and API routes in hours. The issue is engineering judgement, not typing speed. Vibe-coded apps frequently have hand-rolled auth with no session management, SQL queries with no parameterisation, no error boundaries, and no test coverage. They work in the demo and break in production. The value Pressense adds is knowing which shortcuts are safe and which create technical debt that blocks your next funding round. AI wrote some of our code. A developer reviewed all of it.',
   },
   {
     question: 'Do I need a technical co-founder or can I hire an MVP agency?',
