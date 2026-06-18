@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: 'What is the cost of working with Pressense?',
-    a: 'Engagements start from $1,200 for a diagnostic and roadmap. Project-based work is scoped and priced based on deliverables. We are transparent about costs before any work starts — there are no surprise retainer fees or scope expansions without agreement.',
+    a: 'Founder Advisory Sessions start from $500 — a focused diagnostic call that maps your biggest bottleneck and gives you a clear, actionable next step. Larger project-based work is scoped and priced after the diagnostic. We are transparent about costs before any work starts — no surprise retainer fees or scope expansions without agreement.',
   },
 ]
 

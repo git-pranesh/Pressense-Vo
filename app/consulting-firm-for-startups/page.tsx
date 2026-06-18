@@ -10,7 +10,7 @@ import { FinalCTA } from '@/components/final-cta'
 export const metadata: Metadata = {
   title: 'Consulting Firm for Startups & Founder-Led Businesses | Pressense',
   description:
-    'Consulting for founder-led businesses: GTM strategy, AI workflow systems, custom software, and positioning. We execute alongside founders — not just advise. From $1,200.',
+    'Consulting for founder-led businesses: GTM strategy, AI workflow systems, custom software, and positioning. We execute alongside founders — not just advise. From $500.',
   openGraph: {
     title: 'Consulting Firm for Startups & Founder-Led Businesses | Pressense',
     description:
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Consulting Firm for Startups & Founder-Led Businesses | Pressense',
     description:
-      'GTM strategy, AI systems, and custom software for founder-led businesses. Executes alongside founders. From $1,200.',
+      'GTM strategy, AI systems, and custom software for founder-led businesses. Executes alongside founders. From $500.',
     images: ['/og-image.jpg'],
   },
 }
@@ -46,7 +46,7 @@ export default function StartupConsultingPage() {
       name: 'Startup Consulting Diagnostic and Roadmap',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '1200',
+        price: '500',
         priceCurrency: 'USD',
         unitText: 'per engagement',
       },
@@ -89,7 +89,7 @@ export default function StartupConsultingPage() {
       {
         '@type': 'Question',
         name: 'What is the cost of working with Pressense?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Engagements start from $1,200 for a diagnostic and roadmap. Project-based work is scoped and priced based on deliverables. We are transparent about costs before any work starts.' },
+        acceptedAnswer: { '@type': 'Answer', text: 'Founder Advisory Sessions start from $500 — a focused diagnostic call that maps your biggest bottleneck and gives you a clear next step. Larger project-based work is scoped and priced after the diagnostic. We are transparent about costs before any work starts.' },
       },
     ],
   }
