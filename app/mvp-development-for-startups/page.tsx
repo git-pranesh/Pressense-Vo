@@ -12,11 +12,11 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'MVP Development for Startups | Pressense',
   description:
-    'MVP development for startups: build, validate and launch in 8 weeks. From $15K fixed-price. Built on Replit — you own the code from day one.',
+    'MVP development for startups: build, validate and launch in 8 weeks. From $5K fixed-price. Built on Replit — you own the code from day one.',
   openGraph: {
     title: 'MVP Development for Startups | Pressense',
     description:
-      'MVP development for startups: build, validate and launch in 8 weeks. From $15K fixed-price. Built on Replit — you own the code from day one.',
+      'MVP development for startups: build, validate and launch in 8 weeks. From $5K fixed-price. Built on Replit — you own the code from day one.',
     url: '/mvp-development-for-startups',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense MVP Development for Startups' }],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MVP Development for Startups | Pressense',
     description:
-      'MVP development for startups: build, validate and launch in 8 weeks. From $15K fixed-price. Built on Replit — you own the code from day one.',
+      'MVP development for startups: build, validate and launch in 8 weeks. From $5K fixed-price. Built on Replit — you own the code from day one.',
     images: ['/og-image.jpg'],
   },
 }
@@ -44,7 +44,7 @@ export default function MvpDevelopmentPage() {
       url: 'https://www.pressense.co',
     },
     description:
-      'Pressense builds production-grade MVPs for early-stage startups in 8 weeks. Fixed-price engagements starting from $15,000. Built on Replit — founders own the code from day one.',
+      'Pressense builds production-grade MVPs for early-stage startups in 8 weeks. Fixed-price engagements starting from $5,000. Built on Replit — founders own the code from day one.',
     url: 'https://www.pressense.co/mvp-development-for-startups',
     areaServed: 'Worldwide',
     hasOfferCatalog: {
@@ -58,11 +58,11 @@ export default function MvpDevelopmentPage() {
             name: 'MVP Starter',
             description: 'Core value loop, user auth, 1–2 integrations, deployed on Replit in 8 weeks.',
           },
-          price: '15000',
+          price: '5000',
           priceCurrency: 'USD',
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '15000',
+            price: '5000',
             priceCurrency: 'USD',
             unitText: 'fixed-price build',
           },
@@ -139,7 +139,7 @@ export default function MvpDevelopmentPage() {
         name: 'How much does MVP development cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'MVP development typically costs between $15,000 and $85,000 for a startup-stage build. A single-workflow MVP with one integration costs $15,000 to $20,000. A multi-journey product with payments, email automation, and an admin dashboard is $28,000 to $45,000. Every Pressense MVP engagement starts with a fixed-price estimate from the diagnostic session before any work begins.',
+          text: 'MVP development with Pressense starts from $5,000 for a focused single-workflow build. A multi-journey product with payments, email automation, and an admin dashboard is $28,000. With AI-assisted development on Replit, founders can now get production-ready MVPs at a fraction of traditional agency rates. Every Pressense MVP engagement starts with a fixed-price estimate from the diagnostic session before any work begins.',
         },
       },
       {

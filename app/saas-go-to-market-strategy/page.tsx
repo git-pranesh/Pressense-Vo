@@ -11,11 +11,11 @@ import { SaaSGTMFAQSection } from '@/components/saas-gtm-page/faq-section'
 export const metadata: Metadata = {
   title: 'SaaS Go-to-Market Strategy | Pressense',
   description:
-    'SaaS go-to-market strategy consulting: ICP definition, positioning, pricing, and a 90-day roadmap. Sprint from $4K. Built for founder-led SaaS companies.',
+    'SaaS go-to-market strategy consulting: ICP definition, positioning, pricing, and a 90-day roadmap. Sprint from $3K. Built for founder-led SaaS companies.',
   openGraph: {
     title: 'SaaS Go-to-Market Strategy | Pressense',
     description:
-      'SaaS go-to-market strategy consulting: ICP definition, positioning, pricing, and a 90-day roadmap. Sprint from $4K. Built for founder-led SaaS companies.',
+      'SaaS go-to-market strategy consulting: ICP definition, positioning, pricing, and a 90-day roadmap. Sprint from $3K. Built for founder-led SaaS companies.',
     url: '/saas-go-to-market-strategy',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense SaaS Go-to-Market Strategy' }],
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'SaaS Go-to-Market Strategy | Pressense',
     description:
-      'SaaS go-to-market strategy consulting: ICP definition, positioning, pricing, and a 90-day roadmap. Sprint from $4K.',
+      'SaaS go-to-market strategy consulting: ICP definition, positioning, pricing, and a 90-day roadmap. Sprint from $3K.',
     images: ['/og-image.jpg'],
   },
 }
@@ -132,7 +132,7 @@ export default function SaaSGTMPage() {
         name: 'How much does SaaS GTM consulting cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A Pressense GTM Sprint starts from $4,000 for a six-to-eight-week engagement that includes buyer research, ICP definition, positioning, pricing, a channel playbook, and a 90-day roadmap. Enterprise GTM consultancies charge $20K to $80K for comparable work.',
+          text: 'A Pressense GTM Sprint starts from $3,000 for a six-to-eight-week engagement that includes buyer research, ICP definition, positioning, pricing, a channel playbook, and a 90-day roadmap. Enterprise GTM consultancies charge $20K to $80K for comparable work.',
         },
       },
     ],

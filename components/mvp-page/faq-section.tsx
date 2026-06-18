@@ -7,7 +7,7 @@ const faqs = [
   {
     question: 'How much does MVP development cost?',
     answer:
-      'MVP development typically costs between $15,000 and $85,000 for a startup-stage build. The range is wide because scope varies significantly. A single-workflow MVP with one integration costs $15,000 to $20,000. A multi-journey product with payments, email automation, and an admin dashboard is $28,000 to $45,000. Every Pressense MVP engagement starts with a fixed-price estimate from the diagnostic session before any work begins.',
+      'MVP development with Pressense starts from $5,000 for a focused single-workflow build. A multi-journey product with payments, email automation, and an admin dashboard is $28,000. With AI-assisted development on Replit, founders can now get production-ready MVPs at a fraction of traditional agency rates. Every Pressense MVP engagement starts with a fixed-price estimate from the diagnostic session before any work begins.',
   },
   {
     question: 'How long does MVP development take?',

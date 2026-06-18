@@ -12,11 +12,11 @@ import { FinalCTA } from '@/components/final-cta'
 export const metadata: Metadata = {
   title: 'Custom CRM Development | Pressense',
   description:
-    'Custom CRM development for growing businesses. Own your sales system, eliminate vendor lock-in, and automate your exact workflow. From $15K, live in 6–14 weeks.',
+    'Custom CRM development for growing businesses. Own your sales system, eliminate vendor lock-in, and automate your exact workflow. From $5K, live in 6–14 weeks.',
   openGraph: {
     title: 'Custom CRM Development | Pressense',
     description:
-      'Custom CRM development for growing businesses. Own your sales system, eliminate vendor lock-in, and automate your exact workflow. From $15K, live in 6–14 weeks.',
+      'Custom CRM development for growing businesses. Own your sales system, eliminate vendor lock-in, and automate your exact workflow. From $5K, live in 6–14 weeks.',
     url: '/custom-crm-development',
     type: 'website',
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Custom CRM Development | Pressense',
     description:
-      'Custom CRM development for growing businesses. Own your sales system, eliminate vendor lock-in, and automate your exact workflow. From $15K, live in 6–14 weeks.',
+      'Custom CRM development for growing businesses. Own your sales system, eliminate vendor lock-in, and automate your exact workflow. From $5K, live in 6–14 weeks.',
     images: ['/og-image.jpg'],
   },
 }
@@ -61,11 +61,11 @@ const serviceSchema = {
         '@type': 'Offer',
         name: 'CRM MVP',
         description: 'Core contact and deal management with custom pipeline stages and basic automation.',
-        price: '15000',
+        price: '5000',
         priceCurrency: 'USD',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '15000',
+          price: '5000',
           priceCurrency: 'USD',
           unitText: 'project',
         },
@@ -75,11 +75,11 @@ const serviceSchema = {
         name: 'Full Custom CRM',
         description:
           'Multi-object data model, advanced automation, full integration suite, role-based permissions, and custom reporting.',
-        price: '35000',
+        price: '15000',
         priceCurrency: 'USD',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '35000',
+          price: '15000',
           priceCurrency: 'USD',
           unitText: 'project',
         },
@@ -137,7 +137,7 @@ const faqSchema = {
       name: 'How much does custom CRM development cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Custom CRM development starts at around $15,000 for a lean MVP for a team of three to ten, and typically falls between $20,000 and $60,000 for a full system. The final cost depends on the number of data objects, integrations, automation rules, and custom reporting required. A three-year comparison with Salesforce or HubSpot Enterprise often shows the custom build is cheaper at scale, because you pay once for the build and own the software outright. All Pressense builds come with a fixed-price estimate after the free diagnostic.',
+          text: 'Custom CRM development starts from $5,000 for a lean MVP for a team of three to ten, with a full-featured system typically in the $15,000 range. The final cost depends on the number of data objects, integrations, automation rules, and custom reporting required. A three-year comparison with Salesforce or HubSpot Enterprise often shows the custom build is cheaper at scale, because you pay once for the build and own the software outright. All Pressense builds come with a fixed-price estimate after the free diagnostic.',
       },
     },
     {

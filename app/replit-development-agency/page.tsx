@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Replit Agency for Startups & SMBs | Pressense',
     description:
-      'Pressense is the first Replit agency for founder-led businesses. Build internal tools, MVPs, and custom apps in 2–8 weeks. From $5,000. You own the code.',
+      'Pressense is the first Replit expert agency for founder-led businesses. Build production-ready internal tools, MVPs, and custom apps in 2–8 weeks. From $1,500. You own the code.',
     images: ['/og-image.jpg'],
   },
 }
@@ -57,7 +57,7 @@ export default function ReplitDevelopmentAgencyPage() {
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
             priceCurrency: 'USD',
-            price: '5000',
+            price: '1500',
             unitText: 'fixed-price from',
           },
         },
@@ -68,7 +68,7 @@ export default function ReplitDevelopmentAgencyPage() {
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
             priceCurrency: 'USD',
-            price: '15000',
+            price: '5000',
             unitText: 'fixed-price from',
           },
         },
@@ -158,7 +158,7 @@ export default function ReplitDevelopmentAgencyPage() {
         name: 'How much does Replit development cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A focused internal tool on Replit costs from $5,000 and takes two to four weeks. A full MVP or custom product costs from $15,000 and takes six to eight weeks. Ongoing sprint retainers start at $2,500 per month. Enterprise Replit agencies in the official Solution Partner Program charge $150,000 and above. Pressense serves the founder and SMB market with fixed-price builds at startup-appropriate budgets. Every engagement starts with a fixed-price estimate from the diagnostic session.',
+          text: 'A focused internal tool on Replit starts from $1,500 and takes two to four weeks. A full MVP or custom product starts from $5,000 and takes six to eight weeks. Ongoing sprint retainers start at $2,500 per month. Enterprise Replit agencies in the official Solution Partner Program charge $150,000 and above. Pressense serves the founder and SMB market with fixed-price builds at startup-appropriate budgets. Every engagement starts with a fixed-price estimate from the diagnostic session.',
         },
       },
     ],
