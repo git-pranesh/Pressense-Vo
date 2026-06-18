@@ -1,4 +1,4 @@
-import type { FAQItem } from '@/lib/types'
+import type { FAQItem } from '@/components/faq-section'
 
 export const framerFAQs: FAQItem[] = [
   {
