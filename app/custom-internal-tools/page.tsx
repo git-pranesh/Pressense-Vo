@@ -16,14 +16,14 @@ import { CustomToolsFAQSection } from '@/components/custom-tools-page/faq-sectio
 export const metadata: Metadata = {
   title: 'Custom Internal Tools for Growing Businesses | Pressense',
   description:
-    'Custom internal tools built for how your business actually works. Dedicated developer, fast fixes, ongoing support. From $5K. Replace spreadsheets and fragile SaaS stacks.',
+    'Custom internal tools built for how your business actually works. Dedicated developer, fast fixes, ongoing support. From $3,000. Replace spreadsheets and fragile SaaS stacks.',
   alternates: {
     canonical: '/custom-internal-tools',
   },
   openGraph: {
     title: 'Custom Internal Tools for Growing Businesses | Pressense',
     description:
-      'Custom internal tools built for how your business actually works. Dedicated developer, fast fixes, ongoing support. From $5K.',
+      'Custom internal tools built for how your business actually works. Dedicated developer, fast fixes, ongoing support. From $3,000.',
     url: '/custom-internal-tools',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Custom Internal Tools' }],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Custom Internal Tools for Growing Businesses | Pressense',
     description:
-      'Custom internal tools built for how your business actually works. Dedicated developer, fast fixes, ongoing support. From $5K.',
+      'Custom internal tools built for how your business actually works. Dedicated developer, fast fixes, ongoing support. From $3,000.',
     images: ['/og-image.jpg'],
   },
 }
@@ -52,7 +52,7 @@ export default function CustomInternalToolsPage() {
       name: 'Custom Internal Tool Build',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '5000',
+        price: '3000',
         priceCurrency: 'USD',
         unitText: 'per project',
       },
@@ -85,7 +85,7 @@ export default function CustomInternalToolsPage() {
         name: 'How much does it cost to build a custom internal tool?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A Pressense internal tool build starts from $5,000 for a focused workflow or dashboard. More complex tools with integrations, user permissions, and multiple modules typically range from $10,000 to $30,000. All builds include a dedicated developer, post-launch bug fixes, and a support retainer option so the tool stays running as your business grows.',
+          text: 'A Pressense internal tool build starts from $3,000 for a focused workflow or dashboard. More complex tools with integrations, user permissions, and multiple modules typically range from $8,000 to $25,000. All builds include a dedicated developer, post-launch bug fixes, and a support retainer option so the tool stays running as your business grows.',
         },
       },
       {

@@ -24,7 +24,7 @@ export function CustomToolsHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $5K</span>
+              <span className="text-2xl font-bold text-foreground">From $3,000</span>
               <span className="text-sm text-muted-foreground">fixed-price build</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
