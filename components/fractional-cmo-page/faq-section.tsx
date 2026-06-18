@@ -7,7 +7,8 @@ const cmoFAQs = [
     question: 'What are fractional CMO services?',
     answer: (
       <>
-        Fractional CMO services are part-time senior marketing leadership engagements where an experienced CMO embeds in your business on a retainer basis. Unlike an agency that handles execution, or a consultant who writes reports, a fractional CMO owns your marketing strategy, manages your team and agencies, and is accountable for pipeline and revenue outcomes. Engagements typically run 10 to 20 hours per week and cost $5,000 to $15,000 per month, compared to $250,000 to $400,000 annually for a full-time hire. See <Link href="/packages" className="text-primary hover:underline">Pressense packages</Link> for current pricing.
+        Fractional CMO services are part-time senior marketing leadership engagements where an experienced CMO embeds in your business on a retainer basis. Unlike an agency that handles execution, or a consultant who writes reports, a fractional CMO owns your marketing strategy, manages your team and agencies, and is accountable for pipeline and revenue outcomes. In Western markets, fractional CMO retainers typically run $5,000 to $15,000 per month. Pressense offers the same senior strategic leadership from $1,500 per month — built for founder-led businesses and B2B SaaS companies that need CMO-level thinking without the enterprise price tag.{' '}
+        <Link href="/diagnostic" className="text-primary hover:underline">Book a free diagnostic</Link> to see what is right for your stage.
       </>
     ),
   },
