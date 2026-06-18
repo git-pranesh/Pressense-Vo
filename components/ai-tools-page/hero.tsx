@@ -21,8 +21,8 @@ export function AIToolsHero() {
 
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-6">
             No black boxes. Every tool we use, every reason we chose it, and the exact outcome it creates for our clients.
-            We work with Claude, GPT-4, Replit, Framer, Make, Zapier, Airtable, and Notion. Here is how each one earns
-            its place in our stack.
+            We work with Claude, GPT-4o, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion. Here is how
+            each one earns its place in our stack — and when we recommend something different.
           </p>
 
           {/* AEO Answer Block */}
@@ -30,8 +30,9 @@ export function AIToolsHero() {
             <p className="text-base text-muted-foreground leading-relaxed">
               <strong className="text-foreground">The Pressense tech stack</strong> is a curated set of AI models,
               development platforms, and automation tools used to build custom software, automate workflows, and launch
-              conversion websites for growing businesses. Every tool is chosen for speed, ownership, and the ability to
-              hand over a system the client can modify without hiring a developer.
+              conversion websites for growing businesses. Every tool is chosen for speed, ownership, and adaptability —
+              if a client already uses a specific tool, we build with it. If they do not, we recommend what fits the
+              problem, not what is easiest for us.
             </p>
           </div>
 
@@ -55,8 +56,8 @@ export function AIToolsHero() {
 
           <div className="grid grid-cols-3 gap-6 max-w-xl">
             {[
-              { stat: '8', label: 'Tools in our stack' },
-              { stat: '3', label: 'AI model partners' },
+              { stat: '10', label: 'Tools in our stack' },
+              { stat: '2', label: 'AI model partners' },
               { stat: '100%', label: 'You own the output' },
             ].map((item) => (
               <div key={item.label}>

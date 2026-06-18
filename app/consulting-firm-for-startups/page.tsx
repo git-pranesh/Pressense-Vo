@@ -1,263 +1,113 @@
-import { StructuredData } from '@/components/structured-data'
-import { Button } from '@/components/ui/button'
-import { ArrowRight, CheckCircle2, Lightbulb, TrendingUp, Users, Zap } from 'lucide-react'
-import Link from 'next/link'
 import type { Metadata } from 'next'
+import { StructuredData } from '@/components/structured-data'
+import { StartupConsultingHero } from '@/components/startup-consulting-page/hero'
+import { StartupConsultingProblemSection } from '@/components/startup-consulting-page/problem-section'
+import { StartupConsultingWhatWeDoSection } from '@/components/startup-consulting-page/what-we-do-section'
+import { StartupConsultingWhoItsForSection } from '@/components/startup-consulting-page/who-its-for-section'
+import { StartupConsultingFAQSection } from '@/components/startup-consulting-page/faq-section'
+import { FinalCTA } from '@/components/final-cta'
 
 export const metadata: Metadata = {
-  title: 'Consulting Firm for Startups | Pre-Seed to Series A | Pressense',
-  description: 'End-to-end startup consulting from pre-seed through Series A: Product strategy, GTM, fundraising, operations.',
+  title: 'Consulting Firm for Startups & Founder-Led Businesses | Pressense',
+  description:
+    'Consulting for founder-led businesses: GTM strategy, AI workflow systems, custom software, and positioning. We execute alongside founders — not just advise. From $1,200.',
   openGraph: {
-    title: 'Consulting Firm for Startups | Pressense',
-    description: 'Stage-based consulting for startups: Pre-seed validation to Series A scaling. Founder-focused, integrated approach.',
+    title: 'Consulting Firm for Startups & Founder-Led Businesses | Pressense',
+    description:
+      'GTM strategy, AI systems, and custom software for founder-led businesses. Pressense executes alongside founders — no slide decks, no disappearing after delivery.',
     url: '/consulting-firm-for-startups',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Startup Consulting' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Consulting for Startups' }],
   },
   alternates: {
     canonical: '/consulting-firm-for-startups',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Consulting Firm for Startups & Founder-Led Businesses | Pressense',
+    description:
+      'GTM strategy, AI systems, and custom software for founder-led businesses. Executes alongside founders. From $1,200.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function StartupConsultingPage() {
-  const schema = {
+  const serviceSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': 'https://pressense.co/consulting-firm-for-startups',
-    name: 'Pressense - Consulting Firm for Startups',
-    description: 'Startup consulting services from pre-seed through Series A funding.',
-    url: 'https://pressense.co/consulting-firm-for-startups',
-    serviceArea: {
-      '@type': 'Place',
-      name: 'Worldwide',
-    },
+    '@type': 'Service',
+    name: 'Consulting for Startups and Founder-Led Businesses',
+    provider: { '@type': 'Organization', name: 'Pressense', url: 'https://www.pressense.co' },
+    description:
+      'GTM strategy, AI workflow systems, custom software, and positioning consulting for founder-led businesses and early-stage startups.',
+    url: 'https://www.pressense.co/consulting-firm-for-startups',
     areaServed: 'Worldwide',
-    serviceType: 'Startup Consulting',
+    offers: {
+      '@type': 'Offer',
+      name: 'Startup Consulting Diagnostic and Roadmap',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: '1200',
+        priceCurrency: 'USD',
+        unitText: 'per engagement',
+      },
+    },
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pressense.co' },
+      { '@type': 'ListItem', position: 2, name: 'Consulting Firm for Startups', item: 'https://www.pressense.co/consulting-firm-for-startups' },
+    ],
+  }
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What does a consulting firm for startups actually do?',
+        acceptedAnswer: { '@type': 'Answer', text: 'A startup consulting firm provides the strategic and operational expertise that early-stage and growing businesses need but cannot afford to hire full-time. At Pressense, this means working on go-to-market strategy, AI systems, custom software, positioning, and operations — as an embedded team that executes alongside founders.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'How is Pressense different from a traditional consulting firm?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Traditional consulting firms advise. Pressense builds. We write the positioning, build the automation system, design the CRM process, or ship the custom tool — and we stay accountable to outcomes rather than deliverables.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What stage of business do you work with?',
+        acceptedAnswer: { '@type': 'Answer', text: 'We work best with businesses that have a validated offer and at least some revenue. This means post-PMF startups, growing service firms, SaaS companies with early traction, and founder-led businesses that have outgrown their current systems.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you offer strategic advice only, or do you also execute?',
+        acceptedAnswer: { '@type': 'Answer', text: 'We execute. Strategy without execution is a slide deck. Every engagement includes deliverables: built systems, written content, launched automations, or shipped software.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the cost of working with Pressense?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Engagements start from $1,200 for a diagnostic and roadmap. Project-based work is scoped and priced based on deliverables. We are transparent about costs before any work starts.' },
+      },
+    ],
   }
 
   return (
     <>
-      <StructuredData data={schema} />
-      
+      <StructuredData data={serviceSchema} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       <main className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative py-20 lg:py-28 overflow-hidden">
-          <div className="max-w-6xl mx-auto px-6 lg:px-10">
-            <div className="max-w-3xl">
-              <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">
-                Startup Consulting for Founders Who Want to Scale Faster
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8">
-                From pre-seed validation to Series A scaling, we help founders build the strategy, systems, and go-to-market needed to grow without burning out.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg">
-                  <Link href="/apply">
-                    Talk to a Consultant <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link href="/diagnostic">Free Diagnostic</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Problem Section */}
-        <section className="py-16 bg-secondary/30">
-          <div className="max-w-6xl mx-auto px-6 lg:px-10">
-            <h2 className="text-3xl font-bold mb-8">The Startup Scaling Problem</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <p className="text-muted-foreground">
-                  Most startups fail not because of bad ideas, but because of execution gaps:
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive">✕</span>
-                    <span className="text-muted-foreground">No clear ICP or positioning (talking to everyone, converting no one)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive">✕</span>
-                    <span className="text-muted-foreground">Founder doing everything (no systems, no delegation)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive">✕</span>
-                    <span className="text-muted-foreground">GTM strategy that changes every month</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive">✕</span>
-                    <span className="text-muted-foreground">Burning cash on channels that don&apos;t convert</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="p-6 bg-background rounded-lg border border-border">
-                <p className="font-semibold mb-4">We fix this by giving you:</p>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" />
-                    <span className="text-muted-foreground">Clear ICP, positioning, and messaging</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" />
-                    <span className="text-muted-foreground">Systems that let you scale without chaos</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" />
-                    <span className="text-muted-foreground">GTM playbook tailored to your stage</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" />
-                    <span className="text-muted-foreground">Data-driven decisions on where to invest</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stage-Based Approach */}
-        <section className="py-16">
-          <div className="max-w-6xl mx-auto px-6 lg:px-10">
-            <h2 className="text-3xl font-bold mb-4">Stage-Based Consulting</h2>
-            <p className="text-muted-foreground mb-12 max-w-2xl">
-              Different stages need different solutions. We meet you where you are.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-6 bg-secondary/20 rounded-lg border border-border/50">
-                <Lightbulb className="h-8 w-8 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Pre-Seed / Idea Stage</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Validate before you build. Test demand, find your ICP, and build a pitch that raises.
-                </p>
-                <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>• Market validation</li>
-                  <li>• ICP definition</li>
-                  <li>• Pitch deck strategy</li>
-                  <li>• MVP scoping</li>
-                </ul>
-              </div>
-              <div className="p-6 bg-secondary/20 rounded-lg border border-border/50">
-                <TrendingUp className="h-8 w-8 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Seed Stage</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Find product-market fit. Build repeatable sales and marketing systems.
-                </p>
-                <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>• GTM strategy</li>
-                  <li>• Sales process design</li>
-                  <li>• Marketing foundations</li>
-                  <li>• Operational systems</li>
-                </ul>
-              </div>
-              <div className="p-6 bg-secondary/20 rounded-lg border border-border/50">
-                <Zap className="h-8 w-8 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Series A</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Scale what works. Build the team and systems for 10x growth.
-                </p>
-                <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>• Scaling playbooks</li>
-                  <li>• Team structure design</li>
-                  <li>• Revenue operations</li>
-                  <li>• Board prep &amp; metrics</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Who It&apos;s For */}
-        <section className="py-16 bg-secondary/30">
-          <div className="max-w-6xl mx-auto px-6 lg:px-10">
-            <h2 className="text-3xl font-bold mb-8">Who This Is For</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start gap-4 p-4 bg-background rounded-lg border border-border">
-                <Users className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <p className="font-semibold">Technical Founders</p>
-                  <p className="text-sm text-muted-foreground">Great at product, need help with GTM and scaling</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 p-4 bg-background rounded-lg border border-border">
-                <Users className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <p className="font-semibold">First-Time Founders</p>
-                  <p className="text-sm text-muted-foreground">Need a playbook for what to do at each stage</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 p-4 bg-background rounded-lg border border-border">
-                <Users className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <p className="font-semibold">Bootstrapped to VC-Backed</p>
-                  <p className="text-sm text-muted-foreground">Transitioning from bootstrap mode to funded growth</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 p-4 bg-background rounded-lg border border-border">
-                <Users className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <p className="font-semibold">B2B SaaS &amp; Services</p>
-                  <p className="text-sm text-muted-foreground">Need a repeatable sales and marketing engine</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Process */}
-        <section className="py-16">
-          <div className="max-w-6xl mx-auto px-6 lg:px-10">
-            <h2 className="text-3xl font-bold mb-8">How We Work</h2>
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">1</div>
-                <div>
-                  <p className="font-semibold">Diagnostic Call</p>
-                  <p className="text-muted-foreground text-sm">30-min call to understand your stage, challenges, and goals</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">2</div>
-                <div>
-                  <p className="font-semibold">Roadmap &amp; Proposal</p>
-                  <p className="text-muted-foreground text-sm">Custom plan with clear deliverables and timeline</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">3</div>
-                <div>
-                  <p className="font-semibold">Execution</p>
-                  <p className="text-muted-foreground text-sm">We build strategy, systems, and playbooks alongside you</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">4</div>
-                <div>
-                  <p className="font-semibold">Handoff &amp; Support</p>
-                  <p className="text-muted-foreground text-sm">Documentation, training, and ongoing advisory as needed</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-16 bg-secondary/30">
-          <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Scale Your Startup?</h2>
-            <p className="text-muted-foreground mb-8">
-              Book a free diagnostic call. We&apos;ll assess your current stage and recommend next steps.
-            </p>
-            <Button asChild size="lg">
-              <Link href="/apply">
-                Schedule Diagnostic Call <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </section>
+        <StartupConsultingHero />
+        <StartupConsultingProblemSection />
+        <StartupConsultingWhatWeDoSection />
+        <StartupConsultingWhoItsForSection />
+        <StartupConsultingFAQSection />
+        <FinalCTA />
       </main>
-      
     </>
   )
 }

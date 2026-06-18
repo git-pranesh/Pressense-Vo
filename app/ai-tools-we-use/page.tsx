@@ -6,13 +6,13 @@ import { ToolsFAQSection } from '@/components/ai-tools-page/faq-section'
 import { FinalCTA } from '@/components/final-cta'
 
 export const metadata: Metadata = {
-  title: 'AI Tools We Use: Claude, Replit, Framer & More | Pressense',
+  title: 'AI Tools We Use: Claude, Replit, Vercel, n8n & More | Pressense',
   description:
-    'The exact AI tools Pressense uses to build for founder-led businesses: Claude API, GPT-4, Replit, Framer, Make, Zapier, Airtable, and Notion — with every use case explained.',
+    'The exact AI tools Pressense uses to build for founder-led businesses: Claude API, GPT-4o, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion — with every use case explained.',
   openGraph: {
-    title: 'AI Tools We Use: Claude, Replit, Framer & More | Pressense',
+    title: 'AI Tools We Use: Claude, Replit, Vercel, n8n & More | Pressense',
     description:
-      'Every tool in the Pressense stack: how we use Claude, GPT-4, Replit, Framer, Make, Zapier, Airtable, and Notion to build for growing businesses.',
+      'Every tool in the Pressense stack: how we use Claude, GPT-4o, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion to build for growing businesses.',
     url: '/ai-tools-we-use',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense AI Tools Stack' }],
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Tools We Use: Claude, Replit, Framer & More | Pressense',
+    title: 'AI Tools We Use: Claude, Replit, Vercel, n8n & More | Pressense',
     description:
-      'The exact AI tools Pressense uses to build for founder-led businesses: Claude API, GPT-4, Replit, Framer, Make, Zapier, Airtable, and Notion.',
+      'The exact AI tools Pressense uses to build for founder-led businesses: Claude API, GPT-4o, Replit, Vercel, Framer, n8n, Make, Zapier, Airtable, and Notion.',
     images: ['/og-image.jpg'],
   },
 }
@@ -38,7 +38,7 @@ const faqSchema = {
       name: 'What tools do AI agencies use?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Most AI agencies use a combination of large language model APIs (Claude, GPT-4), automation platforms (Make, Zapier), database tools (Airtable), and build environments (Replit). The specific combination depends on the problem. An agency focused on workflow automation will weight Make and Zapier heavily. An agency building custom software will lean on Replit and direct API integration.',
+        text: 'Most AI agencies use a combination of large language model APIs (Claude, GPT-4o), automation platforms (n8n, Make, Zapier), database tools (Airtable), build environments (Replit), and hosting platforms (Vercel). The specific combination depends on the problem. An agency focused on workflow automation will weight n8n and Make heavily. An agency building custom software will lean on Replit with Vercel for production deployment.',
       },
     },
     {
@@ -46,15 +46,15 @@ const faqSchema = {
       name: 'What is the Claude API and how is it different from ChatGPT?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "The Claude API is Anthropic's developer interface for building applications on top of the Claude language model. ChatGPT is OpenAI's consumer product; the underlying model is GPT-4 and is also available via API. Claude tends to perform better on long-context tasks and document analysis. GPT-4 has a larger ecosystem of third-party integrations.",
+        text: "The Claude API is Anthropic's developer interface for building applications on top of the Claude language model. ChatGPT is OpenAI's consumer product; the underlying model is GPT-4o and is also available via API. Claude tends to perform better on long-context tasks and document analysis. GPT-4o has a larger ecosystem of third-party integrations and stronger tool-calling. We use both and recommend the right one based on the specific use case.",
       },
     },
     {
       '@type': 'Question',
-      name: 'What is the difference between Zapier and Make?',
+      name: 'What is the difference between n8n, Make, and Zapier?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Zapier is designed for simple, quick-deploy trigger-action workflows between popular SaaS tools. Make (formerly Integromat) handles more complex scenarios: branching logic, high-volume data processing, error handling, and multi-step transformations. We use Zapier when speed and simplicity matter. We use Make when the workflow needs to be reliable at scale or handle edge cases.',
+        text: 'Zapier is designed for simple, quick-deploy trigger-action workflows between popular SaaS tools. Make handles more complex scenarios: branching logic, high-volume data processing, and multi-step transformations. n8n is self-hostable, supports custom JavaScript inside workflows, and is the default for clients who need full data control or AI agent orchestration. We use Zapier when speed matters, Make for cloud-based complexity, and n8n when the client needs to own the infrastructure.',
       },
     },
     {
@@ -62,7 +62,7 @@ const faqSchema = {
       name: 'Do you charge clients for the tools you use?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We do not mark up tool subscriptions. We recommend tools based on fit, and you pay the tool vendors directly at standard rates. We charge for the diagnostic, design, and build work.',
+        text: 'We do not mark up tool subscriptions. You pay the tool vendors directly at standard rates. We charge for the diagnostic, design, and build work. Most clients already hold subscriptions to some tools in our stack. Where new subscriptions are needed, we give a clear cost estimate before the engagement starts.',
       },
     },
     {
@@ -70,7 +70,7 @@ const faqSchema = {
       name: 'Is Replit good for production apps?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Replit runs on Google Cloud infrastructure and supports production deployments at scale. Code built in Replit is standard TypeScript or Python with no proprietary framework. It can be exported and deployed anywhere at any time.',
+        text: 'Yes. Replit runs on Google Cloud infrastructure and supports production deployments at scale. Code built in Replit is standard TypeScript or Python with no proprietary framework. For production web applications we deploy via Vercel, which handles CI/CD, edge functions, and preview deployments. The code can be moved to any hosting environment at any time.',
       },
     },
     {
@@ -78,7 +78,7 @@ const faqSchema = {
       name: 'What is Airtable used for in agency workflows?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Airtable is a relational database that sits between a spreadsheet and a full SQL database. Agencies use it to build operational backbones: project trackers, lightweight CRMs, content calendars, and client portals.',
+        text: 'Airtable is a relational database that sits between a spreadsheet and a full SQL database. Agencies use it to build operational backbones: project trackers, lightweight CRMs, content calendars, and client portals. It connects to n8n, Make, Zapier, and most other automation tools via native integrations.',
       },
     },
     {
@@ -86,7 +86,7 @@ const faqSchema = {
       name: 'Can I bring my own tools or do I have to use your stack?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can bring your own tools. If you have existing subscriptions to HubSpot, Salesforce, or any other platform, we will assess whether they fit the solution before recommending changes.',
+        text: 'You can bring your own tools. If you already use HubSpot, Salesforce, or any other platform, we assess whether they fit the solution before recommending changes. The goal is to build on what already exists wherever possible.',
       },
     },
   ],
