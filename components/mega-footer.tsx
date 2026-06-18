@@ -7,7 +7,7 @@ const companyLinks = [
   { label: 'Playbooks', href: '/playbooks' },
   { label: 'Blog', href: '/blog' },
   { label: 'Tools', href: '/tools' },
-  { label: 'Packages & Pricing', href: '/packages' },
+  { label: 'Pricing', href: '/pricing' },
   { label: 'Start Diagnostic', href: '/diagnostic' },
 ]
 
