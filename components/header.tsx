@@ -16,32 +16,40 @@ const servicesColumns = [
     heading: 'AI & Automation',
     links: [
       { label: 'AI Automation Agency', href: '/ai-automation-agency' },
+      { label: 'AI Strategy Consulting', href: '/ai-strategy-consulting' },
+      { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
       { label: 'Workflow Automation Consulting', href: '/workflow-automation-consulting' },
       { label: 'Business Process Automation', href: '/business-process-automation-consulting' },
-      { label: 'AI Implementation for SMBs', href: '/ai-implementation-small-business' },
-      { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
+      { label: 'AI Tools We Use', href: '/ai-tools-we-use' },
     ],
   },
   {
     heading: 'Strategy & GTM',
     links: [
       { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
-      { label: 'Fractional CMO Advisor', href: '/fractional-cmo-advisor' },
       { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
       { label: 'SaaS Go-to-Market Strategy', href: '/saas-go-to-market-strategy' },
       { label: 'Revenue Operations Consulting', href: '/revenue-operations-consulting' },
-      { label: 'Small Business Strategy', href: '/small-business-strategy-consultant' },
+      { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
     ],
   },
   {
-    heading: 'Systems & Build',
+    heading: 'Build & Vibe Coding',
     links: [
-      { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
-      { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
-      { label: 'CRM & ERP Systems', href: '/crm-erp-systems' },
+      { label: 'Replit Development Agency', href: '/replit-development-agency' },
+      { label: 'Custom CRM Development', href: '/custom-crm-development' },
       { label: 'MVP Development for Startups', href: '/mvp-development-for-startups' },
-      { label: 'Replit Developer / Vibe Coding', href: '/replit-developer-for-hire' },
+      { label: 'Framer Website Design', href: '/framer-website-design' },
+      { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
+    ],
+  },
+  {
+    heading: 'Partner Stack',
+    links: [
+      { label: 'Claude API Integration', href: '/claude-api-integration' },
+      { label: 'OpenAI Integration Services', href: '/openai-integration-services' },
       { label: 'Framer Website Agency', href: '/framer-website-agency' },
+      { label: 'Consulting for Startups', href: '/consulting-firm-for-startups' },
     ],
   },
 ]
@@ -122,7 +130,7 @@ export function Header() {
 
             {/* Mega menu */}
             {servicesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[780px] glass-card rounded-xl border border-border/60 p-6 shadow-2xl">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1020px] glass-card rounded-xl border border-border/60 p-6 shadow-2xl">
                 <div className="grid grid-cols-4 gap-6">
                   {servicesColumns.map((col) => (
                     <div key={col.heading}>
