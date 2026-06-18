@@ -20,13 +20,13 @@ export function ReplitAgencyHero() {
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-6">
-            Pressense is the first Replit agency built for founder-led businesses. We turn your plain-English idea into a working product in two to eight weeks. No DevOps overhead. No enterprise price tag. You own the code from day one.
+            Pressense is the first Replit expert agency for founder-led businesses. We turn your plain-English idea into a production-ready app in two to eight weeks. Authentication, database, security — built right from day one. You own the code. No DevOps overhead, no enterprise price tag.
           </p>
 
           {/* AEO Answer Block */}
           <div className="border-l-2 border-primary/40 pl-5 mb-10 max-w-2xl">
             <p className="text-base text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">A Replit agency</strong> is a development firm that uses Replit&apos;s AI-powered cloud IDE to design, build, and deploy custom software for businesses. Instead of weeks of environment setup, work starts on day one. Code is written in standard TypeScript, lives in your account, and is fully portable. No vendor lock-in, no proprietary framework.
+              <strong className="text-foreground">A Replit agency</strong> is a development firm that uses Replit&apos;s AI-powered cloud IDE to design, build, and deploy production-ready software for businesses. Many founders start building with Replit Agent and get stuck halfway — the prototype works but lacks proper auth, security, error handling, and a real data model. A Replit expert developer takes ownership of the full build so you ship something that actually works in production, not just a demo.
             </p>
           </div>
 
@@ -38,8 +38,8 @@ export function ReplitAgencyHero() {
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
             <div>
-              <p className="text-2xl font-semibold text-foreground">15+ app types</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">built for clients</p>
+              <p className="text-2xl font-semibold text-foreground">From $1,500</p>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide">production builds</p>
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
             <div>

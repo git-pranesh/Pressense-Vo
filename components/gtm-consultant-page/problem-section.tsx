@@ -15,13 +15,6 @@ export function ProblemSection() {
             Most founders reach out after product-market fit is clear but revenue growth stalls. Sales cycles are too long. Conversion rates are low. Pipeline is inconsistent. These are GTM symptoms, not product problems. A GTM strategy consultant finds the root cause and installs a fix.
           </p>
 
-          {/* What is the GTM stat block */}
-          <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 mb-12">
-            <p className="text-base text-muted-foreground leading-relaxed">
-              <span className="font-semibold text-foreground">86% of startup founders</span> who incorporated structured GTM strategy reported positive outcomes on revenue predictability and sales cycle length, according to a 2024 Pavilion GTM benchmarking study.
-            </p>
-          </div>
-
           {/* 5 pillars — exact H3 PAA match */}
           <h3 className="text-2xl font-semibold text-foreground mb-6">What are the 5 pillars of GTM strategy?</h3>
           <div className="flex flex-col gap-6">

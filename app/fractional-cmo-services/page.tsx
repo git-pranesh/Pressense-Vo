@@ -12,11 +12,11 @@ import { FractionalCMOCTA } from '@/components/fractional-cmo-page/final-cta'
 export const metadata: Metadata = {
   title: 'Fractional CMO Services for B2B SaaS & Startups | Pressense',
   description:
-    'Fractional CMO services for B2B SaaS and founder-led startups. Senior marketing leadership from $2,000/month. GTM strategy, demand gen, and team direction in a 90-day sprint.',
+    'Fractional CMO services for B2B SaaS and founder-led startups. Senior marketing leadership from $1,500/month. GTM strategy, demand gen, and team direction in a 90-day sprint.',
   openGraph: {
     title: 'Fractional CMO Services for B2B SaaS & Startups | Pressense',
     description:
-      'A fractional CMO is an experienced marketing executive who provides part-time strategic leadership without the cost of a full-time hire. Engagements from $2,000/month.',
+      'A fractional CMO is an experienced marketing executive who provides part-time strategic leadership without the cost of a full-time hire. Engagements from $1,500/month.',
     type: 'website',
     url: '/fractional-cmo-services',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Fractional CMO Services — Pressense' }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Fractional CMO Services for B2B SaaS & Startups | Pressense',
     description:
-      'Senior marketing leadership for B2B SaaS and founder-led startups. GTM strategy, demand gen, and team direction from $2,000/month.',
+      'Senior marketing leadership for B2B SaaS and founder-led startups. GTM strategy, demand gen, and team direction from $1,500/month.',
     images: ['/og-image.jpg'],
   },
 }
@@ -44,7 +44,7 @@ const serviceSchema = {
     '@type': 'OfferCatalog',
     name: 'Fractional CMO Packages',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Advisory-Only Fractional CMO' }, priceSpecification: { '@type': 'PriceSpecification', price: '2000', priceCurrency: 'USD', unitText: 'MONTH' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Advisory-Only Fractional CMO' }, priceSpecification: { '@type': 'PriceSpecification', price: '1500', priceCurrency: 'USD', unitText: 'MONTH' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Embedded Fractional CMO' }, priceSpecification: { '@type': 'PriceSpecification', price: '5000', priceCurrency: 'USD', unitText: 'MONTH' } },
     ],
   },
@@ -93,7 +93,7 @@ const faqSchema = {
       name: 'How much do fractional CMO services cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Fractional CMO services at Pressense start from $2,000 per month for advisory-only engagements. Full embedded leadership typically runs $5,000 to $12,000 per month. This compares to $20,000 to $35,000 per month for a full-time CMO when salary, benefits, and employer costs are included. Most clients reach payback within 60 to 90 days through improved pipeline conversion and reduced wasted ad spend.',
+          text: 'Fractional CMO services at Pressense start from $1,500 per month for advisory-only engagements. Embedded leadership is scoped after the diagnostic call. This compares to $20,000 to $35,000 per month for a full-time CMO when salary, benefits, and employer costs are included. Most clients reach payback within 60 to 90 days through improved pipeline conversion and reduced wasted ad spend.',
       },
     },
     {

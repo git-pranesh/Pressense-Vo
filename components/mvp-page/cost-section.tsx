@@ -3,7 +3,7 @@ export function MvpCostSection() {
     {
       name: 'MVP Starter',
       timeline: 'Weeks 1–8',
-      price: 'From $15,000',
+      price: 'From $5,000',
       note: 'Fixed-price build',
       features: [
         'Core value loop (1 primary user journey)',
@@ -58,10 +58,10 @@ export function MvpCostSection() {
           How much does an MVP cost?
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
-          MVP development for startups typically costs between $15,000 and $85,000 depending on scope, the number of integrations, and the complexity of the data model. Most founder-stage builds land in the $15,000 to $35,000 range when the scope is disciplined.
+          MVP development for startups starts from $5,000 for a focused build and scales based on scope, integrations, and data model complexity. In the age of Replit and AI-assisted development, a disciplined founder can get a production-ready MVP for $5,000 to $28,000 — a fraction of traditional agency rates.
         </p>
         <p className="text-base text-muted-foreground leading-relaxed mb-14 max-w-2xl">
-          The right question is not "how much does an MVP cost?" but "what is the minimum scope that tests the hypothesis?" A $15,000 build that validates a paying user exists is worth more than a $100,000 build that nobody uses. Every engagement starts with a fixed-price estimate from the diagnostic session. No surprises mid-project.
+          The right question is not "how much does an MVP cost?" but "what is the minimum scope that tests the hypothesis?" A $5,000 build that validates a paying user exists is worth more than a $100,000 build that nobody uses. Every engagement starts with a fixed-price estimate from the diagnostic session. No surprises mid-project.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6">

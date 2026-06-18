@@ -11,11 +11,11 @@ import { FinalCTA } from '@/components/final-cta'
 export const metadata: Metadata = {
   title: 'Replit Agency for Startups & SMBs | Pressense',
   description:
-    'Pressense is the first Replit agency for founder-led businesses. Build internal tools, MVPs, and custom apps in 2–8 weeks. From $5,000. You own the code.',
+    'Pressense is the first Replit expert agency for founder-led businesses. Build production-ready internal tools, MVPs, and custom apps in 2–8 weeks. From $1,500. You own the code.',
   openGraph: {
     title: 'Replit Agency for Startups & SMBs | Pressense',
     description:
-      'Pressense is the first Replit agency for founder-led businesses. Build internal tools, MVPs, and custom apps in 2–8 weeks. From $5,000. You own the code.',
+      'Pressense is the first Replit expert agency for founder-led businesses. Build production-ready internal tools, MVPs, and custom apps in 2–8 weeks. From $1,500. You own the code.',
     url: '/replit-development-agency',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Replit Agency' }],

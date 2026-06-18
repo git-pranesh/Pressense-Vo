@@ -72,7 +72,7 @@ export function SolutionSection() {
         </div>
 
         <p className="text-sm text-muted-foreground mt-5 max-w-2xl">
-          Pressense fractional revenue operations consulting starts from $3,000 per month for a diagnostic and roadmap engagement. Ongoing embedded RevOps typically runs $6,000 to $14,000 per month depending on scope and hours.
+          Pressense fractional revenue operations consulting starts from $2,000 per month. Ongoing embedded RevOps is scoped after the diagnostic call based on hours and the specific systems that need building.
         </p>
 
       </div>

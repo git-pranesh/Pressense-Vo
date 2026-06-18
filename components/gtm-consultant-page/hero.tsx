@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const stats = [
-  { value: '86%', label: 'of founders saw better outcomes with structured GTM' },
+  { value: 'From $2.5K', label: 'GTM strategy sprint' },
   { value: '4-8 weeks', label: 'diagnostic to strategy delivery' },
   { value: '3x', label: 'faster sales cycles post-GTM alignment' },
 ]

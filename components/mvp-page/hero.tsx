@@ -38,7 +38,7 @@ export function MvpHero() {
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
             <div>
-              <p className="text-2xl font-semibold text-foreground">From $15K</p>
+              <p className="text-2xl font-semibold text-foreground">From $5K</p>
               <p className="text-xs text-muted-foreground uppercase tracking-wide">fixed-price MVP</p>
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />

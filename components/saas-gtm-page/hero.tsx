@@ -38,7 +38,7 @@ export function SaaSGTMHero() {
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $4K</span>
+              <span className="text-2xl font-bold text-foreground">From $3K</span>
               <span className="text-sm text-muted-foreground">GTM Sprint</span>
             </div>
           </div>

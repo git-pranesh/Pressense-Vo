@@ -11,10 +11,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Revenue Operations Consulting for Scaling B2B | Pressense',
-  description: 'Revenue operations consulting that aligns marketing, sales, and customer success to fix pipeline leakage and build predictable growth. Fractional RevOps from $3,000/month.',
+  description: 'Revenue operations consulting that aligns marketing, sales, and customer success to fix pipeline leakage and build predictable growth. Fractional RevOps from $2,000/month.',
   openGraph: {
     title: 'Revenue Operations Consulting for Scaling B2B | Pressense',
-    description: 'Align your GTM teams under one operating model. Fix handoff failures, clean your CRM, and build forecast accuracy. Fractional RevOps from $3,000/month.',
+    description: 'Align your GTM teams under one operating model. Fix handoff failures, clean your CRM, and build forecast accuracy. Fractional RevOps from $2,000/month.',
     url: '/revenue-operations-consulting',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Revenue Operations Consulting' }],
@@ -44,7 +44,7 @@ export default function RevOpsPage() {
       priceSpecification: {
         '@type': 'PriceSpecification',
         priceCurrency: 'USD',
-        minPrice: '3000',
+        minPrice: '2000',
         unitText: 'month',
       },
     },

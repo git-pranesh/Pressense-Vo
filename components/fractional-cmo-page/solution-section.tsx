@@ -10,7 +10,7 @@ type Row = {
 }
 
 const rows: Row[] = [
-  { label: 'Monthly cost', fullTime: '$20K-$35K', fractional: '$5K-$15K', agency: '$3K-$25K', highlight: true },
+  { label: 'Monthly cost', fullTime: '$20K-$35K', fractional: 'From $1.5K/mo', agency: '$3K-$25K', highlight: true },
   { label: 'Strategy ownership', fullTime: 'Yes', fractional: 'Yes', agency: 'No' },
   { label: 'Embedded in your team', fullTime: 'Yes', fractional: 'Yes', agency: 'No' },
   { label: 'Accountable for revenue outcomes', fullTime: 'Yes', fractional: 'Yes', agency: 'Rarely' },
@@ -69,7 +69,7 @@ export function SolutionSection() {
         </div>
 
         <p className="text-sm text-muted-foreground mt-5 max-w-2xl">
-          Fractional CMO pricing at Pressense starts from $2,000 per month for advisory-only engagements. Full embedded leadership engagements typically run $5,000 to $12,000 per month depending on hours and scope.
+          Pressense fractional CMO services start from $1,500 per month for advisory-only engagements. Embedded leadership is scoped after the diagnostic call based on hours and scope required.
         </p>
 
       </div>
