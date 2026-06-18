@@ -12,7 +12,7 @@ import { GTMCTA } from '@/components/gtm-consultant-page/final-cta'
 export const metadata: Metadata = {
   title: 'GTM Strategy Consultant for B2B Startups | Pressense',
   description:
-    'GTM strategy consultant for B2B startups and scaling businesses. The PRESS Framework diagnoses GTM bottlenecks and builds strategy that converts. From $5,000/month.',
+    'GTM strategy consultant for B2B startups and scaling businesses. The PRESS Framework diagnoses GTM bottlenecks and builds strategy that converts. From $2,500.',
   alternates: { canonical: '/gtm-strategy-consultant' },
   openGraph: {
     title: 'GTM Strategy Consultant for B2B Startups | Pressense',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'GTM Strategy Consultant for B2B Startups | Pressense',
     description:
-      'Diagnose why your GTM is not converting and build the strategy that fixes it. From $5,000/month.',
+      'Diagnose why your GTM is not converting and build the strategy that fixes it. From $2,500.',
     images: ['/og-image.jpg'],
   },
 }
@@ -48,14 +48,14 @@ export default function GTMStrategyConsultantPage() {
     url: 'https://www.pressense.co/gtm-strategy-consultant',
     offers: {
       '@type': 'Offer',
-      price: '5000',
+      price: '2500',
       priceCurrency: 'USD',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '5000',
+        price: '2500',
         priceCurrency: 'USD',
-        unitText: 'month',
-        description: 'Starting price for 8-week PRESS Framework engagement',
+        unitText: 'fixed-price from',
+        description: 'Starting price for PRESS Framework GTM strategy engagement',
       },
     },
     hasOfferCatalog: {
@@ -117,7 +117,7 @@ export default function GTMStrategyConsultantPage() {
         name: 'How much does GTM consulting cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'GTM consulting costs vary by scope and engagement model. Project-based strategy sprints typically run from $5,000 to $15,000. Monthly retainers for ongoing strategic support range from $4,000 to $18,000 per month. Full-scope engagements covering strategy through implementation, like the Pressense PRESS Framework, start from $5,000 per month for an eight-week engagement.',
+          text: 'GTM consulting costs vary by scope and engagement model. Project-based strategy sprints in the market typically run from $5,000 to $15,000. Pressense GTM strategy engagements start from $2,500 for the PRESS Framework — covering positioning, ICP, channel strategy, sales motion, and a revenue operations foundation over eight weeks. Book a free diagnostic to get a fixed-price estimate for your situation.',
         },
       },
       {
