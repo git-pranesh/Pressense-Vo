@@ -1,77 +1,158 @@
-import { StructuredData } from '@/components/structured-data'
 import type { Metadata } from 'next'
+import { StructuredData } from '@/components/structured-data'
+import { FinalCTA } from '@/components/final-cta'
+import { SaaSGTMHero } from '@/components/saas-gtm-page/hero'
+import { SaaSGTMWhoItsForSection } from '@/components/saas-gtm-page/who-its-for-section'
+import { SaaSGTMProblemsSection } from '@/components/saas-gtm-page/problems-section'
+import { SaaSGTMMethodologySection } from '@/components/saas-gtm-page/methodology-section'
+import { SaaSGTMWhatYouGetSection } from '@/components/saas-gtm-page/what-you-get-section'
+import { SaaSGTMFAQSection } from '@/components/saas-gtm-page/faq-section'
 
 export const metadata: Metadata = {
-  title: 'SaaS Go-to-Market Strategy | 90-Day GTM Blueprint | Pressense',
-  description: 'Comprehensive SaaS go-to-market strategy from ICP definition to sales playbook. 90-day roadmap to accelerate revenue.',
+  title: 'SaaS Go-to-Market Strategy | Pressense',
+  description:
+    'SaaS go-to-market strategy consulting: ICP definition, positioning, pricing, and a 90-day roadmap. Sprint from $4K. Built for founder-led SaaS companies.',
   openGraph: {
     title: 'SaaS Go-to-Market Strategy | Pressense',
-    description: 'Build your SaaS GTM blueprint: ICP, positioning, pricing strategy, and 90-day implementation roadmap.',
+    description:
+      'SaaS go-to-market strategy consulting: ICP definition, positioning, pricing, and a 90-day roadmap. Sprint from $4K. Built for founder-led SaaS companies.',
     url: '/saas-go-to-market-strategy',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'SaaS GTM Strategy' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense SaaS Go-to-Market Strategy' }],
   },
   alternates: {
     canonical: '/saas-go-to-market-strategy',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SaaS Go-to-Market Strategy | Pressense',
+    description:
+      'SaaS go-to-market strategy consulting: ICP definition, positioning, pricing, and a 90-day roadmap. Sprint from $4K.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function SaaSGTMPage() {
-  const schema = {
+  const serviceSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': 'https://pressense.co/saas-go-to-market-strategy',
-    name: 'Pressense - SaaS Go-to-Market Strategy',
-    description: 'SaaS go-to-market strategy consulting and 90-day implementation support.',
-    url: 'https://pressense.co/saas-go-to-market-strategy',
-    serviceArea: {
-      '@type': 'Place',
-      name: 'Worldwide',
-    },
+    '@type': 'Service',
+    name: 'SaaS Go-to-Market Strategy',
+    provider: { '@type': 'Organization', name: 'Pressense', url: 'https://www.pressense.co' },
+    description:
+      'SaaS go-to-market strategy consulting covering ICP definition, competitive positioning, pricing, channel selection, and a 90-day execution roadmap for founder-led SaaS companies.',
+    url: 'https://www.pressense.co/saas-go-to-market-strategy',
     areaServed: 'Worldwide',
-    serviceType: 'GTM Strategy Consulting',
+    offers: [
+      {
+        '@type': 'Offer',
+        name: 'GTM Sprint',
+        priceSpecification: {
+          '@type': 'UnitPriceSpecification',
+          price: '4000',
+          priceCurrency: 'USD',
+          unitText: 'per engagement',
+        },
+      },
+      {
+        '@type': 'Offer',
+        name: 'GTM Retainer',
+        priceSpecification: {
+          '@type': 'UnitPriceSpecification',
+          price: '1800',
+          priceCurrency: 'USD',
+          unitText: 'per month',
+        },
+      },
+    ],
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pressense.co' },
+      { '@type': 'ListItem', position: 2, name: 'SaaS Go-to-Market Strategy', item: 'https://www.pressense.co/saas-go-to-market-strategy' },
+    ],
+  }
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is a SaaS go-to-market strategy?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A SaaS go-to-market strategy is a plan that defines who your software is for, how you reach them, and how you convert and keep them. It covers ICP definition, positioning, pricing, channel selection, and a phased execution roadmap. Without one, most SaaS companies grow by accident rather than by design, which makes growth slow to repeat and impossible to scale.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does a SaaS GTM engagement take?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A Pressense GTM Sprint runs six to eight weeks from kick-off to final delivery. The first two weeks are buyer research and ICP definition. Weeks three and four cover positioning and pricing. The final two weeks produce your channel playbook and 90-day roadmap.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is an ICP in SaaS?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ICP stands for Ideal Customer Profile. It is a description of the exact company or person who gets the most value from your product, is willing and able to pay for it, has a reason to act now, and is likely to refer others. A specific ICP is the single most important input in any SaaS GTM strategy.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What comes first: GTM strategy or product development?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The best GTM work starts alongside product development, not after it. You do not need a finished product to define your ICP, test positioning, or talk to buyers. Most SaaS founders delay GTM thinking until after launch and then spend months trying to find product-market fit by trial and error.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you work with pre-revenue SaaS companies?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Many of our GTM Sprint clients are pre-revenue or in early beta. The GTM Sprint is designed for exactly this stage: you have a product hypothesis and you need to validate your ICP, sharpen your positioning, and identify the right acquisition channel before spending on marketing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between GTM strategy and marketing strategy?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Marketing strategy is about how you communicate. GTM strategy is broader: it covers who you sell to, what you charge, how you reach buyers, how you close them, and how you retain them. Marketing is one component of GTM, not a replacement for it.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much does SaaS GTM consulting cost?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A Pressense GTM Sprint starts from $4,000 for a six-to-eight-week engagement that includes buyer research, ICP definition, positioning, pricing, a channel playbook, and a 90-day roadmap. Enterprise GTM consultancies charge $20K to $80K for comparable work.',
+        },
+      },
+    ],
   }
 
   return (
     <>
-      <StructuredData data={schema} />
-      
+      <StructuredData data={serviceSchema} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       <main className="min-h-screen">
-        <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
-          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">SaaS Go-to-Market Strategy</h1>
-          <p className="text-xl text-muted-foreground mb-12">
-            Build a comprehensive go-to-market strategy with ICP definition, positioning, pricing, sales playbook, and 90-day implementation roadmap to accelerate revenue growth.
-          </p>
-
-          <div className="space-y-12">
-            <section>
-              <h2 className="text-2xl font-semibold mb-4">The Challenge</h2>
-              <p className="text-muted-foreground">
-                Many SaaS founders build product first, then discover their GTM approach is misaligned with their market. Result: slow growth, wasted marketing spend, and frustrated sales teams. A clear GTM strategy prevents costly pivots and accelerates market traction.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-4">Our Approach</h2>
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-2">
-                <li>ICP & Buyer Persona Definition</li>
-                <li>Competitive Positioning & Messaging</li>
-                <li>Pricing Strategy & Packaging</li>
-                <li>Sales Playbook & Win/Loss Analysis</li>
-                <li>90-Day Tactical Roadmap</li>
-              </ul>
-            </section>
-
-            <section className="mt-16 p-8 bg-secondary/30 rounded-lg border border-border/50">
-              <h2 className="text-xl font-semibold mb-4">Ready to Build Your GTM Blueprint?</h2>
-              <a href="/contact" className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold">
-                Start Your Strategy
-              </a>
-            </section>
-          </div>
-        </section>
+        <SaaSGTMHero />
+        <SaaSGTMWhoItsForSection />
+        <SaaSGTMProblemsSection />
+        <SaaSGTMMethodologySection />
+        <SaaSGTMWhatYouGetSection />
+        <SaaSGTMFAQSection />
+        <FinalCTA />
       </main>
-      
     </>
   )
 }
