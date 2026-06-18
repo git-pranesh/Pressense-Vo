@@ -30,7 +30,7 @@ const phases = [
     body1:
       'We work in two-week sprints. At the end of each sprint, you have working software to test and respond to. Not a progress report. Not a Figma file. A live URL. Feedback from real use shapes the next sprint. This is how the eight-week timeline holds.',
     body2:
-      'Replit handles the deployment pipeline, environment management, and collaboration without any DevOps overhead. We focus entirely on building the product. Every commit is in your Replit workspace from day one. You can see exactly what is being built, and when.',
+      'Production readiness is not an afterthought — it is built into every sprint from day one. Authentication uses a proven library (Better Auth or Supabase Auth), not a hand-rolled session cookie. The database uses a managed PostgreSQL provider (Neon or Supabase) with parameterised queries throughout. Environment variables and API secrets never appear in source code. Role-based access controls are scoped at the data layer, not just the UI. The result is an app that is secure, maintainable, and auditable before it goes live.',
   },
   {
     number: '04',

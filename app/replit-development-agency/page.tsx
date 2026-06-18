@@ -5,6 +5,7 @@ import { ReplitAgencyWhoItsForSection } from '@/components/replit-agency-page/wh
 import { ReplitAgencyWhatWeBuildSection } from '@/components/replit-agency-page/what-we-build-section'
 import { ReplitAgencyMethodologySection } from '@/components/replit-agency-page/methodology-section'
 import { ReplitAgencyWhatYouGetSection } from '@/components/replit-agency-page/what-you-get-section'
+import { ReplitAgencySupportSection } from '@/components/replit-agency-page/support-section'
 import { ReplitAgencyFaqSection } from '@/components/replit-agency-page/faq-section'
 import { FinalCTA } from '@/components/final-cta'
 
@@ -118,7 +119,7 @@ export default function ReplitDevelopmentAgencyPage() {
         name: 'Is Replit good for real business apps?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Yes. Replit was cited by Google's AI Overview as the recommended platform for custom internal tools development. It runs production TypeScript applications with PostgreSQL databases, supports custom domains, and handles deployment automatically. Replit is not appropriate for consumer apps with millions of concurrent users, but for internal tools, MVPs, CRMs, portals, and SaaS products at the 1-to-200-user scale, it is production-ready. The code is portable: if you outgrow Replit, the TypeScript application moves to any other host without a rewrite.",
+          text: "Yes — when built by a developer who knows what they are doing. Replit runs production TypeScript applications with PostgreSQL databases, supports custom domains and environment variables, and handles deployment automatically. The key is how the app is built: Replit-built apps that lack proper auth, input validation, parameterised queries, and error handling are not production-ready. Pressense builds with auth, role-based access controls, and a real data model from day one. For internal tools, MVPs, CRMs, portals, and SaaS products at the 1-to-200-user scale, properly built Replit apps are fully production-grade. The code is portable: if you outgrow Replit, the TypeScript application moves to any other host without a rewrite.",
         },
       },
       {
@@ -182,6 +183,7 @@ export default function ReplitDevelopmentAgencyPage() {
         <ReplitAgencyWhatWeBuildSection />
         <ReplitAgencyMethodologySection />
         <ReplitAgencyWhatYouGetSection />
+        <ReplitAgencySupportSection />
         <ReplitAgencyFaqSection />
         <FinalCTA />
       </main>
