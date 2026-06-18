@@ -12,12 +12,12 @@ import { SystemsCTA } from '@/components/business-systems-page/final-cta'
 export const metadata: Metadata = {
   title: 'Business Systems Consultant | Pressense',
   description:
-    'Hire a business systems consultant for your startup or SMB. We audit operations, fix bottlenecks, and build scalable systems in 90 days. From $4,000/month.',
+    'Hire a business systems consultant for your startup or SMB. We audit operations, fix bottlenecks, and build scalable systems in 90 days. From $1,500.',
   alternates: { canonical: '/business-systems-consultant' },
   openGraph: {
     title: 'Business Systems Consultant | Pressense',
     description:
-      'Hire a business systems consultant for your startup or SMB. We audit operations, fix bottlenecks, and build scalable systems in 90 days. From $4,000/month.',
+      'Hire a business systems consultant for your startup or SMB. We audit operations, fix bottlenecks, and build scalable systems in 90 days. From $1,500.',
     type: 'website',
     url: '/business-systems-consultant',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Business Systems Consultant - Pressense' }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Business Systems Consultant | Pressense',
     description:
-      'Hire a business systems consultant for your startup or SMB. We audit operations, fix bottlenecks, and build scalable systems in 90 days. From $4,000/month.',
+      'Hire a business systems consultant for your startup or SMB. We audit operations, fix bottlenecks, and build scalable systems in 90 days. From $1,500.',
     images: ['/og-image.jpg'],
   },
 }
@@ -52,23 +52,12 @@ const serviceSchema = {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Operations Audit',
-          description: 'Full operations audit, bottleneck identification, and prioritised roadmap.',
+          name: 'Business Systems Consulting',
+          description: 'Operations audit, bottleneck identification, system design, and implementation roadmap.',
         },
-        price: '3000',
+        price: '1500',
         priceCurrency: 'USD',
-        unitText: 'fixed fee',
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: '90-Day Systems Engagement',
-          description: 'Audit, architecture, build, and handover. Full systems implementation.',
-        },
-        price: '4000',
-        priceCurrency: 'USD',
-        unitText: 'per month',
+        unitText: 'fixed-price from',
       },
     ],
   },
@@ -105,7 +94,7 @@ const faqSchema = {
       name: 'How much does a business systems consultant cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Most business systems consulting engagements start at $4,000 per month for a 90-day retainer covering audit, design, build, and handover. Single-system implementations or one-off audits start from $3,000 as a fixed-fee project. Enterprise-scale digital transformations are quoted separately.',
+        text: 'Pressense business systems consulting starts from $1,500 for an advisory and audit engagement — covering operations diagnosis, bottleneck mapping, and a prioritised systems roadmap. A full 90-day implementation engagement covering audit, system design, build, and handover is scoped and quoted after the diagnostic call. Book a free diagnostic to get a fixed-price estimate for your situation.',
       },
     },
     {

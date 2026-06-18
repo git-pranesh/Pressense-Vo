@@ -37,6 +37,7 @@ export function SystemsHero() {
           {/* Micro-stats */}
           <div className="flex flex-wrap gap-6 mb-10">
             {[
+              { stat: 'From $1,500', label: 'Starting price' },
               { stat: '90 days', label: 'From audit to live systems' },
               { stat: '60%', label: 'Avg. reduction in manual work' },
               { stat: '$1M–$15M', label: 'ARR sweet spot' },
