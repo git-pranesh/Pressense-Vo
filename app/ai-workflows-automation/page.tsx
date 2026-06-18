@@ -19,7 +19,7 @@ import { AIWorkflowsFAQSection } from '@/components/ai-workflows-page/faq-sectio
 export const metadata: Metadata = {
   title: 'AI Workflow Automation | n8n, Make & Zapier Systems | Pressense',
   description:
-    'AI workflow automation for founder-led businesses: structured systems using n8n, Make, and Zapier that reduce manual work, improve consistency, and connect to your existing tools. From $1,200.',
+    'AI workflow automation for founder-led businesses: structured systems using n8n, Make, and Zapier that reduce manual work, improve consistency, and connect to your existing tools. From $2,500.',
   alternates: {
     canonical: '/ai-workflows-automation',
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI Workflow Automation | n8n, Make & Zapier Systems | Pressense',
     description:
-      'Structured AI workflow automation using n8n, Make, and Zapier. Reduces manual work and connects to your existing tools. From $1,200.',
+      'Structured AI workflow automation using n8n, Make, and Zapier. Reduces manual work and connects to your existing tools. From $2,500.',
     images: ['/og-image.jpg'],
   },
 }
@@ -55,7 +55,7 @@ export default function AIWorkflowsAutomationPage() {
       name: 'AI Workflow Audit and Roadmap',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '1200',
+        price: '2500',
         priceCurrency: 'USD',
         unitText: 'per engagement',
       },
