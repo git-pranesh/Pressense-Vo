@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const stats = [
   { value: '3-5x', label: 'faster pipeline velocity' },
-  { value: '$3K-$18K', label: 'per month, fractional' },
+  { value: 'From $2K/mo', label: 'Pressense fractional RevOps' },
   { value: 'India + Global', label: 'clients served' },
 ]
 

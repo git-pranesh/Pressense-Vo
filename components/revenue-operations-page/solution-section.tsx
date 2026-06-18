@@ -10,7 +10,7 @@ type Row = {
 }
 
 const rows: Row[] = [
-  { label: 'Monthly cost', fractional: '$3K-$18K', fullTime: '$7K-$21K+', agency: '$5K-$20K', highlight: true },
+  { label: 'Monthly cost (market rate)', fractional: '$3K-$18K', fullTime: '$7K-$21K+', agency: '$5K-$20K', highlight: true },
   { label: 'Strategy ownership', fractional: 'Yes', fullTime: 'Yes', agency: 'No' },
   { label: 'Embedded in your team', fractional: 'Yes', fullTime: 'Yes', agency: 'No' },
   { label: 'Accountable for revenue outcomes', fractional: 'Yes', fullTime: 'Yes', agency: 'Rarely' },
