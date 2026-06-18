@@ -24,18 +24,18 @@ export function CustomToolsHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
+              <span className="text-2xl font-bold text-foreground">From $5K</span>
+              <span className="text-sm text-muted-foreground">fixed-price build</span>
+            </div>
+            <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
+            <div className="flex flex-col">
               <span className="text-2xl font-bold text-foreground">2–6 weeks</span>
               <span className="text-sm text-muted-foreground">first working version</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-foreground">Dedicated dev</span>
-              <span className="text-sm text-muted-foreground">and support team</span>
-            </div>
-            <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">You own it</span>
-              <span className="text-sm text-muted-foreground">100% of the code</span>
+              <span className="text-sm text-muted-foreground">and support included</span>
             </div>
           </div>
 
@@ -46,8 +46,8 @@ export function CustomToolsHero() {
                 <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
-            <a href="/how-we-work" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200">
-              See How We Work
+            <a href="/replit-development-agency" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200">
+              See Our Replit Agency
             </a>
           </div>
         </div>

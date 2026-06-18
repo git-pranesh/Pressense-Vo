@@ -2,12 +2,13 @@ import type { Metadata } from 'next'
 import { FinalCTA } from '@/components/final-cta'
 
 export const metadata: Metadata = {
-  title: 'Framer Website Design for SaaS & Founders | Pressense',
+  title: 'Framer Website Design for SaaS & Startups | Pressense',
   description:
-    'Framer website design for SaaS and founder-led businesses. Conversion-focused, live in 2–3 weeks. Animations, CMS, and performance built in. Starting from $1,500.',
+    'Framer website design for SaaS companies and founder-led businesses. Conversion-first landing pages and full websites from $1,500. Fast builds, CMS-ready, SEO-optimised.',
   openGraph: {
-    title: 'Framer Website Design for SaaS & Founders | Pressense',
-    description: 'Conversion-focused Framer websites: design and development in one platform. No handoff delays. Live in 2–3 weeks. Pressense Framer agency.',
+    title: 'Framer Website Design for SaaS & Startups | Pressense',
+    description:
+      'Conversion-first Framer website design from $1,500. Landing pages and full sites built in Framer — responsive, fast, CMS-ready, and handed over to your team.',
     url: '/framer-website-design',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Framer Website Design' }],
@@ -15,8 +16,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/framer-website-design' },
   twitter: {
     card: 'summary_large_image',
-    title: 'Framer Website Design for SaaS & Founders | Pressense',
-    description: 'Framer website design for SaaS and founder-led businesses. Conversion-focused, live in 2–3 weeks. Starting from $1,500.',
+    title: 'Framer Website Design for SaaS & Startups | Pressense',
+    description: 'Conversion-first Framer website design from $1,500. Landing pages and full sites, CMS-ready.',
     images: ['/og-image.jpg'],
   },
 }
@@ -87,7 +88,10 @@ export default function FramerWebsiteDesignPage() {
         description: 'Conversion-focused Framer website design and development for SaaS and founder-led businesses. Live in 2–3 weeks.',
         url: 'https://www.pressense.co/framer-website-design',
         areaServed: 'Worldwide',
-        offers: { '@type': 'Offer', priceRange: '$8,000 - $30,000', priceCurrency: 'USD' },
+        offers: [
+          { '@type': 'Offer', name: 'Landing Page', priceSpecification: { '@type': 'UnitPriceSpecification', price: '1500', priceCurrency: 'USD', unitText: 'fixed-price from' } },
+          { '@type': 'Offer', name: 'Full Website', priceSpecification: { '@type': 'UnitPriceSpecification', price: '3000', priceCurrency: 'USD', unitText: 'fixed-price from' } },
+        ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -141,7 +145,7 @@ export default function FramerWebsiteDesignPage() {
               <div className="grid grid-cols-3 gap-6 max-w-xl">
                 {[
                   { stat: '2–3 wks', label: 'Typical build time' },
-                  { stat: 'From $8K', label: 'Starting price' },
+                  { stat: 'From $1.5K', label: 'Starting price' },
                   { stat: '90+', label: 'Core Web Vitals score' },
                 ].map((s) => (
                   <div key={s.label}>
@@ -170,6 +174,71 @@ export default function FramerWebsiteDesignPage() {
                   <h3 className="text-lg font-semibold text-foreground mb-3">{p.title}</h3>
                   <p className="text-base text-muted-foreground leading-relaxed mb-3">{p.body1}</p>
                   <p className="text-base text-muted-foreground leading-relaxed">{p.body2}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Use Cases */}
+        <section className="py-20 border-t border-border/40">
+          <div className="container mx-auto px-5 sm:px-8">
+            <div className="max-w-3xl mb-14">
+              <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">Use Cases</span>
+              <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight">
+                What we build in Framer
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl">
+              {[
+                { title: 'SaaS marketing site', body: 'Positioning-first marketing site with feature pages, pricing, and blog CMS. Built for conversion and easy content updates by your team.' },
+                { title: 'Startup landing page', body: 'Single-page conversion site for launches, fundraising, and waitlists. Live in one to two weeks from brief.' },
+                { title: 'Agency or studio portfolio', body: 'Case study-led portfolio with rich animations and CMS-managed work entries.' },
+                { title: 'Product launch page', body: 'High-impact launch page with email capture, countdown, and social sharing built in.' },
+                { title: 'Redesign of an existing site', body: 'Migrate your current WordPress or Webflow site to Framer, keeping your SEO equity and improving load times and conversions.' },
+                { title: 'Framer CMS setup', body: 'CMS configuration so your team can add blog posts, case studies, and team members without touching design or code.' },
+              ].map((item) => (
+                <div key={item.title} className="p-5 rounded-xl border border-border/40 bg-secondary/20">
+                  <h3 className="text-sm font-semibold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing */}
+        <section className="py-20 border-t border-border/40">
+          <div className="container mx-auto px-5 sm:px-8">
+            <div className="max-w-3xl mb-14">
+              <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">Pricing</span>
+              <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight">
+                Fixed-price Framer website design
+              </h2>
+              <p className="text-base text-muted-foreground leading-relaxed mt-4 max-w-2xl">
+                Every engagement is scoped and priced before work begins. No surprises, no hourly billing, no out-of-scope conversations mid-project.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl">
+              {[
+                { tier: 'Landing Page', price: 'From $1,500', timeline: '1–2 weeks', includes: ['Single-page conversion site', 'Mobile-responsive', 'On-page SEO', 'Framer hosting setup', 'Copy direction (your copy)'] },
+                { tier: 'Full Website', price: 'From $3,000', timeline: '3–5 weeks', includes: ['Up to 8 pages', 'CMS for blog / content', 'Custom animations', 'Full SEO structure', 'Team handover training'] },
+                { tier: 'Redesign', price: 'From $2,500', timeline: '2–4 weeks', includes: ['Audit of existing site', 'Full rebuild in Framer', 'SEO migration', 'Analytics reconnect', 'Performance optimisation'] },
+              ].map((tier) => (
+                <div key={tier.tier} className="p-6 rounded-xl border border-border/40 bg-secondary/10 flex flex-col">
+                  <div className="mb-4">
+                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{tier.tier}</p>
+                    <p className="text-2xl font-bold text-foreground">{tier.price}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{tier.timeline}</p>
+                  </div>
+                  <ul className="space-y-1.5 mt-2 flex-1">
+                    {tier.includes.map((item) => (
+                      <li key={item} className="text-sm text-muted-foreground flex items-start gap-2">
+                        <span className="text-primary mt-0.5 shrink-0" aria-hidden="true">—</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>

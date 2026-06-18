@@ -4,10 +4,10 @@ import { FinalCTA } from '@/components/final-cta'
 export const metadata: Metadata = {
   title: 'Framer Website Agency | Pressense',
   description:
-    'Framer website agency for SaaS and startups. Conversion-focused design and development in one platform. Launch in 2–3 weeks with animations, CMS, and real-time collaboration.',
+    'Framer website agency for SaaS and startups. Conversion-focused design and development in one platform. Landing pages from $1,500. Launch in 2–3 weeks with animations, CMS, and real-time collaboration.',
   openGraph: {
     title: 'Framer Website Agency | Pressense',
-    description: 'Conversion-focused Framer websites for SaaS and founders. Design + development in one platform. No handoff delays, fast delivery.',
+    description: 'Conversion-focused Framer websites for SaaS and founders. Design + development in one platform. Landing pages from $1,500. No handoff delays, fast delivery.',
     url: '/framer-website-agency',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Framer Website Agency' }],
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Framer Website Agency | Pressense',
-    description: 'Framer website agency for SaaS and startups. Conversion-focused design and development in one platform. Launch in 2–3 weeks.',
+    description: 'Framer website agency for SaaS and startups. Landing pages from $1,500. Design + development in one platform. Launch in 2–3 weeks.',
     images: ['/og-image.jpg'],
   },
 }
@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: 'How much does a Framer website cost?',
-    a: 'A standard Framer marketing site from Pressense starts at $8,000 for five to eight pages with custom animations, responsive design, and CMS. Larger sites with complex interactions or more content range from $15,000 to $30,000. Framer hosting is $20 to $40 per month billed by Framer directly.',
+    a: 'Pressense Framer website design starts from $1,500 for a landing page and from $3,000 for a full multi-page site with CMS. Larger sites with complex interactions are scoped after the diagnostic call. Framer hosting is $20 to $40 per month billed directly by Framer.',
   },
   {
     q: 'How long does a Framer website take?',
@@ -125,7 +125,10 @@ export default function FramerAgencyPage() {
           description: 'Framer website design and development for conversion-focused experiences for SaaS and founder-led businesses.',
           url: 'https://www.pressense.co/framer-website-agency',
           areaServed: 'Worldwide',
-          offers: { '@type': 'Offer', priceRange: '$8,000 - $30,000', priceCurrency: 'USD' },
+          offers: [
+            { '@type': 'Offer', name: 'Landing Page', priceSpecification: { '@type': 'UnitPriceSpecification', price: '1500', priceCurrency: 'USD', unitText: 'fixed-price from' } },
+            { '@type': 'Offer', name: 'Full Website', priceSpecification: { '@type': 'UnitPriceSpecification', price: '3000', priceCurrency: 'USD', unitText: 'fixed-price from' } },
+          ],
         }) }}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -198,7 +201,7 @@ export default function FramerAgencyPage() {
               <div className="grid grid-cols-3 gap-6 max-w-xl">
                 {[
                   { stat: '2–3 wks', label: 'From brief to live' },
-                  { stat: 'From $8K', label: 'Starting price' },
+                  { stat: 'From $1.5K', label: 'Starting price' },
                   { stat: '90+', label: 'Core Web Vitals' },
                 ].map((s) => (
                   <div key={s.label}>
