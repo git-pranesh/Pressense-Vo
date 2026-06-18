@@ -8,7 +8,7 @@ import { FinalCTA } from '@/components/final-cta'
 export const metadata: Metadata = {
   title: 'OpenAI Integration Services for Business | Pressense',
   description:
-    'OpenAI GPT-4o integration for growing businesses. Build conversational tools, content pipelines, image analysis, and structured data extraction. From $2,500.',
+    'OpenAI GPT-4o integration for growing businesses. Build conversational tools, content pipelines, image analysis, and structured data extraction. From $2,000.',
   openGraph: {
     title: 'OpenAI Integration Services for Business | Pressense',
     description:
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'OpenAI Integration Services for Business | Pressense',
     description:
-      'OpenAI GPT-4o integration for growing businesses. Build conversational tools, content pipelines, and data extraction tools. From $2,500.',
+      'OpenAI GPT-4o integration for growing businesses. Build conversational tools, content pipelines, and data extraction tools. From $2,000.',
     images: ['/og-image.jpg'],
   },
 }
@@ -45,7 +45,7 @@ const serviceSchema = {
         name: 'Focused Integration',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '2500',
+          price: '2000',
           priceCurrency: 'USD',
           unitText: 'project from',
         },
@@ -91,7 +91,7 @@ const faqSchema = {
       name: 'How much does OpenAI API integration cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pressense OpenAI integrations start from $2,500 for a focused single-use-case build. Custom multi-model applications start from $5,000. OpenAI API usage is billed separately by the token, typically under $200/month for standard business volumes.',
+        text: 'Pressense OpenAI integrations start from $2,000 for a focused single-use-case build. Custom multi-model applications start from $5,000. OpenAI API usage is billed separately by the token, typically under $200/month for standard business volumes.',
       },
     },
     {

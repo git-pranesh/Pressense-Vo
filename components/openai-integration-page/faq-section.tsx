@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     q: 'How much does OpenAI API integration cost?',
-    a: "Pressense OpenAI integrations start from $2,500 for a focused single-use-case build (e.g. a chat assistant, email classifier, or data extractor). Custom multi-model applications start from $5,000. You also pay OpenAI directly for API usage, which is token-based. GPT-4o costs approximately $5 per million input tokens and $15 per million output tokens. Most business integrations at standard volumes cost under $200/month in API fees.",
+    a: "Pressense OpenAI integrations start from $2,000 for a focused single-use-case build (e.g. a chat assistant, email classifier, or data extractor). Custom multi-model applications start from $5,000. You also pay OpenAI directly for API usage, which is token-based. GPT-4o costs approximately $5 per million input tokens and $15 per million output tokens. Most business integrations at standard volumes cost under $200/month in API fees.",
   },
   {
     q: 'What is the difference between the OpenAI API and ChatGPT?',

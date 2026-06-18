@@ -3,7 +3,7 @@ import Link from 'next/link'
 const tiers = [
   {
     name: 'Focused Integration',
-    price: 'From $2,500',
+    price: 'From $2,000',
     timeline: '2–3 weeks',
     note: 'Fixed-price build',
     features: [
@@ -57,7 +57,7 @@ export function OpenAIPricingSection() {
           What does OpenAI API integration cost?
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
-          Pressense OpenAI integrations start from $2,500 for a focused single-use-case build. This is the cost of our integration and development work — OpenAI&apos;s API usage is billed separately to your account by the token.
+          Pressense OpenAI integrations start from $2,000 for a focused single-use-case build. This is the cost of our integration and development work — OpenAI&apos;s API usage is billed separately to your account by the token.
         </p>
         <p className="text-base text-muted-foreground leading-relaxed mb-14 max-w-2xl">
           Enterprise AI agencies charge $30K–$100K for comparable builds. We serve the founder and SMB market with fixed-price builds at accessible rates. Every engagement starts with a fixed-price estimate after the diagnostic.
