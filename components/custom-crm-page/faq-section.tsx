@@ -15,7 +15,7 @@ const faqs: FAQItem[] = [
     question: 'How much does custom CRM development cost?',
     answer: (
       <>
-        Custom CRM development starts at around $15,000 for a lean MVP for a team of three to ten, and typically falls between $20,000 and $60,000 for a full system. The final cost depends on the number of data objects, integrations, automation rules, and custom reporting required. A three-year comparison with Salesforce or HubSpot Enterprise often shows the custom build is cheaper at scale, because you pay once for the build and own the software outright. All Pressense builds come with a fixed-price estimate after the <Link href="/diagnostic" className="text-primary hover:underline">free diagnostic</Link>.
+        Custom CRM development starts from $5,000 for a lean MVP for a team of three to ten. Most founder-led businesses land in the $5,000 to $15,000 range. The final cost depends on the number of data objects, integrations, automation rules, and custom reporting required. A three-year comparison with Salesforce or HubSpot Enterprise often shows the custom build is cheaper at scale, because you pay once for the build and own the software outright. All Pressense builds come with a fixed-price estimate after the <Link href="/diagnostic" className="text-primary hover:underline">free diagnostic</Link>.
       </>
     ),
   },

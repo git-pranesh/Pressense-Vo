@@ -12,7 +12,7 @@ const cmoFAQs = [
   },
   {
     question: 'Is an AI automation agency profitable?',
-    answer: 'Yes. The ROI on automation is typically measured in weeks, not years. Most of our clients reclaim 15 to 20 hours per week from repetitive tasks across their team. At an average fully-loaded hourly rate of $50 to $150 per team member, that translates to $3,000 to $12,000 per month in recovered capacity. Projects typically cost $3,000 to $20,000 depending on complexity, which means payback periods of four to eight weeks are common.',
+    answer: 'Yes. The ROI on automation is typically measured in weeks, not years. Most of our clients reclaim 15 to 20 hours per week from repetitive tasks across their team. At an average fully-loaded hourly rate of $50 to $150 per team member, that translates to $3,000 to $12,000 per month in recovered capacity. AI automation agency engagements start from $3,500 — most clients recover that cost within the first month.',
   },
   {
     question: 'How long does it take to build AI automation?',

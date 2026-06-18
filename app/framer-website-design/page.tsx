@@ -4,7 +4,7 @@ import { FinalCTA } from '@/components/final-cta'
 export const metadata: Metadata = {
   title: 'Framer Website Design for SaaS & Founders | Pressense',
   description:
-    'Framer website design for SaaS and founder-led businesses. Conversion-focused, live in 2–3 weeks. Animations, CMS, and performance built in. From $8K.',
+    'Framer website design for SaaS and founder-led businesses. Conversion-focused, live in 2–3 weeks. Animations, CMS, and performance built in. Starting from $1,500.',
   openGraph: {
     title: 'Framer Website Design for SaaS & Founders | Pressense',
     description: 'Conversion-focused Framer websites: design and development in one platform. No handoff delays. Live in 2–3 weeks. Pressense Framer agency.',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Framer Website Design for SaaS & Founders | Pressense',
-    description: 'Framer website design for SaaS and founder-led businesses. Conversion-focused, live in 2–3 weeks. From $8K.',
+    description: 'Framer website design for SaaS and founder-led businesses. Conversion-focused, live in 2–3 weeks. Starting from $1,500.',
     images: ['/og-image.jpg'],
   },
 }
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'How much does a Framer website cost?',
-    a: 'A Framer marketing site from Pressense starts at $8,000 for a five-to-eight page site with custom animations, responsive design, and CMS integration. More complex sites with interactive components, custom code overrides, or extensive CMS content range from $15,000 to $30,000. Framer hosting is $20 to $40 per month billed directly by Framer.',
+    a: 'A Framer website from Pressense starts from $1,500 for a focused build — a landing page or a simple marketing site. A full five-to-eight page site with custom animations, responsive design, and CMS integration is scoped after the diagnostic. Framer hosting is $20 to $40 per month billed directly by Framer.',
   },
   {
     q: 'How long does a Framer website take to build?',

@@ -1,23 +1,23 @@
 const tiers = [
   {
-    name: 'Internal Tool',
+    name: 'Focused Build',
     timeline: '2–4 weeks',
-    price: 'From $5,000',
+    price: 'From $1,500',
     note: 'Fixed-price build',
     features: [
-      'Single workflow or dashboard',
+      'Single workflow, tool, or landing page',
       'Auth and basic user roles',
       '1–2 data sources or integrations',
       'Deployed on Replit — you own the code',
       'Handover documentation',
       'Two-week support window post-launch',
     ],
-    suitable: 'Teams with a specific manual process to automate',
+    suitable: 'Fast deployment for a specific problem — most clients are in production in under 3 weeks',
   },
   {
     name: 'MVP or Custom App',
     timeline: '6–8 weeks',
-    price: 'From $15,000',
+    price: 'From $5,000',
     note: 'Fixed-price build',
     features: [
       'Full product with core user journey',
@@ -27,22 +27,22 @@ const tiers = [
       'Role-based access controls',
       'Four-week support window post-launch',
     ],
-    suitable: 'Founders building their first product or replacing a spreadsheet system',
+    suitable: 'Founders building their first product — you own 100% of the code from commit one',
     highlighted: true,
   },
   {
-    name: 'Sprint Retainer',
+    name: 'Support Retainer',
     timeline: 'Ongoing monthly',
-    price: 'From $2,500/mo',
-    note: 'Monthly sprint cycle',
+    price: 'Custom',
+    note: 'Dedicated developer + support',
     features: [
-      'One two-week sprint per month',
+      'Dedicated developer for your project',
+      'Bug fixes within 24–48 hours',
       'Feature additions from user feedback',
-      'Bug fixes and performance tuning',
       'Integration maintenance',
       'Quarterly architecture review',
     ],
-    suitable: 'Clients who launched and want to keep building',
+    suitable: 'Larger engagements or ongoing apps — scope it together on a call',
   },
 ]
 
@@ -66,7 +66,7 @@ export function ReplitAgencyWhatYouGetSection() {
           What you get and how much Replit development costs
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-6 max-w-2xl">
-          Replit development costs between $5,000 for a focused internal tool and $35,000 for a full product with multiple user types and integrations. Enterprise agencies in the Replit Solution Partner Program charge $150,000 and up. We serve the founder and SMB tier with fixed-price builds and clear scope.
+          Replit development starts from $1,500 for a focused build and scales based on scope. Enterprise agencies charge $150,000 and up for the same output. We serve the founder and SMB tier with fixed-price builds, a dedicated developer, and fast support after launch. Larger projects or enterprise scope? Let&apos;s scope it together.
         </p>
         <p className="text-base text-muted-foreground leading-relaxed mb-14 max-w-2xl">
           Every engagement starts with a fixed-price estimate from the diagnostic session. No time-and-materials billing. No invoices for "additional scope." What you agree to in week one is what you pay.

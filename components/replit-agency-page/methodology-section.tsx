@@ -41,7 +41,7 @@ const phases = [
     body1:
       'Week eight is handover. We walk through every component, document the data model, record a video walkthrough of the admin and developer interfaces, and hand over the Replit workspace with all credentials and environment variables. Your team can maintain it from day one.',
     body2:
-      'Most clients continue on a monthly sprint retainer. Each sprint adds features based on what real users asked for. The retainer starts from $2,500 per month for one sprint cycle. There is no lock-in: you can pause or cancel with two weeks notice.',
+      'Most clients continue on a dedicated developer and support retainer. Each sprint adds features based on what real users asked for. Retainer pricing is scoped on a call based on the level of support needed — bug fixes within 24–48 hours are standard. There is no lock-in: you can pause or cancel with two weeks notice.',
   },
 ]
 

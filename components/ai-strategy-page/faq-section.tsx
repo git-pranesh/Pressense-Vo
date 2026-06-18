@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: 'How much does AI strategy consulting cost?',
-    a: 'A focused AI strategy sprint costs from $5,000 and takes two weeks to deliver an opportunity map and roadmap. A strategy-plus-pilots engagement costs from $12,000 and takes four weeks, ending with two working AI systems your team uses from day one. Monthly retainers start at $3,500 for ongoing builds and optimisation. Enterprise firms charge $25,000 to $250,000 for strategy decks. We charge less and include the build.',
+    a: 'A focused AI strategy sprint starts from $1,500 and takes two weeks to deliver an opportunity map and roadmap. A strategy-plus-pilots engagement starts from $3,500 and takes four weeks, ending with two working AI systems your team uses from day one. Monthly retainers start from $1,500 for ongoing builds and optimisation. Enterprise firms charge $25,000 to $250,000 for strategy decks. We charge less and include the build.',
   },
   {
     q: 'What is the difference between AI strategy and AI implementation?',

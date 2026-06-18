@@ -22,11 +22,11 @@ export function WhatYouGetSection() {
           What you get from a workflow automation consulting engagement
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-2xl">
-          Every engagement is a five-week sprint from audit to live automations. Below is the full deliverable list with timing. Pricing starts from{' '}
+          Every engagement is a five-week sprint from audit to live automations. Below is the full deliverable list with timing.           Consulting starts from{' '}
           <Link href="/packages" className="text-primary hover:underline">
-            $3,000 for a scoped build
+            $1,200 for an audit and roadmap
           </Link>
-          , with retainer options from $2,500/month for ongoing workflow development.
+          , with project builds from $2,500 and retainer options for ongoing workflow development.
         </p>
 
         {/* Timeline table */}
@@ -56,8 +56,8 @@ export function WhatYouGetSection() {
         <div className="flex flex-wrap gap-3">
           {[
             '5-week engagement',
-            'From $3,000 project',
-            'From $2,500/month retainer',
+            'Consulting from $1,200',
+            'Projects from $2,500',
             'India + Global clients',
             'Works with your existing tools',
           ].map((badge) => (

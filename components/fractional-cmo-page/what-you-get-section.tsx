@@ -30,8 +30,8 @@ export function WhatYouGetSection() {
               <span className="text-sm font-semibold text-primary">90-day engagement sprint</span>
             </div>
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-xl border border-border/40 bg-card/40">
-              <span className="text-sm font-medium text-muted-foreground">From</span>
-              <span className="text-sm font-semibold text-foreground">$2,000 / month</span>
+              <span className="text-sm font-medium text-muted-foreground">Starting from</span>
+              <span className="text-sm font-semibold text-foreground">$1,500 / month</span>
             </div>
           </div>
         </div>

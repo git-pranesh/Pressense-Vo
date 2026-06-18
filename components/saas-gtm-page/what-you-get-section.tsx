@@ -1,34 +1,6 @@
 export function SaaSGTMWhatYouGetSection() {
   const tiers = [
     {
-      name: 'GTM Sprint',
-      price: 'From $4,000',
-      timeline: '6–8 weeks',
-      items: [
-        'Buyer research (5–8 interviews)',
-        'ICP definition document',
-        'Competitive positioning map',
-        'Pricing recommendation',
-        'Channel selection and playbook',
-        '90-day execution roadmap',
-        'One handoff call + 30-day email support',
-      ],
-    },
-    {
-      name: 'GTM Sprint + Retainer',
-      price: 'From $4,000 + $1,800/mo',
-      timeline: 'Sprint then ongoing',
-      featured: true,
-      items: [
-        'Everything in GTM Sprint',
-        'Monthly GTM performance review',
-        'Messaging iteration and A/B tests',
-        'Channel expansion planning',
-        'Slack access to your Pressense lead',
-        'Cancel with two weeks notice',
-      ],
-    },
-    {
       name: 'GTM Audit',
       price: 'From $1,500',
       timeline: '1–2 weeks',
@@ -39,6 +11,36 @@ export function SaaSGTMWhatYouGetSection() {
         'Written audit report with priority fixes',
         'One 90-minute debrief call',
       ],
+      outcome: 'Most clients leave with 3–5 specific fixes that move the needle immediately.',
+    },
+    {
+      name: 'GTM Sprint',
+      price: 'From $3,000',
+      timeline: '6–8 weeks',
+      featured: true,
+      items: [
+        'Buyer research (5–8 conversations)',
+        'ICP definition document',
+        'Competitive positioning map',
+        'Pricing recommendation',
+        'Channel selection and playbook',
+        '90-day execution roadmap',
+        'One handoff call + 30-day email support',
+      ],
+      outcome: 'Most clients go from "guessing ICP" to a validated, documented strategy in under 8 weeks.',
+    },
+    {
+      name: 'Larger Engagement',
+      price: 'Custom',
+      timeline: 'Scoped together',
+      items: [
+        'Multi-market or multi-product GTM',
+        'Ongoing retainer post-sprint',
+        'Sales team training and enablement',
+        'Channel expansion and paid acquisition',
+        'Board-ready GTM reporting',
+      ],
+      outcome: 'Larger team or complex scope? Let\'s scope it together on a call.',
     },
   ]
 
@@ -54,7 +56,7 @@ export function SaaSGTMWhatYouGetSection() {
           How much does SaaS go-to-market strategy cost?
         </h2>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mb-10">
-          Enterprise GTM consultancies charge $20K to $80K for a strategy engagement. We work with founder-led SaaS companies that do not have that budget but need the same quality of thinking. Our sprint format keeps scope tight so the price stays accessible.
+          Enterprise GTM consultancies charge $20K to $80K for a strategy engagement. We work with founder-led SaaS companies that do not have that budget but need the same quality of thinking. Our sprint format keeps scope tight — starting from $3,000 — so the price stays accessible.
         </p>
 
         <div className="grid sm:grid-cols-3 gap-5 mb-8">
@@ -82,6 +84,11 @@ export function SaaSGTMWhatYouGetSection() {
                   </p>
                 ))}
               </div>
+              {tier.outcome && (
+                <p className="text-xs text-muted-foreground border-t border-border/30 pt-3 mt-2 leading-relaxed">
+                  {tier.outcome}
+                </p>
+              )}
             </div>
           ))}
         </div>

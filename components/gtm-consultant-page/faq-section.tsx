@@ -12,7 +12,7 @@ const gtmFAQs = [
   },
   {
     question: 'How much does GTM consulting cost?',
-    answer: 'GTM consulting costs vary by scope and engagement model. Project-based strategy sprints typically run from $5,000 to $15,000. Monthly retainers for ongoing strategic support range from $4,000 to $18,000 per month. Full-scope engagements covering strategy through implementation, like the Pressense PRESS Framework, start from $5,000 per month for an eight-week engagement.',
+    answer: 'GTM consulting at Pressense starts from $2,500 for a project engagement. Full-scope engagements covering strategy through implementation, like the Pressense PRESS Framework, start from $2,500. Ongoing support retainers are scoped together after the initial engagement. Western boutique GTM firms charge $5,000 to $25,000 for comparable work.',
   },
   {
     question: 'What is the difference between a GTM consultant and a fractional CMO?',

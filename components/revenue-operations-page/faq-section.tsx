@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'How much does revenue operations consulting cost?',
-    answer: 'Fractional revenue operations consulting typically costs $3,000 to $18,000 per month depending on scope and hours. A diagnostic-only engagement to identify your top constraints runs $3,000 to $6,000. A full implementation that includes CRM buildout, reporting, and team training runs $8,000 to $18,000 per month for three to six months. Full-time RevOps hires cost $90,000 to $250,000 per year fully loaded.',
+    answer: 'Fractional revenue operations consulting at Pressense starts from $2,000 per month. A diagnostic-only engagement to identify your top constraints is scoped after the free diagnostic call. A full implementation that includes CRM buildout, reporting, and team training is scoped together based on depth and timeline. Full-time RevOps hires cost $90,000 to $250,000 per year fully loaded — fractional is the smarter entry point.',
   },
 ]
 

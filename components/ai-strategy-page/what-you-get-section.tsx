@@ -1,7 +1,7 @@
 const tiers = [
   {
     name: 'Strategy Sprint',
-    price: 'From $5,000',
+    price: 'From $1,500',
     timeline: '2 weeks',
     highlight: false,
     deliverables: [
@@ -11,11 +11,11 @@ const tiers = [
       'Tool recommendations with cost estimates',
       'One 60-minute strategy presentation session',
     ],
-    note: 'Right for businesses that want a clear plan and will implement internally.',
+    note: 'Most clients identify 3+ workflows to automate — saving 8–15 hours per week.',
   },
   {
     name: 'Strategy + Pilots',
-    price: 'From $12,000',
+    price: 'From $3,500',
     timeline: '4 weeks',
     highlight: true,
     deliverables: [
@@ -25,11 +25,11 @@ const tiers = [
       'Team training session (up to 4 people)',
       'Two weeks of post-launch support',
     ],
-    note: 'Most popular. Right for businesses that want proof before committing to a retainer.',
+    note: 'Most popular. Clients see working automations in production before the engagement ends.',
   },
   {
     name: 'Ongoing Retainer',
-    price: 'From $3,500/month',
+    price: 'From $1,500/month',
     timeline: 'Monthly rolling',
     highlight: false,
     deliverables: [
@@ -39,7 +39,7 @@ const tiers = [
       'Priority support and iteration',
       'Quarterly roadmap refresh',
     ],
-    note: 'Right for businesses that want a dedicated AI operator without hiring one.',
+    note: 'Dedicated AI operator without the hire. Most clients recover the retainer cost in week one.',
   },
 ]
 
@@ -71,7 +71,7 @@ export function AIStrategyWhatYouGet() {
             How much does AI strategy consulting cost?
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-10">
-            Enterprise AI strategy firms charge $25,000 to $250,000 for engagements that end in a presentation deck. Our engagements end with working systems your team uses on day one of week five. Every tier below includes implementation, not just advice. Pricing is fixed-scope so there are no budget surprises.
+            Enterprise AI strategy firms charge $25,000 to $250,000 for engagements that end in a presentation deck. Our engagements end with working systems your team uses on day one of week five. Every tier below includes implementation, not just advice. Pricing is fixed-scope so there are no budget surprises. Larger or multi-site engagements? <a href="/diagnostic" className="text-primary hover:underline">Let&apos;s scope it together.</a>
           </p>
 
           <div className="grid sm:grid-cols-3 gap-4 mb-12">

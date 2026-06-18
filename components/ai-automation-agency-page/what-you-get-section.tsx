@@ -25,8 +25,8 @@ export function WhatYouGetSection() {
               <span className="text-sm font-semibold text-primary">2-4 week delivery</span>
             </div>
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-xl border border-border/40 bg-card/40">
-              <span className="text-sm font-medium text-muted-foreground">Projects from</span>
-              <span className="text-sm font-semibold text-foreground">$3,000</span>
+              <span className="text-sm font-medium text-muted-foreground">Starting from</span>
+              <span className="text-sm font-semibold text-foreground">$3,500</span>
             </div>
           </div>
         </div>

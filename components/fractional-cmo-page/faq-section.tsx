@@ -32,7 +32,7 @@ const cmoFAQs = [
     question: 'How much do fractional CMO services cost?',
     answer: (
       <>
-        Fractional CMO services at Pressense start from $2,000 per month for advisory-only engagements. Full embedded leadership, covering strategy, team management, and system build-out, typically runs $5,000 to $12,000 per month. This compares to $20,000 to $35,000 per month for a full-time CMO when salary, benefits, and employer costs are included. Most clients reach payback within 60 to 90 days through improved pipeline conversion and reduced wasted ad spend.
+        Fractional CMO services at Pressense start from $1,500 per month. Full embedded leadership, covering strategy, team management, and system build-out, is scoped together after the diagnostic. This compares to $20,000 to $35,000 per month for a full-time CMO when salary, benefits, and employer costs are included. Most clients reach payback within 60 to 90 days through improved pipeline conversion and reduced wasted ad spend.
       </>
     ),
   },

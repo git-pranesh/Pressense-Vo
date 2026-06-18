@@ -66,7 +66,7 @@ export default function AIStrategyConsultingPage() {
           },
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '5000',
+            price: '1500',
             priceCurrency: 'USD',
             unitText: 'fixed project',
           },
@@ -80,7 +80,7 @@ export default function AIStrategyConsultingPage() {
           },
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '12000',
+            price: '3500',
             priceCurrency: 'USD',
             unitText: 'fixed project',
           },
@@ -94,7 +94,7 @@ export default function AIStrategyConsultingPage() {
           },
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '3500',
+            price: '1500',
             priceCurrency: 'USD',
             unitText: 'month',
           },

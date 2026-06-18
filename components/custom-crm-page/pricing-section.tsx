@@ -3,7 +3,7 @@ export function CustomCrmPricingSection() {
     {
       name: 'CRM MVP',
       timeline: '6–8 weeks',
-      price: 'From $15,000',
+      price: 'From $5,000',
       note: 'One-time build',
       features: [
         'Core contact and deal management',
@@ -13,12 +13,12 @@ export function CustomCrmPricingSection() {
         'Admin dashboard and reporting',
         'Built on Replit — you own the code',
       ],
-      suitable: 'Teams of 3–10 with a defined sales process',
+      suitable: 'Most clients replace their spreadsheet CRM in under 8 weeks and never look back',
     },
     {
       name: 'Full Custom CRM',
       timeline: '10–14 weeks',
-      price: 'From $35,000',
+      price: 'From $15,000',
       note: 'One-time build',
       features: [
         'Everything in CRM MVP',
@@ -29,22 +29,23 @@ export function CustomCrmPricingSection() {
         'Custom reporting and CEO dashboard',
         'Mobile-responsive interface',
       ],
-      suitable: 'Teams of 10–50 with complex or non-standard sales workflows',
+      suitable: 'Teams with complex workflows — own it outright instead of paying Salesforce forever',
       highlighted: true,
     },
     {
-      name: 'CRM + Retainer',
-      timeline: 'Ongoing',
-      price: 'From $3,500/mo',
-      note: 'After initial build',
+      name: 'Enterprise / Complex',
+      timeline: 'Scoped together',
+      price: 'Custom',
+      note: 'Larger engagements',
       features: [
-        'Monthly development sprints',
-        'New features and modules on demand',
-        'Bug fixes and performance tuning',
-        'Integration maintenance',
-        'Quarterly roadmap planning session',
+        'Multi-team or multi-site data models',
+        'Deep integration with existing ERP or finance stack',
+        'Advanced automation and workflow engine',
+        'Dedicated developer and support team',
+        'Bug fixes within 24–48 hours',
+        'Quarterly roadmap and architecture review',
       ],
-      suitable: 'Teams that want to keep developing after MVP launch',
+      suitable: 'Larger engagements? Let\'s scope it together on a call',
     },
   ]
 
@@ -58,10 +59,10 @@ export function CustomCrmPricingSection() {
           What does custom CRM development cost?
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
-          Custom CRM development typically costs between $15,000 for a lean MVP and $60,000 for a full-featured system for a team of up to fifty. Most founder-led businesses land in the $20,000 to $40,000 range.
+          Custom CRM development starts from $5,000 for a lean MVP. Most founder-led businesses land in the $5,000 to $15,000 range for a fully functional, owned CRM — built for exactly how their pipeline works.
         </p>
         <p className="text-base text-muted-foreground leading-relaxed mb-14 max-w-2xl">
-          The right way to think about cost is over three years. A $35,000 custom build with $5,000 per year in maintenance is $50,000 over three years. Ten Salesforce Enterprise seats over the same period is $90,000 to $130,000, plus admin time, plus customisation costs. The custom build is cheaper at scale and you own what you paid for.
+          The right way to think about cost is over three years. A $15,000 custom build with $3,000 per year in maintenance is $24,000 over three years. Ten Salesforce Enterprise seats over the same period is $90,000 to $130,000, plus admin time, plus customisation costs. The custom build is cheaper at scale and you own what you paid for.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6">

@@ -32,7 +32,7 @@ const faqs = [
   {
     question: 'How much does Replit development cost?',
     answer:
-      'A focused internal tool on Replit costs from $5,000 and takes two to four weeks. A full MVP or custom product costs from $15,000 and takes six to eight weeks. Ongoing sprint retainers start at $2,500 per month. Enterprise Replit agencies in the official Solution Partner Program (Accenture, Slalom) charge $150,000 and above. Pressense serves the founder and SMB market with fixed-price builds at startup-appropriate budgets. Every engagement starts with a fixed-price estimate from the diagnostic session.',
+      'A focused Replit build starts from $1,500 and takes two to four weeks. A full MVP or custom product starts from $5,000 and takes six to eight weeks. Larger or ongoing support engagements are scoped together on a call. Enterprise Replit agencies in the official Solution Partner Program (Accenture, Slalom) charge $150,000 and above. Pressense serves the founder and SMB market with fixed-price builds at startup-appropriate budgets. Every engagement starts with a fixed-price estimate from the diagnostic session.',
   },
 ]
 

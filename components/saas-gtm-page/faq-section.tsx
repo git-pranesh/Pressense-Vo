@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: 'How much does SaaS GTM consulting cost?',
-    a: 'A Pressense GTM Sprint starts from $4,000 for a six-to-eight-week engagement that includes buyer research, ICP definition, positioning, pricing, a channel playbook, and a 90-day roadmap. Enterprise GTM consultancies charge $20K to $80K for comparable work. Our sprint format keeps scope tight so the output is specific and actionable rather than a generic framework.',
+    a: 'A Pressense GTM Audit starts from $1,500 for a focused one-to-two-week review. A full GTM Sprint starts from $3,000 for a six-to-eight-week engagement covering buyer research, ICP definition, positioning, pricing, a channel playbook, and a 90-day roadmap. Enterprise GTM consultancies charge $20K to $80K for comparable work.',
   },
 ]
 

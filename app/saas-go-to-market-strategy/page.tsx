@@ -45,22 +45,22 @@ export default function SaaSGTMPage() {
     offers: [
       {
         '@type': 'Offer',
-        name: 'GTM Sprint',
+        name: 'GTM Audit',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '4000',
+          price: '1500',
           priceCurrency: 'USD',
           unitText: 'per engagement',
         },
       },
       {
         '@type': 'Offer',
-        name: 'GTM Retainer',
+        name: 'GTM Sprint',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '1800',
+          price: '3000',
           priceCurrency: 'USD',
-          unitText: 'per month',
+          unitText: 'per engagement',
         },
       },
     ],

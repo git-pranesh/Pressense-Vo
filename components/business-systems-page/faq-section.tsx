@@ -14,7 +14,7 @@ const systemsFAQs = [
     question: 'How much does a business systems consultant cost?',
     answer: (
       <>
-        Pricing depends on scope and engagement structure. Most business systems consulting engagements start at $4,000 per month for a 90-day retainer covering audit, design, build, and handover. Single-system implementations or one-off audits start from $3,000 as a fixed-fee project. Enterprise-scale digital transformations are quoted separately. See our{' '}
+        Pricing depends on scope and engagement structure. Business systems consulting at Pressense starts from $1,500 for a consulting or advisory engagement. Full 90-day retainers covering audit, design, build, and handover are scoped after the diagnostic. Enterprise-scale or multi-department transformations are scoped separately. See our{' '}
         <Link href="/diagnostic" className="text-primary hover:underline">
           free diagnostic
         </Link>{' '}
