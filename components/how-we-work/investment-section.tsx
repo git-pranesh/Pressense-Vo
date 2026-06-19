@@ -124,8 +124,9 @@ export function InvestmentSection() {
         <div className="mt-12 max-w-2xl">
           <p className="text-sm text-muted-foreground">
             <span className="font-medium text-foreground">Pricing transparency:</span>{' '}
-            Engagements typically range from $15,000 to $75,000+ depending on scope. We
-            provide detailed proposals after an initial conversation. No surprises, no
+            Engagements are scoped to your situation after the diagnostic. Starting prices
+            vary by service — from $500 for advisory sessions to $5,000+ for full builds.
+            Detailed proposals are provided after an initial conversation. No surprises, no
             hidden fees.
           </p>
         </div>

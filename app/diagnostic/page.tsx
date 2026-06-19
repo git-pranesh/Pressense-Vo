@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { DiagnosticHero } from '@/components/diagnostic/diagnostic-hero'
 import { ForBusinessesSection } from '@/components/apply/for-businesses-section'
 import { WhatWeHelpWithSection } from '@/components/apply/what-we-help-with'
@@ -35,7 +33,7 @@ export const metadata: Metadata = {
 export default function DiagnosticPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <DiagnosticHero />
         <ForBusinessesSection />
@@ -47,7 +45,7 @@ export default function DiagnosticPage() {
           <DiagnosticForm />
         </Suspense>
       </main>
-      <Footer />
+      
     </>
   )
 }

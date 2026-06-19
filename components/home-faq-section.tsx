@@ -33,6 +33,24 @@ const homeFAQs = [
     ),
   },
   {
+    question: 'What is a business diagnostic and what does it include?',
+    answer: (
+      <>
+        A{' '}
+        <Link href="/diagnostic" className="text-primary hover:underline">business diagnostic</Link>{' '}
+        is a structured review of your business to find the real constraint blocking growth. At Pressense it covers positioning, sales systems, operations, marketing, team structure, and tech stack. You receive a prioritised action roadmap showing exactly what to fix first and why.
+      </>
+    ),
+  },
+  {
+    question: 'How long does a business diagnostic take?',
+    answer: (
+      <>
+        Our diagnostic process typically takes one week. We review your systems, talk to your team, and deliver a written report with your top three constraints and recommended next steps. There is no obligation to continue after the diagnostic.
+      </>
+    ),
+  },
+  {
     question: 'Why do you start with a diagnostic?',
     answer: (
       <>

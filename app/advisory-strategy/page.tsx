@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { AdvisoryStrategyHero } from '@/components/advisory-strategy-page/hero'
 import { IntroSection } from '@/components/advisory-strategy-page/intro-section'
 import { WhenUsefulSection } from '@/components/advisory-strategy-page/when-useful-section'
@@ -37,7 +35,7 @@ export const metadata: Metadata = {
 export default function AdvisoryStrategyPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <AdvisoryStrategyHero />
         <IntroSection />
@@ -51,7 +49,7 @@ export default function AdvisoryStrategyPage() {
         <AdvisoryFAQSection />
         <AdvisoryStrategyCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

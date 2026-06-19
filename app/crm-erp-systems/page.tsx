@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { CrmErpHero } from '@/components/crm-erp-page/hero'
 import { CrmErpToolsSection } from '@/components/crm-erp-page/tools-section'
 import { CrmErpConstraintsSection } from '@/components/crm-erp-page/constraints-section'
@@ -41,7 +39,7 @@ export const metadata: Metadata = {
 export default function CrmErpSystemsPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <CrmErpHero />
         <CrmErpToolsSection />
@@ -59,7 +57,7 @@ export default function CrmErpSystemsPage() {
         <CrmErpFAQSection />
         <CrmErpFinalCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

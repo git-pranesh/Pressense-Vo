@@ -101,6 +101,22 @@ export function StructuredData({ data }: StructuredDataProps = {}) {
     ],
   }
 
+  const simpleOrganizationData = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Pressense',
+    url: 'https://www.pressense.co',
+    logo: 'https://www.pressense.co/icon.svg',
+    description: 'Strategy and systems consultancy for founder-led businesses. AI automation, GTM strategy, revenue operations, and custom internal tools.',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      url: 'https://www.pressense.co/diagnostic',
+    },
+    areaServed: ['US', 'GB'],
+    sameAs: [],
+  }
+
   // Only include FAQ schema on the homepage
   const faqData =
     pathname === '/'
@@ -196,6 +212,12 @@ export function StructuredData({ data }: StructuredDataProps = {}) {
           }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(simpleOrganizationData),
+        }}
+      />
     </>
   )
 }

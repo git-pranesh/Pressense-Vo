@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { PlaybooksHero } from '@/components/playbooks-page/hero'
 import { PlaybooksIntroSection } from '@/components/playbooks-page/intro-section'
 import { StartHereSection } from '@/components/playbooks-page/start-here-section'
@@ -66,7 +64,8 @@ export default function PlaybooksPage() {
         pageName="Playbooks | Diagnostic Frameworks for Growth Constraints"
         pageDescription="Diagnostic frameworks for fixing common growth constraints. Founder bottlenecks, pricing leakage, GTM alignment, customer onboarding, personal brand, systems debt."
       />
-      <Header />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.pressense.co"},{"@type":"ListItem","position":2,"name":"Playbooks","item":"https://www.pressense.co/playbooks"}]}) }} />
+      
       <main>
         <PlaybooksHero />
         <PlaybooksIntroSection />
@@ -75,7 +74,7 @@ export default function PlaybooksPage() {
         <PlaybooksFAQSection />
         <PlaybooksFinalCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

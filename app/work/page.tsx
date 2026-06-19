@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { WorkHero } from '@/components/work-page/hero'
 import { WorkIntroSection } from '@/components/work-page/intro-section'
 import { WorkGrid } from '@/components/work-page/work-grid'
@@ -11,6 +9,10 @@ export const metadata: Metadata = {
   title: 'Selected Work | Pressense',
   description:
     'Selected work from strategy, GTM, and systems engagements. See how we diagnose root cause and build solutions that stick.',
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: {
     canonical: '/work',
   },
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
 export default function WorkPage() {
   return (
     <>
-      <Header />
+      
       <main>
         <WorkHero />
         <WorkIntroSection />
@@ -39,7 +41,7 @@ export default function WorkPage() {
         <WorkPatternsSection />
         <WorkFinalCTA />
       </main>
-      <Footer />
+      
     </>
   )
 }

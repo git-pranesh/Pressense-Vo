@@ -5,7 +5,7 @@ export function FinalCTA() {
       <div
         className="absolute inset-0 opacity-[0.06]"
         style={{
-          background: 'radial-gradient(ellipse 70% 60% at 50% 50%, oklch(0.82 0.05 80) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse 70% 60% at 50% 50%, #D4CFC8 0%, transparent 70%)',
         }}
         aria-hidden="true"
       />

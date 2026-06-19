@@ -40,7 +40,7 @@ const aiFAQs = [
     answer: (
       <>
         AI projects often fail because teams start with tools before defining the workflow. Prompts stay scattered, ownership is unclear, review standards are missing, and outputs do not connect to the next step in the business process. See{' '}
-        <Link href="/advisory-strategy" className="text-primary hover:underline">workflow strategy before automation</Link>.
+        <Link href="/ai-strategy-consulting" className="text-primary hover:underline">AI strategy consulting</Link> for the diagnostic-first approach.
       </>
     ),
   },
@@ -58,7 +58,7 @@ const aiFAQs = [
       <>
         Yes. AI workflows often work best when connected to{' '}
         <Link href="/custom-internal-tools" className="text-primary hover:underline">internal tools</Link>,{' '}
-        <Link href="/crm-erp-systems" className="text-primary hover:underline">CRM systems</Link>, reporting dashboards, content systems, or operational processes.{' '}
+        <Link href="/custom-crm-development" className="text-primary hover:underline">CRM systems</Link>, reporting dashboards, content systems, or operational processes.{' '}
         <Link href="/diagnostic" className="text-primary hover:underline">Start with one workflow</Link>.
       </>
     ),

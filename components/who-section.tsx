@@ -34,7 +34,7 @@ export function WhoSection() {
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 rounded-full border border-accent/40 flex items-center justify-center">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                  <path d="M1.5 5.5L3.5 7.5l5-5" stroke="oklch(0.72 0.08 75)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M1.5 5.5L3.5 7.5l5-5" stroke="#0A0A0A" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <span className="text-sm font-semibold text-foreground">This is for you if</span>
@@ -54,7 +54,7 @@ export function WhoSection() {
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 rounded-full border border-border flex items-center justify-center">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                  <path d="M2 2l6 6M8 2L2 8" stroke="oklch(0.55 0.012 70)" strokeWidth="1.4" strokeLinecap="round" />
+                  <path d="M2 2l6 6M8 2L2 8" stroke="#9B958F" strokeWidth="1.4" strokeLinecap="round" />
                 </svg>
               </div>
               <span className="text-sm font-semibold text-muted-foreground">This is not for you if</span>
