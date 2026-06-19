@@ -9,7 +9,6 @@ import { ServicesSection } from '@/components/services-section'
 import { WhoSection } from '@/components/who-section'
 import { FinalCTA } from '@/components/final-cta'
 import { HomeFAQSection } from '@/components/home-faq-section'
-import { PartnerLogoStrip } from '@/components/partner-logo-strip'
 import { TechStackLogos } from '@/components/tech-stack-logos'
 
 export const metadata: Metadata = {
@@ -97,7 +96,6 @@ export default function HomePage() {
       />
       <Hero />
       <TrustStrip />
-      <PartnerLogoStrip />
       <ProblemSection />
       <WhatWeDo />
       <ApproachSection />
