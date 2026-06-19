@@ -3,9 +3,7 @@ import { calculatorsData, CALCULATOR_CATEGORIES } from '@/lib/calculators'
 
 const companyLinks = [
   { label: 'How We Work', href: '/how-we-work' },
-  { label: 'Work / Case Studies', href: '/work' },
   { label: 'Playbooks', href: '/playbooks' },
-  { label: 'Blog', href: '/blog' },
   { label: 'Tools', href: '/tools' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'Start Diagnostic', href: '/diagnostic' },

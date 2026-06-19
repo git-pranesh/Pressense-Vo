@@ -4,10 +4,8 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const navLinks = [
-  { label: 'Blog', href: '/blog' },
   { label: 'Playbooks', href: '/playbooks' },
   { label: 'Tools', href: '/tools' },
-  { label: 'Work', href: '/work' },
 ]
 
 const servicesColumns = [
