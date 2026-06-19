@@ -77,7 +77,7 @@ export default function AIAutomationAgencyPage() {
         name: 'Is an AI automation agency profitable?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Most clients reclaim 15 to 20 hours per week from repetitive tasks across their team. At an average fully-loaded hourly rate of $50 to $150 per team member, that translates to $3,000 to $12,000 per month in recovered capacity. Projects typically cost $3,000 to $20,000 depending on complexity, giving payback periods of four to eight weeks.',
+          text: 'Yes. Most clients reclaim 15 to 20 hours per week from repetitive tasks across their team. At an average fully-loaded hourly rate of $50 to $150 per team member, that translates to $3,000 to $12,000 per month in recovered capacity. Projects start from $2,000 and typically range to $20,000 depending on complexity, giving payback periods of four to eight weeks.',
         },
       },
       {
