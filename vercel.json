@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/intelligence",
+      "destination": "https://intelligence.pressense.co"
+    },
+    {
+      "source": "/intelligence/:path*",
+      "destination": "https://intelligence.pressense.co/:path*"
+    }
+  ]
+}
