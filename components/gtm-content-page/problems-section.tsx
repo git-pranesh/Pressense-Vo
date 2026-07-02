@@ -47,7 +47,7 @@ export function GtmContentProblemsSection() {
           The questions every founder asks before building a GTM content system
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
-          We have built content systems for B2B SaaS companies from seed stage to Series B. These are the questions that come up in every engagement. We answer them directly here.
+          These are the questions every B2B SaaS founder asks before committing to a content system. We answer them directly here.
         </p>
 
         <div className="space-y-0">
