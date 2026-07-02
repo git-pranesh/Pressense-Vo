@@ -18,7 +18,7 @@ export function GtmSystemsBuilderThreeTracksSection() {
       description:
         'A content system is not a blog. It is an interconnected architecture of topic clusters, comparison pages, use-case pages, and sales enablement pieces, each mapped to a specific buyer stage and a specific keyword intent. The strategy layer defines what to build. The production layer builds it. The distribution layer gets it in front of buyers. The measurement layer connects content to pipeline revenue so you know what is working.',
       body2:
-        'Pressense has built SEO content systems for B2B SaaS companies including Zoho and Pixellu. The approach is the same at every scale: lead with bottom-of-funnel content that converts, layer in educational cluster content that builds authority, and distribute everything through LinkedIn and email so every piece works harder than a single channel allows.',
+        'The approach is the same at every scale: lead with bottom-of-funnel content that converts, because comparison pages and use-case pages generate qualified pipeline faster than top-of-funnel educational content. Layer in cluster content that builds topical authority over time. Distribute everything through LinkedIn and email so every piece works harder than a single channel allows.',
       linkText: 'Learn about SEO content for SaaS',
       linkHref: '/seo-content-for-saas',
     },

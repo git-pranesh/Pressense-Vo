@@ -25,7 +25,7 @@ export function GtmSystemsBuilderHero() {
 
           <div className="border-l-2 border-primary/40 pl-5 mb-10 max-w-2xl">
             <p className="text-base text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">A GTM systems builder</strong> is not a marketing consultant, a developer, or a content agency. It is the combination of all three, applied to the specific problem early-stage B2B founders face: how do you build repeatable pipeline and scalable operations without an enterprise team and an enterprise budget? The answer is systems, not headcount.
+              <strong className="text-foreground">A GTM systems builder</strong> designs, builds, and automates the infrastructure that powers a B2B revenue operation: data enrichment pipelines, signal-based outbound workflows, CRM integrations, and content systems that generate inbound pipeline. Where a GTM consultant defines the strategy and RevOps manages the operating engine, a GTM systems builder builds the machine — the technical layer that executes the strategy at scale without proportional headcount growth.
             </p>
           </div>
 
