@@ -12,11 +12,11 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Build Your MVP on Replit | Production-Grade in 6 Weeks | Pressense',
   description:
-    'Replit MVP development with production standards. From $8K fixed-price. Parameterised queries, tested auth, code you own. Not a vibe-coded prototype — a real product.',
+    'Replit MVP development with production standards. From $3K fixed-price. Parameterised queries, tested auth, code you own. Not a vibe-coded prototype — a real product.',
   openGraph: {
     title: 'Build Your MVP on Replit | Production-Grade in 6 Weeks | Pressense',
     description:
-      'Replit MVP development with production standards. From $8K fixed-price. Parameterised queries, tested auth, code you own. Not a vibe-coded prototype — a real product.',
+      'Replit MVP development with production standards. From $3K fixed-price. Parameterised queries, tested auth, code you own. Not a vibe-coded prototype — a real product.',
     url: '/mvp-development-replit',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Replit MVP Development | Pressense' }],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Build Your MVP on Replit | Production-Grade in 6 Weeks | Pressense',
     description:
-      'Replit MVP development with production standards. From $8K fixed-price. Parameterised queries, tested auth, code you own.',
+      'Replit MVP development with production standards. From $3K fixed-price. Parameterised queries, tested auth, code you own.',
     images: ['/og-image.jpg'],
   },
 }
