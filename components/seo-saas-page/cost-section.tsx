@@ -3,7 +3,7 @@ export function SeoSaasCostSection() {
     {
       name: 'Content Foundation',
       timeline: 'Weeks 1–8',
-      price: 'From $6,000',
+      price: 'From $2,000',
       note: 'Fixed deliverable',
       features: [
         'Content audit of existing pages',
@@ -19,7 +19,7 @@ export function SeoSaasCostSection() {
     {
       name: 'Content Programme',
       timeline: 'Monthly retainer',
-      price: 'From $3,500/mo',
+      price: 'From $1,500/mo',
       note: 'Ongoing production',
       features: [
         'Everything in Content Foundation (first month)',
@@ -60,7 +60,7 @@ export function SeoSaasCostSection() {
           How much does a B2B SaaS SEO content programme cost?
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
-          A content foundation build starts from $6,000 for a defined set of deliverables. Ongoing monthly production starts from $3,500 per month. Every engagement begins with a diagnostic session that defines the content gaps, the buyer-journey priorities, and the fixed-price scope before any content is produced.
+          A content foundation build starts from $2,000 for a defined set of deliverables. Ongoing monthly production starts from $1,500 per month. Every engagement begins with a diagnostic session that defines the content gaps, the buyer-journey priorities, and the fixed-price scope before any content is produced.
         </p>
         <p className="text-base text-muted-foreground leading-relaxed mb-14 max-w-2xl">
           The right question is not "how much does SEO content cost?" but "which content types will generate pipeline fastest given our current domain authority and ICP?" We answer that question in the diagnostic before you commit to anything.

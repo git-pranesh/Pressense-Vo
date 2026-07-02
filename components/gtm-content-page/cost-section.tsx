@@ -3,7 +3,7 @@ export function GtmContentCostSection() {
     {
       name: 'System Design',
       timeline: 'Weeks 1–3',
-      price: 'From $4,000',
+      price: 'From $2,500',
       note: 'Fixed deliverable',
       features: [
         'ICP definition and positioning statement',
@@ -18,7 +18,7 @@ export function GtmContentCostSection() {
     {
       name: 'System Build and Operate',
       timeline: 'Monthly retainer',
-      price: 'From $5,500/mo',
+      price: 'From $2,000/mo',
       note: 'Design + production',
       features: [
         'Everything in System Design (month one)',
@@ -36,7 +36,7 @@ export function GtmContentCostSection() {
     {
       name: 'Content System Audit',
       timeline: 'One-time',
-      price: 'From $2,500',
+      price: 'From $1,500',
       note: 'Fixed deliverable',
       features: [
         'Full audit of existing content, distribution, and CRM attribution',
@@ -60,7 +60,7 @@ export function GtmContentCostSection() {
           What does a GTM content system cost?
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
-          A full GTM content system design and operation starts from $5,500 per month. The first month covers the system design: ICP, positioning, architecture, and the first content cluster. Subsequent months run the operational cadence. A system design as a standalone fixed deliverable starts from $4,000.
+          A full GTM content system design and operation starts from $2,000 per month. The first month covers the system design: ICP, positioning, architecture, and the first content cluster. Subsequent months run the operational cadence. A system design as a standalone fixed deliverable starts from $2,500.
         </p>
         <p className="text-base text-muted-foreground leading-relaxed mb-14 max-w-2xl">
           Every engagement begins with a diagnostic session that reviews your current pipeline, content, and positioning, then defines the engagement scope and fixed cost before any work starts. There is no commitment required from the diagnostic.

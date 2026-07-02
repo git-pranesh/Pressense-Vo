@@ -3,7 +3,7 @@ export function MvpReplitCostSection() {
     {
       name: 'Replit MVP Build',
       timeline: 'Weeks 1–6',
-      price: 'From $8,000',
+      price: 'From $3,000',
       note: 'Fixed-price build',
       features: [
         'Core value loop (1 primary user journey)',
@@ -19,7 +19,7 @@ export function MvpReplitCostSection() {
     {
       name: 'Replit MVP Plus',
       timeline: 'Weeks 1–10',
-      price: 'From $18,000',
+      price: 'From $5,000',
       note: 'Fixed-price build',
       features: [
         'Everything in Replit MVP Build',
@@ -36,7 +36,7 @@ export function MvpReplitCostSection() {
     {
       name: 'Replit Sprint Retainer',
       timeline: 'After initial build',
-      price: 'From $3,500/mo',
+      price: 'From $1,500/mo',
       note: 'Monthly sprint retainer',
       features: [
         'One two-week development sprint per month',
@@ -59,7 +59,7 @@ export function MvpReplitCostSection() {
           How much does it cost to build an MVP on Replit?
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
-          Replit MVP development with Pressense starts from $8,000 for a focused six-week build. Replit and AI-assisted development have compressed the cost of a production-grade MVP significantly: a build that would have cost $80,000 with a traditional agency in 2022 now costs $8,000 to $18,000.
+          Replit MVP development with Pressense starts from $3,000 for a focused six-week build. Replit and AI-assisted development have compressed the cost of a production-grade MVP significantly: a build that would have cost $50,000 with a traditional agency in 2022 now starts at $3,000 to $5,000.
         </p>
         <p className="text-base text-muted-foreground leading-relaxed mb-14 max-w-2xl">
           The right question is not "how much does a Replit MVP cost?" but "what is the minimum scope that proves the core hypothesis?" Every engagement starts with a fixed-price estimate from the diagnostic session. No surprises.
