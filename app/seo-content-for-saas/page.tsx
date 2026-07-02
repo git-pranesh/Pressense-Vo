@@ -4,6 +4,7 @@ import { SeoSaasHero } from '@/components/seo-saas-page/hero'
 import { SeoSaasWhoItsForSection } from '@/components/seo-saas-page/who-its-for-section'
 import { SeoSaasProblemsSection } from '@/components/seo-saas-page/problems-section'
 import { SeoSaasMethodologySection } from '@/components/seo-saas-page/methodology-section'
+import { SeoSaasCostSection } from '@/components/seo-saas-page/cost-section'
 import { SeoSaasWhatWeBuildSection } from '@/components/seo-saas-page/what-we-build-section'
 import { SeoSaasFaqSection } from '@/components/seo-saas-page/faq-section'
 import type { Metadata } from 'next'
@@ -148,6 +149,7 @@ export default function SeoContentForSaasPage() {
         <SeoSaasWhoItsForSection />
         <SeoSaasProblemsSection />
         <SeoSaasMethodologySection />
+        <SeoSaasCostSection />
         <SeoSaasWhatWeBuildSection />
         <SeoSaasFaqSection />
         <FinalCTA />

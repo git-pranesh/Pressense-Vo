@@ -4,6 +4,7 @@ import { MvpReplitHero } from '@/components/mvp-replit-page/hero'
 import { MvpReplitWhoItsForSection } from '@/components/mvp-replit-page/who-its-for-section'
 import { MvpReplitProblemsSection } from '@/components/mvp-replit-page/problems-section'
 import { MvpReplitMethodologySection } from '@/components/mvp-replit-page/methodology-section'
+import { MvpReplitCostSection } from '@/components/mvp-replit-page/cost-section'
 import { MvpReplitWhatYouGetSection } from '@/components/mvp-replit-page/what-you-get-section'
 import { MvpReplitFaqSection } from '@/components/mvp-replit-page/faq-section'
 import type { Metadata } from 'next'
@@ -174,6 +175,7 @@ export default function MvpDevelopmentReplitPage() {
         <MvpReplitWhoItsForSection />
         <MvpReplitProblemsSection />
         <MvpReplitMethodologySection />
+        <MvpReplitCostSection />
         <MvpReplitWhatYouGetSection />
         <MvpReplitFaqSection />
         <FinalCTA />

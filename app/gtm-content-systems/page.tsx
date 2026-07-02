@@ -1,8 +1,10 @@
 import { StructuredData } from '@/components/structured-data'
 import { FinalCTA } from '@/components/final-cta'
 import { GtmContentHero } from '@/components/gtm-content-page/hero'
+import { GtmContentWhoItsForSection } from '@/components/gtm-content-page/who-its-for-section'
 import { GtmContentProblemsSection } from '@/components/gtm-content-page/problems-section'
 import { GtmContentMethodologySection } from '@/components/gtm-content-page/methodology-section'
+import { GtmContentCostSection } from '@/components/gtm-content-page/cost-section'
 import { GtmContentSystemIncludesSection } from '@/components/gtm-content-page/system-includes-section'
 import { GtmContentFaqSection } from '@/components/gtm-content-page/faq-section'
 import type { Metadata } from 'next'
@@ -144,8 +146,10 @@ export default function GtmContentSystemsPage() {
 
       <main className="min-h-screen">
         <GtmContentHero />
+        <GtmContentWhoItsForSection />
         <GtmContentProblemsSection />
         <GtmContentMethodologySection />
+        <GtmContentCostSection />
         <GtmContentSystemIncludesSection />
         <GtmContentFaqSection />
         <FinalCTA />
