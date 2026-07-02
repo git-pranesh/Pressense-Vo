@@ -12,7 +12,7 @@ export function SeoSaasProblemsSection() {
       body1:
         'Topical authority does not come from publishing frequency. It comes from depth and coverage. Google and AI engines assess whether a site covers a topic comprehensively: every major subtopic, every common question, every adjacent concept. A content programme that publishes two substantive pieces per month that each cover a topic thoroughly builds more authority than one that publishes five thin posts per week.',
       body2:
-        'The approach is a topic cluster model: one pillar page that defines your core category, supported by eight to twelve cluster articles that cover every subtopic and long-tail variation. Each cluster article links back to the pillar and forward to adjacent clusters. This creates an interlocking content architecture that signals depth to search engines rather than a disconnected blog archive that signals nothing. Pixellu, a photography workflow SaaS, used this approach to build sustained organic growth in a competitive market. The principle is the same regardless of category.',
+        'The approach is a topic cluster model: one pillar page that defines your core category, supported by eight to twelve cluster articles that cover every subtopic and long-tail variation. Each cluster article links back to the pillar and forward to adjacent clusters. This creates an interlocking content architecture that signals depth to search engines rather than a disconnected blog archive that signals nothing. A B2B SaaS company can build category authority in a competitive market using this model because the structure matters more than the publishing volume.',
     },
     {
       heading: 'How do we write content that gets cited by ChatGPT and Perplexity?',
