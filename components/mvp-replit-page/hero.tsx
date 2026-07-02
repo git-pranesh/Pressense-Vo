@@ -25,7 +25,7 @@ export function MvpReplitHero() {
 
           <div className="border-l-2 border-primary/40 pl-5 mb-10 max-w-2xl">
             <p className="text-base text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">MVP development on Replit</strong> means building a fully functional, production-ready product using Replit as the cloud development and deployment platform. The output is standard TypeScript on a real PostgreSQL database, deployable anywhere, owned entirely by you. Not a prototype. Not a vibe-coded proof of concept. A product you can take to investors, early users, or a technical co-founder without rewriting it first.
+              <strong className="text-foreground">MVP development on Replit</strong> means using Replit Agent to build, test, and deploy a working product from natural language prompts, with human oversight applied at the points that matter: database architecture, authentication, parameterised queries, and production configuration. Replit handles the scaffolding. A developer handles the decisions that determine whether it survives real users.
             </p>
           </div>
 
@@ -36,12 +36,12 @@ export function MvpReplitHero() {
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
             <div>
-              <p className="text-2xl font-semibold text-foreground">From $8K</p>
+              <p className="text-2xl font-semibold text-foreground">From $3K</p>
               <p className="text-xs text-muted-foreground uppercase tracking-wide">fixed-price Replit build</p>
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
             <div>
-              <p className="text-2xl font-semibold text-foreground">100% yours</p>
+              <p className="text-2xl font-semibold text-foreground">You own it</p>
               <p className="text-xs text-muted-foreground uppercase tracking-wide">No vendor lock-in</p>
             </div>
           </div>
@@ -57,10 +57,10 @@ export function MvpReplitHero() {
               </svg>
             </a>
             <a
-              href="#what-you-get"
+              href="#cost"
               className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
             >
-              See what you get
+              See pricing
             </a>
           </div>
         </div>

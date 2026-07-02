@@ -7,7 +7,7 @@ const faqs = [
   {
     question: 'How much does it cost to build an MVP on Replit?',
     answer:
-      'Replit MVP builds with Pressense start from $8,000 for a focused single-journey product and scale based on the number of user journeys, integrations, and data model complexity. Replit and AI-assisted development have reduced the cost of a production-grade MVP significantly compared to traditional agency rates. A six-week Replit build that would have cost $80,000 with a traditional agency in 2022 now costs $8,000 to $25,000. Every engagement starts with a fixed-price estimate from the diagnostic session before any work begins.',
+      'Replit MVP builds with Pressense start from $3,000 for a focused single-journey product and scale based on the number of user journeys, integrations, and data model complexity. Replit and AI-assisted development have reduced the cost of a production-grade MVP significantly compared to traditional agency rates. A six-week Replit build that would have cost $50,000 with a traditional agency in 2022 now starts at $3,000 to $5,000. Every engagement starts with a fixed-price estimate from the diagnostic session before any work begins.',
   },
   {
     question: 'What is vibe coding and why is it not enough for a production MVP?',
