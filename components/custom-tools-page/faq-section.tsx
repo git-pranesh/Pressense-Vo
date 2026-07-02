@@ -6,7 +6,7 @@ const customToolsFAQs = [
     question: 'What are custom internal tools?',
     answer: (
       <>
-        Custom internal tools are business applications built for internal workflows such as approvals, dashboards, lead tracking, onboarding, reporting, field operations, vendor management, inventory, finance, and team coordination. They are built around how the business actually runs.
+        Custom internal tools are purpose-built software applications designed for your organisation&apos;s specific workflows, replacing the manual processes, spreadsheets, and patchwork of off-the-shelf SaaS products that most growing businesses accumulate. Unlike commercial SaaS, you own the code and the data. There is no vendor lock-in and no per-seat pricing that scales with your team. Common examples include approvals, dashboards, lead tracking, onboarding, reporting, field operations, vendor management, inventory, finance, and team coordination — built around how your business actually runs rather than a generic template.
       </>
     ),
   },
