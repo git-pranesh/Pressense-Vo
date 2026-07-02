@@ -1,9 +1,9 @@
-export function MvpReplitHero() {
+export function GtmContentHero() {
   return (
     <section
       id="hero"
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
-      aria-label="MVP development on Replit"
+      aria-label="GTM content systems for B2B SaaS"
     >
       <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
@@ -11,38 +11,38 @@ export function MvpReplitHero() {
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
             <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
-              Solutions / Replit MVP Development
+              Solutions / GTM Content Systems
             </span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
-            Build Your MVP on Replit: From Idea to Live Product in 6 Weeks
+            GTM Content Systems: From Founder-Led Heroics to Repeatable Pipeline
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-6">
-            You found Replit. You know it can move fast. What most founders discover the hard way is that speed without structure produces a demo that breaks when real users arrive. We build production-grade MVPs on Replit: proper auth, real database, code you own from commit one.
+            Most early-stage B2B SaaS companies generate their first pipeline through founder hustle: personal network, warm intros, a few LinkedIn posts that hit. That works until it does not. When you need predictable, repeatable revenue that does not depend on the founder showing up every week, you need a GTM content system, not a content calendar.
           </p>
 
           <div className="border-l-2 border-primary/40 pl-5 mb-10 max-w-2xl">
             <p className="text-base text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">MVP development on Replit</strong> means building a fully functional, production-ready product using Replit as the cloud development and deployment platform. The output is standard TypeScript on a real PostgreSQL database, deployable anywhere, owned entirely by you. Not a prototype. Not a vibe-coded proof of concept. A product you can take to investors, early users, or a technical co-founder without rewriting it first.
+              <strong className="text-foreground">A GTM content system</strong> is the architecture that connects your positioning, content production, distribution channels, and CRM into a single repeatable motion. Every piece of content has a defined job at a specific stage of the buyer journey. Every distribution channel has a cadence. Every lead that comes through content is tagged, tracked, and followed up. The system runs without heroics. It compounds without constant intervention.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-x-8 gap-y-3 mb-10">
             <div>
-              <p className="text-2xl font-semibold text-foreground">6 weeks</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">to live product</p>
+              <p className="text-2xl font-semibold text-foreground">4–6 weeks</p>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide">system design to live</p>
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
             <div>
-              <p className="text-2xl font-semibold text-foreground">From $8K</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">fixed-price Replit build</p>
+              <p className="text-2xl font-semibold text-foreground">One motion</p>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide">strategy + content + distribution</p>
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
             <div>
-              <p className="text-2xl font-semibold text-foreground">100% yours</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">No vendor lock-in</p>
+              <p className="text-2xl font-semibold text-foreground">Compounds</p>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide">paid ads stop, this does not</p>
             </div>
           </div>
 
@@ -57,10 +57,10 @@ export function MvpReplitHero() {
               </svg>
             </a>
             <a
-              href="#what-you-get"
+              href="#how-it-works"
               className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
             >
-              See what you get
+              See how it works
             </a>
           </div>
         </div>

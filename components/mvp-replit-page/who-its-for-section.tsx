@@ -1,42 +1,42 @@
 export function MvpReplitWhoItsForSection() {
   const rightFor = [
     {
-      title: 'You started building on Replit and got stuck',
+      title: 'You want to build on Replit but need production standards',
       description:
-        'You have a working prototype. Maybe Replit Agent wrote most of it. It runs fine in the demo but falls apart when real users touch it. We audit what you have, keep what is good, and rebuild what is not.',
+        'Replit Agent is fast. It can scaffold a full-stack app in minutes. What it cannot do is make architectural decisions: whether to use a session-based or JWT auth pattern, how to scope database access by user role, when a third-party SDK is safer than hand-rolling an integration. You want Replit speed with developer judgement applied to the choices that matter.',
     },
     {
-      title: 'You are a non-technical founder who wants to avoid a $150K agency',
+      title: 'You have tried vibe coding and the codebase is becoming a liability',
       description:
-        'Traditional agencies charge enterprise rates for non-enterprise needs. Replit makes production-grade builds affordable for early-stage companies. You get real software, not a mockup, at a price that makes sense before Series A.',
+        'Most vibe-coded MVPs hit the same wall at week six. The initial scaffolding works. Then you add a feature. Then another. Then something breaks and nobody knows why. The code has no structure, no error handling, and no tests. You need someone to stabilise what exists and build the next phase with discipline.',
     },
     {
-      title: 'You need a live product before your next investor conversation',
+      title: 'You want a live product for investors or early users within two months',
       description:
-        'A Figma prototype gets you a first meeting. A working SaaS product on a real domain with real users signing up is what closes a pre-seed or seed round. We build the latter in six weeks.',
+        'A Figma mockup gets you the first conversation. A live, working product closes the round or signs the first customer. If you need something real with a sign-up flow, working data, and at least one complete user journey, six weeks on Replit is achievable without compromising on code quality.',
     },
     {
-      title: 'You want to own the code, not rent a no-code platform',
+      title: 'You want to own the code and stay on Replit long term',
       description:
-        'No-code tools are fast to start and painful to grow past. When you outgrow Bubble or Webflow, you rebuild from scratch. Owning a Replit codebase means you can hand it to any developer and keep building.',
+        'Some founders want to migrate to AWS once the MVP is done. Others want to stay on Replit because it is fast, affordable, and easy for a small team to manage. Either path works. The codebase we write is standard TypeScript and PostgreSQL. It runs on Replit today and moves anywhere tomorrow without a rewrite.',
     },
   ]
 
   const notFor = [
     {
-      title: 'You have not spoken to a single potential user yet',
+      title: 'Your idea is still a vague concept with no user validation',
       description:
-        'Building before validating the problem is the most expensive mistake in early-stage startups. If you have not confirmed that the pain is real and acute enough to pay for, validate first. Build second.',
+        'Six weeks of development on an unvalidated idea produces an expensive experiment. Before any code, you need five to ten real conversations with potential users that confirm the problem is painful enough to pay to solve. We review your validation evidence in the diagnostic session before quoting.',
     },
     {
-      title: 'You need the product live in under three weeks',
+      title: 'You need regulated compliance on day one',
       description:
-        'Six weeks is already fast. Under three weeks requires existing architecture, pre-built design systems, and zero scope changes during the build. We do not take that brief because the output quality suffers and you end up rebuilding it.',
+        'HIPAA, SOC 2, and PCI compliance are real infrastructure requirements, not checkbox items. If your launch requires certification before you can sign a single user, the timeline and cost structure of this engagement will not fit. Those builds take three to six months regardless of how good the underlying code is.',
     },
     {
-      title: 'You need enterprise compliance from day one',
+      title: 'You want enterprise-level team features from the first sprint',
       description:
-        'SOC 2, HIPAA, and ISO 27001 certification take months and significant investment regardless of platform. If regulated compliance is a hard launch requirement, this is not the right engagement.',
+        'Multi-tenant architectures with granular permission systems, audit logs, and SSO are not MVP scope. If your day-one user base is enterprise IT teams who require all of the above before they will test the product, the MVP framing is wrong. Start with a single-tenant build that validates the core value first.',
     },
   ]
 
@@ -47,10 +47,10 @@ export function MvpReplitWhoItsForSection() {
           Right Fit
         </p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
-          Who this is right for
+          Who this Replit MVP build is right for
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
-          MVP development on Replit works best when the problem is validated, you have started building, and you need someone to take it the rest of the way. It is not for everyone, and we are honest about that.
+          This engagement works for founders who have chosen Replit as their platform and want a production-grade product at the end of it, not a demo that breaks under real user load.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-16">
@@ -72,8 +72,8 @@ export function MvpReplitWhoItsForSection() {
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
             Honest Disqualifiers
           </p>
-          <h3 className="text-2xl font-semibold text-foreground text-balance mb-10 leading-tight">
-            When this is not the right fit
+          <h3 className="text-2xl font-semibold text-foreground text-balance mb-10">
+            This is not right for you if...
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {notFor.map((item) => (
@@ -81,10 +81,7 @@ export function MvpReplitWhoItsForSection() {
                 key={item.title}
                 className="p-6 rounded-2xl border border-border/30 bg-secondary/20"
               >
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50 flex-shrink-0" />
-                  <h4 className="text-base font-semibold text-foreground">{item.title}</h4>
-                </div>
+                <h4 className="text-base font-semibold text-foreground mb-3">{item.title}</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
             ))}

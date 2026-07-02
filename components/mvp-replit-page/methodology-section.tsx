@@ -2,49 +2,49 @@ export function MvpReplitMethodologySection() {
   const phases = [
     {
       number: '01',
-      name: 'Audit',
-      tagline: 'Know exactly what you have before writing a single line',
+      name: 'Diagnose',
+      tagline: 'Define the value loop before touching Replit',
       description:
-        'Week one is a structured codebase review. We go through every file the Agent wrote: the data model, the auth flow, the API structure, the environment configuration, and how secrets are handled. We flag what is salvageable and what needs to be rebuilt. You get a written audit report, a clear build plan, and a fixed-price estimate. Nothing starts until you have agreed to the scope.',
-      deliverable: 'Audit report + build plan + fixed-price estimate',
+        'Week one is a structured scoping session. We define the primary value loop: the single user action that tests your core hypothesis. We review your validation evidence, map the minimum feature set, and cut anything that does not directly support the loop. You receive a scope document, a cut features list, and a fixed-price build estimate before the project starts. Nothing is ambiguous.',
+      deliverable: 'Scope document + cut list + fixed-price estimate',
     },
     {
       number: '02',
-      name: 'Architecture',
-      tagline: 'Design the system before building it',
+      name: 'Architect',
+      tagline: 'Design the data model and Replit project structure',
       description:
-        'Week two is architecture. We design the database schema, the authentication flow, the API structure, and the environment setup. We configure separate development, staging, and production environments. Auth uses a proven library, not custom code. The database uses Neon PostgreSQL with parameterised queries throughout. Secrets are stored in environment variables, never in source files. This week produces the blueprint every subsequent sprint builds from.',
-      deliverable: 'Architecture document + environment setup + auth configured',
+        'Week two covers architecture. We design the PostgreSQL schema, map the key user journeys, specify the integration points, and set up the Replit project in your account with the correct environment structure. We configure secrets management, set up the production deployment pipeline, and establish the code conventions that will govern the entire build. The project is owned by you from commit one.',
+      deliverable: 'Replit project setup + database schema + integration spec',
     },
     {
       number: '03',
       name: 'Build',
-      tagline: 'Ship the core user journey in production-grade sprints',
+      tagline: 'Two-week sprints with live deployments every cycle',
       description:
-        'Weeks three through five are focused build sprints. Each sprint ends with working, deployable software on the staging environment. We build the primary value loop first: the single workflow a user completes that tests your core hypothesis. Payments, integrations, and secondary journeys are layered in order of priority. Every feature is built with error handling, input validation, and proper database queries from the first commit, not added at the end.',
-      deliverable: 'Production-grade MVP on your Replit account with core user journey live',
+        'Weeks three and four are sprint one. Authentication, the primary data model, and the core user journey are built and deployed to production, not a demo environment. Real users can access it. Week five and six are sprint two: integrations, secondary flows, admin access, and end-to-end testing. We deploy early because production feedback is worth more than demo feedback. Every production build on Replit uses parameterised queries, environment-variable-managed secrets, a tested auth library, and role-scoped data access from the first sprint.',
+      deliverable: 'Live MVP on Replit with core value loop complete',
     },
     {
       number: '04',
-      name: 'Launch',
-      tagline: 'Deploy, hand over, and set you up to keep building',
+      name: 'Stabilise',
+      tagline: 'Harden the codebase and hand over cleanly',
       description:
-        'Week six is stabilisation, launch, and handover. We configure your custom domain, SSL, and basic monitoring. We run a final security pass, deploy to production, and document the codebase so you or any future developer can understand it without asking us. Optionally, we can layer in a GTM kickoff: ICP definition, early channel strategy, and a 90-day content or outreach plan. You leave week six with a live product and a clear path forward.',
-      deliverable: 'Live production product + handover docs + optional GTM kickoff',
+        'Week six ends with a stabilisation pass: anything the first real users flag gets fixed, the one or two secondary features that testing reveals as essential get added, and analytics are configured so you track the behaviour that matters. The handover session covers the architecture, deployment process, database structure, and integration points. Every environment variable is documented. The codebase is yours to run, iterate, or migrate without Pressense in the loop.',
+      deliverable: 'Hardened live product + documentation + handover session',
     },
   ]
 
   return (
-    <section id="how-we-work" className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
           How We Work
         </p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
-          How long does Replit MVP development take? The 6-week process
+          How we build your Replit MVP: the 6-week process
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
-          Six weeks is a structured process, not a marketing number. One week of audit, one week of architecture, three weeks of build sprints, one week of stabilisation and launch. Every phase ends with a named deliverable you can hold us to.
+          Six weeks is achievable because the scope is locked before development starts. One week of scoping, one week of architecture, four weeks of two-sprint builds. Every phase ends with a named deliverable and a live deployment.
         </p>
 
         <div className="space-y-0">
@@ -56,15 +56,18 @@ export function MvpReplitMethodologySection() {
               }`}
             >
               <div className="md:w-48 flex-shrink-0">
-                <span className="text-4xl font-bold text-primary/20 font-mono block mb-1">{phase.number}</span>
-                <span className="text-base font-semibold text-foreground block">{phase.name}</span>
+                <span className="text-4xl font-bold text-primary/20 leading-none block mb-1">
+                  {phase.number}
+                </span>
+                <h3 className="text-xl font-semibold text-foreground">{phase.name}</h3>
+                <p className="text-sm text-muted-foreground mt-1">{phase.tagline}</p>
               </div>
+
               <div className="flex-1">
-                <p className="text-sm font-medium text-primary/80 uppercase tracking-wider mb-2">{phase.tagline}</p>
-                <p className="text-base text-muted-foreground leading-relaxed mb-4">{phase.description}</p>
-                <div className="inline-flex items-center gap-2 text-sm text-foreground/70 bg-secondary/40 rounded-lg px-3 py-1.5">
-                  <div className="w-1 h-1 rounded-full bg-primary/60 flex-shrink-0" aria-hidden="true" />
-                  <span>{phase.deliverable}</span>
+                <p className="text-muted-foreground leading-relaxed mb-5">{phase.description}</p>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/20">
+                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">Deliverable</span>
+                  <span className="text-xs text-foreground">{phase.deliverable}</span>
                 </div>
               </div>
             </div>

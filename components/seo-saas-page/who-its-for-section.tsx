@@ -1,42 +1,42 @@
 export function SeoSaasWhoItsForSection() {
   const rightFor = [
     {
-      title: 'Post-funding SaaS companies who need to own a search channel',
+      title: 'You have recently closed a seed or Series A round',
       description:
-        'You have raised a seed or Series A round. Paid ads are running but the cost per acquisition is high and ownership is zero. SEO is how you build a channel that compounds month over month. The right time to start is six months ago. The second best time is now.',
+        'Post-funding, investors expect you to start building the acquisition channels that reduce CAC over time. Paid ads scale quickly and stop the moment you pause spend. Organic search compounds. The founders who start their SEO content programme in the first quarter after funding are the ones who have meaningful organic pipeline by month twelve. The founders who wait until month nine are starting from scratch when the board asks about channel diversification.',
     },
     {
-      title: 'B2B SaaS founders who know their ICP but have no content presence',
+      title: 'Your sales team is closing deals but organic is zero',
       description:
-        'Your buyers are searching for your category every day. If you are not in the results, your competitor is. We build the content architecture that puts you in front of the right buyer at the right moment, before they have made a decision.',
+        'Outbound works. Founder network deals close. But every deal that comes through organic search or referral is structurally cheaper and faster to close than one that started with a cold sequence. If your organic channel is generating fewer than ten qualified trials per month, it is not working as a channel. We build the content architecture that changes that within ninety days.',
     },
     {
-      title: 'Technical SaaS products with buyers who do deep research before buying',
+      title: 'You have published content but rankings are not converting',
       description:
-        'Enterprise and mid-market buyers read extensively before talking to sales. Documentation, integration guides, comparison pages, and use-case content are not marketing fluff. They are the reason buyers shortlist you or skip you.',
+        'Traffic without conversion is a content strategy problem, not a traffic problem. Most SaaS content programmes produce top-of-funnel educational posts that attract people researching a problem rather than evaluating a solution. The missing layer is bottom-of-funnel content: comparison pages, alternative pages, integration guides, and use-case pages that capture buyers who are ready to evaluate. We audit what exists and build what is missing.',
     },
     {
-      title: 'Companies that tried content before and got traffic but no pipeline',
+      title: 'You need content that works for both Google and AI search',
       description:
-        'Vanity metrics are easy to produce and useless to the business. If you published content, got traffic, and saw no conversions, the problem is almost always keyword intent. You were ranking for research queries, not buyer queries. We fix the architecture, not just the writing.',
+        'ChatGPT, Perplexity, and Google AI Overviews are changing how buyers research software. Content that ranks in 2025 needs to be structured for AI citation as well as traditional search. That means clear question-answer structure, defined entity relationships, and specific claims backed by detail rather than vague assertions. We write for both citation surfaces simultaneously.',
     },
   ]
 
   const notFor = [
     {
-      title: 'You are pre-product or pre-ICP',
+      title: 'You want to rank for high-volume keywords with no buyer intent',
       description:
-        'SEO requires knowing who you are writing for and what problem they are searching to solve. If you are still iterating on the product or the positioning, content investment is premature.',
+        'Traffic from informational keywords is not a business outcome. If the brief is "we want to rank for terms with 10,000 searches a month" with no mapping to buyer stage, the content will generate sessions that do not convert. We build content connected to pipeline, not content connected to dashboards.',
     },
     {
-      title: 'You need results within 30 days',
+      title: 'You need a content agency that publishes four posts a week at scale',
       description:
-        'Organic content takes two to six months to reach page one for low-competition keywords. Longer for competitive terms. If you need leads this month, paid search is the right channel. We work alongside paid, not as a replacement for it.',
+        'We do not operate a content mill. The value Pressense brings is strategic content built for topical authority and buyer intent, not volume. If the goal is high-frequency publishing with low strategic overhead, we are not the right fit. If the goal is fewer, higher-quality pieces that each do a specific job in the buyer journey, we are.',
     },
     {
-      title: 'You want high-volume generic content',
+      title: 'You are pre-product-market fit',
       description:
-        'We do not produce content at scale for the sake of it. Every piece we write has a defined job: a specific keyword, a specific buyer stage, a specific conversion path. Volume without strategy is wasted budget.',
+        'SEO content takes three to six months to show meaningful returns. If you are still iterating your ICP or core value proposition, investing in content before those fundamentals are settled means the content you publish will need to be rewritten when the positioning changes. Get PMF first. Then build the content system.',
     },
   ]
 
@@ -47,10 +47,10 @@ export function SeoSaasWhoItsForSection() {
           Right Fit
         </p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
-          Who this is right for
+          Who this SEO content programme is built for
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
-          SEO content for SaaS works when the product is defined, the buyer is known, and there is a commitment to building an organic channel over a 6 to 12 month horizon. It does not work as a quick fix.
+          This is not a generic content service. It is a B2B SaaS-specific engagement for companies that have product-market fit and are ready to build organic acquisition as a serious channel.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-16">
@@ -72,8 +72,8 @@ export function SeoSaasWhoItsForSection() {
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
             Honest Disqualifiers
           </p>
-          <h3 className="text-2xl font-semibold text-foreground text-balance mb-10 leading-tight">
-            When this is not the right fit
+          <h3 className="text-2xl font-semibold text-foreground text-balance mb-10">
+            This is not right for you if...
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {notFor.map((item) => (
@@ -81,10 +81,7 @@ export function SeoSaasWhoItsForSection() {
                 key={item.title}
                 className="p-6 rounded-2xl border border-border/30 bg-secondary/20"
               >
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50 flex-shrink-0" />
-                  <h4 className="text-base font-semibold text-foreground">{item.title}</h4>
-                </div>
+                <h4 className="text-base font-semibold text-foreground mb-3">{item.title}</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
             ))}

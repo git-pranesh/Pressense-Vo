@@ -1,33 +1,33 @@
-import type { Metadata } from 'next'
 import { StructuredData } from '@/components/structured-data'
+import { FinalCTA } from '@/components/final-cta'
 import { MvpReplitHero } from '@/components/mvp-replit-page/hero'
 import { MvpReplitWhoItsForSection } from '@/components/mvp-replit-page/who-its-for-section'
 import { MvpReplitProblemsSection } from '@/components/mvp-replit-page/problems-section'
 import { MvpReplitMethodologySection } from '@/components/mvp-replit-page/methodology-section'
 import { MvpReplitWhatYouGetSection } from '@/components/mvp-replit-page/what-you-get-section'
 import { MvpReplitFaqSection } from '@/components/mvp-replit-page/faq-section'
-import { FinalCTA } from '@/components/final-cta'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'MVP Development on Replit: Build a Production SaaS in 6 Weeks | Pressense',
+  title: 'Build Your MVP on Replit | Production-Grade in 6 Weeks | Pressense',
   description:
-    'Pressense builds production-grade MVPs on Replit for founders who have outgrown vibe coding. From $3,500. Auth, database, security, and deployment built right from day one. You own the code.',
+    'Replit MVP development with production standards. From $8K fixed-price. Parameterised queries, tested auth, code you own. Not a vibe-coded prototype — a real product.',
   openGraph: {
-    title: 'MVP Development on Replit: Build a Production SaaS in 6 Weeks | Pressense',
+    title: 'Build Your MVP on Replit | Production-Grade in 6 Weeks | Pressense',
     description:
-      'Pressense builds production-grade MVPs on Replit for founders who have outgrown vibe coding. From $3,500. Auth, database, security, and deployment built right from day one. You own the code.',
+      'Replit MVP development with production standards. From $8K fixed-price. Parameterised queries, tested auth, code you own. Not a vibe-coded prototype — a real product.',
     url: '/mvp-development-replit',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense MVP Development on Replit' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Replit MVP Development | Pressense' }],
   },
   alternates: {
     canonical: '/mvp-development-replit',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MVP Development on Replit: Build a Production SaaS in 6 Weeks | Pressense',
+    title: 'Build Your MVP on Replit | Production-Grade in 6 Weeks | Pressense',
     description:
-      'Pressense builds production-grade MVPs on Replit for founders who have outgrown vibe coding. From $3,500. Auth, database, security, and deployment built right from day one.',
+      'Replit MVP development with production standards. From $8K fixed-price. Parameterised queries, tested auth, code you own.',
     images: ['/og-image.jpg'],
   },
 }
@@ -36,51 +36,39 @@ export default function MvpDevelopmentReplitPage() {
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'MVP Development on Replit',
+    name: 'Replit MVP Development',
     provider: {
       '@type': 'Organization',
       name: 'Pressense',
       url: 'https://www.pressense.co',
     },
     description:
-      'Pressense builds production-grade MVPs on Replit for founders who have started vibe coding and need professional development to complete the build. Fixed-price engagements from $3,500.',
+      'Pressense builds production-grade MVPs on Replit in 6 weeks. Fixed-price engagements starting from $8,000. TypeScript, Next.js, PostgreSQL. Founders own the code from the first commit.',
     url: 'https://www.pressense.co/mvp-development-replit',
     areaServed: 'Worldwide',
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Replit MVP Development Packages',
+      name: 'Replit MVP Packages',
       itemListElement: [
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Replit Prototype Refactor',
-            description: 'Audit and refactor of an existing Replit Agent prototype into a production-grade codebase. Two to three weeks.',
+            name: 'Replit MVP Build',
+            description: 'Core value loop, auth, 2-3 integrations, production-grade Replit deployment in 6 weeks.',
           },
-          price: '3500',
+          price: '8000',
           priceCurrency: 'USD',
-          priceSpecification: {
-            '@type': 'UnitPriceSpecification',
-            price: '3500',
-            priceCurrency: 'USD',
-            unitText: 'fixed-price from',
-          },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Replit MVP Greenfield',
-            description: 'Full MVP build from scratch on Replit with auth, payments, admin dashboard, and production deployment. Six weeks.',
+            name: 'Replit MVP + Retainer',
+            description: 'Monthly sprint retainer for ongoing feature iteration after the initial build.',
           },
-          price: '5000',
+          price: '3500',
           priceCurrency: 'USD',
-          priceSpecification: {
-            '@type': 'UnitPriceSpecification',
-            price: '5000',
-            priceCurrency: 'USD',
-            unitText: 'fixed-price from',
-          },
         },
       ],
     },
@@ -99,12 +87,6 @@ export default function MvpDevelopmentReplitPage() {
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Services',
-        item: 'https://www.pressense.co/replit-development-agency',
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
         name: 'MVP Development on Replit',
         item: 'https://www.pressense.co/mvp-development-replit',
       },
@@ -117,26 +99,26 @@ export default function MvpDevelopmentReplitPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Can you build a real production SaaS on Replit?',
+        name: 'Can you build a real SaaS product on Replit?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Replit is a fully production-capable platform. It supports Neon PostgreSQL for a managed database, custom domains with SSL, auth libraries, full-stack TypeScript, and persistent deployments. Real SaaS products run on Replit today. The challenge is not the platform. It is building on it correctly from the start, with proper architecture, security configuration, and a data model designed for real users rather than a demo.',
+          text: 'Yes. Replit is a production-capable platform with managed PostgreSQL databases, persistent deployments, secret management, and custom domain support. The constraint is not the platform, it is the code quality. A production SaaS built on Replit uses the same engineering standards as one built on AWS: parameterised queries, tested auth libraries, environment-variable-managed secrets, and role-scoped data access.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is vibe coding and when does it stop being enough?',
+        name: 'How much does it cost to build an MVP on Replit?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Vibe coding is building software by describing requirements to an AI agent in natural language, a term popularised by Andrej Karpathy. It stops being enough when you need production authentication, payment flows, role-based access, proper error handling, and a data model that survives real users rather than a controlled demo.',
+          text: 'Replit MVP builds with Pressense start from $8,000 for a focused single-journey product and scale based on the number of user journeys, integrations, and data model complexity. Every engagement starts with a fixed-price estimate from the diagnostic session before any work begins.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How much does MVP development on Replit cost?',
+        name: 'What is vibe coding and why is it not enough for a production MVP?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Professional Replit MVP development with Pressense starts from $3,500 for a focused sprint refactoring an existing Replit prototype. A greenfield MVP with auth, payments, an admin dashboard, and a production deployment starts from $5,000. Every engagement starts with a diagnostic session that produces a written, fixed-price estimate before any build work begins.',
+          text: 'Vibe coding is the practice of building software by describing requirements to an AI agent in natural language. AI agents like Replit Agent can scaffold a full-stack app in minutes. The gap is engineering judgement: the AI builds the feature you asked for, but nobody reviewed whether the auth pattern is safe, whether the database queries are parameterised, or whether the webhook handler handles duplicate events. Pressense uses AI tooling heavily in Replit builds and reviews everything against a production readiness checklist.',
         },
       },
       {
@@ -144,15 +126,23 @@ export default function MvpDevelopmentReplitPage() {
         name: 'How long does it take to build an MVP on Replit?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Six weeks for a greenfield build: one week of audit and scoping, one week of architecture, three weeks of build sprints, one week of stabilisation and launch. If you have an existing Replit prototype, we can often deliver in four weeks by refactoring what is salvageable rather than rebuilding from scratch.',
+          text: 'A focused, well-scoped Replit MVP takes six weeks. Week one is scoping. Week two is architecture. Weeks three to four are sprint one covering core auth and primary user journey. Weeks five to six are sprint two covering integrations, secondary flows, and stabilisation.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Do I own the code if you build on Replit?',
+        name: 'What is the difference between this and just using Replit Agent myself?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Every line of code lives in your Replit account from the first commit. You own it outright. You can fork it, export it, move it to a different hosting environment, or hand it to another developer at any time. We retain no ownership or access after the engagement ends.',
+          text: 'Replit Agent generates a working app faster than a human developer for the initial scaffold. The difference is the production readiness review: Pressense checks the auth architecture, reviews database access patterns, verifies secret handling, adds error boundaries, and tests integration points. The result is a codebase you can take to investors or a technical co-founder without being told to rewrite it.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you work with founders who have already started building on Replit?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. The diagnostic session includes a code review of what exists. If the existing codebase is salvageable, we build on top of it. If the architecture has fundamental issues, we scope a targeted rebuild of the core. Either way, you leave the diagnostic session with a clear picture and a fixed-price estimate.',
         },
       },
     ],

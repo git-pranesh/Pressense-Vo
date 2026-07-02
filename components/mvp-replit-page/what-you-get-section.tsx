@@ -1,81 +1,71 @@
 export function MvpReplitWhatYouGetSection() {
   const deliverables = [
-    {
-      label: 'Production codebase in your Replit account',
-      detail: 'Every file lives in your account from day one. TypeScript, properly structured, with comments where the logic is non-obvious. Any developer can read it.',
-    },
-    {
-      label: 'Authentication with role-based access',
-      detail: 'Sign up, sign in, password reset, email verification, and role-based permissions. Built on a proven auth library, not custom-rolled code.',
-    },
-    {
-      label: 'Neon PostgreSQL database with proper schema',
-      detail: 'A normalised schema designed for your specific data model. Parameterised queries throughout. No raw SQL concatenation.',
-    },
-    {
-      label: 'Up to three third-party integrations',
-      detail: 'Stripe payments, Resend transactional email, and one additional integration of your choice. Webhooks handled correctly with idempotency.',
-    },
-    {
-      label: 'Admin dashboard',
-      detail: 'A simple operations view where you can see users, activity, and key metrics without querying the database directly.',
-    },
-    {
-      label: 'Custom domain, SSL, and basic monitoring',
-      detail: 'Your domain pointing to your Replit deployment, SSL configured, and uptime monitoring so you know before your users do if something breaks.',
-    },
-    {
-      label: 'Handover documentation',
-      detail: 'A written document explaining how the codebase is structured, how to run it locally, how to deploy changes, and where to look when something breaks.',
-    },
-    {
-      label: 'Optional GTM kickoff',
-      detail: 'ICP definition, early channel strategy, and a 90-day outreach or content plan. Available as an add-on for founders who want to launch with a structured go-to-market motion.',
-    },
+    { week: 'Week 1', item: 'Scope document', detail: 'Value loop definition, feature list, cut list, fixed-price estimate' },
+    { week: 'Week 2', item: 'Replit project setup', detail: 'Your account, production pipeline configured, secrets managed, schema designed' },
+    { week: 'Week 2', item: 'Architecture spec', detail: 'PostgreSQL schema, user journey map, integration points, tech decisions documented' },
+    { week: 'Weeks 3-4', item: 'Sprint 1 live build', detail: 'Auth, primary data model, core user journey deployed to production on Replit' },
+    { week: 'Weeks 5-6', item: 'Sprint 2 live build', detail: 'Integrations, secondary flows, admin access, end-to-end testing complete' },
+    { week: 'Week 6', item: 'Stabilisation pass', detail: 'User feedback incorporated, performance tested, analytics configured' },
+    { week: 'Week 6', item: 'Handover session', detail: 'Architecture walkthrough, deployment docs, environment variable documentation' },
   ]
 
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section id="what-you-get" className="py-20 md:py-28 border-t border-border/40">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
           Deliverables
         </p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
-          What you get at the end of six weeks
+          What you get at the end of 6 weeks
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
-          Not a staging environment demo. Not a Loom walkthrough. A live, production-grade product on your domain with real users able to sign up and use it on day one.
+          Every week has a named output. You always know what you are paying for and what you will have when each phase completes.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-5">
-          {deliverables.map((item) => (
+        <div className="overflow-hidden rounded-2xl border border-border/50 mb-10">
+          {deliverables.map((row, i) => (
             <div
-              key={item.label}
-              className="flex gap-4 p-5 rounded-2xl border border-border/40 bg-card/60"
+              key={`${row.week}-${row.item}`}
+              className={`flex flex-col sm:flex-row gap-3 sm:gap-6 px-6 py-5 items-start sm:items-center ${
+                i % 2 === 0 ? 'bg-card' : 'bg-secondary/20'
+              } ${i < deliverables.length - 1 ? 'border-b border-border/30' : ''}`}
             >
-              <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-1.5" aria-hidden="true" />
-              <div>
-                <p className="text-sm font-semibold text-foreground mb-1">{item.label}</p>
-                <p className="text-sm text-muted-foreground leading-relaxed">{item.detail}</p>
-              </div>
+              <span className="text-xs font-semibold text-primary uppercase tracking-wider sm:w-20 flex-shrink-0">
+                {row.week}
+              </span>
+              <span className="text-sm font-semibold text-foreground sm:w-52 flex-shrink-0">
+                {row.item}
+              </span>
+              <span className="text-sm text-muted-foreground leading-relaxed">{row.detail}</span>
             </div>
           ))}
         </div>
 
-        <div className="mt-14 p-6 rounded-2xl border border-primary/20 bg-primary/5">
-          <p className="text-sm font-semibold text-foreground mb-2">Fixed-price from $3,500</p>
-          <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
-            Engagements starting from $3,500 for a focused two to three week refactor of an existing Replit prototype. A greenfield MVP with auth, payments, admin dashboard, and production deployment starts from $5,000. Every engagement starts with a diagnostic session that produces a fixed-price estimate before any build work begins. No surprises.
-          </p>
-          <a
-            href="/diagnostic"
-            className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-primary hover:text-highlight transition-colors"
-          >
-            Start with a diagnostic
-            <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </a>
+        <div className="grid sm:grid-cols-3 gap-4">
+          <div className="p-6 rounded-2xl border border-primary/30 bg-primary/5">
+            <p className="text-sm font-semibold text-foreground mb-2">Production standards applied from day one</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Auth uses a tested library. Queries are parameterised throughout. Secrets live in environment variables. Role-based access is scoped at the data layer. These are not things we add at the end. They are how the project is built from sprint one.
+            </p>
+          </div>
+          <div className="p-6 rounded-2xl border border-border/50 bg-card">
+            <p className="text-sm font-semibold text-foreground mb-2">You own it, forever</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              The Replit project lives in your account. The code is standard TypeScript and PostgreSQL. No proprietary framework, no Pressense dependency in the runtime. You can hire any developer to pick it up, migrate it to any host, or fork it at any point.
+            </p>
+          </div>
+          <div className="p-6 rounded-2xl border border-border/50 bg-card">
+            <p className="text-sm font-semibold text-foreground mb-2">Start with a diagnostic</p>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+              Sixty minutes. We scope the build, define the value loop, and give you a fixed-price estimate before the session ends. No obligation if the fit is not right.
+            </p>
+            <a
+              href="/diagnostic"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+            >
+              Book a diagnostic
+            </a>
+          </div>
         </div>
       </div>
     </section>
