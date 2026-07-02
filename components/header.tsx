@@ -23,17 +23,20 @@ const servicesColumns = [
   {
     heading: 'Strategy & GTM',
     links: [
+      { label: 'GTM Systems Builder', href: '/gtm-systems-builder' },
+      { label: 'GTM Content Systems', href: '/gtm-content-systems' },
+      { label: 'SEO Content for SaaS', href: '/seo-content-for-saas' },
       { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
       { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
       { label: 'SaaS Go-to-Market Strategy', href: '/saas-go-to-market-strategy' },
       { label: 'Revenue Operations Consulting', href: '/revenue-operations-consulting' },
-      { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
     ],
   },
   {
     heading: 'Build & Vibe Coding',
     links: [
       { label: 'Replit Development Agency', href: '/replit-development-agency' },
+      { label: 'MVP Development on Replit', href: '/mvp-development-replit' },
       { label: 'Custom CRM Development', href: '/custom-crm-development' },
       { label: 'MVP Development for Startups', href: '/mvp-development-for-startups' },
       { label: 'Framer Website Design', href: '/framer-website-design' },
