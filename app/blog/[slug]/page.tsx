@@ -175,7 +175,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
             {/* Author */}
             {post.author && (
-              <div className="mt-12 pt-8 border-t border-border/40">
+              <div className="mt-12 pt-8">
                 <div className="flex items-center gap-4">
                   {post.author.avatar && (
                     <img
@@ -195,7 +195,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </article>
 
         {/* CTA */}
-        <section className="py-16 px-6 lg:px-10 border-t border-border/40 bg-muted/30">
+        <section className="py-16 px-6 lg:px-10 bg-muted/30">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-semibold text-foreground">
               Need help with this?

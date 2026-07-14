@@ -19,7 +19,7 @@ export function DiagnosisSection() {
   ]
 
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40" aria-labelledby="diagnosis-heading">
+    <section className="py-28 lg:py-36" aria-labelledby="diagnosis-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="mb-16">
           <h2 id="diagnosis-heading" className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4">
@@ -31,7 +31,7 @@ export function DiagnosisSection() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, i) => (
-            <div key={i} className="glass-card rounded-2xl p-8 border border-border/40 flex flex-col">
+            <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors flex flex-col">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 mb-4">
                 <span className="text-sm font-semibold text-primary">{i + 1}</span>
               </div>

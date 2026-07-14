@@ -16,7 +16,7 @@ export function CaseStudyCard({
   outcomes,
 }: CaseStudyCardProps) {
   return (
-    <article className="glass-card rounded-2xl p-8 lg:p-10 border border-border/50">
+    <article className="rounded-2xl bg-card border border-border p-8 lg:p-10 border border-border/50">
       {/* Header */}
       <div className="flex items-start gap-4 mb-8">
         <span className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-lg font-semibold text-primary">

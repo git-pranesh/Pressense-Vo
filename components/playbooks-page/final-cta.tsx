@@ -9,7 +9,7 @@ export function PlaybooksFinalCTA() {
             Ready to fix what&apos;s slowing your growth?
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed text-pretty">
+          <p className="text-lg text-ink-muted mb-12 max-w-2xl mx-auto leading-relaxed text-pretty">
             Start by identifying your constraint using the playbooks above. Then, let&apos;s talk about whether you want guidance, a diagnostic, or full implementation support.
           </p>
 

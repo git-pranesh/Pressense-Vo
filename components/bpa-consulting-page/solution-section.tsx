@@ -9,7 +9,7 @@ const solutionPoints = [
 
 export function SolutionSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-6">How we build business systems</h2>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mb-16">
@@ -17,7 +17,7 @@ export function SolutionSection() {
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           {solutionPoints.map((point, i) => (
-            <div key={i} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
+            <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
               <h3 className="text-xl font-semibold text-foreground mb-3">{point.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{point.description}</p>
             </div>

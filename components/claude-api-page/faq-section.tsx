@@ -33,9 +33,9 @@ const faqs = [
 
 export function ClaudeApiFaqSection() {
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">FAQ</p>
+        <p className="eyebrow mb-4">FAQ</p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-14 leading-tight">
           Claude API integration questions
         </h2>
@@ -47,7 +47,7 @@ export function ClaudeApiFaqSection() {
             </div>
           ))}
         </div>
-        <div className="mt-12 pt-8 border-t border-border/40">
+        <div className="mt-12 pt-8">
           <p className="text-base text-muted-foreground mb-4">
             Not sure whether Claude or another model is right for your use case?
           </p>

@@ -91,7 +91,7 @@ export default function OneMagnifyCaseStudy() {
 
         {/* Hero */}
         <section
-          className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden border-b border-border/40"
+          className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden"
           aria-label="Case study introduction"
         >
           <div className="absolute inset-0 grid-bg opacity-40" aria-hidden="true" />
@@ -353,7 +353,7 @@ export default function OneMagnifyCaseStudy() {
         </section>
 
         {/* Bottom CTA */}
-        <section className="py-20 lg:py-28 border-t border-border/40">
+        <section className="py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="max-w-2xl">
               <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">

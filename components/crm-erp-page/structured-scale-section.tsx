@@ -17,7 +17,7 @@ export function CrmErpStructuredScaleSection() {
               A good system creates the structure needed for the team to operate without constant founder intervention.
             </p>
           </div>
-          <div className="mt-10 pt-8 border-t border-border/40">
+          <div className="mt-10 pt-8">
             <p className="text-muted-foreground">
               See how CRM connects to the larger system: <a href="/how-we-work" className="text-primary hover:underline">How we work</a> and <a href="/playbooks" className="text-primary hover:underline">Playbooks</a>.
             </p>

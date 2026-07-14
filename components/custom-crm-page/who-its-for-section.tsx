@@ -34,15 +34,15 @@ export function CustomCrmWhoItsForSection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+        <p className="eyebrow mb-4">
           Fit
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-ink-foreground text-balance mb-4 leading-tight">
           This is right for you if...
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl">
+        <p className="text-lg text-ink-muted leading-relaxed mb-12 max-w-2xl">
           Custom CRM development is not the answer for every business. Here is an honest look at who benefits and who does not.
         </p>
 
@@ -60,7 +60,7 @@ export function CustomCrmWhoItsForSection() {
           ))}
         </div>
 
-        <h2 className="text-2xl md:text-3xl font-semibold text-foreground text-balance mb-8 leading-tight">
+        <h2 className="text-2xl md:text-3xl font-semibold text-ink-foreground text-balance mb-8 leading-tight">
           This is NOT for you if...
         </h2>
         <div className="grid sm:grid-cols-3 gap-6">

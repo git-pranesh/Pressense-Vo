@@ -37,7 +37,7 @@ const steps = [
 
 export function SolutionSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
           How It Works
@@ -60,7 +60,7 @@ export function SolutionSection() {
             {steps.map((step) => (
               <div
                 key={step.number}
-                className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300 lg:pl-24 relative"
+                className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300 lg:pl-24 relative"
               >
                 {/* Step number badge */}
                 <div

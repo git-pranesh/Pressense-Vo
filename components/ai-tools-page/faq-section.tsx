@@ -37,7 +37,7 @@ export function ToolsFAQSection() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <section className="py-20 border-t border-border/40">
+    <section className="py-20">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
           <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">

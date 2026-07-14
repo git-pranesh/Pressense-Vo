@@ -18,7 +18,7 @@ export function DiagnosePhase() {
   return (
     <section
       id="diagnose"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="diagnose-heading"
     >
       <div className="container mx-auto px-6 lg:px-8">
@@ -105,7 +105,7 @@ export function DiagnosePhase() {
 
           {/* Right column - deliverables card */}
           <div className="lg:pt-16">
-            <div className="glass-card rounded-2xl p-8 border border-border/50">
+            <div className="rounded-2xl bg-card border border-border p-8 border border-border/50">
               <h3 className="text-lg font-semibold text-foreground mb-6">
                 Deliverables
               </h3>
@@ -123,7 +123,7 @@ export function DiagnosePhase() {
                 ))}
               </ul>
 
-              <div className="mt-8 pt-6 border-t border-border/40">
+              <div className="mt-8 pt-6">
                 <p className="text-sm text-muted-foreground">
                   All findings are compiled into a comprehensive diagnostic report that
                   becomes the foundation for Phase 2.

@@ -11,7 +11,7 @@ const deliverables = [
 
 export function WhatYouGetSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
           <div>
@@ -34,7 +34,7 @@ export function WhatYouGetSection() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {deliverables.map((item, i) => (
-            <div key={i} className="glass-card rounded-xl p-5 border border-border/40 flex flex-col gap-2">
+            <div key={i} className="rounded-xl bg-card border border-border p-5 border border-border/40 flex flex-col gap-2">
               <p className="text-foreground font-medium leading-snug">{item.title}</p>
               <span className="text-xs text-muted-foreground">{item.detail}</span>
             </div>

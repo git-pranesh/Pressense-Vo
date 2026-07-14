@@ -25,7 +25,7 @@ export function EngagementStartSection() {
   return (
     <section
       id="engagement-start"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="engagement-start-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -51,7 +51,7 @@ export function EngagementStartSection() {
           {engagementTypes.map((type, i) => (
             <div
               key={i}
-              className="glass-card rounded-2xl p-8 flex flex-col gap-5 hover:border-border transition-all duration-300 group"
+              className="rounded-2xl bg-card border border-border p-8 flex flex-col gap-5 hover:border-border transition-all duration-300 group"
             >
               {/* Number */}
               <div className="flex items-center justify-between">

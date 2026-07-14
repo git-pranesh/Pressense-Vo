@@ -8,7 +8,7 @@ export function TestimonialsBlock({ title = 'What Our Clients Say', testimonials
       <h2 className="text-2xl font-semibold text-foreground mb-10 text-center">{title}</h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((t, i) => (
-          <div key={i} className="glass-card rounded-xl border border-border/60 p-6 flex flex-col gap-4">
+          <div key={i} className="rounded-xl bg-card border border-border border border-border/60 p-6 flex flex-col gap-4">
             <p className="text-sm text-muted-foreground leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
             <div className="mt-auto">
               <p className="text-sm font-semibold text-foreground">{t.name}</p>

@@ -1,6 +1,6 @@
 export function ContentAuthorityCTA() {
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40">
+    <section className="py-28 lg:py-36 bg-ink rounded-t-3xl">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-ink-foreground text-balance mb-6 leading-[1.08]">

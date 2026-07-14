@@ -12,8 +12,8 @@ export function SystemsHero() {
 
           {/* Eyebrow */}
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Business Systems Consultant</span>
+            <div className="eyebrow-line" aria-hidden="true" />
+            <span className="eyebrow">Business Systems Consultant</span>
           </div>
 
           {/* H1 — keyword-first, outcome-focused */}
@@ -52,7 +52,7 @@ export function SystemsHero() {
           <div className="flex flex-col sm:flex-row items-start gap-4">
             <Link
               href="/diagnostic"
-              className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+              className="group inline-flex items-center gap-3 px-9 py-5 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic
               <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
@@ -63,14 +63,13 @@ export function SystemsHero() {
             </Link>
             <Link
               href="/playbooks"
-              className="group inline-flex items-center gap-2 px-9 py-5 rounded-2xl text-base font-semibold border border-border/40 text-foreground hover:border-primary/40 transition-all duration-200"
+              className="group inline-flex items-center gap-2 px-9 py-5 rounded-full text-base font-semibold border border-border text-foreground hover:border-foreground/40 transition-all duration-200"
             >
               See Our Playbooks
             </Link>
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background via-transparent to-background/60" aria-hidden="true" />
     </section>
   )
 }

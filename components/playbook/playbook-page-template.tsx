@@ -87,8 +87,8 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
         <div className="container mx-auto px-5 sm:px-8">
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-              <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Playbook</span>
+              <div className="eyebrow-line" aria-hidden="true" />
+              <span className="eyebrow">Playbook</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
@@ -121,7 +121,7 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
       </section>
 
       {/* Main content with sidebar */}
-      <section className="py-12 lg:py-20 border-t border-border/40">
+      <section className="py-12 lg:py-20">
         <div className="container mx-auto px-5 sm:px-8">
           <div className="lg:grid lg:grid-cols-12 lg:gap-12">
             {/* Sidebar - sticky navigation */}
@@ -143,7 +143,7 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
                   </ul>
                 </nav>
 
-                <div className="mt-8 pt-8 border-t border-border/40">
+                <div className="mt-8 pt-8">
                   <Link
                     href="/diagnostic"
                     className="inline-flex items-center justify-center w-full gap-2 px-4 py-3 rounded-full text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
@@ -286,14 +286,14 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
                 </section>
 
                 {/* Related playbooks */}
-                <section className="mb-16 pt-8 border-t border-border/40">
+                <section className="mb-16 pt-8">
                   <h2 className="text-2xl font-semibold text-foreground mb-6">Related playbooks</h2>
                   <div className="grid sm:grid-cols-3 gap-4">
                     {playbook.relatedPlaybooks.map((related) => (
                       <Link
                         key={related.slug}
                         href={`/playbooks/${related.slug}`}
-                        className="glass-card rounded-xl p-5 border border-border/40 hover:border-primary/20 transition-all group"
+                        className="rounded-xl bg-card border border-border p-5 border border-border/40 hover:border-primary/20 transition-all group"
                       >
                         <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
                           {related.title}
@@ -313,8 +313,8 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
                 </section>
 
                 {/* Final CTA */}
-                <section className="pt-8 border-t border-border/40">
-                  <div className="glass-card rounded-2xl p-8 border border-border/40 text-center">
+                <section className="pt-8">
+                  <div className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors text-center">
                     <h2 className="text-2xl font-semibold text-foreground mb-4">
                       Want to diagnose this in your business?
                     </h2>

@@ -17,8 +17,8 @@ export function AIStrategyHero() {
         <div className="max-w-3xl">
 
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
+            <div className="eyebrow-line" aria-hidden="true" />
+            <span className="eyebrow">
               AI Strategy Consulting
             </span>
           </div>

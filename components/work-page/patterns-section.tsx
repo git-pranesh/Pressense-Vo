@@ -8,7 +8,7 @@ const patterns = [
 
 export function WorkPatternsSection() {
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40" aria-labelledby="patterns-heading">
+    <section className="py-28 lg:py-36" aria-labelledby="patterns-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-12" id="patterns-heading">
@@ -17,13 +17,13 @@ export function WorkPatternsSection() {
 
           <div className="space-y-4">
             {patterns.map((pattern, i) => (
-              <div key={i} className="glass-card rounded-lg p-5 lg:p-6 border border-border/40 hover:border-primary/20 transition-all duration-300">
+              <div key={i} className="bg-card border border-border rounded-lg p-5 lg:p-6 border border-border/40 hover:border-primary/20 transition-all duration-300">
                 <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">{pattern}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-sm text-muted-foreground mt-12 pt-8 border-t border-border/40">
+          <p className="text-sm text-muted-foreground mt-12 pt-8">
             See the full diagnostic of what we fix on the <a href="/what-we-fix" className="text-primary hover:text-highlight transition-colors">What We Fix</a> page.
           </p>
         </div>

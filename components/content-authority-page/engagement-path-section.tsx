@@ -8,14 +8,14 @@ export function EngagementPathSection() {
   ]
 
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40">
+    <section className="py-28 lg:py-36">
       <div className="container mx-auto px-5 sm:px-8">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-16">
           Typical engagement path
         </h2>
         <div className="space-y-6">
           {steps.map((step) => (
-            <div key={step.number} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
+            <div key={step.number} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
               <div className="flex gap-6">
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center flex-shrink-0">

@@ -1,9 +1,9 @@
 export function WebsitesConversionFinalCTA() {
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40">
+    <section className="py-28 lg:py-36 bg-ink rounded-t-3xl">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-6 text-balance">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground mb-6 text-balance">
             Start with clarity, not design.
           </h2>
           <p className="text-lg text-ink-muted mb-10 leading-relaxed">
@@ -23,7 +23,7 @@ export function WebsitesConversionFinalCTA() {
             </a>
             <a
               href="/playbooks"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold border border-border/60 text-foreground hover:bg-secondary/50 transition-all duration-200"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold border border-border/60 text-foreground hover:bg-ink-card/50 transition-all duration-200"
             >
               View Playbooks
             </a>

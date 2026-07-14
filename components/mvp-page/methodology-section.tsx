@@ -35,15 +35,15 @@ export function MvpMethodologySection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+        <p className="eyebrow mb-4">
           How We Work
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-ink-foreground text-balance mb-4 leading-tight">
           How long does MVP development take? The 8-week framework
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
+        <p className="text-lg text-ink-muted leading-relaxed mb-14 max-w-2xl">
           Eight weeks is not a marketing claim. It is a structured process: one week of scoping, one week of architecture, four weeks of two-sprint build cycles, two weeks of stabilisation and iteration. Every phase ends with a named deliverable.
         </p>
 

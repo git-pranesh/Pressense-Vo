@@ -16,7 +16,7 @@ export function ProblemSection() {
           {/* Left: heading */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-ink-foreground/30" />
+              <div className="eyebrow-line"/>
               <span className="text-xs tracking-[0.2em] uppercase text-ink-muted font-medium">The Problem</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-[1.15] tracking-tight text-ink-foreground text-balance" id="problem-heading">
@@ -41,7 +41,7 @@ export function ProblemSection() {
               >
                 <div className="mt-0.5 w-5 h-5 rounded-full border border-ink-muted/40 flex items-center justify-center flex-shrink-0 group-hover:border-primary/60 transition-colors">
                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden="true">
-                    <path d="M1.5 4.5L3 6l3.5-4" stroke="#A09A94" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M1.5 4.5L3 6l3.5-4" stroke="#999999" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <span className="text-sm sm:text-base text-ink-muted leading-relaxed group-hover:text-ink-foreground transition-colors">

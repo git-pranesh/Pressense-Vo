@@ -11,9 +11,9 @@ const rows = [
 
 export function ClaudeApiComparisonSection() {
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Model Comparison</p>
+        <p className="eyebrow mb-4">Model Comparison</p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
           Claude vs GPT-4o: which one should you use?
         </h2>
@@ -30,7 +30,7 @@ export function ClaudeApiComparisonSection() {
           {rows.map((row, i) => (
             <div
               key={row.attribute}
-              className={`grid grid-cols-3 px-6 py-4 border-t border-border/30 ${i % 2 === 0 ? 'bg-card' : 'bg-secondary/10'}`}
+              className={`grid grid-cols-3 px-6 py-4/30 ${i % 2 === 0 ? 'bg-card' : 'bg-secondary/10'}`}
             >
               <span className="text-sm font-medium text-foreground">{row.attribute}</span>
               <span className="text-sm text-muted-foreground pr-4">{row.claude}</span>

@@ -178,7 +178,7 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 lg:py-28 border-t border-border/40">
+        <section className="py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="max-w-2xl">
               <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">

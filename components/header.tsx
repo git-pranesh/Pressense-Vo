@@ -130,7 +130,7 @@ export function Header() {
 
             {/* Mega menu */}
             {servicesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1020px] glass-card rounded-xl border border-border/60 p-6 shadow-2xl">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1020px] rounded-xl bg-card border border-border border border-border/60 p-6 shadow-2xl">
                 <div className="grid grid-cols-4 gap-6">
                   {servicesColumns.map((col) => (
                     <div key={col.heading}>
@@ -153,7 +153,7 @@ export function Header() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-5 pt-4 border-t border-border/40 flex items-center justify-end">
+                <div className="mt-5 pt-4 flex items-center justify-end">
                   <Link
                     href="/how-we-work"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -262,7 +262,7 @@ export function Header() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground py-2 border-t border-border/20"
+              className="text-sm text-muted-foreground hover:text-foreground py-2/20"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}

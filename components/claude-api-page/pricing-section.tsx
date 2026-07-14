@@ -50,9 +50,9 @@ const tiers = [
 
 export function ClaudeApiPricingSection() {
   return (
-    <section id="pricing" className="py-20 md:py-28 border-t border-border/40">
+    <section id="pricing" className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Pricing</p>
+        <p className="eyebrow mb-4">Pricing</p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
           What does Claude API integration cost?
         </h2>
@@ -86,7 +86,7 @@ export function ClaudeApiPricingSection() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground border-t border-border/30 pt-4">
+              <p className="text-xs text-muted-foreground/30 pt-4">
                 <strong className="text-foreground">Best for:</strong> {tier.suitable}
               </p>
             </div>

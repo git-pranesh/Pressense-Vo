@@ -17,7 +17,7 @@ export function WebsitesStructuredScaleSection() {
               A strong website becomes the central communication system for sales, marketing, content, outbound, SEO, hiring, and partnerships.
             </p>
           </div>
-          <div className="mt-10 pt-8 border-t border-border/40">
+          <div className="mt-10 pt-8">
             <p className="text-muted-foreground">
               See how websites connect to the larger system: <a href="/content-authority-systems" className="text-primary hover:underline">Content systems</a>, <a href="/how-we-work" className="text-primary hover:underline">How we work</a>, and <a href="/work" className="text-primary hover:underline">Work</a>.
             </p>

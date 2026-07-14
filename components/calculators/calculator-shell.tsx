@@ -35,7 +35,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
   return (
     <article>
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-border/40">
+      <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-40" aria-hidden="true" />
         <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
           <nav aria-label="Breadcrumb" className="flex items-center gap-1 text-xs text-muted-foreground mb-6">
@@ -139,7 +139,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
       )}
 
       {/* FAQs */}
-      <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8 border-t border-border/40">
+      <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-8">
           Frequently asked questions
         </h2>
@@ -161,7 +161,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
       </section>
 
       {/* About this calculator */}
-      <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8 border-t border-border/40">
+      <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
         <h2 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-4">
           About this calculator
         </h2>
@@ -191,7 +191,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
 
       {/* Related */}
       {related.length > 0 && (
-        <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 border-t border-border/40">
+        <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground mb-8">Related calculators</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {related.map((r) => (

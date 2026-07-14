@@ -45,7 +45,7 @@ const services = [
 
 export function SolutionSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-6">
@@ -61,7 +61,7 @@ export function SolutionSection() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
+              className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300"
             >
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
                 <h3 className="text-xl font-semibold text-foreground">{service.name}</h3>
@@ -78,7 +78,7 @@ export function SolutionSection() {
         <div className="mt-12 text-center">
           <Link
             href="/diagnostic"
-            className="inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            className="inline-flex items-center gap-3 px-9 py-5 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
           >
             Get Your AI Readiness Assessment
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">

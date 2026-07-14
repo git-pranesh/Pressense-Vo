@@ -34,12 +34,12 @@ const notFor = [
 
 export function ReplitAgencyWhoItsForSection() {
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+        <p className="eyebrow mb-4">
           Who it&apos;s for
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-14 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-ink-foreground text-balance mb-14 leading-tight">
           This is right for you if...
         </h2>
 
@@ -52,7 +52,7 @@ export function ReplitAgencyWhoItsForSection() {
                 </div>
                 <h3 className="text-base font-semibold text-foreground leading-snug">{item.label}</h3>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed pl-7">{item.body}</p>
+              <p className="text-sm text-ink-muted leading-relaxed pl-7">{item.body}</p>
             </div>
           ))}
         </div>
@@ -62,7 +62,7 @@ export function ReplitAgencyWhoItsForSection() {
           {notFor.map((item) => (
             <div key={item.label} className="p-5 rounded-xl border border-border/30 bg-secondary/20">
               <h3 className="text-sm font-semibold text-foreground mb-2">{item.label}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+              <p className="text-sm text-ink-muted leading-relaxed">{item.body}</p>
             </div>
           ))}
         </div>

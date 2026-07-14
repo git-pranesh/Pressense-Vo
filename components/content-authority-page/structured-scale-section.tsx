@@ -17,7 +17,7 @@ export function StructuredScaleSection() {
               A good content system creates shared language for the market, the team, and the buyer.
             </p>
           </div>
-          <div className="mt-10 pt-8 border-t border-border/40">
+          <div className="mt-10 pt-8">
             <p className="text-muted-foreground">
               See how content connects to the larger system: <a href="/how-we-work" className="text-primary hover:underline">How we work</a> and <a href="/playbooks" className="text-primary hover:underline">Playbooks</a>.
             </p>

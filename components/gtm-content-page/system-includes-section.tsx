@@ -39,9 +39,9 @@ export function GtmContentSystemIncludesSection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+        <p className="eyebrow mb-4">
           What Is Included
         </p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
@@ -54,7 +54,7 @@ export function GtmContentSystemIncludesSection() {
         <div className="space-y-8">
           {layers.map((layer) => (
             <div key={layer.layer} className="rounded-2xl border border-border/50 overflow-hidden">
-              <div className="px-6 py-4 bg-secondary/30 border-b border-border/40">
+              <div className="px-6 py-4 bg-secondary/30">
                 <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider">{layer.layer}</h3>
               </div>
               <div>

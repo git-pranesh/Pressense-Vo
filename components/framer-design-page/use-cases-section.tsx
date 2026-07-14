@@ -44,9 +44,9 @@ const industries = [
 
 export function FramerUseCasesSection() {
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Use Cases</p>
+        <p className="eyebrow mb-4">Use Cases</p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
           What we build in Framer
         </h2>
@@ -72,7 +72,7 @@ export function FramerUseCasesSection() {
         </div>
 
         <div>
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-5 font-medium">Industries we serve</p>
+          <p className="eyebrow mb-5 font-medium">Industries we serve</p>
           <div className="flex flex-wrap gap-2">
             {industries.map((ind) => (
               <span

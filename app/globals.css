@@ -4,89 +4,83 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Wispr-inspired warm editorial palette */
-  --background: #F5F2E8;                /* warm cream — slightly warmer than before */
-  --foreground: #0F0D0A;                /* near-black text */
-  --card: #EDE9DF;                      /* slightly darker cream for cards */
-  --card-foreground: #0F0D0A;
-  --popover: #EDE9DF;
-  --popover-foreground: #0F0D0A;
-  --primary: #B8A4D8;                   /* soft lavender — CTA fill */
+  /* Wispr Flow — Cream + Black + Lavender */
+  --background: #FAFAE8;                /* warm ivory — Wispr's exact bg */
+  --foreground: #111111;                /* near-black text */
+  --card: #F0F0D8;                      /* slightly deeper cream for cards */
+  --card-foreground: #111111;
+  --popover: #F0F0D8;
+  --popover-foreground: #111111;
+  --primary: #C9B8FF;                   /* Wispr lavender — CTA fill */
   --primary-foreground: #1A1019;        /* dark text on lavender */
-  --secondary: #E5E1D6;                 /* muted cream — secondary surfaces */
-  --secondary-foreground: #0F0D0A;
-  --muted: #E8E4D9;                     /* muted background areas */
-  --muted-foreground: #52493F;          /* darker warm grey — better contrast on cream */
-  --accent: #0F0D0A;                    /* near-black accent */
-  --accent-foreground: #F5F2E8;
+  --secondary: #EEEEDD;
+  --secondary-foreground: #111111;
+  --muted: #E8E8D0;
+  --muted-foreground: #444444;          /* strong enough to read on cream */
+  --accent: #111111;
+  --accent-foreground: #FAFAE8;
   --destructive: #C0392B;
-  --destructive-foreground: #F5F2E8;
-  --border: #D4CFC5;                    /* warm light grey borders */
-  --input: #E5E1D6;
-  --ring: #B8A4D8;
-  --radius: 1rem;                       /* more generous, Wispr-style */
-
-  /* Custom tokens */
-  --surface: #EDE9DF;
-  --surface-border: #D4CFC5;
-  --highlight: #A08EC4;                 /* deeper lavender hover */
-  --text-dim: #6B6257;                  /* dimmed warm grey — matches muted-foreground for legibility */
-  --grid-line: #D8D4CA;
+  --destructive-foreground: #FAFAE8;
+  --border: #DDDDC8;
+  --input: #EEEEDD;
+  --ring: #C9B8FF;
+  --radius: 1rem;
 
   /* Dark section tokens — near-black */
-  --ink: #0F0D0A;
-  --ink-foreground: #F5F2E8;
-  --ink-muted: #A09A94;                 /* bumped up for contrast on dark bg */
-  --ink-border: #2E2B28;
+  --ink: #111111;
+  --ink-foreground: #FAFAE8;
+  --ink-muted: #999999;
+  --ink-border: #2A2A2A;
+  --ink-card: #1A1A1A;
 
-  /* Forest section tokens — deep warm green, Wispr's second dark */
-  --forest: #1A2820;
-  --forest-foreground: #E8F0EC;
-  --forest-muted: #8AA898;
-  --forest-border: #2C3E34;
+  /* Surface tokens */
+  --surface: #F0F0D8;
+  --surface-border: #DDDDC8;
+  --highlight: #A891E8;                 /* deeper lavender hover */
+  --text-dim: #666666;
 
-  --chart-1: #B8A4D8;
-  --chart-2: #6B6257;
-  --chart-3: #9B958C;
-  --chart-4: #C4BFB5;
-  --chart-5: #3D3A33;
-  --sidebar: #EDE9DF;
-  --sidebar-foreground: #0F0D0A;
-  --sidebar-primary: #B8A4D8;
+  --chart-1: #C9B8FF;
+  --chart-2: #444444;
+  --chart-3: #888888;
+  --chart-4: #CCCCBB;
+  --chart-5: #333333;
+  --sidebar: #F0F0D8;
+  --sidebar-foreground: #111111;
+  --sidebar-primary: #C9B8FF;
   --sidebar-primary-foreground: #1A1019;
-  --sidebar-accent: #E5E1D6;
-  --sidebar-accent-foreground: #0F0D0A;
-  --sidebar-border: #D4CFC5;
-  --sidebar-ring: #B8A4D8;
+  --sidebar-accent: #EEEEDD;
+  --sidebar-accent-foreground: #111111;
+  --sidebar-border: #DDDDC8;
+  --sidebar-ring: #C9B8FF;
 }
 
-/* Keep studio dark — Sanity's own theme handles /studio */
 .dark {
-  --background: #F5F2E8;
-  --foreground: #0F0D0A;
-  --card: #EDE9DF;
-  --card-foreground: #0F0D0A;
-  --popover: #EDE9DF;
-  --popover-foreground: #0F0D0A;
-  --primary: #B8A4D8;
+  --background: #FAFAE8;
+  --foreground: #111111;
+  --card: #F0F0D8;
+  --card-foreground: #111111;
+  --popover: #F0F0D8;
+  --popover-foreground: #111111;
+  --primary: #C9B8FF;
   --primary-foreground: #1A1019;
-  --secondary: #E5E1D6;
-  --secondary-foreground: #0F0D0A;
-  --muted: #E8E4D9;
-  --muted-foreground: #6B6257;
-  --accent: #0F0D0A;
-  --accent-foreground: #F5F2E8;
+  --secondary: #EEEEDD;
+  --secondary-foreground: #111111;
+  --muted: #E8E8D0;
+  --muted-foreground: #444444;
+  --accent: #111111;
+  --accent-foreground: #FAFAE8;
   --destructive: #C0392B;
-  --destructive-foreground: #F5F2E8;
-  --border: #D4CFC5;
-  --input: #E5E1D6;
-  --ring: #B8A4D8;
+  --destructive-foreground: #FAFAE8;
+  --border: #DDDDC8;
+  --input: #EEEEDD;
+  --ring: #C9B8FF;
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Geist', 'Geist Fallback', sans-serif;
+  --font-sans: 'Inter', 'Geist', sans-serif;
   --font-serif: 'EB Garamond', 'Georgia', serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-mono: 'Geist Mono', monospace;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -124,24 +118,24 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Custom semantic tokens */
+  /* Custom tokens */
   --color-surface: var(--surface);
   --color-surface-border: var(--surface-border);
   --color-highlight: var(--highlight);
   --color-text-dim: var(--text-dim);
-  --color-grid-line: var(--grid-line);
 
   /* Dark section tokens */
   --color-ink: var(--ink);
   --color-ink-foreground: var(--ink-foreground);
   --color-ink-muted: var(--ink-muted);
   --color-ink-border: var(--ink-border);
+  --color-ink-card: var(--ink-card);
 
-  /* Forest section tokens */
-  --color-forest: var(--forest);
-  --color-forest-foreground: var(--forest-foreground);
-  --color-forest-muted: var(--forest-muted);
-  --color-forest-border: var(--forest-border);
+  /* Keep forest tokens as ink aliases so existing classes don't break */
+  --color-forest: var(--ink);
+  --color-forest-foreground: var(--ink-foreground);
+  --color-forest-muted: var(--ink-muted);
+  --color-forest-border: var(--ink-border);
 }
 
 @layer base {
@@ -154,43 +148,103 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  /* All headings use EB Garamond automatically */
   h1, h2, h3, h4, h5 {
     font-family: var(--font-serif);
     font-weight: 500;
     letter-spacing: -0.01em;
     line-height: 1.1;
   }
+  /* Section borders are a flat pattern killer — remove globally */
+  section {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
 }
 
-/* Light mode card — paper-like with soft shadow */
+/* ─── Section rhythm utilities ──────────────────────────────────────────── */
+/* Light section — cream (default) */
+.section-light {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Dark section — near-black, Wispr's primary contrast band */
+.section-dark {
+  background-color: var(--ink);
+  color: var(--ink-foreground);
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.section-dark + .section-dark {
+  border-radius: 0;
+}
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark h5 {
+  color: var(--ink-foreground);
+}
+.section-dark p,
+.section-dark li {
+  color: var(--ink-muted);
+}
+.section-dark .eyebrow {
+  color: rgba(250, 250, 232, 0.45);
+}
+.section-dark .eyebrow-line {
+  background-color: rgba(250, 250, 232, 0.2);
+}
+
+/* ─── Eyebrow labels ─────────────────────────────────────────────────────── */
+.eyebrow {
+  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.45);
+}
+.eyebrow-line {
+  display: inline-block;
+  height: 1px;
+  width: 2rem;
+  background-color: rgba(17, 17, 17, 0.25);
+  flex-shrink: 0;
+}
+
+/* ─── Card surfaces ──────────────────────────────────────────────────────── */
 .glass-card {
-  background: #EDE9DF;
-  border: 1px solid #D4CFC5;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
-/* grid-bg intentionally removed — clean flat cream background */
+/* ─── Ink cards (cards on dark sections) ────────────────────────────────── */
+.ink-card {
+  background: var(--ink-card);
+  border: 1px solid var(--ink-border);
+}
+
+/* ─── Utilities ──────────────────────────────────────────────────────────── */
 .grid-bg {
-  /* no-op — kept for backwards compat, grid pattern removed */
+  /* intentionally empty — grid pattern removed */
 }
 
-/* Soft shadow */
 .glow-accent {
-  box-shadow: 0 4px 32px rgba(184, 164, 216, 0.25);
+  box-shadow: 0 4px 32px rgba(201, 184, 255, 0.3);
 }
 
-/* Marquee scroll animation */
+/* ─── Marquee ────────────────────────────────────────────────────────────── */
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 0px)); }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(-50%)); }
 }
-
 .animate-marquee {
   animation: marquee 40s linear infinite;
   display: flex;
   width: fit-content;
 }
-
 .animate-marquee:hover {
   animation-play-state: paused;
 }

@@ -43,14 +43,14 @@ const phases = [
 
 export function SolutionSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
 
         {/* Framework intro */}
         <div className="max-w-3xl mb-14">
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Our Methodology</span>
+            <div className="eyebrow-line" aria-hidden="true" />
+            <span className="eyebrow">Our Methodology</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4">
             The PRESS Framework
@@ -63,7 +63,7 @@ export function SolutionSection() {
         {/* Phases */}
         <div className="flex flex-col gap-4">
           {phases.map((phase, i) => (
-            <div key={i} className="glass-card rounded-2xl border border-border/40 hover:border-primary/20 transition-all duration-300 overflow-hidden">
+            <div key={i} className="rounded-2xl bg-card border border-border border border-border/40 hover:border-primary/20 transition-all duration-300 overflow-hidden">
               <div className="flex flex-col md:flex-row">
                 {/* Letter accent */}
                 <div className="flex items-center justify-center w-full md:w-20 py-6 md:py-0 bg-primary/5 border-b md:border-b-0 md:border-r border-border/40 shrink-0">

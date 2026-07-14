@@ -35,14 +35,14 @@ export function AIImplementationMethodologySection() {
   ]
 
   return (
-    <section className="py-16 border-t border-border/40" aria-label="AI implementation methodology">
+    <section className="py-16" aria-label="AI implementation methodology">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="flex items-center gap-3 mb-10">
-          <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-          <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">How We Work</span>
+          <div className="eyebrow-line" aria-hidden="true" />
+          <span className="eyebrow">How We Work</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-10">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-ink-foreground text-balance mb-10">
           From diagnostic to daily use in six weeks
         </h2>
 

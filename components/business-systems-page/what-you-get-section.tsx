@@ -18,7 +18,7 @@ const included = [
 
 export function WhatYouGetSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
 
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
@@ -43,10 +43,10 @@ export function WhatYouGetSection() {
 
         {/* Timeline table */}
         <div className="rounded-2xl border border-border/40 overflow-hidden mb-10">
-          <div className="grid grid-cols-3 bg-card/60 px-6 py-3 border-b border-border/40">
-            <span className="text-xs uppercase tracking-widest text-muted-foreground font-medium">Timeline</span>
-            <span className="text-xs uppercase tracking-widest text-muted-foreground font-medium">Phase</span>
-            <span className="text-xs uppercase tracking-widest text-muted-foreground font-medium">Deliverables</span>
+          <div className="grid grid-cols-3 bg-card/60 px-6 py-3">
+            <span className="eyebrow font-medium">Timeline</span>
+            <span className="eyebrow font-medium">Phase</span>
+            <span className="eyebrow font-medium">Deliverables</span>
           </div>
           {deliverables.map((row, i) => (
             <div
@@ -63,7 +63,7 @@ export function WhatYouGetSection() {
         {/* Deliverables grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {included.map((item, i) => (
-            <div key={i} className="glass-card rounded-xl p-5 border border-border/40">
+            <div key={i} className="rounded-xl bg-card border border-border p-5 border border-border/40">
               <p className="text-sm text-foreground font-medium leading-snug">{item}</p>
             </div>
           ))}

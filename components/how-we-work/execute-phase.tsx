@@ -32,7 +32,7 @@ export function ExecutePhase() {
   return (
     <section
       id="execute"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="execute-heading"
     >
       <div className="container mx-auto px-6 lg:px-8">
@@ -123,7 +123,7 @@ export function ExecutePhase() {
             {executionAreas.map((area, i) => (
               <div
                 key={i}
-                className="glass-card rounded-xl p-6 border border-border/50"
+                className="rounded-xl bg-card border border-border p-6 border border-border/50"
               >
                 <h3 className="text-lg font-semibold text-foreground mb-4">
                   {area.title}

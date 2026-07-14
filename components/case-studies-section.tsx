@@ -78,14 +78,14 @@ const caseStudies = [
 
 export function CaseStudiesSection() {
   return (
-    <section id="case-studies" className="py-28 lg:py-36 border-t border-border/40" aria-labelledby="case-studies-heading">
+    <section id="case-studies" className="py-28 lg:py-36" aria-labelledby="case-studies-heading">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-px w-8 bg-foreground/30" />
-              <span className="text-xs tracking-[0.2em] uppercase text-foreground/50 font-medium">Work</span>
+              <div className="eyebrow-line"/>
+              <span className="eyebrow">Work</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance max-w-md" id="case-studies-heading">
               Results across industries.
@@ -101,10 +101,10 @@ export function CaseStudiesSection() {
           {caseStudies.map((study, i) => (
             <article
               key={i}
-              className="glass-card rounded-2xl overflow-hidden flex flex-col hover:border-accent/30 transition-all duration-300 group"
+              className="rounded-2xl bg-card border border-border overflow-hidden flex flex-col hover:border-accent/30 transition-all duration-300 group"
             >
               {/* Visual area */}
-              <div className="h-40 bg-secondary/30 text-muted-foreground p-4 border-b border-border/50 group-hover:text-accent/60 transition-colors duration-300">
+              <div className="h-40 bg-secondary/30 text-muted-foreground p-4/50 group-hover:text-accent/60 transition-colors duration-300">
                 {study.visual}
               </div>
 

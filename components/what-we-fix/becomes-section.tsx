@@ -70,7 +70,7 @@ export function BecomesSection() {
   return (
     <section
       id="becomes"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="becomes-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">

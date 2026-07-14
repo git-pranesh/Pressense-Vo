@@ -21,7 +21,7 @@ export function MeasurePhase() {
   return (
     <section
       id="measure"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="measure-heading"
     >
       <div className="container mx-auto px-6 lg:px-8">
@@ -80,7 +80,7 @@ export function MeasurePhase() {
             </div>
 
             {/* What you get */}
-            <div className="glass-card rounded-xl p-6 border border-border/50">
+            <div className="rounded-xl bg-card border border-border p-6 border border-border/50">
               <h3 className="text-lg font-semibold text-foreground mb-4">
                 What You Walk Away With
               </h3>

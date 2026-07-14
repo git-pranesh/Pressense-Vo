@@ -273,7 +273,7 @@ export function PlaybookDetails() {
   ]
 
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40">
+    <section className="py-28 lg:py-36">
       <div className="container mx-auto px-5 sm:px-8">
         {playbooks.map((playbook) => (
           <article
@@ -397,7 +397,7 @@ export function PlaybookDetails() {
               </div>
 
               {/* CTA */}
-              <div className="pt-8 border-t border-border/40">
+              <div className="pt-8">
                 <a
                   href={`/diagnostic?constraint=${playbook.id}`}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
@@ -424,7 +424,7 @@ export function PlaybookDetails() {
 
             {/* Divider between playbooks */}
             {playbook.id !== 'systems-audit' && (
-              <div className="mt-20 lg:mt-28 pt-20 lg:pt-28 border-t border-border/40" />
+              <div className="mt-20 lg:mt-28 pt-20 lg:pt-28" />
             )}
           </article>
         ))}

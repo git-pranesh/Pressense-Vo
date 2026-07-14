@@ -4,7 +4,7 @@ export function DiagnosticApproach() {
   return (
     <section
       id="diagnostic"
-      className="py-28 lg:py-36 border-t border-border/40 relative overflow-hidden"
+      className="py-28 lg:py-36 relative overflow-hidden"
       aria-labelledby="diagnostic-heading"
     >
       {/* Subtle radial glow */}

@@ -24,22 +24,22 @@ const responsibilities = [
 
 export function ProblemSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40" aria-labelledby="what-cmo-does-heading">
+    <section className="py-20 lg:py-28" aria-labelledby="what-cmo-does-heading">
       <div className="container mx-auto px-5 sm:px-8">
 
         <div className="max-w-3xl mb-14">
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">The role defined</span>
+            <div className="eyebrow-line" aria-hidden="true" />
+            <span className="eyebrow">The role defined</span>
           </div>
           {/* H2 matches the PAA question exactly for AEO */}
           <h2
             id="what-cmo-does-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-6"
+            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-6"
           >
             What does a fractional CMO do?
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-ink-muted leading-relaxed">
             A fractional CMO services engagement covers the full scope of a senior marketing leader, just at the hours your stage requires. Most B2B SaaS companies at the 0-to-1 or 1-to-3 million ARR stage need 10 to 20 hours of CMO-level input per week. They do not need someone in a seat full-time. Here is what that input covers:
           </p>
         </div>
@@ -48,7 +48,7 @@ export function ProblemSection() {
           {responsibilities.map((item, i) => (
             <div
               key={i}
-              className="glass-card rounded-2xl p-7 border border-border/40 hover:border-primary/20 transition-all duration-300"
+              className="rounded-2xl p-7 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300"
             >
               <div className="flex items-start gap-3 mb-3">
                 <span className="text-xs font-bold text-primary/50 pt-0.5 tabular-nums">0{i + 1}</span>

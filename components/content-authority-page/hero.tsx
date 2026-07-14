@@ -4,8 +4,8 @@ export function ContentAuthorityHero() {
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Solutions / Content & Authority Systems</span>
+            <div className="eyebrow-line" aria-hidden="true" />
+            <span className="eyebrow">Solutions / Content & Authority Systems</span>
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
             Content systems that turn expertise into market trust.
@@ -51,7 +51,6 @@ export function ContentAuthorityHero() {
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background via-transparent to-background/60" aria-hidden="true" />
     </section>
   )
 }

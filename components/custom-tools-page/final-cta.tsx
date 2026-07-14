@@ -18,7 +18,7 @@ export function CustomToolsFinalCTA() {
                 </svg>
               </span>
             </a>
-            <a href="/playbooks" className="inline-flex items-center gap-2 px-7 py-5 rounded-2xl text-base font-medium border border-border text-ink-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200">
+            <a href="/playbooks" className="inline-flex items-center gap-2 px-7 py-5 rounded-2xl text-base font-medium border border-border text-ink-foreground hover:border-primary/50 hover:bg-ink-card/40 transition-all duration-200">
               View Playbooks
             </a>
           </div>

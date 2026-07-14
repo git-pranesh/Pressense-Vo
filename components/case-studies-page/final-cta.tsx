@@ -25,7 +25,7 @@ export function CaseStudiesFinalCTA() {
             </span>
           </h2>
 
-          <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-lg lg:text-xl text-ink-muted leading-relaxed mb-10 max-w-xl mx-auto">
             If your business is stuck in a pattern you can&apos;t break, we should have a conversation.
           </p>
 
@@ -57,7 +57,7 @@ export function CaseStudiesFinalCTA() {
 
             <Link
               href="/how-we-work"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium border border-border text-ink-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium border border-border text-ink-foreground hover:border-primary/50 hover:bg-ink-card/40 transition-all duration-200"
               aria-label="Learn more about our methodology"
             >
               See How We Work

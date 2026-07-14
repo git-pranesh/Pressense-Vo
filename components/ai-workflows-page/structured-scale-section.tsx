@@ -17,7 +17,7 @@ export function AIStructuredScaleSection() {
               Good AI systems support human judgment. They do not replace the need for ownership, standards, and process.
             </p>
           </div>
-          <div className="mt-10 pt-8 border-t border-border/40">
+          <div className="mt-10 pt-8">
             <p className="text-muted-foreground">
               See how AI connects to the larger system: <a href="/custom-internal-tools" className="text-primary hover:underline">Internal tools</a>, <a href="/how-we-work" className="text-primary hover:underline">How we work</a>, and <a href="/playbooks" className="text-primary hover:underline">Playbooks</a>.
             </p>

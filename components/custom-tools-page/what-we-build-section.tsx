@@ -23,7 +23,7 @@ export function WhatWeBuildSection() {
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {tools.map((tool, i) => (
-            <div key={i} className="glass-card rounded-2xl p-8 border border-border/40">
+            <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors">
               <h3 className="text-lg font-semibold text-foreground mb-3">{tool.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{tool.description}</p>
             </div>

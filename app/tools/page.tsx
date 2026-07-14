@@ -57,7 +57,7 @@ export default function ToolsPage() {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-border/40">
+      <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-40" aria-hidden="true" />
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="flex items-center gap-3 mb-6">

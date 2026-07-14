@@ -37,11 +37,11 @@ export function AIImplementationFAQSection() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <section className="py-16 border-t border-border/40" aria-label="AI implementation for small business FAQ">
+    <section className="py-16" aria-label="AI implementation for small business FAQ">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="flex items-center gap-3 mb-10">
-          <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-          <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">FAQ</span>
+          <div className="eyebrow-line" aria-hidden="true" />
+          <span className="eyebrow">FAQ</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-10">

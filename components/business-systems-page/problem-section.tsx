@@ -1,18 +1,18 @@
 export function ProblemSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
 
           {/* H2 matches PAA "what does a business systems consultant do" */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-6">
             How a Business Systems Consultant Fixes Your Operations in 90 Days
           </h2>
 
-          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          <p className="text-lg text-ink-muted leading-relaxed mb-4">
             Most businesses at the $1M to $15M ARR stage have the same problem. Revenue is growing, but operations are not keeping up. Decisions route through the founder. New hires take three months to become useful. Data lives in five different places and none of them agree. Nobody planned for this. It just happened.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-12">
+          <p className="text-lg text-ink-muted leading-relaxed mb-12">
             A business systems consultant steps in to fix the infrastructure, not the people. We map how work actually flows, identify where it breaks down, and build the systems that make the right thing the default thing. The goal is a business that runs reliably whether you are in the room or not.
           </p>
 

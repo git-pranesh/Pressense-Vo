@@ -1,11 +1,11 @@
 export function CrmErpFinalCTA() {
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40">
+    <section className="py-28 lg:py-36 bg-ink rounded-t-3xl">
       <div className="container mx-auto px-5 sm:px-8 text-center">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-6 text-balance">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground mb-6 text-balance">
           Start with one system, not everything.
         </h2>
-        <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg text-ink-muted mb-10 max-w-2xl mx-auto leading-relaxed">
           You don&apos;t need to rebuild your entire business at once. Most companies benefit from 
           fixing one critical workflow first, then expanding gradually.
         </p>

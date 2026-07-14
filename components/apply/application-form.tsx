@@ -139,7 +139,7 @@ export function ApplicationForm() {
     return (
       <section
         id="application-form"
-        className="py-20 lg:py-28 border-t border-border/40"
+        className="py-20 lg:py-28"
         aria-labelledby="form-success-heading"
       >
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
@@ -180,7 +180,7 @@ export function ApplicationForm() {
   return (
     <section
       id="application-form"
-      className="py-20 lg:py-28 border-t border-border/40"
+      className="py-20 lg:py-28"
       aria-labelledby="form-heading"
     >
       <div className="max-w-3xl mx-auto px-6 lg:px-8">

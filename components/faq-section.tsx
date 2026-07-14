@@ -24,7 +24,7 @@ export function FAQSection({ eyebrow = 'FAQ', headline, faqs, className = '' }: 
     <section className={`py-20 md:py-28 ${className}`}>
       <div className="container max-w-4xl mx-auto px-6">
         <div className="flex items-center gap-3 mb-5">
-          <div className="h-px w-8 bg-foreground/30" />
+          <div className="eyebrow-line"/>
           <p className="text-xs uppercase tracking-widest text-foreground/50 font-medium">
             {eyebrow}
           </p>

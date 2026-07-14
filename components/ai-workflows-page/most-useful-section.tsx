@@ -11,7 +11,7 @@ const useCases = [
 
 export function AIWorkflowsMostUsefulSection() {
   return (
-    <section className="py-20 lg:py-28 border-t border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
         <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-12">
           Where this is most useful

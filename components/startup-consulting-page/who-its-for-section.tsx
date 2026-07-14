@@ -30,7 +30,7 @@ const notFor = [
 
 export function StartupConsultingWhoItsForSection() {
   return (
-    <section className="py-20 lg:py-28 border-t border-border/40">
+    <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div>
@@ -42,9 +42,9 @@ export function StartupConsultingWhoItsForSection() {
             </h2>
             <div className="space-y-5">
               {profiles.map((p) => (
-                <div key={p.type} className="glass-card rounded-xl p-5 border border-border/40">
+                <div key={p.type} className="rounded-xl bg-card border border-border p-5 border border-border/40">
                   <h3 className="text-sm font-semibold text-foreground mb-2">{p.type}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{p.description}</p>
+                  <p className="text-sm text-ink-muted leading-relaxed">{p.description}</p>
                 </div>
               ))}
             </div>
@@ -57,7 +57,7 @@ export function StartupConsultingWhoItsForSection() {
             <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-8">
               We are not the right fit for everyone
             </h2>
-            <p className="text-base text-muted-foreground leading-relaxed mb-8">
+            <p className="text-base text-ink-muted leading-relaxed mb-8">
               We would rather say this clearly upfront than waste your time. Pressense works best when there is already a validated offer, a small team, and a real intent to move.
             </p>
             <ul className="space-y-4">
@@ -68,7 +68,7 @@ export function StartupConsultingWhoItsForSection() {
                       <path d="M2 2l4 4M6 2l-4 4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
                     </svg>
                   </span>
-                  <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
+                  <span className="text-sm text-ink-muted leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>

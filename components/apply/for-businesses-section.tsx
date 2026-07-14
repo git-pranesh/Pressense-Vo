@@ -20,7 +20,7 @@ export function ForBusinessesSection() {
   return (
     <section
       id="for-businesses"
-      className="py-20 lg:py-28 border-t border-border/40"
+      className="py-20 lg:py-28"
       aria-labelledby="for-businesses-heading"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">

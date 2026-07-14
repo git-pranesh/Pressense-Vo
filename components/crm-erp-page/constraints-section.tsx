@@ -39,7 +39,7 @@ export function CrmErpConstraintsSection() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {constraints.map((item, i) => (
-            <article key={i} className="glass-card rounded-2xl p-6 border border-border/40">
+            <article key={i} className="rounded-2xl p-6 border border-border bg-card hover:border-foreground/20 transition-colors">
               <h3 className="text-lg font-semibold text-foreground mb-3">{item.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{item.description}</p>
             </article>

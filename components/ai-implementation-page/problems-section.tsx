@@ -27,11 +27,11 @@ export function AIImplementationProblemsSection() {
   ]
 
   return (
-    <section className="py-16 border-t border-border/40" aria-label="Common AI implementation questions for small business">
+    <section className="py-16" aria-label="Common AI implementation questions for small business">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="flex items-center gap-3 mb-10">
-          <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-          <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">What We Solve</span>
+          <div className="eyebrow-line" aria-hidden="true" />
+          <span className="eyebrow">What We Solve</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-10">

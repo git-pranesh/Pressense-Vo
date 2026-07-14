@@ -31,7 +31,7 @@ export function TranslationSection() {
             </p>
           </div>
           
-          <div className="mt-12 pt-8 border-t border-border/40">
+          <div className="mt-12 pt-8">
             <h3 className="text-sm uppercase tracking-widest text-muted-foreground mb-6">When translation is missing</h3>
             <ul className="grid sm:grid-cols-2 gap-3">
               {consequences.map((item, i) => (

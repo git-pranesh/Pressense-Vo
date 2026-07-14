@@ -111,8 +111,8 @@ export default function FramerWebsiteDesignPage() {
           <div className="container mx-auto px-5 sm:px-8 relative z-10">
             <div className="max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-                <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
+                <div className="eyebrow-line" aria-hidden="true" />
+                <span className="eyebrow">
                   Framer Agency / Web Design
                 </span>
               </div>
@@ -132,7 +132,7 @@ export default function FramerWebsiteDesignPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <a href="/diagnostic" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
+                <a href="/diagnostic" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
                   Book a Free Diagnostic
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                     <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -160,7 +160,7 @@ export default function FramerWebsiteDesignPage() {
         </section>
 
         {/* Problems */}
-        <section className="py-20 border-t border-border/40">
+        <section className="py-20">
           <div className="container mx-auto px-5 sm:px-8">
             <div className="max-w-3xl mb-14">
               <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">Why Framer</span>
@@ -181,7 +181,7 @@ export default function FramerWebsiteDesignPage() {
         </section>
 
         {/* Use Cases */}
-        <section className="py-20 border-t border-border/40">
+        <section className="py-20">
           <div className="container mx-auto px-5 sm:px-8">
             <div className="max-w-3xl mb-14">
               <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">Use Cases</span>
@@ -208,7 +208,7 @@ export default function FramerWebsiteDesignPage() {
         </section>
 
         {/* Pricing */}
-        <section className="py-20 border-t border-border/40">
+        <section className="py-20">
           <div className="container mx-auto px-5 sm:px-8">
             <div className="max-w-3xl mb-14">
               <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">Pricing</span>
@@ -246,7 +246,7 @@ export default function FramerWebsiteDesignPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-20 border-t border-border/40">
+        <section className="py-20">
           <div className="container mx-auto px-5 sm:px-8">
             <div className="max-w-3xl mx-auto">
               <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">FAQ</span>

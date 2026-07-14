@@ -41,15 +41,15 @@ export function GtmSystemsBuilderWhoItsForSection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+        <p className="eyebrow mb-4">
           Right Fit
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-ink-foreground text-balance mb-4 leading-tight">
           Who this is built for
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
+        <p className="text-lg text-ink-muted leading-relaxed mb-14 max-w-2xl">
           Pressense works with founder-led B2B SaaS companies that are past the validation stage and need to build systems that scale without proportional headcount. If that is not where you are, this is not the right engagement.
         </p>
 
@@ -63,16 +63,16 @@ export function GtmSystemsBuilderWhoItsForSection() {
                 <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                 <h3 className="text-base font-semibold text-foreground">{item.title}</h3>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+              <p className="text-sm text-ink-muted leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>
 
         <div className="border-t border-border/30 pt-12">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+          <p className="eyebrow mb-4">
             Honest Disqualifiers
           </p>
-          <h3 className="text-2xl font-semibold text-foreground text-balance mb-10">
+          <h3 className="text-2xl font-semibold text-ink-foreground text-balance mb-10">
             This is NOT right for you if...
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
@@ -82,7 +82,7 @@ export function GtmSystemsBuilderWhoItsForSection() {
                 className="p-6 rounded-2xl border border-border/30 bg-secondary/20"
               >
                 <h4 className="text-base font-semibold text-foreground mb-3">{item.title}</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                <p className="text-sm text-ink-muted leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>

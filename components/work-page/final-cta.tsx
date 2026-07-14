@@ -9,7 +9,7 @@ export function WorkFinalCTA() {
             See a pattern in your business?
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed text-pretty">
+          <p className="text-lg text-ink-muted mb-12 max-w-2xl mx-auto leading-relaxed text-pretty">
             Start with a focused diagnostic. We will help identify whether the real constraint is strategy, GTM, operations, systems, or execution.
           </p>
 

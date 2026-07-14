@@ -29,7 +29,7 @@ export function ProcessSection() {
   return (
     <section
       id="process"
-      className="py-20 lg:py-28 border-t border-border/40"
+      className="py-20 lg:py-28"
       aria-labelledby="process-heading"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">

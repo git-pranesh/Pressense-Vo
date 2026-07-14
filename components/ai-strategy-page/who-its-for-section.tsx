@@ -35,7 +35,7 @@ export function AIStrategyWhoItsFor() {
 
   return (
     <section
-      className="py-16 border-t border-border/40"
+      className="py-16"
       aria-labelledby="who-its-for-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">
@@ -58,7 +58,7 @@ export function AIStrategyWhoItsFor() {
                   aria-hidden="true"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{item.heading}</h3>
+                  <h3 className="text-lg font-semibold text-ink-foreground mb-2">{item.heading}</h3>
                   <p className="text-muted-foreground leading-relaxed">{item.body}</p>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export function AIStrategyWhoItsFor() {
                   />
                   <div>
                     <p className="text-sm font-semibold text-foreground mb-1">{item.heading}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+                    <p className="text-sm text-ink-muted leading-relaxed">{item.body}</p>
                   </div>
                 </div>
               ))}

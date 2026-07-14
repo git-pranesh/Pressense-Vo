@@ -30,7 +30,7 @@ export function BuildPlanPhase() {
   return (
     <section
       id="build-plan"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="build-plan-heading"
     >
       <div className="container mx-auto px-6 lg:px-8">
@@ -88,7 +88,7 @@ export function BuildPlanPhase() {
           {planComponents.map((item, i) => (
             <div
               key={i}
-              className="glass-card rounded-xl p-6 border border-border/50 hover:border-primary/30 transition-colors duration-200"
+              className="rounded-xl bg-card border border-border p-6 border border-border/50 hover:border-primary/30 transition-colors duration-200"
             >
               <div className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4">
                 <span className="text-sm font-semibold">{i + 1}</span>

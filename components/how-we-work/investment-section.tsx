@@ -44,7 +44,7 @@ export function InvestmentSection() {
   return (
     <section
       id="investment"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="investment-heading"
     >
       <div className="container mx-auto px-6 lg:px-8">
@@ -113,7 +113,7 @@ export function InvestmentSection() {
                 ))}
               </ul>
 
-              <div className="pt-4 border-t border-border/40">
+              <div className="pt-4">
                 <p className="text-xs text-muted-foreground italic">{tier.note}</p>
               </div>
             </div>

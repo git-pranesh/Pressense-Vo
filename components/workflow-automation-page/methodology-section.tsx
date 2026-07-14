@@ -39,15 +39,15 @@ const phases = [
 
 export function MethodologySection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
           Our Methodology
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-ink-foreground text-balance mb-4">
           The Pressense Workflow Automation Framework
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl">
+        <p className="text-lg text-ink-muted leading-relaxed mb-12 max-w-2xl">
           Every engagement runs through four phases. Each phase ends with a deliverable. Nothing moves forward without your sign-off.
         </p>
 
@@ -55,7 +55,7 @@ export function MethodologySection() {
           {phases.map((phase) => (
             <div
               key={phase.number}
-              className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
+              className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-3xl font-bold text-primary/20 leading-none">{phase.number}</span>
@@ -65,7 +65,7 @@ export function MethodologySection() {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-4">{phase.description}</p>
-              <div className="flex items-start justify-between gap-4 pt-4 border-t border-border/40">
+              <div className="flex items-start justify-between gap-4 pt-4">
                 <div>
                   <p className="text-xs font-semibold tracking-widest uppercase text-primary/60 mb-1">
                     Deliverable

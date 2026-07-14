@@ -37,7 +37,7 @@ export function ApproachSection() {
   return (
     <section
       id="approach"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="approach-heading"
     >
       <div className="container mx-auto px-6">

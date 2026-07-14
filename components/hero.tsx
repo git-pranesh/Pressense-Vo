@@ -7,7 +7,7 @@ export function Hero() {
         {/* Eyebrow */}
         <div className="flex items-center gap-3 mb-8">
           <div className="h-px w-10 bg-foreground/30" />
-          <span className="text-xs tracking-[0.2em] uppercase text-foreground/50 font-medium">
+          <span className="eyebrow">
             Diagnostic-First Build Partner
           </span>
         </div>

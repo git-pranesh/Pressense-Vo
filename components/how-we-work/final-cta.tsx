@@ -26,7 +26,7 @@ export function HowWeWorkCTA() {
             Ready to build the systems your business needs?
           </h2>
 
-          <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-lg text-ink-muted leading-relaxed mb-10 max-w-xl mx-auto">
             Start with a conversation. We&apos;ll discuss where you are, where you want
             to go, and whether we&apos;re the right fit to help you get there.
           </p>
@@ -60,7 +60,7 @@ export function HowWeWorkCTA() {
 
             <Link
               href="/what-we-fix"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium border border-border text-ink-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium border border-border text-ink-foreground hover:border-primary/50 hover:bg-ink-card/40 transition-all duration-200"
               aria-label="See what problems we solve"
             >
               See What We Fix

@@ -220,10 +220,10 @@ export default function PricingPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="py-20 lg:py-28 border-b border-border/40">
+      <section className="py-20 lg:py-28">
         <div className="container mx-auto px-5 sm:px-8">
           <div className="max-w-3xl">
-            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Pricing</p>
+            <p className="eyebrow mb-4">Pricing</p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
               Transparent pricing. No surprises.
             </h1>
@@ -233,7 +233,7 @@ export default function PricingPage() {
             <div className="flex items-center gap-3">
               <Link
                 href="/diagnostic"
-                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
               >
                 Book a free diagnostic
               </Link>
@@ -250,7 +250,7 @@ export default function PricingPage() {
 
       {/* Services by category */}
       {services.map((category) => (
-        <section key={category.category} className="py-16 lg:py-20 border-b border-border/40">
+        <section key={category.category} className="py-16 lg:py-20">
           <div className="container mx-auto px-5 sm:px-8">
             <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-10">{category.category}</h2>
             
@@ -294,7 +294,7 @@ export default function PricingPage() {
                   </div>
 
                   {/* Escape valve + CTA */}
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2 border-t border-border/30">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2/30">
                     <p className="text-xs text-muted-foreground">
                       Larger engagements?{' '}
                       <Link href="/diagnostic" className="text-primary hover:underline">
@@ -330,7 +330,7 @@ export default function PricingPage() {
             </p>
             <Link
               href="/diagnostic"
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
             >
               Start your diagnostic
             </Link>

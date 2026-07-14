@@ -31,18 +31,18 @@ const phases = [
 
 export function MethodologySection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
 
         <div className="flex items-center gap-3 mb-6">
-          <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-          <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">How We Work</span>
+          <div className="eyebrow-line" aria-hidden="true" />
+          <span className="eyebrow">How We Work</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-4">
           The Pressense Systems Method
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-14">
+        <p className="text-lg text-ink-muted leading-relaxed max-w-2xl mb-14">
           Four phases. Every engagement follows this structure. Nothing skipped.
         </p>
 
@@ -50,7 +50,7 @@ export function MethodologySection() {
           {phases.map((phase) => (
             <div
               key={phase.number}
-              className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
+              className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
             >
               <div className="flex items-baseline gap-3 mb-4">
                 <span className="text-4xl font-semibold text-primary/30 leading-none">{phase.number}</span>
@@ -60,8 +60,8 @@ export function MethodologySection() {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-5">{phase.description}</p>
-              <div className="pt-4 border-t border-border/40">
-                <span className="text-xs uppercase tracking-widest text-muted-foreground font-medium">Deliverable</span>
+              <div className="pt-4">
+                <span className="eyebrow font-medium">Deliverable</span>
                 <p className="text-sm text-foreground font-medium mt-1">{phase.deliverable}</p>
               </div>
             </div>

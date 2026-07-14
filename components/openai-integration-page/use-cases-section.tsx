@@ -63,9 +63,9 @@ const useCases = [
 
 export function OpenAIUseCasesSection() {
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Use Cases by Model</p>
+        <p className="eyebrow mb-4">Use Cases by Model</p>
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
           What you can build with the OpenAI API
         </h2>

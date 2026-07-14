@@ -17,7 +17,7 @@ export function ErpLiteSection() {
               ERP-lite systems create the operational backbone a growing business needs now, while staying simple enough for the team to actually use.
             </p>
           </div>
-          <div className="mt-10 pt-8 border-t border-border/40">
+          <div className="mt-10 pt-8">
             <p className="text-muted-foreground">
               See how this connects to <a href="/custom-internal-tools" className="text-primary hover:underline">internal tools</a> and <a href="/how-we-work" className="text-primary hover:underline">how we work</a>.
             </p>

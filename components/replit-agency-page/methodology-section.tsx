@@ -47,15 +47,15 @@ const phases = [
 
 export function ReplitAgencyMethodologySection() {
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+        <p className="eyebrow mb-4">
           How we work
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-ink-foreground text-balance mb-4 leading-tight">
           The Pressense Replit build framework
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
+        <p className="text-lg text-ink-muted leading-relaxed mb-14 max-w-2xl">
           Diagnose. Strategise. Build. Scale. Four phases, fixed timeline, working software at every checkpoint.
         </p>
 
@@ -78,8 +78,8 @@ export function ReplitAgencyMethodologySection() {
                 <p className="text-xs text-muted-foreground mt-2">{phase.weeks}</p>
               </div>
               <div>
-                <p className="text-base text-muted-foreground leading-relaxed mb-4">{phase.body1}</p>
-                <p className="text-base text-muted-foreground leading-relaxed">{phase.body2}</p>
+                <p className="text-base text-ink-muted leading-relaxed mb-4">{phase.body1}</p>
+                <p className="text-base text-ink-muted leading-relaxed">{phase.body2}</p>
               </div>
             </div>
           ))}

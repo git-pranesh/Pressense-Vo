@@ -20,8 +20,8 @@ export function WhoSection() {
         {/* Header */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-5">
-            <div className="h-px w-8 bg-forest-foreground/30" />
-            <span className="text-xs tracking-[0.2em] uppercase text-forest-muted font-medium">Who We Work With</span>
+            <div className="eyebrow-line" />
+            <span className="eyebrow">Who We Work With</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-forest-foreground text-balance max-w-2xl" id="who-heading">
             We work with a select number of serious businesses.
@@ -34,7 +34,7 @@ export function WhoSection() {
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 rounded-full border border-primary/50 flex items-center justify-center">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                  <path d="M1.5 5.5L3.5 7.5l5-5" stroke="#B8A4D8" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M1.5 5.5L3.5 7.5l5-5" stroke="#C9B8FF" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <span className="text-sm font-semibold text-forest-foreground">This is for you if</span>
@@ -54,7 +54,7 @@ export function WhoSection() {
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 rounded-full border border-forest-border flex items-center justify-center">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                  <path d="M2 2l6 6M8 2L2 8" stroke="#8AA898" strokeWidth="1.4" strokeLinecap="round" />
+                  <path d="M2 2l6 6M8 2L2 8" stroke="#999999" strokeWidth="1.4" strokeLinecap="round" />
                 </svg>
               </div>
               <span className="text-sm font-semibold text-forest-muted">This is not for you if</span>

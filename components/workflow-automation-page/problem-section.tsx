@@ -31,7 +31,7 @@ export function ProblemSection() {
   ]
 
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">

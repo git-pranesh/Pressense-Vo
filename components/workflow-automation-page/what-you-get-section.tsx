@@ -13,7 +13,7 @@ const deliverables = [
 
 export function WhatYouGetSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
           Deliverables
@@ -31,7 +31,7 @@ export function WhatYouGetSection() {
 
         {/* Timeline table */}
         <div className="rounded-2xl border border-border/40 overflow-hidden mb-10">
-          <div className="grid grid-cols-3 bg-card/60 px-6 py-3 border-b border-border/40">
+          <div className="grid grid-cols-3 bg-card/60 px-6 py-3">
             <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground col-span-2">
               Deliverable
             </p>
@@ -42,7 +42,7 @@ export function WhatYouGetSection() {
           {deliverables.map((row, i) => (
             <div
               key={row.item}
-              className={`grid grid-cols-3 px-6 py-4 border-b border-border/20 last:border-0 ${
+              className={`grid grid-cols-3 px-6 py-4/20 last:border-0 ${
                 i % 2 === 0 ? 'bg-background' : 'bg-card/20'
               }`}
             >

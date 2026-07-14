@@ -39,7 +39,7 @@ export function ConstraintsSection() {
         </div>
         <div className="grid lg:grid-cols-2 gap-6">
           {constraints.map((constraint, i) => (
-            <div key={i} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
+            <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
               <h3 className="text-xl font-semibold text-foreground mb-3">{constraint.title}</h3>
               <p className="text-base text-muted-foreground leading-relaxed">{constraint.description}</p>
             </div>
