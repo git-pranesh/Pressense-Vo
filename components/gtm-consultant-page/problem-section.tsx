@@ -5,7 +5,7 @@ export function ProblemSection() {
         <div className="max-w-3xl">
 
           {/* What is GTM consulting — exact H2 PAA match, AEO citation trigger */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-6">
             What does a GTM strategy consultant do?
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4">

@@ -10,7 +10,7 @@ export function EngagementPathSection() {
   return (
     <section className="py-28 lg:py-36 border-t border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-16">
           Typical engagement path
         </h2>
         <div className="space-y-6">

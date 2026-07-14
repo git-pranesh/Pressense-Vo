@@ -81,7 +81,7 @@ export function BecomesSection() {
           </p>
           <h2
             id="becomes-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance"
+            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance"
           >
             What broken becomes when it&apos;s fixed.
           </h2>

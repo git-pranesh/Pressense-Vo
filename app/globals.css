@@ -137,7 +137,16 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
   }
 }
 
@@ -148,17 +157,14 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
-/* Subtle grid background — very light on warm white */
+/* grid-bg intentionally removed — clean flat cream background */
 .grid-bg {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
+  /* no-op — kept for backwards compat, grid pattern removed */
 }
 
-/* Soft shadow instead of dark glow */
+/* Soft shadow */
 .glow-accent {
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 32px rgba(184, 164, 216, 0.25);
 }
 
 /* Marquee scroll animation */

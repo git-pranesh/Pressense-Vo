@@ -21,7 +21,6 @@ export function HeroBlock({ eyebrow, title, subtitle, description, primaryCta, s
 
   return (
     <section className="relative min-h-[70vh] flex flex-col justify-center overflow-hidden pt-20 pb-16 px-6 lg:px-10">
-      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="relative max-w-4xl mx-auto text-center">
         {eyebrow && (
           <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-xs font-medium text-primary/80 tracking-wider uppercase mb-6">
@@ -37,7 +36,7 @@ export function HeroBlock({ eyebrow, title, subtitle, description, primaryCta, s
         {(primary || secondary) && (
           <div className="flex flex-wrap gap-4 justify-center">
             {primary && (
-              <Link href={primary.href || '/diagnostic'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-colors">
+              <Link href={primary.href || '/diagnostic'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-colors">
                 {primary.text}
               </Link>
             )}

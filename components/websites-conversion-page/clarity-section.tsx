@@ -12,7 +12,7 @@ export function ClaritySection() {
     <section className="py-24 lg:py-32" aria-label="The clarity problem">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-8 text-balance">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-8 text-balance">
             Most websites do not fail because of design. They fail because buyers leave confused.
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">

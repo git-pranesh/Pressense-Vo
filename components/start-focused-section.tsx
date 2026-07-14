@@ -33,7 +33,7 @@ export function StartFocusedSection() {
             </span>
           </div>
           <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance"
+            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance"
             id="start-focused-heading"
           >
             Start with one focused problem.
@@ -76,7 +76,7 @@ export function StartFocusedSection() {
         <div className="mt-16 flex justify-center">
           <a
             href="/diagnostic"
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             aria-label="Start with a focused diagnostic"
           >
             Start With a Diagnostic

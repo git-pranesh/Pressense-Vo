@@ -51,7 +51,7 @@ export function ExecutePhase() {
           <div>
             <h2
               id="execute-heading"
-              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-6 text-balance"
+              className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-6 text-balance"
             >
               Execute
             </h2>

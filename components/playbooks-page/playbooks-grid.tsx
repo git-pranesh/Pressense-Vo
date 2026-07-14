@@ -14,7 +14,7 @@ export function PlaybooksGrid() {
     <section className="py-28 lg:py-36" aria-label="Playbook library">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance" id="playbooks-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance" id="playbooks-heading">
             Playbook library.
           </h2>
           <p className="text-base text-muted-foreground mt-4 max-w-2xl">

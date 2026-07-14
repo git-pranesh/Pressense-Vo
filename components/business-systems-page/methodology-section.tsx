@@ -39,7 +39,7 @@ export function MethodologySection() {
           <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">How We Work</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4">
           The Pressense Systems Method
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-14">

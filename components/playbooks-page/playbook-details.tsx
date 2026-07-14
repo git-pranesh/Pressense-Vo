@@ -282,7 +282,7 @@ export function PlaybookDetails() {
             className="mb-20 lg:mb-28 scroll-mt-20"
           >
             <div className="max-w-4xl">
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-8">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-8">
                 {playbook.title}
               </h3>
 

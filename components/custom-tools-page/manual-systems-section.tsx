@@ -3,7 +3,7 @@ export function ManualSystemsSection() {
     <section className="py-28 lg:py-36 border-t border-border/40" aria-labelledby="manual-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 id="manual-heading" className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-8">
+          <h2 id="manual-heading" className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-8">
             Manual systems work, until the business grows past them.
           </h2>
           <div className="space-y-6">

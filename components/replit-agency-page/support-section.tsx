@@ -61,7 +61,7 @@ export function ReplitAgencySupportSection() {
           </div>
           <a
             href="/diagnostic"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 whitespace-nowrap"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 whitespace-nowrap"
           >
             Book a diagnostic
             <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">

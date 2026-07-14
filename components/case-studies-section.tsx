@@ -87,7 +87,7 @@ export function CaseStudiesSection() {
               <div className="h-px w-8 bg-accent opacity-60" />
               <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">Work</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-md" id="case-studies-heading">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance max-w-md" id="case-studies-heading">
               Results across industries.
             </h2>
           </div>

@@ -23,7 +23,7 @@ export function WhenNotSection() {
             </p>
             <h2
               id="when-not-heading"
-              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance"
+              className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance"
             >
               When we&apos;re not the right fit.
             </h2>

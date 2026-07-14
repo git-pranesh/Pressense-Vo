@@ -431,7 +431,7 @@ export function DiagnosticForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="group inline-flex items-center gap-3 px-10 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent disabled:opacity-60 disabled:cursor-not-allowed"
+              className="group inline-flex items-center gap-3 px-10 py-4 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent disabled:opacity-60 disabled:cursor-not-allowed"
               aria-label="Request diagnostic"
             >
               {isSubmitting ? (

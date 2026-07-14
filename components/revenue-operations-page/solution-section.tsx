@@ -32,7 +32,7 @@ export function SolutionSection() {
           </div>
           <h2
             id="revops-comparison-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4"
           >
             Fractional RevOps vs Full-time vs Agency
           </h2>

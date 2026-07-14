@@ -62,7 +62,7 @@ export function MvpWhatYouGetSection() {
             </p>
             <a
               href="/diagnostic"
-              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
             >
               Book a discovery call
             </a>

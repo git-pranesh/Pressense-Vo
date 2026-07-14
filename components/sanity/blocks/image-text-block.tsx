@@ -21,7 +21,7 @@ export function ImageTextBlock({ eyebrow, title, body, imagePosition = 'right', 
             </ul>
           )}
           {cta?.href && (
-            <Link href={cta.href} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors">
+            <Link href={cta.href} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors">
               {cta.text || 'Learn More'}
             </Link>
           )}

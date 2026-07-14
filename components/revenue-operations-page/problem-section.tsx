@@ -31,7 +31,7 @@ export function ProblemSection() {
             <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
             <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">What is revenue operations</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-6">
             What is Revenue Operations?
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4">

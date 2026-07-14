@@ -14,7 +14,7 @@ export function WhatWeDo() {
         <p className="text-xs tracking-[0.2em] uppercase text-accent font-medium mb-5">
           Our Approach
         </p>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-5 text-balance" id="our-approach-heading">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-5 text-balance" id="our-approach-heading">
           We don&apos;t just advise.
           <br />
           <span className="text-primary font-light italic">We diagnose, fix, and build.</span>

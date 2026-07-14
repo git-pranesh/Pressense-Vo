@@ -5,7 +5,7 @@ export function ProblemSection() {
         <div className="max-w-3xl">
 
           {/* H2 matches PAA "what does a business systems consultant do" */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-6">
             How a Business Systems Consultant Fixes Your Operations in 90 Days
           </h2>
 

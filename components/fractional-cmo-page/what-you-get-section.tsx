@@ -32,7 +32,7 @@ export function WhatYouGetSection() {
       <div className="container mx-auto px-5 sm:px-8">
 
         <div className="mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4">
             What you get
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">

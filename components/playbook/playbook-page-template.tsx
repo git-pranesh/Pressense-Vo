@@ -91,7 +91,7 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
               <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Playbook</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
               {playbook.title}
             </h1>
 
@@ -146,7 +146,7 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
                 <div className="mt-8 pt-8 border-t border-border/40">
                   <Link
                     href="/diagnostic"
-                    className="inline-flex items-center justify-center w-full gap-2 px-4 py-3 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+                    className="inline-flex items-center justify-center w-full gap-2 px-4 py-3 rounded-full text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
                   >
                     Start Diagnostic
                   </Link>

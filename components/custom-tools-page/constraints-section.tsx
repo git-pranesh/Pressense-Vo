@@ -30,7 +30,7 @@ export function ConstraintsSection() {
     <section className="py-28 lg:py-36" aria-labelledby="constraints-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="mb-16">
-          <h2 id="constraints-heading" className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-4">
+          <h2 id="constraints-heading" className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4">
             The constraint we usually see
           </h2>
           <p className="text-lg text-muted-foreground">

@@ -3,7 +3,7 @@ export function IntroSection() {
     <section className="py-20 lg:py-28 border-b border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-6">
             Most businesses do not need more ideas. They need better decisions.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">

@@ -9,7 +9,6 @@ const stats = [
 export function AIAutomationAgencyHero() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="AI Automation Agency">
-      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
 
@@ -20,7 +19,7 @@ export function AIAutomationAgencyHero() {
           </div>
 
           {/* H1 */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-4">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
             AI Automation Agency for Founder-Led Businesses
           </h1>
 

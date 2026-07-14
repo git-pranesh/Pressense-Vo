@@ -22,7 +22,7 @@ export function WhoItsForSection() {
             <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
             <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">This is right for you if</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-10">Who AI automation helps</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-10">Who AI automation helps</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {whoItsForCards.map((card, i) => (
               <div key={i} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">

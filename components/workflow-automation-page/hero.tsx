@@ -7,7 +7,6 @@ export function WorkflowAutomationHero() {
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
       aria-label="Workflow Automation Consulting"
     >
-      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
 
@@ -20,7 +19,7 @@ export function WorkflowAutomationHero() {
           </div>
 
           {/* H1 — primary keyword in exact form */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
             Workflow Automation Consulting for Scaling B2B Teams
           </h1>
 

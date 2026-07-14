@@ -2,7 +2,6 @@ export function AdvisoryStrategyHero() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="Strategic advisory">
       {/* Grid background */}
-      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
 
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
@@ -11,7 +10,7 @@ export function AdvisoryStrategyHero() {
             <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Solutions, Advisory & Strategy</span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
             Strategic advisory for businesses that need clarity before execution.
           </h1>
 

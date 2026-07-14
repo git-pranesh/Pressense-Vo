@@ -6,7 +6,6 @@ export function ApplyHero() {
       aria-label="Apply page introduction"
     >
       {/* Grid background */}
-      <div className="absolute inset-0 grid-bg opacity-40" aria-hidden="true" />
 
       {/* Subtle radial glow */}
       <div
@@ -21,7 +20,7 @@ export function ApplyHero() {
         </p>
 
         {/* H1 - Only H1 on page */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.08] text-balance mb-6">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground leading-[1.08] text-balance mb-6">
           Let&apos;s see if we&apos;re the right fit.
         </h1>
 

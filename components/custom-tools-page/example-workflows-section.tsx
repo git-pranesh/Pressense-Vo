@@ -17,7 +17,7 @@ export function ExampleWorkflowsSection() {
   return (
     <section className="py-28 lg:py-36 border-t border-border/40" aria-labelledby="workflows-heading">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 id="workflows-heading" className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">
+        <h2 id="workflows-heading" className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-16">
           Example workflows we can turn into systems
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

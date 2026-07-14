@@ -7,7 +7,6 @@ export function FramerDesignHero() {
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
       aria-label="Framer Website Design"
     >
-      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
@@ -17,7 +16,7 @@ export function FramerDesignHero() {
             </span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
             Framer Website Design for SaaS and Founder-Led Businesses
           </h1>
 
@@ -51,7 +50,7 @@ export function FramerDesignHero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/diagnostic"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -60,7 +59,7 @@ export function FramerDesignHero() {
             </Link>
             <Link
               href="/framer-website-design"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
             >
               See our Framer work
             </Link>
