@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const navLinks = [
+  { label: 'Case Studies', href: '/case-studies' },
   { label: 'Playbooks', href: '/playbooks' },
   { label: 'Tools', href: '/tools' },
 ]
