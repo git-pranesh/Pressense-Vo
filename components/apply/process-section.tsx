@@ -35,11 +35,11 @@ export function ProcessSection() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-14">
-          <p className="text-sm uppercase tracking-widest text-primary mb-4">
+          <p className="eyebrow mb-4">
             What Happens Next
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance max-w-xl"
+            className="text-3xl sm:text-4xl font-semibold tracking-tight text-ink-foreground text-balance max-w-xl"
             id="process-heading"
           >
             Our process after you apply.

@@ -76,8 +76,6 @@ export default function PixelluCaseStudy() {
           className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden"
           aria-label="Case study introduction"
         >
-          <div className="absolute inset-0 grid-bg opacity-40" aria-hidden="true" />
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/4 rounded-full blur-3xl" aria-hidden="true" />
 
           <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
             {/* Breadcrumb */}
@@ -98,10 +96,10 @@ export default function PixelluCaseStudy() {
             </nav>
 
             <div className="max-w-4xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
+              <p className="eyebrow mb-5">
                 SaaS / Creative Software for Photography Professionals
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
                 1,579 free trials.{' '}
                 <span className="text-muted-foreground font-light">
                   Same traffic. Different system.
@@ -115,7 +113,7 @@ export default function PixelluCaseStudy() {
             {/* Engagement meta */}
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
               {engagementMeta.map((item) => (
-                <div key={item.label} className="glass-card rounded-xl p-4 border border-border/50">
+                <div key={item.label} className="bg-card border border-border rounded-xl p-4 border border-border/50">
                   <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-1.5">
                     {item.label}
                   </p>
@@ -136,10 +134,10 @@ export default function PixelluCaseStudy() {
 
                 {/* The challenge */}
                 <div>
-                  <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
+                  <p className="eyebrow mb-5">
                     The challenge
                   </p>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-tight mb-6 text-balance">
+                  <h2 className="text-2xl sm:text-3xl font-medium text-foreground tracking-tight mb-6 text-balance">
                     Good traffic. The wrong conversion system.
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
@@ -155,10 +153,10 @@ export default function PixelluCaseStudy() {
 
                 {/* The approach */}
                 <div className="border-t border-border/40 pt-16">
-                  <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
+                  <p className="eyebrow mb-5">
                     The approach
                   </p>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-tight mb-6 text-balance">
+                  <h2 className="text-2xl sm:text-3xl font-medium text-foreground tracking-tight mb-6 text-balance">
                     A testing culture, not a one-time redesign
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
@@ -174,16 +172,16 @@ export default function PixelluCaseStudy() {
 
                 {/* What was built */}
                 <div className="border-t border-border/40 pt-16">
-                  <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
+                  <p className="eyebrow mb-5">
                     What was built
                   </p>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-tight mb-10 text-balance">
+                  <h2 className="text-2xl sm:text-3xl font-medium text-foreground tracking-tight mb-10 text-balance">
                     Four systems that ran together
                   </h2>
 
                   <div className="flex flex-col gap-6">
                     {deliverables.map((item) => (
-                      <div key={item.title} className="glass-card rounded-xl p-6 border border-border/50">
+                      <div key={item.title} className="bg-card border border-border rounded-xl p-6 border border-border/50">
                         <h3 className="text-base font-semibold text-foreground mb-3">
                           {item.title}
                         </h3>
@@ -197,23 +195,23 @@ export default function PixelluCaseStudy() {
 
                 {/* The impact */}
                 <div className="border-t border-border/40 pt-16">
-                  <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
+                  <p className="eyebrow mb-5">
                     The impact
                   </p>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-tight mb-6 text-balance">
+                  <h2 className="text-2xl sm:text-3xl font-medium text-foreground tracking-tight mb-6 text-balance">
                     1,579 additional free trials. One 12% checkout lift.
                   </h2>
 
                   {/* Result callouts */}
                   <div className="grid sm:grid-cols-2 gap-4 mb-8">
-                    <div className="glass-card rounded-xl p-6 border border-border/50">
-                      <p className="text-3xl font-bold text-foreground mb-2">+1,579</p>
+                    <div className="bg-card border border-border rounded-xl p-6 border border-border/50">
+                      <p className="text-3xl font-medium text-foreground mb-2">+1,579</p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
                         additional free trial sign-ups over six months, measured directly against the prior baseline
                       </p>
                     </div>
-                    <div className="glass-card rounded-xl p-6 border border-border/50">
-                      <p className="text-3xl font-bold text-foreground mb-2">+12%</p>
+                    <div className="bg-card border border-border rounded-xl p-6 border border-border/50">
+                      <p className="text-3xl font-medium text-foreground mb-2">+12%</p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
                         checkout conversion rate lift from a single insight-led navigation test
                       </p>
@@ -230,10 +228,10 @@ export default function PixelluCaseStudy() {
 
                 {/* Why this matters */}
                 <div className="border-t border-border/40 pt-16">
-                  <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
+                  <p className="eyebrow mb-5">
                     The bigger picture
                   </p>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-tight mb-6 text-balance">
+                  <h2 className="text-2xl sm:text-3xl font-medium text-foreground tracking-tight mb-6 text-balance">
                     Most conversion problems are not traffic problems
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
@@ -248,9 +246,9 @@ export default function PixelluCaseStudy() {
 
               {/* Sidebar */}
               <aside className="hidden lg:block sticky top-28 self-start">
-                <div className="glass-card rounded-2xl border border-border/50 p-6 flex flex-col gap-6">
+                <div className="bg-card border border-border rounded-2xl border border-border/50 p-6 flex flex-col gap-6">
                   <div>
-                    <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
+                    <p className="eyebrow mb-4">
                       Scope of work
                     </p>
                     <ul className="flex flex-col gap-3">
@@ -271,7 +269,7 @@ export default function PixelluCaseStudy() {
                   </div>
 
                   <div className="border-t border-border/40 pt-5">
-                    <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-2">
+                    <p className="eyebrow mb-2">
                       Tools used
                     </p>
                     <p className="text-sm font-medium text-foreground">CustomFit.ai</p>
@@ -281,7 +279,7 @@ export default function PixelluCaseStudy() {
                   </div>
 
                   <div className="border-t border-border/40 pt-5">
-                    <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-3">
+                    <p className="eyebrow mb-3">
                       Conversion problem?
                     </p>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4">
@@ -289,7 +287,7 @@ export default function PixelluCaseStudy() {
                     </p>
                     <Link
                       href="/diagnostic"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors duration-200 w-full justify-center"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors duration-200 w-full justify-center"
                     >
                       Start diagnostic
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
@@ -320,10 +318,10 @@ export default function PixelluCaseStudy() {
         <section className="py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="max-w-2xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
+              <p className="eyebrow mb-4">
                 Work with us
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight mb-4 text-balance">
+              <h2 className="text-3xl sm:text-4xl font-medium text-foreground tracking-tight mb-4 text-balance">
                 Want to know where your conversion system breaks down?
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -332,7 +330,7 @@ export default function PixelluCaseStudy() {
               <div className="flex flex-wrap items-center gap-4">
                 <Link
                   href="/diagnostic"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
                 >
                   Start your diagnostic
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">

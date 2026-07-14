@@ -67,7 +67,7 @@ export function SolutionSection() {
               <div className="flex flex-col md:flex-row">
                 {/* Letter accent */}
                 <div className="flex items-center justify-center w-full md:w-20 py-6 md:py-0 bg-primary/5 border-b md:border-b-0 md:border-r border-border/40 shrink-0">
-                  <span className="text-4xl font-bold text-primary/60">{phase.letter}</span>
+                  <span className="font-medium text-primary/60">{phase.letter}</span>
                 </div>
                 {/* Content */}
                 <div className="p-8 flex-1">

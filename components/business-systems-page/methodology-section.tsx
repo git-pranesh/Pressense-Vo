@@ -36,7 +36,7 @@ export function MethodologySection() {
 
         <div className="flex items-center gap-3 mb-6">
           <div className="eyebrow-line" aria-hidden="true" />
-          <span className="eyebrow">How We Work</span>
+          <span className="eyebrow-on-dark">How We Work</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-4">

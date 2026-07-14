@@ -16,7 +16,7 @@ export function EngagementPathSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {steps.map((item) => (
             <div key={item.step} className="relative">
-              <span className="text-4xl font-bold text-primary/20">{item.step}</span>
+              <span className="font-medium text-primary/20">{item.step}</span>
               <h3 className="text-base font-semibold text-foreground mt-2 mb-2">{item.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
             </div>

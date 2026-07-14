@@ -42,7 +42,7 @@ export function PrimaryMetric({ label, value, sublabel, comparison, accent = 'pr
     <div className="rounded-2xl border border-border/60 bg-background/40 p-6 sm:p-8">
       <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-3">{label}</p>
       <p
-        className={`text-5xl sm:text-6xl font-bold tracking-tight ${colorClass} leading-none`}
+        className={`text-5xl sm:text-6xl font-medium tracking-tight ${colorClass} leading-none`}
         data-testid="primary-metric-value"
       >
         {value}

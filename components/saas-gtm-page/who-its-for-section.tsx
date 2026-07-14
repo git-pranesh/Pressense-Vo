@@ -29,7 +29,7 @@ export function SaaSGTMWhoItsForSection() {
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="flex items-center gap-3 mb-10">
           <div className="eyebrow-line" aria-hidden="true" />
-          <span className="eyebrow">Is This Right for You</span>
+          <span className="eyebrow-on-dark">Is This Right for You</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl font-semibold text-ink-foreground text-balance mb-10">

@@ -55,7 +55,7 @@ function formatDate(dateString: string): string {
 // In production, use a proper markdown renderer or the CMS's HTML output
 function renderContent(content: string): string {
   return content
-    .replace(/^# (.*$)/gim, '<h1 class="text-3xl sm:text-4xl font-bold mt-12 mb-6 text-foreground">$1</h1>')
+    .replace(/^# (.*$)/gim, '<h1 class="text-3xl sm:font-medium mt-12 mb-6 text-foreground">$1</h1>')
     .replace(/^## (.*$)/gim, '<h2 class="text-2xl font-semibold mt-10 mb-4 text-foreground">$1</h2>')
     .replace(/^### (.*$)/gim, '<h3 class="text-xl font-semibold mt-8 mb-3 text-foreground">$1</h3>')
     .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>')
@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
 
             {/* Title */}
-            <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground text-balance">
+            <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance">
               {post.title}
             </h1>
 

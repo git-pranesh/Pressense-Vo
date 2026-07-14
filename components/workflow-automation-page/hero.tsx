@@ -43,7 +43,7 @@ export function WorkflowAutomationHero() {
               { value: '1–4 weeks', label: 'average build timeline' },
             ].map((stat) => (
               <div key={stat.value}>
-                <p className="text-2xl font-bold text-foreground">{stat.value}</p>
+                <p className="text-2xl font-medium text-foreground">{stat.value}</p>
                 <p className="text-sm text-muted-foreground">{stat.label}</p>
               </div>
             ))}

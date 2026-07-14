@@ -27,17 +27,17 @@ export function SaaSGTMHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">90 days</span>
+              <span className="text-2xl font-medium text-foreground">90 days</span>
               <span className="text-sm text-muted-foreground">to first GTM sprint</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">4 phases</span>
+              <span className="text-2xl font-medium text-foreground">4 phases</span>
               <span className="text-sm text-muted-foreground">Diagnose to Scale</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $3K</span>
+              <span className="text-2xl font-medium text-foreground">From $3K</span>
               <span className="text-sm text-muted-foreground">GTM Sprint</span>
             </div>
           </div>

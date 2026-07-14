@@ -37,7 +37,7 @@ export function FramerFAQSection() {
   return (
     <section className="py-20 px-6 md:px-8 bg-background" aria-labelledby="faq-heading">
       <div className="max-w-2xl mx-auto">
-        <h2 id="faq-heading" className="text-2xl font-bold text-foreground mb-12 text-balance">
+        <h2 id="faq-heading" className="text-2xl font-medium text-foreground mb-12 text-balance">
           Framer Website Design — Questions &amp; Answers
         </h2>
         <dl className="divide-y divide-border/40">

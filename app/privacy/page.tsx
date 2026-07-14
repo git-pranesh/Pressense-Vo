@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           <span className="text-foreground">Privacy Policy</span>
         </nav>
 
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground mb-8">Privacy Policy</h1>
+        <h1 className="text-4xl sm:text-5xl font-medium tracking-tight text-foreground mb-8">Privacy Policy</h1>
         <p className="text-muted-foreground mb-12">Last updated: May 2026</p>
 
         <div className="prose prose-invert max-w-none space-y-8">

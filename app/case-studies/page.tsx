@@ -77,15 +77,13 @@ export default function CaseStudiesPage() {
           className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden"
           aria-label="Case studies introduction"
         >
-          <div className="absolute inset-0 grid-bg opacity-40" aria-hidden="true" />
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" aria-hidden="true" />
 
           <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
             <div className="max-w-3xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-6">
+              <p className="eyebrow mb-6">
                 Case Studies
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
                 We don&apos;t share testimonials.{' '}
                 <span className="text-muted-foreground font-light">
                   We share what we fixed, and how.
@@ -110,13 +108,13 @@ export default function CaseStudiesPage() {
               {caseStudies.map((study) => (
                 <article
                   key={study.slug}
-                  className="glass-card rounded-2xl border border-border/50 p-8 flex flex-col gap-6 group hover:border-border transition-colors duration-200"
+                  className="rounded-2xl border border-border bg-card p-8 flex flex-col gap-6 group hover:border-foreground/20 hover:shadow-sm transition-all duration-200"
                 >
                   {/* Client + meta */}
                   <div className="flex flex-col gap-3">
                     <div className="flex items-start justify-between gap-4">
                       <div>
-                        <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-1.5">
+                        <p className="eyebrow mb-1.5">
                           {study.industry}
                         </p>
                         <h3 className="text-2xl font-semibold text-foreground">
@@ -151,7 +149,7 @@ export default function CaseStudiesPage() {
                     {study.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs font-medium px-3 py-1 rounded-full bg-secondary text-foreground/70 border border-border/50"
+                        className="text-xs font-medium px-3 py-1 rounded-full bg-secondary text-foreground border border-border"
                       >
                         {tag}
                       </span>
@@ -178,21 +176,22 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 lg:py-28">
+        <section className="py-20 lg:py-28 bg-ink rounded-t-3xl">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="max-w-2xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
-                Work with us
-              </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight mb-4 text-balance">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="eyebrow-line" />
+                <span className="eyebrow-on-dark">Work with us</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground tracking-tight mb-4 text-balance">
                 Want to know if your system has the same problems?
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              <p className="text-lg text-ink-muted leading-relaxed mb-8">
                 The diagnostic takes 20 minutes. It tells you exactly where the gap is and what to fix first.
               </p>
               <Link
                 href="/diagnostic"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
               >
                 Start your diagnostic
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">

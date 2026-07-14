@@ -48,7 +48,7 @@ export function WhoItsForSection() {
         </p>
 
         {/* Right for */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-ink-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground text-balance mb-4">
           This is right for you if...
         </h2>
         <p className="text-lg text-ink-muted leading-relaxed mb-10">
@@ -67,7 +67,7 @@ export function WhoItsForSection() {
         </div>
 
         {/* Not right for */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-ink-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground text-balance mb-4">
           This is NOT for you if...
         </h2>
         <p className="text-lg text-ink-muted leading-relaxed mb-10">

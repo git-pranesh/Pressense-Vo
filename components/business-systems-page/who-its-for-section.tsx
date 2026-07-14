@@ -41,7 +41,7 @@ export function WhoItsForSection() {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-8">
             <div className="eyebrow-line" aria-hidden="true" />
-            <span className="eyebrow">This is right for you if</span>
+            <span className="eyebrow-on-dark">This is right for you if</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-10">
             Who business systems consulting helps
@@ -60,7 +60,7 @@ export function WhoItsForSection() {
         <div>
           <div className="flex items-center gap-3 mb-8">
             <div className="h-px w-8 bg-border/60" aria-hidden="true" />
-            <span className="eyebrow">This is NOT for you if</span>
+            <span className="eyebrow-on-dark">This is NOT for you if</span>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {notForCards.map((card, i) => (

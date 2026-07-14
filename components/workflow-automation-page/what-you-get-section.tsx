@@ -18,7 +18,7 @@ export function WhatYouGetSection() {
         <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
           Deliverables
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-4">
           What you get from a workflow automation consulting engagement
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-2xl">

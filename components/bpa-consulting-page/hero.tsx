@@ -26,17 +26,17 @@ export function BPAHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">Audit-first</span>
+              <span className="text-2xl font-medium text-foreground">Audit-first</span>
               <span className="text-sm text-muted-foreground">no tools before diagnosis</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">n8n, Make, Zapier</span>
+              <span className="text-2xl font-medium text-foreground">n8n, Make, Zapier</span>
               <span className="text-sm text-muted-foreground">matched to your data needs</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $3,000</span>
+              <span className="text-2xl font-medium text-foreground">From $3,000</span>
               <span className="text-sm text-muted-foreground">process audit and implementation</span>
             </div>
           </div>

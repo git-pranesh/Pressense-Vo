@@ -32,7 +32,7 @@ export function MethodologySection() {
 
         <div className="flex items-center gap-3 mb-8">
           <div className="eyebrow-line" aria-hidden="true" />
-          <span className="eyebrow">The Pressense Method</span>
+          <span className="eyebrow-on-dark">The Pressense Method</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-4">
@@ -49,7 +49,7 @@ export function MethodologySection() {
               className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
             >
               <div className="flex items-start justify-between gap-4 mb-5">
-                <span className="text-4xl font-bold text-primary/20 leading-none">{phase.number}</span>
+                <span className="font-medium text-primary/20 leading-none">{phase.number}</span>
                 <span className="text-xs tracking-[0.15em] uppercase text-muted-foreground font-medium pt-1">{phase.name}</span>
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">{phase.name}</h3>

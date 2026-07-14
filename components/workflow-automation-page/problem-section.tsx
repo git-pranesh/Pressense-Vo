@@ -37,7 +37,7 @@ export function ProblemSection() {
           <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
             The Problem
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance mb-12">
+          <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-12">
             Why your team is stuck doing work the computer should be doing
           </h2>
           <div className="space-y-10">

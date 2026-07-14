@@ -66,7 +66,7 @@ export default function ToolsPage() {
             </div>
             <p className="text-xs font-semibold tracking-widest uppercase text-secondary">Tools Library</p>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6 max-w-4xl leading-[1.05]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground mb-6 max-w-4xl leading-[1.05]">
             Free calculators with operator-grade benchmarks
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl leading-relaxed mb-8">
@@ -85,7 +85,7 @@ export default function ToolsPage() {
           {calculatorsByCategory.map((group) => (
             <div key={group.category}>
               <div className="mb-8">
-                <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground mb-2">{group.category}</h2>
+                <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-foreground mb-2">{group.category}</h2>
                 <p className="text-muted-foreground">{group.description}</p>
               </div>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -119,7 +119,7 @@ export default function ToolsPage() {
           <div className="absolute inset-0 bg-grid-pattern opacity-30" aria-hidden="true" />
           <div className="relative max-w-3xl">
             <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">Pressense Diagnostic</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-6 leading-[1.1]">
               Need help interpreting your numbers?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">

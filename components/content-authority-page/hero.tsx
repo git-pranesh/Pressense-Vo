@@ -23,17 +23,17 @@ export function ContentAuthorityHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">SEO + AEO</span>
+              <span className="text-2xl font-medium text-foreground">SEO + AEO</span>
               <span className="text-sm text-muted-foreground">built into one system</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">SaaS, Medical</span>
+              <span className="text-2xl font-medium text-foreground">SaaS, Medical</span>
               <span className="text-sm text-muted-foreground">and service verticals</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">Thought leadership</span>
+              <span className="text-2xl font-medium text-foreground">Thought leadership</span>
               <span className="text-sm text-muted-foreground">LinkedIn and Medium</span>
             </div>
           </div>

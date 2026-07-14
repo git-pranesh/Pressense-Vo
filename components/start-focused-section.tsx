@@ -27,7 +27,7 @@ export function StartFocusedSection() {
         {/* Header */}
         <div className="mb-16 lg:mb-20 max-w-2xl">
           <div className="flex items-center gap-3 mb-5">
-            <div className="eyebrow-line"/>
+            <div className="eyebrow-line-dark"/>
             <span className="text-xs tracking-[0.2em] uppercase text-ink-muted font-medium">
               Getting Started
             </span>

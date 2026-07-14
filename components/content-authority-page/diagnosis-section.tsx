@@ -16,7 +16,7 @@ export function DiagnosisSection() {
           {phases.map((phase) => (
             <div key={phase.number} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-4xl font-bold text-primary/40">{phase.number}</span>
+                <span className="font-medium text-primary/40">{phase.number}</span>
                 <div className="h-px flex-1 bg-primary/20" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">{phase.title}</h3>

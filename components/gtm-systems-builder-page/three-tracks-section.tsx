@@ -57,7 +57,7 @@ export function GtmSystemsBuilderThreeTracksSection() {
               }`}
             >
               <div className="md:w-48 flex-shrink-0">
-                <span className="text-4xl font-bold text-primary/20 leading-none block mb-1">
+                <span className="font-medium text-primary/20 leading-none block mb-1">
                   {track.number}
                 </span>
                 <h3 className="text-xl font-semibold text-foreground">{track.name}</h3>

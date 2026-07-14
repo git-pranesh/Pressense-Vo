@@ -42,7 +42,7 @@ export function SolutionSection() {
         <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
           How It Works
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-4">
           Describe your daily tasks in 30 minutes. We map out exactly which to automate.
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl">

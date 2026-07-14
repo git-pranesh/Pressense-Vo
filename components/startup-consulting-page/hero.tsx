@@ -30,17 +30,17 @@ export function StartupConsultingHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">Founder-first</span>
+              <span className="text-2xl font-medium text-foreground">Founder-first</span>
               <span className="text-sm text-muted-foreground">no enterprise playbooks</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">Strategy + build</span>
+              <span className="text-2xl font-medium text-foreground">Strategy + build</span>
               <span className="text-sm text-muted-foreground">we execute, not just advise</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $500</span>
+              <span className="text-2xl font-medium text-foreground">From $500</span>
               <span className="text-sm text-muted-foreground">Founder Advisory Session</span>
             </div>
           </div>

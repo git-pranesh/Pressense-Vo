@@ -105,7 +105,7 @@ export function ReplitAgencyWhatYouGetSection() {
                 </span>
               )}
               <h3 className="text-lg font-semibold text-foreground mb-1">{tier.name}</h3>
-              <p className="text-2xl font-bold text-foreground mb-0.5">{tier.price}</p>
+              <p className="text-2xl font-medium text-foreground mb-0.5">{tier.price}</p>
               <p className="text-xs text-muted-foreground mb-1">{tier.note}</p>
               <p className="text-xs text-muted-foreground mb-5">Timeline: {tier.timeline}</p>
               <div className="space-y-2 flex-1 mb-6">

@@ -22,17 +22,17 @@ export function AIWorkflowsHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">Workflow-first</span>
+              <span className="text-2xl font-medium text-foreground">Workflow-first</span>
               <span className="text-sm text-muted-foreground">tools follow the process</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">n8n, Make, Zapier</span>
+              <span className="text-2xl font-medium text-foreground">n8n, Make, Zapier</span>
               <span className="text-sm text-muted-foreground">matched to your needs</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $2,500</span>
+              <span className="text-2xl font-medium text-foreground">From $2,500</span>
               <span className="text-sm text-muted-foreground">automation build</span>
             </div>
           </div>

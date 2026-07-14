@@ -42,7 +42,7 @@ export function SMBStrategyFAQSection() {
           <span className="eyebrow-line" aria-hidden="true" />
           <span className="text-xs font-semibold tracking-widest uppercase text-primary/70">Common Questions</span>
         </div>
-        <h2 className="text-3xl font-bold text-foreground text-pretty mb-8">
+        <h2 className="text-3xl font-medium text-foreground text-pretty mb-8">
           Frequently asked questions
         </h2>
         <Accordion type="single" collapsible className="space-y-2">

@@ -68,7 +68,7 @@ export default function AIAustinPage() {
       <main className="min-h-screen">
         {/* Hero */}
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-20">
-          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 text-pretty">
+          <h1 className="text-4xl sm:text-5xl font-medium text-foreground mb-8 text-pretty">
             AI Automation Agency for Austin Businesses
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -84,7 +84,7 @@ export default function AIAustinPage() {
 
         {/* Who we work with */}
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8">
+          <h2 className="text-3xl font-medium text-foreground mb-8">
             Who we work with in Austin
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -106,7 +106,7 @@ export default function AIAustinPage() {
 
         {/* What slows them down */}
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8">
+          <h2 className="text-3xl font-medium text-foreground mb-8">
             The specific bottlenecks we see in Austin companies
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -177,7 +177,7 @@ export default function AIAustinPage() {
 
         {/* How we work */}
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8">
+          <h2 className="text-3xl font-medium text-foreground mb-8">
             How we actually work
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -225,7 +225,7 @@ export default function AIAustinPage() {
 
         {/* FAQ */}
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8">
+          <h2 className="text-3xl font-medium text-foreground mb-8">
             Questions we get asked
           </h2>
           
@@ -279,7 +279,7 @@ export default function AIAustinPage() {
 
         {/* CTA */}
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-20">
-          <h2 className="text-3xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl font-medium text-foreground mb-6">
             Let's talk about your workflow
           </h2>
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed">

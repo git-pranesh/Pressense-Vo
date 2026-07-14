@@ -107,7 +107,6 @@ export default function FramerWebsiteDesignPage() {
       <main className="min-h-screen">
         {/* Hero */}
         <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20">
-          <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
           <div className="container mx-auto px-5 sm:px-8 relative z-10">
             <div className="max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
@@ -228,7 +227,7 @@ export default function FramerWebsiteDesignPage() {
                 <div key={tier.tier} className="p-6 rounded-xl border border-border/40 bg-secondary/10 flex flex-col">
                   <div className="mb-4">
                     <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{tier.tier}</p>
-                    <p className="text-2xl font-bold text-foreground">{tier.price}</p>
+                    <p className="text-2xl font-medium text-foreground">{tier.price}</p>
                     <p className="text-xs text-muted-foreground mt-1">{tier.timeline}</p>
                   </div>
                   <ul className="space-y-1.5 mt-2 flex-1">

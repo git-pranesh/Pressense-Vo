@@ -44,7 +44,7 @@ export function MethodologySection() {
         <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
           Our Methodology
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-ink-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground text-balance mb-4">
           The Pressense Workflow Automation Framework
         </h2>
         <p className="text-lg text-ink-muted leading-relaxed mb-12 max-w-2xl">

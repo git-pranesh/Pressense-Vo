@@ -27,17 +27,17 @@ export function AIImplementationHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">30–60 days</span>
+              <span className="text-2xl font-medium text-foreground">30–60 days</span>
               <span className="text-sm text-muted-foreground">to first live workflow</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">10+ hrs/week</span>
+              <span className="text-2xl font-medium text-foreground">10+ hrs/week</span>
               <span className="text-sm text-muted-foreground">typical time saved</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">4 verticals</span>
+              <span className="text-2xl font-medium text-foreground">4 verticals</span>
               <span className="text-sm text-muted-foreground">healthcare, real estate, IT, design</span>
             </div>
           </div>

@@ -32,17 +32,17 @@ export function ClaudeApiHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">200K tokens</span>
+              <span className="text-2xl font-medium text-foreground">200K tokens</span>
               <span className="text-sm text-muted-foreground">context window</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $2,000</span>
+              <span className="text-2xl font-medium text-foreground">From $2,000</span>
               <span className="text-sm text-muted-foreground">integration build</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">2–4 weeks</span>
+              <span className="text-2xl font-medium text-foreground">2–4 weeks</span>
               <span className="text-sm text-muted-foreground">to live integration</span>
             </div>
           </div>

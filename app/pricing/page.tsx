@@ -256,7 +256,7 @@ export default function PricingPage() {
             
             <div className="grid gap-6 md:gap-8">
               {category.items.map((service) => (
-                <div key={service.name} className="glass-card rounded-2xl p-6 sm:p-8 border border-border/40 flex flex-col gap-5">
+                <div key={service.name} className="bg-card border border-border rounded-2xl p-6 sm:p-8 border border-border/40 flex flex-col gap-5">
                   {/* Header row */}
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                     <div>

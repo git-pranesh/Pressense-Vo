@@ -32,17 +32,17 @@ export function FramerDesignHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">2–3 weeks</span>
+              <span className="text-2xl font-medium text-foreground">2–3 weeks</span>
               <span className="text-sm text-muted-foreground">from brief to live</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $1,500</span>
+              <span className="text-2xl font-medium text-foreground">From $1,500</span>
               <span className="text-sm text-muted-foreground">landing page</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">90+</span>
+              <span className="text-2xl font-medium text-foreground">90+</span>
               <span className="text-sm text-muted-foreground">Core Web Vitals</span>
             </div>
           </div>

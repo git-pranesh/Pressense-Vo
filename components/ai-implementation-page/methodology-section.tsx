@@ -39,7 +39,7 @@ export function AIImplementationMethodologySection() {
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="flex items-center gap-3 mb-10">
           <div className="eyebrow-line" aria-hidden="true" />
-          <span className="eyebrow">How We Work</span>
+          <span className="eyebrow-on-dark">How We Work</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl font-semibold text-ink-foreground text-balance mb-10">

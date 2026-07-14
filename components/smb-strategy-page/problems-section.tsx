@@ -37,7 +37,7 @@ export function SMBStrategyProblemsSection() {
           <span className="eyebrow-line" aria-hidden="true" />
           <span className="text-xs font-semibold tracking-widest uppercase text-primary/70">Where Businesses Get Stuck</span>
         </div>
-        <h2 className="text-3xl font-bold text-foreground text-pretty mb-10">
+        <h2 className="text-3xl font-medium text-foreground text-pretty mb-10">
           Problems we hear from small business owners every week
         </h2>
         <div className="space-y-10">

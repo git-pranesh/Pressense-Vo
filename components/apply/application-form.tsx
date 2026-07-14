@@ -186,7 +186,7 @@ export function ApplicationForm() {
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-12 text-center">
-          <p className="text-sm uppercase tracking-widest text-primary mb-4">
+          <p className="eyebrow mb-4">
             Your Application
           </p>
           <h2

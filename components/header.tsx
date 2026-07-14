@@ -130,11 +130,11 @@ export function Header() {
 
             {/* Mega menu */}
             {servicesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1020px] rounded-xl bg-card border border-border border border-border/60 p-6 shadow-2xl">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1020px] rounded-2xl bg-background border border-border p-6 shadow-[0_8px_40px_rgba(0,0,0,0.10)]">
                 <div className="grid grid-cols-4 gap-6">
                   {servicesColumns.map((col) => (
                     <div key={col.heading}>
-                      <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-3">
+                      <p className="eyebrow mb-3">
                         {col.heading}
                       </p>
                       <ul className="space-y-1.5">
@@ -142,7 +142,7 @@ export function Header() {
                           <li key={link.href}>
                             <Link
                               href={link.href}
-                              className="block text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg px-2 py-1.5 transition-colors duration-150"
+                              className="block text-sm text-muted-foreground hover:text-foreground rounded-lg px-2 py-1.5 transition-colors duration-150"
                               onClick={() => setServicesOpen(false)}
                             >
                               {link.label}
@@ -237,7 +237,7 @@ export function Header() {
               <div className="mt-2 flex flex-col gap-4 border-l border-border/40 pl-4 ml-1">
                 {servicesColumns.map((col) => (
                   <div key={col.heading}>
-                    <p className="text-xs font-semibold tracking-widest uppercase text-primary/60 mb-2">
+                    <p className="eyebrow mb-2">
                       {col.heading}
                     </p>
                     <div className="flex flex-col gap-1">

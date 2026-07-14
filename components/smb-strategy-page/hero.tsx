@@ -27,17 +27,17 @@ export function SMBStrategyHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">Strategy first</span>
+              <span className="text-2xl font-medium text-foreground">Strategy first</span>
               <span className="text-sm text-muted-foreground">AI comes after clarity</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">90-day roadmap</span>
+              <span className="text-2xl font-medium text-foreground">90-day roadmap</span>
               <span className="text-sm text-muted-foreground">with clear deliverables</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">Mentorship</span>
+              <span className="text-2xl font-medium text-foreground">Mentorship</span>
               <span className="text-sm text-muted-foreground">not just advice</span>
             </div>
           </div>

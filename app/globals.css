@@ -205,11 +205,28 @@
   text-transform: uppercase;
   color: rgba(17, 17, 17, 0.45);
 }
+/* Eyebrow used on dark (ink) backgrounds */
+.eyebrow-on-dark {
+  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(245, 242, 232, 0.45);
+}
 .eyebrow-line {
   display: inline-block;
   height: 1px;
   width: 2rem;
   background-color: rgba(17, 17, 17, 0.25);
+  flex-shrink: 0;
+}
+/* Eyebrow line on dark backgrounds */
+.eyebrow-line-dark {
+  display: inline-block;
+  height: 1px;
+  width: 2rem;
+  background-color: rgba(245, 242, 232, 0.2);
   flex-shrink: 0;
 }
 

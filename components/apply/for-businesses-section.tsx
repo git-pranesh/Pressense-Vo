@@ -26,7 +26,7 @@ export function ForBusinessesSection() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-14">
-          <p className="text-sm uppercase tracking-widest text-primary mb-4">
+          <p className="eyebrow mb-4">
             Who This Is For
           </p>
           <h2

@@ -29,7 +29,7 @@ export function ProblemSection() {
         <div className="max-w-3xl mb-16">
           <div className="flex items-center gap-3 mb-6">
             <div className="eyebrow-line" aria-hidden="true" />
-            <span className="eyebrow">What is revenue operations</span>
+            <span className="eyebrow-on-dark">What is revenue operations</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-6">
             What is Revenue Operations?

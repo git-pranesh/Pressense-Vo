@@ -30,7 +30,7 @@ export function ProblemSection() {
         <div className="max-w-3xl mb-14">
           <div className="flex items-center gap-3 mb-6">
             <div className="eyebrow-line" aria-hidden="true" />
-            <span className="eyebrow">The role defined</span>
+            <span className="eyebrow-on-dark">The role defined</span>
           </div>
           {/* H2 matches the PAA question exactly for AEO */}
           <h2

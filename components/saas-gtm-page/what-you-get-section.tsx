@@ -74,7 +74,7 @@ export function SaaSGTMWhatYouGetSection() {
               )}
               <div>
                 <h3 className="text-base font-semibold text-foreground mb-1">{tier.name}</h3>
-                <p className="text-xl font-bold text-foreground">{tier.price}</p>
+                <p className="text-xl font-medium text-foreground">{tier.price}</p>
                 <p className="text-xs text-muted-foreground">{tier.timeline}</p>
               </div>
               <div className="flex flex-col gap-2 flex-1">

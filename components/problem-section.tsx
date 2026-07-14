@@ -16,7 +16,7 @@ export function ProblemSection() {
           {/* Left: heading */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="eyebrow-line"/>
+              <div className="eyebrow-line-dark"/>
               <span className="text-xs tracking-[0.2em] uppercase text-ink-muted font-medium">The Problem</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-[1.15] tracking-tight text-ink-foreground text-balance" id="problem-heading">
