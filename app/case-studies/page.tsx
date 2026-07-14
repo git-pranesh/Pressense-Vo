@@ -5,7 +5,7 @@ import { PageStructuredData } from '@/components/page-structured-data'
 export const metadata: Metadata = {
   title: 'Case Studies | Pressense',
   description:
-    'Real GTM, strategy, and content engagements from Pressense. Including work with Zoho Creator and OneMagnify — see what we found and what we built to fix it.',
+    'Real GTM, strategy, and content engagements from Pressense. Including work with Zoho Creator, OneMagnify, and Pixellu — see what we found and what we built to fix it.',
   openGraph: {
     title: 'Case Studies | Pressense',
     description:
@@ -46,6 +46,16 @@ const caseStudies = [
     summary:
       'A 250+ page platform migration from Webflow to HubSpot CMS needed more than new templates. It needed content built page for page, service line by service line, to a single editorial and SEO standard. We were the specialist delivery layer that made that possible.',
     tags: ['Content at Scale', 'SEO Architecture', 'Platform Migration', 'Editorial Governance'],
+  },
+  {
+    slug: 'pixellu',
+    client: 'Pixellu',
+    industry: 'SaaS / Creative Software',
+    engagementType: 'Embedded Growth Marketing & CRO Partner',
+    duration: 'Six months',
+    summary:
+      'Pixellu had strong traffic and a product photographers trusted. What it did not have was a conversion system built for the different questions each visitor type brings. We built the personalization and testing infrastructure that turned that traffic into 1,579 additional free trials.',
+    tags: ['CRO', 'Personalization', 'A/B Testing', 'SaaS Growth'],
   },
 ]
 
