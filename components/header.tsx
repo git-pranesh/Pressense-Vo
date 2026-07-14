@@ -84,14 +84,14 @@ export function Header() {
   }, [])
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'glass-card border-b border-border/60'
-          : 'bg-transparent border-b border-transparent'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 pt-4">
+      <div
+        className={`max-w-6xl mx-auto h-14 flex items-center justify-between px-5 lg:px-7 rounded-2xl transition-all duration-300 ${
+          scrolled
+            ? 'bg-background/95 backdrop-blur-sm border border-border/50 shadow-[0_2px_16px_rgba(0,0,0,0.08)]'
+            : 'bg-background/80 backdrop-blur-sm border border-border/30 shadow-[0_1px_8px_rgba(0,0,0,0.05)]'
+        }`}
+      >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group" aria-label="Pressense homepage">
           <div className="w-7 h-7 rounded border border-primary/40 flex items-center justify-center group-hover:border-primary transition-colors">
@@ -181,7 +181,7 @@ export function Header() {
         <div className="hidden lg:block">
           <Link
             href="/diagnostic"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors duration-200"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors duration-200"
             aria-label="Start a diagnostic"
           >
             Start Diagnostic
@@ -210,9 +210,9 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — outside the pill, inset below it */}
       {menuOpen && (
-        <div className="lg:hidden glass-card border-t border-border/40 px-6 py-5 flex flex-col gap-3 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden mt-2 max-w-6xl mx-auto bg-background/98 backdrop-blur-sm border border-border/50 shadow-[0_4px_24px_rgba(0,0,0,0.10)] rounded-2xl px-6 py-5 flex flex-col gap-3 max-h-[80vh] overflow-y-auto">
           {/* Mobile Services Accordion */}
           <div>
             <button
@@ -271,7 +271,7 @@ export function Header() {
 
           <Link
             href="/diagnostic"
-            className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground w-fit"
+            className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-primary text-primary-foreground w-fit"
             onClick={() => setMenuOpen(false)}
           >
             Start Diagnostic

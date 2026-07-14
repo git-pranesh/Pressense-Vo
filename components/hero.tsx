@@ -55,9 +55,9 @@ export function Hero() {
         </div>
 
         {/* H1 */}
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-semibold leading-[1.05] tracking-tight text-foreground text-balance max-w-5xl mb-8">
+        <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-medium leading-[1.05] tracking-tight text-foreground text-balance max-w-5xl mb-8">
           We find what&apos;s broken.{' '}
-          <span className="text-primary italic font-light">Then we fix it.</span>
+          <span className="italic font-normal">Then we fix it.</span>
         </h1>
 
         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10 text-pretty">
@@ -83,7 +83,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="/diagnostic"
-            className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             aria-label="Start a free diagnostic"
           >
             Start Your Free Diagnostic
@@ -93,7 +93,7 @@ export function Hero() {
           </a>
           <a
             href="/how-we-work"
-            className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
+            className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
             aria-label="See how we work"
           >
             See How We Work

@@ -4,75 +4,82 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Light warm palette — Perplexity-inspired */
-  --background: #F3F0EC;                /* warm off-white — main bg */
-  --foreground: #0A0A0A;                /* near-black text */
-  --card: #EDE9E3;                      /* slightly darker cream for cards */
-  --card-foreground: #0A0A0A;
-  --popover: #EDE9E3;
-  --popover-foreground: #0A0A0A;
-  --primary: #0A0A0A;                   /* black — buttons, CTAs */
-  --primary-foreground: #F3F0EC;        /* warm white text on black */
-  --secondary: #E5E1DA;                 /* muted cream — secondary surfaces */
-  --secondary-foreground: #0A0A0A;
-  --muted: #E8E4DD;                     /* muted background areas */
-  --muted-foreground: #6B6560;          /* warm medium grey — captions, meta */
-  --accent: #1A1A1A;                    /* near-black accent */
-  --accent-foreground: #F3F0EC;
+  /* Wispr-inspired warm editorial palette */
+  --background: #F5F2E8;                /* warm cream — slightly warmer than before */
+  --foreground: #0F0D0A;                /* near-black text */
+  --card: #EDE9DF;                      /* slightly darker cream for cards */
+  --card-foreground: #0F0D0A;
+  --popover: #EDE9DF;
+  --popover-foreground: #0F0D0A;
+  --primary: #B8A4D8;                   /* soft lavender — CTA fill */
+  --primary-foreground: #1A1019;        /* dark text on lavender */
+  --secondary: #E5E1D6;                 /* muted cream — secondary surfaces */
+  --secondary-foreground: #0F0D0A;
+  --muted: #E8E4D9;                     /* muted background areas */
+  --muted-foreground: #6B6257;          /* warm medium grey — captions, meta */
+  --accent: #0F0D0A;                    /* near-black accent */
+  --accent-foreground: #F5F2E8;
   --destructive: #C0392B;
-  --destructive-foreground: #F3F0EC;
-  --border: #D4CFC8;                    /* warm light grey borders */
-  --input: #E5E1DA;
-  --ring: #0A0A0A;
-  --radius: 0.75rem;
+  --destructive-foreground: #F5F2E8;
+  --border: #D4CFC5;                    /* warm light grey borders */
+  --input: #E5E1D6;
+  --ring: #B8A4D8;
+  --radius: 1rem;                       /* more generous, Wispr-style */
 
   /* Custom tokens */
-  --surface: #EDE9E3;
-  --surface-border: #D4CFC8;
-  --highlight: #1A1A1A;
-  --text-dim: #9B958F;                  /* dimmed warm grey */
-  --grid-line: #D8D4CD;
+  --surface: #EDE9DF;
+  --surface-border: #D4CFC5;
+  --highlight: #A08EC4;                 /* deeper lavender hover */
+  --text-dim: #9B958C;                  /* dimmed warm grey */
+  --grid-line: #D8D4CA;
 
-  --chart-1: #0A0A0A;
-  --chart-2: #6B6560;
-  --chart-3: #9B958F;
-  --chart-4: #C4BFB8;
-  --chart-5: #3D3A36;
-  --sidebar: #EDE9E3;
-  --sidebar-foreground: #0A0A0A;
-  --sidebar-primary: #0A0A0A;
-  --sidebar-primary-foreground: #F3F0EC;
-  --sidebar-accent: #E5E1DA;
-  --sidebar-accent-foreground: #0A0A0A;
-  --sidebar-border: #D4CFC8;
-  --sidebar-ring: #0A0A0A;
+  /* Dark section tokens */
+  --ink: #0F0D0A;                       /* near-black bg for dark sections */
+  --ink-foreground: #F5F2E8;            /* cream text on dark */
+  --ink-muted: #8A8480;                 /* muted text on dark */
+  --ink-border: #2A2724;                /* border on dark surfaces */
+
+  --chart-1: #B8A4D8;
+  --chart-2: #6B6257;
+  --chart-3: #9B958C;
+  --chart-4: #C4BFB5;
+  --chart-5: #3D3A33;
+  --sidebar: #EDE9DF;
+  --sidebar-foreground: #0F0D0A;
+  --sidebar-primary: #B8A4D8;
+  --sidebar-primary-foreground: #1A1019;
+  --sidebar-accent: #E5E1D6;
+  --sidebar-accent-foreground: #0F0D0A;
+  --sidebar-border: #D4CFC5;
+  --sidebar-ring: #B8A4D8;
 }
 
 /* Keep studio dark — Sanity's own theme handles /studio */
 .dark {
-  --background: #F3F0EC;
-  --foreground: #0A0A0A;
-  --card: #EDE9E3;
-  --card-foreground: #0A0A0A;
-  --popover: #EDE9E3;
-  --popover-foreground: #0A0A0A;
-  --primary: #0A0A0A;
-  --primary-foreground: #F3F0EC;
-  --secondary: #E5E1DA;
-  --secondary-foreground: #0A0A0A;
-  --muted: #E8E4DD;
-  --muted-foreground: #6B6560;
-  --accent: #1A1A1A;
-  --accent-foreground: #F3F0EC;
+  --background: #F5F2E8;
+  --foreground: #0F0D0A;
+  --card: #EDE9DF;
+  --card-foreground: #0F0D0A;
+  --popover: #EDE9DF;
+  --popover-foreground: #0F0D0A;
+  --primary: #B8A4D8;
+  --primary-foreground: #1A1019;
+  --secondary: #E5E1D6;
+  --secondary-foreground: #0F0D0A;
+  --muted: #E8E4D9;
+  --muted-foreground: #6B6257;
+  --accent: #0F0D0A;
+  --accent-foreground: #F5F2E8;
   --destructive: #C0392B;
-  --destructive-foreground: #F3F0EC;
-  --border: #D4CFC8;
-  --input: #E5E1DA;
-  --ring: #0A0A0A;
+  --destructive-foreground: #F5F2E8;
+  --border: #D4CFC5;
+  --input: #E5E1D6;
+  --ring: #B8A4D8;
 }
 
 @theme inline {
   --font-sans: 'Inter', 'Geist', 'Geist Fallback', sans-serif;
+  --font-serif: 'EB Garamond', 'Georgia', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -117,6 +124,12 @@
   --color-highlight: var(--highlight);
   --color-text-dim: var(--text-dim);
   --color-grid-line: var(--grid-line);
+
+  /* Dark section tokens */
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-border: var(--ink-border);
 }
 
 @layer base {
@@ -128,10 +141,10 @@
   }
 }
 
-/* Light mode card — paper-like with soft shadow instead of glass */
+/* Light mode card — paper-like with soft shadow */
 .glass-card {
-  background: #EDE9E3;
-  border: 1px solid #D4CFC8;
+  background: #EDE9DF;
+  border: 1px solid #D4CFC5;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
