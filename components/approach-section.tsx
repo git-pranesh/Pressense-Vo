@@ -61,8 +61,8 @@ export function ApproachSection() {
         {/* Header */}
         <div className="mb-16 lg:mb-20">
           <div className="flex items-center gap-3 mb-5">
-            <div className="h-px w-8 bg-accent opacity-60" />
-            <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">How We Work</span>
+            <div className="h-px w-8 bg-foreground/40" />
+            <span className="text-xs tracking-[0.2em] uppercase text-foreground/50 font-medium">How We Work</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance max-w-xl" id="approach-heading">
             A structured path from broken to scaled.
@@ -74,20 +74,20 @@ export function ApproachSection() {
           {steps.map((step, i) => (
             <div
               key={i}
-              className="glass-card rounded-2xl p-7 flex flex-col gap-5 hover:border-border transition-all duration-300 group"
+              className="rounded-2xl p-7 flex flex-col gap-5 bg-ink border border-ink-border hover:border-ink-muted/40 transition-all duration-300 group"
             >
               {/* Number + icon */}
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono text-text-dim tracking-widest">{step.number}</span>
-                <div className="text-muted-foreground group-hover:text-accent transition-colors duration-200">
+                <span className="text-xs font-mono text-ink-muted/60 tracking-widest">{step.number}</span>
+                <div className="text-ink-muted group-hover:text-primary transition-colors duration-200">
                   {step.icon}
                 </div>
               </div>
 
               {/* Content */}
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                <h3 className="text-xl font-medium text-ink-foreground mb-3">{step.title}</h3>
+                <p className="text-sm text-ink-muted leading-relaxed">{step.description}</p>
               </div>
 
               {/* Step connector */}

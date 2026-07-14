@@ -84,8 +84,8 @@ export function CaseStudiesSection() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-px w-8 bg-accent opacity-60" />
-              <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">Work</span>
+              <div className="h-px w-8 bg-foreground/30" />
+              <span className="text-xs tracking-[0.2em] uppercase text-foreground/50 font-medium">Work</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance max-w-md" id="case-studies-heading">
               Results across industries.

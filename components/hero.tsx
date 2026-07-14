@@ -6,8 +6,8 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-24">
         {/* Eyebrow */}
         <div className="flex items-center gap-3 mb-8">
-          <div className="h-px w-10 bg-accent opacity-60" />
-          <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">
+          <div className="h-px w-10 bg-foreground/30" />
+          <span className="text-xs tracking-[0.2em] uppercase text-foreground/50 font-medium">
             Diagnostic-First Build Partner
           </span>
         </div>

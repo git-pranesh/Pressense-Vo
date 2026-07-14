@@ -21,21 +21,24 @@ interface FAQSectionProps {
 
 export function FAQSection({ eyebrow = 'FAQ', headline, faqs, className = '' }: FAQSectionProps) {
   return (
-    <section className={`py-20 md:py-28 border-t border-border/40 ${className}`}>
+    <section className={`py-20 md:py-28 ${className}`}>
       <div className="container max-w-4xl mx-auto px-6">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
-          {eyebrow}
-        </p>
-        <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-10">
+        <div className="flex items-center gap-3 mb-5">
+          <div className="h-px w-8 bg-foreground/30" />
+          <p className="text-xs uppercase tracking-widest text-foreground/50 font-medium">
+            {eyebrow}
+          </p>
+        </div>
+        <h2 className="text-2xl md:text-4xl font-medium text-foreground mb-12 text-balance max-w-2xl">
           {headline}
         </h2>
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`faq-${index}`} className="border-border/40">
-              <AccordionTrigger className="text-base md:text-lg text-foreground/90 hover:text-foreground hover:no-underline">
+            <AccordionItem key={index} value={`faq-${index}`} className="border-border/60">
+              <AccordionTrigger className="text-base md:text-lg text-foreground hover:text-foreground hover:no-underline py-5">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed text-base pb-5">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
