@@ -43,7 +43,7 @@ export function StartHereSection() {
             <span className="eyebrow">Start here if...</span>
           </div>
           
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-foreground mb-10 text-balance">
+          <h2 className="text-section-title font-serif font-medium text-foreground mb-10 text-balance">
             Not sure which playbook fits your situation?
           </h2>
 

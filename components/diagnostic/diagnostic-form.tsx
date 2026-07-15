@@ -181,7 +181,7 @@ export function DiagnosticForm() {
             </svg>
           </div>
           <h2
-            className="text-3xl font-semibold text-foreground mb-4"
+            className="text-3xl font-serif font-medium text-foreground mb-4"
             id="form-success-heading"
           >
             Diagnostic request received.
@@ -207,7 +207,7 @@ export function DiagnosticForm() {
             Share the context
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance"
+            className="text-section-title font-serif font-medium text-foreground text-balance"
             id="form-heading"
           >
             Tell us about your business.
@@ -219,8 +219,8 @@ export function DiagnosticForm() {
 
         <form onSubmit={handleSubmit} className="space-y-8" noValidate>
           {/* Basic Info */}
-          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
+          <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
+            <h3 className="text-lg font-medium font-sans text-foreground mb-6">
               Basic Information
             </h3>
 
@@ -303,8 +303,8 @@ export function DiagnosticForm() {
           </div>
 
           {/* Diagnostic Context */}
-          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
+          <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
+            <h3 className="text-lg font-medium font-sans text-foreground mb-6">
               Diagnostic Context
             </h3>
 
@@ -378,8 +378,8 @@ export function DiagnosticForm() {
           </div>
 
           {/* Timeline & Budget */}
-          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
+          <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
+            <h3 className="text-lg font-medium font-sans text-foreground mb-6">
               Timeline & Budget
             </h3>
 

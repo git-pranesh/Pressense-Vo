@@ -39,7 +39,7 @@ export function ProcessSection() {
             What Happens Next
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight text-ink-foreground text-balance max-w-xl"
+            className="text-section-title font-serif font-medium text-foreground text-balance max-w-xl"
             id="process-heading"
           >
             Our process after you apply.
@@ -58,13 +58,13 @@ export function ProcessSection() {
                 />
               )}
 
-              <div className="relative p-6 rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm h-full">
+              <div className="relative p-6 rounded-2xl border border-border bg-card h-full">
                 {/* Step number */}
                 <span className="text-xs font-mono text-primary/60 tracking-wider mb-4 block">
                   {step.number}
                 </span>
 
-                <h3 className="text-base font-semibold text-foreground mb-2">
+                <h3 className="text-base font-medium font-sans text-foreground mb-2">
                   {step.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">

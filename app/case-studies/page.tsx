@@ -117,7 +117,7 @@ export default function CaseStudiesPage() {
                         <p className="eyebrow mb-1.5">
                           {study.industry}
                         </p>
-                        <h3 className="text-2xl font-semibold text-foreground">
+                        <h3 className="text-2xl font-serif font-medium text-foreground">
                           {study.client}
                         </h3>
                       </div>
@@ -180,10 +180,10 @@ export default function CaseStudiesPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="max-w-2xl">
               <div className="flex items-center gap-3 mb-5">
-                <div className="eyebrow-line" />
+                <div className="eyebrow-line-dark" aria-hidden="true" />
                 <span className="eyebrow-on-dark">Work with us</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground tracking-tight mb-4 text-balance">
+              <h2 className="text-section-title font-serif font-medium text-ink-foreground mb-4 text-balance">
                 Want to know if your system has the same problems?
               </h2>
               <p className="text-lg text-ink-muted leading-relaxed mb-8">

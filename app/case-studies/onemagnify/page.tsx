@@ -128,11 +128,9 @@ export default function OneMagnifyCaseStudy() {
             {/* Engagement meta */}
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
               {engagementMeta.map((item) => (
-                <div key={item.label} className="bg-card border border-border rounded-xl p-4 border border-border/50">
-                  <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-1.5">
-                    {item.label}
-                  </p>
-                  <p className="text-sm font-semibold text-foreground">{item.value}</p>
+                <div key={item.label} className="bg-card border border-border rounded-xl p-4">
+                  <span className="eyebrow block mb-1.5">{item.label}</span>
+                  <p className="text-sm font-medium font-sans text-foreground">{item.value}</p>
                 </div>
               ))}
             </div>
@@ -197,11 +195,11 @@ export default function OneMagnifyCaseStudy() {
                   <div className="flex flex-col gap-8">
                     {principles.map((item) => (
                       <div key={item.number} className="flex gap-5">
-                        <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-primary/8 border border-primary/15 flex items-center justify-center text-xs font-semibold text-primary/70 mt-0.5">
+                        <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-primary/8 border border-primary/15 flex items-center justify-center text-xs font-medium font-sans text-primary/70 mt-0.5">
                           {item.number}
                         </span>
                         <div>
-                          <h3 className="text-base font-semibold text-foreground mb-2">
+                          <h3 className="text-base font-medium font-sans text-foreground mb-2">
                             {item.heading}
                           </h3>
                           <p className="text-base text-muted-foreground leading-relaxed">
@@ -224,8 +222,8 @@ export default function OneMagnifyCaseStudy() {
 
                   <div className="flex flex-col gap-8">
                     {deliverables.map((item) => (
-                      <div key={item.title} className="bg-card border border-border rounded-xl p-6 border border-border/50">
-                        <h3 className="text-base font-semibold text-foreground mb-3 capitalize">
+                      <div key={item.title} className="bg-card border border-border rounded-2xl p-6">
+                        <h3 className="text-base font-medium font-sans text-foreground mb-3 capitalize">
                           {item.title}
                         </h3>
                         <p className="text-sm text-muted-foreground leading-relaxed">
@@ -275,7 +273,7 @@ export default function OneMagnifyCaseStudy() {
 
               {/* Sidebar */}
               <aside className="hidden lg:block sticky top-28 self-start">
-                <div className="bg-card border border-border rounded-2xl border border-border/50 p-6 flex flex-col gap-6">
+                <div className="bg-card border border-border rounded-2xl p-6 flex flex-col gap-6">
                   <div>
                     <p className="eyebrow mb-4">
                       Scope of work
@@ -353,19 +351,20 @@ export default function OneMagnifyCaseStudy() {
         {/* Bottom CTA */}
         <section className="py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
-            <div className="max-w-2xl">
-              <p className="eyebrow mb-4">
-                Work with us
-              </p>
-              <h2 className="text-3xl sm:text-4xl font-medium text-foreground tracking-tight mb-4 text-balance">
+            <div className="bg-ink rounded-3xl p-10 sm:p-16 max-w-4xl">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="eyebrow-line-dark" aria-hidden="true" />
+                <span className="eyebrow-on-dark">Work with us</span>
+              </div>
+              <h2 className="text-section-title font-serif font-medium text-ink-foreground mb-4 text-balance">
                 Running a platform migration and need the content to hold up?
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              <p className="text-lg text-ink-muted leading-relaxed mb-8 font-sans">
                 The diagnostic takes 20 minutes. It tells you exactly where the content layer is likely to break before the migration goes live.
               </p>
               <Link
                 href="/diagnostic"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-medium hover:bg-highlight transition-colors duration-200 text-base"
               >
                 Start your diagnostic
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">

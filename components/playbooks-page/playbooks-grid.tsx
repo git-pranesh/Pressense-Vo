@@ -27,14 +27,12 @@ export function PlaybooksGrid() {
             <Link
               key={playbook.slug}
               href={`/playbooks/${playbook.slug}`}
-              className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300 flex flex-col cursor-pointer group"
+              className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-all duration-200 flex flex-col cursor-pointer group"
             >
               <div className="flex items-center gap-2 mb-4">
-                <span className="text-xs px-2.5 py-1 rounded-md bg-secondary/50 text-muted-foreground border border-border/40">
-                  {playbook.relatedService}
-                </span>
+                <span className="eyebrow">{playbook.relatedService}</span>
               </div>
-              <h3 className="text-xl lg:text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-xl lg:text-2xl font-serif font-medium text-foreground mb-3 group-hover:text-primary transition-colors">
                 {playbook.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">

@@ -42,7 +42,7 @@ export function WhatWeHelpWithSection() {
             Scope of Work
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance max-w-xl"
+            className="text-section-title font-serif font-medium text-foreground text-balance max-w-xl"
             id="help-heading"
           >
             What we typically help with.
@@ -53,7 +53,7 @@ export function WhatWeHelpWithSection() {
         <div className="grid gap-10 md:grid-cols-3">
           {helpAreas.map((area) => (
             <div key={area.category}>
-              <h3 className="text-lg font-semibold text-foreground mb-5 flex items-center gap-3">
+              <h3 className="text-lg font-medium font-sans text-foreground mb-5 flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary" />
                 {area.category}
               </h3>

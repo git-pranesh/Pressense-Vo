@@ -17,7 +17,7 @@ export function NotForSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-start">
           {/* Left - Text */}
           <div>
-            <p className="eyebrow mb-4">
+            <p className="eyebrow-on-dark mb-4">
               Honest Filter
             </p>
             <h2
@@ -34,7 +34,7 @@ export function NotForSection() {
           </div>
 
           {/* Right - List */}
-          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-8">
+          <div className="rounded-2xl border border-ink-border bg-ink-card p-8">
             <ul className="space-y-4">
               {notForItems.map((item) => (
                 <li
