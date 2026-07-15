@@ -1,7 +1,3 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const problems = [
   'Founder approves every exception because the system has no rules for them',
   'Team tracks work in three different spreadsheets that never quite match',
@@ -10,10 +6,9 @@ const problems = [
   'A new SaaS subscription was added to solve each problem as it appeared',
   'Nobody is confident in the pipeline number because CRM hygiene is inconsistent',
 ]
-
 export function CustomToolsProblemSection() {
   return (
-    <SectionWrapper className="bg-ink text-ink-foreground">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="max-w-2xl mb-12">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">The Problem</p>
@@ -33,6 +28,6 @@ export function CustomToolsProblemSection() {
           ))}
         </ul>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

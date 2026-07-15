@@ -1,15 +1,10 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const fits = [
   { label: 'Good fit', items: ['10 to 100 person businesses with repeatable workflows', 'Founders spending more than 5 hours per week on operational firefighting', 'Teams tracking work in spreadsheets or across 4 or more disconnected tools', 'Businesses where broken handoffs directly reduce delivery quality or speed', 'Operations that need a single source of truth but cannot find one in existing SaaS'] },
   { label: 'Not the right fit', items: ['Businesses that have not yet defined or stabilised the workflow to be automated', 'Teams that are not ready to adopt a new system or enforce consistent usage', 'Workflows that change so frequently the tool would be rebuilt every quarter', 'Problems that a well-configured off-the-shelf SaaS tool already solves adequately', 'Businesses without a clear owner who will manage and enforce usage of the tool'] },
 ]
-
 export function CustomToolsWhoItsForSection() {
   return (
-    <SectionWrapper className="bg-ink text-ink-foreground">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="max-w-2xl mb-12">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">Who It Is For</p>
@@ -36,6 +31,6 @@ export function CustomToolsWhoItsForSection() {
           ))}
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

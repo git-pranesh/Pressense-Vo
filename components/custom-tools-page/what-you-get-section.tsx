@@ -1,7 +1,3 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const deliverables = [
   'Workflow map and specification document before build starts',
   'Working tool deployed to your environment, owned by you',
@@ -10,10 +6,9 @@ const deliverables = [
   'Dedicated developer for ongoing fixes and improvements',
   'Direct support channel with your developer, not a helpdesk ticket',
 ]
-
 export function CustomToolsWhatYouGetSection() {
   return (
-    <SectionWrapper className="bg-ink text-ink-foreground">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -35,6 +30,6 @@ export function CustomToolsWhatYouGetSection() {
           </ul>
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

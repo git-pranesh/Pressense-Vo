@@ -10,7 +10,7 @@ export function AIStrategyHero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
+      className="relative pt-32 pb-20 overflow-hidden"
       aria-label="AI strategy consulting"
     >
       <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
@@ -33,7 +33,7 @@ export function AIStrategyHero() {
           </p>
 
           <div
-            className="border-l-2 border-primary/40 pl-5 mb-8"
+            className="border-l-2 border-primary/50 pl-5 mb-8"
             aria-label="Definition"
           >
             <p className="text-base text-muted-foreground leading-relaxed">
@@ -42,29 +42,32 @@ export function AIStrategyHero() {
           </div>
 
           <div
-            className="flex flex-wrap gap-6 mb-10"
+            className="flex flex-wrap items-center gap-x-8 gap-y-3 mb-10 py-5 border-y border-border/40"
             aria-label="Key stats"
           >
             {stats.map((stat) => (
-              <div key={stat.label} className="flex flex-col">
-                <span className="text-2xl font-semibold text-foreground">{stat.value}</span>
+              <div key={stat.label} className="flex items-center gap-2.5">
+                <span className="text-xl font-semibold text-foreground">{stat.value}</span>
                 <span className="text-sm text-muted-foreground">{stat.label}</span>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <Link
               href="/diagnostic"
-              className="glow-accent inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-colors"
+              className="group glow-accent inline-flex items-center gap-3 px-9 py-5 rounded-2xl bg-primary text-primary-foreground font-semibold text-base hover:bg-highlight transition-all duration-200"
             >
               Book a Free Diagnostic
+              <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5h6M5 2l3 3-3 3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </span>
             </Link>
             <Link
-              href="#ai-vs-automation"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
+              href="/how-we-work"
+              className="inline-flex items-center gap-2 px-9 py-5 rounded-2xl text-base font-semibold border border-border/40 text-foreground hover:border-primary/40 transition-all duration-200"
             >
-              AI vs Automation: what is the difference?
+              See How We Work
             </Link>
           </div>
         </div>

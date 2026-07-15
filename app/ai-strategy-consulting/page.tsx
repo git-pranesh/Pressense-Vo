@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import { StructuredData } from '@/components/structured-data'
 import { FinalCTA } from '@/components/final-cta'
 import { AIStrategyHero } from '@/components/ai-strategy-page/hero'
-import { AIStrategyWhoItsFor } from '@/components/ai-strategy-page/who-its-for-section'
 import { AIStrategyProblems } from '@/components/ai-strategy-page/problems-section'
+import { AIStrategySolutionSection } from '@/components/ai-strategy-page/solution-section'
+import { AIStrategyWhoItsFor } from '@/components/ai-strategy-page/who-its-for-section'
 import { AIStrategyMethodology } from '@/components/ai-strategy-page/methodology-section'
 import { AIStrategyWhatYouGet } from '@/components/ai-strategy-page/what-you-get-section'
 import { AIStrategyFAQ } from '@/components/ai-strategy-page/faq-section'
@@ -197,10 +198,11 @@ export default function AIStrategyConsultingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <main className="min-h-screen">
+      <main>
         <AIStrategyHero />
-        <AIStrategyWhoItsFor />
         <AIStrategyProblems />
+        <AIStrategySolutionSection />
+        <AIStrategyWhoItsFor />
         <AIStrategyMethodology />
         <AIStrategyWhatYouGet />
         <AIStrategyFAQ />

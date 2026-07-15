@@ -1,7 +1,3 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const examples = [
   {
     title: 'Operations dashboards',
@@ -28,10 +24,9 @@ const examples = [
     description: 'Track stock levels, supplier relationships, purchase orders, and delivery timelines in a system built for how your supply chain actually works.',
   },
 ]
-
 export function CustomToolsSolutionSection() {
   return (
-    <SectionWrapper className="bg-background">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="max-w-2xl mb-12">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">What We Build</p>
@@ -51,6 +46,6 @@ export function CustomToolsSolutionSection() {
           ))}
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

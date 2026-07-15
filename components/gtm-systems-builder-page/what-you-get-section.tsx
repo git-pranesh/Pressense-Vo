@@ -1,7 +1,3 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const deliverables = [
   'ICP and positioning framework used across all three tracks',
   'GTM playbook defining target segments, channels, and outreach sequences',
@@ -11,10 +7,9 @@ const deliverables = [
   'Monthly content production at volume defined in engagement scope',
   'Quarterly strategy review and roadmap refresh',
 ]
-
 export function GtmSystemsBuilderWhatYouGetSection() {
   return (
-    <SectionWrapper className="bg-background">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -36,6 +31,6 @@ export function GtmSystemsBuilderWhatYouGetSection() {
           </ul>
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

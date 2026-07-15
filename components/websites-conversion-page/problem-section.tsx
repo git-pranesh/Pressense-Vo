@@ -1,7 +1,3 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const problems = [
   'Sales calls do a better job of explaining the offer than the website does',
   'Traffic arrives but visitors cannot immediately tell who the business is for',
@@ -10,10 +6,9 @@ const problems = [
   'Service pages list features but do not address the buyer\'s specific problem',
   'The site looks polished but has not generated a qualified lead in months',
 ]
-
 export function WebsitesProblemSection() {
   return (
-    <SectionWrapper className="bg-ink text-ink-foreground">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="max-w-2xl mb-12">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">The Problem</p>
@@ -33,6 +28,6 @@ export function WebsitesProblemSection() {
           ))}
         </ul>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

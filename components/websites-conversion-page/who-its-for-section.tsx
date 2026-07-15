@@ -1,15 +1,10 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const fits = [
   { label: 'Good fit', items: ['Businesses where the website does not match what sales says in discovery calls', 'Founders who have refined their offer but whose site still reflects the original version', 'Companies entering a new market or segment that requires updated positioning', 'Teams where inbound leads are low quality or where the site generates volume but not fit', 'Businesses preparing for a fundraise, partnership, or enterprise sale where the site must hold up to scrutiny'] },
   { label: 'Not the right fit', items: ['Businesses whose offer or ICP is not yet defined — messaging cannot fix an unclear offer', 'Teams looking for a design refresh without changing any of the content or structure', 'Founders not willing to change what the site says about who the business is for', 'Businesses expecting a website to generate leads without content, SEO, or distribution behind it', 'Situations where a single landing page would solve the immediate problem more efficiently'] },
 ]
-
 export function WebsitesWhoItsForSection() {
   return (
-    <SectionWrapper className="bg-ink text-ink-foreground">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="max-w-2xl mb-12">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">Who It Is For</p>
@@ -36,6 +31,6 @@ export function WebsitesWhoItsForSection() {
           ))}
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

@@ -1,7 +1,3 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const tracks = [
   {
     number: '01',
@@ -19,10 +15,9 @@ const tracks = [
     description: 'Custom dashboards, workflow systems, approval tools, and reporting infrastructure that remove the founder from operational bottlenecks. Built in 2 to 6 weeks with a dedicated developer.',
   },
 ]
-
 export function GtmSystemsBuilderSolutionSection() {
   return (
-    <SectionWrapper className="bg-background">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="max-w-2xl mb-12">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">Three Tracks</p>
@@ -43,6 +38,6 @@ export function GtmSystemsBuilderSolutionSection() {
           ))}
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

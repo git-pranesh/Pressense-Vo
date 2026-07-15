@@ -1,11 +1,11 @@
 import { StructuredData } from '@/components/structured-data'
 import { FinalCTA } from '@/components/final-cta'
 import { GtmContentHero } from '@/components/gtm-content-page/hero'
-import { GtmContentWhoItsForSection } from '@/components/gtm-content-page/who-its-for-section'
 import { GtmContentProblemsSection } from '@/components/gtm-content-page/problems-section'
+import { GtmContentSolutionSection } from '@/components/gtm-content-page/solution-section'
+import { GtmContentWhoItsForSection } from '@/components/gtm-content-page/who-its-for-section'
 import { GtmContentMethodologySection } from '@/components/gtm-content-page/methodology-section'
-import { GtmContentCostSection } from '@/components/gtm-content-page/cost-section'
-import { GtmContentSystemIncludesSection } from '@/components/gtm-content-page/system-includes-section'
+import { GtmContentWhatYouGetSection } from '@/components/gtm-content-page/what-you-get-section'
 import { GtmContentFaqSection } from '@/components/gtm-content-page/faq-section'
 import type { Metadata } from 'next'
 
@@ -144,13 +144,13 @@ export default function GtmContentSystemsPage() {
         url: 'https://www.pressense.co',
       }} />
 
-      <main className="min-h-screen">
+      <main>
         <GtmContentHero />
-        <GtmContentWhoItsForSection />
         <GtmContentProblemsSection />
+        <GtmContentSolutionSection />
+        <GtmContentWhoItsForSection />
         <GtmContentMethodologySection />
-        <GtmContentCostSection />
-        <GtmContentSystemIncludesSection />
+        <GtmContentWhatYouGetSection />
         <GtmContentFaqSection />
         <FinalCTA />
       </main>

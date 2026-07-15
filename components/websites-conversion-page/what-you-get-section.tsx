@@ -1,7 +1,3 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const deliverables = [
   'Positioning framework and messaging document used to build every page',
   'Full page architecture map before any design begins',
@@ -11,10 +7,9 @@ const deliverables = [
   'Sales-ready case study and proof page templates',
   'Handover with full documentation and page editing access',
 ]
-
 export function WebsitesWhatYouGetSection() {
   return (
-    <SectionWrapper className="bg-ink text-ink-foreground">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -36,6 +31,6 @@ export function WebsitesWhatYouGetSection() {
           </ul>
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

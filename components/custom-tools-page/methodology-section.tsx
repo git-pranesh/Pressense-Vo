@@ -1,7 +1,3 @@
-'use client'
-
-import { SectionWrapper } from '@/components/section-wrapper'
-
 const steps = [
   {
     number: '01',
@@ -24,10 +20,9 @@ const steps = [
     description: 'We handle deployment, team training, and onboarding. After launch, your dedicated developer stays on for fixes, improvements, and new workflows. The tool is yours. The code is yours. The support continues for as long as you need it.',
   },
 ]
-
 export function CustomToolsMethodologySection() {
   return (
-    <SectionWrapper className="bg-background">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
         <div className="max-w-2xl mb-12">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">How It Works</p>
@@ -48,6 +43,6 @@ export function CustomToolsMethodologySection() {
           ))}
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

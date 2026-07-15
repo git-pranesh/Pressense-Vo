@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import { CrmErpHero } from '@/components/crm-erp-page/hero'
-import { CrmErpProblemSection } from '@/components/crm-erp-page/problem-section'
-import { CrmErpSolutionSection } from '@/components/crm-erp-page/solution-section'
-import { CrmErpWhoItsForSection } from '@/components/crm-erp-page/who-its-for-section'
-import { CrmErpMethodologySection } from '@/components/crm-erp-page/methodology-section'
-import { CrmErpWhatYouGetSection } from '@/components/crm-erp-page/what-you-get-section'
+import { CrmProblemSection } from '@/components/crm-erp-page/problem-section'
+import { CrmSolutionSection } from '@/components/crm-erp-page/solution-section'
+import { CrmWhoItsForSection } from '@/components/crm-erp-page/who-its-for-section'
+import { CrmMethodologySection } from '@/components/crm-erp-page/methodology-section'
+import { CrmWhatYouGetSection } from '@/components/crm-erp-page/what-you-get-section'
 import { CrmErpFAQSection } from '@/components/crm-erp-page/faq-section'
 import { CrmErpFinalCTA } from '@/components/crm-erp-page/final-cta'
 
@@ -35,11 +35,11 @@ export default function CrmErpSystemsPage() {
       
       <main>
         <CrmErpHero />
-        <CrmErpProblemSection />
-        <CrmErpSolutionSection />
-        <CrmErpWhoItsForSection />
-        <CrmErpMethodologySection />
-        <CrmErpWhatYouGetSection />
+        <CrmProblemSection />
+        <CrmSolutionSection />
+        <CrmWhoItsForSection />
+        <CrmMethodologySection />
+        <CrmWhatYouGetSection />
         <CrmErpFAQSection />
         <CrmErpFinalCTA />
       </main>

@@ -2,7 +2,7 @@ export function GtmContentHero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
+      className="relative pt-32 pb-20 overflow-hidden"
       aria-label="GTM content systems for B2B SaaS"
     >
       <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
@@ -15,52 +15,50 @@ export function GtmContentHero() {
             </span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-4">
             GTM Content Systems: From Founder-Led Heroics to Repeatable Pipeline
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-6">
-            Most early-stage B2B SaaS companies generate their first pipeline through founder hustle: personal network, warm intros, a few LinkedIn posts that hit. That works until it does not. When you need predictable, repeatable revenue that does not depend on the founder showing up every week, you need a GTM content system, not a content calendar.
+          <p className="text-xl sm:text-2xl font-medium text-foreground mb-6">
+            We build the infrastructure that connects your positioning, content, and distribution into a single repeatable motion that generates pipeline without you in the middle.
           </p>
 
-          <div className="border-l-2 border-primary/40 pl-5 mb-10 max-w-2xl">
-            <p className="text-base text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">A GTM content system</strong> is the architecture that connects your positioning, content production, distribution channels, and CRM into a single repeatable motion. Every piece of content has a defined job at a specific stage of the buyer journey. Every distribution channel has a cadence. Every lead that comes through content is tagged, tracked, and followed up. The system runs without heroics. It compounds without constant intervention.
+          <div className="border-l-2 border-primary/50 pl-5 mb-8">
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+              A GTM content system is the architecture that connects your positioning, content production, distribution channels, and CRM into a single repeatable motion. Every piece of content has a defined job at a specific stage of the buyer journey. Every distribution channel has a cadence. Every lead that comes through content is tagged, tracked, and followed up. The system runs without heroics. It compounds without constant intervention.
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-x-8 gap-y-3 mb-10">
-            <div>
-              <p className="text-2xl font-semibold text-foreground">4–6 weeks</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">system design to live</p>
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 mb-10 py-5 border-y border-border/40">
+            <div className="flex items-center gap-2.5">
+              <span className="text-xl font-semibold text-foreground">4 to 6 weeks</span>
+              <span className="text-sm text-muted-foreground">system design to live</span>
             </div>
-            <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
-            <div>
-              <p className="text-2xl font-semibold text-foreground">One motion</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">strategy + content + distribution</p>
+            <div className="flex items-center gap-2.5">
+              <span className="text-xl font-semibold text-foreground">One motion</span>
+              <span className="text-sm text-muted-foreground">strategy, content, distribution</span>
             </div>
-            <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
-            <div>
-              <p className="text-2xl font-semibold text-foreground">Compounds</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">paid ads stop, this does not</p>
+            <div className="flex items-center gap-2.5">
+              <span className="text-xl font-semibold text-foreground">Compounds</span>
+              <span className="text-sm text-muted-foreground">paid ads stop, this does not</span>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <a
               href="/diagnostic"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+              className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+              <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5h6M5 2l3 3-3 3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </span>
             </a>
             <a
-              href="#how-it-works"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
+              href="/how-we-work"
+              className="inline-flex items-center gap-2 px-9 py-5 rounded-2xl text-base font-semibold border border-border/40 text-foreground hover:border-primary/40 transition-all duration-200"
             >
-              See how it works
+              See How We Work
             </a>
           </div>
         </div>
