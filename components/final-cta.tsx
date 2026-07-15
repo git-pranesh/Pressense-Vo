@@ -1,51 +1,55 @@
 export function FinalCTA() {
   return (
-    <section id="diagnostic" className="py-28 lg:py-40 bg-ink relative overflow-hidden rounded-t-3xl" aria-labelledby="diagnostic-heading">
-      {/* Subtle radial on dark bg */}
-      <div
-        className="absolute inset-0 opacity-[0.07]"
-        style={{
-          background: 'radial-gradient(ellipse 70% 60% at 50% 50%, #B8A4D8 0%, transparent 70%)',
-        }}
-        aria-hidden="true"
-      />
+    /* Pattern 7 — Editorial CTA Block: MODE B full-bleed, centered, flanking eyebrow */
+    <section
+      id="diagnostic"
+      className="py-32 lg:py-40 bg-ink"
+      aria-labelledby="diagnostic-heading"
+    >
+      <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-10 text-center">
-        {/* Eyebrow */}
-        <div className="flex items-center justify-center gap-3 mb-8">
-          <div className="h-px w-8 bg-ink-foreground opacity-30" />
-          <span className="text-xs tracking-[0.2em] uppercase text-ink-foreground/60 font-medium">Diagnostic</span>
-          <div className="h-px w-8 bg-ink-foreground opacity-30" />
+        {/* Flanking eyebrow — line · label · line */}
+        <div className="eyebrow-flanked eyebrow-on-dark mb-10">
+          Start Diagnosing
         </div>
 
-        <h2 className="text-display font-serif font-medium text-ink-foreground text-balance mb-6" id="diagnostic-heading">
+        <h2
+          className="text-display font-serif text-ink-foreground text-balance mb-6"
+          id="diagnostic-heading"
+        >
           If your business is growing but feels unstructured,{' '}
-          <span className="italic font-normal">start with a diagnostic.</span>
+          <em className="italic">start with a diagnostic.</em>
         </h2>
 
-        <p className="text-lg text-ink-muted mb-12 max-w-2xl mx-auto leading-relaxed text-pretty">
-          We will help you understand whether the right next step is advisory support, a workflow, website, content system, or a practical implementation sprint.
+        <p className="text-lg text-ink-muted mb-12 max-w-xl mx-auto leading-relaxed text-pretty font-sans">
+          We will help you understand whether the right next step is advisory support,
+          a workflow, website, content system, or a practical implementation sprint.
         </p>
 
-        {/* CTA button */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <a
             href="/diagnostic"
-            className="group inline-flex items-center gap-3 px-9 py-5 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+            className="btn-primary"
             aria-label="Start a diagnostic"
           >
             Start With a Diagnostic
-            <span className="w-6 h-6 rounded-full border border-primary-foreground/40 flex items-center justify-center group-hover:border-primary-foreground/70 transition-colors">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                <path d="M2 5h6M5 2l3 3-3 3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+          <a
+            href="/how-we-work"
+            className="inline-flex items-center gap-2 px-7 py-4 rounded-full text-base font-medium font-sans border border-ink-foreground/25 text-ink-foreground hover:border-ink-foreground/50 hover:bg-ink-foreground/5 transition-all duration-200"
+            aria-label="See how we work"
+          >
+            See How We Work
           </a>
         </div>
 
         {/* Small note */}
-        <p className="mt-8 text-xs text-ink-muted/70 tracking-wide">
-          Diagnostic requests are reviewed within 48 hours. We respond to every serious inquiry.
+        <p className="text-xs text-ink-muted/60 tracking-wide font-sans">
+          No commitment required. Requests reviewed within 48 hours.
         </p>
       </div>
     </section>

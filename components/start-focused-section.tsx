@@ -20,7 +20,7 @@ export function StartFocusedSection() {
   return (
     <section
       id="start-focused"
-      className="py-28 lg:py-36 bg-ink rounded-3xl mx-4 lg:mx-8"
+      className="py-32 lg:py-48 bg-ink"
       aria-labelledby="start-focused-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">

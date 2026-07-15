@@ -121,6 +121,16 @@ export function MegaFooter() {
         </div>
       )}
 
+      {/* Pattern 8 — Giant decorative wordmark: purely decorative, signals brand confidence */}
+      <div className="overflow-hidden px-4 lg:px-8 pt-10 pb-0" aria-hidden="true">
+        <p
+          className="font-serif text-ink-foreground/[0.04] select-none whitespace-nowrap leading-none tracking-tighter"
+          style={{ fontSize: 'clamp(5rem, 18vw, 18rem)' }}
+        >
+          PRESSENSE
+        </p>
+      </div>
+
       {/* Bottom bar */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">

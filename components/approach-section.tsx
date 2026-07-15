@@ -56,7 +56,7 @@ const steps = [
 
 export function ApproachSection() {
   return (
-    <section id="how-we-work" className="py-28 lg:py-36" aria-labelledby="approach-heading">
+    <section id="how-we-work" className="py-32 lg:py-48 bg-background" aria-labelledby="approach-heading">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="mb-16 lg:mb-20">
@@ -64,7 +64,7 @@ export function ApproachSection() {
             <div className="eyebrow-line" />
             <span className="eyebrow">How We Work</span>
           </div>
-          <h2 className="text-section-title font-serif font-medium text-foreground text-balance max-w-xl" id="approach-heading">
+          <h2 className="text-section-title font-serif text-foreground text-balance max-w-xl" id="approach-heading">
             A structured path from broken to scaled.
           </h2>
         </div>

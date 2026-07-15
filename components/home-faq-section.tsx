@@ -90,6 +90,7 @@ export function HomeFAQSection() {
     <FAQSection
       headline="Questions founders usually ask before working with Pressense"
       faqs={homeFAQs}
+      className="card-lift bg-background"
     />
   )
 }

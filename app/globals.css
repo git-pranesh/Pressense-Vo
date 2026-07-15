@@ -105,7 +105,7 @@
 /* ─── Tailwind @theme ─────────────────────────────────────────────────── */
 @theme inline {
   --font-sans:  'Inter', 'Geist', sans-serif;
-  --font-serif: 'EB Garamond', 'Georgia', serif;
+  --font-serif: 'Instrument Serif', 'EB Garamond', 'Georgia', serif;
   --font-mono:  'Geist Mono', monospace;
 
   --color-background:        var(--background);
@@ -188,10 +188,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  /* Global serif headings — EB Garamond everywhere */
+  /* Global serif headings — Instrument Serif / EB Garamond at weight 400 */
   h1, h2, h3, h4, h5 {
     font-family: var(--font-serif);
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: -0.015em;
     line-height: 1.08;
   }
@@ -203,26 +203,60 @@
 }
 
 /* ─── Typography scale ──────────────────────────────────────────────────── */
+/* font-weight: 400 — NOT bold — serif at normal weight IS the personality */
 .text-hero {
-  font-size: clamp(3.5rem, 8vw, 7rem);
-  line-height: 1.03;
+  font-size: clamp(3.5rem, 10vw, 7.5rem);  /* 56px → 120px */
+  line-height: 1.0;
   letter-spacing: -0.02em;
   font-family: var(--font-serif);
-  font-weight: 500;
+  font-weight: 400;
 }
 .text-display {
-  font-size: clamp(2.25rem, 5vw, 4rem);
-  line-height: 1.06;
+  font-size: clamp(2.5rem, 6vw, 5rem);     /* 40px → 80px */
+  line-height: 1.05;
   letter-spacing: -0.02em;
   font-family: var(--font-serif);
-  font-weight: 500;
+  font-weight: 400;
 }
 .text-section-title {
-  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);     /* 32px → 56px */
   line-height: 1.1;
   letter-spacing: -0.015em;
   font-family: var(--font-serif);
-  font-weight: 500;
+  font-weight: 400;
+}
+/* Italic accent — one word per hero */
+.text-hero em,
+.text-display em {
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+}
+
+/* ─── Card-lift — cream section overlapping dark section above ─────────── */
+/* Usage: apply .card-lift to a MODE A section that follows a MODE B section  */
+.card-lift {
+  border-radius: 40px 40px 0 0;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Flanking eyebrow (line — label — line) ────────────────────────────── */
+.eyebrow-flanked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.eyebrow-flanked::before,
+.eyebrow-flanked::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 2.5rem;
+  background: currentColor;
+  opacity: 0.25;
 }
 
 /* ─── Section rhythm ────────────────────────────────────────────────────── */

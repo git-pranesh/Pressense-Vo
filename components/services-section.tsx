@@ -47,16 +47,16 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-28 lg:py-36" aria-labelledby="services-heading">
+    <section id="services" className="py-32 lg:py-48 bg-background card-lift" aria-labelledby="services-heading">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-px w-8 bg-foreground/40" />
+              <div className="eyebrow-line" aria-hidden="true" />
               <span className="eyebrow">Services</span>
             </div>
-            <h2 className="text-section-title font-serif font-medium text-foreground text-balance max-w-lg" id="services-heading">
+            <h2 className="text-section-title font-serif text-foreground text-balance max-w-lg" id="services-heading">
               We advise. We build. We execute. In that order.
             </h2>
           </div>
@@ -85,7 +85,7 @@ export function ServicesSection() {
 
               {/* Content */}
               <div className="flex flex-col gap-4 flex-1">
-                <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
+                <h3 className="text-xl font-serif text-foreground">{service.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{service.description}</p>
               </div>
 
