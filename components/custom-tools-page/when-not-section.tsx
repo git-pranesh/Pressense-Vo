@@ -12,7 +12,7 @@ export function WhenNotSection() {
     <section className="py-28 lg:py-36" aria-labelledby="whennot-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
-          <h2 id="whennot-heading" className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4">
+          <h2 id="whennot-heading" className="text-section-title font-serif font-medium text-foreground text-balance mb-4">
             When we would not build one
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-12">

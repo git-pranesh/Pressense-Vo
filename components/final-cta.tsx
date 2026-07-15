@@ -18,7 +18,7 @@ export function FinalCTA() {
           <div className="h-px w-8 bg-ink-foreground opacity-30" />
         </div>
 
-        <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.1] text-ink-foreground text-balance mb-6" id="diagnostic-heading">
+        <h2 className="text-display font-serif font-medium text-ink-foreground text-balance mb-6" id="diagnostic-heading">
           If your business is growing but feels unstructured,{' '}
           <span className="italic font-normal">start with a diagnostic.</span>
         </h2>

@@ -19,7 +19,7 @@ export function ProblemSection() {
               <div className="eyebrow-line-dark"/>
               <span className="text-xs tracking-[0.2em] uppercase text-ink-muted font-medium">The Problem</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-[1.15] tracking-tight text-ink-foreground text-balance" id="problem-heading">
+            <h2 className="text-section-title font-serif font-medium text-ink-foreground text-balance" id="problem-heading">
               Most growth problems are not caused by lack of effort.
               <span className="text-ink-muted font-light"> They usually come from unclear positioning, weak handoffs, manual workflows, misaligned teams, or systems that no longer fit the stage of the business.</span>
             </h2>

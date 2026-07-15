@@ -21,7 +21,7 @@ export function NotForSection() {
               Honest Filter
             </p>
             <h2
-              className="text-3xl sm:text-4xl font-medium tracking-tight text-ink-foreground text-balance mb-5"
+              className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-5"
               id="not-for-heading"
             >
               This is not for everyone.

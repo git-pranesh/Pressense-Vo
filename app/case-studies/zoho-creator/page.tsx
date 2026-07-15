@@ -132,7 +132,7 @@ export default function ZohoCreatorCaseStudy() {
               <p className="eyebrow mb-5">
                 Enterprise Software / Low-Code
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
+              <h1 className="text-display font-serif font-medium text-foreground leading-[1.08] mb-6 text-balance">
                 Building a go-to-market system for Zoho Creator
               </h1>
               <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">

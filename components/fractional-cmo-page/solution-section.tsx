@@ -32,7 +32,7 @@ export function SolutionSection() {
           </div>
           <h2
             id="comparison-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4"
+            className="text-section-title font-serif font-medium text-foreground text-balance mb-4"
           >
             Full-time CMO vs Fractional CMO vs Marketing Agency
           </h2>

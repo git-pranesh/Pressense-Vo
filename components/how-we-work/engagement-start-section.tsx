@@ -36,7 +36,7 @@ export function EngagementStartSection() {
           </p>
           <h2
             id="engagement-start-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-6 text-balance"
+            className="text-display font-serif font-medium text-foreground mb-6 text-balance"
           >
             How engagements usually start.
           </h2>

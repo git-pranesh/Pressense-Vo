@@ -17,7 +17,7 @@ export function SystemsHero() {
           </div>
 
           {/* H1 — keyword-first, outcome-focused */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
+          <h1 className="text-hero font-serif font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
             Business Systems Consultant: Fix the Operations Bottlenecks Slowing Your Growth
           </h1>
 

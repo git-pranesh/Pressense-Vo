@@ -21,7 +21,7 @@ export function AdvisoryModelSection() {
   return (
     <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-16">
+        <h2 className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-16">
           Our advisory model
         </h2>
 

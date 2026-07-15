@@ -22,7 +22,7 @@ export function WhoItsForSection() {
             <div className="eyebrow-line" aria-hidden="true" />
             <span className="eyebrow-on-dark">This is right for you if</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-10">Who AI automation helps</h2>
+          <h2 className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-10">Who AI automation helps</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {whoItsForCards.map((card, i) => (
               <div key={i} className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">

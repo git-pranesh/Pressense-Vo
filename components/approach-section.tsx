@@ -61,10 +61,10 @@ export function ApproachSection() {
         {/* Header */}
         <div className="mb-16 lg:mb-20">
           <div className="flex items-center gap-3 mb-5">
-            <div className="h-px w-8 bg-foreground/40" />
-            <span className="eyebrow-on-dark">How We Work</span>
+            <div className="eyebrow-line" />
+            <span className="eyebrow">How We Work</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance max-w-xl" id="approach-heading">
+          <h2 className="text-section-title font-serif font-medium text-foreground text-balance max-w-xl" id="approach-heading">
             A structured path from broken to scaled.
           </h2>
         </div>

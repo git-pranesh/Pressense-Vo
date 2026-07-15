@@ -87,7 +87,7 @@ export function CaseStudiesSection() {
               <div className="eyebrow-line"/>
               <span className="eyebrow">Work</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance max-w-md" id="case-studies-heading">
+            <h2 className="text-section-title font-serif font-medium text-foreground text-balance max-w-md" id="case-studies-heading">
               Results across industries.
             </h2>
           </div>

@@ -83,7 +83,7 @@ export default function CaseStudiesPage() {
               <p className="eyebrow mb-6">
                 Case Studies
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
+              <h1 className="text-display font-serif font-medium text-foreground leading-[1.08] mb-6 text-balance">
                 We don&apos;t share testimonials.{' '}
                 <span className="text-muted-foreground font-light">
                   We share what we fixed, and how.

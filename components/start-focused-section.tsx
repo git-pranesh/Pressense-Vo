@@ -33,7 +33,7 @@ export function StartFocusedSection() {
             </span>
           </div>
           <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance"
+            className="text-section-title font-serif font-medium text-ink-foreground text-balance"
             id="start-focused-heading"
           >
             Start with one focused problem.

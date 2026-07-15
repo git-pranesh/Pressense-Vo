@@ -29,7 +29,7 @@ export function WalkAwaySection() {
   return (
     <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-16">
+        <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-16">
           What you walk away with
         </h2>
 

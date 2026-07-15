@@ -31,7 +31,7 @@ export function ProblemSection() {
             <div className="eyebrow-line" aria-hidden="true" />
             <span className="eyebrow-on-dark">What is revenue operations</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-6">
+          <h2 className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-6">
             What is Revenue Operations?
           </h2>
           <p className="text-lg text-ink-muted leading-relaxed mb-4">

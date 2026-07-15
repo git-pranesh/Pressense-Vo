@@ -35,7 +35,7 @@ export function MethodologySection() {
           <span className="eyebrow-on-dark">The Pressense Method</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-4">
+        <h2 className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-4">
           Diagnose. Strategise. Build. Scale.
         </h2>
         <p className="text-lg text-ink-muted leading-relaxed max-w-2xl mb-14">

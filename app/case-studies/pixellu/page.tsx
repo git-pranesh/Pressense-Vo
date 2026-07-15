@@ -99,7 +99,7 @@ export default function PixelluCaseStudy() {
               <p className="eyebrow mb-5">
                 SaaS / Creative Software for Photography Professionals
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
+              <h1 className="text-display font-serif font-medium text-foreground leading-[1.08] mb-6 text-balance">
                 1,579 free trials.{' '}
                 <span className="text-muted-foreground font-light">
                   Same traffic. Different system.

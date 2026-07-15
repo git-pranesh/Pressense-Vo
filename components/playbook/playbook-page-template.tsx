@@ -91,7 +91,7 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
               <span className="eyebrow">Playbook</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+            <h1 className="text-display font-serif font-medium text-foreground text-balance leading-[1.1] mb-6">
               {playbook.title}
             </h1>
 

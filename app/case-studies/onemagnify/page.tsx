@@ -117,7 +117,7 @@ export default function OneMagnifyCaseStudy() {
               <p className="eyebrow mb-5">
                 Global Marketing &amp; Customer Experience
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
+              <h1 className="text-display font-serif font-medium text-foreground leading-[1.08] mb-6 text-balance">
                 250 pages. One standard. Zero shortcuts.
               </h1>
               <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">

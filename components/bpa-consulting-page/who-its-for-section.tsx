@@ -9,7 +9,7 @@ export function WhoItsForSection() {
   return (
     <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-16">Who business systems consulting helps</h2>
+        <h2 className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-16">Who business systems consulting helps</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {whoItsForCards.map((card, i) => (
             <div key={i} className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">

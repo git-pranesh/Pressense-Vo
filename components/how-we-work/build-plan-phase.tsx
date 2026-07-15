@@ -47,7 +47,7 @@ export function BuildPlanPhase() {
         <div className="max-w-4xl mb-12">
           <h2
             id="build-plan-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-6 text-balance"
+            className="text-display font-serif font-medium text-foreground mb-6 text-balance"
           >
             Build the Plan
           </h2>

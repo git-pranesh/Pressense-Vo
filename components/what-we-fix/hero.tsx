@@ -25,7 +25,7 @@ export function WhatWeFixHero() {
           </p>
 
           {/* H1 */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground leading-[1.08] mb-8 text-balance">
+          <h1 className="text-display font-serif font-medium text-foreground leading-[1.08] mb-8 text-balance">
             Most businesses don&apos;t fail from lack of effort.{' '}
             <span className="text-muted-foreground font-light">
               They struggle because the fundamentals are broken.

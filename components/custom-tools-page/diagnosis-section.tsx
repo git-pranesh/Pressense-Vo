@@ -22,7 +22,7 @@ export function DiagnosisSection() {
     <section className="py-28 lg:py-36" aria-labelledby="diagnosis-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="mb-16">
-          <h2 id="diagnosis-heading" className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4">
+          <h2 id="diagnosis-heading" className="text-section-title font-serif font-medium text-foreground text-balance mb-4">
             We do not start by building. We start by diagnosing.
           </h2>
           <p className="text-lg text-muted-foreground">

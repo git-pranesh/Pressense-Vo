@@ -56,7 +56,7 @@ export function ServicesSection() {
               <div className="h-px w-8 bg-foreground/40" />
               <span className="eyebrow">Services</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance max-w-lg" id="services-heading">
+            <h2 className="text-section-title font-serif font-medium text-foreground text-balance max-w-lg" id="services-heading">
               We advise. We build. We execute. In that order.
             </h2>
           </div>

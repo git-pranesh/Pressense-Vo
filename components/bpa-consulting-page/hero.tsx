@@ -10,7 +10,7 @@ export function BPAHero() {
             <span className="eyebrow">Business Process Automation Consulting</span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+          <h1 className="text-hero font-serif font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
             Automate the processes that break as you grow.
           </h1>
 

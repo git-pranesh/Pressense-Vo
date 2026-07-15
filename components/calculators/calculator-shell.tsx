@@ -50,7 +50,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
             <span className="text-foreground">{calcMeta.title}</span>
           </nav>
           <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">{calcMeta.category}</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground mb-6 max-w-4xl leading-[1.05]">
+          <h1 className="text-display font-serif font-medium text-foreground mb-6 max-w-4xl leading-[1.05]">
             {calcMeta.title}
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl leading-relaxed">{calcMeta.description}</p>
@@ -140,7 +140,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
 
       {/* FAQs */}
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground mb-8">
+        <h2 className="text-section-title font-serif font-medium text-foreground mb-8">
           Frequently asked questions
         </h2>
         <div className="space-y-3">

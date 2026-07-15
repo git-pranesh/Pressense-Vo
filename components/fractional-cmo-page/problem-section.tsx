@@ -35,7 +35,7 @@ export function ProblemSection() {
           {/* H2 matches the PAA question exactly for AEO */}
           <h2
             id="what-cmo-does-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-ink-foreground text-balance mb-6"
+            className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-6"
           >
             What does a fractional CMO do?
           </h2>

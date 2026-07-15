@@ -23,7 +23,7 @@ export function FractionalCMOHero() {
           </div>
 
           {/* H1 — primary keyword exact match */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
+          <h1 className="text-hero font-serif font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
             Fractional CMO Services for B2B SaaS &amp; Startups
           </h1>
 

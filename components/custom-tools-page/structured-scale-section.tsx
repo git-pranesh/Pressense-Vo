@@ -3,7 +3,7 @@ export function StructuredScaleSection() {
     <section className="py-28 lg:py-36" aria-labelledby="scale-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 id="scale-heading" className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-8">
+          <h2 id="scale-heading" className="text-section-title font-serif font-medium text-foreground text-balance mb-8">
             How this connects to structured scale
           </h2>
           <div className="space-y-6">

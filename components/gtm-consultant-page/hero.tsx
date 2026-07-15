@@ -23,7 +23,7 @@ export function GTMHero() {
           </div>
 
           {/* H1 */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
+          <h1 className="text-hero font-serif font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
             Go-to-Market Strategy Consultant for B2B Startups &amp; Scaling Businesses
           </h1>
 

@@ -3,7 +3,7 @@ export function PlaybooksImplementationSection() {
     <section className="py-28 lg:py-36" aria-labelledby="implementation-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-12" id="implementation-heading">
+          <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-12" id="implementation-heading">
             From diagnosis to implementation.
           </h2>
 

@@ -19,7 +19,7 @@ export function AIAutomationAgencyHero() {
           </div>
 
           {/* H1 */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
+          <h1 className="text-hero font-serif font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
             AI Automation Agency for Founder-Led Businesses
           </h1>
 

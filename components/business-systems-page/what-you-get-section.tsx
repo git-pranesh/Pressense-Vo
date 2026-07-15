@@ -23,7 +23,7 @@ export function WhatYouGetSection() {
 
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
           <div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-4">
+            <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-4">
               What you get
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">

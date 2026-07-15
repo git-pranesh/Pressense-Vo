@@ -11,7 +11,7 @@ export function SMBStrategyHero() {
             <div className="eyebrow-line" aria-hidden="true" />
             <span className="eyebrow">Strategy / Small Business</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+          <h1 className="text-hero font-serif font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
             Small Business Strategy Consultant: Direction First, Then Tools
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-8">

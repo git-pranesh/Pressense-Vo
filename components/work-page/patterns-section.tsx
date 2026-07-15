@@ -11,7 +11,7 @@ export function WorkPatternsSection() {
     <section className="py-28 lg:py-36" aria-labelledby="patterns-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance mb-12" id="patterns-heading">
+          <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-12" id="patterns-heading">
             Recurring patterns we see.
           </h2>
 

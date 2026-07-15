@@ -19,7 +19,7 @@ export function DiagnosticHero() {
         </p>
 
         {/* H1 - Only H1 on page */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-foreground leading-[1.08] text-balance mb-6">
+        <h1 className="text-display font-serif font-medium text-foreground leading-[1.08] text-balance mb-6">
           Start with the right problem.
         </h1>
 
