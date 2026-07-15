@@ -1,19 +1,13 @@
 import type { Metadata } from 'next'
 import { StructuredData } from '@/components/structured-data'
 import { ContentAuthorityHero } from '@/components/content-authority-page/hero'
-import { TranslationSection } from '@/components/content-authority-page/translation-section'
-import { ConstraintsSection } from '@/components/content-authority-page/constraints-section'
-import { DiagnosisSection } from '@/components/content-authority-page/diagnosis-section'
-import { WhatWeBuildSection } from '@/components/content-authority-page/what-we-build-section'
-import { MostUsefulSection } from '@/components/content-authority-page/most-useful-section'
-import { WhatChangesSection } from '@/components/content-authority-page/what-changes-section'
-import { WhenWorthBuildingSection } from '@/components/content-authority-page/when-worth-building-section'
-import { WhenNotRecommendSection } from '@/components/content-authority-page/when-not-recommend-section'
-import { StructuredScaleSection } from '@/components/content-authority-page/structured-scale-section'
-import { NotWritingServiceSection } from '@/components/content-authority-page/not-writing-service-section'
-import { EngagementPathSection } from '@/components/content-authority-page/engagement-path-section'
-import { ContentAuthorityCTA } from '@/components/content-authority-page/final-cta'
+import { ContentProblemSection } from '@/components/content-authority-page/problem-section'
+import { ContentSolutionSection } from '@/components/content-authority-page/solution-section'
+import { ContentWhoItsForSection } from '@/components/content-authority-page/who-its-for-section'
+import { ContentMethodologySection } from '@/components/content-authority-page/methodology-section'
+import { ContentWhatYouGetSection } from '@/components/content-authority-page/what-you-get-section'
 import { ContentFAQSection } from '@/components/content-authority-page/faq-section'
+import { ContentAuthorityCTA } from '@/components/content-authority-page/final-cta'
 
 export const metadata: Metadata = {
   title: 'Content Authority Systems | SEO, AEO & Thought Leadership | Pressense',
@@ -131,21 +125,14 @@ export default function ContentAuthoritySystemsPage() {
 
       <main>
         <ContentAuthorityHero />
-        <TranslationSection />
-        <ConstraintsSection />
-        <DiagnosisSection />
-        <WhatWeBuildSection />
-        <MostUsefulSection />
-        <WhatChangesSection />
-        <WhenWorthBuildingSection />
-        <WhenNotRecommendSection />
-        <StructuredScaleSection />
-        <NotWritingServiceSection />
-        <EngagementPathSection />
+        <ContentProblemSection />
+        <ContentSolutionSection />
+        <ContentWhoItsForSection />
+        <ContentMethodologySection />
+        <ContentWhatYouGetSection />
         <ContentFAQSection />
         <ContentAuthorityCTA />
       </main>
-      
     </>
   )
 }

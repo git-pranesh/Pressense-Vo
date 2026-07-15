@@ -3,73 +3,47 @@ import { FAQSection } from '@/components/faq-section'
 
 const contentFAQs = [
   {
-    question: 'What is a content and authority system?',
+    question: 'What is a content authority system?',
+    answer:
+      'A content authority system is the infrastructure behind how a business communicates at scale: SEO content, AEO-optimised pages, technical writing, thought leadership, and publishing workflows built into a repeatable process. Unlike a content writing service that produces individual pieces, a content authority system defines what the business should be known for, maps every piece to a specific buyer and pipeline stage, and creates a compounding library of content that generates organic traffic and builds trust over time.',
+  },
+  {
+    question: 'How is a content system different from content writing?',
     answer: (
       <>
-        A content and authority system turns internal expertise into clear market-facing communication. It can include{' '}
-        <Link href="/websites-conversion-systems" className="text-primary hover:underline">website copy</Link>, SEO content, founder-led content, product narratives, technical content, publishing workflows, and{' '}
-        <Link href="/ai-workflows-automation" className="text-primary hover:underline">AI-assisted content systems</Link>.
+        Content writing produces output. A content system produces strategy, structure, and repeatability. Most businesses that hire content writers get articles that look busy and pipelines that do not grow. The reason is that writing without a defined ICP, buyer question map, and topical authority architecture generates volume, not traction. Pressense builds the system first, then produces the content within it. See{' '}
+        <Link href="/advisory-strategy" className="text-primary hover:underline">how positioning connects to content</Link>.
       </>
     ),
   },
   {
-    question: 'How is this different from content writing?',
-    answer: (
-      <>
-        Content writing focuses on output. A content system focuses on translation,{' '}
-        <Link href="/advisory-strategy" className="text-primary hover:underline">positioning</Link>, structure, buyer understanding, and repeatability. Pressense helps clarify what the business should be known for before creating more content.
-      </>
-    ),
+    question: 'How long does it take to see results from a content system?',
+    answer:
+      'Bottom-of-funnel content such as comparison pages and use-case pages can show organic ranking movement within 60 to 90 days. A full content programme generating consistent organic pipeline typically takes 6 to 12 months to compound meaningfully. Founders who start with the right pillar architecture and AEO-structured pages see AI engine citations within 4 to 8 weeks as Google AI Overviews and Perplexity begin indexing the structured answer blocks.',
   },
   {
-    question: 'When does a business need a content system?',
-    answer: (
-      <>
-        A content system is useful when the business has real expertise but weak visibility, buyers misunderstand the offer, the founder explains better on calls than the website does, or content is being created without clarity or demand.
-      </>
-    ),
+    question: 'What is AEO and how is it different from SEO?',
+    answer:
+      'SEO optimises content to rank in traditional search results. Answer Engine Optimisation (AEO) structures content so that AI systems like Google AI Overviews, Perplexity, and ChatGPT cite it as the authoritative answer to a query. AEO requires question-based headings, direct 40 to 60 word answer blocks immediately below each heading, FAQPage schema markup, and strong topical authority from internal linking. The content that wins both SEO and AEO is specific, accurate, and structured for extraction.',
   },
   {
-    question: 'Can this support SEO and AEO?',
-    answer: (
-      <>
-        Yes. Strong content systems help answer specific buyer questions, clarify expertise, structure ideas, and create useful pages that search engines and AI systems can understand. The goal is not keyword volume alone, but useful, specific, buyer-relevant content. See{' '}
-        <Link href="/playbooks" className="text-primary hover:underline">our playbooks</Link>.
-      </>
-    ),
+    question: 'What kind of businesses does Pressense build content systems for?',
+    answer:
+      'Pressense builds content authority systems for B2B SaaS companies with complex products that are hard to explain, medical and specialist businesses where trust is the primary buying trigger, and founder-led service firms where the founder has deep expertise but low market visibility. The common thread is that internal knowledge is strong but the communication infrastructure to turn that knowledge into organic pipeline does not exist yet.',
   },
   {
-    question: 'What kind of content does Pressense help build?',
+    question: 'When would a business not need a content system yet?',
     answer: (
       <>
-        Pressense can help with website copy, use-case pages, technical content, SEO articles, founder-led authority content, product narratives, playbooks, content workflows, and AI-assisted publishing systems.
-      </>
-    ),
-  },
-  {
-    question: 'When would Pressense not recommend more content?',
-    answer: (
-      <>
-        Pressense may advise against more content if the offer is unclear, the ideal buyer is undefined, the website cannot explain the business, the team is only chasing keywords, or the positioning problem needs to be fixed first.{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">Start with a communication diagnostic</Link>.
-      </>
-    ),
-  },
-  {
-    question: 'How does content connect to sales?',
-    answer: (
-      <>
-        Good content reduces confusion before a sales conversation. It helps buyers understand the problem, trust the business, compare options, and decide whether they are a good fit. This makes sales conversations clearer and more qualified.
+        A content system will not fix a positioning problem. If the business does not yet have a clear ICP, does not know why buyers choose them over alternatives, or cannot explain what they do in two sentences, a{' '}
+        <Link href="/advisory-strategy" className="text-primary hover:underline">strategy engagement</Link>{' '}
+        should come first. Building content on top of unclear positioning generates volume without traction and wastes six months.{' '}
+        <Link href="/diagnostic" className="text-primary hover:underline">The diagnostic identifies which problem to solve first</Link>.
       </>
     ),
   },
 ]
 
 export function ContentFAQSection() {
-  return (
-    <FAQSection
-      headline="Questions about content and authority systems"
-      faqs={contentFAQs}
-    />
-  )
+  return <FAQSection headline="Questions about content authority systems" faqs={contentFAQs} />
 }
