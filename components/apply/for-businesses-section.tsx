@@ -20,17 +20,17 @@ export function ForBusinessesSection() {
   return (
     <section
       id="for-businesses"
-      className="py-20 lg:py-28"
+      className="py-20 lg:py-28 border-t border-border/40"
       aria-labelledby="for-businesses-heading"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-14">
-          <p className="eyebrow mb-4">
+          <p className="text-sm uppercase tracking-widest text-primary mb-4">
             Who This Is For
           </p>
           <h2
-            className="text-section-title font-serif font-medium text-foreground text-balance max-w-xl"
+            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance max-w-xl"
             id="for-businesses-heading"
           >
             We are selective about fit.
@@ -42,7 +42,7 @@ export function ForBusinessesSection() {
           {businessTypes.map((type) => (
             <div
               key={type.title}
-              className="group relative p-6 rounded-2xl border border-border bg-card hover:border-foreground/20 transition-all duration-200"
+              className="group relative p-6 rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm hover:border-primary/30 hover:bg-card/50 transition-all duration-300"
             >
               {/* Icon placeholder */}
               <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-5">
@@ -63,7 +63,7 @@ export function ForBusinessesSection() {
                 </svg>
               </div>
 
-              <h3 className="text-lg font-medium font-sans text-foreground mb-2">
+              <h3 className="text-lg font-semibold text-foreground mb-2">
                 {type.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

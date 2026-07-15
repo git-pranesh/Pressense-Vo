@@ -39,15 +39,15 @@ const phases = [
 
 export function MethodologySection() {
   return (
-    <section className="py-20 lg:py-28 bg-ink">
+    <section className="py-20 lg:py-28 border-b border-border/40">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
-        <p className="text-xs font-medium tracking-widest uppercase text-primary/70 mb-4">
+        <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
           Our Methodology
         </p>
-        <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance mb-4">
           The Pressense Workflow Automation Framework
         </h2>
-        <p className="text-lg text-ink-muted leading-relaxed mb-12 max-w-2xl">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl">
           Every engagement runs through four phases. Each phase ends with a deliverable. Nothing moves forward without your sign-off.
         </p>
 
@@ -55,25 +55,25 @@ export function MethodologySection() {
           {phases.map((phase) => (
             <div
               key={phase.number}
-              className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
+              className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-3xl font-bold text-primary/20 leading-none">{phase.number}</span>
                 <div>
-                  <h3 className="font-medium text-lg text-foreground leading-tight">{phase.phase}</h3>
+                  <h3 className="font-semibold text-lg text-foreground leading-tight">{phase.phase}</h3>
                   <p className="text-sm text-primary/80 font-medium">{phase.tagline}</p>
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-4">{phase.description}</p>
-              <div className="flex items-start justify-between gap-4 pt-4">
+              <div className="flex items-start justify-between gap-4 pt-4 border-t border-border/40">
                 <div>
-                  <p className="text-xs font-medium tracking-widest uppercase text-primary/60 mb-1">
+                  <p className="text-xs font-semibold tracking-widest uppercase text-primary/60 mb-1">
                     Deliverable
                   </p>
                   <p className="text-sm text-muted-foreground">{phase.deliverable}</p>
                 </div>
                 <div className="shrink-0 text-right">
-                  <p className="text-xs font-medium tracking-widest uppercase text-primary/60 mb-1">
+                  <p className="text-xs font-semibold tracking-widest uppercase text-primary/60 mb-1">
                     Timeline
                   </p>
                   <p className="text-sm text-foreground font-medium">{phase.duration}</p>

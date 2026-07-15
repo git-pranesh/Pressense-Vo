@@ -15,14 +15,14 @@ export function ExampleWorkflowsSection() {
   ]
 
   return (
-    <section className="py-28 lg:py-36" aria-labelledby="workflows-heading">
+    <section className="py-28 lg:py-36 border-t border-border/40" aria-labelledby="workflows-heading">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 id="workflows-heading" className="text-section-title font-serif font-medium text-foreground text-balance mb-16">
+        <h2 id="workflows-heading" className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">
           Example workflows we can turn into systems
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {workflows.map((workflow, i) => (
-            <div key={i} className="rounded-2xl p-6 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-colors flex items-center gap-4">
+            <div key={i} className="glass-card rounded-2xl p-6 border border-border/40 hover:border-primary/20 transition-colors flex items-center gap-4">
               <div className="flex-shrink-0 w-2 h-2 rounded-full bg-primary" />
               <p className="text-base text-foreground">{workflow}</p>
             </div>

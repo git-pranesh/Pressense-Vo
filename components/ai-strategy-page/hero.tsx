@@ -10,20 +10,21 @@ export function AIStrategyHero() {
   return (
     <section
       id="hero"
-      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20 bg-background hero-section"
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
       aria-label="AI strategy consulting"
     >
+      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
 
           <div className="flex items-center gap-3 mb-6">
-            <div className="eyebrow-line" aria-hidden="true" />
-            <span className="eyebrow">
+            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
               AI Strategy Consulting
             </span>
           </div>
 
-          <h1 className="text-hero font-serif font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-4">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-4">
             AI Strategy Consulting for Growing Businesses: A Practical Guide
           </h1>
 
@@ -46,7 +47,7 @@ export function AIStrategyHero() {
           >
             {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col">
-                <span className="text-2xl font-medium text-foreground">{stat.value}</span>
+                <span className="text-2xl font-semibold text-foreground">{stat.value}</span>
                 <span className="text-sm text-muted-foreground">{stat.label}</span>
               </div>
             ))}
@@ -55,7 +56,7 @@ export function AIStrategyHero() {
           <div className="flex flex-wrap items-center gap-4">
             <Link
               href="/diagnostic"
-              className="glow-accent inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-medium text-base hover:bg-primary/90 transition-colors"
+              className="glow-accent inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-colors"
             >
               Book a Free Diagnostic
             </Link>

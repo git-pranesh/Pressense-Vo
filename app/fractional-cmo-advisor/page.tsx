@@ -38,7 +38,7 @@ export default function FractionalCMOAdvisorPage() {
       
       <main className="min-h-screen">
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
-          <h1 className="text-4xl lg:text-5xl font-medium tracking-tight mb-6">Fractional CMO Advisor</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">Fractional CMO Advisor</h1>
           <p className="text-xl text-muted-foreground mb-12">
             Part-time, executive-level marketing leadership without the full-time CMO cost. For founders who need strategy, positioning, and execution expertise on demand.
           </p>

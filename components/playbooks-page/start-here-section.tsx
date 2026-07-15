@@ -35,15 +35,15 @@ const startHereItems = [
 
 export function StartHereSection() {
   return (
-    <section className="py-20 lg:py-28" aria-label="Start here guidance">
+    <section className="py-20 lg:py-28 border-t border-border/40" aria-label="Start here guidance">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
-            <div className="eyebrow-line" aria-hidden="true" />
-            <span className="eyebrow">Start here if...</span>
+            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Start here if...</span>
           </div>
           
-          <h2 className="text-section-title font-serif font-medium text-foreground mb-10 text-balance">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-foreground mb-10 text-balance">
             Not sure which playbook fits your situation?
           </h2>
 

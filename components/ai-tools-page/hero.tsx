@@ -2,19 +2,20 @@ export function AIToolsHero() {
   return (
     <section
       id="hero"
-      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20 bg-background hero-section"
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
       aria-label="AI tools and tech stack"
     >
+      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
-            <div className="eyebrow-line" aria-hidden="true" />
-            <span className="eyebrow">
+            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
               Tech Stack / Partner Ecosystem
             </span>
           </div>
 
-          <h1 className="text-hero font-serif font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
             The AI Tools We Use to Build for Founder-Led Businesses
           </h1>
 
@@ -38,7 +39,7 @@ export function AIToolsHero() {
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a
               href="/diagnostic"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -47,7 +48,7 @@ export function AIToolsHero() {
             </a>
             <a
               href="#tools"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
             >
               See the full stack
             </a>
@@ -60,13 +61,14 @@ export function AIToolsHero() {
               { stat: '100%', label: 'You own the output' },
             ].map((item) => (
               <div key={item.label}>
-                <div className="text-3xl font-medium text-foreground mb-1">{item.stat}</div>
+                <div className="text-3xl font-semibold text-foreground mb-1">{item.stat}</div>
                 <div className="text-xs text-muted-foreground leading-snug">{item.label}</div>
               </div>
             ))}
           </div>
         </div>
       </div>
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background via-transparent to-background/60" aria-hidden="true" />
     </section>
   )
 }

@@ -44,7 +44,7 @@ export default function AISFPage() {
       
       <main className="min-h-screen">
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
-          <h1 className="text-4xl lg:text-5xl font-medium tracking-tight mb-6">
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">
             AI Automation Agency in San Francisco
           </h1>
           <p className="text-xl text-muted-foreground mb-8">

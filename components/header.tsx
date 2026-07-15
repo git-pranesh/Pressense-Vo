@@ -84,14 +84,14 @@ export function Header() {
   }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 pt-4">
-      <div
-        className={`max-w-6xl mx-auto h-14 flex items-center justify-between px-5 lg:px-7 rounded-2xl transition-all duration-300 ${
-          scrolled
-            ? 'bg-background/95 backdrop-blur-sm shadow-[0_2px_16px_rgba(0,0,0,0.08)]'
-            : 'bg-background/80 backdrop-blur-sm border border-border/30 shadow-[0_1px_8px_rgba(0,0,0,0.05)]'
-        }`}
-      >
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'glass-card border-b border-border/60'
+          : 'bg-transparent border-b border-transparent'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group" aria-label="Pressense homepage">
           <div className="w-7 h-7 rounded border border-primary/40 flex items-center justify-center group-hover:border-primary transition-colors">
@@ -102,7 +102,7 @@ export function Header() {
               <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
             </svg>
           </div>
-          <span className="text-sm font-medium tracking-wide text-foreground">PRESSENSE</span>
+          <span className="text-sm font-semibold tracking-wide text-foreground">PRESSENSE</span>
         </Link>
 
         {/* Desktop nav */}
@@ -130,11 +130,11 @@ export function Header() {
 
             {/* Mega menu */}
             {servicesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1020px] rounded-2xl bg-background border border-border p-6 shadow-[0_8px_40px_rgba(0,0,0,0.10)]">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1020px] glass-card rounded-xl border border-border/60 p-6 shadow-2xl">
                 <div className="grid grid-cols-4 gap-6">
                   {servicesColumns.map((col) => (
                     <div key={col.heading}>
-                      <p className="eyebrow mb-3">
+                      <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-3">
                         {col.heading}
                       </p>
                       <ul className="space-y-1.5">
@@ -142,7 +142,7 @@ export function Header() {
                           <li key={link.href}>
                             <Link
                               href={link.href}
-                              className="block text-sm text-muted-foreground hover:text-foreground rounded-lg px-2 py-1.5 transition-colors duration-150"
+                              className="block text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/40 rounded-lg px-2 py-1.5 transition-colors duration-150"
                               onClick={() => setServicesOpen(false)}
                             >
                               {link.label}
@@ -153,7 +153,7 @@ export function Header() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-5 pt-4 flex items-center justify-end">
+                <div className="mt-5 pt-4 border-t border-border/40 flex items-center justify-end">
                   <Link
                     href="/how-we-work"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -181,7 +181,7 @@ export function Header() {
         <div className="hidden lg:block">
           <Link
             href="/diagnostic"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors duration-200"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors duration-200"
             aria-label="Start a diagnostic"
           >
             Start Diagnostic
@@ -210,9 +210,9 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile menu — outside the pill, inset below it */}
+      {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden mt-2 max-w-6xl mx-auto bg-background/98 backdrop-blur-sm shadow-[0_4px_24px_rgba(0,0,0,0.10)] rounded-2xl px-6 py-5 flex flex-col gap-3 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden glass-card border-t border-border/40 px-6 py-5 flex flex-col gap-3 max-h-[80vh] overflow-y-auto">
           {/* Mobile Services Accordion */}
           <div>
             <button
@@ -237,7 +237,7 @@ export function Header() {
               <div className="mt-2 flex flex-col gap-4 border-l border-border/40 pl-4 ml-1">
                 {servicesColumns.map((col) => (
                   <div key={col.heading}>
-                    <p className="eyebrow mb-2">
+                    <p className="text-xs font-semibold tracking-widest uppercase text-primary/60 mb-2">
                       {col.heading}
                     </p>
                     <div className="flex flex-col gap-1">
@@ -262,7 +262,7 @@ export function Header() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground py-2"
+              className="text-sm text-muted-foreground hover:text-foreground py-2 border-t border-border/20"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -271,7 +271,7 @@ export function Header() {
 
           <Link
             href="/diagnostic"
-            className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-primary text-primary-foreground w-fit"
+            className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground w-fit"
             onClick={() => setMenuOpen(false)}
           >
             Start Diagnostic

@@ -30,7 +30,7 @@ export function ConstraintsSection() {
     <section className="py-28 lg:py-36" aria-labelledby="constraints-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="mb-16">
-          <h2 id="constraints-heading" className="text-section-title font-serif font-medium text-foreground text-balance mb-4">
+          <h2 id="constraints-heading" className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-4">
             The constraint we usually see
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -39,8 +39,8 @@ export function ConstraintsSection() {
         </div>
         <div className="grid lg:grid-cols-2 gap-6">
           {constraints.map((constraint, i) => (
-            <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
-              <h3 className="text-xl font-medium text-foreground mb-3">{constraint.title}</h3>
+            <div key={i} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-foreground mb-3">{constraint.title}</h3>
               <p className="text-base text-muted-foreground leading-relaxed">{constraint.description}</p>
             </div>
           ))}

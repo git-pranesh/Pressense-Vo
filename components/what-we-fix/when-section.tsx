@@ -11,7 +11,7 @@ export function WhenSection() {
   return (
     <section
       id="when-to-work"
-      className="py-28 lg:py-36"
+      className="py-28 lg:py-36 border-t border-border/40"
       aria-labelledby="when-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">
@@ -23,7 +23,7 @@ export function WhenSection() {
             </p>
             <h2
               id="when-heading"
-              className="text-section-title font-serif font-medium text-foreground text-balance"
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance"
             >
               When to work with us.
             </h2>

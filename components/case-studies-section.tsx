@@ -78,16 +78,16 @@ const caseStudies = [
 
 export function CaseStudiesSection() {
   return (
-    <section id="case-studies" className="py-28 lg:py-36" aria-labelledby="case-studies-heading">
+    <section id="case-studies" className="py-28 lg:py-36 border-t border-border/40" aria-labelledby="case-studies-heading">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="eyebrow-line"/>
-              <span className="eyebrow">Work</span>
+              <div className="h-px w-8 bg-accent opacity-60" />
+              <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">Work</span>
             </div>
-            <h2 className="text-section-title font-serif font-medium text-foreground text-balance max-w-md" id="case-studies-heading">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-md" id="case-studies-heading">
               Results across industries.
             </h2>
           </div>
@@ -101,17 +101,17 @@ export function CaseStudiesSection() {
           {caseStudies.map((study, i) => (
             <article
               key={i}
-              className="rounded-2xl bg-card border border-border overflow-hidden flex flex-col hover:border-accent/30 transition-all duration-300 group"
+              className="glass-card rounded-2xl overflow-hidden flex flex-col hover:border-accent/30 transition-all duration-300 group"
             >
               {/* Visual area */}
-              <div className="h-40 bg-secondary/30 text-muted-foreground p-4/50 group-hover:text-accent/60 transition-colors duration-300">
+              <div className="h-40 bg-secondary/30 text-muted-foreground p-4 border-b border-border/50 group-hover:text-accent/60 transition-colors duration-300">
                 {study.visual}
               </div>
 
               {/* Content */}
               <div className="p-7 flex flex-col gap-4 flex-1">
                 <span className="text-xs tracking-[0.15em] uppercase text-text-dim font-medium">{study.category}</span>
-                <h3 className="text-lg font-medium text-foreground leading-snug">{study.title}</h3>
+                <h3 className="text-lg font-semibold text-foreground leading-snug">{study.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{study.description}</p>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {study.tags.map((tag) => (

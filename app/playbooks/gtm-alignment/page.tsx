@@ -21,7 +21,7 @@ export default function GTMAlignmentPlaybook() {
       
       <main className="min-h-screen">
         <section className="max-w-3xl mx-auto px-6 lg:px-10 py-20">
-          <h1 className="text-4xl font-medium tracking-tight mb-6">GTM Alignment Playbook</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-6">GTM Alignment Playbook</h1>
           <p className="text-lg text-muted-foreground mb-12">
             Sales and marketing are misaligned. Marketing generates leads sales doesn't want. Sales blames marketing for poor quality. This playbook fixes the friction and gets both teams working toward the same revenue goal.
           </p>

@@ -273,7 +273,7 @@ export function PlaybookDetails() {
   ]
 
   return (
-    <section className="py-28 lg:py-36">
+    <section className="py-28 lg:py-36 border-t border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
         {playbooks.map((playbook) => (
           <article
@@ -282,13 +282,13 @@ export function PlaybookDetails() {
             className="mb-20 lg:mb-28 scroll-mt-20"
           >
             <div className="max-w-4xl">
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-8">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-8">
                 {playbook.title}
               </h3>
 
               {/* Who this is for */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
                   Who this is for
                 </h4>
                 <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
@@ -298,7 +298,7 @@ export function PlaybookDetails() {
 
               {/* Symptoms */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
                   Symptoms
                 </h4>
                 <ul className="space-y-2">
@@ -316,7 +316,7 @@ export function PlaybookDetails() {
 
               {/* What to diagnose */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
                   What to diagnose
                 </h4>
                 <ul className="space-y-2">
@@ -334,7 +334,7 @@ export function PlaybookDetails() {
 
               {/* What to fix first (highlighted) */}
               <div className="mb-10 p-6 rounded-xl bg-secondary/30 border border-primary/20">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
                   What to fix first
                 </h4>
                 <p className="text-base lg:text-lg text-foreground leading-relaxed font-medium">
@@ -344,7 +344,7 @@ export function PlaybookDetails() {
 
               {/* What to build */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
                   What to build
                 </h4>
                 <ul className="space-y-2">
@@ -362,7 +362,7 @@ export function PlaybookDetails() {
 
               {/* What to measure */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
                   What to measure
                 </h4>
                 <ul className="space-y-2">
@@ -380,7 +380,7 @@ export function PlaybookDetails() {
 
               {/* Common mistakes */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
                   Common mistakes
                 </h4>
                 <ul className="space-y-2">
@@ -397,7 +397,7 @@ export function PlaybookDetails() {
               </div>
 
               {/* CTA */}
-              <div className="pt-8">
+              <div className="pt-8 border-t border-border/40">
                 <a
                   href={`/diagnostic?constraint=${playbook.id}`}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
@@ -424,7 +424,7 @@ export function PlaybookDetails() {
 
             {/* Divider between playbooks */}
             {playbook.id !== 'systems-audit' && (
-              <div className="mt-20 lg:mt-28 pt-20 lg:pt-28" />
+              <div className="mt-20 lg:mt-28 pt-20 lg:pt-28 border-t border-border/40" />
             )}
           </article>
         ))}

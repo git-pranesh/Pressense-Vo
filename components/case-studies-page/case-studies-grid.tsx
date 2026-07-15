@@ -97,7 +97,7 @@ export function CaseStudiesGrid() {
       <div className="container mx-auto px-6">
         <div className="max-w-md mb-16">
           <h2
-            className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground text-balance"
+            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance"
             id="case-studies-grid-heading"
           >
             Four engagements. Four broken systems. Four fixes.

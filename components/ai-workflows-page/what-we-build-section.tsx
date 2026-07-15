@@ -10,15 +10,15 @@ const solutions = [
 
 export function AIWorkflowsWhatWeBuildSection() {
   return (
-    <section className="py-20 lg:py-28">
+    <section className="py-20 lg:py-28 border-t border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground mb-12">
+        <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-12">
           What we build
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {solutions.map((item) => (
-            <article key={item.title} className="rounded-2xl p-6 border border-border bg-card hover:border-foreground/20 transition-colors">
-              <h3 className="text-lg font-medium text-foreground mb-2">{item.title}</h3>
+            <article key={item.title} className="glass-card rounded-2xl p-6 border border-border/40">
+              <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
             </article>
           ))}

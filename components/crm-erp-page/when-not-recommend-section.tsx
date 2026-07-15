@@ -13,7 +13,7 @@ export function CrmErpWhenNotRecommendSection() {
     <section className="py-24 lg:py-32 bg-secondary/20" aria-label="When we would not recommend a new system">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4">
             When we would not recommend a new CRM or ERP system.
           </h2>
           <p className="text-muted-foreground text-lg mb-10">

@@ -29,19 +29,19 @@ export function MegaFooter() {
   })).filter((group) => group.calculators.length > 0)
 
   return (
-    <footer className="bg-ink text-ink-foreground">
+    <footer className="border-t border-border/40 bg-background">
       {/* Services grid */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-14 border-b border-ink-border">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-14 border-b border-border/40">
         <div className="grid gap-10 lg:grid-cols-2">
           {/* Services */}
           <div>
-            <h3 className="text-xs font-medium tracking-widest uppercase text-ink-foreground/40 mb-5">
+            <h3 className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
               Services
             </h3>
             <ul className="space-y-2">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-ink-muted hover:text-ink-foreground transition-colors">
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -52,13 +52,13 @@ export function MegaFooter() {
           {/* Company + CTA */}
           <div className="flex flex-col gap-8">
             <div>
-              <h3 className="text-xs font-medium tracking-widest uppercase text-ink-foreground/40 mb-5">
+              <h3 className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
                 Company
               </h3>
               <ul className="space-y-2">
                 {companyLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="text-sm text-ink-muted hover:text-ink-foreground transition-colors">
+                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -66,14 +66,14 @@ export function MegaFooter() {
               </ul>
             </div>
 
-            <div className="p-5 rounded-xl border border-ink-border bg-ink-border/40">
-              <p className="text-sm font-medium text-ink-foreground mb-1">Ready to scale?</p>
-              <p className="text-sm text-ink-muted mb-4">
+            <div className="p-5 rounded-xl border border-border/60 bg-card">
+              <p className="text-sm font-medium text-foreground mb-1">Ready to scale?</p>
+              <p className="text-sm text-muted-foreground mb-4">
                 Book a free diagnostic to map your top 3 growth constraints.
               </p>
               <Link
                 href="/diagnostic"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors"
               >
                 Start Diagnostic
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
@@ -87,20 +87,20 @@ export function MegaFooter() {
 
       {/* Calculators section */}
       {calculatorsByCategory.length > 0 && (
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 border-b border-ink-border">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 border-b border-border/40">
           <div className="mb-6 flex items-center justify-between">
             <div>
-              <h2 className="text-sm font-medium text-ink-foreground">Free Business Calculators</h2>
-              <p className="text-xs text-ink-muted mt-0.5">{calculatorsData.length} calculators with operator-grade benchmarks</p>
+              <h2 className="text-sm font-semibold text-foreground">Free Business Calculators</h2>
+              <p className="text-xs text-muted-foreground mt-0.5">{calculatorsData.length} calculators with operator-grade benchmarks</p>
             </div>
-            <Link href="/tools" className="text-xs text-ink-muted hover:text-ink-foreground transition-colors">
+            <Link href="/tools" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
               View all tools →
             </Link>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {calculatorsByCategory.map((group) => (
               <div key={group.category}>
-                <h3 className="text-xs font-medium tracking-widest uppercase text-ink-foreground/30 mb-3">
+                <h3 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground/60 mb-3">
                   {group.category}
                 </h3>
                 <ul className="space-y-1.5">
@@ -108,7 +108,7 @@ export function MegaFooter() {
                     <li key={calc.slug}>
                       <Link
                         href={`/tools/${calc.slug}`}
-                        className="text-xs text-ink-muted hover:text-ink-foreground transition-colors"
+                        className="text-xs text-muted-foreground hover:text-foreground transition-colors"
                       >
                         {calc.title.replace(' Calculator', '')}
                       </Link>
@@ -120,16 +120,6 @@ export function MegaFooter() {
           </div>
         </div>
       )}
-
-      {/* Pattern 8 — Giant decorative wordmark: purely decorative, signals brand confidence */}
-      <div className="overflow-hidden px-4 lg:px-8 pt-10 pb-0" aria-hidden="true">
-        <p
-          className="font-serif text-ink-foreground/[0.04] select-none whitespace-nowrap leading-none tracking-tighter"
-          style={{ fontSize: 'clamp(5rem, 18vw, 18rem)' }}
-        >
-          PRESSENSE
-        </p>
-      </div>
 
       {/* Bottom bar */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6">
@@ -143,13 +133,13 @@ export function MegaFooter() {
                 <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.8" />
               </svg>
             </div>
-            <span className="text-xs font-medium tracking-widest text-ink-foreground/50 uppercase">Pressense</span>
+            <span className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">Pressense</span>
           </Link>
-          <p className="text-xs text-ink-muted/60">&copy; {new Date().getFullYear()} Pressense. All rights reserved.</p>
+          <p className="text-xs text-text-dim">&copy; {new Date().getFullYear()} Pressense. All rights reserved.</p>
           <div className="flex items-center gap-5">
-            <Link href="/privacy" className="text-xs text-ink-muted/60 hover:text-ink-muted transition-colors">Privacy</Link>
-            <Link href="/terms" className="text-xs text-ink-muted/60 hover:text-ink-muted transition-colors">Terms</Link>
-            <Link href="/sitemap.xml" className="text-xs text-ink-muted/60 hover:text-ink-muted transition-colors">Sitemap</Link>
+            <Link href="/privacy" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">Privacy</Link>
+            <Link href="/terms" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">Terms</Link>
+            <Link href="/sitemap.xml" className="text-xs text-text-dim hover:text-muted-foreground transition-colors">Sitemap</Link>
           </div>
         </div>
       </div>

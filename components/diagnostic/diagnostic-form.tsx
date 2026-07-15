@@ -158,7 +158,7 @@ export function DiagnosticForm() {
     return (
       <section
         id="diagnostic-form"
-        className="py-20 lg:py-28"
+        className="py-20 lg:py-28 border-t border-border/40"
         aria-labelledby="form-success-heading"
       >
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
@@ -181,7 +181,7 @@ export function DiagnosticForm() {
             </svg>
           </div>
           <h2
-            className="text-3xl font-serif font-medium text-foreground mb-4"
+            className="text-3xl font-semibold text-foreground mb-4"
             id="form-success-heading"
           >
             Diagnostic request received.
@@ -197,17 +197,17 @@ export function DiagnosticForm() {
   return (
     <section
       id="diagnostic-form"
-      className="py-20 lg:py-28"
+      className="py-20 lg:py-28 border-t border-border/40"
       aria-labelledby="form-heading"
     >
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-12 text-center">
-          <p className="eyebrow mb-4">
+          <p className="text-sm uppercase tracking-widest text-primary mb-4">
             Share the context
           </p>
           <h2
-            className="text-section-title font-serif font-medium text-foreground text-balance"
+            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance"
             id="form-heading"
           >
             Tell us about your business.
@@ -219,8 +219,8 @@ export function DiagnosticForm() {
 
         <form onSubmit={handleSubmit} className="space-y-8" noValidate>
           {/* Basic Info */}
-          <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
-            <h3 className="text-lg font-medium font-sans text-foreground mb-6">
+          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
+            <h3 className="text-lg font-semibold text-foreground mb-6">
               Basic Information
             </h3>
 
@@ -303,8 +303,8 @@ export function DiagnosticForm() {
           </div>
 
           {/* Diagnostic Context */}
-          <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
-            <h3 className="text-lg font-medium font-sans text-foreground mb-6">
+          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
+            <h3 className="text-lg font-semibold text-foreground mb-6">
               Diagnostic Context
             </h3>
 
@@ -378,8 +378,8 @@ export function DiagnosticForm() {
           </div>
 
           {/* Timeline & Budget */}
-          <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
-            <h3 className="text-lg font-medium font-sans text-foreground mb-6">
+          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
+            <h3 className="text-lg font-semibold text-foreground mb-6">
               Timeline & Budget
             </h3>
 
@@ -431,7 +431,7 @@ export function DiagnosticForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="group inline-flex items-center gap-3 px-10 py-4 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent disabled:opacity-60 disabled:cursor-not-allowed"
+              className="group inline-flex items-center gap-3 px-10 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent disabled:opacity-60 disabled:cursor-not-allowed"
               aria-label="Request diagnostic"
             >
               {isSubmitting ? (

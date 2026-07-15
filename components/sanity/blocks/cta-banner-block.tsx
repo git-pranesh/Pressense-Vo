@@ -11,15 +11,19 @@ export function CTABannerBlock({
   description,
   ctaText,
   ctaUrl,
+  backgroundColor = 'bg-blue-600',
 }: CTABannerBlockProps) {
   return (
-    <section className="w-full py-16 lg:py-24 px-5 sm:px-8 lg:px-12 bg-ink" data-dark="true">
-      <div className="max-w-2xl mx-auto text-center">
-        {title && <h2 className="text-section-title font-serif text-ink-foreground mb-5 text-balance">{title}</h2>}
-        {description && <p className="text-lg text-ink-muted mb-9 leading-relaxed font-sans">{description}</p>}
-
+    <section className={`w-full py-12 md:py-16 px-4 md:px-6 text-white ${backgroundColor}`}>
+      <div className="max-w-3xl mx-auto text-center">
+        {title && <h2 className="text-4xl font-bold mb-4">{title}</h2>}
+        {description && <p className="text-lg mb-8 text-white/90">{description}</p>}
+        
         {ctaText && (
-          <a href={ctaUrl || '/diagnostic'} className="btn-primary">
+          <a
+            href={ctaUrl || '#'}
+            className="inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-slate-100 transition"
+          >
             {ctaText}
           </a>
         )}

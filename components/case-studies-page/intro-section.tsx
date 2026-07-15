@@ -2,7 +2,7 @@ export function IntroSection() {
   return (
     <section
       id="intro"
-      className="py-16"
+      className="py-16 border-y border-border/40"
       aria-labelledby="intro-heading"
     >
       <div className="container mx-auto px-6">

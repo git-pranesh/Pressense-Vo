@@ -38,12 +38,12 @@ export function MvpReplitProblemsSection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="eyebrow mb-4">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
           Real Questions
         </p>
-        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
           What founders building on Replit actually ask
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -56,7 +56,7 @@ export function MvpReplitProblemsSection() {
               key={p.heading}
               className={`py-10 ${i < problems.length - 1 ? 'border-b border-border/30' : ''}`}
             >
-              <h3 className="text-xl font-medium text-foreground mb-4 text-balance">{p.heading}</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-4 text-balance">{p.heading}</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">{p.body1}</p>
               <p className="text-muted-foreground leading-relaxed">{p.body2}</p>
             </div>

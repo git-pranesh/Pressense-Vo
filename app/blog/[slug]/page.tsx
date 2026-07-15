@@ -55,7 +55,7 @@ function formatDate(dateString: string): string {
 // In production, use a proper markdown renderer or the CMS's HTML output
 function renderContent(content: string): string {
   return content
-    .replace(/^# (.*$)/gim, '<h1 class="text-3xl sm:font-medium mt-12 mb-6 text-foreground">$1</h1>')
+    .replace(/^# (.*$)/gim, '<h1 class="text-3xl sm:text-4xl font-bold mt-12 mb-6 text-foreground">$1</h1>')
     .replace(/^## (.*$)/gim, '<h2 class="text-2xl font-semibold mt-10 mb-4 text-foreground">$1</h2>')
     .replace(/^### (.*$)/gim, '<h3 class="text-xl font-semibold mt-8 mb-3 text-foreground">$1</h3>')
     .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>')
@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
 
             {/* Title */}
-            <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground text-balance">
+            <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground text-balance">
               {post.title}
             </h1>
 
@@ -175,7 +175,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
             {/* Author */}
             {post.author && (
-              <div className="mt-12 pt-8">
+              <div className="mt-12 pt-8 border-t border-border/40">
                 <div className="flex items-center gap-4">
                   {post.author.avatar && (
                     <img
@@ -195,7 +195,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </article>
 
         {/* CTA */}
-        <section className="py-16 px-6 lg:px-10 bg-muted/30">
+        <section className="py-16 px-6 lg:px-10 border-t border-border/40 bg-muted/30">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-semibold text-foreground">
               Need help with this?

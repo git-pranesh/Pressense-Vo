@@ -30,13 +30,13 @@ const notRightFor = [
 
 export function WhoItsForSection() {
   return (
-    <section className="py-20 bg-surface">
+    <section className="py-20 border-t border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mb-14">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
             Fit
           </span>
-          <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight">
             Who this page is for
           </h2>
         </div>
@@ -46,20 +46,20 @@ export function WhoItsForSection() {
             <div key={item.title} className="rounded-2xl border border-border/60 bg-card/40 p-8">
               <div className="flex items-center gap-2 mb-4">
                 <div className="h-2 w-2 rounded-full bg-primary shrink-0" aria-hidden="true" />
-                <h3 className="text-base font-medium text-foreground">{item.title}</h3>
+                <h3 className="text-base font-semibold text-foreground">{item.title}</h3>
               </div>
-              <p className="text-base text-ink-muted leading-relaxed">{item.body}</p>
+              <p className="text-base text-muted-foreground leading-relaxed">{item.body}</p>
             </div>
           ))}
         </div>
 
         <div className="rounded-2xl border border-border/40 bg-secondary/10 p-8">
-          <h3 className="text-lg font-medium text-ink-foreground mb-6">This is not right for you if:</h3>
+          <h3 className="text-lg font-semibold text-foreground mb-6">This is not right for you if:</h3>
           <div className="grid gap-6 sm:grid-cols-2">
             {notRightFor.map((item) => (
               <div key={item.title}>
-                <p className="text-sm font-medium text-foreground mb-2">{item.title}</p>
-                <p className="text-sm text-ink-muted leading-relaxed">{item.body}</p>
+                <p className="text-sm font-semibold text-foreground mb-2">{item.title}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>

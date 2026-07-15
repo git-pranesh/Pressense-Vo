@@ -29,17 +29,17 @@ export function ProcessSection() {
   return (
     <section
       id="process"
-      className="py-20 lg:py-28"
+      className="py-20 lg:py-28 border-t border-border/40"
       aria-labelledby="process-heading"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-14">
-          <p className="eyebrow mb-4">
+          <p className="text-sm uppercase tracking-widest text-primary mb-4">
             What Happens Next
           </p>
           <h2
-            className="text-section-title font-serif font-medium text-foreground text-balance max-w-xl"
+            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance max-w-xl"
             id="process-heading"
           >
             Our process after you apply.
@@ -58,13 +58,13 @@ export function ProcessSection() {
                 />
               )}
 
-              <div className="relative p-6 rounded-2xl border border-border bg-card h-full">
+              <div className="relative p-6 rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm h-full">
                 {/* Step number */}
                 <span className="text-xs font-mono text-primary/60 tracking-wider mb-4 block">
                   {step.number}
                 </span>
 
-                <h3 className="text-base font-medium font-sans text-foreground mb-2">
+                <h3 className="text-base font-semibold text-foreground mb-2">
                   {step.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">

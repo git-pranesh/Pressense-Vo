@@ -9,7 +9,7 @@ export function FixOneFirstSection() {
         <div className="max-w-3xl">
           <h2
             id="fix-one-first-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-8 text-balance"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-8 text-balance"
           >
             You do not have to fix everything at once.
           </h2>

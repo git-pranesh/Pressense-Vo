@@ -12,7 +12,7 @@ export function Footer() {
               <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.8" />
             </svg>
           </div>
-          <span className="text-xs font-medium tracking-widest text-muted-foreground uppercase">
+          <span className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">
             Pressense
           </span>
         </div>

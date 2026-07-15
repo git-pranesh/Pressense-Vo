@@ -41,36 +41,36 @@ export function WhoItsForSection() {
   ]
 
   return (
-    <section className="py-20 lg:py-28 bg-ink">
+    <section className="py-20 lg:py-28 border-b border-border/40">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
-        <p className="text-xs font-medium tracking-widest uppercase text-primary/70 mb-4">
+        <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
           Fit
         </p>
 
         {/* Right for */}
-        <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance mb-4">
           This is right for you if...
         </h2>
-        <p className="text-lg text-ink-muted leading-relaxed mb-10">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-10">
           We work best with teams that have a clear manual problem and the authority to fix it.
         </p>
         <div className="grid sm:grid-cols-2 gap-6 mb-16">
           {rightFor.map((card) => (
             <div
               key={card.title}
-              className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
+              className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
             >
-              <h3 className="font-medium text-lg text-foreground mb-3">{card.title}</h3>
+              <h3 className="font-semibold text-lg text-foreground mb-3">{card.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{card.description}</p>
             </div>
           ))}
         </div>
 
         {/* Not right for */}
-        <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance mb-4">
           This is NOT for you if...
         </h2>
-        <p className="text-lg text-ink-muted leading-relaxed mb-10">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-10">
           We would rather tell you now than waste your time on a call.
         </p>
         <div className="grid sm:grid-cols-3 gap-6">
@@ -79,7 +79,7 @@ export function WhoItsForSection() {
               key={card.title}
               className="rounded-2xl p-8 border border-border/40 bg-card/30"
             >
-              <h3 className="font-medium text-lg text-foreground mb-3">{card.title}</h3>
+              <h3 className="font-semibold text-lg text-foreground mb-3">{card.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{card.description}</p>
             </div>
           ))}

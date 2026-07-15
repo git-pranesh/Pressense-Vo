@@ -100,7 +100,7 @@ export function ProblemsGrid() {
           </p>
           <h2
             id="problems-heading"
-            className="text-section-title font-serif font-medium text-foreground text-balance"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance"
           >
             Seven problems that keep businesses stuck.
           </h2>
@@ -119,7 +119,7 @@ export function ProblemsGrid() {
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-medium text-foreground mb-3 pr-12">
+              <h3 className="text-xl font-semibold text-foreground mb-3 pr-12">
                 {problem.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-5">

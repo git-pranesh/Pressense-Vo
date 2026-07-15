@@ -11,7 +11,7 @@ export function WhenNotSection() {
   return (
     <section
       id="when-not"
-      className="py-28 lg:py-36 bg-card/20"
+      className="py-28 lg:py-36 border-t border-border/40 bg-card/20"
       aria-labelledby="when-not-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">
@@ -23,7 +23,7 @@ export function WhenNotSection() {
             </p>
             <h2
               id="when-not-heading"
-              className="text-section-title font-serif font-medium text-foreground text-balance"
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance"
             >
               When we&apos;re not the right fit.
             </h2>

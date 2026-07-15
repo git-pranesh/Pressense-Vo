@@ -22,9 +22,9 @@ export function TechStackLogos() {
   const doubled = [...techStack, ...techStack]
 
   return (
-    <section className="py-14 overflow-hidden">
+    <section className="py-14 border-t border-border/40 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-8">
-        <p className="eyebrow font-medium text-center">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground font-medium text-center">
           How we build — our foundation stack
         </p>
       </div>

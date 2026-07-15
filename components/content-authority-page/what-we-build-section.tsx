@@ -10,15 +10,15 @@ export function WhatWeBuildSection() {
   ]
 
   return (
-    <section className="py-28 lg:py-36">
+    <section className="py-28 lg:py-36 border-t border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">
           What we build
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {buildItems.map((item) => (
-            <div key={item.title} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
-              <h3 className="text-lg font-medium text-foreground mb-2">{item.title}</h3>
+            <div key={item.title} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
+              <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
               <p className="text-sm leading-relaxed text-muted-foreground">{item.description}</p>
             </div>
           ))}

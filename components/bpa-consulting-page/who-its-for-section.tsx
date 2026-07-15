@@ -7,13 +7,13 @@ const whoItsForCards = [
 
 export function WhoItsForSection() {
   return (
-    <section className="py-20 lg:py-28 bg-ink">
+    <section className="py-20 lg:py-28 border-b border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-16">Who business systems consulting helps</h2>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">Who business systems consulting helps</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {whoItsForCards.map((card, i) => (
-            <div key={i} className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
-              <h3 className="text-xl font-medium text-foreground mb-3">{card.title}</h3>
+            <div key={i} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{card.description}</p>
             </div>
           ))}

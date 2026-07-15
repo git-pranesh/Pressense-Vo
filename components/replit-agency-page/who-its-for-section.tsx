@@ -34,35 +34,35 @@ const notFor = [
 
 export function ReplitAgencyWhoItsForSection() {
   return (
-    <section className="py-20 md:py-28 bg-surface">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="eyebrow mb-4">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
           Who it&apos;s for
         </p>
-        <h2 className="text-3xl md:text-4xl font-medium text-ink-foreground text-balance mb-14 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-14 leading-tight">
           This is right for you if...
         </h2>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-16">
           {rightFor.map((item) => (
-            <div key={item.label} className="p-6 rounded-2xl bg-card">
+            <div key={item.label} className="p-6 rounded-2xl border border-border/50 bg-card">
               <div className="flex items-start gap-3 mb-3">
                 <div className="mt-1 w-4 h-4 rounded-full border-2 border-primary flex-shrink-0 flex items-center justify-center">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                 </div>
-                <h3 className="text-base font-medium text-foreground leading-snug">{item.label}</h3>
+                <h3 className="text-base font-semibold text-foreground leading-snug">{item.label}</h3>
               </div>
-              <p className="text-sm text-ink-muted leading-relaxed pl-7">{item.body}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed pl-7">{item.body}</p>
             </div>
           ))}
         </div>
 
-        <h2 className="text-2xl font-medium text-foreground mb-8">This is NOT for you if...</h2>
+        <h2 className="text-2xl font-semibold text-foreground mb-8">This is NOT for you if...</h2>
         <div className="grid sm:grid-cols-3 gap-5">
           {notFor.map((item) => (
             <div key={item.label} className="p-5 rounded-xl border border-border/30 bg-secondary/20">
-              <h3 className="text-sm font-medium text-foreground mb-2">{item.label}</h3>
-              <p className="text-sm text-ink-muted leading-relaxed">{item.body}</p>
+              <h3 className="text-sm font-semibold text-foreground mb-2">{item.label}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
             </div>
           ))}
         </div>

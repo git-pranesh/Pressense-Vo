@@ -17,7 +17,7 @@ export function WhatWeFixCTA() {
         <div className="max-w-3xl mx-auto text-center">
           <h2
             id="cta-heading"
-            className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-ink-foreground text-balance mb-6 leading-[1.08]"
+            className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-[1.08]"
           >
             Ready to fix what&apos;s broken?{' '}
             <span className="text-primary font-light italic">
@@ -34,7 +34,7 @@ export function WhatWeFixCTA() {
           {/* CTA button */}
           <Link
             href="/diagnostic"
-            className="group inline-flex items-center gap-3 px-9 py-5 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             aria-label="Start a diagnostic"
           >
             Start With a Diagnostic

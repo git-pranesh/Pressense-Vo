@@ -39,12 +39,12 @@ export function GtmContentSystemIncludesSection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 bg-surface">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="eyebrow mb-4">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
           What Is Included
         </p>
-        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
           The four layers of a GTM content system
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -53,9 +53,9 @@ export function GtmContentSystemIncludesSection() {
 
         <div className="space-y-8">
           {layers.map((layer) => (
-            <div key={layer.layer} className="rounded-2xl overflow-hidden">
-              <div className="px-6 py-4 bg-secondary/30">
-                <h3 className="text-sm font-medium text-foreground uppercase tracking-wider">{layer.layer}</h3>
+            <div key={layer.layer} className="rounded-2xl border border-border/50 overflow-hidden">
+              <div className="px-6 py-4 bg-secondary/30 border-b border-border/40">
+                <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider">{layer.layer}</h3>
               </div>
               <div>
                 {layer.items.map((item, i) => (
@@ -78,7 +78,7 @@ export function GtmContentSystemIncludesSection() {
         </div>
 
         <div className="mt-10 p-6 rounded-2xl border border-primary/30 bg-primary/5">
-          <p className="text-sm font-medium text-foreground mb-2">This connects to your SEO content programme</p>
+          <p className="text-sm font-semibold text-foreground mb-2">This connects to your SEO content programme</p>
           <p className="text-sm text-muted-foreground leading-relaxed">
             The GTM content system and <a href="/seo-content-for-saas" className="text-primary hover:text-highlight underline underline-offset-2">SEO content for SaaS</a> are designed to work together. The SEO layer builds long-term organic authority. The GTM system ensures the content produced for SEO is also distributed, attributed, and connected to pipeline. Companies that run both see faster compounding than those running either in isolation.
           </p>

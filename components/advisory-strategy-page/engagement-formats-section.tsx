@@ -15,16 +15,16 @@ const engagementFormats = [
 
 export function EngagementFormatsSection() {
   return (
-    <section className="py-20 lg:py-28">
+    <section className="py-20 lg:py-28 border-b border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">
           Engagement formats
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
           {engagementFormats.map((format, i) => (
-            <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300 flex flex-col">
-              <h3 className="text-xl font-medium text-foreground mb-3">{format.title}</h3>
+            <div key={i} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300 flex flex-col">
+              <h3 className="text-xl font-semibold text-foreground mb-3">{format.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{format.description}</p>
             </div>
           ))}

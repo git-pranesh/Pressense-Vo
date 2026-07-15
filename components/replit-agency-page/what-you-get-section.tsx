@@ -57,12 +57,12 @@ const deliverables = [
 
 export function ReplitAgencyWhatYouGetSection() {
   return (
-    <section id="pricing" className="py-20 md:py-28 bg-background">
+    <section id="pricing" className="py-20 md:py-28 border-t border-border/40">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="eyebrow mb-4">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
           Deliverables and pricing
         </p>
-        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
           What you get and how much Replit development costs
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-6 max-w-2xl">
@@ -74,7 +74,7 @@ export function ReplitAgencyWhatYouGetSection() {
 
         {/* Timeline table */}
         <div className="mb-14">
-          <h3 className="text-lg font-medium text-foreground mb-5">8-week delivery timeline</h3>
+          <h3 className="text-lg font-semibold text-foreground mb-5">8-week delivery timeline</h3>
           <div className="rounded-xl border border-border/40 overflow-hidden">
             {deliverables.map((row, i) => (
               <div
@@ -100,12 +100,12 @@ export function ReplitAgencyWhatYouGetSection() {
               }`}
             >
               {tier.highlighted && (
-                <span className="text-xs font-medium text-primary uppercase tracking-wider mb-3">
+                <span className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">
                   Most Common
                 </span>
               )}
-              <h3 className="text-lg font-medium text-foreground mb-1">{tier.name}</h3>
-              <p className="text-2xl font-medium text-foreground mb-0.5">{tier.price}</p>
+              <h3 className="text-lg font-semibold text-foreground mb-1">{tier.name}</h3>
+              <p className="text-2xl font-bold text-foreground mb-0.5">{tier.price}</p>
               <p className="text-xs text-muted-foreground mb-1">{tier.note}</p>
               <p className="text-xs text-muted-foreground mb-5">Timeline: {tier.timeline}</p>
               <div className="space-y-2 flex-1 mb-6">
@@ -116,7 +116,7 @@ export function ReplitAgencyWhatYouGetSection() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground/30 pt-4">
+              <p className="text-xs text-muted-foreground border-t border-border/30 pt-4">
                 <strong className="text-foreground">Best for:</strong> {tier.suitable}
               </p>
             </div>

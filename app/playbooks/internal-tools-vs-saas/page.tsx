@@ -21,7 +21,7 @@ export default function BuildVsBuyPlaybook() {
       
       <main className="min-h-screen">
         <section className="max-w-3xl mx-auto px-6 lg:px-10 py-20">
-          <h1 className="text-4xl font-medium tracking-tight mb-6">Internal Tools vs SaaS: Build vs Buy Decision Framework</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-6">Internal Tools vs SaaS: Build vs Buy Decision Framework</h1>
           <p className="text-lg text-muted-foreground mb-12">
             Every startup faces the build vs buy decision. This playbook helps you decide: Should you build a custom internal tool or buy an existing SaaS solution? Use this framework to make data-driven decisions.
           </p>

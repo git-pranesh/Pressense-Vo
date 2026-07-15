@@ -34,33 +34,33 @@ export function CustomCrmWhoItsForSection() {
   ]
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="eyebrow mb-4">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
           Fit
         </p>
-        <h2 className="text-3xl md:text-4xl font-medium text-ink-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
           This is right for you if...
         </h2>
-        <p className="text-lg text-ink-muted leading-relaxed mb-12 max-w-2xl">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl">
           Custom CRM development is not the answer for every business. Here is an honest look at who benefits and who does not.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-14">
           {forCards.map((card) => (
-            <div key={card.title} className="p-6 rounded-2xl bg-card">
+            <div key={card.title} className="p-6 rounded-2xl bg-card border border-border/50">
               <div className="flex items-start gap-3 mb-3">
                 <div className="mt-1 w-4 h-4 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                 </div>
-                <h3 className="text-base font-medium text-foreground leading-snug">{card.title}</h3>
+                <h3 className="text-base font-semibold text-foreground leading-snug">{card.title}</h3>
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed pl-7">{card.body}</p>
             </div>
           ))}
         </div>
 
-        <h2 className="text-2xl md:text-3xl font-medium text-ink-foreground text-balance mb-8 leading-tight">
+        <h2 className="text-2xl md:text-3xl font-semibold text-foreground text-balance mb-8 leading-tight">
           This is NOT for you if...
         </h2>
         <div className="grid sm:grid-cols-3 gap-6">
@@ -70,7 +70,7 @@ export function CustomCrmWhoItsForSection() {
                 <div className="mt-1 w-4 h-4 rounded-full border border-border/60 flex items-center justify-center flex-shrink-0">
                   <div className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50" />
                 </div>
-                <h3 className="text-base font-medium text-foreground leading-snug">{card.title}</h3>
+                <h3 className="text-base font-semibold text-foreground leading-snug">{card.title}</h3>
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed pl-7">{card.body}</p>
             </div>

@@ -21,7 +21,7 @@ export default function SalesProcessAuditPlaybook() {
       
       <main className="min-h-screen">
         <section className="max-w-3xl mx-auto px-6 lg:px-10 py-20">
-          <h1 className="text-4xl font-medium tracking-tight mb-6">Sales Process Audit Playbook</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-6">Sales Process Audit Playbook</h1>
           <p className="text-lg text-muted-foreground mb-12">
             Your sales process is leaking revenue. Find the leaks, fix them, and improve your close rate. This playbook helps you audit your sales pipeline stage by stage and identify where deals die.
           </p>

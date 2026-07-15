@@ -47,15 +47,15 @@ const phases = [
 
 export function ReplitAgencyMethodologySection() {
   return (
-    <section className="py-20 md:py-28 bg-surface">
+    <section className="py-20 md:py-28 border-t border-border/40">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="eyebrow mb-4">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
           How we work
         </p>
-        <h2 className="text-3xl md:text-4xl font-medium text-ink-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
           The Pressense Replit build framework
         </h2>
-        <p className="text-lg text-ink-muted leading-relaxed mb-14 max-w-2xl">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
           Diagnose. Strategise. Build. Scale. Four phases, fixed timeline, working software at every checkpoint.
         </p>
 
@@ -68,7 +68,7 @@ export function ReplitAgencyMethodologySection() {
               <div>
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-xs font-mono text-primary/60">{phase.number}</span>
-                  <span className="text-xl font-medium text-foreground">{phase.name}</span>
+                  <span className="text-xl font-semibold text-foreground">{phase.name}</span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{phase.tagline}</p>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/8 border border-primary/20">
@@ -78,8 +78,8 @@ export function ReplitAgencyMethodologySection() {
                 <p className="text-xs text-muted-foreground mt-2">{phase.weeks}</p>
               </div>
               <div>
-                <p className="text-base text-ink-muted leading-relaxed mb-4">{phase.body1}</p>
-                <p className="text-base text-ink-muted leading-relaxed">{phase.body2}</p>
+                <p className="text-base text-muted-foreground leading-relaxed mb-4">{phase.body1}</p>
+                <p className="text-base text-muted-foreground leading-relaxed">{phase.body2}</p>
               </div>
             </div>
           ))}

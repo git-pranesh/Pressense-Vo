@@ -44,7 +44,7 @@ export function InvestmentSection() {
   return (
     <section
       id="investment"
-      className="py-28 lg:py-36"
+      className="py-28 lg:py-36 border-t border-border/40"
       aria-labelledby="investment-heading"
     >
       <div className="container mx-auto px-6 lg:px-8">
@@ -54,7 +54,7 @@ export function InvestmentSection() {
           </p>
           <h2
             id="investment-heading"
-            className="text-display font-serif font-medium text-foreground mb-6 text-balance"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-6 text-balance"
           >
             What it costs to work with us.
           </h2>
@@ -77,11 +77,11 @@ export function InvestmentSection() {
               }`}
             >
               {tier.featured && (
-                <span className="inline-block text-xs font-medium tracking-wider uppercase text-primary mb-3">
+                <span className="inline-block text-xs font-semibold tracking-wider uppercase text-primary mb-3">
                   Most Common
                 </span>
               )}
-              <h3 className="text-xl font-medium text-foreground mb-2">
+              <h3 className="text-xl font-semibold text-foreground mb-2">
                 {tier.name}
               </h3>
               <p className="text-sm text-muted-foreground mb-6">{tier.description}</p>
@@ -113,7 +113,7 @@ export function InvestmentSection() {
                 ))}
               </ul>
 
-              <div className="pt-4">
+              <div className="pt-4 border-t border-border/40">
                 <p className="text-xs text-muted-foreground italic">{tier.note}</p>
               </div>
             </div>

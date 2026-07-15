@@ -25,7 +25,7 @@ export function EngagementStartSection() {
   return (
     <section
       id="engagement-start"
-      className="py-28 lg:py-36"
+      className="py-28 lg:py-36 border-t border-border/40"
       aria-labelledby="engagement-start-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -36,7 +36,7 @@ export function EngagementStartSection() {
           </p>
           <h2
             id="engagement-start-heading"
-            className="text-display font-serif font-medium text-foreground mb-6 text-balance"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-6 text-balance"
           >
             How engagements usually start.
           </h2>
@@ -51,7 +51,7 @@ export function EngagementStartSection() {
           {engagementTypes.map((type, i) => (
             <div
               key={i}
-              className="rounded-2xl bg-card border border-border p-8 flex flex-col gap-5 hover:border-border transition-all duration-300 group"
+              className="glass-card rounded-2xl p-8 flex flex-col gap-5 hover:border-border transition-all duration-300 group"
             >
               {/* Number */}
               <div className="flex items-center justify-between">
@@ -62,7 +62,7 @@ export function EngagementStartSection() {
 
               {/* Content */}
               <div>
-                <h3 className="text-xl font-medium text-foreground mb-3">
+                <h3 className="text-xl font-semibold text-foreground mb-3">
                   {type.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

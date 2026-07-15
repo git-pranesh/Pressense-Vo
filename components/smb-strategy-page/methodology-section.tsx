@@ -47,16 +47,16 @@ const phases = [
 
 export function SMBStrategyMethodologySection() {
   return (
-    <section className="border-t border-border/40 py-16 bg-surface">
+    <section className="border-t border-border/40 py-16">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="mb-3 flex items-center gap-3">
-          <span className="eyebrow-line" aria-hidden="true" />
-          <span className="text-xs font-medium tracking-widest uppercase text-primary/70">How We Work</span>
+          <span className="h-px w-8 bg-primary/60" aria-hidden="true" />
+          <span className="text-xs font-semibold tracking-widest uppercase text-primary/70">How We Work</span>
         </div>
-        <h2 className="text-3xl font-medium text-foreground text-pretty mb-2">
+        <h2 className="text-3xl font-bold text-foreground text-pretty mb-2">
           Diagnose. Strategise. Build. Scale.
         </h2>
-        <p className="text-lg text-ink-muted leading-relaxed mb-10">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-10">
           The Pressense framework for small business strategy. Each phase has a named deliverable so you always know what you are getting.
         </p>
         <div className="space-y-10">
@@ -68,10 +68,10 @@ export function SMBStrategyMethodologySection() {
               <div>
                 <div className="flex flex-wrap items-center gap-3 mb-1">
                   <h3 className="font-bold text-lg text-foreground">{phase.name}</h3>
-                  <span className="text-xs font-medium tracking-widest uppercase text-primary/70 border border-primary/20 rounded-full px-2 py-0.5">{phase.weeks}</span>
+                  <span className="text-xs font-semibold tracking-widest uppercase text-primary/70 border border-primary/20 rounded-full px-2 py-0.5">{phase.weeks}</span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-1 italic">{phase.tagline}</p>
-                <p className="text-xs font-medium text-primary/70 mb-3">Deliverable: {phase.deliverable}</p>
+                <p className="text-xs font-semibold text-primary/70 mb-3">Deliverable: {phase.deliverable}</p>
                 <p className="text-muted-foreground leading-relaxed mb-2">{phase.body1}</p>
                 <p className="text-muted-foreground leading-relaxed">{phase.body2}</p>
               </div>

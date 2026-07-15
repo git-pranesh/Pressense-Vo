@@ -37,16 +37,16 @@ const steps = [
 
 export function BPAMethodologySection() {
   return (
-    <section className="py-20 lg:py-28 bg-ink">
+    <section className="py-20 lg:py-28 border-t border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-2xl mb-14">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
             How We Work
           </span>
-          <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-4">
             From audit to live automation in four phases
           </h2>
-          <p className="text-lg text-ink-muted leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             We start with the process, not the tool. Every automation we build is documented, tested, and handed over with a clear owner. See the full{' '}
             <Link href="/how-we-work" className="text-primary hover:underline">
               how we work
@@ -59,16 +59,16 @@ export function BPAMethodologySection() {
           {steps.map((step) => (
             <article
               key={step.number}
-              className="bg-ink-card border border-ink-border rounded-2xl p-7 border border-border/40 hover:border-primary/20 transition-all duration-300"
+              className="glass-card rounded-2xl p-7 border border-border/40 hover:border-primary/20 transition-all duration-300"
             >
               <div className="flex items-start gap-4 mb-4">
                 <span className="text-3xl font-bold text-primary/30 leading-none tabular-nums">{step.number}</span>
                 <div>
-                  <h3 className="text-base font-medium text-foreground">{step.title}</h3>
+                  <h3 className="text-base font-semibold text-foreground">{step.title}</h3>
                   <span className="text-xs text-muted-foreground">{step.duration}</span>
                 </div>
               </div>
-              <p className="text-sm text-ink-muted leading-relaxed mb-4">{step.description}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">{step.description}</p>
               <div className="border-t border-border/30 pt-3">
                 <span className="text-xs font-medium text-primary uppercase tracking-wide block mb-1">Output</span>
                 <p className="text-sm text-muted-foreground">{step.output}</p>

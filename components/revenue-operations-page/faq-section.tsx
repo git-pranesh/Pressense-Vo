@@ -34,23 +34,23 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <section className="py-20 lg:py-28">
+    <section className="py-20 lg:py-28 border-b border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
 
           <div className="flex items-center gap-3 mb-8">
-            <div className="eyebrow-line" aria-hidden="true" />
-            <span className="eyebrow">Common questions</span>
+            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Common questions</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground text-balance mb-12">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance mb-12">
             Revenue operations consulting: frequently asked questions
           </h2>
 
           <div className="divide-y divide-border/40">
             {faqs.map((faq, i) => (
               <div key={i} className="py-8">
-                <h3 className="text-xl font-medium text-foreground mb-4">{faq.question}</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{faq.question}</h3>
                 <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
               </div>
             ))}

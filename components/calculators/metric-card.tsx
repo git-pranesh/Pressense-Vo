@@ -15,8 +15,8 @@ export function MetricCard({ label, value, sublabel, description, accent = 'defa
   const displaySublabel = sublabel || description
   return (
     <div className={`rounded-xl border border-border/60 bg-background/40 p-4 ${className || ''}`}>
-      <p className="text-[10px] font-medium tracking-widest uppercase text-muted-foreground mb-2">{label}</p>
-      <p className={`text-xl sm:text-2xl font-medium tracking-tight ${colorClass}`}>{value}</p>
+      <p className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-2">{label}</p>
+      <p className={`text-xl sm:text-2xl font-semibold tracking-tight ${colorClass}`}>{value}</p>
       {displaySublabel && <p className="mt-1 text-xs text-muted-foreground">{displaySublabel}</p>}
     </div>
   )
@@ -40,9 +40,9 @@ export function PrimaryMetric({ label, value, sublabel, comparison, accent = 'pr
   const displaySublabel = sublabel || comparison
   return (
     <div className="rounded-2xl border border-border/60 bg-background/40 p-6 sm:p-8">
-      <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-3">{label}</p>
+      <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-3">{label}</p>
       <p
-        className={`text-5xl sm:text-6xl font-medium tracking-tight ${colorClass} leading-none`}
+        className={`text-5xl sm:text-6xl font-bold tracking-tight ${colorClass} leading-none`}
         data-testid="primary-metric-value"
       >
         {value}
@@ -60,8 +60,8 @@ interface SecondaryProps {
 export function SecondaryMetric({ label, value }: SecondaryProps) {
   return (
     <div className="rounded-xl border border-border/60 bg-background/40 p-4">
-      <p className="text-[10px] font-medium tracking-widest uppercase text-muted-foreground mb-2">{label}</p>
-      <p className="text-xl sm:text-2xl font-medium text-foreground tracking-tight">{value}</p>
+      <p className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-2">{label}</p>
+      <p className="text-xl sm:text-2xl font-semibold text-foreground tracking-tight">{value}</p>
     </div>
   )
 }
@@ -88,7 +88,7 @@ export function BenchmarkBar({ label, value, min, max, zones }: BenchmarkBarProp
   return (
     <div className="rounded-xl border border-border/60 bg-background/40 p-5">
       <div className="flex items-baseline justify-between mb-3">
-        <p className="text-[10px] font-medium tracking-widest uppercase text-muted-foreground">{label}</p>
+        <p className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground">{label}</p>
         <p className="text-xs text-foreground font-medium">{activeZone.label}</p>
       </div>
       <div className="relative h-2 w-full rounded-full bg-border/40 overflow-hidden flex">
