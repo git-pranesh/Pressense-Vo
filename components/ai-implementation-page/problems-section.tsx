@@ -27,7 +27,7 @@ export function AIImplementationProblemsSection() {
   ]
 
   return (
-    <section className="py-16" aria-label="Common AI implementation questions for small business">
+    <section className="py-16 bg-background" aria-label="Common AI implementation questions for small business">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="flex items-center gap-3 mb-10">
           <div className="eyebrow-line" aria-hidden="true" />

@@ -35,7 +35,7 @@ export function SaaSGTMMethodologySection() {
   ]
 
   return (
-    <section className="py-16" aria-label="Pressense GTM methodology">
+    <section className="py-16 bg-surface" aria-label="Pressense GTM methodology">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="flex items-center gap-3 mb-10">
           <div className="eyebrow-line" aria-hidden="true" />

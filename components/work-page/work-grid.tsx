@@ -50,7 +50,7 @@ const workItems = [
 
 export function WorkGrid() {
   return (
-    <section className="py-28 lg:py-36" aria-label="Selected work examples">
+    <section className="py-28 lg:py-36 bg-surface" aria-label="Selected work examples">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="space-y-8 max-w-4xl mx-auto">
           {workItems.map((work, i) => (

@@ -33,7 +33,7 @@ const faqs = [
 
 export function OpenAIFaqSection() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 bg-surface">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">FAQ</p>
         <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-14 leading-tight">

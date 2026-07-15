@@ -1,6 +1,6 @@
 export function WorkIntroSection() {
   return (
-    <section className="py-20" aria-label="Work context">
+    <section className="py-20 bg-surface" aria-label="Work context">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight text-foreground mb-6 text-balance">

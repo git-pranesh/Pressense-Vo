@@ -1,6 +1,6 @@
 export function WorkHero() {
   return (
-    <section id="hero" className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20" aria-label="Work and selected engagements">
+    <section id="hero" className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20 bg-background hero-section" aria-label="Work and selected engagements">
       {/* Grid background */}
 
       <div className="container mx-auto px-5 sm:px-8 relative z-10">

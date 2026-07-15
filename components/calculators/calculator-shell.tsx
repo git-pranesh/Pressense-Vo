@@ -63,18 +63,20 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
       </section>
 
       {/* Plain-English summary */}
-      <section className="max-w-[1280px] mx-auto px-5 sm:px-8 lg:px-12 pb-10">
-        <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="eyebrow-line" aria-hidden="true" />
-            <span className="eyebrow">What this calculator does</span>
+      <section className="bg-surface py-10">
+        <div className="max-w-[1280px] mx-auto px-5 sm:px-8 lg:px-12">
+          <div className="rounded-2xl border border-border bg-card p-6 sm:p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="eyebrow-line" aria-hidden="true" />
+              <span className="eyebrow">What this calculator does</span>
+            </div>
+            <p className="text-base sm:text-lg text-foreground leading-relaxed">
+              The <strong>{calcMeta.title}</strong>{' '}
+              {calcMeta.shortDescription.charAt(0).toLowerCase() + calcMeta.shortDescription.slice(1).replace(/\.$/, '')}, then
+              compares your result against operator benchmarks ({calcMeta.benchmarks}). Enter your numbers below and
+              you&apos;ll get a result, a benchmark band, and a plain-English interpretation in under two minutes.
+            </p>
           </div>
-          <p className="text-base sm:text-lg text-foreground leading-relaxed">
-            The <strong>{calcMeta.title}</strong>{' '}
-            {calcMeta.shortDescription.charAt(0).toLowerCase() + calcMeta.shortDescription.slice(1).replace(/\.$/, '')}, then
-            compares your result against operator benchmarks ({calcMeta.benchmarks}). Enter your numbers below and
-            you&apos;ll get a result, a benchmark band, and a plain-English interpretation in under two minutes.
-          </p>
         </div>
       </section>
 
@@ -137,7 +139,8 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
       )}
 
       {/* FAQs */}
-      <section className="max-w-[800px] mx-auto px-5 sm:px-8 lg:px-12 py-12">
+      <section className="bg-surface py-12">
+        <div className="max-w-[800px] mx-auto px-5 sm:px-8 lg:px-12">
         <div className="flex items-center gap-3 mb-8">
           <div className="eyebrow-line" aria-hidden="true" />
           <span className="eyebrow">FAQ</span>
@@ -159,6 +162,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
               <p className="mt-3 text-muted-foreground leading-relaxed font-sans">{faq.answer}</p>
             </details>
           ))}
+        </div>
         </div>
       </section>
 
@@ -193,7 +197,8 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
 
       {/* Related */}
       {related.length > 0 && (
-        <section className="max-w-[1280px] mx-auto px-5 sm:px-8 lg:px-12 py-12">
+        <section className="bg-surface py-12">
+          <div className="max-w-[1280px] mx-auto px-5 sm:px-8 lg:px-12">
           <div className="flex items-center gap-3 mb-8">
             <div className="eyebrow-line" aria-hidden="true" />
             <span className="eyebrow">Related calculators</span>
@@ -206,7 +211,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
               <Link
                 key={r.slug}
                 href={`/tools/${r.slug}`}
-                className="group rounded-2xl border border-border bg-card p-6 hover:border-foreground/20 transition-all"
+                className="group rounded-2xl border border-border bg-card p-6 hover:border-foreground/20 hover:shadow-md transition-all"
               >
                 <span className="eyebrow block mb-3">{r.category}</span>
                 <h3 className="text-lg font-medium font-sans text-foreground mb-2 group-hover:text-primary transition-colors">
@@ -218,6 +223,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
                 </span>
               </Link>
             ))}
+          </div>
           </div>
         </section>
       )}

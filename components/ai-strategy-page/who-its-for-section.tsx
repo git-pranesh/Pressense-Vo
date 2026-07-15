@@ -35,7 +35,7 @@ export function AIStrategyWhoItsFor() {
 
   return (
     <section
-      className="py-16"
+      className="py-16 bg-surface"
       aria-labelledby="who-its-for-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">

@@ -48,7 +48,7 @@ const phases = [
 export function AIStrategyMethodology() {
   return (
     <section
-      className="py-16"
+      className="py-16 bg-surface"
       aria-labelledby="methodology-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">

@@ -11,7 +11,7 @@ const rows = [
 
 export function ClaudeApiComparisonSection() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 bg-background">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">Model Comparison</p>
         <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">

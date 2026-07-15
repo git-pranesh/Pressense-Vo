@@ -2,7 +2,7 @@ export function AIImplementationHero() {
   return (
     <section
       id="hero"
-      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20"
+      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20 bg-background hero-section"
       aria-label="AI implementation for small business"
     >
       <div className="container mx-auto px-5 sm:px-8 relative z-10">

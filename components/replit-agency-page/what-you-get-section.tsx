@@ -57,7 +57,7 @@ const deliverables = [
 
 export function ReplitAgencyWhatYouGetSection() {
   return (
-    <section id="pricing" className="py-20 md:py-28">
+    <section id="pricing" className="py-20 md:py-28 bg-background">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">
           Deliverables and pricing

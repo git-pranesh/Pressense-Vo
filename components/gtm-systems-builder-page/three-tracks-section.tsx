@@ -36,7 +36,7 @@ export function GtmSystemsBuilderThreeTracksSection() {
   ]
 
   return (
-    <section id="how-it-works" className="py-20 md:py-28">
+    <section id="how-it-works" className="py-20 md:py-28 bg-surface">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">
           Three Tracks

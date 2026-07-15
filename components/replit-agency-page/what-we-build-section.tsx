@@ -25,7 +25,7 @@ const categoryColors: Record<string, string> = {
 
 export function ReplitAgencyWhatWeBuildSection() {
   return (
-    <section id="what-we-build" className="py-20 md:py-28">
+    <section id="what-we-build" className="py-20 md:py-28 bg-background">
       <div className="container max-w-6xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">
           What you can build

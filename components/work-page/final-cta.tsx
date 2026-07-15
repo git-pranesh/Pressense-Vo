@@ -1,6 +1,6 @@
 export function WorkFinalCTA() {
   return (
-    <section id="apply" className="py-28 lg:py-40 relative overflow-hidden" aria-labelledby="cta-heading">
+    <section id="apply" className="py-28 lg:py-40 relative overflow-hidden bg-ink" aria-labelledby="cta-heading" data-dark="true">
       {/* Grid background */}
 
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
@@ -32,7 +32,7 @@ export function WorkFinalCTA() {
       </div>
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-background via-transparent to-transparent" aria-hidden="true" />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/20 via-transparent to-transparent" aria-hidden="true" />
     </section>
   )
 }

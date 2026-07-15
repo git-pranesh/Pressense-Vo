@@ -16,37 +16,42 @@ interface FAQBlockProps {
 }
 
 export function FAQBlock({ title, items }: FAQBlockProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   if (!items || items.length === 0) return null
 
   return (
-    <section className="w-full py-12 md:py-16 px-4 md:px-6 bg-slate-50">
+    <section className="w-full py-16 lg:py-24 px-5 sm:px-8 lg:px-12 bg-surface">
       <div className="max-w-3xl mx-auto">
-        {title && <h2 className="text-3xl font-bold mb-12 text-center">{title}</h2>}
-        
-        <div className="space-y-4">
+        {title && (
+          <>
+            <div className="eyebrow-flanked mb-6"><span className="eyebrow">FAQ</span></div>
+            <h2 className="text-section-title font-serif text-foreground mb-12 text-center text-balance">{title}</h2>
+          </>
+        )}
+
+        <div className="space-y-3">
           {items.map((item, index) => (
-            <div key={index} className="border border-slate-200 rounded-lg overflow-hidden bg-white">
+            <div key={index} className="rounded-xl border border-border bg-card overflow-hidden">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-4 flex items-center justify-between hover:bg-slate-50 transition"
+                className="w-full px-6 py-4 flex items-center justify-between hover:bg-surface-2 transition-colors"
               >
-                <h3 className="text-lg font-medium text-left">{item.question}</h3>
+                <h3 className="text-base sm:text-lg font-medium font-sans text-left text-foreground">{item.question}</h3>
                 <ChevronDown
-                  size={20}
-                  className={`flex-shrink-0 transition-transform ${
+                  size={18}
+                  className={`flex-shrink-0 text-muted-foreground transition-transform ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
                 />
               </button>
-              
+
               {openIndex === index && (
-                <div className="px-6 py-4 border-t border-slate-200 bg-slate-50">
+                <div className="px-6 py-4 border-t border-border font-sans text-muted-foreground leading-relaxed">
                   {item.answer ? (
                     <PortableTextWrapper blocks={item.answer} />
                   ) : (
-                    <p className="text-slate-600">No answer provided</p>
+                    <p>No answer provided</p>
                   )}
                 </div>
               )}

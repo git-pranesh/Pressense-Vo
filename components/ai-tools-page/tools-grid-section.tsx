@@ -141,7 +141,7 @@ const tools = [
 
 export function ToolsGridSection() {
   return (
-    <section id="tools" className="py-20">
+    <section id="tools" className="py-20 bg-background">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mb-14">
           <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">

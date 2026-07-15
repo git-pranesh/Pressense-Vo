@@ -8,7 +8,7 @@ const patterns = [
 
 export function WorkPatternsSection() {
   return (
-    <section className="py-28 lg:py-36" aria-labelledby="patterns-heading">
+    <section className="py-28 lg:py-36 bg-background" aria-labelledby="patterns-heading">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-12" id="patterns-heading">

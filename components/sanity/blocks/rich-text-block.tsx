@@ -16,8 +16,8 @@ export function RichTextBlock({ content, alignment = 'left' }: RichTextBlockProp
   }[alignment]
 
   return (
-    <section className={`w-full py-12 md:py-16 px-4 md:px-6 ${alignmentClass}`}>
-      <div className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
+    <section className={`w-full py-12 lg:py-16 px-5 sm:px-8 lg:px-12 bg-background ${alignmentClass}`}>
+      <div className="max-w-4xl mx-auto prose prose-lg font-sans">
         <PortableTextWrapper blocks={content} />
       </div>
     </section>

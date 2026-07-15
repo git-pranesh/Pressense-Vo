@@ -47,7 +47,7 @@ const phases = [
 
 export function SMBStrategyMethodologySection() {
   return (
-    <section className="border-t border-border/40 py-16">
+    <section className="border-t border-border/40 py-16 bg-surface">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="mb-3 flex items-center gap-3">
           <span className="eyebrow-line" aria-hidden="true" />

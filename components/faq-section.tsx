@@ -19,7 +19,7 @@ interface FAQSectionProps {
   className?: string
 }
 
-export function FAQSection({ eyebrow = 'FAQ', headline, faqs, className = '' }: FAQSectionProps) {
+export function FAQSection({ eyebrow = 'FAQ', headline, faqs, className = 'bg-surface' }: FAQSectionProps) {
   return (
     <section className={`py-24 lg:py-32 ${className}`}>
       <div className="max-w-[800px] mx-auto px-6 lg:px-8">

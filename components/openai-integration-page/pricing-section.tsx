@@ -50,7 +50,7 @@ const tiers = [
 
 export function OpenAIPricingSection() {
   return (
-    <section id="pricing" className="py-20 md:py-28">
+    <section id="pricing" className="py-20 md:py-28 bg-background">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">Pricing</p>
         <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
