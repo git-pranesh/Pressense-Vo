@@ -5,7 +5,7 @@ import { PageStructuredData } from '@/components/page-structured-data'
 export const metadata: Metadata = {
   title: 'Case Studies | Pressense',
   description:
-    'Real GTM, strategy, and content engagements from Pressense. Including work with Zoho Creator, OneMagnify, and Pixellu — see what we found and what we built to fix it.',
+    'Real GTM, strategy, and content engagements from Pressense. See how we diagnosed root cause and built systems that compound — including work with Zoho Creator.',
   openGraph: {
     title: 'Case Studies | Pressense',
     description:
@@ -34,28 +34,8 @@ const caseStudies = [
     engagementType: 'Embedded GTM Partner',
     duration: 'Multi-year retainer',
     summary:
-      "Low-code platforms sell into two audiences at once. Zoho Creator had a mature product and real differentiation — but the GTM system around it wasn't built to carry an enterprise buyer from first search to internal business case. We built it.",
+      'Low-code platforms sell into two audiences at once. Zoho Creator had a mature product and real differentiation — but the GTM system around it wasn\'t built to carry an enterprise buyer from first search to internal business case. We built it.',
     tags: ['GTM Systems', 'SEO / AEO', 'Competitive Intelligence', 'Content Strategy'],
-  },
-  {
-    slug: 'onemagnify',
-    client: 'OneMagnify',
-    industry: 'Global Marketing & CX',
-    engagementType: 'Embedded Content & SEO Delivery Partner',
-    duration: 'Website migration project',
-    summary:
-      'A 250+ page platform migration from Webflow to HubSpot CMS needed more than new templates. It needed content built page for page, service line by service line, to a single editorial and SEO standard. We were the specialist delivery layer that made that possible.',
-    tags: ['Content at Scale', 'SEO Architecture', 'Platform Migration', 'Editorial Governance'],
-  },
-  {
-    slug: 'pixellu',
-    client: 'Pixellu',
-    industry: 'SaaS / Creative Software',
-    engagementType: 'Embedded Growth Marketing & CRO Partner',
-    duration: 'Six months',
-    summary:
-      'Pixellu had strong traffic and a product photographers trusted. What it did not have was a conversion system built for the different questions each visitor type brings. We built the personalization and testing infrastructure that turned that traffic into 1,579 additional free trials.',
-    tags: ['CRO', 'Personalization', 'A/B Testing', 'SaaS Growth'],
   },
 ]
 
@@ -172,7 +152,15 @@ export default function CaseStudiesPage() {
                 </article>
               ))}
 
-
+              {/* Coming soon placeholder — remove as new case studies are added */}
+              <div className="glass-card rounded-2xl border border-border/30 border-dashed p-8 flex flex-col items-start justify-center gap-3 min-h-[280px]">
+                <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground/50">
+                  More coming soon
+                </p>
+                <p className="text-base text-muted-foreground/60 leading-relaxed max-w-sm">
+                  Additional case studies are in preparation. Each one goes through our internal review process before publishing.
+                </p>
+              </div>
             </div>
           </div>
         </section>
