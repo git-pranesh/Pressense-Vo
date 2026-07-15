@@ -19,13 +19,17 @@
   /* Borders */
   --border:  rgba(17, 17, 17, 0.10);
 
-  /* Accent — soft lavender */
+  /* Accent — strong purple (for visibility on links, eyebrows, borders) */
   --primary:            #CDBBFF;
   --primary-foreground: #1E1533;
   --accent-strong:      #B7A0FF;
   --accent-wash:        #EEE8FF;
   --accent-text:        #3B2E63;
   --highlight:          #B7A0FF;   /* hover state for primary */
+  
+  /* Strong purple for visibility — eyebrows, links, accents */
+  --color-purple:       #6B46FA;
+  --color-purple-light: #EDE9FF;
 
   /* shadcn semantic aliases */
   --card:             var(--surface);
@@ -467,4 +471,47 @@ section > .max-w-7xl {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ─── Global link styling — purple and underlined ──────────────────────── */
+/* Inline links without explicit class styling */
+a:not([class*="btn"]):not([class*="link"]):not([class*="cta"]) {
+  color: var(--color-purple);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+  transition: opacity 0.2s ease;
+}
+
+a:not([class*="btn"]):not([class*="link"]):not([class*="cta"]):hover {
+  opacity: 0.8;
+}
+
+/* Ensure eyebrow links are purple */
+.eyebrow a {
+  color: var(--color-purple);
+  text-decoration: none;
+}
+
+/* ─── Section background alternation for visual rhythm ──────────────────── */
+section:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+section:nth-child(even) {
+  background-color: #FAFAF7;
+}
+
+/* Hero sections always use cream background */
+.hero-section,
+section[id*="hero"] {
+  background-color: #F5F3ED !important;
+}
+
+/* Dark CTA/closing sections keep their dark background */
+.section-dark,
+section[data-dark="true"],
+section[id*="cta"]:last-child {
+  background-color: #111111 !important;
+  color: #F6F2EA !important;
 }
