@@ -33,13 +33,13 @@ const processes = [
 
 export function BPAWhatWeAutomateSection() {
   return (
-    <section className="py-20 lg:py-28 border-t border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-2xl mb-14">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             What We Automate
           </span>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-4">
             The six processes most founder-led businesses automate first
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -51,9 +51,9 @@ export function BPAWhatWeAutomateSection() {
           {processes.map((item) => (
             <article
               key={item.area}
-              className="glass-card rounded-2xl p-7 border border-border/40 hover:border-primary/20 transition-all duration-300"
+              className="rounded-2xl p-7 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300"
             >
-              <h3 className="text-base font-semibold text-foreground mb-4">{item.area}</h3>
+              <h3 className="text-base font-medium text-foreground mb-4">{item.area}</h3>
               <div className="space-y-3">
                 <div>
                   <span className="text-xs font-medium text-muted-foreground uppercase tracking-wide block mb-1">Before</span>

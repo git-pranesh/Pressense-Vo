@@ -35,17 +35,17 @@ export function AIStrategyWhoItsFor() {
 
   return (
     <section
-      className="py-16 border-t border-border/40"
+      className="py-16"
       aria-labelledby="who-its-for-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             Who this is for
           </span>
           <h2
             id="who-its-for-heading"
-            className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-12"
+            className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-12"
           >
             This is right for you if...
           </h2>
@@ -58,7 +58,7 @@ export function AIStrategyWhoItsFor() {
                   aria-hidden="true"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{item.heading}</h3>
+                  <h3 className="text-lg font-medium text-ink-foreground mb-2">{item.heading}</h3>
                   <p className="text-muted-foreground leading-relaxed">{item.body}</p>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export function AIStrategyWhoItsFor() {
           </div>
 
           <div className="border border-border/50 rounded-xl p-6 bg-card/30">
-            <h3 className="text-base font-semibold text-foreground mb-4 uppercase tracking-wide text-sm">
+            <h3 className="text-base font-medium text-foreground mb-4 uppercase tracking-wide text-sm">
               This is NOT for you if...
             </h3>
             <div className="space-y-6">
@@ -77,8 +77,8 @@ export function AIStrategyWhoItsFor() {
                     aria-hidden="true"
                   />
                   <div>
-                    <p className="text-sm font-semibold text-foreground mb-1">{item.heading}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+                    <p className="text-sm font-medium text-foreground mb-1">{item.heading}</p>
+                    <p className="text-sm text-ink-muted leading-relaxed">{item.body}</p>
                   </div>
                 </div>
               ))}

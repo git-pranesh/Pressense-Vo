@@ -28,11 +28,11 @@ const tiers = [
 
 export function WhatYouGetSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
 
         <div className="mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-4">
+          <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-4">
             What you get
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
@@ -42,15 +42,15 @@ export function WhatYouGetSection() {
 
         <div className="grid md:grid-cols-2 gap-6 mb-10">
           {tiers.map((tier) => (
-            <div key={tier.name} className="glass-card rounded-xl p-6 border border-border/40 flex flex-col gap-4">
+            <div key={tier.name} className="rounded-xl bg-card border border-border p-6 border border-border/40 flex flex-col gap-4">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                <h3 className="text-base font-semibold text-foreground">{tier.name}</h3>
-                <span className="inline-flex items-center px-3 py-1 rounded-lg border border-primary/30 bg-primary/5 text-xs font-semibold text-primary whitespace-nowrap">
+                <h3 className="text-base font-medium text-foreground">{tier.name}</h3>
+                <span className="inline-flex items-center px-3 py-1 rounded-lg border border-primary/30 bg-primary/5 text-xs font-medium text-primary whitespace-nowrap">
                   {tier.price}
                 </span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">{tier.description}</p>
-              <ul className="space-y-2 pt-2 border-t border-border/30">
+              <ul className="space-y-2 pt-2/30">
                 {tier.deliverables.map((item) => (
                   <li key={item.title} className="flex items-start justify-between gap-4">
                     <span className="text-sm text-foreground">{item.title}</span>

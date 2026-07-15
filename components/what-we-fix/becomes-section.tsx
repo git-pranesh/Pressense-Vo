@@ -70,7 +70,7 @@ export function BecomesSection() {
   return (
     <section
       id="becomes"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="becomes-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">
@@ -81,7 +81,7 @@ export function BecomesSection() {
           </p>
           <h2
             id="becomes-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance"
+            className="text-section-title font-serif font-medium text-foreground text-balance"
           >
             What broken becomes when it&apos;s fixed.
           </h2>
@@ -100,7 +100,7 @@ export function BecomesSection() {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-semibold text-foreground mb-6">
+              <h3 className="text-xl font-medium text-foreground mb-6">
                 {item.title}
               </h3>
 

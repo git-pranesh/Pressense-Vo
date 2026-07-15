@@ -48,17 +48,17 @@ const phases = [
 export function AIStrategyMethodology() {
   return (
     <section
-      className="py-16 border-t border-border/40"
+      className="py-16"
       aria-labelledby="methodology-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             Our methodology
           </span>
           <h2
             id="methodology-heading"
-            className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-4"
+            className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-4"
           >
             The Pressense AI Strategy framework
           </h2>
@@ -73,18 +73,18 @@ export function AIStrategyMethodology() {
                 className="flex gap-6"
               >
                 <div className="shrink-0 flex flex-col items-center gap-2 pt-1">
-                  <span className="text-xs font-mono font-semibold text-primary/60">{phase.number}</span>
+                  <span className="text-xs font-mono font-medium text-primary/60">{phase.number}</span>
                   <div className="w-px flex-1 bg-border/40" aria-hidden="true" />
                 </div>
                 <div className="pb-10">
                   <div className="flex flex-wrap items-center gap-3 mb-1">
-                    <h3 className="text-lg font-semibold text-foreground">{phase.name}</h3>
+                    <h3 className="text-lg font-medium text-foreground">{phase.name}</h3>
                     <span className="text-xs text-muted-foreground">{phase.weeks}</span>
                   </div>
                   <p className="text-sm text-primary/70 font-medium mb-3">{phase.tagline}</p>
                   <p className="text-muted-foreground leading-relaxed mb-3">{phase.body1}</p>
                   <p className="text-muted-foreground leading-relaxed mb-4">{phase.body2}</p>
-                  <span className="inline-flex items-center gap-2 text-xs font-semibold text-foreground bg-card border border-border/50 px-3 py-1.5 rounded-full">
+                  <span className="inline-flex items-center gap-2 text-xs font-medium text-foreground bg-card px-3 py-1.5 rounded-full">
                     Deliverable: {phase.deliverable}
                   </span>
                 </div>

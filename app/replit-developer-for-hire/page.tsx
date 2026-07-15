@@ -38,7 +38,7 @@ export default function ReplyitDeveloperPage() {
       
       <main className="min-h-screen">
         <section className="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
-          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-6">Replit Developer for Hire</h1>
+          <h1 className="text-4xl lg:text-5xl font-medium tracking-tight mb-6">Replit Developer for Hire</h1>
           <p className="text-xl text-muted-foreground mb-12">
             Expert Replit developers for rapid prototyping, MVP development, and full-stack web applications. Cloud-based, collaborative development without setup friction.
           </p>

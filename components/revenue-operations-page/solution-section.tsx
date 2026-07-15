@@ -22,17 +22,17 @@ const rows: Row[] = [
 
 export function SolutionSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40" aria-labelledby="revops-comparison-heading">
+    <section className="py-20 lg:py-28" aria-labelledby="revops-comparison-heading">
       <div className="container mx-auto px-5 sm:px-8">
 
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">When should you hire a RevOps consultant</span>
+            <div className="eyebrow-line" aria-hidden="true" />
+            <span className="eyebrow">When should you hire a RevOps consultant</span>
           </div>
           <h2
             id="revops-comparison-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-4"
+            className="text-section-title font-serif font-medium text-foreground text-balance mb-4"
           >
             Fractional RevOps vs Full-time vs Agency
           </h2>
@@ -49,10 +49,10 @@ export function SolutionSection() {
           <table className="w-full text-sm" role="table" aria-label="RevOps hiring options comparison">
             <thead>
               <tr className="border-b border-border/40 bg-card/40">
-                <th className="text-left px-6 py-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Factor</th>
-                <th className="px-6 py-4 text-center text-xs font-semibold uppercase tracking-widest text-primary bg-primary/5">Fractional RevOps</th>
-                <th className="px-6 py-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">Full-time RevOps</th>
-                <th className="px-6 py-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">Agency RevOps</th>
+                <th className="text-left px-6 py-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">Factor</th>
+                <th className="px-6 py-4 text-center text-xs font-medium uppercase tracking-widest text-primary bg-primary/5">Fractional RevOps</th>
+                <th className="px-6 py-4 text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">Full-time RevOps</th>
+                <th className="px-6 py-4 text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">Agency RevOps</th>
               </tr>
             </thead>
             <tbody>
@@ -62,7 +62,7 @@ export function SolutionSection() {
                   className={`border-b border-border/30 last:border-0 ${row.highlight ? 'bg-primary/3' : ''}`}
                 >
                   <td className="px-6 py-4 font-medium text-foreground">{row.label}</td>
-                  <td className="px-6 py-4 text-center font-semibold text-primary bg-primary/5">{row.fractional}</td>
+                  <td className="px-6 py-4 text-center font-medium text-primary bg-primary/5">{row.fractional}</td>
                   <td className="px-6 py-4 text-center text-muted-foreground">{row.fullTime}</td>
                   <td className="px-6 py-4 text-center text-muted-foreground">{row.agency}</td>
                 </tr>

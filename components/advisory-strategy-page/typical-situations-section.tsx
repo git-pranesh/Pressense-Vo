@@ -15,15 +15,15 @@ const typicalSituations = [
 
 export function TypicalSituationsSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">
+        <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-16">
           Typical advisory situations
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
           {typicalSituations.map((situation, i) => (
-            <div key={i} className="glass-card rounded-2xl p-6 border border-border/40 hover:border-primary/20 transition-all duration-300">
+            <div key={i} className="rounded-2xl p-6 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
               <p className="text-lg font-medium text-foreground">{situation}</p>
             </div>
           ))}

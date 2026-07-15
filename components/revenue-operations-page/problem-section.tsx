@@ -22,38 +22,38 @@ const services = [
 
 export function ProblemSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
 
         {/* What is RevOps — AEO H2, exact PAA match */}
         <div className="max-w-3xl mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">What is revenue operations</span>
+            <div className="eyebrow-line" aria-hidden="true" />
+            <span className="eyebrow-on-dark">What is revenue operations</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">
+          <h2 className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-6">
             What is Revenue Operations?
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          <p className="text-lg text-ink-muted leading-relaxed mb-4">
             Revenue operations is the business function that aligns marketing, sales, and customer success around shared data, shared processes, and shared accountability. The goal is to remove the handoff failures and visibility gaps that cause deals to stall, forecasts to be wrong, and customers to churn before they should.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          <p className="text-lg text-ink-muted leading-relaxed mb-4">
             Without RevOps, your go-to-market teams operate in silos. Marketing tracks MQLs. Sales tracks SQLs. Customer success tracks NPS. Each team optimises for its own metric, and revenue falls through the gaps between them. A RevOps consultant builds the connective tissue that joins these functions into a single operating model.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-ink-muted leading-relaxed">
             Most B2B businesses need revenue operations consulting when they hit $1M to $5M ARR and notice that growth is no longer predictable. The sales cycle gets longer, the pipeline is hard to read, and nobody agrees on what the numbers actually mean.
           </p>
         </div>
 
         {/* 4 core RevOps services */}
         <div>
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance mb-10">
+          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground text-balance mb-10">
             Revenue operations consulting services
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {services.map((service, i) => (
-              <div key={i} className="glass-card rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
-                <h3 className="text-xl font-semibold text-foreground mb-3">{service.name}</h3>
+              <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
+                <h3 className="text-xl font-medium text-foreground mb-3">{service.name}</h3>
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
             ))}

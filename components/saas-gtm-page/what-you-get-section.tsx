@@ -45,14 +45,14 @@ export function SaaSGTMWhatYouGetSection() {
   ]
 
   return (
-    <section className="py-16 border-t border-border/40" aria-label="SaaS GTM pricing and deliverables">
+    <section className="py-16" aria-label="SaaS GTM pricing and deliverables">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="flex items-center gap-3 mb-10">
-          <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-          <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">What You Get</span>
+          <div className="eyebrow-line" aria-hidden="true" />
+          <span className="eyebrow">What You Get</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-4">
           How much does SaaS go-to-market strategy cost?
         </h2>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mb-10">
@@ -70,11 +70,11 @@ export function SaaSGTMWhatYouGetSection() {
               }`}
             >
               {tier.featured && (
-                <span className="text-xs font-semibold tracking-widest uppercase text-primary">Most popular</span>
+                <span className="text-xs font-medium tracking-widest uppercase text-primary">Most popular</span>
               )}
               <div>
-                <h3 className="text-base font-semibold text-foreground mb-1">{tier.name}</h3>
-                <p className="text-xl font-bold text-foreground">{tier.price}</p>
+                <h3 className="text-base font-medium text-foreground mb-1">{tier.name}</h3>
+                <p className="text-xl font-medium text-foreground">{tier.price}</p>
                 <p className="text-xs text-muted-foreground">{tier.timeline}</p>
               </div>
               <div className="flex flex-col gap-2 flex-1">
@@ -85,7 +85,7 @@ export function SaaSGTMWhatYouGetSection() {
                 ))}
               </div>
               {tier.outcome && (
-                <p className="text-xs text-muted-foreground border-t border-border/30 pt-3 mt-2 leading-relaxed">
+                <p className="text-xs text-muted-foreground/30 pt-3 mt-2 leading-relaxed">
                   {tier.outcome}
                 </p>
               )}

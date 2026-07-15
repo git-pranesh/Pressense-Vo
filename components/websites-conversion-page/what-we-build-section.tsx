@@ -34,7 +34,7 @@ export function WhatWeBuildSection() {
     <section className="py-24 lg:py-32 bg-secondary/20" aria-label="What we build">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-xl mb-12">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground mb-4">
             What we build.
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -43,8 +43,8 @@ export function WhatWeBuildSection() {
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {solutions.map((item, i) => (
-            <article key={i} className="glass-card rounded-2xl p-6 border border-border/40">
-              <h3 className="text-lg font-semibold text-foreground mb-3">{item.title}</h3>
+            <article key={i} className="rounded-2xl p-6 border border-border bg-card hover:border-foreground/20 transition-colors">
+              <h3 className="text-lg font-medium text-foreground mb-3">{item.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{item.description}</p>
             </article>
           ))}

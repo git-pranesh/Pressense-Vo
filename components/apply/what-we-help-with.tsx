@@ -32,17 +32,17 @@ export function WhatWeHelpWithSection() {
   return (
     <section
       id="what-we-help-with"
-      className="py-20 lg:py-28 border-t border-border/40"
+      className="py-20 lg:py-28"
       aria-labelledby="help-heading"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-14">
-          <p className="text-sm uppercase tracking-widest text-primary mb-4">
+          <p className="eyebrow mb-4">
             Scope of Work
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance max-w-xl"
+            className="text-section-title font-serif font-medium text-foreground text-balance max-w-xl"
             id="help-heading"
           >
             What we typically help with.
@@ -53,7 +53,7 @@ export function WhatWeHelpWithSection() {
         <div className="grid gap-10 md:grid-cols-3">
           {helpAreas.map((area) => (
             <div key={area.category}>
-              <h3 className="text-lg font-semibold text-foreground mb-5 flex items-center gap-3">
+              <h3 className="text-lg font-medium font-sans text-foreground mb-5 flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary" />
                 {area.category}
               </h3>

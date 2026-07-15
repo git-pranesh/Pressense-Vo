@@ -37,7 +37,7 @@ export function ApproachSection() {
   return (
     <section
       id="approach"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="approach-heading"
     >
       <div className="container mx-auto px-6">
@@ -46,7 +46,7 @@ export function ApproachSection() {
             Our Method
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance mb-5"
+            className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground text-balance mb-5"
             id="approach-heading"
           >
             How we approach every engagement
@@ -68,7 +68,7 @@ export function ApproachSection() {
               <div key={step.number} className="flex gap-6">
                 {/* Number + line */}
                 <div className="flex flex-col items-center">
-                  <span className="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary border border-border flex items-center justify-center text-sm font-semibold text-primary">
+                  <span className="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary border border-border flex items-center justify-center text-sm font-medium text-primary">
                     {step.number}
                   </span>
                   {index < steps.length - 1 && (
@@ -78,7 +78,7 @@ export function ApproachSection() {
 
                 {/* Content */}
                 <div className="pb-8">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                  <h3 className="text-xl font-medium text-foreground mb-2">
                     {step.title}
                   </h3>
                   <p className="text-base text-muted-foreground leading-relaxed">

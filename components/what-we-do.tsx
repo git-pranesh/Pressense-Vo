@@ -1,25 +1,26 @@
 export function WhatWeDo() {
   return (
-    <section id="what-we-do" className="py-20 border-y border-border/40 relative overflow-hidden" aria-labelledby="our-approach-heading">
-      {/* Background accent */}
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          background: 'radial-gradient(ellipse 80% 60% at 50% 50%, #D4CFC8 0%, transparent 70%)',
-        }}
-        aria-hidden="true"
-      />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 text-center">
-        <p className="text-xs tracking-[0.2em] uppercase text-accent font-medium mb-5">
-          Our Approach
-        </p>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-5 text-balance" id="our-approach-heading">
-          We don&apos;t just advise.
-          <br />
-          <span className="text-primary font-light italic">We diagnose, fix, and build.</span>
+    <section
+      id="what-we-do"
+      className="py-32 lg:py-48 bg-background card-lift"
+      aria-labelledby="our-approach-heading"
+    >
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-12 text-center">
+        <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="eyebrow-line" aria-hidden="true" />
+          <span className="eyebrow">Our Approach</span>
+          <div className="eyebrow-line" aria-hidden="true" />
+        </div>
+        <h2
+          className="text-display font-serif text-foreground text-balance max-w-3xl mx-auto mb-6"
+          id="our-approach-heading"
+        >
+          We don&apos;t just advise.{' '}
+          <em className="italic">
+            We diagnose, fix, and build.
+          </em>
         </h2>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
+        <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed text-pretty font-sans">
           We work with businesses that are already moving, but need clarity, direction, and
           execution to scale properly. From strategy to systems to execution, everything is
           aligned with how the business actually operates.

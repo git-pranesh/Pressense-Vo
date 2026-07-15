@@ -32,13 +32,13 @@ export function ExecutePhase() {
   return (
     <section
       id="execute"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="execute-heading"
     >
       <div className="container mx-auto px-6 lg:px-8">
         {/* Phase header */}
         <div className="flex items-center gap-4 mb-8">
-          <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground text-lg font-semibold flex items-center justify-center">
+          <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground text-lg font-medium flex items-center justify-center">
             3
           </span>
           <p className="text-sm font-medium tracking-widest uppercase text-primary">
@@ -51,7 +51,7 @@ export function ExecutePhase() {
           <div>
             <h2
               id="execute-heading"
-              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-6 text-balance"
+              className="text-display font-serif font-medium text-foreground mb-6 text-balance"
             >
               Execute
             </h2>
@@ -94,7 +94,7 @@ export function ExecutePhase() {
 
             {/* What we do together */}
             <div className="p-6 rounded-xl bg-secondary/40 border border-border/40">
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-medium text-foreground mb-3">
                 What This Looks Like
               </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
@@ -123,9 +123,9 @@ export function ExecutePhase() {
             {executionAreas.map((area, i) => (
               <div
                 key={i}
-                className="glass-card rounded-xl p-6 border border-border/50"
+                className="rounded-xl bg-card border border-border p-6"
               >
-                <h3 className="text-lg font-semibold text-foreground mb-4">
+                <h3 className="text-lg font-medium text-foreground mb-4">
                   {area.title}
                 </h3>
                 <ul className="space-y-2">

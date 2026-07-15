@@ -56,17 +56,17 @@ const deliverableRows = [
 export function AIStrategyWhatYouGet() {
   return (
     <section
-      className="py-16 border-t border-border/40"
+      className="py-16"
       aria-labelledby="what-you-get-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             What you get
           </span>
           <h2
             id="what-you-get-heading"
-            className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-4"
+            className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-4"
           >
             How much does AI strategy consulting cost?
           </h2>
@@ -85,13 +85,13 @@ export function AIStrategyWhatYouGet() {
                 }`}
               >
                 {tier.highlight && (
-                  <span className="text-xs font-semibold text-primary uppercase tracking-widest">
+                  <span className="text-xs font-medium text-primary uppercase tracking-widest">
                     Most popular
                   </span>
                 )}
                 <div>
-                  <p className="text-sm font-semibold text-foreground mb-1">{tier.name}</p>
-                  <p className="text-2xl font-semibold text-foreground">{tier.price}</p>
+                  <p className="text-sm font-medium text-foreground mb-1">{tier.name}</p>
+                  <p className="text-2xl font-medium text-foreground">{tier.price}</p>
                   <p className="text-xs text-muted-foreground mt-1">{tier.timeline}</p>
                 </div>
                 <ul className="space-y-2" aria-label={`${tier.name} deliverables`}>
@@ -102,7 +102,7 @@ export function AIStrategyWhatYouGet() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs text-muted-foreground border-t border-border/30 pt-3 mt-auto">
+                <p className="text-xs text-muted-foreground/30 pt-3 mt-auto">
                   {tier.note}
                 </p>
               </div>
@@ -113,9 +113,9 @@ export function AIStrategyWhatYouGet() {
             <table className="w-full text-sm" aria-label="Deliverable comparison by tier">
               <thead>
                 <tr className="border-b border-border/40">
-                  <th className="text-left px-4 py-3 text-foreground font-semibold">Deliverable</th>
+                  <th className="text-left px-4 py-3 text-foreground font-medium">Deliverable</th>
                   <th className="px-4 py-3 text-center text-muted-foreground font-medium">Sprint</th>
-                  <th className="px-4 py-3 text-center text-primary font-semibold">Pilots</th>
+                  <th className="px-4 py-3 text-center text-primary font-medium">Pilots</th>
                   <th className="px-4 py-3 text-center text-muted-foreground font-medium">Retainer</th>
                 </tr>
               </thead>

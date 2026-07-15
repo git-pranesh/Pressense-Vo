@@ -19,9 +19,9 @@ const advisoryPhases = [
 
 export function AdvisoryModelSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">
+        <h2 className="text-section-title font-serif font-medium text-ink-foreground text-balance mb-16">
           Our advisory model
         </h2>
 
@@ -30,11 +30,11 @@ export function AdvisoryModelSection() {
             <div key={i} className="flex gap-6">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10 border border-primary/20">
-                  <span className="text-lg font-semibold text-primary">{i + 1}</span>
+                  <span className="text-lg font-medium text-primary">{i + 1}</span>
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-foreground mb-2">{phase.title}</h3>
+                <h3 className="text-xl font-medium text-foreground mb-2">{phase.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{phase.description}</p>
               </div>
             </div>

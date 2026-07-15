@@ -1,17 +1,17 @@
 export function AIStrategyProblems() {
   return (
     <section
-      className="py-16 border-t border-border/40"
+      className="py-16"
       aria-labelledby="problems-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             The real problems
           </span>
           <h2
             id="problems-heading"
-            className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-12"
+            className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-12"
           >
             Why most AI strategies fail before they start
           </h2>
@@ -19,7 +19,7 @@ export function AIStrategyProblems() {
           <div className="space-y-12">
 
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-medium text-foreground mb-3">
                 How to implement AI in a $5M business
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-3">
@@ -31,7 +31,7 @@ export function AIStrategyProblems() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-medium text-foreground mb-3">
                 AI workflows for operations teams
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-3">
@@ -43,7 +43,7 @@ export function AIStrategyProblems() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-medium text-foreground mb-3">
                 How to audit your business for AI readiness
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-3">
@@ -55,7 +55,7 @@ export function AIStrategyProblems() {
             </div>
 
             <div id="ai-vs-automation">
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-medium text-foreground mb-3">
                 AI vs automation: what is the difference for business owners?
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-3">

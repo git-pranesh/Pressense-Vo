@@ -54,12 +54,12 @@ export function WorkGrid() {
       <div className="container mx-auto px-5 sm:px-8">
         <div className="space-y-8 max-w-4xl mx-auto">
           {workItems.map((work, i) => (
-            <article key={i} className="glass-card rounded-2xl p-8 lg:p-10 border border-border/40 hover:border-primary/20 transition-all duration-300">
+            <article key={i} className="rounded-2xl bg-card border border-border p-8 lg:p-10 border border-border/40 hover:border-primary/20 transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-xs tracking-[0.15em] uppercase font-medium text-primary">{work.category}</span>
               </div>
               
-              <h3 className="text-2xl lg:text-3xl font-semibold text-foreground mb-6 text-balance">{work.title}</h3>
+              <h3 className="text-2xl lg:text-3xl font-medium text-foreground mb-6 text-balance">{work.title}</h3>
               
               <div className="space-y-6">
                 <div>
@@ -84,12 +84,12 @@ export function WorkGrid() {
                   </ul>
                 </div>
                 
-                <div className="pt-4 border-t border-border/40">
+                <div className="pt-4">
                   <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2 font-medium">What Changed</p>
                   <p className="text-base text-foreground font-medium leading-relaxed">{work.outcome}</p>
                 </div>
 
-                <div className="pt-4 border-t border-border/40">
+                <div className="pt-4">
                   <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2 font-medium">Playbook Extracted</p>
                   <p className="text-base text-muted-foreground leading-relaxed">{work.playbook}</p>
                 </div>

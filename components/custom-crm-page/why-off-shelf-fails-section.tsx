@@ -31,12 +31,12 @@ export function CustomCrmWhyOffShelfFailsSection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-4xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+        <p className="eyebrow mb-4">
           The Problem
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           Why off-the-shelf CRM fails founder-led businesses
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -46,7 +46,7 @@ export function CustomCrmWhyOffShelfFailsSection() {
         <div className="space-y-12">
           {problems.map((p) => (
             <div key={p.heading}>
-              <h3 className="text-lg font-semibold text-foreground mb-4">{p.heading}</h3>
+              <h3 className="text-lg font-medium text-foreground mb-4">{p.heading}</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">{p.para1}</p>
               <p className="text-muted-foreground leading-relaxed">{p.para2}</p>
             </div>

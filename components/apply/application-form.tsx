@@ -139,7 +139,7 @@ export function ApplicationForm() {
     return (
       <section
         id="application-form"
-        className="py-20 lg:py-28 border-t border-border/40"
+        className="py-20 lg:py-28"
         aria-labelledby="form-success-heading"
       >
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
@@ -162,7 +162,7 @@ export function ApplicationForm() {
             </svg>
           </div>
           <h2
-            className="text-3xl font-semibold text-foreground mb-4"
+            className="text-3xl font-medium text-foreground mb-4"
             id="form-success-heading"
           >
             Application received.
@@ -180,17 +180,17 @@ export function ApplicationForm() {
   return (
     <section
       id="application-form"
-      className="py-20 lg:py-28 border-t border-border/40"
+      className="py-20 lg:py-28"
       aria-labelledby="form-heading"
     >
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-12 text-center">
-          <p className="text-sm uppercase tracking-widest text-primary mb-4">
+          <p className="eyebrow mb-4">
             Your Application
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance"
+            className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground text-balance"
             id="form-heading"
           >
             Tell us about your business.
@@ -200,7 +200,7 @@ export function ApplicationForm() {
         <form onSubmit={handleSubmit} className="space-y-8" noValidate>
           {/* Basic Info */}
           <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
+            <h3 className="text-lg font-medium text-foreground mb-6">
               Basic Information
             </h3>
 
@@ -317,7 +317,7 @@ export function ApplicationForm() {
 
           {/* Business Context */}
           <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
+            <h3 className="text-lg font-medium text-foreground mb-6">
               Business Context
             </h3>
 
@@ -393,7 +393,7 @@ export function ApplicationForm() {
 
           {/* Engagement Details */}
           <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
+            <h3 className="text-lg font-medium text-foreground mb-6">
               Engagement Details
             </h3>
 
@@ -531,7 +531,7 @@ export function ApplicationForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="group inline-flex items-center gap-3 px-10 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent disabled:opacity-60 disabled:cursor-not-allowed"
+              className="group inline-flex items-center gap-3 px-10 py-4 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent disabled:opacity-60 disabled:cursor-not-allowed"
               aria-label="Submit your application"
             >
               {isSubmitting ? (

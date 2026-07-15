@@ -47,26 +47,16 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-28 lg:py-36 relative" aria-labelledby="services-heading">
-      {/* Faint dot grid accent */}
-      <div
-        className="absolute inset-0 opacity-[0.018]"
-        style={{
-          backgroundImage: 'radial-gradient(#C4BFB8 1px, transparent 1px)',
-          backgroundSize: '28px 28px',
-        }}
-        aria-hidden="true"
-      />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+    <section id="services" className="py-32 lg:py-48 bg-background card-lift" aria-labelledby="services-heading">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-px w-8 bg-accent opacity-60" />
-              <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">Services</span>
+              <div className="eyebrow-line" aria-hidden="true" />
+              <span className="eyebrow">Services</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance max-w-lg" id="services-heading">
+            <h2 className="text-section-title font-serif text-foreground text-balance max-w-lg" id="services-heading">
               We advise. We build. We execute. In that order.
             </h2>
           </div>
@@ -80,7 +70,7 @@ export function ServicesSection() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="glass-card rounded-2xl p-8 flex flex-col gap-6 hover:border-accent/30 transition-all duration-300 group"
+              className="rounded-2xl p-8 flex flex-col gap-6 bg-card border border-border hover:border-foreground/20 hover:shadow-sm transition-all duration-300 group"
             >
               {/* Label + icon row */}
               <div className="flex items-center justify-between">
@@ -95,7 +85,7 @@ export function ServicesSection() {
 
               {/* Content */}
               <div className="flex flex-col gap-4 flex-1">
-                <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
+                <h3 className="text-xl font-serif text-foreground">{service.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{service.description}</p>
               </div>
 
@@ -104,7 +94,7 @@ export function ServicesSection() {
                 {service.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-2.5 py-1 rounded-md bg-secondary/60 text-muted-foreground border border-border/50"
+                    className="text-xs px-2.5 py-1 rounded-md bg-secondary/60 text-muted-foreground"
                   >
                     {tag}
                   </span>
@@ -117,3 +107,4 @@ export function ServicesSection() {
     </section>
   )
 }
+

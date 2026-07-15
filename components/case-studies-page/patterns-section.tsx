@@ -32,7 +32,7 @@ export function PatternsSection() {
   return (
     <section
       id="patterns"
-      className="py-28 lg:py-36 border-t border-border/40"
+      className="py-28 lg:py-36"
       aria-labelledby="patterns-heading"
     >
       <div className="container mx-auto px-6">
@@ -41,7 +41,7 @@ export function PatternsSection() {
             Recurring Themes
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance mb-5"
+            className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground text-balance mb-5"
             id="patterns-heading"
           >
             Patterns we repeatedly fix
@@ -61,9 +61,9 @@ export function PatternsSection() {
           {patterns.map((pattern, index) => (
             <div
               key={index}
-              className="glass-card rounded-xl p-6 border border-border/50 hover:border-primary/30 transition-colors duration-200"
+              className="rounded-xl bg-card border border-border p-6 hover:border-primary/30 transition-colors duration-200"
             >
-              <h3 className="text-lg font-semibold text-foreground mb-3 leading-snug">
+              <h3 className="text-lg font-medium text-foreground mb-3 leading-snug">
                 {pattern.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">

@@ -20,25 +20,25 @@ export function StartFocusedSection() {
   return (
     <section
       id="start-focused"
-      className="py-28 lg:py-36 relative"
+      className="py-32 lg:py-48 bg-ink"
       aria-labelledby="start-focused-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="mb-16 lg:mb-20 max-w-2xl">
           <div className="flex items-center gap-3 mb-5">
-            <div className="h-px w-8 bg-accent opacity-60" />
-            <span className="text-xs tracking-[0.2em] uppercase text-accent font-medium">
+            <div className="eyebrow-line-dark"/>
+            <span className="text-xs tracking-[0.2em] uppercase text-ink-muted font-medium">
               Getting Started
             </span>
           </div>
           <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance"
+            className="text-section-title font-serif font-medium text-ink-foreground text-balance"
             id="start-focused-heading"
           >
             Start with one focused problem.
           </h2>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-6 text-lg text-ink-muted leading-relaxed">
             You do not need to begin with a full business transformation. Most clients start
             with a focused diagnostic, strategy sprint, or pilot project, one business
             constraint, one clear roadmap, and one practical next step.
@@ -50,21 +50,21 @@ export function StartFocusedSection() {
           {startingPoints.map((item, i) => (
             <div
               key={i}
-              className="glass-card rounded-2xl p-8 flex flex-col gap-5 hover:border-border transition-all duration-300 group"
+              className="rounded-2xl p-8 flex flex-col gap-5 bg-ink-border/60 border border-ink-border hover:border-ink-muted/30 transition-all duration-300 group"
             >
               {/* Number */}
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono text-text-dim tracking-widest">
+                <span className="text-xs font-mono text-ink-muted/50 tracking-widest">
                   {String(i + 1).padStart(2, '0')}
                 </span>
               </div>
 
               {/* Content */}
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-xl font-medium text-ink-foreground mb-3">
                   {item.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-ink-muted leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -76,7 +76,7 @@ export function StartFocusedSection() {
         <div className="mt-16 flex justify-center">
           <a
             href="/diagnostic"
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-medium bg-ink-foreground text-ink hover:bg-ink-foreground/90 transition-all duration-200"
             aria-label="Start with a focused diagnostic"
           >
             Start With a Diagnostic

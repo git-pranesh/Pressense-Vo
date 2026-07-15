@@ -37,14 +37,14 @@ export function SaaSGTMFAQSection() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <section className="py-16 border-t border-border/40" aria-label="SaaS GTM frequently asked questions">
+    <section className="py-16" aria-label="SaaS GTM frequently asked questions">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="flex items-center gap-3 mb-10">
-          <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-          <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">FAQ</span>
+          <div className="eyebrow-line" aria-hidden="true" />
+          <span className="eyebrow">FAQ</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-10">
+        <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-10">
           Common questions about SaaS go-to-market strategy
         </h2>
 
@@ -56,7 +56,7 @@ export function SaaSGTMFAQSection() {
                 onClick={() => setOpen(open === i ? null : i)}
                 aria-expanded={open === i}
               >
-                <span className="text-base font-semibold text-foreground">{faq.q}</span>
+                <span className="text-base font-medium text-foreground">{faq.q}</span>
                 <svg
                   width="16"
                   height="16"

@@ -28,7 +28,7 @@ export function StatsGridBlock({ title, stats, columns = 3 }: StatsGridBlockProp
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               {stat.number && <div className="text-5xl font-bold text-blue-600 mb-2">{stat.number}</div>}
-              {stat.label && <h3 className="text-lg font-semibold mb-2">{stat.label}</h3>}
+              {stat.label && <h3 className="text-lg font-medium mb-2">{stat.label}</h3>}
               {stat.description && <p className="text-slate-600">{stat.description}</p>}
             </div>
           ))}

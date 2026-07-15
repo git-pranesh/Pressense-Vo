@@ -10,7 +10,6 @@ export function WhatWeFixHero() {
       aria-label="Introduction"
     >
       {/* Grid background */}
-      <div className="absolute inset-0 grid-bg opacity-50" aria-hidden="true" />
 
       {/* Radial glow */}
       <div
@@ -26,7 +25,7 @@ export function WhatWeFixHero() {
           </p>
 
           {/* H1 */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.08] mb-8 text-balance">
+          <h1 className="text-display font-serif font-medium text-foreground leading-[1.08] mb-8 text-balance">
             Most businesses don&apos;t fail from lack of effort.{' '}
             <span className="text-muted-foreground font-light">
               They struggle because the fundamentals are broken.
@@ -43,7 +42,7 @@ export function WhatWeFixHero() {
           {/* CTA */}
           <Link
             href="/diagnostic"
-            className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             aria-label="Start a diagnostic"
           >
             Start With a Diagnostic

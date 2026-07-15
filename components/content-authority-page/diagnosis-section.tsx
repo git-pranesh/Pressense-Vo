@@ -7,19 +7,19 @@ export function DiagnosisSection() {
   ]
 
   return (
-    <section className="py-28 lg:py-36 border-t border-border/40">
+    <section className="py-28 lg:py-36">
       <div className="container mx-auto px-5 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-16">
+        <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-16">
           We do not start by writing. We start by understanding.
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {phases.map((phase) => (
-            <div key={phase.number} className="glass-card rounded-2xl p-8 border border-border/40">
+            <div key={phase.number} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-4xl font-bold text-primary/40">{phase.number}</span>
+                <span className="font-medium text-primary/40">{phase.number}</span>
                 <div className="h-px flex-1 bg-primary/20" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">{phase.title}</h3>
+              <h3 className="text-lg font-medium text-foreground mb-3">{phase.title}</h3>
               <p className="text-sm leading-relaxed text-muted-foreground">{phase.description}</p>
             </div>
           ))}

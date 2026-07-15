@@ -33,21 +33,21 @@ const faqs = [
 
 export function OpenAIFaqSection() {
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">FAQ</p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-14 leading-tight">
+        <p className="eyebrow mb-4">FAQ</p>
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-14 leading-tight">
           OpenAI API integration questions
         </h2>
         <div className="space-y-0">
           {faqs.map((faq, i) => (
             <div key={faq.q} className={`py-8 ${i < faqs.length - 1 ? 'border-b border-border/30' : ''}`}>
-              <h3 className="text-lg font-semibold text-foreground mb-3">{faq.q}</h3>
+              <h3 className="text-lg font-medium text-foreground mb-3">{faq.q}</h3>
               <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
-        <div className="mt-12 pt-8 border-t border-border/40">
+        <div className="mt-12 pt-8">
           <p className="text-base text-muted-foreground mb-4">
             Not sure whether OpenAI or another model is right for your use case?
           </p>

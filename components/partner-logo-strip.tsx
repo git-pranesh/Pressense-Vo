@@ -61,9 +61,9 @@ function LogoRow({ logos, reverse = false }: { logos: typeof row1; reverse?: boo
 
 export function PartnerLogoStrip() {
   return (
-    <section className="py-14 border-t border-border/40 overflow-hidden">
+    <section className="py-14 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground font-medium text-center">
+        <p className="eyebrow font-medium text-center">
           Works with the tools your business already runs on
         </p>
       </div>

@@ -37,13 +37,13 @@ export function FramerFAQSection() {
   return (
     <section className="py-20 px-6 md:px-8 bg-background" aria-labelledby="faq-heading">
       <div className="max-w-2xl mx-auto">
-        <h2 id="faq-heading" className="text-2xl font-bold text-foreground mb-12 text-balance">
+        <h2 id="faq-heading" className="text-2xl font-medium text-foreground mb-12 text-balance">
           Framer Website Design — Questions &amp; Answers
         </h2>
         <dl className="divide-y divide-border/40">
           {framerFAQs.map((item) => (
             <div key={item.question} className="py-6">
-              <dt className="text-base font-semibold text-foreground mb-2">{item.question}</dt>
+              <dt className="text-base font-medium text-foreground mb-2">{item.question}</dt>
               <dd className="text-base text-muted-foreground leading-relaxed">{item.answer}</dd>
             </div>
           ))}

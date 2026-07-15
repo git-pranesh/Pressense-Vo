@@ -1,9 +1,9 @@
 export function PlaybooksIntroSection() {
   return (
-    <section className="py-20 border-y border-border/40" aria-label="What playbooks are">
+    <section className="py-20" aria-label="What playbooks are">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-foreground mb-6 text-balance">
+          <h2 className="text-section-title font-serif font-medium text-foreground mb-6 text-balance">
             What these are.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">

@@ -34,16 +34,16 @@ export function SMBStrategyProblemsSection() {
     <section className="border-t border-border/40 py-16">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="mb-3 flex items-center gap-3">
-          <span className="h-px w-8 bg-primary/60" aria-hidden="true" />
-          <span className="text-xs font-semibold tracking-widest uppercase text-primary/70">Where Businesses Get Stuck</span>
+          <span className="eyebrow-line" aria-hidden="true" />
+          <span className="text-xs font-medium tracking-widest uppercase text-primary/70">Where Businesses Get Stuck</span>
         </div>
-        <h2 className="text-3xl font-bold text-foreground text-pretty mb-10">
+        <h2 className="text-3xl font-medium text-foreground text-pretty mb-10">
           Problems we hear from small business owners every week
         </h2>
         <div className="space-y-10">
           {problems.map((p) => (
             <div key={p.heading}>
-              <h3 className="font-semibold text-lg text-foreground mb-3">{p.heading}</h3>
+              <h3 className="font-medium text-lg text-foreground mb-3">{p.heading}</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">{p.body1}</p>
               <p className="text-muted-foreground leading-relaxed">{p.body2}</p>
             </div>

@@ -32,7 +32,7 @@ export function FAQBlock({ title, items }: FAQBlockProps) {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-6 py-4 flex items-center justify-between hover:bg-slate-50 transition"
               >
-                <h3 className="text-lg font-semibold text-left">{item.question}</h3>
+                <h3 className="text-lg font-medium text-left">{item.question}</h3>
                 <ChevronDown
                   size={20}
                   className={`flex-shrink-0 transition-transform ${

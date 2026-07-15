@@ -4,20 +4,19 @@ export function ClaudeApiHero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
+      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20"
       aria-label="Claude API Integration Services"
     >
-      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
+            <div className="eyebrow-line" aria-hidden="true" />
+            <span className="eyebrow">
               Claude API Integration
             </span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
+          <h1 className="text-hero font-serif font-medium tracking-tight text-foreground text-balance leading-[1.1] mb-6">
             Claude API Integration for Business Applications
           </h1>
 
@@ -33,17 +32,17 @@ export function ClaudeApiHero() {
 
           <div className="flex flex-wrap gap-6 mb-10">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">200K tokens</span>
+              <span className="text-2xl font-medium text-foreground">200K tokens</span>
               <span className="text-sm text-muted-foreground">context window</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">From $2,000</span>
+              <span className="text-2xl font-medium text-foreground">From $2,000</span>
               <span className="text-sm text-muted-foreground">integration build</span>
             </div>
             <div className="w-px bg-border/60 hidden sm:block" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">2–4 weeks</span>
+              <span className="text-2xl font-medium text-foreground">2–4 weeks</span>
               <span className="text-sm text-muted-foreground">to live integration</span>
             </div>
           </div>
@@ -51,7 +50,7 @@ export function ClaudeApiHero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/diagnostic"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -60,14 +59,13 @@ export function ClaudeApiHero() {
             </Link>
             <Link
               href="/openai-integration-services"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
             >
               Compare with OpenAI Integration
             </Link>
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background via-transparent to-background/60" aria-hidden="true" />
     </section>
   )
 }

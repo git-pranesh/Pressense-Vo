@@ -4,7 +4,7 @@ export function DiagnosticApproach() {
   return (
     <section
       id="diagnostic"
-      className="py-28 lg:py-36 border-t border-border/40 relative overflow-hidden"
+      className="py-28 lg:py-36 relative overflow-hidden"
       aria-labelledby="diagnostic-heading"
     >
       {/* Subtle radial glow */}
@@ -22,7 +22,7 @@ export function DiagnosticApproach() {
             </p>
             <h2
               id="diagnostic-heading"
-              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-6 text-balance"
+              className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground mb-6 text-balance"
             >
               We don&apos;t guess.{' '}
               <span className="text-muted-foreground font-light">

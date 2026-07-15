@@ -11,7 +11,7 @@ interface Props { title?: string; url: string; caption?: string }
 export function VideoBlock({ title, url, caption }: Props) {
   return (
     <section className="py-16 px-6 lg:px-10 max-w-4xl mx-auto">
-      {title && <h2 className="text-2xl font-semibold text-foreground mb-6 text-center">{title}</h2>}
+      {title && <h2 className="text-2xl font-medium text-foreground mb-6 text-center">{title}</h2>}
       <div className="aspect-video rounded-xl overflow-hidden border border-border/60">
         <iframe src={getEmbedUrl(url)} className="w-full h-full" allowFullScreen title={title || 'Video'} />
       </div>

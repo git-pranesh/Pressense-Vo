@@ -35,15 +35,15 @@ export function CustomCrmMethodologySection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 border-t border-border/40">
+    <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+        <p className="eyebrow mb-4">
           How We Work
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-ink-foreground text-balance mb-4 leading-tight">
           The Pressense CRM Build Framework
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
+        <p className="text-lg text-ink-muted leading-relaxed mb-14 max-w-2xl">
           Diagnose. Strategise. Build. Scale. Every custom CRM development engagement follows this sequence. Each phase ends with a named deliverable so you always know what you are paying for.
         </p>
 
@@ -57,10 +57,10 @@ export function CustomCrmMethodologySection() {
             >
               {/* Left: number + name */}
               <div className="md:w-48 flex-shrink-0">
-                <span className="text-4xl font-bold text-primary/20 leading-none block mb-1">
+                <span className="font-medium text-primary/20 leading-none block mb-1">
                   {phase.number}
                 </span>
-                <h3 className="text-xl font-semibold text-foreground">{phase.name}</h3>
+                <h3 className="text-xl font-medium text-foreground">{phase.name}</h3>
                 <p className="text-sm text-muted-foreground mt-1">{phase.tagline}</p>
               </div>
 
@@ -68,7 +68,7 @@ export function CustomCrmMethodologySection() {
               <div className="flex-1">
                 <p className="text-muted-foreground leading-relaxed mb-5">{phase.description}</p>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/20">
-                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">Deliverable</span>
+                  <span className="text-xs font-medium text-primary uppercase tracking-wider">Deliverable</span>
                   <span className="text-xs text-foreground">{phase.deliverable}</span>
                 </div>
               </div>

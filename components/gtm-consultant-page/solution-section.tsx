@@ -43,16 +43,16 @@ const phases = [
 
 export function SolutionSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
 
         {/* Framework intro */}
         <div className="max-w-3xl mb-14">
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Our Methodology</span>
+            <div className="eyebrow-line" aria-hidden="true" />
+            <span className="eyebrow">Our Methodology</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-4">
+          <h2 className="text-section-title font-serif font-medium text-foreground text-balance mb-4">
             The PRESS Framework
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -63,24 +63,24 @@ export function SolutionSection() {
         {/* Phases */}
         <div className="flex flex-col gap-4">
           {phases.map((phase, i) => (
-            <div key={i} className="glass-card rounded-2xl border border-border/40 hover:border-primary/20 transition-all duration-300 overflow-hidden">
+            <div key={i} className="rounded-2xl bg-card border border-border border border-border/40 hover:border-primary/20 transition-all duration-300 overflow-hidden">
               <div className="flex flex-col md:flex-row">
                 {/* Letter accent */}
                 <div className="flex items-center justify-center w-full md:w-20 py-6 md:py-0 bg-primary/5 border-b md:border-b-0 md:border-r border-border/40 shrink-0">
-                  <span className="text-4xl font-bold text-primary/60">{phase.letter}</span>
+                  <span className="font-medium text-primary/60">{phase.letter}</span>
                 </div>
                 {/* Content */}
                 <div className="p-8 flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                     <div>
-                      <h3 className="text-xl font-semibold text-foreground">{phase.name}</h3>
+                      <h3 className="text-xl font-medium text-foreground">{phase.name}</h3>
                       <p className="text-sm text-primary font-medium">{phase.tagline}</p>
                     </div>
                     <span className="text-xs text-muted-foreground border border-border/40 rounded-full px-3 py-1 shrink-0 self-start">{phase.week}</span>
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">{phase.description}</p>
                   <div className="flex items-start gap-2">
-                    <span className="text-xs font-semibold text-primary uppercase tracking-wide shrink-0 mt-0.5">Deliverable:</span>
+                    <span className="text-xs font-medium text-primary uppercase tracking-wide shrink-0 mt-0.5">Deliverable:</span>
                     <span className="text-sm text-muted-foreground">{phase.deliverable}</span>
                   </div>
                 </div>

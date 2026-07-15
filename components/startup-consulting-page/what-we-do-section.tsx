@@ -41,13 +41,13 @@ const services = [
 
 export function StartupConsultingWhatWeDoSection() {
   return (
-    <section className="py-20 lg:py-28 border-t border-border/40">
+    <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-2xl mb-14">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             What We Do
           </span>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-4">
             Strategy and execution across six areas
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -60,9 +60,9 @@ export function StartupConsultingWhatWeDoSection() {
             <Link
               key={svc.title}
               href={svc.href}
-              className="glass-card rounded-2xl p-7 border border-border/40 hover:border-primary/30 transition-all duration-300 group"
+              className="rounded-2xl p-7 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/30 transition-all duration-300 group"
             >
-              <h3 className="text-base font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-base font-medium text-foreground mb-3 group-hover:text-primary transition-colors">
                 {svc.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{svc.description}</p>

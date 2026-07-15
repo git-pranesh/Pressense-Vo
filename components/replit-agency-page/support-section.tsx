@@ -27,12 +27,12 @@ const supportItems = [
 
 export function ReplitAgencySupportSection() {
   return (
-    <section id="support" className="py-20 md:py-28 border-t border-border/40">
+    <section id="support" className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
+        <p className="eyebrow mb-4">
           After launch
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           Support that does not disappear at handover
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -47,7 +47,7 @@ export function ReplitAgencySupportSection() {
             >
               <div className="flex items-start gap-3">
                 <div className="mt-1 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" aria-hidden="true" />
-                <h3 className="text-sm font-semibold text-foreground leading-snug">{item.title}</h3>
+                <h3 className="text-sm font-medium text-foreground leading-snug">{item.title}</h3>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed pl-4">{item.body}</p>
             </div>
@@ -56,12 +56,12 @@ export function ReplitAgencySupportSection() {
 
         <div className="mt-10 p-6 rounded-xl border border-primary/20 bg-primary/5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold text-foreground mb-1">Need ongoing development after launch?</p>
+            <p className="text-sm font-medium text-foreground mb-1">Need ongoing development after launch?</p>
             <p className="text-sm text-muted-foreground">Sprint retainer pricing is scoped on a call — based on the features you want to add and the level of support you need.</p>
           </div>
           <a
             href="/diagnostic"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 whitespace-nowrap"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 whitespace-nowrap"
           >
             Book a diagnostic
             <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">

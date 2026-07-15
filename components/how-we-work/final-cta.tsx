@@ -7,21 +7,11 @@ export function HowWeWorkCTA() {
       className="py-28 lg:py-40 relative overflow-hidden"
       aria-labelledby="start-heading"
     >
-      {/* Radial glow */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full opacity-15"
-        style={{
-          background:
-            'radial-gradient(circle, hsl(var(--primary)) 0%, transparent 70%)',
-        }}
-        aria-hidden="true"
-      />
-
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1280px] mx-auto px-5 sm:px-8 lg:px-12">
         <div className="max-w-3xl mx-auto text-center">
           <h2
             id="start-heading"
-            className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-[1.08]"
+            className="text-display font-serif font-medium text-foreground text-balance mb-6"
           >
             Ready to build the systems your business needs?
           </h2>
@@ -35,7 +25,7 @@ export function HowWeWorkCTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/diagnostic"
-              className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+              className="group inline-flex items-center gap-3 px-9 py-5 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
               aria-label="Start a diagnostic"
             >
               Start With a Diagnostic
@@ -60,7 +50,7 @@ export function HowWeWorkCTA() {
 
             <Link
               href="/what-we-fix"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
+              className="btn-secondary"
               aria-label="See what problems we solve"
             >
               See What We Fix

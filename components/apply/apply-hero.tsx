@@ -6,22 +6,20 @@ export function ApplyHero() {
       aria-label="Apply page introduction"
     >
       {/* Grid background */}
-      <div className="absolute inset-0 grid-bg opacity-40" aria-hidden="true" />
 
       {/* Subtle radial glow */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full bg-primary/5 blur-3xl pointer-events-none"
         aria-hidden="true"
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
         {/* Eyebrow */}
-        <p className="text-sm uppercase tracking-widest text-muted-foreground mb-6">
+        <p className="eyebrow mb-6">
           Apply to Work With Us
         </p>
 
         {/* H1 - Only H1 on page */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.08] text-balance mb-6">
+        <h1 className="text-display font-serif font-medium text-foreground leading-[1.08] text-balance mb-6">
           Let&apos;s see if we&apos;re the right fit.
         </h1>
 

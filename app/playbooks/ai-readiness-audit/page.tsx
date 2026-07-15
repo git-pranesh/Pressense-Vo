@@ -21,7 +21,7 @@ export default function AIReadinessAuditPlaybook() {
       
       <main className="min-h-screen">
         <section className="max-w-3xl mx-auto px-6 lg:px-10 py-20">
-          <h1 className="text-4xl font-bold tracking-tight mb-6">AI Readiness Audit Playbook</h1>
+          <h1 className="text-4xl font-medium tracking-tight mb-6">AI Readiness Audit Playbook</h1>
           <p className="text-lg text-muted-foreground mb-12">
             Assess your organization's readiness for AI implementation. This playbook guides you through 8 diagnostic steps to identify high-impact opportunities, evaluate risks, and build your implementation roadmap.
           </p>
