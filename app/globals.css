@@ -117,6 +117,9 @@
   --color-highlight: var(--highlight);
   --color-text-dim: var(--text-dim);
   --color-grid-line: var(--grid-line);
+
+  /* Ensure ring/focus colors resolve to dark, not purple */
+  --color-ring: var(--ring);
 }
 
 @layer base {
