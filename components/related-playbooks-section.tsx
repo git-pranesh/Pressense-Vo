@@ -26,7 +26,7 @@ export function RelatedPlaybooksSection({
             <span className="eyebrow">{eyebrow}</span>
           </div>
           
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground mb-10 text-balance">
+          <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-foreground mb-10 text-balance">
             {headline}
           </h2>
 
@@ -37,7 +37,7 @@ export function RelatedPlaybooksSection({
                 href={`/playbooks/${playbook.slug}`}
                 className="rounded-xl bg-card border border-border p-6 border border-border/40 hover:border-primary/20 transition-all group"
               >
-                <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-medium text-foreground mb-3 group-hover:text-primary transition-colors">
                   {playbook.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">

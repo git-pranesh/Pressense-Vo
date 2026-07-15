@@ -21,7 +21,7 @@ export function PlaybooksFinalCTA() {
 
           <a
             href="/diagnostic"
-            className="inline-flex items-center gap-2.5 px-9 py-5 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+            className="inline-flex items-center gap-2.5 px-9 py-5 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
             aria-label="Start a diagnostic"
           >
             Start With a Diagnostic

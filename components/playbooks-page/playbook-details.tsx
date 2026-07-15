@@ -288,7 +288,7 @@ export function PlaybookDetails() {
 
               {/* Who this is for */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
                   Who this is for
                 </h4>
                 <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
@@ -298,7 +298,7 @@ export function PlaybookDetails() {
 
               {/* Symptoms */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
                   Symptoms
                 </h4>
                 <ul className="space-y-2">
@@ -316,7 +316,7 @@ export function PlaybookDetails() {
 
               {/* What to diagnose */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
                   What to diagnose
                 </h4>
                 <ul className="space-y-2">
@@ -334,7 +334,7 @@ export function PlaybookDetails() {
 
               {/* What to fix first (highlighted) */}
               <div className="mb-10 p-6 rounded-xl bg-secondary/30 border border-primary/20">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
                   What to fix first
                 </h4>
                 <p className="text-base lg:text-lg text-foreground leading-relaxed font-medium">
@@ -344,7 +344,7 @@ export function PlaybookDetails() {
 
               {/* What to build */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
                   What to build
                 </h4>
                 <ul className="space-y-2">
@@ -362,7 +362,7 @@ export function PlaybookDetails() {
 
               {/* What to measure */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
                   What to measure
                 </h4>
                 <ul className="space-y-2">
@@ -380,7 +380,7 @@ export function PlaybookDetails() {
 
               {/* Common mistakes */}
               <div className="mb-10">
-                <h4 className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">
+                <h4 className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
                   Common mistakes
                 </h4>
                 <ul className="space-y-2">

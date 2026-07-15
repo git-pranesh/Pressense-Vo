@@ -52,7 +52,7 @@ export function ProblemSection() {
             >
               <div className="flex items-start gap-3 mb-3">
                 <span className="text-xs font-bold text-primary/50 pt-0.5 tabular-nums">0{i + 1}</span>
-                <h3 className="text-lg font-semibold text-foreground leading-snug">{item.title}</h3>
+                <h3 className="text-lg font-medium text-foreground leading-snug">{item.title}</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed text-sm">{item.detail}</p>
             </div>

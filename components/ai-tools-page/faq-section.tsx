@@ -40,10 +40,10 @@ export function ToolsFAQSection() {
     <section className="py-20">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             FAQ
           </span>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-12">
+          <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-12">
             Common questions about our tech stack
           </h2>
 

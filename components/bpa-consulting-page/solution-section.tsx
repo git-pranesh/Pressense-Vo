@@ -18,7 +18,7 @@ export function SolutionSection() {
         <div className="grid md:grid-cols-2 gap-6">
           {solutionPoints.map((point, i) => (
             <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-foreground mb-3">{point.title}</h3>
+              <h3 className="text-xl font-medium text-foreground mb-3">{point.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{point.description}</p>
             </div>
           ))}

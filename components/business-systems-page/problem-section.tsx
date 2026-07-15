@@ -19,7 +19,7 @@ export function ProblemSection() {
           {/* 4 named bottlenecks — H3s match how a frustrated operator would search */}
           <div className="grid gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Every decision still routes through the founder</h3>
+              <h3 className="text-xl font-medium text-foreground mb-3">Every decision still routes through the founder</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
                 When processes live in your head, your team cannot move without you. A systems consultant documents the decision logic, builds approval workflows, and creates SOPs that give your team the authority to act.
               </p>
@@ -29,7 +29,7 @@ export function ProblemSection() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">New hires take too long to become useful</h3>
+              <h3 className="text-xl font-medium text-foreground mb-3">New hires take too long to become useful</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
                 Onboarding that depends on tribal knowledge creates a three-month ramp period for every hire. We build onboarding systems, structured role documentation, and tool training that cut that to four weeks.
               </p>
@@ -39,7 +39,7 @@ export function ProblemSection() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Tools that do not talk to each other</h3>
+              <h3 className="text-xl font-medium text-foreground mb-3">Tools that do not talk to each other</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
                 CRM in HubSpot. Projects in Notion. Finance in QuickBooks. Support tickets in a spreadsheet. Every Monday someone manually copies data between three systems. We connect your stack so data flows automatically and reports are accurate.
               </p>
@@ -49,7 +49,7 @@ export function ProblemSection() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Operations that cannot survive the next hire wave</h3>
+              <h3 className="text-xl font-medium text-foreground mb-3">Operations that cannot survive the next hire wave</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
                 You are about to double the team. The current systems cannot handle double the people. Fixing your operational infrastructure before you scale prevents the chaos that comes from growing into broken systems.
               </p>

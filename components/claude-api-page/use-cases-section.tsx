@@ -60,7 +60,7 @@ export function ClaudeApiUseCasesSection() {
     <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">Use Cases</p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           What businesses use the Claude API for
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -69,8 +69,8 @@ export function ClaudeApiUseCasesSection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {useCases.map((uc) => (
-            <div key={uc.industry} className="p-6 rounded-2xl border border-border/50 bg-card">
-              <h3 className="text-base font-semibold text-foreground mb-4">{uc.industry}</h3>
+            <div key={uc.industry} className="p-6 rounded-2xl bg-card">
+              <h3 className="text-base font-medium text-foreground mb-4">{uc.industry}</h3>
               <div className="space-y-2">
                 {uc.uses.map((u) => (
                   <div key={u} className="flex items-start gap-2">

@@ -47,7 +47,7 @@ export function FramerUseCasesSection() {
     <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">Use Cases</p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           What we build in Framer
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -56,8 +56,8 @@ export function FramerUseCasesSection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {useCases.map((uc) => (
-            <div key={uc.title} className="p-6 rounded-2xl border border-border/50 bg-card">
-              <h3 className="text-base font-semibold text-foreground mb-2">{uc.title}</h3>
+            <div key={uc.title} className="p-6 rounded-2xl bg-card">
+              <h3 className="text-base font-medium text-foreground mb-2">{uc.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">{uc.description}</p>
               <div className="space-y-1.5">
                 {uc.examples.map((e) => (

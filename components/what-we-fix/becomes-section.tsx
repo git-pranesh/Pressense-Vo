@@ -100,7 +100,7 @@ export function BecomesSection() {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-semibold text-foreground mb-6">
+              <h3 className="text-xl font-medium text-foreground mb-6">
                 {item.title}
               </h3>
 

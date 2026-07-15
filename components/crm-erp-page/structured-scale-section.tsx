@@ -3,7 +3,7 @@ export function CrmErpStructuredScaleSection() {
     <section className="py-24 lg:py-32" aria-label="How this connects to structured scale">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-8">
+          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground mb-8">
             How this connects to structured scale.
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">

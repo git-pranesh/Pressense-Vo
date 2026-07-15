@@ -30,11 +30,11 @@ export function AdvisoryModelSection() {
             <div key={i} className="flex gap-6">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10 border border-primary/20">
-                  <span className="text-lg font-semibold text-primary">{i + 1}</span>
+                  <span className="text-lg font-medium text-primary">{i + 1}</span>
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-foreground mb-2">{phase.title}</h3>
+                <h3 className="text-xl font-medium text-foreground mb-2">{phase.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{phase.description}</p>
               </div>
             </div>

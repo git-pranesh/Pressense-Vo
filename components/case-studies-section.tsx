@@ -111,7 +111,7 @@ export function CaseStudiesSection() {
               {/* Content */}
               <div className="p-7 flex flex-col gap-4 flex-1">
                 <span className="text-xs tracking-[0.15em] uppercase text-text-dim font-medium">{study.category}</span>
-                <h3 className="text-lg font-semibold text-foreground leading-snug">{study.title}</h3>
+                <h3 className="text-lg font-medium text-foreground leading-snug">{study.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{study.description}</p>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {study.tags.map((tag) => (

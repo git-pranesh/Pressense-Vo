@@ -4,7 +4,7 @@ export function SystemsHero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
+      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20"
       aria-label="Business Systems Consultant"
     >
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
@@ -42,7 +42,7 @@ export function SystemsHero() {
               { stat: '$1M–$15M', label: 'ARR sweet spot' },
             ].map((item) => (
               <div key={item.stat} className="flex flex-col">
-                <span className="text-2xl font-semibold text-foreground">{item.stat}</span>
+                <span className="text-2xl font-medium text-foreground">{item.stat}</span>
                 <span className="text-xs text-muted-foreground mt-0.5">{item.label}</span>
               </div>
             ))}
@@ -52,7 +52,7 @@ export function SystemsHero() {
           <div className="flex flex-col sm:flex-row items-start gap-4">
             <Link
               href="/diagnostic"
-              className="group inline-flex items-center gap-3 px-9 py-5 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+              className="group inline-flex items-center gap-3 px-9 py-5 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic
               <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
@@ -63,7 +63,7 @@ export function SystemsHero() {
             </Link>
             <Link
               href="/playbooks"
-              className="group inline-flex items-center gap-2 px-9 py-5 rounded-full text-base font-semibold border border-border text-foreground hover:border-foreground/40 transition-all duration-200"
+              className="group inline-flex items-center gap-2 px-9 py-5 rounded-full text-base font-medium border border-border text-foreground hover:border-foreground/40 transition-all duration-200"
             >
               See Our Playbooks
             </Link>

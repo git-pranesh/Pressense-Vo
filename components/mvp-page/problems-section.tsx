@@ -43,7 +43,7 @@ export function MvpProblemsSection() {
         <p className="eyebrow mb-4">
           Common Questions
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-14 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-14 leading-tight">
           What founders ask before starting MVP development
         </h2>
 
@@ -53,7 +53,7 @@ export function MvpProblemsSection() {
               key={p.heading}
               className={`py-10 ${i < problems.length - 1 ? 'border-b border-border/30' : ''}`}
             >
-              <h3 className="text-xl font-semibold text-foreground mb-4 text-balance">{p.heading}</h3>
+              <h3 className="text-xl font-medium text-foreground mb-4 text-balance">{p.heading}</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">{p.body1}</p>
               <p className="text-muted-foreground leading-relaxed">{p.body2}</p>
             </div>

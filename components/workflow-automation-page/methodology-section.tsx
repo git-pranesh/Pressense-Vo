@@ -41,7 +41,7 @@ export function MethodologySection() {
   return (
     <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
-        <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
+        <p className="text-xs font-medium tracking-widest uppercase text-primary/70 mb-4">
           Our Methodology
         </p>
         <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground text-balance mb-4">
@@ -60,20 +60,20 @@ export function MethodologySection() {
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-3xl font-bold text-primary/20 leading-none">{phase.number}</span>
                 <div>
-                  <h3 className="font-semibold text-lg text-foreground leading-tight">{phase.phase}</h3>
+                  <h3 className="font-medium text-lg text-foreground leading-tight">{phase.phase}</h3>
                   <p className="text-sm text-primary/80 font-medium">{phase.tagline}</p>
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-4">{phase.description}</p>
               <div className="flex items-start justify-between gap-4 pt-4">
                 <div>
-                  <p className="text-xs font-semibold tracking-widest uppercase text-primary/60 mb-1">
+                  <p className="text-xs font-medium tracking-widest uppercase text-primary/60 mb-1">
                     Deliverable
                   </p>
                   <p className="text-sm text-muted-foreground">{phase.deliverable}</p>
                 </div>
                 <div className="shrink-0 text-right">
-                  <p className="text-xs font-semibold tracking-widest uppercase text-primary/60 mb-1">
+                  <p className="text-xs font-medium tracking-widest uppercase text-primary/60 mb-1">
                     Timeline
                   </p>
                   <p className="text-sm text-foreground font-medium">{phase.duration}</p>

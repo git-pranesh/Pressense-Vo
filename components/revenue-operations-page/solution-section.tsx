@@ -49,10 +49,10 @@ export function SolutionSection() {
           <table className="w-full text-sm" role="table" aria-label="RevOps hiring options comparison">
             <thead>
               <tr className="border-b border-border/40 bg-card/40">
-                <th className="text-left px-6 py-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Factor</th>
-                <th className="px-6 py-4 text-center text-xs font-semibold uppercase tracking-widest text-primary bg-primary/5">Fractional RevOps</th>
-                <th className="px-6 py-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">Full-time RevOps</th>
-                <th className="px-6 py-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">Agency RevOps</th>
+                <th className="text-left px-6 py-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">Factor</th>
+                <th className="px-6 py-4 text-center text-xs font-medium uppercase tracking-widest text-primary bg-primary/5">Fractional RevOps</th>
+                <th className="px-6 py-4 text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">Full-time RevOps</th>
+                <th className="px-6 py-4 text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">Agency RevOps</th>
               </tr>
             </thead>
             <tbody>
@@ -62,7 +62,7 @@ export function SolutionSection() {
                   className={`border-b border-border/30 last:border-0 ${row.highlight ? 'bg-primary/3' : ''}`}
                 >
                   <td className="px-6 py-4 font-medium text-foreground">{row.label}</td>
-                  <td className="px-6 py-4 text-center font-semibold text-primary bg-primary/5">{row.fractional}</td>
+                  <td className="px-6 py-4 text-center font-medium text-primary bg-primary/5">{row.fractional}</td>
                   <td className="px-6 py-4 text-center text-muted-foreground">{row.fullTime}</td>
                   <td className="px-6 py-4 text-center text-muted-foreground">{row.agency}</td>
                 </tr>

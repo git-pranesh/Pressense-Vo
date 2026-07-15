@@ -17,10 +17,10 @@ export function EngagementPathSection() {
           {steps.map((step, i) => (
             <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors flex gap-6 items-start">
               <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 border border-primary/20">
-                <span className="text-sm font-semibold text-primary">{step.number}</span>
+                <span className="text-sm font-medium text-primary">{step.number}</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-foreground mb-2">{step.title}</h3>
+                <h3 className="text-lg font-medium text-foreground mb-2">{step.title}</h3>
                 <p className="text-base text-muted-foreground leading-relaxed">{step.description}</p>
               </div>
             </div>

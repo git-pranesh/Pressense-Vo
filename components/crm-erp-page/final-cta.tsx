@@ -12,7 +12,7 @@ export function CrmErpFinalCTA() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="/diagnostic"
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
           >
             Start With a Diagnostic
             <span className="w-5 h-5 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
@@ -23,7 +23,7 @@ export function CrmErpFinalCTA() {
           </a>
           <a
             href="/playbooks"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold border border-border hover:border-primary/50 text-foreground hover:text-primary transition-all duration-200"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-medium border border-border hover:border-primary/50 text-foreground hover:text-primary transition-all duration-200"
           >
             View Playbooks
           </a>

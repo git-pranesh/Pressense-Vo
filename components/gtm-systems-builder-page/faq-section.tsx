@@ -43,7 +43,7 @@ export function GtmSystemsBuilderFaqSection() {
         <p className="eyebrow mb-4">
           FAQ
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-14 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-14 leading-tight">
           GTM systems builder questions
         </h2>
 
@@ -53,7 +53,7 @@ export function GtmSystemsBuilderFaqSection() {
               key={faq.question}
               className={`py-8 ${i < faqs.length - 1 ? 'border-b border-border/30' : ''}`}
             >
-              <h3 className="text-lg font-semibold text-foreground mb-3">{faq.question}</h3>
+              <h3 className="text-lg font-medium text-foreground mb-3">{faq.question}</h3>
               <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
             </div>
           ))}

@@ -2,7 +2,7 @@ export function StartupConsultingHero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
+      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20"
       aria-label="Consulting for founder-led businesses"
     >
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
@@ -48,7 +48,7 @@ export function StartupConsultingHero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="/diagnostic"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">

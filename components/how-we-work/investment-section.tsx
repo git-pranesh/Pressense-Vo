@@ -77,11 +77,11 @@ export function InvestmentSection() {
               }`}
             >
               {tier.featured && (
-                <span className="inline-block text-xs font-semibold tracking-wider uppercase text-primary mb-3">
+                <span className="inline-block text-xs font-medium tracking-wider uppercase text-primary mb-3">
                   Most Common
                 </span>
               )}
-              <h3 className="text-xl font-semibold text-foreground mb-2">
+              <h3 className="text-xl font-medium text-foreground mb-2">
                 {tier.name}
               </h3>
               <p className="text-sm text-muted-foreground mb-6">{tier.description}</p>

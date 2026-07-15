@@ -14,7 +14,7 @@ export function ClaudeApiComparisonSection() {
     <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">Model Comparison</p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           Claude vs GPT-4o: which one should you use?
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl">
@@ -23,9 +23,9 @@ export function ClaudeApiComparisonSection() {
 
         <div className="rounded-2xl border border-border/40 overflow-hidden">
           <div className="grid grid-cols-3 bg-secondary/40 px-6 py-3">
-            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Attribute</span>
-            <span className="text-xs font-semibold text-primary uppercase tracking-wider">Claude (Anthropic)</span>
-            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">OpenAI GPT-4o</span>
+            <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Attribute</span>
+            <span className="text-xs font-medium text-primary uppercase tracking-wider">Claude (Anthropic)</span>
+            <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">OpenAI GPT-4o</span>
           </div>
           {rows.map((row, i) => (
             <div

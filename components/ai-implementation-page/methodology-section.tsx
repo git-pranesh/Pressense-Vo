@@ -42,7 +42,7 @@ export function AIImplementationMethodologySection() {
           <span className="eyebrow-on-dark">How We Work</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-semibold text-ink-foreground text-balance mb-10">
+        <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground text-balance mb-10">
           From diagnostic to daily use in six weeks
         </h2>
 
@@ -51,11 +51,11 @@ export function AIImplementationMethodologySection() {
             <div key={phase.number} className="grid sm:grid-cols-[80px_1fr] gap-6">
               <div className="flex flex-col gap-1">
                 <span className="text-3xl font-bold text-primary/40">{phase.number}</span>
-                <span className="text-sm font-semibold text-foreground">{phase.name}</span>
+                <span className="text-sm font-medium text-foreground">{phase.name}</span>
                 <span className="text-xs text-muted-foreground">{phase.timing}</span>
               </div>
               <div>
-                <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-3">Deliverable: {phase.deliverable}</p>
+                <p className="text-xs font-medium tracking-widest uppercase text-primary/70 mb-3">Deliverable: {phase.deliverable}</p>
                 <p className="text-muted-foreground leading-relaxed mb-3">{phase.p1}</p>
                 <p className="text-muted-foreground leading-relaxed">{phase.p2}</p>
               </div>

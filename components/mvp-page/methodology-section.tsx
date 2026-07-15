@@ -40,7 +40,7 @@ export function MvpMethodologySection() {
         <p className="eyebrow mb-4">
           How We Work
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-ink-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-ink-foreground text-balance mb-4 leading-tight">
           How long does MVP development take? The 8-week framework
         </h2>
         <p className="text-lg text-ink-muted leading-relaxed mb-14 max-w-2xl">
@@ -59,14 +59,14 @@ export function MvpMethodologySection() {
                 <span className="font-medium text-primary/20 leading-none block mb-1">
                   {phase.number}
                 </span>
-                <h3 className="text-xl font-semibold text-foreground">{phase.name}</h3>
+                <h3 className="text-xl font-medium text-foreground">{phase.name}</h3>
                 <p className="text-sm text-muted-foreground mt-1">{phase.tagline}</p>
               </div>
 
               <div className="flex-1">
                 <p className="text-muted-foreground leading-relaxed mb-5">{phase.description}</p>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/20">
-                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">Deliverable</span>
+                  <span className="text-xs font-medium text-primary uppercase tracking-wider">Deliverable</span>
                   <span className="text-xs text-foreground">{phase.deliverable}</span>
                 </div>
               </div>

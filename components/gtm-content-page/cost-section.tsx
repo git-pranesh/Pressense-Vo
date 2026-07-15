@@ -56,7 +56,7 @@ export function GtmContentCostSection() {
         <p className="eyebrow mb-4">
           Pricing
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           What does a GTM content system cost?
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
@@ -77,11 +77,11 @@ export function GtmContentCostSection() {
               }`}
             >
               {tier.highlighted && (
-                <span className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">
+                <span className="text-xs font-medium text-primary uppercase tracking-wider mb-3">
                   Most Common
                 </span>
               )}
-              <h3 className="text-lg font-semibold text-foreground mb-1">{tier.name}</h3>
+              <h3 className="text-lg font-medium text-foreground mb-1">{tier.name}</h3>
               <p className="text-2xl font-medium text-foreground mb-0.5">{tier.price}</p>
               <p className="text-xs text-muted-foreground mb-1">{tier.note}</p>
               <p className="text-xs text-muted-foreground mb-5">Timeline: {tier.timeline}</p>

@@ -2,7 +2,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-background"
+      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden bg-background"
       aria-label="Introduction and value proposition"
     >
       <div className="max-w-[1280px] mx-auto px-5 sm:px-8 lg:px-12 pt-40 pb-20">

@@ -19,12 +19,12 @@ export function EngagementPathSection() {
               <div className="flex gap-6">
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center flex-shrink-0">
-                    <span className="text-sm font-semibold text-primary">{step.number}</span>
+                    <span className="text-sm font-medium text-primary">{step.number}</span>
                   </div>
                   {step.number < steps.length && <div className="w-0.5 h-12 bg-primary/20 my-2" />}
                 </div>
                 <div className="flex-1 pt-1">
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{step.title}</h3>
+                  <h3 className="text-lg font-medium text-foreground mb-2">{step.title}</h3>
                   <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>
                 </div>
               </div>

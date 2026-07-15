@@ -46,7 +46,7 @@ export function SeoSaasWhoItsForSection() {
         <p className="eyebrow mb-4">
           Right Fit
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-ink-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-ink-foreground text-balance mb-4 leading-tight">
           Who this SEO content programme is built for
         </h2>
         <p className="text-lg text-ink-muted leading-relaxed mb-14 max-w-2xl">
@@ -57,11 +57,11 @@ export function SeoSaasWhoItsForSection() {
           {rightFor.map((item) => (
             <div
               key={item.title}
-              className="p-6 rounded-2xl border border-border/50 bg-card"
+              className="p-6 rounded-2xl bg-card"
             >
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                <h3 className="text-base font-semibold text-foreground">{item.title}</h3>
+                <h3 className="text-base font-medium text-foreground">{item.title}</h3>
               </div>
               <p className="text-sm text-ink-muted leading-relaxed">{item.description}</p>
             </div>
@@ -72,7 +72,7 @@ export function SeoSaasWhoItsForSection() {
           <p className="eyebrow mb-4">
             Honest Disqualifiers
           </p>
-          <h3 className="text-2xl font-semibold text-ink-foreground text-balance mb-10">
+          <h3 className="text-2xl font-medium text-ink-foreground text-balance mb-10">
             This is not right for you if...
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
@@ -81,7 +81,7 @@ export function SeoSaasWhoItsForSection() {
                 key={item.title}
                 className="p-6 rounded-2xl border border-border/30 bg-secondary/20"
               >
-                <h4 className="text-base font-semibold text-foreground mb-3">{item.title}</h4>
+                <h4 className="text-base font-medium text-foreground mb-3">{item.title}</h4>
                 <p className="text-sm text-ink-muted leading-relaxed">{item.description}</p>
               </div>
             ))}

@@ -22,7 +22,7 @@ export function CTABannerBlock({
         {ctaText && (
           <a
             href={ctaUrl || '#'}
-            className="inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-slate-100 transition"
+            className="inline-block px-8 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-slate-100 transition"
           >
             {ctaText}
           </a>

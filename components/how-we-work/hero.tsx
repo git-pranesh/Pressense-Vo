@@ -32,7 +32,7 @@ export function HowWeWorkHero() {
                 key={phase}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-surface border border-border text-foreground"
               >
-                <span className="w-5 h-5 rounded-full bg-primary text-primary-foreground text-xs font-semibold flex items-center justify-center" aria-hidden="true">
+                <span className="w-5 h-5 rounded-full bg-primary text-primary-foreground text-xs font-medium flex items-center justify-center" aria-hidden="true">
                   {i + 1}
                 </span>
                 {phase}

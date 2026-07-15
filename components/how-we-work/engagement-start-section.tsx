@@ -62,7 +62,7 @@ export function EngagementStartSection() {
 
               {/* Content */}
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-xl font-medium text-foreground mb-3">
                   {type.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

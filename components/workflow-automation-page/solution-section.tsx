@@ -39,7 +39,7 @@ export function SolutionSection() {
   return (
     <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
-        <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
+        <p className="text-xs font-medium tracking-widest uppercase text-primary/70 mb-4">
           How It Works
         </p>
         <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-4">
@@ -75,12 +75,12 @@ export function SolutionSection() {
 
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                   <div className="flex-1">
-                    <h3 className="font-semibold text-lg text-foreground mb-1">{step.phase}</h3>
+                    <h3 className="font-medium text-lg text-foreground mb-1">{step.phase}</h3>
                     <p className="text-sm font-medium text-primary/80 mb-3">{step.tagline}</p>
                     <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                   </div>
                   <div className="sm:w-64 shrink-0">
-                    <p className="text-xs font-semibold tracking-widest uppercase text-primary/60 mb-1">
+                    <p className="text-xs font-medium tracking-widest uppercase text-primary/60 mb-1">
                       Deliverable
                     </p>
                     <p className="text-sm text-muted-foreground leading-relaxed">{step.deliverable}</p>

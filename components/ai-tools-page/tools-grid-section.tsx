@@ -144,10 +144,10 @@ export function ToolsGridSection() {
     <section id="tools" className="py-20">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl mb-14">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             Full Stack
           </span>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-4">
             Every tool. Every use case. Every outcome.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -161,7 +161,7 @@ export function ToolsGridSection() {
             <div key={category.category}>
               <div className="flex items-center gap-3 mb-8">
                 <div className="h-px w-8 bg-primary/40" aria-hidden="true" />
-                <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold">
+                <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium">
                   {category.category}
                 </span>
               </div>
@@ -173,7 +173,7 @@ export function ToolsGridSection() {
                     className="rounded-2xl border border-border/60 bg-card/40 p-8 hover:border-primary/30 transition-colors"
                   >
                     <div className="flex items-start justify-between gap-4 mb-4">
-                      <h3 className="text-xl font-semibold text-foreground">{tool.name}</h3>
+                      <h3 className="text-xl font-medium text-foreground">{tool.name}</h3>
                       {tool.badge && (
                         <span className="shrink-0 text-xs font-medium text-primary bg-primary/10 px-2.5 py-1 rounded-full">
                           {tool.badge}

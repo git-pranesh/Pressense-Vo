@@ -47,13 +47,13 @@ export function ProblemSection() {
 
         {/* 4 core RevOps services */}
         <div>
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance mb-10">
+          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground text-balance mb-10">
             Revenue operations consulting services
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {services.map((service, i) => (
               <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
-                <h3 className="text-xl font-semibold text-foreground mb-3">{service.name}</h3>
+                <h3 className="text-xl font-medium text-foreground mb-3">{service.name}</h3>
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
             ))}

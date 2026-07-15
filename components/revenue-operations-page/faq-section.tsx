@@ -43,14 +43,14 @@ export function FAQSection() {
             <span className="eyebrow">Common questions</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance mb-12">
+          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground text-balance mb-12">
             Revenue operations consulting: frequently asked questions
           </h2>
 
           <div className="divide-y divide-border/40">
             {faqs.map((faq, i) => (
               <div key={i} className="py-8">
-                <h3 className="text-xl font-semibold text-foreground mb-4">{faq.question}</h3>
+                <h3 className="text-xl font-medium text-foreground mb-4">{faq.question}</h3>
                 <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
               </div>
             ))}

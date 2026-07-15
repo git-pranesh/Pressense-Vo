@@ -32,11 +32,11 @@ export function WhatYouGetSection() {
           </div>
           <div className="flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end shrink-0">
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-primary/30 bg-primary/5">
-              <span className="text-sm font-semibold text-primary">90-day engagement</span>
+              <span className="text-sm font-medium text-primary">90-day engagement</span>
             </div>
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-border/40 bg-card/40">
               <span className="text-sm font-medium text-muted-foreground">Starting from</span>
-              <span className="text-sm font-semibold text-foreground">$1,500</span>
+              <span className="text-sm font-medium text-foreground">$1,500</span>
             </div>
           </div>
         </div>
@@ -53,8 +53,8 @@ export function WhatYouGetSection() {
               key={i}
               className={`grid grid-cols-3 px-6 py-4 gap-4 ${i < deliverables.length - 1 ? 'border-b border-border/40' : ''}`}
             >
-              <span className="text-sm font-semibold text-primary">{row.week}</span>
-              <span className="text-sm font-semibold text-foreground">{row.phase}</span>
+              <span className="text-sm font-medium text-primary">{row.week}</span>
+              <span className="text-sm font-medium text-foreground">{row.phase}</span>
               <span className="text-sm text-muted-foreground">{row.items}</span>
             </div>
           ))}

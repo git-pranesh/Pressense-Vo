@@ -40,7 +40,7 @@ export function SMBStrategyFAQSection() {
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
         <div className="mb-3 flex items-center gap-3">
           <span className="eyebrow-line" aria-hidden="true" />
-          <span className="text-xs font-semibold tracking-widest uppercase text-primary/70">Common Questions</span>
+          <span className="text-xs font-medium tracking-widest uppercase text-primary/70">Common Questions</span>
         </div>
         <h2 className="text-3xl font-medium text-foreground text-pretty mb-8">
           Frequently asked questions
@@ -48,7 +48,7 @@ export function SMBStrategyFAQSection() {
         <Accordion type="single" collapsible className="space-y-2">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`faq-${i}`} className="border border-border/40 rounded-lg px-5">
-              <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline py-4">
+              <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline py-4">
                 {faq.q}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground leading-relaxed pb-4">

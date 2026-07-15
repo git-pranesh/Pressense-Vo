@@ -44,7 +44,7 @@ export function SaaSGTMFAQSection() {
           <span className="eyebrow">FAQ</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-10">
+        <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-10">
           Common questions about SaaS go-to-market strategy
         </h2>
 
@@ -56,7 +56,7 @@ export function SaaSGTMFAQSection() {
                 onClick={() => setOpen(open === i ? null : i)}
                 aria-expanded={open === i}
               >
-                <span className="text-base font-semibold text-foreground">{faq.q}</span>
+                <span className="text-base font-medium text-foreground">{faq.q}</span>
                 <svg
                   width="16"
                   height="16"

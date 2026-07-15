@@ -15,7 +15,7 @@ export function WhatYouGetSection() {
   return (
     <section className="py-20 lg:py-28">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
-        <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
+        <p className="text-xs font-medium tracking-widest uppercase text-primary/70 mb-4">
           Deliverables
         </p>
         <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-4">
@@ -32,10 +32,10 @@ export function WhatYouGetSection() {
         {/* Timeline table */}
         <div className="rounded-2xl border border-border/40 overflow-hidden mb-10">
           <div className="grid grid-cols-3 bg-card/60 px-6 py-3">
-            <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground col-span-2">
+            <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground col-span-2">
               Deliverable
             </p>
-            <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground text-right">
+            <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground text-right">
               Timeline
             </p>
           </div>

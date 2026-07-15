@@ -2,7 +2,7 @@ export function ReplitAgencyHero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
+      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20"
       aria-label="Replit development agency"
     >
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
@@ -32,17 +32,17 @@ export function ReplitAgencyHero() {
           {/* Micro-stats */}
           <div className="flex flex-wrap gap-x-8 gap-y-3 mb-10">
             <div>
-              <p className="text-2xl font-semibold text-foreground">2–8 weeks</p>
+              <p className="text-2xl font-medium text-foreground">2–8 weeks</p>
               <p className="text-xs text-muted-foreground uppercase tracking-wide">from brief to live app</p>
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
             <div>
-              <p className="text-2xl font-semibold text-foreground">From $1,500</p>
+              <p className="text-2xl font-medium text-foreground">From $1,500</p>
               <p className="text-xs text-muted-foreground uppercase tracking-wide">production builds</p>
             </div>
             <div className="w-px bg-border/40 self-stretch" aria-hidden="true" />
             <div>
-              <p className="text-2xl font-semibold text-foreground">You own it</p>
+              <p className="text-2xl font-medium text-foreground">You own it</p>
               <p className="text-xs text-muted-foreground uppercase tracking-wide">Code in your account</p>
             </div>
           </div>
@@ -50,7 +50,7 @@ export function ReplitAgencyHero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="/diagnostic"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">

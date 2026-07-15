@@ -52,7 +52,7 @@ export function SaaSGTMWhatYouGetSection() {
           <span className="eyebrow">What You Get</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-4">
+        <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-4">
           How much does SaaS go-to-market strategy cost?
         </h2>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mb-10">
@@ -70,10 +70,10 @@ export function SaaSGTMWhatYouGetSection() {
               }`}
             >
               {tier.featured && (
-                <span className="text-xs font-semibold tracking-widest uppercase text-primary">Most popular</span>
+                <span className="text-xs font-medium tracking-widest uppercase text-primary">Most popular</span>
               )}
               <div>
-                <h3 className="text-base font-semibold text-foreground mb-1">{tier.name}</h3>
+                <h3 className="text-base font-medium text-foreground mb-1">{tier.name}</h3>
                 <p className="text-xl font-medium text-foreground">{tier.price}</p>
                 <p className="text-xs text-muted-foreground">{tier.timeline}</p>
               </div>

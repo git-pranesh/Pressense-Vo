@@ -59,7 +59,7 @@ export function WorkGrid() {
                 <span className="text-xs tracking-[0.15em] uppercase font-medium text-primary">{work.category}</span>
               </div>
               
-              <h3 className="text-2xl lg:text-3xl font-semibold text-foreground mb-6 text-balance">{work.title}</h3>
+              <h3 className="text-2xl lg:text-3xl font-medium text-foreground mb-6 text-balance">{work.title}</h3>
               
               <div className="space-y-6">
                 <div>

@@ -430,3 +430,41 @@ input:focus, textarea:focus, select:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px var(--accent-wash);
 }
+
+/* ─── Global heading weight enforcement (font-weight: 400) ──────────────── */
+/* Override any inline font-medium/font-semibold Tailwind classes on section headings */
+section h1,
+section h2,
+section h3,
+section h4,
+section h5 {
+  font-weight: 400 !important;
+  font-family: var(--font-serif);
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+}
+
+/* ─── Eyebrow color fixes (light eyebrow on light bg, dark on dark) ──────── */
+/* Light background sections: eyebrow should be foreground-muted */
+.bg-background .eyebrow-on-dark,
+.bg-surface .eyebrow-on-dark {
+  color: var(--muted-foreground);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-family: var(--font-sans);
+}
+
+/* Dark background sections: eyebrow should be ink-muted */
+.bg-ink .eyebrow,
+.bg-ink .eyebrow-on-light {
+  color: var(--ink-muted);
+}
+
+/* ─── Consistent section content width (max-w-7xl = 1280px) ──────────────── */
+section > .max-w-7xl {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

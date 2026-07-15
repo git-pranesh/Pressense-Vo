@@ -1,6 +1,6 @@
 export function PlaybooksHero() {
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="Playbooks and implementation guides">
+    <section id="hero" className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20" aria-label="Playbooks and implementation guides">
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-6">

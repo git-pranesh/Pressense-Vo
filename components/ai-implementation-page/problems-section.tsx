@@ -34,14 +34,14 @@ export function AIImplementationProblemsSection() {
           <span className="eyebrow">What We Solve</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-10">
+        <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-10">
           The questions every small business owner asks before starting
         </h2>
 
         <div className="flex flex-col gap-10">
           {problems.map((p) => (
             <div key={p.heading} id={p.id}>
-              <h3 className="text-lg font-semibold text-foreground mb-3">{p.heading}</h3>
+              <h3 className="text-lg font-medium text-foreground mb-3">{p.heading}</h3>
               <p className="text-muted-foreground leading-relaxed mb-3">{p.p1}</p>
               <p className="text-muted-foreground leading-relaxed">{p.p2}</p>
             </div>

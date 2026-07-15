@@ -66,7 +66,7 @@ export function OpenAIUseCasesSection() {
     <section className="py-20 md:py-28">
       <div className="container max-w-5xl mx-auto px-5 sm:px-8">
         <p className="eyebrow mb-4">Use Cases by Model</p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           What you can build with the OpenAI API
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -75,8 +75,8 @@ export function OpenAIUseCasesSection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {useCases.map((uc) => (
-            <div key={uc.model} className="p-6 rounded-2xl border border-border/50 bg-card">
-              <h3 className="text-sm font-semibold text-primary mb-1">{uc.model}</h3>
+            <div key={uc.model} className="p-6 rounded-2xl bg-card">
+              <h3 className="text-sm font-medium text-primary mb-1">{uc.model}</h3>
               <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{uc.description}</p>
               <div className="space-y-2">
                 {uc.uses.map((u) => (

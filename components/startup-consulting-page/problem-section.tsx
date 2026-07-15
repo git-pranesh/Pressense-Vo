@@ -30,10 +30,10 @@ export function StartupConsultingProblemSection() {
     <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-2xl mb-14">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             The Problem
           </span>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-4">
             Six symptoms that bring founders to us
           </h2>
           <p className="text-lg text-ink-muted leading-relaxed">
@@ -47,7 +47,7 @@ export function StartupConsultingProblemSection() {
               key={item.symptom}
               className="rounded-2xl p-6 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300"
             >
-              <h3 className="text-base font-semibold text-foreground mb-3">{item.symptom}</h3>
+              <h3 className="text-base font-medium text-foreground mb-3">{item.symptom}</h3>
               <p className="text-sm text-ink-muted leading-relaxed">{item.root}</p>
             </article>
           ))}

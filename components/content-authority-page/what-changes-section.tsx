@@ -17,7 +17,7 @@ export function WhatChangesSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {changes.map((change) => (
             <div key={change.title} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-foreground mb-3">{change.title}</h3>
+              <h3 className="text-lg font-medium text-foreground mb-3">{change.title}</h3>
               <p className="text-sm leading-relaxed text-muted-foreground">{change.description}</p>
             </div>
           ))}

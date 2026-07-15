@@ -76,7 +76,7 @@ export function StartFocusedSection() {
         <div className="mt-16 flex justify-center">
           <a
             href="/diagnostic"
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-semibold bg-ink-foreground text-ink hover:bg-ink-foreground/90 transition-all duration-200"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-medium bg-ink-foreground text-ink hover:bg-ink-foreground/90 transition-all duration-200"
             aria-label="Start with a focused diagnostic"
           >
             Start With a Diagnostic

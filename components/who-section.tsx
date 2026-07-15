@@ -44,7 +44,7 @@ export function WhoSection() {
                   <path d="M1.5 5.5L3.5 7.5l5-5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="text-primary" />
                 </svg>
               </div>
-              <span className="text-sm font-semibold text-ink-foreground">This is for you if</span>
+              <span className="text-sm font-medium text-ink-foreground">This is for you if</span>
             </div>
             <ul className="flex flex-col gap-3" role="list">
               {forItems.map((item, i) => (
@@ -64,7 +64,7 @@ export function WhoSection() {
                   <path d="M2 2l6 6M8 2L2 8" stroke="#6F6A64" strokeWidth="1.4" strokeLinecap="round" />
                 </svg>
               </div>
-              <span className="text-sm font-semibold text-ink-muted">This is not for you if</span>
+              <span className="text-sm font-medium text-ink-muted">This is not for you if</span>
             </div>
             <ul className="flex flex-col gap-3" role="list">
               {notForItems.map((item, i) => (

@@ -119,7 +119,7 @@ export function ProblemsGrid() {
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-semibold text-foreground mb-3 pr-12">
+              <h3 className="text-xl font-medium text-foreground mb-3 pr-12">
                 {problem.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-5">

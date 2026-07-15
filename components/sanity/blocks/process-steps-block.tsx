@@ -28,7 +28,7 @@ export function ProcessStepsBlock({ title, steps }: ProcessStepsBlockProps) {
                 <div className="hidden lg:block absolute top-6 left-16 w-12 h-0.5 bg-slate-200" />
               )}
               
-              <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
+              <h3 className="text-lg font-medium mb-2">{step.title}</h3>
               <p className="text-slate-600">{step.description}</p>
             </div>
           ))}

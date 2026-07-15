@@ -30,7 +30,7 @@ export function ReplitAgencyWhatWeBuildSection() {
         <p className="eyebrow mb-4">
           What you can build
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           What can you build with Replit? 15 business apps we&apos;ve built for clients
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -45,13 +45,13 @@ export function ReplitAgencyWhatWeBuildSection() {
             >
               <div className="flex items-center justify-between mb-3">
                 <span
-                  className={`text-xs font-semibold px-2 py-0.5 rounded-full ${categoryColors[app.category]}`}
+                  className={`text-xs font-medium px-2 py-0.5 rounded-full ${categoryColors[app.category]}`}
                 >
                   {app.category}
                 </span>
                 <span className="text-xs text-muted-foreground/50 font-mono">#{String(i + 1).padStart(2, '0')}</span>
               </div>
-              <h3 className="text-base font-semibold text-foreground mb-2">{app.name}</h3>
+              <h3 className="text-base font-medium text-foreground mb-2">{app.name}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{app.desc}</p>
             </div>
           ))}

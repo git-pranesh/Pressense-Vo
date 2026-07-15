@@ -44,8 +44,8 @@ export function WhatYouGetSection() {
           {tiers.map((tier) => (
             <div key={tier.name} className="rounded-xl bg-card border border-border p-6 border border-border/40 flex flex-col gap-4">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                <h3 className="text-base font-semibold text-foreground">{tier.name}</h3>
-                <span className="inline-flex items-center px-3 py-1 rounded-lg border border-primary/30 bg-primary/5 text-xs font-semibold text-primary whitespace-nowrap">
+                <h3 className="text-base font-medium text-foreground">{tier.name}</h3>
+                <span className="inline-flex items-center px-3 py-1 rounded-lg border border-primary/30 bg-primary/5 text-xs font-medium text-primary whitespace-nowrap">
                   {tier.price}
                 </span>
               </div>

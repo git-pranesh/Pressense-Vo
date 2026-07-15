@@ -24,7 +24,7 @@ export function EngagementFormatsSection() {
         <div className="grid md:grid-cols-3 gap-6">
           {engagementFormats.map((format, i) => (
             <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300 flex flex-col">
-              <h3 className="text-xl font-semibold text-foreground mb-3">{format.title}</h3>
+              <h3 className="text-xl font-medium text-foreground mb-3">{format.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{format.description}</p>
             </div>
           ))}

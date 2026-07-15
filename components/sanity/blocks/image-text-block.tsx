@@ -8,8 +8,8 @@ export function ImageTextBlock({ eyebrow, title, body, imagePosition = 'right', 
     <section className="py-16 px-6 lg:px-10 max-w-6xl mx-auto">
       <div className={`flex flex-col lg:flex-row gap-12 items-center ${imagePosition === 'left' ? 'lg:flex-row-reverse' : ''}`}>
         <div className="flex-1">
-          {eyebrow && <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-3">{eyebrow}</p>}
-          {title && <h2 className="text-2xl lg:text-3xl font-semibold text-foreground mb-4">{title}</h2>}
+          {eyebrow && <p className="text-xs font-medium tracking-widest uppercase text-primary/70 mb-3">{eyebrow}</p>}
+          {title && <h2 className="text-2xl lg:text-3xl font-medium text-foreground mb-4">{title}</h2>}
           {body && <p className="text-muted-foreground leading-relaxed mb-6">{body}</p>}
           {bullets && bullets.length > 0 && (
             <ul className="space-y-2 mb-6">

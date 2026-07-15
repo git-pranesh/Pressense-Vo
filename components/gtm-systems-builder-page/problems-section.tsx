@@ -43,7 +43,7 @@ export function GtmSystemsBuilderProblemsSection() {
         <p className="eyebrow mb-4">
           Why This Matters
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           The growth problems a GTM systems builder solves
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -56,7 +56,7 @@ export function GtmSystemsBuilderProblemsSection() {
               key={p.heading}
               className={`py-10 ${i < problems.length - 1 ? 'border-b border-border/30' : ''}`}
             >
-              <h3 className="text-xl font-semibold text-foreground mb-4 text-balance">{p.heading}</h3>
+              <h3 className="text-xl font-medium text-foreground mb-4 text-balance">{p.heading}</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">{p.body1}</p>
               <p className="text-muted-foreground leading-relaxed">{p.body2}</p>
             </div>

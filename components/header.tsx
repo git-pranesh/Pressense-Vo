@@ -88,7 +88,7 @@ export function Header() {
       <div
         className={`max-w-6xl mx-auto h-14 flex items-center justify-between px-5 lg:px-7 rounded-2xl transition-all duration-300 ${
           scrolled
-            ? 'bg-background/95 backdrop-blur-sm border border-border/50 shadow-[0_2px_16px_rgba(0,0,0,0.08)]'
+            ? 'bg-background/95 backdrop-blur-sm shadow-[0_2px_16px_rgba(0,0,0,0.08)]'
             : 'bg-background/80 backdrop-blur-sm border border-border/30 shadow-[0_1px_8px_rgba(0,0,0,0.05)]'
         }`}
       >
@@ -102,7 +102,7 @@ export function Header() {
               <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
             </svg>
           </div>
-          <span className="text-sm font-semibold tracking-wide text-foreground">PRESSENSE</span>
+          <span className="text-sm font-medium tracking-wide text-foreground">PRESSENSE</span>
         </Link>
 
         {/* Desktop nav */}
@@ -212,7 +212,7 @@ export function Header() {
 
       {/* Mobile menu — outside the pill, inset below it */}
       {menuOpen && (
-        <div className="lg:hidden mt-2 max-w-6xl mx-auto bg-background/98 backdrop-blur-sm border border-border/50 shadow-[0_4px_24px_rgba(0,0,0,0.10)] rounded-2xl px-6 py-5 flex flex-col gap-3 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden mt-2 max-w-6xl mx-auto bg-background/98 backdrop-blur-sm shadow-[0_4px_24px_rgba(0,0,0,0.10)] rounded-2xl px-6 py-5 flex flex-col gap-3 max-h-[80vh] overflow-y-auto">
           {/* Mobile Services Accordion */}
           <div>
             <button

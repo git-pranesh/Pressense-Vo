@@ -64,7 +64,7 @@ export function SolutionSection() {
               className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300"
             >
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
-                <h3 className="text-xl font-semibold text-foreground">{service.name}</h3>
+                <h3 className="text-xl font-medium text-foreground">{service.name}</h3>
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20 shrink-0">
                   {service.outcome}
                 </span>
@@ -78,7 +78,7 @@ export function SolutionSection() {
         <div className="mt-12 text-center">
           <Link
             href="/diagnostic"
-            className="inline-flex items-center gap-3 px-9 py-5 rounded-full text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            className="inline-flex items-center gap-3 px-9 py-5 rounded-full text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
           >
             Get Your AI Readiness Assessment
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">

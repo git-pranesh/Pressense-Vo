@@ -27,7 +27,7 @@ export function HeroBlock({ eyebrow, title, subtitle, description, primaryCta, s
             {eyebrow}
           </p>
         )}
-        {title && <h1 className="text-4xl lg:text-6xl font-semibold text-foreground tracking-tight mb-6 text-balance">{title}</h1>}
+        {title && <h1 className="text-4xl lg:text-6xl font-medium text-foreground tracking-tight mb-6 text-balance">{title}</h1>}
         {(subtitle || description) && (
           <p className="text-lg lg:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-balance leading-relaxed">
             {subtitle || description}
@@ -36,12 +36,12 @@ export function HeroBlock({ eyebrow, title, subtitle, description, primaryCta, s
         {(primary || secondary) && (
           <div className="flex flex-wrap gap-4 justify-center">
             {primary && (
-              <Link href={primary.href || '/diagnostic'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-colors">
+              <Link href={primary.href || '/diagnostic'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors">
                 {primary.text}
               </Link>
             )}
             {secondary && (
-              <Link href={secondary.href || '#'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold border border-border/60 text-foreground hover:border-primary/40 transition-colors">
+              <Link href={secondary.href || '#'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-medium border border-border/60 text-foreground hover:border-primary/40 transition-colors">
                 {secondary.text}
               </Link>
             )}

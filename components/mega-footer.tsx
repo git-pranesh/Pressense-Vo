@@ -35,7 +35,7 @@ export function MegaFooter() {
         <div className="grid gap-10 lg:grid-cols-2">
           {/* Services */}
           <div>
-            <h3 className="text-xs font-semibold tracking-widest uppercase text-ink-foreground/40 mb-5">
+            <h3 className="text-xs font-medium tracking-widest uppercase text-ink-foreground/40 mb-5">
               Services
             </h3>
             <ul className="space-y-2">
@@ -52,7 +52,7 @@ export function MegaFooter() {
           {/* Company + CTA */}
           <div className="flex flex-col gap-8">
             <div>
-              <h3 className="text-xs font-semibold tracking-widest uppercase text-ink-foreground/40 mb-5">
+              <h3 className="text-xs font-medium tracking-widest uppercase text-ink-foreground/40 mb-5">
                 Company
               </h3>
               <ul className="space-y-2">
@@ -90,7 +90,7 @@ export function MegaFooter() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 border-b border-ink-border">
           <div className="mb-6 flex items-center justify-between">
             <div>
-              <h2 className="text-sm font-semibold text-ink-foreground">Free Business Calculators</h2>
+              <h2 className="text-sm font-medium text-ink-foreground">Free Business Calculators</h2>
               <p className="text-xs text-ink-muted mt-0.5">{calculatorsData.length} calculators with operator-grade benchmarks</p>
             </div>
             <Link href="/tools" className="text-xs text-ink-muted hover:text-ink-foreground transition-colors">
@@ -100,7 +100,7 @@ export function MegaFooter() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {calculatorsByCategory.map((group) => (
               <div key={group.category}>
-                <h3 className="text-xs font-semibold tracking-widest uppercase text-ink-foreground/30 mb-3">
+                <h3 className="text-xs font-medium tracking-widest uppercase text-ink-foreground/30 mb-3">
                   {group.category}
                 </h3>
                 <ul className="space-y-1.5">
@@ -143,7 +143,7 @@ export function MegaFooter() {
                 <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.8" />
               </svg>
             </div>
-            <span className="text-xs font-semibold tracking-widest text-ink-foreground/50 uppercase">Pressense</span>
+            <span className="text-xs font-medium tracking-widest text-ink-foreground/50 uppercase">Pressense</span>
           </Link>
           <p className="text-xs text-ink-muted/60">&copy; {new Date().getFullYear()} Pressense. All rights reserved.</p>
           <div className="flex items-center gap-5">

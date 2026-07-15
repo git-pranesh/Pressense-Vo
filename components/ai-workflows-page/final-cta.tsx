@@ -5,7 +5,7 @@ export function AIWorkflowsFinalCTA() {
     <section className="py-20 lg:py-28 bg-ink rounded-t-3xl">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-ink-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-ink-foreground mb-6">
             Start with one workflow.
           </h2>
           <p className="text-base sm:text-lg text-ink-muted leading-relaxed mb-10">

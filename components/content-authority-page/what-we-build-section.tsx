@@ -18,7 +18,7 @@ export function WhatWeBuildSection() {
         <div className="grid md:grid-cols-2 gap-6">
           {buildItems.map((item) => (
             <div key={item.title} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+              <h3 className="text-lg font-medium text-foreground mb-2">{item.title}</h3>
               <p className="text-sm leading-relaxed text-muted-foreground">{item.description}</p>
             </div>
           ))}

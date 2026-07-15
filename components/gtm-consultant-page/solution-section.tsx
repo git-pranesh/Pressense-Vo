@@ -73,14 +73,14 @@ export function SolutionSection() {
                 <div className="p-8 flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                     <div>
-                      <h3 className="text-xl font-semibold text-foreground">{phase.name}</h3>
+                      <h3 className="text-xl font-medium text-foreground">{phase.name}</h3>
                       <p className="text-sm text-primary font-medium">{phase.tagline}</p>
                     </div>
                     <span className="text-xs text-muted-foreground border border-border/40 rounded-full px-3 py-1 shrink-0 self-start">{phase.week}</span>
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">{phase.description}</p>
                   <div className="flex items-start gap-2">
-                    <span className="text-xs font-semibold text-primary uppercase tracking-wide shrink-0 mt-0.5">Deliverable:</span>
+                    <span className="text-xs font-medium text-primary uppercase tracking-wide shrink-0 mt-0.5">Deliverable:</span>
                     <span className="text-sm text-muted-foreground">{phase.deliverable}</span>
                   </div>
                 </div>

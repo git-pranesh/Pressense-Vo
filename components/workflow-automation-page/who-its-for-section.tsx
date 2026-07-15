@@ -43,7 +43,7 @@ export function WhoItsForSection() {
   return (
     <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8 max-w-4xl">
-        <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
+        <p className="text-xs font-medium tracking-widest uppercase text-primary/70 mb-4">
           Fit
         </p>
 
@@ -60,7 +60,7 @@ export function WhoItsForSection() {
               key={card.title}
               className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
             >
-              <h3 className="font-semibold text-lg text-foreground mb-3">{card.title}</h3>
+              <h3 className="font-medium text-lg text-foreground mb-3">{card.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{card.description}</p>
             </div>
           ))}
@@ -79,7 +79,7 @@ export function WhoItsForSection() {
               key={card.title}
               className="rounded-2xl p-8 border border-border/40 bg-card/30"
             >
-              <h3 className="font-semibold text-lg text-foreground mb-3">{card.title}</h3>
+              <h3 className="font-medium text-lg text-foreground mb-3">{card.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{card.description}</p>
             </div>
           ))}

@@ -16,13 +16,13 @@ export function CaseStudyCard({
   outcomes,
 }: CaseStudyCardProps) {
   return (
-    <article className="rounded-2xl bg-card border border-border p-8 lg:p-10 border border-border/50">
+    <article className="rounded-2xl bg-card border border-border p-8 lg:p-10">
       {/* Header */}
       <div className="flex items-start gap-4 mb-8">
-        <span className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-lg font-semibold text-primary">
+        <span className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-lg font-medium text-primary">
           {number}
         </span>
-        <h3 className="text-2xl lg:text-3xl font-semibold text-foreground leading-tight pt-1">
+        <h3 className="text-2xl lg:text-3xl font-medium text-foreground leading-tight pt-1">
           {title}
         </h3>
       </div>

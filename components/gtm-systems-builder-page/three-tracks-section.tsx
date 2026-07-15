@@ -41,7 +41,7 @@ export function GtmSystemsBuilderThreeTracksSection() {
         <p className="eyebrow mb-4">
           Three Tracks
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           What a GTM systems builder actually does
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-14 max-w-2xl">
@@ -60,7 +60,7 @@ export function GtmSystemsBuilderThreeTracksSection() {
                 <span className="font-medium text-primary/20 leading-none block mb-1">
                   {track.number}
                 </span>
-                <h3 className="text-xl font-semibold text-foreground">{track.name}</h3>
+                <h3 className="text-xl font-medium text-foreground">{track.name}</h3>
                 <p className="text-sm text-muted-foreground mt-1">{track.tagline}</p>
               </div>
 

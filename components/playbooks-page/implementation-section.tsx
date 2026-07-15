@@ -33,11 +33,11 @@ export function PlaybooksImplementationSection() {
               <div key={item.step} className="flex gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-full border border-primary/40 flex items-center justify-center">
-                    <span className="text-sm font-semibold text-primary">{item.step}</span>
+                    <span className="text-sm font-medium text-primary">{item.step}</span>
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+                  <h3 className="text-lg font-medium text-foreground mb-2">{item.title}</h3>
                   <p className="text-base text-muted-foreground leading-relaxed">{item.description}</p>
                 </div>
               </div>

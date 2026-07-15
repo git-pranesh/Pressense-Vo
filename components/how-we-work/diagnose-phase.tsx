@@ -24,7 +24,7 @@ export function DiagnosePhase() {
       <div className="container mx-auto px-6 lg:px-8">
         {/* Phase header */}
         <div className="flex items-center gap-4 mb-8">
-          <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground text-lg font-semibold flex items-center justify-center">
+          <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground text-lg font-medium flex items-center justify-center">
             1
           </span>
           <p className="text-sm font-medium tracking-widest uppercase text-primary">
@@ -80,7 +80,7 @@ export function DiagnosePhase() {
 
             {/* Key questions */}
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-4">
+              <h3 className="text-lg font-medium text-foreground mb-4">
                 Key Questions We Answer
               </h3>
               <ul className="space-y-3">
@@ -105,8 +105,8 @@ export function DiagnosePhase() {
 
           {/* Right column - deliverables card */}
           <div className="lg:pt-16">
-            <div className="rounded-2xl bg-card border border-border p-8 border border-border/50">
-              <h3 className="text-lg font-semibold text-foreground mb-6">
+            <div className="rounded-2xl bg-card border border-border p-8">
+              <h3 className="text-lg font-medium text-foreground mb-6">
                 Deliverables
               </h3>
               <ul className="space-y-4">
@@ -115,7 +115,7 @@ export function DiagnosePhase() {
                     key={i}
                     className="flex items-center gap-4 text-foreground font-medium"
                   >
-                    <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-semibold flex items-center justify-center">
+                    <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-medium flex items-center justify-center">
                       {i + 1}
                     </span>
                     {d}

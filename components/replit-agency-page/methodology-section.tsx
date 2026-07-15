@@ -52,7 +52,7 @@ export function ReplitAgencyMethodologySection() {
         <p className="eyebrow mb-4">
           How we work
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-ink-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-ink-foreground text-balance mb-4 leading-tight">
           The Pressense Replit build framework
         </h2>
         <p className="text-lg text-ink-muted leading-relaxed mb-14 max-w-2xl">
@@ -68,7 +68,7 @@ export function ReplitAgencyMethodologySection() {
               <div>
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-xs font-mono text-primary/60">{phase.number}</span>
-                  <span className="text-xl font-semibold text-foreground">{phase.name}</span>
+                  <span className="text-xl font-medium text-foreground">{phase.name}</span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{phase.tagline}</p>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/8 border border-primary/20">

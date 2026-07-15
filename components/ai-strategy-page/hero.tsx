@@ -10,7 +10,7 @@ export function AIStrategyHero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
+      className="relative pt-32 pb-20 flex flex-col justify-center overflow-hidden pt-20"
       aria-label="AI strategy consulting"
     >
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
@@ -46,7 +46,7 @@ export function AIStrategyHero() {
           >
             {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col">
-                <span className="text-2xl font-semibold text-foreground">{stat.value}</span>
+                <span className="text-2xl font-medium text-foreground">{stat.value}</span>
                 <span className="text-sm text-muted-foreground">{stat.label}</span>
               </div>
             ))}
@@ -55,7 +55,7 @@ export function AIStrategyHero() {
           <div className="flex flex-wrap items-center gap-4">
             <Link
               href="/diagnostic"
-              className="glow-accent inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-colors"
+              className="glow-accent inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-medium text-base hover:bg-primary/90 transition-colors"
             >
               Book a Free Diagnostic
             </Link>

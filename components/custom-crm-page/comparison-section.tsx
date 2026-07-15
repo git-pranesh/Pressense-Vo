@@ -64,33 +64,33 @@ export function CustomCrmComparisonSection() {
         <p className="eyebrow mb-4">
           Comparison
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-medium text-foreground text-balance mb-4 leading-tight">
           Custom CRM vs Salesforce, HubSpot, Pipedrive, and Zoho
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl">
           Most comparisons are written by vendors. This one is not. Here is what the numbers actually look like for a ten-person team over three years.
         </p>
 
-        <div className="overflow-x-auto rounded-2xl border border-border/50">
+        <div className="overflow-x-auto rounded-2xl">
           <table className="w-full text-sm min-w-[700px]">
             <thead>
               <tr className="border-b border-border/40">
-                <th className="text-left p-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground w-[22%]">
+                <th className="text-left p-4 text-xs font-medium uppercase tracking-wider text-muted-foreground w-[22%]">
                   Criterion
                 </th>
-                <th className="text-left p-4 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/5 w-[18%]">
+                <th className="text-left p-4 text-xs font-medium uppercase tracking-wider text-primary bg-primary/5 w-[18%]">
                   Custom (Pressense)
                 </th>
-                <th className="text-left p-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground w-[15%]">
+                <th className="text-left p-4 text-xs font-medium uppercase tracking-wider text-muted-foreground w-[15%]">
                   Salesforce
                 </th>
-                <th className="text-left p-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground w-[15%]">
+                <th className="text-left p-4 text-xs font-medium uppercase tracking-wider text-muted-foreground w-[15%]">
                   HubSpot
                 </th>
-                <th className="text-left p-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground w-[15%]">
+                <th className="text-left p-4 text-xs font-medium uppercase tracking-wider text-muted-foreground w-[15%]">
                   Pipedrive
                 </th>
-                <th className="text-left p-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground w-[15%]">
+                <th className="text-left p-4 text-xs font-medium uppercase tracking-wider text-muted-foreground w-[15%]">
                   Zoho CRM
                 </th>
               </tr>

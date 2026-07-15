@@ -49,7 +49,7 @@ export function WhoItsForSection() {
           <div className="grid md:grid-cols-2 gap-6">
             {whoItsForCards.map((card, i) => (
               <div key={i} className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300">
-                <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
+                <h3 className="text-xl font-medium text-foreground mb-3">{card.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{card.description}</p>
               </div>
             ))}
@@ -65,7 +65,7 @@ export function WhoItsForSection() {
           <div className="grid md:grid-cols-3 gap-6">
             {notForCards.map((card, i) => (
               <div key={i} className="rounded-2xl p-8 border border-border/40 bg-card/30">
-                <h3 className="text-lg font-semibold text-ink-foreground mb-3">{card.title}</h3>
+                <h3 className="text-lg font-medium text-ink-foreground mb-3">{card.title}</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">{card.description}</p>
               </div>
             ))}

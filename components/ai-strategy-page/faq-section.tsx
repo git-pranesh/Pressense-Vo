@@ -46,12 +46,12 @@ export function AIStrategyFAQ() {
     >
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold mb-4 block">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-medium mb-4 block">
             FAQ
           </span>
           <h2
             id="faq-heading"
-            className="text-3xl sm:text-4xl font-semibold text-foreground text-balance leading-tight mb-10"
+            className="text-3xl sm:text-4xl font-medium text-foreground text-balance leading-tight mb-10"
           >
             Common questions about AI strategy consulting
           </h2>

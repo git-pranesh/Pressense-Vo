@@ -34,7 +34,7 @@ export function ProblemSection() {
     <section className="py-20 lg:py-28 bg-ink">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
-          <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
+          <p className="text-xs font-medium tracking-widest uppercase text-primary/70 mb-4">
             The Problem
           </p>
           <h2 className="text-3xl sm:text-4xl font-medium text-foreground text-balance mb-12">
@@ -43,7 +43,7 @@ export function ProblemSection() {
           <div className="space-y-10">
             {bottlenecks.map((item) => (
               <div key={item.heading}>
-                <h3 className="font-semibold text-lg text-foreground mb-3">{item.heading}</h3>
+                <h3 className="font-medium text-lg text-foreground mb-3">{item.heading}</h3>
                 <p className="text-muted-foreground leading-relaxed mb-3">{item.para1}</p>
                 <p className="text-muted-foreground leading-relaxed">{item.para2}</p>
               </div>

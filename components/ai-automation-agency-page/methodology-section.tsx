@@ -52,7 +52,7 @@ export function MethodologySection() {
                 <span className="font-medium text-primary/20 leading-none">{phase.number}</span>
                 <span className="text-xs tracking-[0.15em] uppercase text-muted-foreground font-medium pt-1">{phase.name}</span>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">{phase.name}</h3>
+              <h3 className="text-xl font-medium text-foreground mb-3">{phase.name}</h3>
               <p className="text-muted-foreground leading-relaxed mb-5">{phase.description}</p>
               <div className="flex items-start gap-2.5 pt-4">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="mt-0.5 shrink-0 text-primary" aria-hidden="true">

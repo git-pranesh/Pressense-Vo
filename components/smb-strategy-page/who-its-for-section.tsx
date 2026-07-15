@@ -32,21 +32,21 @@ export function SMBStrategyWhoItsForSection() {
           <span className="eyebrow-on-dark">Is This Right for You</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-semibold text-ink-foreground text-balance mb-10">
+        <h2 className="text-3xl sm:text-4xl font-medium text-ink-foreground text-balance mb-10">
           This is right for you if...
         </h2>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {rightFor.map((item) => (
             <div key={item.label} className="p-6 rounded-xl border border-border/60 bg-card">
-              <h3 className="text-base font-semibold text-foreground mb-3">{item.label}</h3>
+              <h3 className="text-base font-medium text-foreground mb-3">{item.label}</h3>
               <p className="text-sm text-ink-muted leading-relaxed">{item.body}</p>
             </div>
           ))}
         </div>
 
         <div className="p-6 rounded-xl border border-border/40 bg-secondary/20">
-          <h3 className="text-base font-semibold text-foreground mb-4">This is NOT for you if...</h3>
+          <h3 className="text-base font-medium text-foreground mb-4">This is NOT for you if...</h3>
           <div className="flex flex-col gap-3">
             {notFor.map((item) => (
               <p key={item} className="text-sm text-ink-muted leading-relaxed pl-4 border-l border-border/60">

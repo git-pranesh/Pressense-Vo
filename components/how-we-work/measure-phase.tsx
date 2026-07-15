@@ -27,7 +27,7 @@ export function MeasurePhase() {
       <div className="container mx-auto px-6 lg:px-8">
         {/* Phase header */}
         <div className="flex items-center gap-4 mb-8">
-          <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground text-lg font-semibold flex items-center justify-center">
+          <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground text-lg font-medium flex items-center justify-center">
             4
           </span>
           <p className="text-sm font-medium tracking-widest uppercase text-primary">
@@ -80,8 +80,8 @@ export function MeasurePhase() {
             </div>
 
             {/* What you get */}
-            <div className="rounded-xl bg-card border border-border p-6 border border-border/50">
-              <h3 className="text-lg font-semibold text-foreground mb-4">
+            <div className="rounded-xl bg-card border border-border p-6">
+              <h3 className="text-lg font-medium text-foreground mb-4">
                 What You Walk Away With
               </h3>
               <ul className="space-y-3 text-sm text-muted-foreground">
@@ -167,7 +167,7 @@ export function MeasurePhase() {
 
           {/* Right column - metrics categories */}
           <div className="lg:pt-16">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
+            <h3 className="text-lg font-medium text-foreground mb-6">
               Metrics We Track
             </h3>
             <div className="grid gap-4">
@@ -176,7 +176,7 @@ export function MeasurePhase() {
                   key={i}
                   className="p-5 rounded-xl bg-secondary/40 border border-border/40"
                 >
-                  <h4 className="text-sm font-semibold text-foreground mb-2">
+                  <h4 className="text-sm font-medium text-foreground mb-2">
                     {m.category}
                   </h4>
                   <p className="text-sm text-muted-foreground">

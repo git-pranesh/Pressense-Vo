@@ -12,7 +12,7 @@ export function AuthorBioSection() {
               <span className="text-2xl font-bold text-primary">P</span>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-foreground mb-1">Pranesh Padmanabhan</h3>
+              <h3 className="text-xl font-medium text-foreground mb-1">Pranesh Padmanabhan</h3>
               <p className="text-sm text-primary font-medium mb-3">Founder, Pressense</p>
               <p className="text-muted-foreground leading-relaxed mb-3">
                 Pranesh has worked with over 40 founder-led businesses across India, the US, and the UK on go-to-market strategy, revenue operations, and AI-driven growth systems. He specialises in the $1M to $15M ARR stage, where GTM execution is the primary constraint on growth.

@@ -9,7 +9,7 @@ export function IntroSection() {
         <div className="max-w-3xl mx-auto text-center">
           <h2
             id="intro-heading"
-            className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-foreground mb-6 text-balance"
+            className="text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight text-foreground mb-6 text-balance"
           >
             We see the same patterns again and again.
           </h2>

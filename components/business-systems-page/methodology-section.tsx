@@ -53,9 +53,9 @@ export function MethodologySection() {
               className="bg-ink-card border border-ink-border rounded-2xl p-8 border border-border/40 hover:border-primary/20 transition-all duration-300"
             >
               <div className="flex items-baseline gap-3 mb-4">
-                <span className="text-4xl font-semibold text-primary/30 leading-none">{phase.number}</span>
+                <span className="text-4xl font-medium text-primary/30 leading-none">{phase.number}</span>
                 <div>
-                  <span className="text-xl font-semibold text-foreground">{phase.name}</span>
+                  <span className="text-xl font-medium text-foreground">{phase.name}</span>
                   <p className="text-sm text-primary/80 font-medium mt-0.5">{phase.tagline}</p>
                 </div>
               </div>

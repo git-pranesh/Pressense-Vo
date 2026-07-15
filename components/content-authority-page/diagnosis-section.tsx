@@ -19,7 +19,7 @@ export function DiagnosisSection() {
                 <span className="font-medium text-primary/40">{phase.number}</span>
                 <div className="h-px flex-1 bg-primary/20" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">{phase.title}</h3>
+              <h3 className="text-lg font-medium text-foreground mb-3">{phase.title}</h3>
               <p className="text-sm leading-relaxed text-muted-foreground">{phase.description}</p>
             </div>
           ))}

@@ -16,7 +16,7 @@ export function ProblemSection() {
           </p>
 
           {/* 5 pillars — exact H3 PAA match */}
-          <h3 className="text-2xl font-semibold text-ink-foreground mb-6">What are the 5 pillars of GTM strategy?</h3>
+          <h3 className="text-2xl font-medium text-ink-foreground mb-6">What are the 5 pillars of GTM strategy?</h3>
           <div className="flex flex-col gap-6">
             {[
               { pillar: '1. Ideal Customer Profile', body: 'The most specific, actionable definition of who you sell to. Not a broad persona. A description so precise your sales team can qualify a prospect in the first two minutes of a call.' },
@@ -26,7 +26,7 @@ export function ProblemSection() {
               { pillar: '5. Revenue Operations', body: 'The metrics, CRM configuration, and feedback loops that make the system measurable. Without RevOps, GTM strategy is a slide deck. With it, you know exactly where deals stall and why.' },
             ].map((item, i) => (
               <div key={i} className="rounded-2xl p-8 border border-border bg-card hover:border-foreground/20 transition-colors hover:border-primary/20 transition-all duration-300">
-                <h4 className="text-lg font-semibold text-foreground mb-2">{item.pillar}</h4>
+                <h4 className="text-lg font-medium text-foreground mb-2">{item.pillar}</h4>
                 <p className="text-muted-foreground leading-relaxed">{item.body}</p>
               </div>
             ))}
