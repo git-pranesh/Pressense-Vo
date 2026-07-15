@@ -1,30 +1,64 @@
+import Link from 'next/link'
+
+const stats = [
+  { value: 'Positioning-first', label: 'messaging before design' },
+  { value: '4 to 8 weeks', label: 'strategy to launched site' },
+  { value: '0', label: 'templates or generic layouts' },
+]
+
 export function WebsitesConversionHero() {
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" aria-label="Websites and conversion systems">
+    <section id="hero" className="relative pt-32 pb-20 overflow-hidden" aria-label="Websites and conversion systems">
       <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
       <div className="container mx-auto px-5 sm:px-8 relative z-10">
         <div className="max-w-3xl">
+
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-primary/60" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Solutions / Websites & Conversion Systems</span>
+            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">Websites and Conversion Systems</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-6">
-            Websites that help buyers understand, trust, and decide.
+
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-[1.1] mb-4">
+            Websites and Conversion Systems That Turn Visitors Into Qualified Buyers
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-            A good website does more than look credible. It explains the business, frames the value, guides the buyer, filters the wrong fit, and supports the sales process. We build websites as clarity and conversion systems, not design projects.
+
+          <p className="text-xl sm:text-2xl font-medium text-foreground mb-6">
+            We build websites as clarity systems, not design projects. Every page has a job. Every section moves the buyer closer to a decision.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="/diagnostic" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
-              Start With a Diagnostic
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </a>
-            <a href="/how-we-work" className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200">
-              See How We Work
-            </a>
+
+          <div className="border-l-2 border-primary/50 pl-5 mb-8">
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+              A good website does more than look credible. It explains the business, frames the value, guides the buyer, filters the wrong fit, and supports the sales process. Pressense builds websites from positioning outward: messaging first, structure second, design third. The result is a site your sales team can use as a tool, not a brochure to apologise for.
+            </p>
           </div>
+
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 mb-10 py-5 border-y border-border/40">
+            {stats.map((stat, i) => (
+              <div key={i} className="flex items-center gap-2.5">
+                <span className="text-xl font-semibold text-foreground">{stat.value}</span>
+                <span className="text-sm text-muted-foreground">{stat.label}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-start gap-4">
+            <Link
+              href="/diagnostic"
+              className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
+            >
+              Start With a Diagnostic
+              <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5h6M5 2l3 3-3 3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </span>
+            </Link>
+            <Link
+              href="/how-we-work"
+              className="inline-flex items-center gap-2 px-9 py-5 rounded-2xl text-base font-semibold border border-border/40 text-foreground hover:border-primary/40 transition-all duration-200"
+            >
+              See How We Work
+            </Link>
+          </div>
+
         </div>
       </div>
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background via-transparent to-background/60" aria-hidden="true" />

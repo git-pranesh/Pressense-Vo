@@ -2,15 +2,11 @@ import type { Metadata } from 'next'
 import { StructuredData } from '@/components/structured-data'
 import { FinalCTA } from '@/components/final-cta'
 import { CustomToolsHero } from '@/components/custom-tools-page/hero'
-import { ManualSystemsSection } from '@/components/custom-tools-page/manual-systems-section'
-import { ConstraintsSection } from '@/components/custom-tools-page/constraints-section'
-import { DiagnosisSection } from '@/components/custom-tools-page/diagnosis-section'
-import { WhatWeBuildSection } from '@/components/custom-tools-page/what-we-build-section'
-import { ExampleWorkflowsSection } from '@/components/custom-tools-page/example-workflows-section'
-import { WorthBuildingSection } from '@/components/custom-tools-page/worth-building-section'
-import { WhenNotSection } from '@/components/custom-tools-page/when-not-section'
-import { StructuredScaleSection } from '@/components/custom-tools-page/structured-scale-section'
-import { EngagementPathSection } from '@/components/custom-tools-page/engagement-path-section'
+import { CustomToolsProblemSection } from '@/components/custom-tools-page/problem-section'
+import { CustomToolsSolutionSection } from '@/components/custom-tools-page/solution-section'
+import { CustomToolsWhoItsForSection } from '@/components/custom-tools-page/who-its-for-section'
+import { CustomToolsMethodologySection } from '@/components/custom-tools-page/methodology-section'
+import { CustomToolsWhatYouGetSection } from '@/components/custom-tools-page/what-you-get-section'
 import { CustomToolsFAQSection } from '@/components/custom-tools-page/faq-section'
 
 export const metadata: Metadata = {
@@ -123,15 +119,11 @@ export default function CustomInternalToolsPage() {
 
       <main>
         <CustomToolsHero />
-        <ManualSystemsSection />
-        <ConstraintsSection />
-        <DiagnosisSection />
-        <WhatWeBuildSection />
-        <ExampleWorkflowsSection />
-        <WorthBuildingSection />
-        <WhenNotSection />
-        <StructuredScaleSection />
-        <EngagementPathSection />
+        <CustomToolsProblemSection />
+        <CustomToolsSolutionSection />
+        <CustomToolsWhoItsForSection />
+        <CustomToolsMethodologySection />
+        <CustomToolsWhatYouGetSection />
         <CustomToolsFAQSection />
         <FinalCTA />
       </main>

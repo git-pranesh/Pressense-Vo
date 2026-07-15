@@ -1,3 +1,5 @@
+import { FAQSection } from '@/components/faq-section'
+
 const faqs = [
   {
     question: 'What is a GTM systems builder?',
@@ -22,43 +24,15 @@ const faqs = [
   {
     question: 'How long does it take to see results from a GTM content system?',
     answer:
-      'Bottom-of-funnel content like comparison pages and use-case pages can show organic ranking movement within sixty to ninety days. A full content programme generating consistent organic pipeline takes six to twelve months to compound meaningfully. The GTM strategy and internal tools produce results faster because they act on existing pipeline rather than building new organic channels from scratch. Most founders see measurable impact across all three tracks within six months of the system going live.',
+      'Bottom-of-funnel content like comparison pages and use-case pages can show organic ranking movement within sixty to ninety days. A full content programme generating consistent organic pipeline takes six to twelve months to compound meaningfully. Most founders see measurable impact across all three tracks within six months of the system going live.',
   },
   {
     question: 'What kind of B2B SaaS companies do you work with?',
     answer:
-      'Pressense works with founder-led B2B SaaS companies typically between seed and Series A: past product-market-fit, generating early revenue, and facing the transition from founder-led growth to system-led growth. The engagements work at earlier stages for companies with a clear ICP and validated positioning. Enterprise SaaS companies with large existing teams are not the right fit.',
-  },
-  {
-    question: 'Do you work with companies outside B2B SaaS?',
-    answer:
-      'Primarily B2B SaaS, but the GTM strategy and content system work applies to any founder-led business with a defined ICP and a content-amenable buyer journey. B2B professional services, developer tools, and productised services are categories where the same approach works. The internal tools track applies to any operations-heavy business regardless of category. The diagnostic session clarifies fit before any commitment.',
+      'Pressense works with founder-led B2B SaaS companies typically between seed and Series A: past product-market-fit, generating early revenue, and facing the transition from founder-led growth to system-led growth. Enterprise SaaS companies with large existing teams are not the right fit.',
   },
 ]
 
 export function GtmSystemsBuilderFaqSection() {
-  return (
-    <section className="py-20 md:py-28 border-t border-border/40">
-      <div className="container max-w-5xl mx-auto px-5 sm:px-8">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">
-          FAQ
-        </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-foreground text-balance mb-14 leading-tight">
-          GTM systems builder questions
-        </h2>
-
-        <div className="space-y-0">
-          {faqs.map((faq, i) => (
-            <div
-              key={faq.question}
-              className={`py-8 ${i < faqs.length - 1 ? 'border-b border-border/30' : ''}`}
-            >
-              <h3 className="text-lg font-semibold text-foreground mb-3">{faq.question}</h3>
-              <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
+  return <FAQSection headline="GTM systems builder questions" faqs={faqs} />
 }

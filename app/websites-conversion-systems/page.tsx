@@ -1,17 +1,10 @@
 import type { Metadata } from 'next'
 import { WebsitesConversionHero } from '@/components/websites-conversion-page/hero'
-import { ClaritySection } from '@/components/websites-conversion-page/clarity-section'
-import { ConstraintsSection } from '@/components/websites-conversion-page/constraints-section'
-import { WhatMustClarifySection } from '@/components/websites-conversion-page/what-must-clarify-section'
-import { DiagnosisSection } from '@/components/websites-conversion-page/diagnosis-section'
-import { WhatWeBuildSection } from '@/components/websites-conversion-page/what-we-build-section'
-import { MostUsefulSection } from '@/components/websites-conversion-page/most-useful-section'
-import { WhatChangesSection } from '@/components/websites-conversion-page/what-changes-section'
-import { WebsitesWhenWorthBuildingSection } from '@/components/websites-conversion-page/when-worth-building-section'
-import { WebsitesWhenNotRecommendSection } from '@/components/websites-conversion-page/when-not-recommend-section'
-import { WebsitesStructuredScaleSection } from '@/components/websites-conversion-page/structured-scale-section'
-import { NotWebDesignSection } from '@/components/websites-conversion-page/not-web-design-section'
-import { EngagementPathSection } from '@/components/websites-conversion-page/engagement-path-section'
+import { WebsitesProblemSection } from '@/components/websites-conversion-page/problem-section'
+import { WebsitesSolutionSection } from '@/components/websites-conversion-page/solution-section'
+import { WebsitesWhoItsForSection } from '@/components/websites-conversion-page/who-its-for-section'
+import { WebsitesMethodologySection } from '@/components/websites-conversion-page/methodology-section'
+import { WebsitesWhatYouGetSection } from '@/components/websites-conversion-page/what-you-get-section'
 import { WebsitesConversionFinalCTA } from '@/components/websites-conversion-page/final-cta'
 import { WebsitesFAQSection } from '@/components/websites-conversion-page/faq-section'
 
@@ -42,18 +35,11 @@ export default function WebsitesConversionSystemsPage() {
       
       <main>
         <WebsitesConversionHero />
-        <ClaritySection />
-        <ConstraintsSection />
-        <WhatMustClarifySection />
-        <DiagnosisSection />
-        <WhatWeBuildSection />
-        <MostUsefulSection />
-        <WhatChangesSection />
-        <WebsitesWhenWorthBuildingSection />
-        <WebsitesWhenNotRecommendSection />
-        <WebsitesStructuredScaleSection />
-        <NotWebDesignSection />
-        <EngagementPathSection />
+        <WebsitesProblemSection />
+        <WebsitesSolutionSection />
+        <WebsitesWhoItsForSection />
+        <WebsitesMethodologySection />
+        <WebsitesWhatYouGetSection />
         <WebsitesFAQSection />
         <WebsitesConversionFinalCTA />
       </main>

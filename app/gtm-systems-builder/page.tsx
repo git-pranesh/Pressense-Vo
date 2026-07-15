@@ -1,9 +1,11 @@
 import { StructuredData } from '@/components/structured-data'
 import { FinalCTA } from '@/components/final-cta'
 import { GtmSystemsBuilderHero } from '@/components/gtm-systems-builder-page/hero'
-import { GtmSystemsBuilderThreeTracksSection } from '@/components/gtm-systems-builder-page/three-tracks-section'
-import { GtmSystemsBuilderWhoItsForSection } from '@/components/gtm-systems-builder-page/who-its-for-section'
 import { GtmSystemsBuilderProblemsSection } from '@/components/gtm-systems-builder-page/problems-section'
+import { GtmSystemsBuilderSolutionSection } from '@/components/gtm-systems-builder-page/solution-section'
+import { GtmSystemsBuilderWhoItsForSection } from '@/components/gtm-systems-builder-page/who-its-for-section'
+import { GtmSystemsBuilderMethodologySection } from '@/components/gtm-systems-builder-page/methodology-section'
+import { GtmSystemsBuilderWhatYouGetSection } from '@/components/gtm-systems-builder-page/what-you-get-section'
 import { GtmSystemsBuilderFaqSection } from '@/components/gtm-systems-builder-page/faq-section'
 import type { Metadata } from 'next'
 
@@ -142,11 +144,13 @@ export default function GtmSystemsBuilderPage() {
         url: 'https://www.pressense.co',
       }} />
 
-      <main className="min-h-screen">
+      <main>
         <GtmSystemsBuilderHero />
-        <GtmSystemsBuilderThreeTracksSection />
-        <GtmSystemsBuilderWhoItsForSection />
         <GtmSystemsBuilderProblemsSection />
+        <GtmSystemsBuilderSolutionSection />
+        <GtmSystemsBuilderWhoItsForSection />
+        <GtmSystemsBuilderMethodologySection />
+        <GtmSystemsBuilderWhatYouGetSection />
         <GtmSystemsBuilderFaqSection />
         <FinalCTA />
       </main>

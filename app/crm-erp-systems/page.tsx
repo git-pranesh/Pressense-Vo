@@ -1,19 +1,12 @@
 import type { Metadata } from 'next'
 import { CrmErpHero } from '@/components/crm-erp-page/hero'
-import { CrmErpToolsSection } from '@/components/crm-erp-page/tools-section'
-import { CrmErpConstraintsSection } from '@/components/crm-erp-page/constraints-section'
-import { ErpLiteSection } from '@/components/crm-erp-page/erp-lite-section'
-import { CrmErpDiagnosisSection } from '@/components/crm-erp-page/diagnosis-section'
-import { CrmErpWhatWeBuildSection } from '@/components/crm-erp-page/what-we-build-section'
-import { CrmErpMostUsefulSection } from '@/components/crm-erp-page/most-useful-section'
-import { CrmErpWhatChangesSection } from '@/components/crm-erp-page/what-changes-section'
-import { CrmErpWhenWorthBuildingSection } from '@/components/crm-erp-page/when-worth-building-section'
-import { CrmErpWhenNotRecommendSection } from '@/components/crm-erp-page/when-not-recommend-section'
-import { CrmErpStructuredScaleSection } from '@/components/crm-erp-page/structured-scale-section'
-import { CrmErpNotSetupSection } from '@/components/crm-erp-page/not-setup-section'
-import { CrmErpEngagementPathSection } from '@/components/crm-erp-page/engagement-path-section'
-import { CrmErpFinalCTA } from '@/components/crm-erp-page/final-cta'
+import { CrmErpProblemSection } from '@/components/crm-erp-page/problem-section'
+import { CrmErpSolutionSection } from '@/components/crm-erp-page/solution-section'
+import { CrmErpWhoItsForSection } from '@/components/crm-erp-page/who-its-for-section'
+import { CrmErpMethodologySection } from '@/components/crm-erp-page/methodology-section'
+import { CrmErpWhatYouGetSection } from '@/components/crm-erp-page/what-you-get-section'
 import { CrmErpFAQSection } from '@/components/crm-erp-page/faq-section'
+import { CrmErpFinalCTA } from '@/components/crm-erp-page/final-cta'
 
 export const metadata: Metadata = {
   title: 'CRM & ERP Systems | Pressense',
@@ -42,18 +35,11 @@ export default function CrmErpSystemsPage() {
       
       <main>
         <CrmErpHero />
-        <CrmErpToolsSection />
-        <CrmErpConstraintsSection />
-        <ErpLiteSection />
-        <CrmErpDiagnosisSection />
-        <CrmErpWhatWeBuildSection />
-        <CrmErpMostUsefulSection />
-        <CrmErpWhatChangesSection />
-        <CrmErpWhenWorthBuildingSection />
-        <CrmErpWhenNotRecommendSection />
-        <CrmErpStructuredScaleSection />
-        <CrmErpNotSetupSection />
-        <CrmErpEngagementPathSection />
+        <CrmErpProblemSection />
+        <CrmErpSolutionSection />
+        <CrmErpWhoItsForSection />
+        <CrmErpMethodologySection />
+        <CrmErpWhatYouGetSection />
         <CrmErpFAQSection />
         <CrmErpFinalCTA />
       </main>
