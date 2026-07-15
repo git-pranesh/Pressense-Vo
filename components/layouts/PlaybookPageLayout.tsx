@@ -41,7 +41,7 @@ export function PlaybookPageLayout({
         className="hero-section bg-background py-32 lg:py-48"
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <span className="eyebrow text-color-purple font-medium text-sm uppercase tracking-widest mb-6 inline-block">
+          <span className="eyebrow text-brand font-medium text-sm uppercase tracking-widest mb-6 inline-block">
             Playbook
           </span>
           <h1 className="text-5xl lg:text-6xl font-serif font-normal text-foreground mb-6 leading-tight">
@@ -55,7 +55,7 @@ export function PlaybookPageLayout({
 
           {/* Metadata card — purple left border accent */}
           {metadata && (
-            <div className="border-l-4 border-color-purple bg-surface p-6 rounded-lg max-w-2xl">
+            <div className="border-l-4 border-brand bg-surface p-6 rounded-lg max-w-2xl">
               <div className="grid grid-cols-2 gap-6">
                 {metadata.bestFor && (
                   <div>
@@ -73,7 +73,7 @@ export function PlaybookPageLayout({
                     <p className="text-foreground font-sans">
                       <a
                         href={`/${metadata.relatedService.toLowerCase().replace(/\s+/g, '-')}`}
-                        className="text-color-purple underline hover:opacity-80"
+                        className="text-brand underline hover:opacity-80"
                       >
                         {metadata.relatedService}
                       </a>

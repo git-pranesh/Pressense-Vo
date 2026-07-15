@@ -18,7 +18,7 @@ export function Hero() {
           We find what&apos;s broken.{' '}
           <span className="relative inline-block italic">
             Then we fix it.
-            {/* SVG lavender underline stroke */}
+            {/* SVG burnt-amber underline stroke */}
             <svg
               aria-hidden="true"
               viewBox="0 0 320 18"
@@ -29,7 +29,7 @@ export function Hero() {
             >
               <path
                 d="M4 13 C 60 4, 130 16, 200 10 C 250 6, 290 14, 316 9"
-                stroke="#CDBBFF"
+                stroke="#C1541C"
                 strokeWidth="3.5"
                 strokeLinecap="round"
                 fill="none"

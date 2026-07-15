@@ -35,7 +35,7 @@ export function ServicePageLayout({
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           {eyebrow && (
             <div className="mb-6">
-              <span className="eyebrow text-color-purple font-medium text-sm uppercase tracking-widest">
+              <span className="eyebrow text-brand font-medium text-sm uppercase tracking-widest">
                 {eyebrow}
               </span>
             </div>

@@ -262,7 +262,7 @@ export function Header() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground py-2/20"
+              className="text-sm text-muted-foreground hover:text-foreground py-2"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
