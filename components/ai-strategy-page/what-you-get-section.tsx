@@ -56,7 +56,7 @@ const deliverableRows = [
 export function AIStrategyWhatYouGet() {
   return (
     <section
-      className="py-16 border-t border-border/40"
+      className="py-20 md:py-28 border-t border-border/40"
       aria-labelledby="what-you-get-heading"
     >
       <div className="container mx-auto px-5 sm:px-8">

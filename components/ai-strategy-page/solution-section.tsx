@@ -27,7 +27,7 @@ const useCases = [
 export function AIStrategySolutionSection() {
   return (
     <section className="py-20 md:py-28 border-t border-border/40">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="max-w-2xl mb-12">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">What We Build</p>
           <h2 className="text-3xl sm:text-4xl font-semibold text-balance leading-tight mb-4">

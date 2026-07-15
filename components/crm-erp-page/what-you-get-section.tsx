@@ -11,7 +11,7 @@ const deliverables = [
 
 export function CrmWhatYouGetSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 md:py-28 border-b border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
           <div>

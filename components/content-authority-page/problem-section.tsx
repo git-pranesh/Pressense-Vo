@@ -1,6 +1,6 @@
 export function ContentProblemSection() {
   return (
-    <section className="py-20 lg:py-28 border-b border-border/40">
+    <section className="py-20 md:py-28 border-b border-border/40">
       <div className="container mx-auto px-5 sm:px-8">
         <div className="max-w-3xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">
