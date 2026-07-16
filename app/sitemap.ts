@@ -61,24 +61,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/ai-tools-we-use`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
   ]
 
-  // Location pages
-  const locationPages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/ai-automation-agency-austin`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/ai-automation-agency-chicago`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/ai-automation-agency-london`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/ai-automation-agency-miami`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/ai-automation-agency-new-york`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/ai-automation-agency-san-francisco`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/ai-automation-agency-seattle`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/business-strategy-consultant-london`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/business-systems-consultant-boston`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/fractional-cmo-new-york`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/fractional-cmo-san-francisco`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/gtm-consultant-san-francisco`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/consulting-firm-for-startups`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/small-business-strategy-consultant`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-  ]
-
   // Individual playbook pages
   const playbookPages: MetadataRoute.Sitemap = playbooks.map((playbook) => ({
     url: `${baseUrl}/playbooks/${playbook.slug}`,
@@ -92,7 +74,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...gtmStrategyPages,
     ...buildPages,
     ...aiPages,
-    ...locationPages,
     ...playbookPages,
   ]
 }

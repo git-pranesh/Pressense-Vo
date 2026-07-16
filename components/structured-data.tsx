@@ -34,8 +34,8 @@ export function StructuredData({ data }: StructuredDataProps = {}) {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 12.9716,
-      longitude: 77.5946,
+      latitude: 13.0827,
+      longitude: 80.2707,
     },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
@@ -113,7 +113,7 @@ export function StructuredData({ data }: StructuredDataProps = {}) {
       contactType: 'sales',
       url: 'https://www.pressense.co/diagnostic',
     },
-    areaServed: ['US', 'GB'],
+    areaServed: ['AU', 'NZ', 'US', 'GB', 'IN'],
     sameAs: [],
   }
 

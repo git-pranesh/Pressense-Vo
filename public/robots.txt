@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /studio/
-Disallow: /api/
-Disallow: /_next/
-Allow: /
-Sitemap: https://www.pressense.co/sitemap.xml
