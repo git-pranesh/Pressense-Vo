@@ -13,10 +13,10 @@ import { TechStackLogos } from '@/components/tech-stack-logos'
 
 export const metadata: Metadata = {
   title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
-  description: 'Pressense starts every engagement with a structured diagnostic to find what is actually holding your business back. Then we fix it through fractional CMO leadership, custom software, and GTM execution.',
+  description: 'Pressense starts every engagement with a structured diagnostic to find what is actually holding your business back. Then we fix it through custom internal software and systems, with go-to-market execution and fractional CMO support once the foundation is in place.',
   openGraph: {
     title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
-    description: 'We find what is broken in your business. Then we fix it through fractional CMO leadership, custom internal software, and go-to-market execution.',
+    description: 'We find what is broken in your business. Then we fix it through custom internal software and systems, with go-to-market execution and fractional CMO support once the foundation is in place.',
     url: '/',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense — Diagnostic-First Build Partner' }],
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
-    description: 'We find what is broken in your business. Then we fix it through fractional CMO leadership, custom internal software, and go-to-market execution.',
+    description: 'We find what is broken in your business. Then we fix it through custom internal software and systems, with go-to-market execution and fractional CMO support once the foundation is in place.',
     images: ['/og-image.jpg'],
   },
   alternates: {

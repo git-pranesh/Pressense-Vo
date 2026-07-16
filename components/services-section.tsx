@@ -1,20 +1,6 @@
 const services = [
   {
-    label: '01 / Strategy',
-    title: 'Growth & Business Strategy',
-    description:
-      'GTM, positioning, customer insight, revenue strategy, decision-making, and hiring direction.',
-    tags: ['GTM', 'Positioning', 'Customer Insight', 'Revenue Strategy'],
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-        <path d="M4 24L10 15l5 4 5-10 4 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="24" cy="4" r="3" stroke="currentColor" strokeWidth="1.2" />
-        <path d="M4 4h6M4 9h4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeOpacity="0.4" />
-      </svg>
-    ),
-  },
-  {
-    label: '02 / Systems',
+    label: '01 / Systems',
     title: 'Systems & Internal Software',
     description:
       'Custom internal tools, CRM/ERP-lite systems, workflow automation, dashboards, and spreadsheet replacement.',
@@ -26,6 +12,20 @@ const services = [
         <rect x="3" y="16" width="9" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.3" strokeOpacity="0.5" />
         <rect x="16" y="16" width="9" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.3" />
         <path d="M12 7.5h4M7.5 12v4M20.5 12v4M16 20.5h-4" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeOpacity="0.4" />
+      </svg>
+    ),
+  },
+  {
+    label: '02 / Strategy',
+    title: 'Growth & Business Strategy',
+    description:
+      'GTM, positioning, customer insight, revenue strategy, decision-making, and hiring direction.',
+    tags: ['GTM', 'Positioning', 'Customer Insight', 'Revenue Strategy'],
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <path d="M4 24L10 15l5 4 5-10 4 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="24" cy="4" r="3" stroke="currentColor" strokeWidth="1.2" />
+        <path d="M4 4h6M4 9h4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeOpacity="0.4" />
       </svg>
     ),
   },

@@ -61,7 +61,7 @@ export function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10 text-pretty">
-          Most scaling businesses don&apos;t have a marketing problem or a software problem. They have a diagnosis problem. Nobody has properly mapped what&apos;s actually holding them back. Pressense starts every engagement with a structured diagnostic. Then we fix it through fractional CMO leadership, custom internal software, and go-to-market execution, all in one place.
+          Most scaling businesses don&apos;t have a marketing problem or a software problem. They have a diagnosis problem. Nobody has properly mapped what&apos;s actually holding them back. Pressense starts every engagement with a structured diagnostic. Then we build the custom internal tools and systems that fix it — and once the operational foundation is solid, we often step in on go-to-market and growth too.
         </p>
 
         {/* Metrics bar */}
