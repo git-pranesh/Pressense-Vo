@@ -54,10 +54,10 @@ const cmoFAQs = [
     ),
   },
   {
-    question: 'Do you work with India-based businesses and global clients?',
+    question: 'Do you work with businesses outside Australia?',
     answer: (
       <>
-        Yes. Pressense works with B2B SaaS companies and founder-led businesses across India, the UK, and the United States. For India-based teams, we understand both the cost dynamics of building in India and the messaging and buyer expectations of US and UK enterprise customers. Fractional CMO services are fully remote and structured to work across time zones without requiring real-time overlap for every working session.
+        Yes. Pressense works with B2B SaaS companies and founder-led businesses across Australia, New Zealand, the UK, the US, and India. Fractional CMO services are fully remote and structured to work across time zones.
       </>
     ),
   },

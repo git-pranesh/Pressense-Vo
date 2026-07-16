@@ -35,7 +35,7 @@ const workflowFAQs = [
   {
     question: 'Do you work with businesses outside the US?',
     answer:
-      'Yes. Pressense works with B2B SaaS companies, agencies, and founder-led businesses across India, the UK, Australia, the US, and the rest of the world. All engagements are delivered remotely. Our team operates across time zones, and we have worked with clients on every continent except Antarctica. If you are based in India and looking for workflow automation consulting, we have specific experience with Indian SaaS and services companies scaling their operations.',
+      'Yes. Pressense works with B2B SaaS companies, agencies, and founder-led businesses across Australia, New Zealand, the UK, the US, India, and the rest of the world. All engagements are delivered remotely. Our team operates across time zones, and we have worked with clients on every continent except Antarctica.',
   },
 ]
 

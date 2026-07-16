@@ -90,7 +90,7 @@ const faqSchema = {
       name: 'Do you work with businesses outside the US?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Pressense works with B2B SaaS companies, agencies, and founder-led businesses across India, the UK, Australia, the US, and the rest of the world. All engagements are delivered remotely. We have worked with clients on every continent except Antarctica. We have specific experience with Indian SaaS and services companies scaling their operations.',
+        text: 'Yes. Pressense works with B2B SaaS companies, agencies, and founder-led businesses across Australia, New Zealand, the UK, the US, India, and the rest of the world. All engagements are delivered remotely. We have worked with clients on every continent except Antarctica.',
       },
     },
   ],

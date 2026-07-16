@@ -58,7 +58,7 @@ export function WhatYouGetSection() {
             '5-week engagement',
             'Consulting from $1,200',
             'Implementation scoped on call',
-            'India + Global clients',
+            'Australia + Global clients',
             'Works with your existing tools',
           ].map((badge) => (
             <span

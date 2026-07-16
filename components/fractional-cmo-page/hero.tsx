@@ -3,7 +3,7 @@ import Link from 'next/link'
 const stats = [
   { value: '30-50%', label: 'of full-time CMO cost' },
   { value: '90-day', label: 'GTM clarity sprint' },
-  { value: 'India + Global', label: 'clients served' },
+  { value: 'Australia + Global', label: 'clients served' },
 ]
 
 export function FractionalCMOHero() {

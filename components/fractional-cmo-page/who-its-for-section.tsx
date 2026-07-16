@@ -12,8 +12,8 @@ const whoItsForCards = [
     description: 'Your last marketing lead left, or you outgrew junior execution and need strategic direction before you hire again. A fractional CMO bridges the gap without a rushed permanent hire.',
   },
   {
-    title: 'India-based and global founder-led teams',
-    description: 'You are building in India or serving global markets and need fractional CMO services that understand both the cost realities of Indian SaaS and the expectations of US and UK buyers.',
+    title: 'Australian and global founder-led teams',
+    description: 'You are building in Australia, New Zealand, or serving global markets and need fractional CMO services that understand local buyer expectations and international scaling.',
   },
 ]
 
