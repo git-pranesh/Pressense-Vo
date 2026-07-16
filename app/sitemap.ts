@@ -22,15 +22,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // GTM + Strategy service pages
   const gtmStrategyPages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/gtm-systems-builder`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/gtm-content-systems`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/seo-content-for-saas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/fractional-cmo-services`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/fractional-cmo-advisor`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/gtm-strategy-consultant`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/saas-go-to-market-strategy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/revenue-operations-consulting`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-
     { url: `${baseUrl}/advisory-strategy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/content-authority-systems`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ]

@@ -62,10 +62,13 @@ export function WhatYouGetSection() {
           ))}
         </div>
 
-        <p className="text-sm text-muted-foreground max-w-2xl">
+        <p className="text-sm text-muted-foreground max-w-2xl mb-3">
           Every engagement starts with a{' '}
           <Link href="/diagnostic" className="text-primary hover:underline">free diagnostic call</Link>{' '}
           to confirm fit, scope, and which tier is right for your business.
+        </p>
+        <p className="text-sm text-muted-foreground max-w-2xl">
+          For clients who started with a systems or internal-tools engagement, fractional CMO work often follows naturally once the operational foundation is in place — ask about combined engagements.
         </p>
 
       </div>

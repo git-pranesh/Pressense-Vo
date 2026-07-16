@@ -4,6 +4,7 @@ const stats = [
   { value: '30-50%', label: 'of full-time CMO cost' },
   { value: '90-day', label: 'GTM clarity sprint' },
   { value: 'Australia + Global', label: 'clients served' },
+  { value: '3x', label: 'faster sales cycles post-GTM alignment' },
 ]
 
 export function FractionalCMOHero() {

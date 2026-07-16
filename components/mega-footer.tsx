@@ -11,7 +11,6 @@ const companyLinks = [
 
 const serviceLinks = [
   { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
-  { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
   { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
   { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
   { label: 'MVP Development', href: '/mvp-development-for-startups' },

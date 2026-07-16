@@ -38,6 +38,14 @@ const cmoFAQs = [
     ),
   },
   {
+    question: 'What is the difference between a GTM consultant and a fractional CMO?',
+    answer: (
+      <>
+        A GTM consultant typically delivers a strategy document — positioning, ICP, messaging — and hands it off. A fractional CMO does that same strategic work but stays embedded to run it: hiring, campaign execution, weekly iteration based on real results. If you want a plan, you want strategy consulting. If you want someone accountable for the number going up, that is fractional CMO.
+      </>
+    ),
+  },
+  {
     question: 'What is the difference between a CMO and a fractional CMO?',
     answer: (
       <>
