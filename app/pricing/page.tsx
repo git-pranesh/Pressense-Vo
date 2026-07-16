@@ -42,7 +42,7 @@ const services = [
       },
       {
         name: 'Workflow Automation Consulting',
-        price: 'From $1,500',
+        price: 'From $1,200',
         type: 'Project',
         outcome: '"Workflows that work — built to scale as your business grows."',
         link: '/workflow-automation-consulting',
