@@ -20,7 +20,7 @@ const customToolsFAQs = [
   {
     question: 'How long does it take to build a custom internal tool?',
     answer:
-      'A first working version typically takes 2 to 6 weeks from specification to deployment. Simple single-workflow tools such as an approval system or a data entry portal take 2 to 3 weeks. Multi-workflow tools with integrations, role-based access, and reporting take 4 to 6 weeks. The workflow mapping and specification phase takes one week and happens before any code is written. Rushing past this phase is the most common reason custom tool builds fail.',
+      'Timeline depends on scope. A single-workflow tool (one approval system, one data entry portal) takes 2 to 3 weeks. A multi-workflow tool with integrations and role-based access takes 4 to 6 weeks. A full business-systems rebuild spanning CRM, reporting, and multiple departments takes 6 to 12 weeks. The workflow mapping and specification phase takes one week and happens before any code is written.',
   },
   {
     question: 'How much does a custom internal tool cost?',
@@ -31,6 +31,16 @@ const customToolsFAQs = [
     question: 'Who owns the code after the tool is built?',
     answer:
       'You do. Pressense builds the tool and hands over the source code, documentation, and deployment at the end of the engagement. There is no vendor lock-in, no licensing fee, and no ongoing dependency on Pressense unless you choose the ongoing support retainer. You can take the code to any developer. You can host it anywhere.',
+  },
+  {
+    question: 'Do I need a custom tool or should I just hire an operations person?',
+    answer:
+      'An operations hire maintains and runs systems that already exist. A custom tool build creates the systems your future ops hire will run — and documents everything so you are not dependent on any one person. Most clients build the tool first, then hire operations support to run it, not the other way around.',
+  },
+  {
+    question: 'What is the difference between RPA and custom workflow automation?',
+    answer:
+      'RPA (robotic process automation) automates a single repetitive task by mimicking clicks and keystrokes in existing software. A custom internal tool replaces the underlying workflow itself — new interface, new data model, no fragile click-simulation. RPA is faster to set up for one narrow task; a custom tool is the right call when the workflow spans multiple steps, multiple people, or needs to scale.',
   },
   {
     question: 'What happens after the tool launches?',

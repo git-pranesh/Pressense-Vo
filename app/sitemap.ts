@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/gtm-strategy-consultant`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/saas-go-to-market-strategy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/revenue-operations-consulting`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/business-systems-consultant`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     { url: `${baseUrl}/advisory-strategy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/content-authority-systems`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ]
@@ -46,18 +46,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/replit-developer-for-hire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/crm-erp-systems`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/websites-conversion-systems`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/ai-workflows-automation`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
   ]
 
   // AI service pages
   const aiPages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/ai-automation-agency`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/ai-strategy-consulting`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/ai-implementation-small-business`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/openai-integration-services`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/claude-api-integration`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/workflow-automation-consulting`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/business-process-automation-consulting`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/ai-tools-we-use`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
   ]
 

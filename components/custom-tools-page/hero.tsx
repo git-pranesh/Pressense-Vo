@@ -4,6 +4,7 @@ const stats = [
   { value: 'From $3,000', label: 'fixed-price build' },
   { value: '2 to 6 weeks', label: 'to first working version' },
   { value: 'Dedicated dev', label: 'and ongoing support included' },
+  { value: '20+ hrs/week', label: 'reclaimed per client on average' },
 ]
 
 export function CustomToolsHero() {

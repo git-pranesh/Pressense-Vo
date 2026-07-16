@@ -10,14 +10,10 @@ const companyLinks = [
 ]
 
 const serviceLinks = [
-  { label: 'AI Automation Agency', href: '/ai-automation-agency' },
   { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
   { label: 'GTM Strategy Consultant', href: '/gtm-strategy-consultant' },
-  { label: 'Workflow Automation', href: '/workflow-automation-consulting' },
-  { label: 'Business Process Automation', href: '/business-process-automation-consulting' },
   { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
   { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
-  { label: 'Business Systems Consultant', href: '/business-systems-consultant' },
   { label: 'MVP Development', href: '/mvp-development-for-startups' },
   { label: 'Framer Website Design', href: '/framer-website-design' },
 ]

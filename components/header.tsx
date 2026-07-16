@@ -13,11 +13,7 @@ const servicesColumns = [
   {
     heading: 'AI & Automation',
     links: [
-      { label: 'AI Automation Agency', href: '/ai-automation-agency' },
       { label: 'AI Strategy Consulting', href: '/ai-strategy-consulting' },
-      { label: 'AI Workflows & Automation', href: '/ai-workflows-automation' },
-      { label: 'Workflow Automation Consulting', href: '/workflow-automation-consulting' },
-      { label: 'Business Process Automation', href: '/business-process-automation-consulting' },
       { label: 'AI Tools We Use', href: '/ai-tools-we-use' },
     ],
   },
