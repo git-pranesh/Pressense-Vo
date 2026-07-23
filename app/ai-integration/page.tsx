@@ -42,7 +42,7 @@ export default function AiIntegrationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">The Problem</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">What this usually looks like</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">What this usually looks like</h2>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
             A business hears &ldquo;add AI&rdquo; and ends up with a chatbot widget that answers three questions and gets ignored by everyone. Or a team member spends hours a week summarizing documents, drafting the same type of email, or sorting through leads by hand, work a model could do in seconds if it were actually wired into the process.
           </p>
@@ -56,7 +56,7 @@ export default function AiIntegrationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">The Solution</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">We build AI into work you&apos;re already doing</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">We build AI into work you&apos;re already doing</h2>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
             After the diagnostic, we know which tasks are repetitive enough, and low-risk enough, for AI to genuinely help with. That&apos;s what we build around.
           </p>
@@ -70,7 +70,7 @@ export default function AiIntegrationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Who It&apos;s For</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-8">Is this right for you?</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this right for you?</h2>
           <div className="grid sm:grid-cols-2 gap-8">
             <div>
               <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide mb-4">Good fit</h3>
@@ -109,7 +109,7 @@ export default function AiIntegrationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Methodology</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">How we get there</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">How we get there</h2>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
             The diagnostic identifies which parts of your workflow are repetitive enough to hand off, and which ones still genuinely need a person&apos;s judgment. We&apos;re honest when a task isn&apos;t a good fit for AI, even if it sounds appealing on paper.
           </p>
@@ -123,7 +123,7 @@ export default function AiIntegrationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">What You Get</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-8">What&apos;s included</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What&apos;s included</h2>
           <ul className="space-y-3">
             {[
               'An audit of where AI can save real time in your workflow.',
@@ -147,7 +147,7 @@ export default function AiIntegrationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">FAQ</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-8">Common questions</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Common questions</h2>
           <dl className="space-y-8">
             {[
               {
@@ -183,7 +183,7 @@ export default function AiIntegrationPage() {
       {/* Final CTA */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-5 sm:px-8 max-w-2xl text-center">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             Find out where AI could actually save you time
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">

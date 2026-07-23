@@ -133,7 +133,7 @@ export default function PricingPage() {
       {/* Free MVP section */}
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-5">About the free build</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-5">About the free build</h2>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
             For businesses we think are a strong fit, we&apos;ll build a small first piece of your project for free before you commit to the rest. You get real, working software in your hands, and you decide from there whether to continue.
           </p>
@@ -146,7 +146,7 @@ export default function PricingPage() {
       {/* FAQ */}
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-10">Common questions</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-10">Common questions</h2>
           <dl className="flex flex-col gap-8">
             {faqs.map((faq) => (
               <div key={faq.q}>
@@ -161,7 +161,7 @@ export default function PricingPage() {
       {/* Final CTA */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground text-balance mb-5">
             Get a real number, not a guess
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">

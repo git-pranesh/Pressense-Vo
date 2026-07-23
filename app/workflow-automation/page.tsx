@@ -42,7 +42,7 @@ export default function WorkflowAutomationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">The Problem</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">What this usually looks like</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">What this usually looks like</h2>
           <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
             <p>
               A form gets filled out, then someone retypes the same information into three other systems. An approval waits on one person&apos;s calendar, holding up everyone downstream. A weekly report takes half a day because the numbers live in four different tools that don&apos;t talk to each other.
@@ -58,7 +58,7 @@ export default function WorkflowAutomationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">The Solution</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">We automate the parts that shouldn&apos;t need a person</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">We automate the parts that shouldn&apos;t need a person</h2>
           <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
             <p>
               After the diagnostic, we know exactly which steps are repetitive, which ones cause the biggest delays, and which ones are actually fine to leave alone.
@@ -74,7 +74,7 @@ export default function WorkflowAutomationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Who It&apos;s For</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-8">Is this the right fit?</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this the right fit?</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-xl border border-border/40 p-6 bg-background">
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">Good fit</p>
@@ -114,7 +114,7 @@ export default function WorkflowAutomationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Methodology</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">How we get there</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">How we get there</h2>
           <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
             <p>
               The diagnostic maps every repetitive task and where it slows things down. We rank these by how much time and risk each one is actually costing you.
@@ -130,7 +130,7 @@ export default function WorkflowAutomationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">What You Get</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">What&apos;s included</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">What&apos;s included</h2>
           <ul className="space-y-3">
             {[
               'A process audit that maps where work is duplicated or delayed.',
@@ -151,7 +151,7 @@ export default function WorkflowAutomationPage() {
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">FAQ</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-8">Common questions</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Common questions</h2>
           <dl className="space-y-8">
             {[
               {
@@ -187,7 +187,7 @@ export default function WorkflowAutomationPage() {
       {/* Final CTA */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground text-balance mb-4">
             Find out what&apos;s eating your team&apos;s time
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">

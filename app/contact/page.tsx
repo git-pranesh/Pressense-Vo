@@ -23,7 +23,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="py-20 lg:py-28 border-b border-border/40">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-foreground text-balance leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance leading-tight">
             Tell us what&apos;s actually going on
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
@@ -44,13 +44,13 @@ export default function ContactPage() {
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 grid gap-10 md:grid-cols-2">
           <div>
-            <h2 className="text-xl font-semibold text-foreground mb-4">Who we work with</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-4">Who we work with</h2>
             <p className="text-muted-foreground leading-relaxed">
               Founders and CEOs running businesses between $1M and $50M in revenue. Teams where critical work still lives in spreadsheets, WhatsApp threads, or one person&apos;s memory. Companies that bought software before, and found it didn&apos;t fit how they actually operate.
             </p>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-foreground mb-4">What we can actually help with</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-4">What we can actually help with</h2>
             <p className="text-muted-foreground leading-relaxed">
               Custom internal tools and software. Workflow automation. Custom CRMs. AI built into your existing tools. Go-to-market and fractional CMO support, for businesses whose operations are already solid enough to build growth on top of.
             </p>
@@ -64,7 +64,7 @@ export default function ContactPage() {
       {/* Who we're not right for */}
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h2 className="text-xl font-semibold text-foreground mb-4">Who we&apos;re probably not right for</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-4">Who we&apos;re probably not right for</h2>
           <ul className="space-y-3 text-muted-foreground leading-relaxed list-none">
             <li className="flex items-start gap-3">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground/40 shrink-0" />
@@ -85,7 +85,7 @@ export default function ContactPage() {
       {/* What happens next */}
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h2 className="text-xl font-semibold text-foreground mb-6">What happens after you submit this</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-6">What happens after you submit this</h2>
           <ol className="space-y-4">
             {[
               'We read what you send and respond within a couple of business days.',
@@ -107,7 +107,7 @@ export default function ContactPage() {
       {/* Form */}
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 mb-10">
-          <h2 className="text-2xl font-semibold text-foreground mb-2">Start here</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-2">Start here</h2>
           <p className="text-muted-foreground leading-relaxed">
             Fill in as much detail as you can. The more context we have, the more useful the first conversation is.
           </p>
@@ -120,7 +120,7 @@ export default function ContactPage() {
       {/* FAQ */}
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h2 className="text-xl font-semibold text-foreground mb-8">FAQ</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">FAQ</h2>
           <dl className="space-y-8">
             {[
               {

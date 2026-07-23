@@ -75,7 +75,7 @@ export default function CaseStudiesPage() {
               <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-6">
                 Case Studies
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
                 We don&apos;t share testimonials.{' '}
                 <span className="text-muted-foreground font-light">
                   We share what we fixed, and how.
@@ -174,7 +174,7 @@ export default function CaseStudiesPage() {
               <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
                 Work with us
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight mb-4 text-balance">
+              <h2 className="text-3xl sm:text-4xl font-semibold text-foreground tracking-tight mb-4 text-balance">
                 Want to know if your system has the same problems?
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">

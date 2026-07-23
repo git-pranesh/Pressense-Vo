@@ -44,7 +44,7 @@ export default function CustomSoftwarePage() {
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">The Problem</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">What this usually looks like</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">What this usually looks like</h2>
           <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
             <p>
               A founder is still approving things a system should handle on its own. The team tracks orders, leads, or inventory in a spreadsheet that only one person really understands. The CRM everyone paid for sits half-used because it forces the sales team to work in a way that doesn&apos;t match how they sell.
@@ -63,7 +63,7 @@ export default function CustomSoftwarePage() {
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">The Solution</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">We build the tool your business actually needs</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">We build the tool your business actually needs</h2>
           <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
             <p>
               After the diagnostic, we know exactly where the break is. That&apos;s what we build around, not a generic feature list.
@@ -107,7 +107,7 @@ export default function CustomSoftwarePage() {
       <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Methodology</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">How we get there</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">How we get there</h2>
           <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
             <p>
               We start with the diagnostic. A short, structured look at where work slows down, duplicates, or gets lost. You get a plain map of the problem, not a sales deck.
@@ -126,7 +126,7 @@ export default function CustomSoftwarePage() {
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">What You Get</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-6">What&apos;s included</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">What&apos;s included</h2>
           <ul className="space-y-4">
             {[
               'A structured diagnostic of your current operations.',
@@ -186,7 +186,7 @@ export default function CustomSoftwarePage() {
       {/* Final CTA */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground text-balance">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground text-balance">
             Find out what&apos;s actually slowing you down
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
