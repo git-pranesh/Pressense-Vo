@@ -1,22 +1,14 @@
 import type { Metadata } from 'next'
-import { Hero } from '@/components/hero'
-import { TrustStrip } from '@/components/trust-strip'
-import { ProblemSection } from '@/components/problem-section'
-import { WhatWeDo } from '@/components/what-we-do'
-import { ApproachSection } from '@/components/approach-section'
-import { StartFocusedSection } from '@/components/start-focused-section'
-import { ServicesSection } from '@/components/services-section'
-import { WhoSection } from '@/components/who-section'
-import { FinalCTA } from '@/components/final-cta'
-import { HomeFAQSection } from '@/components/home-faq-section'
-import { TechStackLogos } from '@/components/tech-stack-logos'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
-  description: 'Pressense starts every engagement with a structured diagnostic to find what is actually holding your business back. Then we fix it through custom internal software and systems, with go-to-market execution and fractional CMO support once the foundation is in place.',
+  description:
+    'Nobody has actually sat down and figured out what\'s slowing you down. We do that first. Then we build the internal tools and software that fix it.',
   openGraph: {
     title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
-    description: 'We find what is broken in your business. Then we fix it through custom internal software and systems, with go-to-market execution and fractional CMO support once the foundation is in place.',
+    description:
+      'Nobody has actually sat down and figured out what\'s slowing you down. We do that first. Then we build the internal tools and software that fix it.',
     url: '/',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense — Diagnostic-First Build Partner' }],
@@ -24,87 +16,304 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
-    description: 'We find what is broken in your business. Then we fix it through custom internal software and systems, with go-to-market execution and fractional CMO support once the foundation is in place.',
+    description:
+      'Nobody has actually sat down and figured out what\'s slowing you down. We do that first. Then we build the internal tools and software that fix it.',
     images: ['/og-image.jpg'],
   },
-  alternates: {
-    canonical: '/',
-  },
+  alternates: { canonical: '/' },
 }
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What does Pressense actually do?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Pressense helps founder-led businesses identify what is actually holding them back, then fixes it. We start with a structured diagnostic, then work through fractional CMO leadership, custom internal software, and go-to-market execution. We do not start with execution before we understand the problem.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is a business diagnostic and what does it include?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A business diagnostic is a structured review of your business to find the real constraint blocking growth. At Pressense, it covers positioning, sales systems, operations, marketing, team structure, and tech stack. You receive a prioritised action roadmap showing exactly what to fix first and why.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How long does a business diagnostic take?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Our diagnostic process typically takes one week. We review your systems, talk to your team, and deliver a written report with your top three constraints and recommended next steps.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Who is Pressense best suited for?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Pressense works best with founder-led or founder-influenced businesses that are growing but feeling disorganised. Common signs: unclear positioning, manual workflows slowing the team down, revenue leaking in the funnel, or a founder stuck in operational work instead of strategy.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can Pressense help with both strategy and implementation?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. We cover advisory, fractional CMO leadership, custom internal tools, workflow automation, CRM and ERP-lite systems, GTM execution, and content systems. The diagnostic determines which of these is the right starting point for your business.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What if we are not sure what we need yet?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Start with the diagnostic. It is designed exactly for businesses that feel something is not working but cannot pinpoint whether the issue is marketing, operations, positioning, systems, people, tools, or execution.',
-      },
-    },
-  ],
-}
+const services = [
+  {
+    title: 'Custom Software & Internal Tools',
+    description:
+      'We replace spreadsheets, WhatsApp threads, and manual approvals with a system built around your team\'s real workflow — dashboards, internal CRMs, whatever the diagnostic points to.',
+    href: '/custom-software-internal-tools',
+  },
+  {
+    title: 'Workflow Automation',
+    description:
+      'Once we\'ve found where work is duplicating or stalling, we automate the repetitive parts, so people stop chasing status updates by hand.',
+    href: '/workflow-automation',
+  },
+  {
+    title: 'Custom CRM',
+    description:
+      'For businesses where the off-the-shelf CRM never fit right. We build one shaped around how your team actually sells and delivers.',
+    href: '/custom-crm',
+  },
+  {
+    title: 'AI Integration',
+    description:
+      'AI built into tools you already use, aimed at cutting real manual work. No chatbot for the sake of having one.',
+    href: '/ai-integration',
+  },
+  {
+    title: 'Fractional CMO / Go-to-Market',
+    description:
+      'For clients whose operations are already solid. We step into positioning and growth strategy once there\'s something ready to scale.',
+    href: '/fractional-cmo',
+  },
+]
+
+const steps = [
+  {
+    number: '01',
+    title: 'Diagnose',
+    description:
+      'We trace how work moves through your business right now. Approvals, handoffs, reporting, the parts still living in spreadsheets. You get a clear picture of what\'s actually broken.',
+  },
+  {
+    number: '02',
+    title: 'Build',
+    description:
+      'We build the internal tool or system that fixes the bottleneck we found. If you qualify, the first small piece is free.',
+  },
+  {
+    number: '03',
+    title: 'Grow',
+    description:
+      'Once the operational side is solid, some clients bring us in for go-to-market and fractional CMO work too. Few of our clients stop after step two, and that\'s fine.',
+  },
+]
+
+const goodFit = [
+  "You're a founder still personally approving things a system could handle.",
+  'Critical work runs through spreadsheets or someone\'s memory.',
+  'You bought software that made your team adapt to it.',
+  'You want to know what\'s actually broken before spending money on a fix.',
+]
+
+const notFit = [
+  'You\'re pre-traction and still finding product-market fit.',
+  'You want the cheapest option, not the right one.',
+  'You\'re not ready to change how something works today, even if it isn\'t working.',
+]
+
+const clients = [
+  'AstraZeneca',
+  'Zoho',
+  'Cognizant',
+  'Scintel',
+  'Tint Tone and Shade',
+  'One Magnify',
+]
 
 export default function HomePage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Hero />
-      <TrustStrip />
-      <ProblemSection />
-      <WhatWeDo />
-      <ApproachSection />
-      <StartFocusedSection />
-      <ServicesSection />
-      <TechStackLogos />
-      <WhoSection />
-      <HomeFAQSection />
-      <FinalCTA />
+
+      {/* ── Hero ─────────────────────────────────────────────────── */}
+      <section className="grid-bg border-b border-border">
+        <div className="container mx-auto px-5 sm:px-8 py-20 lg:py-28 max-w-3xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.08] text-balance">
+            Many businesses don&apos;t have a marketing problem. They have a diagnosis problem.
+          </h1>
+          <p className="mt-6 text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+            Nobody has actually sat down and figured out what&apos;s slowing you down. We do that first. Then we build the internal tools and software that fix it. If you qualify, we&apos;ll build the first small piece for free, before you spend anything.
+          </p>
+          <div className="mt-8">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-highlight transition-colors"
+            >
+              Start a Free Diagnostic
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Trust Strip ──────────────────────────────────────────── */}
+      <section className="border-b border-border bg-secondary/40">
+        <div className="container mx-auto px-5 sm:px-8 py-5 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-3">
+            Work delivered for teams at
+          </p>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            {clients.map((name, i) => (
+              <span key={name} className="text-sm text-muted-foreground">
+                {name}{i < clients.length - 1 && <span className="ml-4 text-border">·</span>}
+              </span>
+            ))}
+          </div>
+          <p className="mt-2 text-xs text-muted-foreground/60 italic">(directly, or as part of a delivery team)</p>
+        </div>
+      </section>
+
+      {/* ── The Problem ──────────────────────────────────────────── */}
+      <section className="border-b border-border">
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">The Problem</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-6">
+            Why growth still feels hard, even when you&apos;re doing everything right
+          </h2>
+          <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
+            <p>
+              You&apos;ve hired good people. You&apos;ve paid for the tools. Growth still feels slower than it should be.
+            </p>
+            <p>
+              Your best people are stuck approving things a system should handle. The real work runs through a spreadsheet nobody wants to touch. The CRM you bought made your team change how they work, instead of fitting how they already work. Sales hands off to delivery and something gets lost. Getting a straight answer on what&apos;s happening takes an afternoon of pulling reports.
+            </p>
+            <p>
+              We&apos;ve seen this enough times to know it&apos;s rarely a people problem. Usually, nobody&apos;s mapped where the actual break is.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── What We Do ───────────────────────────────────────────── */}
+      <section className="border-b border-border bg-secondary/30">
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">What We Do</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-6">
+            We map the problem before we touch a single tool
+          </h2>
+          <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
+            <p>
+              We spend time inside your business first. How work moves. Where it stalls. What it&apos;s actually costing you in time and money.
+            </p>
+            <p>
+              Once we know the real bottleneck, we build software around it. Something shaped to how your team already works, so people don&apos;t have to relearn their jobs to use it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── How It Works ─────────────────────────────────────────── */}
+      <section className="border-b border-border">
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">How It Works</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-10">
+            Diagnose. Build. Grow.
+          </h2>
+          <div className="space-y-8">
+            {steps.map((step) => (
+              <div key={step.number} className="flex gap-6 items-start">
+                <span className="text-xs font-semibold text-muted-foreground/50 tabular-nums pt-1 w-6 shrink-0">
+                  {step.number}
+                </span>
+                <div>
+                  <h3 className="text-base font-semibold text-foreground mb-1">{step.title}</h3>
+                  <p className="text-base text-muted-foreground leading-relaxed">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10">
+            <Link
+              href="/how-it-works"
+              className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-muted-foreground transition-colors"
+            >
+              See How It Works
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Services ─────────────────────────────────────────────── */}
+      <section className="border-b border-border bg-secondary/30">
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Services</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-10">
+            What we actually do
+          </h2>
+          <div className="space-y-0 divide-y divide-border">
+            {services.map((service) => (
+              <Link
+                key={service.title}
+                href={service.href}
+                className="group flex items-start justify-between gap-6 py-5 hover:bg-secondary/40 -mx-3 px-3 rounded-lg transition-colors"
+              >
+                <div>
+                  <h3 className="text-base font-semibold text-foreground group-hover:text-foreground mb-1">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 mt-0.5 text-muted-foreground/40 group-hover:text-foreground transition-colors" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8">
+            <Link
+              href="/pricing"
+              className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-muted-foreground transition-colors"
+            >
+              See All Services
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Who We Work With ─────────────────────────────────────── */}
+      <section className="border-b border-border">
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Who We Work With</p>
+          <div className="grid sm:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-base font-semibold text-foreground mb-4">Good fit</h3>
+              <ul className="space-y-3">
+                {goodFit.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 mt-0.5 text-foreground" aria-hidden="true">
+                      <circle cx="8" cy="8" r="7.5" stroke="currentColor" strokeOpacity="0.3" />
+                      <path d="M5 8l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-base font-semibold text-muted-foreground mb-4">Not a fit</h3>
+              <ul className="space-y-3">
+                {notFit.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 mt-0.5 text-muted-foreground/50" aria-hidden="true">
+                      <circle cx="8" cy="8" r="7.5" stroke="currentColor" strokeOpacity="0.3" />
+                      <path d="M5.5 10.5l5-5M10.5 10.5l-5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Final CTA ────────────────────────────────────────────── */}
+      <section className="bg-foreground">
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary-foreground leading-tight text-balance mb-4">
+            Start with a diagnostic, not a sales pitch.
+          </h2>
+          <p className="text-base sm:text-lg text-primary-foreground/70 leading-relaxed max-w-xl mb-8">
+            Tell us what feels off. We&apos;ll map it, show you exactly what we find, and tell you honestly if custom software is even the right fix for it.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary-foreground text-primary text-sm font-semibold hover:bg-primary-foreground/90 transition-colors"
+          >
+            Start a Free Diagnostic
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
     </main>
   )
 }
