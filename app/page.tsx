@@ -143,6 +143,62 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Stats Card ───────────────────────────────────────────── */}
+      <section className="border-b border-border">
+        <div className="container mx-auto px-5 sm:px-8 py-12 lg:py-16 max-w-5xl">
+          <div
+            className="rounded-3xl px-10 py-12 sm:px-16 sm:py-14 overflow-hidden relative"
+            style={{
+              background: 'linear-gradient(135deg, #FF9A5C 0%, #FF6B6B 30%, #C084FC 65%, #22D3EE 100%)',
+            }}
+          >
+            {/* Blurred blobs for depth */}
+            <div
+              className="absolute -top-16 -left-16 w-64 h-64 rounded-full opacity-40 pointer-events-none"
+              style={{ background: '#FF9A5C', filter: 'blur(64px)' }}
+              aria-hidden="true"
+            />
+            <div
+              className="absolute -bottom-20 right-10 w-72 h-72 rounded-full opacity-30 pointer-events-none"
+              style={{ background: '#22D3EE', filter: 'blur(80px)' }}
+              aria-hidden="true"
+            />
+
+            <div className="relative grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 sm:divide-x sm:divide-white/20">
+              {/* Stat 1 */}
+              <div className="flex flex-col items-start sm:items-center text-left sm:text-center sm:px-6">
+                <span className="font-sans text-5xl lg:text-6xl font-bold text-white leading-none tracking-tight">
+                  X+
+                </span>
+                <span className="mt-3 text-sm font-medium text-white/70 leading-snug">
+                  Businesses helped
+                </span>
+              </div>
+
+              {/* Stat 2 */}
+              <div className="flex flex-col items-start sm:items-center text-left sm:text-center sm:px-6">
+                <span className="font-sans text-5xl lg:text-6xl font-bold text-white leading-none tracking-tight">
+                  X%
+                </span>
+                <span className="mt-3 text-sm font-medium text-white/70 leading-snug">
+                  Average time saved
+                </span>
+              </div>
+
+              {/* Stat 3 */}
+              <div className="flex flex-col items-start sm:items-center text-left sm:text-center sm:px-6">
+                <span className="font-sans text-5xl lg:text-6xl font-bold text-white leading-none tracking-tight">
+                  X days
+                </span>
+                <span className="mt-3 text-sm font-medium text-white/70 leading-snug">
+                  To first working tool
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── The Problem ──────────────────────────────────────────── */}
       <section className="border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
