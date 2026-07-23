@@ -23,7 +23,7 @@ export function WhatYouGetSection() {
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-2xl">
           Every engagement is a five-week sprint from audit to live automations. Below is the full deliverable list with timing.           Consulting starts from{' '}
-          <Link href="/packages" className="text-primary hover:underline">
+          <Link href="/pricing" className="text-primary hover:underline">
             $1,200 for an audit and roadmap
           </Link>
           . Implementation is scoped and quoted after the diagnostic call.

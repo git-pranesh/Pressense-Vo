@@ -24,11 +24,11 @@ const howWeWorkFAQs = [
     answer: (
       <>
         Not always. Sometimes the right outcome is a decision, roadmap, or sharper direction. Other times it becomes a{' '}
-        <Link href="/websites-conversion-systems" className="text-primary hover:underline">website</Link>,{' '}
-        <Link href="/content-authority-systems" className="text-primary hover:underline">content system</Link>,{' '}
-        <Link href="/crm-erp-systems" className="text-primary hover:underline">CRM</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">website</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">content system</Link>,{' '}
+        <Link href="/custom-crm" className="text-primary hover:underline">CRM</Link>,{' '}
         <Link href="/custom-software-internal-tools" className="text-primary hover:underline">internal tool</Link>,{' '}
-        <Link href="/ai-workflows-automation" className="text-primary hover:underline">AI workflow</Link>, or operating process.
+        <Link href="/ai-integration" className="text-primary hover:underline">AI workflow</Link>, or operating process.
       </>
     ),
   },
@@ -46,8 +46,8 @@ const howWeWorkFAQs = [
     answer: (
       <>
         Pressense prioritizes the constraint that creates the most friction or unlocks the next stage of growth. That may be a{' '}
-        <Link href="/advisory-strategy" className="text-primary hover:underline">strategic decision</Link>, one workflow, one website section, one{' '}
-        <Link href="/crm-erp-systems" className="text-primary hover:underline">CRM process</Link>, or one communication system.
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">strategic decision</Link>, one workflow, one website section, one{' '}
+        <Link href="/custom-crm" className="text-primary hover:underline">CRM process</Link>, or one communication system.
       </>
     ),
   },

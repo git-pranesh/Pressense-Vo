@@ -7,9 +7,9 @@ const whatWeFixFAQs = [
     answer: (
       <>
         Pressense helps with growth bottlenecks, weak positioning, revenue leakage, unclear GTM direction, manual workflows, poor{' '}
-        <Link href="/websites-conversion-systems" className="text-primary hover:underline">website communication</Link>, inconsistent{' '}
-        <Link href="/content-authority-systems" className="text-primary hover:underline">content</Link>, scattered tools, weak{' '}
-        <Link href="/crm-erp-systems" className="text-primary hover:underline">CRM visibility</Link>, and execution gaps between strategy and implementation.
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">website communication</Link>, inconsistent{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">content</Link>, scattered tools, weak{' '}
+        <Link href="/custom-crm" className="text-primary hover:underline">CRM visibility</Link>, and execution gaps between strategy and implementation.
       </>
     ),
   },
@@ -36,7 +36,7 @@ const whatWeFixFAQs = [
     answer: (
       <>
         More marketing may not be the answer. The issue could be unclear positioning, weak website communication, poor lead qualification, inconsistent follow-up, or a mismatch between the offer and the market. Pressense helps identify the{' '}
-        <Link href="/advisory-strategy" className="text-primary hover:underline">real constraint</Link> first.
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">real constraint</Link> first.
       </>
     ),
   },

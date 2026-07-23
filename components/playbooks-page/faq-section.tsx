@@ -24,9 +24,9 @@ const playbooksFAQs = [
     answer: (
       <>
         Use them to understand the problem more clearly before jumping into solutions. A playbook can help you identify whether your next step should be{' '}
-        <Link href="/advisory-strategy" className="text-primary hover:underline">advisory</Link>, a website, a content system, an{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">advisory</Link>, a website, a content system, an{' '}
         <Link href="/custom-software-internal-tools" className="text-primary hover:underline">internal tool</Link>, CRM improvement, or{' '}
-        <Link href="/ai-workflows-automation" className="text-primary hover:underline">AI workflow design</Link>.
+        <Link href="/ai-integration" className="text-primary hover:underline">AI workflow design</Link>.
       </>
     ),
   },

@@ -16,11 +16,11 @@ const homeFAQs = [
     answer: (
       <>
         Pressense sits between{' '}
-        <Link href="/advisory-strategy" className="text-primary hover:underline">strategic advisory</Link>{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">strategic advisory</Link>{' '}
         and execution. We help clarify the problem first, then support implementation where useful. That could mean a website,{' '}
-        <Link href="/content-authority-systems" className="text-primary hover:underline">content system</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">content system</Link>,{' '}
         <Link href="/custom-software-internal-tools" className="text-primary hover:underline">internal tool</Link>, CRM workflow,{' '}
-        <Link href="/ai-workflows-automation" className="text-primary hover:underline">AI automation</Link>, or operating roadmap.
+        <Link href="/ai-integration" className="text-primary hover:underline">AI automation</Link>, or operating roadmap.
       </>
     ),
   },
@@ -65,12 +65,12 @@ const homeFAQs = [
     answer: (
       <>
         Yes. The work usually starts with{' '}
-        <Link href="/advisory-strategy" className="text-primary hover:underline">strategy and diagnosis</Link>, then moves into implementation where needed. Pressense can support advisory,{' '}
-        <Link href="/websites-conversion-systems" className="text-primary hover:underline">websites</Link>,{' '}
-        <Link href="/content-authority-systems" className="text-primary hover:underline">content systems</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">strategy and diagnosis</Link>, then moves into implementation where needed. Pressense can support advisory,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">websites</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">content systems</Link>,{' '}
         <Link href="/custom-software-internal-tools" className="text-primary hover:underline">internal tools</Link>,{' '}
-        <Link href="/crm-erp-systems" className="text-primary hover:underline">CRM and ERP-lite systems</Link>, and{' '}
-        <Link href="/ai-workflows-automation" className="text-primary hover:underline">AI workflows</Link>.
+        <Link href="/custom-crm" className="text-primary hover:underline">CRM and ERP-lite systems</Link>, and{' '}
+        <Link href="/ai-integration" className="text-primary hover:underline">AI workflows</Link>.
       </>
     ),
   },

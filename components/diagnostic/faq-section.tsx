@@ -17,8 +17,8 @@ const diagnosticFAQs = [
       <>
         Founders, operators, and business leaders should start a diagnostic if they are dealing with unclear growth, weak positioning,{' '}
         <Link href="/custom-software-internal-tools" className="text-primary hover:underline">broken workflows</Link>, scattered tools, poor visibility,{' '}
-        <Link href="/content-authority-systems" className="text-primary hover:underline">inconsistent content</Link>,{' '}
-        <Link href="/websites-conversion-systems" className="text-primary hover:underline">website confusion</Link>, or execution bottlenecks.
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">inconsistent content</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">website confusion</Link>, or execution bottlenecks.
       </>
     ),
   },
@@ -43,7 +43,7 @@ const diagnosticFAQs = [
     answer: (
       <>
         That is fine. Pressense often starts with a diagnostic or focused{' '}
-        <Link href="/advisory-strategy" className="text-primary hover:underline">advisory sprint</Link>{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">advisory sprint</Link>{' '}
         before moving into larger execution work. The first step is clarity, not a full commitment. You can also{' '}
         <Link href="/playbooks" className="text-primary hover:underline">read the playbooks</Link>{' '}
         to understand common patterns.
