@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Pricing | Pressense',
@@ -159,20 +160,15 @@ export default function PricingPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 lg:py-32">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground text-balance mb-5">
-            Get a real number, not a guess
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Start with the diagnostic. It&apos;s free, and it&apos;s the only way to know what this would actually cost you.
-          </p>
-          <Link
-            href="/contact"
-            className="btn-primary px-8 py-4 text-base font-semibold"
-          >
-            Start a Free Diagnostic
-          </Link>
+      <section>
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+          <AnchorCard
+            eyebrow="Where to start"
+            headline="Get a real number, not a guess"
+            body="Start with the diagnostic. It's free, and it's the only way to know what this would actually cost you."
+            ctaLabel="Start a Free Diagnostic"
+            ctaHref="/contact"
+          />
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { VisualCard } from '@/components/visual-card'
+import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Custom Software & Internal Tools | Pressense',
@@ -194,22 +195,15 @@ export default function CustomSoftwarePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 lg:py-32">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground text-balance">
-            Find out what&apos;s actually slowing you down
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Start with the diagnostic. No commitment past that first step.
-          </p>
-          <div className="mt-8">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
-            >
-              Start a Free Diagnostic
-            </Link>
-          </div>
+      <section>
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+          <AnchorCard
+            eyebrow="Where to start"
+            headline="Find out what's actually slowing you down"
+            body="Start with the diagnostic. No commitment past that first step."
+            ctaLabel="Start a Free Diagnostic"
+            ctaHref="/contact"
+          />
         </div>
       </section>
     </main>

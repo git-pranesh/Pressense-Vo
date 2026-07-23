@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { VisualCard } from '@/components/visual-card'
+import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Custom CRM | Pressense',
@@ -181,20 +182,15 @@ export default function CustomCrmPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 lg:py-32">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
-            See what a CRM built for your process looks like
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Start with the diagnostic. We&apos;ll map your actual sales process before recommending anything.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
-          >
-            Start a Free Diagnostic
-          </Link>
+      <section>
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+          <AnchorCard
+            eyebrow="Where to start"
+            headline="See what a CRM built for your process looks like"
+            body="Start with the diagnostic. We'll map your actual sales process before recommending anything."
+            ctaLabel="Start a Free Diagnostic"
+            ctaHref="/contact"
+          />
         </div>
       </section>
 

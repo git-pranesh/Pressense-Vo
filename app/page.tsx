@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { VisualCard } from '@/components/visual-card'
+import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
@@ -179,56 +180,18 @@ export default function HomePage() {
       {/* ── Stats Card ───────────────────────────────────────────── */}
       <section className="border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-12 lg:py-16 max-w-5xl">
-          <div
-            className="rounded-3xl px-10 py-12 sm:px-16 sm:py-14 overflow-hidden relative"
-            style={{
-              background: 'linear-gradient(135deg, #FF9A5C 0%, #FF6B6B 30%, #C084FC 65%, #22D3EE 100%)',
-            }}
-          >
-            {/* Blurred blobs for depth */}
-            <div
-              className="absolute -top-16 -left-16 w-64 h-64 rounded-full opacity-40 pointer-events-none"
-              style={{ background: '#FF9A5C', filter: 'blur(64px)' }}
-              aria-hidden="true"
-            />
-            <div
-              className="absolute -bottom-20 right-10 w-72 h-72 rounded-full opacity-30 pointer-events-none"
-              style={{ background: '#22D3EE', filter: 'blur(80px)' }}
-              aria-hidden="true"
-            />
-
-            <div className="relative grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 sm:divide-x sm:divide-white/20">
-              {/* Stat 1 */}
-              <div className="flex flex-col items-start sm:items-center text-left sm:text-center sm:px-6">
-                <span className="font-sans text-5xl lg:text-6xl font-bold text-white leading-none tracking-tight">
-                  X+
-                </span>
-                <span className="mt-3 text-sm font-medium text-white/70 leading-snug">
-                  Businesses helped
-                </span>
-              </div>
-
-              {/* Stat 2 */}
-              <div className="flex flex-col items-start sm:items-center text-left sm:text-center sm:px-6">
-                <span className="font-sans text-5xl lg:text-6xl font-bold text-white leading-none tracking-tight">
-                  X%
-                </span>
-                <span className="mt-3 text-sm font-medium text-white/70 leading-snug">
-                  Average time saved
-                </span>
-              </div>
-
-              {/* Stat 3 */}
-              <div className="flex flex-col items-start sm:items-center text-left sm:text-center sm:px-6">
-                <span className="font-sans text-5xl lg:text-6xl font-bold text-white leading-none tracking-tight">
-                  X days
-                </span>
-                <span className="mt-3 text-sm font-medium text-white/70 leading-snug">
-                  To first working tool
-                </span>
-              </div>
-            </div>
-          </div>
+          <AnchorCard
+            eyebrow="By the numbers"
+            headline="The AI agency built for you."
+            body="Real businesses. Measurable results. Delivered in weeks, not months."
+            ctaLabel={undefined}
+            ctaHref={undefined}
+            stats={[
+              { value: 'X+', label: 'Businesses helped' },
+              { value: 'X%', label: 'Average time saved' },
+              { value: 'X days', label: 'To first working tool' },
+            ]}
+          />
         </div>
       </section>
 
@@ -430,23 +393,15 @@ export default function HomePage() {
       </section>
 
       {/* ── Final CTA ────────────────────────────────────────────── */}
-      <section className="bg-foreground">
-        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary-foreground leading-tight text-balance mb-4">
-            Start with a diagnostic, not a sales pitch.
-          </h2>
-          <p className="text-base sm:text-lg text-primary-foreground/70 leading-relaxed max-w-xl mb-8">
-            Tell us what feels off. We&apos;ll map it, show you exactly what we find, and tell you honestly if custom software is even the right fix for it.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary-foreground text-primary text-sm font-semibold hover:bg-primary-foreground/90 transition-colors"
-          >
-            Start a Free Diagnostic
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
+      <section>
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+          <AnchorCard
+            eyebrow="Where to start"
+            headline="Start with a diagnostic, not a sales pitch."
+            body="Tell us what feels off. We'll map it, show you exactly what we find, and tell you honestly if custom software is even the right fix for it."
+            ctaLabel="Start a Free Diagnostic"
+            ctaHref="/contact"
+          />
         </div>
       </section>
 

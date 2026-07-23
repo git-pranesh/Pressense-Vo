@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { VisualCard } from '@/components/visual-card'
+import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'How an Engagement Works | Pressense',
@@ -110,24 +111,15 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ── Final CTA ────────────────────────────────────────────── */}
-      <section className="bg-foreground">
-        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Where to start</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary-foreground leading-tight text-balance mb-4">
-            Start with the diagnostic
-          </h2>
-          <p className="text-base sm:text-lg text-primary-foreground/70 leading-relaxed max-w-xl mb-8">
-            There&apos;s no obligation past that first step. If the fix is small, we&apos;ll say so. If it&apos;s bigger, you&apos;ll know exactly what you&apos;re signing up for before spending anything.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary-foreground text-primary text-sm font-semibold hover:bg-primary-foreground/90 transition-colors"
-          >
-            Start a Free Diagnostic
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
+      <section>
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+          <AnchorCard
+            eyebrow="Where to start"
+            headline="Start with the diagnostic"
+            body="There's no obligation past that first step. If the fix is small, we'll say so. If it's bigger, you'll know exactly what you're signing up for before spending anything."
+            ctaLabel="Start a Free Diagnostic"
+            ctaHref="/contact"
+          />
         </div>
       </section>
 

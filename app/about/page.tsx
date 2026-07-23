@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'About | Pressense',
@@ -118,20 +119,15 @@ export default function AboutPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 lg:py-32">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
-            Let&apos;s talk about what&apos;s actually broken
-          </h2>
-          <p className="text-base text-muted-foreground leading-relaxed mb-8">
-            If you&apos;re a founder trying to fix your operations, build better internal tools, or get your go-to-market motion working, I&apos;m happy to have that conversation.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-          >
-            Start a Free Diagnostic
-          </Link>
+      <section>
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+          <AnchorCard
+            eyebrow="Where to start"
+            headline="Let's talk about what's actually broken"
+            body="If you're a founder trying to fix your operations, build better internal tools, or get your go-to-market motion working, I'm happy to have that conversation."
+            ctaLabel="Start a Free Diagnostic"
+            ctaHref="/contact"
+          />
         </div>
       </section>
 
