@@ -113,12 +113,12 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto text-center pb-16">
             <span className="eyebrow-pill">Diagnostic-first build partner</span>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground leading-[1.05] text-balance">
-              From{' '}
-              <em style={{ fontStyle: 'italic', fontWeight: 400 }}>confusion</em>{' '}
-              to clarity.
+              Many businesses don&apos;t have a marketing problem. They have a{' '}
+              <em style={{ fontStyle: 'italic', fontWeight: 400 }}>diagnosis</em>{' '}
+              problem.
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto">
-              Nobody has actually sat down and figured out what&apos;s slowing you down. We do that first — then build the tools that fix it.
+              Nobody has actually sat down and figured out what&apos;s slowing you down. We do that first. Then we build the internal tools and software that fix it. If you qualify, we&apos;ll build the first small piece for free, before you spend anything.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link
@@ -169,14 +169,16 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl text-center">
           <span className="eyebrow-pill">The Problem</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground leading-tight text-balance mb-8">
-            The AI agency built{' '}
-            <em style={{ fontStyle: 'italic', fontWeight: 400 }}>for you.</em>
+            Why growth still feels hard, even when you&apos;re doing everything right
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            You&apos;ve hired good people. You&apos;ve paid for the tools. Growth still feels slower than it should.
+            You&apos;ve hired good people. You&apos;ve paid for the tools. Growth still feels slower than it should be.
+          </p>
+          <p className="text-base text-muted-foreground/80 leading-relaxed max-w-2xl mx-auto mb-5">
+            Your best people are stuck approving things a system should handle. The real work runs through a spreadsheet nobody wants to touch. The CRM you bought made your team change how they work, instead of fitting how they already work. Sales hands off to delivery and something gets lost. Getting a straight answer on what&apos;s happening takes an afternoon of pulling reports.
           </p>
           <p className="text-base text-muted-foreground/80 leading-relaxed max-w-2xl mx-auto">
-            Your best people are stuck approving things a system should handle. The CRM made your team adapt to it, instead of the other way around. Nobody&apos;s actually mapped where the break is.
+            We&apos;ve seen this enough times to know it&apos;s rarely a people problem. Usually, nobody&apos;s mapped where the actual break is.
           </p>
         </div>
       </section>
@@ -186,8 +188,8 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 py-12 lg:py-16 max-w-5xl">
           <AnchorCard
             eyebrow="By the numbers"
-            headline="Real businesses. Measurable results."
-            body="Delivered in weeks, not months."
+            headline="The AI agency built for you."
+            body="Real businesses. Measurable results. Delivered in weeks, not months."
             ctaLabel={undefined}
             ctaHref={undefined}
             stats={[
@@ -205,9 +207,7 @@ export default function HomePage() {
           <div className="max-w-2xl mb-16">
             <span className="eyebrow-pill">How It Works</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground leading-tight text-balance">
-              We handle{' '}
-              <em style={{ fontStyle: 'italic', fontWeight: 400 }}>everything</em>{' '}
-              so you don&apos;t have to.
+              Diagnose. Build. Grow.
             </h2>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -257,9 +257,7 @@ export default function HomePage() {
           <div className="max-w-2xl mb-12">
             <span className="eyebrow-pill">Services</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground leading-tight text-balance">
-              What we{' '}
-              <em style={{ fontStyle: 'italic', fontWeight: 400 }}>actually</em>{' '}
-              do.
+              What we actually do
             </h2>
           </div>
           <ServicesToggle services={services} />
@@ -281,9 +279,6 @@ export default function HomePage() {
       <section className="border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <span className="eyebrow-pill">Who We Work With</span>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground text-balance mb-10">
-            We&apos;re not your typical AI agency.
-          </h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-2xl border border-[#D4CFC7] bg-[#E8E5DE] p-8">
               <span className="eyebrow-pill">Good fit</span>
@@ -316,8 +311,8 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
           <AnchorCard
             eyebrow="Where to start"
-            headline="Turn confusion into clarity, today."
-            body="Book a free 30-minute assessment and we'll show you exactly where AI can save you time and money."
+            headline="Start with a diagnostic, not a sales pitch."
+            body="Tell us what feels off. We'll map it, show you exactly what we find, and tell you honestly if custom software is even the right fix for it."
             ctaLabel="Start a Free Diagnostic"
             ctaHref="/contact"
           />
