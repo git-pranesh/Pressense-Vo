@@ -80,8 +80,8 @@ export default function PricingPage() {
       {/* Hero */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Pricing</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
+          <span className="eyebrow-pill">Pricing</span>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
             How pricing works
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4">

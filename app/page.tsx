@@ -107,8 +107,10 @@ export default function HomePage() {
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <section className="grid-bg border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.08] text-balance">
-            Many businesses don&apos;t have a marketing problem. They have a diagnosis problem.
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground leading-[1.05] text-balance">
+            Many businesses don&apos;t have a marketing problem. They have a{' '}
+            <em className="not-italic" style={{ fontStyle: 'italic', fontWeight: 400 }}>diagnosis</em>{' '}
+            problem.
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
             Nobody has actually sat down and figured out what&apos;s slowing you down. We do that first. Then we build the internal tools and software that fix it. If you qualify, we&apos;ll build the first small piece for free, before you spend anything.
@@ -162,9 +164,7 @@ export default function HomePage() {
       {/* ── Trust Strip ──────────────────────────────────────────── */}
       <section className="border-b border-border bg-secondary/40">
         <div className="container mx-auto px-5 sm:px-8 py-5 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-3">
-            Work delivered for teams at
-          </p>
+          <span className="eyebrow-pill">Work delivered for teams at</span>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
             {clients.map((name, i) => (
               <span key={name} className="text-sm text-muted-foreground">
@@ -238,7 +238,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text — left */}
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">The Problem</p>
+              <span className="eyebrow-pill">The Problem</span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
                 Why growth still feels hard, even when you&apos;re doing everything right
               </h2>
@@ -268,7 +268,7 @@ export default function HomePage() {
             <VisualCard aspectRatio="4 / 3" style={{ minHeight: '400px' }} className="order-last lg:order-first" />
             {/* Text — right */}
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">What We Do</p>
+              <span className="eyebrow-pill">What We Do</span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
                 We map the problem before we touch a single tool
               </h2>
@@ -288,7 +288,7 @@ export default function HomePage() {
       {/* ── How It Works ─────────────────────────────────────────── */}
       <section className="border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">How It Works</p>
+          <span className="eyebrow-pill">How It Works</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-12">
             Diagnose. Build. Grow.
           </h2>
@@ -329,7 +329,7 @@ export default function HomePage() {
       {/* ── Services ────────────────────────────────���────────────── */}
       <section className="border-b border-border bg-secondary/30">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Services</p>
+          <span className="eyebrow-pill">Services</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-12">
             What we actually do
           </h2>
@@ -386,10 +386,10 @@ export default function HomePage() {
       {/* ── Who We Work With ─────────────────────────────────────── */}
       <section className="border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Who We Work With</p>
+          <span className="eyebrow-pill">Who We Work With</span>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Good fit</p>
+              <span className="eyebrow-pill">Good fit</span>
               <ul className="space-y-3">
                 {goodFit.map((item) => (
                   <li key={item} className="text-sm text-muted-foreground leading-relaxed">
@@ -399,7 +399,7 @@ export default function HomePage() {
               </ul>
             </div>
             <div className="rounded-2xl bg-[#2B180A] p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#FCF6EF]/50 mb-4">Not a fit</p>
+              <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a fit</span>
               <ul className="space-y-3">
                 {notFit.map((item) => (
                   <li key={item} className="text-sm text-[#FCF6EF]/80 leading-relaxed">

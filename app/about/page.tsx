@@ -29,7 +29,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-tight text-balance">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground leading-tight text-balance">
             I build the fix. I don&apos;t describe it from a whiteboard.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
@@ -41,7 +41,7 @@ export default function AboutPage() {
       {/* Origin */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Why I work this way</p>
+          <span className="eyebrow-pill">Why I work this way</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Origin</h2>
           <p className="text-base text-muted-foreground leading-relaxed">
             I know what it feels like when the systems inside a business are broken, because I lived inside a broken one for twenty years before I fixed it. That&apos;s different from studying a business from the outside.
@@ -55,7 +55,7 @@ export default function AboutPage() {
       {/* Pattern */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">The pattern I keep seeing</p>
+          <span className="eyebrow-pill">The pattern I keep seeing</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">
             The business grew faster than the systems did
           </h2>
@@ -71,7 +71,7 @@ export default function AboutPage() {
       {/* Recent work */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Recent work</p>
+          <span className="eyebrow-pill">Recent work</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What this has looked like</h2>
           <ul className="space-y-5">
             {[
@@ -92,7 +92,7 @@ export default function AboutPage() {
       {/* What I believe */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">What I actually believe</p>
+          <span className="eyebrow-pill">What I actually believe</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">How I think about this work</h2>
           <p className="text-base text-muted-foreground leading-relaxed">
             Technology should reduce chaos. Used well, it gives a team more time, better decisions, and fewer things falling through the cracks. I care about punctuality, structure, and communicating early, before something turns into a problem.
@@ -106,7 +106,7 @@ export default function AboutPage() {
       {/* Outside client work */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Outside client work</p>
+          <span className="eyebrow-pill">Outside client work</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">My best business partner is in Grade 1</h2>
           <p className="text-base text-muted-foreground leading-relaxed">
             Outside client work, I&apos;m the producer, director, scriptwriter, social media manager, and GTM strategist for my six-year-old, Mithran. He builds LEGO sets meant for adults, finished a 4,621-piece Gotham City set in three weeks, and is working toward a world record. The brand is called Junior Master Builder. I built the site, run the content strategy, manage the channel, write the scripts.

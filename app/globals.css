@@ -181,6 +181,23 @@
   background: #3D2412;
 }
 
+/* Eyebrow pill tag — Claura-style small rounded label above headings */
+.eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid #DDD3C4;
+  background: transparent;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7A6555;
+  margin-bottom: 1.25rem;
+  font-family: var(--font-geist), 'Inter', sans-serif;
+}
+
 /* Subtle grid background — very light on warm white */
 .grid-bg {
   background-image:

@@ -23,7 +23,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-tight">
             Tell us what&apos;s actually going on
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">

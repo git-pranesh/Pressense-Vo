@@ -20,7 +20,7 @@ export default function CustomSoftwarePage() {
       {/* Hero */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-tight">
             Software built around your business, not the other way around
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-muted-foreground leading-relaxed">
@@ -43,7 +43,7 @@ export default function CustomSoftwarePage() {
       {/* The Problem */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">The Problem</p>
+          <span className="eyebrow-pill">The Problem</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What this usually looks like</h2>
           <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
             <p>
@@ -62,7 +62,7 @@ export default function CustomSoftwarePage() {
       {/* The Solution */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">The Solution</p>
+          <span className="eyebrow-pill">The Solution</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">We build the tool your business actually needs</h2>
           <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
             <p>
@@ -81,10 +81,10 @@ export default function CustomSoftwarePage() {
       {/* Who It's For */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Who It&apos;s For</p>
+          <span className="eyebrow-pill">Who It&apos;s For</span>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Good fit</p>
+              <span className="eyebrow-pill">Good fit</span>
               <ul className="space-y-3 text-base text-muted-foreground leading-relaxed">
                 <li>Founder-led businesses between $1M and $50M in revenue.</li>
                 <li>Teams where critical work still lives in spreadsheets or someone&apos;s memory.</li>
@@ -92,7 +92,7 @@ export default function CustomSoftwarePage() {
               </ul>
             </div>
             <div className="rounded-2xl bg-[#2B180A] p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#FCF6EF]/50 mb-4">Not a good fit</p>
+              <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a good fit</span>
               <ul className="space-y-3 text-base text-[#FCF6EF]/80 leading-relaxed">
                 <li>Pre-revenue startups still finding their product.</li>
                 <li>Companies looking for the cheapest build available, regardless of fit.</li>
@@ -106,7 +106,7 @@ export default function CustomSoftwarePage() {
       {/* Methodology */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Methodology</p>
+          <span className="eyebrow-pill">Methodology</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">How we get there</h2>
           <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
             <p>
@@ -125,7 +125,7 @@ export default function CustomSoftwarePage() {
       {/* What You Get */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">What You Get</p>
+          <span className="eyebrow-pill">What You Get</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What&apos;s included</h2>
           <ul className="space-y-4">
             {[
@@ -150,7 +150,7 @@ export default function CustomSoftwarePage() {
       {/* FAQ */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">FAQ</p>
+          <span className="eyebrow-pill">FAQ</span>
           <div className="space-y-8">
             {[
               {

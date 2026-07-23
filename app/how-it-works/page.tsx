@@ -27,8 +27,8 @@ export default function HowItWorksPage() {
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <section className="grid-bg border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">How It Works</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.08] text-balance">
+          <span className="eyebrow-pill">How It Works</span>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground leading-[1.08] text-balance">
             How an engagement works
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
@@ -40,7 +40,7 @@ export default function HowItWorksPage() {
       {/* ── Phase 1 — Diagnose ───────────────────────────────────── */}
       <section className="border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Phase 1 — Diagnose</p>
+          <span className="eyebrow-pill">Phase 1 — Diagnose</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
             We find the actual problem first
           </h2>
@@ -62,7 +62,7 @@ export default function HowItWorksPage() {
       {/* ── Phase 2 — Build ──────────────────────────────────────── */}
       <section className="border-b border-border bg-secondary/30">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Phase 2 — Build</p>
+          <span className="eyebrow-pill">Phase 2 — Build</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
             We build what fixes it
           </h2>
@@ -83,7 +83,7 @@ export default function HowItWorksPage() {
       {/* ── Phase 3 — Grow ───────────────────────────────────────── */}
       <section className="border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Phase 3 — Grow</p>
+          <span className="eyebrow-pill">Phase 3 — Grow</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
             Some clients bring us in further
           </h2>
@@ -101,7 +101,7 @@ export default function HowItWorksPage() {
       {/* ── Final CTA ────────────────────────────────────────────── */}
       <section className="bg-foreground">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary-foreground/40 mb-4">Where to start</p>
+          <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Where to start</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary-foreground leading-tight text-balance mb-4">
             Start with the diagnostic
           </h2>

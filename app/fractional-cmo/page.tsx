@@ -20,8 +20,8 @@ export default function FractionalCmoPage() {
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8">
           <div className="max-w-3xl">
-            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Service</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
+            <span className="eyebrow-pill">Service</span>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
               Marketing leadership, once the operations underneath it can hold the weight
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-4">
@@ -43,7 +43,7 @@ export default function FractionalCmoPage() {
       {/* The Problem */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">The Problem</p>
+          <span className="eyebrow-pill">The Problem</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What this usually looks like</h2>
           <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
@@ -59,7 +59,7 @@ export default function FractionalCmoPage() {
       {/* The Solution */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">The Solution</p>
+          <span className="eyebrow-pill">The Solution</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Senior marketing leadership, without the full-time cost</h2>
           <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
@@ -75,11 +75,11 @@ export default function FractionalCmoPage() {
       {/* Who It's For */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Who It&apos;s For</p>
+          <span className="eyebrow-pill">Who It&apos;s For</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this the right fit?</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Good fit</p>
+              <span className="eyebrow-pill">Good fit</span>
               <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
                 <li>Businesses whose internal systems and operations are already solid, or close to it.</li>
                 <li>Founders still personally handling marketing decisions who need senior direction, not another freelancer.</li>
@@ -87,7 +87,7 @@ export default function FractionalCmoPage() {
               </ul>
             </div>
             <div className="rounded-2xl bg-[#2B180A] p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#FCF6EF]/50 mb-4">Not a good fit</p>
+              <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a good fit</span>
               <ul className="space-y-3 text-sm text-[#FCF6EF]/80 leading-relaxed">
                 <li>Businesses whose core operations are still the real bottleneck.</li>
                 <li>Companies looking for a single campaign or one-off project rather than ongoing strategic direction.</li>
@@ -100,7 +100,7 @@ export default function FractionalCmoPage() {
       {/* Methodology */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Methodology</p>
+          <span className="eyebrow-pill">Methodology</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">How we get there</h2>
           <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
@@ -116,7 +116,7 @@ export default function FractionalCmoPage() {
       {/* What You Get */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">What You Get</p>
+          <span className="eyebrow-pill">What You Get</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What&apos;s included</h2>
           <ul className="space-y-3">
             {[
@@ -140,7 +140,7 @@ export default function FractionalCmoPage() {
       {/* FAQ */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">FAQ</p>
+          <span className="eyebrow-pill">FAQ</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Common questions</h2>
           <dl className="space-y-8">
             {[

@@ -19,8 +19,8 @@ export default function AiIntegrationPage() {
       {/* Hero */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Service</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
+          <span className="eyebrow-pill">Service</span>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
             AI that removes work, not a demo that looks impressive
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-4">
@@ -41,7 +41,7 @@ export default function AiIntegrationPage() {
       {/* The Problem */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">The Problem</p>
+          <span className="eyebrow-pill">The Problem</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What this usually looks like</h2>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
             A business hears &ldquo;add AI&rdquo; and ends up with a chatbot widget that answers three questions and gets ignored by everyone. Or a team member spends hours a week summarizing documents, drafting the same type of email, or sorting through leads by hand, work a model could do in seconds if it were actually wired into the process.
@@ -55,7 +55,7 @@ export default function AiIntegrationPage() {
       {/* The Solution */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">The Solution</p>
+          <span className="eyebrow-pill">The Solution</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">We build AI into work you&apos;re already doing</h2>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
             After the diagnostic, we know which tasks are repetitive enough, and low-risk enough, for AI to genuinely help with. That&apos;s what we build around.
@@ -69,11 +69,11 @@ export default function AiIntegrationPage() {
       {/* Who It's For */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Who It&apos;s For</p>
+          <span className="eyebrow-pill">Who It&apos;s For</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this right for you?</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Good fit</p>
+              <span className="eyebrow-pill">Good fit</span>
               <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
                 <li>Teams doing repetitive tasks like summarizing, sorting, or drafting by hand, at real volume.</li>
                 <li>Businesses with existing tools and data clean enough for AI to work with reliably.</li>
@@ -81,7 +81,7 @@ export default function AiIntegrationPage() {
               </ul>
             </div>
             <div className="rounded-2xl bg-[#2B180A] p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#FCF6EF]/50 mb-4">Not a good fit</p>
+              <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a good fit</span>
               <ul className="space-y-3 text-sm text-[#FCF6EF]/80 leading-relaxed">
                 <li>{'Businesses hoping AI will fix a process that\'s fundamentally broken, rather than automate a working one.'}</li>
                 <li>Teams without any existing data or workflow for AI to plug into.</li>
@@ -94,7 +94,7 @@ export default function AiIntegrationPage() {
       {/* Methodology */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Methodology</p>
+          <span className="eyebrow-pill">Methodology</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">How we get there</h2>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
             The diagnostic identifies which parts of your workflow are repetitive enough to hand off, and which ones still genuinely need a person&apos;s judgment. We&apos;re honest when a task isn&apos;t a good fit for AI, even if it sounds appealing on paper.
@@ -108,7 +108,7 @@ export default function AiIntegrationPage() {
       {/* What You Get */}
       <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">What You Get</p>
+          <span className="eyebrow-pill">What You Get</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What&apos;s included</h2>
           <ul className="space-y-3">
             {[
@@ -132,7 +132,7 @@ export default function AiIntegrationPage() {
       {/* FAQ */}
       <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">FAQ</p>
+          <span className="eyebrow-pill">FAQ</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Common questions</h2>
           <dl className="space-y-8">
             {[
