@@ -17,7 +17,7 @@ export default function CustomCrmPage() {
     <main className="min-h-screen bg-background">
 
       {/* Hero */}
-      <section className="py-20 lg:py-28 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Service</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
@@ -39,11 +39,11 @@ export default function CustomCrmPage() {
       </section>
 
       {/* Problem */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">The Problem</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">What this usually looks like</h2>
-          <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What this usually looks like</h2>
+          <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
               A sales team pays for a CRM with dozens of fields nobody fills in, because half of them don&apos;t apply to how the business actually sells. Deals slip through because the pipeline stages don&apos;t match the real sales process. Handoff to delivery happens over email, so the CRM never reflects what&apos;s actually happening with a client after the sale closes.
             </p>
@@ -55,11 +55,11 @@ export default function CustomCrmPage() {
       </section>
 
       {/* Solution */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">The Solution</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">We build the CRM around your actual process</h2>
-          <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">We build the CRM around your actual process</h2>
+          <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
               After the diagnostic, we know exactly how your team sells, what your pipeline stages really look like, and where deals tend to get stuck or lost.
             </p>
@@ -71,7 +71,7 @@ export default function CustomCrmPage() {
       </section>
 
       {/* Who It's For */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Who It&apos;s For</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Good fit</h2>
@@ -96,11 +96,11 @@ export default function CustomCrmPage() {
       </section>
 
       {/* Methodology */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Methodology</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">How we get there</h2>
-          <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">How we get there</h2>
+          <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
               The diagnostic maps your real sales and delivery process, including the parts that don&apos;t happen the way anyone assumes. We use that to design the data model and pipeline stages before writing any code.
             </p>
@@ -112,10 +112,10 @@ export default function CustomCrmPage() {
       </section>
 
       {/* What You Get */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">What You Get</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">What&apos;s included</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What&apos;s included</h2>
           <ul className="space-y-3">
             {[
               'A mapped sales and delivery process from the diagnostic.',
@@ -133,7 +133,7 @@ export default function CustomCrmPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">FAQ</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Common questions</h2>
@@ -170,7 +170,7 @@ export default function CustomCrmPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 lg:py-28">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             See what a CRM built for your process looks like

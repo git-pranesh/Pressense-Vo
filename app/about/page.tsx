@@ -27,7 +27,7 @@ export default function AboutPage() {
     <main>
 
       {/* Hero */}
-      <section className="py-20 lg:py-28 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-tight text-balance">
             I build the fix. I don&apos;t describe it from a whiteboard.
@@ -39,10 +39,10 @@ export default function AboutPage() {
       </section>
 
       {/* Origin */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Why I work this way</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">Origin</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Origin</h2>
           <p className="text-base text-muted-foreground leading-relaxed">
             I know what it feels like when the systems inside a business are broken, because I lived inside a broken one for twenty years before I fixed it. That&apos;s different from studying a business from the outside.
           </p>
@@ -53,10 +53,10 @@ export default function AboutPage() {
       </section>
 
       {/* Pattern */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">The pattern I keep seeing</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">
             The business grew faster than the systems did
           </h2>
           <p className="text-base text-muted-foreground leading-relaxed">
@@ -69,7 +69,7 @@ export default function AboutPage() {
       </section>
 
       {/* Recent work */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Recent work</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What this has looked like</h2>
@@ -90,10 +90,10 @@ export default function AboutPage() {
       </section>
 
       {/* What I believe */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">What I actually believe</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">How I think about this work</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">How I think about this work</h2>
           <p className="text-base text-muted-foreground leading-relaxed">
             Technology should reduce chaos. Used well, it gives a team more time, better decisions, and fewer things falling through the cracks. I care about punctuality, structure, and communicating early, before something turns into a problem.
           </p>
@@ -104,10 +104,10 @@ export default function AboutPage() {
       </section>
 
       {/* Outside client work */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Outside client work</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">My best business partner is in Grade 1</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">My best business partner is in Grade 1</h2>
           <p className="text-base text-muted-foreground leading-relaxed">
             Outside client work, I&apos;m the producer, director, scriptwriter, social media manager, and GTM strategist for my six-year-old, Mithran. He builds LEGO sets meant for adults, finished a 4,621-piece Gotham City set in three weeks, and is working toward a world record. The brand is called Junior Master Builder. I built the site, run the content strategy, manage the channel, write the scripts.
           </p>
@@ -118,7 +118,7 @@ export default function AboutPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 lg:py-28">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             Let&apos;s talk about what&apos;s actually broken

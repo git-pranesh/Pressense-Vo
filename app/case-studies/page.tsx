@@ -90,7 +90,7 @@ export default function CaseStudiesPage() {
 
         {/* Card grid */}
         <section
-          className="py-20 lg:py-28"
+          className="py-24 lg:py-32"
           aria-labelledby="case-studies-grid-heading"
         >
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -168,7 +168,7 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 lg:py-28 border-t border-border/40">
+        <section className="py-24 lg:py-32 border-t border-border/40">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="max-w-2xl">
               <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">

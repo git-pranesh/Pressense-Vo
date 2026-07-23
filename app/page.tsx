@@ -105,7 +105,7 @@ export default function HomePage() {
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <section className="grid-bg border-b border-border">
-        <div className="container mx-auto px-5 sm:px-8 py-20 lg:py-28 max-w-3xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.08] text-balance">
             Many businesses don&apos;t have a marketing problem. They have a diagnosis problem.
           </h1>
@@ -145,15 +145,15 @@ export default function HomePage() {
 
       {/* ── The Problem ──────────────────────────────────────────── */}
       <section className="border-b border-border">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-24 max-w-5xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text — left */}
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">The Problem</p>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
                 Why growth still feels hard, even when you&apos;re doing everything right
               </h2>
-              <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
+              <div className="space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
                 <p>
                   You&apos;ve hired good people. You&apos;ve paid for the tools. Growth still feels slower than it should be.
                 </p>
@@ -182,7 +182,7 @@ export default function HomePage() {
 
       {/* ── What We Do ───────────────────────────────────────────── */}
       <section className="border-b border-border bg-secondary/30">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-24 max-w-5xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Visual — left (alternates rhythm) */}
             <div
@@ -197,10 +197,10 @@ export default function HomePage() {
             {/* Text — right */}
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">What We Do</p>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
                 We map the problem before we touch a single tool
               </h2>
-              <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
+              <div className="space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
                 <p>
                   We spend time inside your business first. How work moves. Where it stalls. What it&apos;s actually costing you in time and money.
                 </p>
@@ -215,9 +215,9 @@ export default function HomePage() {
 
       {/* ── How It Works ─────────────────────────────────────────── */}
       <section className="border-b border-border">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-24 max-w-5xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">How It Works</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-12">
             Diagnose. Build. Grow.
           </h2>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -264,9 +264,9 @@ export default function HomePage() {
 
       {/* ── Services ─────────────────────────────────────────────── */}
       <section className="border-b border-border bg-secondary/30">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Services</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-12">
             What we actually do
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -321,7 +321,7 @@ export default function HomePage() {
 
       {/* ── Who We Work With ─────────────────────────────────────── */}
       <section className="border-b border-border">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Who We Work With</p>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
@@ -350,7 +350,7 @@ export default function HomePage() {
 
       {/* ── Final CTA ────────────────────────────────────────────── */}
       <section className="bg-foreground">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary-foreground leading-tight text-balance mb-4">
             Start with a diagnostic, not a sales pitch.
           </h2>

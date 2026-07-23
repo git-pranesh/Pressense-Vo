@@ -26,7 +26,7 @@ export default function HowItWorksPage() {
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <section className="grid-bg border-b border-border">
-        <div className="container mx-auto px-5 sm:px-8 py-20 lg:py-28 max-w-3xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">How It Works</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.08] text-balance">
             How an engagement works
@@ -39,7 +39,7 @@ export default function HowItWorksPage() {
 
       {/* ── Phase 1 — Diagnose ───────────────────────────────────── */}
       <section className="border-b border-border">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Phase 1 — Diagnose</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
             We find the actual problem first
@@ -61,7 +61,7 @@ export default function HowItWorksPage() {
 
       {/* ── Phase 2 — Build ──────────────────────────────────────── */}
       <section className="border-b border-border bg-secondary/30">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Phase 2 — Build</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
             We build what fixes it
@@ -82,7 +82,7 @@ export default function HowItWorksPage() {
 
       {/* ── Phase 3 — Grow ───────────────────────────────────────── */}
       <section className="border-b border-border">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Phase 3 — Grow</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight text-balance mb-8">
             Some clients bring us in further
@@ -100,7 +100,7 @@ export default function HowItWorksPage() {
 
       {/* ── Final CTA ────────────────────────────────────────────── */}
       <section className="bg-foreground">
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary-foreground/40 mb-4">Where to start</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary-foreground leading-tight text-balance mb-4">
             Start with the diagnostic

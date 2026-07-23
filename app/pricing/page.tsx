@@ -78,7 +78,7 @@ export default function PricingPage() {
     <main className="min-h-screen bg-background">
 
       {/* Hero */}
-      <section className="py-20 lg:py-28 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Pricing</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
@@ -94,7 +94,7 @@ export default function PricingPage() {
       </section>
 
       {/* Services */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-base text-muted-foreground mb-10">
             Free diagnostic. Then a clear number. The diagnostic itself costs nothing. Once we know what you actually need, you get a specific quote, not a guess.
@@ -131,7 +131,7 @@ export default function PricingPage() {
       </section>
 
       {/* Free MVP section */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-5">About the free build</h2>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
@@ -144,7 +144,7 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-10">Common questions</h2>
           <dl className="flex flex-col gap-8">
@@ -159,7 +159,7 @@ export default function PricingPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 lg:py-28">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground text-balance mb-5">
             Get a real number, not a guess

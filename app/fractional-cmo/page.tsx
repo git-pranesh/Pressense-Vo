@@ -17,7 +17,7 @@ export default function FractionalCmoPage() {
     <main className="min-h-screen bg-background">
 
       {/* Hero */}
-      <section className="py-20 lg:py-28 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8">
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Service</p>
@@ -41,11 +41,11 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* The Problem */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">The Problem</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">What this usually looks like</h2>
-          <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What this usually looks like</h2>
+          <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
               A founder is doing the job of a CMO in whatever hours are left after running the actual business. Marketing spend goes out, but nobody&apos;s tracking whether it&apos;s turning into pipeline that closes. Positioning shifts every few months depending on who&apos;s writing the last piece of content. There&apos;s no one senior enough to own the growth strategy end to end, and a full-time CMO hire is a six-figure commitment nobody&apos;s ready to make yet.
             </p>
@@ -57,11 +57,11 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* The Solution */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">The Solution</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">Senior marketing leadership, without the full-time cost</h2>
-          <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Senior marketing leadership, without the full-time cost</h2>
+          <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
               We come in on a retainer basis and take ownership of positioning, go-to-market strategy, and demand generation, the way a CMO would, at a fraction of what a full-time hire costs.
             </p>
@@ -73,7 +73,7 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* Who It's For */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Who It&apos;s For</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this the right fit?</h2>
@@ -98,11 +98,11 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* Methodology */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Methodology</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">How we get there</h2>
-          <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">How we get there</h2>
+          <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
               We start with a marketing audit: what&apos;s working, what&apos;s being spent on without return, and where positioning is unclear or inconsistent. From there, we build a go-to-market roadmap tied to real numbers, not vanity metrics.
             </p>
@@ -114,10 +114,10 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* What You Get */}
-      <section className="py-16 lg:py-20 border-b border-border/40 bg-secondary/20">
+      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">What You Get</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-6">What&apos;s included</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What&apos;s included</h2>
           <ul className="space-y-3">
             {[
               'A marketing audit and clear positioning.',
@@ -138,7 +138,7 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 lg:py-20 border-b border-border/40">
+      <section className="py-24 lg:py-32 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">FAQ</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Common questions</h2>
@@ -175,7 +175,7 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 lg:py-28">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-2xl text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             See if your foundation is ready for this
