@@ -169,7 +169,7 @@ export default function PricingPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+            className="btn-primary px-8 py-4 text-base font-semibold"
           >
             Start a Free Diagnostic
           </Link>
