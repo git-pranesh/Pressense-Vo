@@ -3,18 +3,19 @@ import { calculatorsData, CALCULATOR_CATEGORIES } from '@/lib/calculators'
 
 const companyLinks = [
   { label: 'How It Works', href: '/how-it-works' },
-  { label: 'Playbooks', href: '/playbooks' },
-  { label: 'Tools', href: '/tools' },
   { label: 'Pricing', href: '/pricing' },
+  { label: 'Case Studies', href: '/case-studies' },
+  { label: 'About', href: '/about' },
+  { label: 'Tools', href: '/tools' },
   { label: 'Contact', href: '/contact' },
 ]
 
 const serviceLinks = [
-  { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
   { label: 'Custom Software & Internal Tools', href: '/custom-software-internal-tools' },
-  { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
-  { label: 'MVP Development', href: '/mvp-development-for-startups' },
-  { label: 'Framer Website Design', href: '/framer-website-design' },
+  { label: 'Workflow Automation', href: '/workflow-automation' },
+  { label: 'Custom CRM', href: '/custom-crm' },
+  { label: 'AI Integration', href: '/ai-integration' },
+  { label: 'Fractional CMO', href: '/fractional-cmo' },
 ]
 
 export function MegaFooter() {

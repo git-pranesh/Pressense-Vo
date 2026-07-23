@@ -20,11 +20,13 @@ export function Footer() {
         {/* Nav */}
         <nav className="flex items-center gap-6" aria-label="Footer navigation">
           {[
-            { label: 'About', href: '/about' },
             { label: 'How It Works', href: '/how-it-works' },
+            { label: 'Pricing', href: '/pricing' },
             { label: 'Case Studies', href: '/case-studies' },
-            { label: 'Playbooks', href: '/playbooks' },
+            { label: 'About', href: '/about' },
             { label: 'Contact', href: '/contact' },
+            { label: 'Privacy', href: '/privacy' },
+            { label: 'Terms', href: '/terms' },
           ].map((link) => (
             <a
               key={link.label}
