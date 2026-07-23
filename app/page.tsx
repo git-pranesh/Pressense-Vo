@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { VisualCard } from '@/components/visual-card'
 
 export const metadata: Metadata = {
   title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
@@ -254,16 +255,7 @@ export default function HomePage() {
               </div>
             </div>
             {/* Visual — right */}
-            <div
-              className="rounded-2xl min-h-[400px] w-full"
-              style={{
-                background: 'linear-gradient(135deg, #FF9A5C 0%, #FF6B9D 45%, #A855F7 100%)',
-                filter: 'blur(0px)',
-              }}
-              aria-hidden="true"
-            >
-              <div className="w-full h-full min-h-[400px] rounded-2xl backdrop-blur-0" />
-            </div>
+            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '400px' }} />
           </div>
         </div>
       </section>
@@ -273,15 +265,7 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Visual — left (alternates rhythm) */}
-            <div
-              className="rounded-2xl min-h-[400px] w-full order-last lg:order-first"
-              style={{
-                background: 'linear-gradient(135deg, #A855F7 0%, #EC4899 50%, #F97316 100%)',
-              }}
-              aria-hidden="true"
-            >
-              <div className="w-full h-full min-h-[400px] rounded-2xl" />
-            </div>
+            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '400px' }} className="order-last lg:order-first" />
             {/* Text — right */}
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">What We Do</p>
@@ -337,15 +321,7 @@ export default function HomePage() {
               </div>
             </div>
             {/* Visual — right */}
-            <div
-              className="rounded-2xl min-h-[400px] w-full sticky top-24"
-              style={{
-                background: 'linear-gradient(160deg, #FF9A5C 0%, #EC4899 55%, #7C3AED 100%)',
-              }}
-              aria-hidden="true"
-            >
-              <div className="w-full h-full min-h-[400px] rounded-2xl" />
-            </div>
+            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '400px' }} className="sticky top-24" />
           </div>
         </div>
       </section>
