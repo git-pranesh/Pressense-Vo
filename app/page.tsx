@@ -123,6 +123,37 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
+
+          {/* Dot-grid visual card */}
+          <div
+            className="mt-14 rounded-2xl overflow-hidden relative w-full"
+            style={{ aspectRatio: '2.4 / 1', minHeight: '220px' }}
+            aria-hidden="true"
+          >
+            {/* Dot grid base */}
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: 'radial-gradient(circle, #C4A882 1.2px, transparent 1.2px)',
+                backgroundSize: '22px 22px',
+              }}
+            />
+            {/* Warm orange-coral blob, blurred, fades the dots at center */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background: 'radial-gradient(ellipse 60% 70% at 50% 50%, #FF9A5C 0%, #FF6B5B 22%, rgba(255,154,92,0.45) 48%, transparent 72%)',
+                filter: 'blur(28px)',
+              }}
+            />
+            {/* Edge vignette — fades into page background so card feels boundless */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background: 'radial-gradient(ellipse 88% 88% at 50% 50%, transparent 32%, #FCF6EF 100%)',
+              }}
+            />
+          </div>
         </div>
       </section>
 
@@ -318,7 +349,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Services ─────────────────────────────────────────────── */}
+      {/* ── Services ────────────────────────────────���────────────── */}
       <section className="border-b border-border bg-secondary/30">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Services</p>
