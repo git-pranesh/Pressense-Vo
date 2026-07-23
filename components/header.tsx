@@ -35,42 +35,42 @@ export function Header() {
           : 'bg-[#EDEBE5] border-b border-transparent'
       }`}
     >
-      {/* Desktop: 3-col grid — links | centred logo | CTA */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 hidden lg:grid lg:grid-cols-3 items-center">
-
+      {/* Desktop: links | centred logo | CTA — auto middle so logo stays truly centred */}
+      <div
+        className="max-w-7xl mx-auto px-6 lg:px-10 h-16 hidden lg:grid items-center"
+        style={{ gridTemplateColumns: '1fr auto 1fr' }}
+      >
         {/* Col 1 — left-aligned nav links */}
-        <nav className="flex items-center gap-6" aria-label="Main navigation">
+        <nav className="flex items-center gap-5 whitespace-nowrap" aria-label="Main navigation">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-sm font-normal text-foreground/70 hover:text-foreground transition-colors duration-200 no-underline"
+              className="font-sans text-sm font-normal text-foreground/65 hover:text-foreground transition-colors duration-200 no-underline"
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        {/* Col 2 — centred wordmark */}
-        <div className="flex justify-center">
-          <Link href="/" className="flex items-center gap-2 group" aria-label="Pressense homepage">
-            <div className="w-6 h-6 rounded border border-foreground/30 flex items-center justify-center group-hover:border-foreground/60 transition-colors">
-              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
-                <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
-                <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
-                <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
-              </svg>
-            </div>
-            <span className="text-sm font-semibold tracking-widest text-foreground uppercase">Pressense</span>
-          </Link>
-        </div>
+        {/* Col 2 — centred wordmark (auto width, perfectly centred) */}
+        <Link href="/" className="flex items-center gap-2 px-8 group" aria-label="Pressense homepage">
+          <div className="w-6 h-6 rounded border border-foreground/30 flex items-center justify-center group-hover:border-foreground/60 transition-colors shrink-0">
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
+              <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
+              <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
+              <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
+            </svg>
+          </div>
+          <span className="text-sm font-semibold tracking-widest text-foreground uppercase">Pressense</span>
+        </Link>
 
         {/* Col 3 — right-aligned pill CTA */}
         <div className="flex justify-end">
           <Link
             href="/contact"
-            className="font-sans inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] hover:opacity-85 transition-opacity duration-200"
+            className="font-sans inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] hover:opacity-85 transition-opacity duration-200 whitespace-nowrap"
             aria-label="Book a free call"
           >
             Book a free call
