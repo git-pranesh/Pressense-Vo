@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { VisualCard } from '@/components/visual-card'
 import { AnchorCard } from '@/components/anchor-card'
+import { FlowerPanel } from '@/components/flower-panel'
 
 export const metadata: Metadata = {
   title: 'Workflow Automation | Pressense',
@@ -40,12 +40,7 @@ export default function WorkflowAutomationPage() {
                 Start a Free Diagnostic
               </Link>
             </div>
-            <VisualCard
-              aspectRatio="4 / 3"
-              style={{ minHeight: '380px' }}
-              imageUrl="/images/botanical-hero.png"
-              imageAlt="Orange coral flower against a deep teal background"
-            />
+            <FlowerPanel minHeight={380} />
           </div>
         </div>
       </section>
