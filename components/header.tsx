@@ -35,61 +35,60 @@ export function Header() {
           : 'bg-[#EDEBE5] border-b border-transparent'
       }`}
     >
-      {/* Desktop: links | centred logo | CTA — auto middle so logo stays truly centred */}
-      <div
-        className="max-w-7xl mx-auto px-6 lg:px-10 h-16 hidden lg:grid items-center"
-        style={{ gridTemplateColumns: '1fr auto 1fr' }}
-      >
-        {/* Col 1 — left-aligned nav links */}
-        <nav className="flex items-center gap-5 whitespace-nowrap" aria-label="Main navigation">
+      {/* Desktop nav */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 hidden lg:flex items-center justify-between">
+
+        {/* Logo — left */}
+        <Link href="/" className="flex items-center gap-2.5 group" aria-label="Pressense homepage">
+          <div className="w-7 h-7 rounded border border-foreground/30 flex items-center justify-center group-hover:border-foreground/60 transition-colors">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
+              <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.5" />
+              <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.5" />
+              <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
+            </svg>
+          </div>
+          <span className="text-sm font-semibold tracking-wide text-foreground">PRESSENSE</span>
+        </Link>
+
+        {/* Nav links — centre */}
+        <nav className="flex items-center gap-7" aria-label="Main navigation">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-sm font-normal text-foreground/65 hover:text-foreground transition-colors duration-200 no-underline"
+              className="font-sans text-sm font-medium text-foreground/70 hover:text-foreground transition-colors duration-200 no-underline"
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        {/* Col 2 — centred wordmark (auto width, perfectly centred) */}
-        <Link href="/" className="flex items-center gap-2 px-8 group" aria-label="Pressense homepage">
-          <div className="w-6 h-6 rounded border border-foreground/30 flex items-center justify-center group-hover:border-foreground/60 transition-colors shrink-0">
-            <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
-              <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
-              <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
-              <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
-            </svg>
-          </div>
-          <span className="text-sm font-semibold tracking-widest text-foreground uppercase">Pressense</span>
+        {/* CTA — right */}
+        <Link
+          href="/contact"
+          className="font-sans inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] hover:opacity-90 transition-opacity duration-200"
+          aria-label="Start a diagnostic"
+        >
+          Start Diagnostic
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </Link>
-
-        {/* Col 3 — right-aligned pill CTA */}
-        <div className="flex justify-end">
-          <Link
-            href="/contact"
-            className="font-sans inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] hover:opacity-85 transition-opacity duration-200 whitespace-nowrap"
-            aria-label="Book a free call"
-          >
-            Book a free call
-          </Link>
-        </div>
       </div>
 
       {/* Mobile: logo left, hamburger right */}
       <div className="max-w-7xl mx-auto px-6 h-16 flex lg:hidden items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group" aria-label="Pressense homepage">
-          <div className="w-6 h-6 rounded border border-foreground/30 flex items-center justify-center">
-            <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <Link href="/" className="flex items-center gap-2.5 group" aria-label="Pressense homepage">
+          <div className="w-7 h-7 rounded border border-foreground/30 flex items-center justify-center">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
               <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
-              <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
-              <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
+              <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.5" />
+              <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.5" />
               <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
             </svg>
           </div>
-          <span className="text-sm font-semibold tracking-widest text-foreground uppercase">Pressense</span>
+          <span className="text-sm font-semibold tracking-wide text-foreground">PRESSENSE</span>
         </Link>
 
         <button
@@ -117,7 +116,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-sm font-normal text-foreground/70 py-2.5 border-b border-[#D4CFC7] last:border-0 no-underline hover:text-foreground transition-colors"
+              className="font-sans text-sm font-medium text-foreground/70 py-2 border-b border-[#D4CFC7] last:border-0 no-underline hover:text-foreground transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -125,10 +124,10 @@ export function Header() {
           ))}
           <Link
             href="/contact"
-            className="font-sans mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] w-fit"
+            className="font-sans mt-3 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] w-fit"
             onClick={() => setMenuOpen(false)}
           >
-            Book a free call
+            Start Diagnostic
           </Link>
         </div>
       )}
