@@ -32,12 +32,12 @@ export function FlowerPanel({
         priority={false}
         aria-hidden="true"
       />
-      {/* Left-to-right fade into card bg */}
+      {/* Left-to-right fade — only covers leftmost 20% so flower reads clearly */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'linear-gradient(to right, #1C3530 0%, rgba(28,53,48,0.55) 35%, transparent 100%)',
+            'linear-gradient(to right, #1C3530 0%, rgba(28,53,48,0.35) 20%, transparent 45%)',
         }}
         aria-hidden="true"
       />
@@ -46,7 +46,7 @@ export function FlowerPanel({
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'linear-gradient(to top, rgba(28,53,48,0.5) 0%, transparent 50%)',
+            'linear-gradient(to top, rgba(28,53,48,0.3) 0%, transparent 40%)',
         }}
         aria-hidden="true"
       />

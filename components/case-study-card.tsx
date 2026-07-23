@@ -28,9 +28,9 @@ export function CaseStudyCard({
   return (
     <Link
       href={`/case-studies/${slug}`}
-      className={`group relative flex flex-col rounded-3xl overflow-hidden${featured ? ' lg:col-span-2' : ''}`}
+      className="group relative flex flex-col rounded-3xl overflow-hidden"
       aria-label={`Read the ${client} case study`}
-      style={{ minHeight: featured ? 520 : 460 }}
+      style={{ minHeight: 480 }}
     >
       {/* Full-bleed dark teal background */}
       <div className="absolute inset-0" style={{ background: '#1C3530' }} />
@@ -75,9 +75,7 @@ export function CaseStudyCard({
           </span>
 
           {/* Client name */}
-          <h3
-            className={`font-semibold text-white text-balance leading-tight mb-3 ${featured ? 'text-4xl sm:text-5xl lg:text-6xl' : 'text-3xl sm:text-4xl'}`}
-          >
+          <h3 className="font-semibold text-white text-balance leading-tight mb-3 text-3xl sm:text-4xl">
             {client}
           </h3>
 
@@ -88,12 +86,10 @@ export function CaseStudyCard({
             <span className="text-sm" style={{ color: 'rgba(237,235,229,0.55)' }}>{duration}</span>
           </div>
 
-          {/* Summary — only on featured */}
-          {featured && (
-            <p className="text-base leading-relaxed max-w-xl" style={{ color: 'rgba(237,235,229,0.72)' }}>
-              {summary}
-            </p>
-          )}
+          {/* Summary */}
+          <p className="text-sm leading-relaxed" style={{ color: 'rgba(237,235,229,0.65)' }}>
+            {summary}
+          </p>
         </div>
 
         {/* Bottom: tags + CTA */}

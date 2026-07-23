@@ -49,7 +49,7 @@ export function AnchorCard({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 px-8 py-12 sm:px-12 sm:py-14 lg:px-16 lg:py-16 max-w-lg">
+      <div className="relative z-10 px-8 py-12 sm:px-12 sm:py-14 lg:px-16 lg:py-16 w-3/5 max-w-2xl min-w-0">
         {eyebrow && (
           <span
             className="eyebrow-pill mb-5"

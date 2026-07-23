@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { VisualCard } from '@/components/visual-card'
 import { AnchorCard } from '@/components/anchor-card'
 import { ServicesToggle } from '@/components/services-toggle'
+import { FlowerPanel } from '@/components/flower-panel'
 
 export const metadata: Metadata = {
   title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
@@ -139,13 +139,48 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Full-width botanical image card — bleeds to section edge */}
-          <VisualCard
-            aspectRatio="21 / 9"
-            style={{ borderRadius: '18px 18px 0 0', minHeight: '280px' }}
-            imageUrl="/images/botanical-hero-wide.png"
-            imageAlt="Orange coral flower against a deep teal and green background"
-          />
+          {/* Dot-grid decorative banner — Claura-style, flower blob right-centre */}
+          <div
+            className="mt-6 rounded-t-3xl overflow-hidden relative w-full border border-b-0 border-[#D4CFC7]"
+            style={{ aspectRatio: '14 / 3', minHeight: '160px' }}
+            aria-hidden="true"
+          >
+            {/* Dot grid base */}
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: 'radial-gradient(circle, #C4A882 1.2px, transparent 1.2px)',
+                backgroundSize: '22px 22px',
+                backgroundColor: '#E8E5DE',
+              }}
+            />
+            {/* Orange-coral flower blob — positioned right of centre */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'radial-gradient(ellipse 40% 90% at 68% 50%, #FF9A5C 0%, #FF6B5B 18%, rgba(255,120,80,0.3) 50%, transparent 72%)',
+                filter: 'blur(28px)',
+              }}
+            />
+            {/* Soft warm secondary bloom */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'radial-gradient(ellipse 28% 70% at 80% 40%, rgba(255,173,111,0.55) 0%, transparent 65%)',
+                filter: 'blur(20px)',
+              }}
+            />
+            {/* Edge vignette — fades dots into card bg at all edges */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'radial-gradient(ellipse 90% 80% at 50% 50%, transparent 35%, #E8E5DE 100%)',
+              }}
+            />
+          </div>
         </div>
       </section>
 
@@ -240,13 +275,7 @@ export default function HomePage() {
               </Link>
             </div>
             {/* Flower card — sticky right */}
-            <VisualCard
-              aspectRatio="3 / 4"
-              style={{ minHeight: '400px' }}
-              className="sticky top-24"
-              imageUrl="/images/botanical-hero.png"
-              imageAlt="Orange coral flower against a deep teal background"
-            />
+            <FlowerPanel minHeight={440} className="sticky top-24 rounded-3xl" />
           </div>
         </div>
       </section>

@@ -84,7 +84,6 @@ export default function CaseStudiesPage() {
           <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
             <h2 className="sr-only" id="case-studies-grid-heading">All case studies</h2>
 
-            {/* Featured first card spans full width, second is half */}
             <div className="grid lg:grid-cols-2 gap-5">
               {caseStudies.map((study, i) => (
                 <CaseStudyCard
@@ -97,7 +96,6 @@ export default function CaseStudiesPage() {
                   summary={study.summary}
                   tags={study.tags}
                   imageSrc={i === 0 ? '/images/botanical-hero.png' : '/images/botanical-hero-2.png'}
-                  featured={i === 0}
                 />
               ))}
             </div>

@@ -79,7 +79,7 @@ export default function PricingPage() {
     <main className="min-h-screen bg-background">
 
       {/* Hero */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
+      <section className="pt-28 pb-16 border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <span className="eyebrow-pill">Pricing</span>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">

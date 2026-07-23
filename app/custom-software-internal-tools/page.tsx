@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
-import { FlowerPanel } from '@/components/flower-panel'
+import { VisualCard } from '@/components/visual-card'
 
 export const metadata: Metadata = {
   title: 'Custom Software & Internal Tools | Pressense',
@@ -20,7 +20,7 @@ export default function CustomSoftwarePage() {
   return (
     <main>
       {/* Hero */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
+      <section className="pt-28 pb-16 border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
@@ -41,7 +41,7 @@ export default function CustomSoftwarePage() {
                 Start a Free Diagnostic
               </Link>
             </div>
-            <FlowerPanel minHeight={380} />
+            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '380px' }} />
           </div>
         </div>
       </section>

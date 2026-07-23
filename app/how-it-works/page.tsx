@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
-import { FlowerPanel } from '@/components/flower-panel'
+import { VisualCard } from '@/components/visual-card'
 
 export const metadata: Metadata = {
   title: 'How an Engagement Works | Pressense',
@@ -27,8 +27,8 @@ export default function HowItWorksPage() {
     <main>
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
-      <section className="grid-bg border-b border-border">
-        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
+      <section className="border-b border-border">
+        <div className="container mx-auto px-5 sm:px-8 pt-28 pb-16 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <span className="eyebrow-pill">How It Works</span>
@@ -39,7 +39,7 @@ export default function HowItWorksPage() {
                 We look at your business before we recommend anything. No pitch on day one.
               </p>
             </div>
-            <FlowerPanel src="/images/botanical-hero-wide.png" minHeight={360} />
+            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '360px' }} />
           </div>
         </div>
       </section>
