@@ -29,11 +29,7 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'glass-card border-b border-border/60'
-          : 'bg-transparent border-b border-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-[#FCF6EF] border-b border-[#EDE3D6]"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
@@ -55,7 +51,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide"
+              className="font-sans text-sm font-medium text-[#2B180A] hover:opacity-70 transition-opacity duration-200 tracking-wide no-underline"
             >
               {link.label}
             </Link>
@@ -66,7 +62,8 @@ export function Header() {
         <div className="hidden lg:block">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors duration-200"
+            className="font-sans inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-[#2B180A] text-[#FCF6EF] hover:opacity-90 transition-opacity duration-200"
+            style={{ borderRadius: '12px' }}
             aria-label="Start a diagnostic"
           >
             Start Diagnostic
@@ -97,12 +94,12 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden glass-card border-t border-border/40 px-6 py-5 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-[#FCF6EF] border-t border-[#EDE3D6] px-6 py-5 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground py-2 border-b border-border/20 last:border-0"
+              className="font-sans text-sm font-medium text-[#2B180A] py-2 border-b border-[#EDE3D6] last:border-0 no-underline"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -110,7 +107,8 @@ export function Header() {
           ))}
           <Link
             href="/contact"
-            className="mt-3 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground w-fit"
+            className="font-sans mt-3 inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-[#2B180A] text-[#FCF6EF] w-fit"
+            style={{ borderRadius: '12px' }}
             onClick={() => setMenuOpen(false)}
           >
             Start Diagnostic
