@@ -124,33 +124,34 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Dot-grid visual card */}
+          {/* Dot-grid decorative divider */}
           <div
-            className="mt-14 rounded-2xl overflow-hidden relative w-full"
-            style={{ aspectRatio: '2.4 / 1', minHeight: '220px' }}
+            className="mt-14 rounded-2xl overflow-hidden relative w-full border border-[#E8E0D5]"
+            style={{ aspectRatio: '4 / 1', maxHeight: '140px' }}
             aria-hidden="true"
           >
             {/* Dot grid base */}
             <div
               className="absolute inset-0"
               style={{
-                backgroundImage: 'radial-gradient(circle, #C4A882 1.2px, transparent 1.2px)',
-                backgroundSize: '22px 22px',
+                backgroundImage: 'radial-gradient(circle, #C4A882 1.1px, transparent 1.1px)',
+                backgroundSize: '20px 20px',
+                backgroundColor: '#FFFDFA',
               }}
             />
             {/* Warm orange-coral blob, blurred, fades the dots at center */}
             <div
               className="absolute inset-0"
               style={{
-                background: 'radial-gradient(ellipse 60% 70% at 50% 50%, #FF9A5C 0%, #FF6B5B 22%, rgba(255,154,92,0.45) 48%, transparent 72%)',
-                filter: 'blur(28px)',
+                background: 'radial-gradient(ellipse 55% 80% at 50% 50%, #FF9A5C 0%, #FF6B5B 20%, rgba(255,154,92,0.35) 45%, transparent 68%)',
+                filter: 'blur(22px)',
               }}
             />
-            {/* Edge vignette — fades into page background so card feels boundless */}
+            {/* Edge vignette — softens into the card background */}
             <div
               className="absolute inset-0"
               style={{
-                background: 'radial-gradient(ellipse 88% 88% at 50% 50%, transparent 32%, #FCF6EF 100%)',
+                background: 'radial-gradient(ellipse 85% 85% at 50% 50%, transparent 28%, #FFFDFA 100%)',
               }}
             />
           </div>
