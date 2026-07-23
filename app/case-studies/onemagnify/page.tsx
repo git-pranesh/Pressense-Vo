@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageStructuredData } from '@/components/page-structured-data'
+import { FlowerPanel } from '@/components/flower-panel'
+import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'OneMagnify Website Migration Case Study | Pressense',
@@ -90,14 +92,8 @@ export default function OneMagnifyCaseStudy() {
       <main className="min-h-screen">
 
         {/* Hero */}
-        <section
-          className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden border-b border-border/40"
-          aria-label="Case study introduction"
-        >
-          <div className="absolute inset-0 grid-bg opacity-40" aria-hidden="true" />
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/4 rounded-full blur-3xl" aria-hidden="true" />
-
-          <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+        <section className="border-b border-border pt-24 pb-0" aria-label="Case study introduction">
+          <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
             {/* Breadcrumb */}
             <nav aria-label="Breadcrumb" className="mb-8">
               <ol className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -115,31 +111,32 @@ export default function OneMagnifyCaseStudy() {
               </ol>
             </nav>
 
-            <div className="max-w-4xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
-                Global Marketing &amp; Customer Experience
-              </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
-                250 pages. One standard. Zero shortcuts.
-              </h1>
-              <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                When Squaircle led OneMagnify's platform migration from Webflow to HubSpot CMS, the technology layer had a plan. The content layer needed one too — built page for page, service line by service line, to a single editorial and SEO standard across more than 250 pages.
-              </p>
-            </div>
-
-            {/* Engagement meta */}
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-              {engagementMeta.map((item) => (
-                <div key={item.label} className="glass-card rounded-xl p-4 border border-border/50">
-                  <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-1.5">
-                    {item.label}
-                  </p>
-                  <p className="text-sm font-semibold text-foreground">{item.value}</p>
+            {/* Two-col: text + FlowerPanel */}
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-end pt-4 pb-0">
+              <div className="pb-16">
+                <span className="eyebrow-pill">Global Marketing &amp; Customer Experience</span>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.05] mb-6 text-balance">
+                  250 pages. One standard. Zero shortcuts.
+                </h1>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-10">
+                  When Squaircle led OneMagnify&apos;s platform migration from Webflow to HubSpot CMS, the technology layer had a plan. The content layer needed one too — built page for page, service line by service line, to a single editorial and SEO standard.
+                </p>
+                {/* Engagement meta */}
+                <div className="grid grid-cols-2 gap-3">
+                  {engagementMeta.map((item) => (
+                    <div key={item.label} className="rounded-xl p-4 border border-border bg-secondary/40">
+                      <p className="text-xs font-medium text-muted-foreground mb-1">{item.label}</p>
+                      <p className="text-sm font-semibold text-foreground">{item.value}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+              <FlowerPanel src="/images/botanical-hero-2.png" minHeight={480} className="rounded-b-none" />
             </div>
           </div>
         </section>
+
+
 
         {/* Body */}
         <section className="py-20 lg:py-28">
@@ -353,26 +350,18 @@ export default function OneMagnifyCaseStudy() {
         </section>
 
         {/* Bottom CTA */}
-        <section className="py-20 lg:py-28 border-t border-border/40">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
-            <div className="max-w-2xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
-                Work with us
-              </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight mb-4 text-balance">
-                Running a platform migration and need the content to hold up?
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                The diagnostic takes 20 minutes. It tells you exactly where the content layer is likely to break before the migration goes live.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
-              >
-                Start your diagnostic
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M2 7h10M8 3.5L11.5 7 8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+        <section>
+          <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+            <AnchorCard
+              eyebrow="Work with us"
+              headline="Running a platform migration and need the content to hold up?"
+              body="The diagnostic takes 20 minutes. It tells you exactly where the content layer is likely to break before the migration goes live."
+              ctaLabel="Start your diagnostic"
+              ctaHref="/contact"
+            />
+            <div className="mt-6">
+              <Link href="/case-studies" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200">
+                ← Back to case studies
               </Link>
             </div>
           </div>
