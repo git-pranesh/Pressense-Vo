@@ -260,30 +260,22 @@ export default function HomePage() {
       <section className="border-b border-border">
         <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Who We Work With</p>
-          <div className="grid sm:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-base font-semibold text-foreground mb-4">Good fit</h3>
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Good fit</p>
               <ul className="space-y-3">
                 {goodFit.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 mt-0.5 text-foreground" aria-hidden="true">
-                      <circle cx="8" cy="8" r="7.5" stroke="currentColor" strokeOpacity="0.3" />
-                      <path d="M5 8l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                  <li key={item} className="text-sm text-muted-foreground leading-relaxed">
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
-            <div>
-              <h3 className="text-base font-semibold text-muted-foreground mb-4">Not a fit</h3>
+            <div className="rounded-2xl bg-[#2B180A] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#FCF6EF]/50 mb-4">Not a fit</p>
               <ul className="space-y-3">
                 {notFit.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 mt-0.5 text-muted-foreground/50" aria-hidden="true">
-                      <circle cx="8" cy="8" r="7.5" stroke="currentColor" strokeOpacity="0.3" />
-                      <path d="M5.5 10.5l5-5M10.5 10.5l-5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                    </svg>
+                  <li key={item} className="text-sm text-[#FCF6EF]/80 leading-relaxed">
                     {item}
                   </li>
                 ))}

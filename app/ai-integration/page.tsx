@@ -71,34 +71,20 @@ export default function AiIntegrationPage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Who It&apos;s For</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this right for you?</h2>
-          <div className="grid sm:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide mb-4">Good fit</h3>
-              <ul className="space-y-3">
-                {[
-                  'Teams doing repetitive tasks like summarizing, sorting, or drafting by hand, at real volume.',
-                  'Businesses with existing tools and data clean enough for AI to work with reliably.',
-                  'Companies that want AI to save time on something specific, not "AI" as a general idea.',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed">
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
-                    {item}
-                  </li>
-                ))}
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Good fit</p>
+              <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
+                <li>Teams doing repetitive tasks like summarizing, sorting, or drafting by hand, at real volume.</li>
+                <li>Businesses with existing tools and data clean enough for AI to work with reliably.</li>
+                <li>{'Companies that want AI to save time on something specific, not "AI" as a general idea.'}</li>
               </ul>
             </div>
-            <div>
-              <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-4">Not a good fit</h3>
-              <ul className="space-y-3">
-                {[
-                  'Businesses hoping AI will fix a process that\'s fundamentally broken, rather than automate a working one.',
-                  'Teams without any existing data or workflow for AI to plug into.',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed">
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-border shrink-0" />
-                    {item}
-                  </li>
-                ))}
+            <div className="rounded-2xl bg-[#2B180A] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#FCF6EF]/50 mb-4">Not a good fit</p>
+              <ul className="space-y-3 text-sm text-[#FCF6EF]/80 leading-relaxed">
+                <li>{'Businesses hoping AI will fix a process that\'s fundamentally broken, rather than automate a working one.'}</li>
+                <li>Teams without any existing data or workflow for AI to plug into.</li>
               </ul>
             </div>
           </div>

@@ -76,34 +76,19 @@ export default function WorkflowAutomationPage() {
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Who It&apos;s For</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this the right fit?</h2>
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-xl border border-border/40 p-6 bg-background">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">Good fit</p>
+            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Good fit</p>
               <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 shrink-0 text-primary">&#10003;</span>
-                  Businesses where the same task gets done manually, over and over, by more than one person.
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 shrink-0 text-primary">&#10003;</span>
-                  Teams that have grown past what spreadsheets and Slack messages can reliably handle.
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 shrink-0 text-primary">&#10003;</span>
-                  Companies already using several tools that don&apos;t currently share information with each other.
-                </li>
+                <li>Businesses where the same task gets done manually, over and over, by more than one person.</li>
+                <li>Teams that have grown past what spreadsheets and Slack messages can reliably handle.</li>
+                <li>Companies already using several tools that don&apos;t currently share information with each other.</li>
               </ul>
             </div>
-            <div className="rounded-xl border border-border/40 p-6 bg-background">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">Not a good fit</p>
-              <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 shrink-0 text-destructive">&#10005;</span>
-                  Businesses still figuring out what their process should even be.
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 shrink-0 text-destructive">&#10005;</span>
-                  Companies looking to automate a process that&apos;s fundamentally broken instead of fixing it first.
-                </li>
+            <div className="rounded-2xl bg-[#2B180A] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#FCF6EF]/50 mb-4">Not a good fit</p>
+              <ul className="space-y-3 text-sm text-[#FCF6EF]/80 leading-relaxed">
+                <li>Businesses still figuring out what their process should even be.</li>
+                <li>Companies looking to automate a process that&apos;s fundamentally broken instead of fixing it first.</li>
               </ul>
             </div>
           </div>

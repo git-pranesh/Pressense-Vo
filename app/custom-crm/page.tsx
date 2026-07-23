@@ -75,18 +75,18 @@ export default function CustomCrmPage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">Who It&apos;s For</p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Good fit</h2>
-          <div className="grid sm:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Good fit</h3>
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Good fit</p>
               <ul className="space-y-3 text-base text-muted-foreground leading-relaxed">
                 <li>Teams that tried an off-the-shelf CRM and stopped using it properly within months.</li>
                 <li>Businesses with a sales process specific enough that generic templates don&apos;t fit.</li>
                 <li>Companies that need sales, delivery, and finance to see the same information without three separate spreadsheets.</li>
               </ul>
             </div>
-            <div>
-              <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Not a good fit</h3>
-              <ul className="space-y-3 text-base text-muted-foreground leading-relaxed">
+            <div className="rounded-2xl bg-[#2B180A] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#FCF6EF]/50 mb-4">Not a good fit</p>
+              <ul className="space-y-3 text-base text-[#FCF6EF]/80 leading-relaxed">
                 <li>Teams with a simple, low-volume sales process where a basic off-the-shelf tool genuinely does the job.</li>
                 <li>Businesses not ready to define what their actual sales process should be.</li>
               </ul>

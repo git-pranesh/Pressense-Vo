@@ -82,18 +82,18 @@ export default function CustomSoftwarePage() {
       <section className="py-16 lg:py-20 border-b border-border/40">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Who It&apos;s For</p>
-          <div className="grid sm:grid-cols-2 gap-8">
-            <div>
-              <h2 className="text-lg font-semibold text-foreground mb-4">Good fit</h2>
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Good fit</p>
               <ul className="space-y-3 text-base text-muted-foreground leading-relaxed">
                 <li>Founder-led businesses between $1M and $50M in revenue.</li>
                 <li>Teams where critical work still lives in spreadsheets or someone&apos;s memory.</li>
                 <li>Companies that tried an off-the-shelf CRM or ERP and found it forced changes to how the team actually operates.</li>
               </ul>
             </div>
-            <div>
-              <h2 className="text-lg font-semibold text-foreground mb-4">Not a good fit</h2>
-              <ul className="space-y-3 text-base text-muted-foreground leading-relaxed">
+            <div className="rounded-2xl bg-[#2B180A] p-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#FCF6EF]/50 mb-4">Not a good fit</p>
+              <ul className="space-y-3 text-base text-[#FCF6EF]/80 leading-relaxed">
                 <li>Pre-revenue startups still finding their product.</li>
                 <li>Companies looking for the cheapest build available, regardless of fit.</li>
                 <li>Teams unwilling to change a broken process even after seeing the diagnostic.</li>
