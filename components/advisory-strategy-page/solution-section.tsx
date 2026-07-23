@@ -40,7 +40,7 @@ const areas = [
     name: 'Execution Roadmap',
     outcome: '90-day plan with clear ownership',
     description:
-      'Strategy without a sequenced plan is just thinking. Every advisory engagement ends with a practical roadmap that defines what to fix, what to build, in what order, and who owns each step. This can extend into execution through{" "} <a href="/ai-automation-agency" class="text-primary hover:underline">automation</a>, <a href="/custom-internal-tools" class="text-primary hover:underline">internal tools</a>, or <a href="/content-authority-systems" class="text-primary hover:underline">content systems</a>.',
+      'Strategy without a sequenced plan is just thinking. Every advisory engagement ends with a practical roadmap that defines what to fix, what to build, in what order, and who owns each step. This can extend into execution through{" "} <a href="/ai-automation-agency" class="text-primary hover:underline">automation</a>, <a href="/custom-software-internal-tools" class="text-primary hover:underline">internal tools</a>, or <a href="/content-authority-systems" class="text-primary hover:underline">content systems</a>.',
     detail: 'Covers prioritised actions, ownership assignment, success metrics, and sequencing logic.',
   },
 ]
@@ -79,7 +79,7 @@ export function AdvisorySolutionSection() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/diagnostic"
+            href="/contact"
             className="inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
           >
             Start With a Diagnostic

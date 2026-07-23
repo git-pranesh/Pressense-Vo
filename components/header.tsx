@@ -34,7 +34,7 @@ const servicesColumns = [
       { label: 'Custom CRM Development', href: '/custom-crm-development' },
       { label: 'MVP Development for Startups', href: '/mvp-development-for-startups' },
       { label: 'Framer Website Design', href: '/framer-website-design' },
-      { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { label: 'Custom Software & Internal Tools', href: '/custom-software-internal-tools' },
     ],
   },
   {
@@ -147,7 +147,7 @@ export function Header() {
                 </div>
                 <div className="mt-5 pt-4 border-t border-border/40 flex items-center justify-end">
                   <Link
-                    href="/how-we-work"
+                    href="/how-it-works"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                     onClick={() => setServicesOpen(false)}
                   >
@@ -172,7 +172,7 @@ export function Header() {
         {/* CTA */}
         <div className="hidden lg:block">
           <Link
-            href="/diagnostic"
+            href="/contact"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors duration-200"
             aria-label="Start a diagnostic"
           >
@@ -262,7 +262,7 @@ export function Header() {
           ))}
 
           <Link
-            href="/diagnostic"
+            href="/contact"
             className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground w-fit"
             onClick={() => setMenuOpen(false)}
           >

@@ -48,7 +48,7 @@ export function CrmSolutionSection() {
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mb-16">
           Every CRM and ERP engagement starts with mapping the operating workflow before touching any software. We design the process first, then build the system inside the right tools. See{' '}
-          <Link href="/custom-internal-tools" className="text-primary hover:underline">custom internal tools</Link>{' '}
+          <Link href="/custom-software-internal-tools" className="text-primary hover:underline">custom internal tools</Link>{' '}
           if the workflow is too specific for off-the-shelf software.
         </p>
 
@@ -72,7 +72,7 @@ export function CrmSolutionSection() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/diagnostic"
+            href="/contact"
             className="inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
           >
             Start With a Diagnostic

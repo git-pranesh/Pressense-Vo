@@ -111,7 +111,7 @@ export function StructuredData({ data }: StructuredDataProps = {}) {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
-      url: 'https://www.pressense.co/diagnostic',
+      url: 'https://www.pressense.co/contact',
     },
     areaServed: ['AU', 'NZ', 'US', 'GB', 'IN'],
     sameAs: [],

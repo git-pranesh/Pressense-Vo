@@ -28,7 +28,7 @@ const gtmFAQs = [
   },
   {
     question: 'When should you hire a GTM consultant?',
-    answer: (<>Most companies benefit most from GTM consulting at three moments: when growth stalls after initial traction, when entering a new market or segment, or when a funding round creates pressure to scale revenue faster than the current GTM can support. If you are not sure which applies, <Link href="/diagnostic" className="text-primary hover:underline">start with a diagnostic</Link> and we will tell you honestly.</>),
+    answer: (<>Most companies benefit most from GTM consulting at three moments: when growth stalls after initial traction, when entering a new market or segment, or when a funding round creates pressure to scale revenue faster than the current GTM can support. If you are not sure which applies, <Link href="/contact" className="text-primary hover:underline">start with a diagnostic</Link> and we will tell you honestly.</>),
   },
 ]
 

@@ -19,7 +19,7 @@ export function CrmErpStructuredScaleSection() {
           </div>
           <div className="mt-10 pt-8 border-t border-border/40">
             <p className="text-muted-foreground">
-              See how CRM connects to the larger system: <a href="/how-we-work" className="text-primary hover:underline">How we work</a> and <a href="/playbooks" className="text-primary hover:underline">Playbooks</a>.
+              See how CRM connects to the larger system: <a href="/how-it-works" className="text-primary hover:underline">How we work</a> and <a href="/playbooks" className="text-primary hover:underline">Playbooks</a>.
             </p>
           </div>
         </div>

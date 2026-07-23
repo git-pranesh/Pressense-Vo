@@ -43,7 +43,7 @@ const websitesFAQs = [
         If the offer is not yet clearly defined, or if the ideal customer profile is still being tested, a website rebuild will lock in positioning that may need to change within six months. In that case, a{' '}
         <Link href="/advisory-strategy" className="text-primary hover:underline">positioning and strategy sprint</Link>{' '}
         is a better starting point. A website is only as strong as the clarity behind it.{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">Book a free diagnostic</Link>.
+        <Link href="/contact" className="text-primary hover:underline">Book a free diagnostic</Link>.
       </>
     ),
   },

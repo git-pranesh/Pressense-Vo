@@ -75,7 +75,7 @@ export function StartFocusedSection() {
         {/* CTA */}
         <div className="mt-16 flex justify-center">
           <a
-            href="/diagnostic"
+            href="/contact"
             className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             aria-label="Start with a focused diagnostic"
           >

@@ -7,7 +7,7 @@ const howWeWorkFAQs = [
     answer: (
       <>
         Pressense usually starts with a{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">diagnostic</Link>. We study the business, market, customer, offer, website, content, workflows, systems, and execution gaps to understand what is actually blocking progress before recommending what to build or change.
+        <Link href="/contact" className="text-primary hover:underline">diagnostic</Link>. We study the business, market, customer, offer, website, content, workflows, systems, and execution gaps to understand what is actually blocking progress before recommending what to build or change.
       </>
     ),
   },
@@ -27,7 +27,7 @@ const howWeWorkFAQs = [
         <Link href="/websites-conversion-systems" className="text-primary hover:underline">website</Link>,{' '}
         <Link href="/content-authority-systems" className="text-primary hover:underline">content system</Link>,{' '}
         <Link href="/crm-erp-systems" className="text-primary hover:underline">CRM</Link>,{' '}
-        <Link href="/custom-internal-tools" className="text-primary hover:underline">internal tool</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">internal tool</Link>,{' '}
         <Link href="/ai-workflows-automation" className="text-primary hover:underline">AI workflow</Link>, or operating process.
       </>
     ),
@@ -37,7 +37,7 @@ const howWeWorkFAQs = [
     answer: (
       <>
         Implementation without diagnosis can create more activity without solving the real problem. A business may think it needs a website, CRM, content, or automation when the real issue is positioning, ownership,{' '}
-        <Link href="/custom-internal-tools" className="text-primary hover:underline">workflow design</Link>, or offer clarity.
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">workflow design</Link>, or offer clarity.
       </>
     ),
   },

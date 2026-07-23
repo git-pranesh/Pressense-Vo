@@ -324,7 +324,7 @@ export default function OneMagnifyCaseStudy() {
                       The diagnostic takes 20 minutes and shows where your content system breaks down before a migration, not after.
                     </p>
                     <Link
-                      href="/diagnostic"
+                      href="/contact"
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors duration-200 w-full justify-center"
                     >
                       Start diagnostic
@@ -366,7 +366,7 @@ export default function OneMagnifyCaseStudy() {
                 The diagnostic takes 20 minutes. It tells you exactly where the content layer is likely to break before the migration goes live.
               </p>
               <Link
-                href="/diagnostic"
+                href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
               >
                 Start your diagnostic

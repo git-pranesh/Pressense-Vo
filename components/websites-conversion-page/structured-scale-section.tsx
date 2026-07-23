@@ -19,7 +19,7 @@ export function WebsitesStructuredScaleSection() {
           </div>
           <div className="mt-10 pt-8 border-t border-border/40">
             <p className="text-muted-foreground">
-              See how websites connect to the larger system: <a href="/content-authority-systems" className="text-primary hover:underline">Content systems</a>, <a href="/how-we-work" className="text-primary hover:underline">How we work</a>, and <a href="/work" className="text-primary hover:underline">Work</a>.
+              See how websites connect to the larger system: <a href="/content-authority-systems" className="text-primary hover:underline">Content systems</a>, <a href="/how-it-works" className="text-primary hover:underline">How we work</a>, and <a href="/case-studies" className="text-primary hover:underline">Work</a>.
             </p>
           </div>
         </div>

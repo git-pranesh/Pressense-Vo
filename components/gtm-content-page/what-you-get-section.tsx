@@ -30,7 +30,7 @@ export function GtmContentWhatYouGetSection() {
               Every GTM content system engagement ends with a fully operational system your team can run without us, plus the option to continue on a monthly retainer for ongoing content production and optimisation.
             </p>
             <Link
-              href="/diagnostic"
+              href="/contact"
               className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
             >
               Book a diagnostic to scope your system

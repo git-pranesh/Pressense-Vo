@@ -322,7 +322,7 @@ export default function ZohoCreatorCaseStudy() {
                       The diagnostic takes 20 minutes and tells you exactly where your GTM system is leaking.
                     </p>
                     <Link
-                      href="/diagnostic"
+                      href="/contact"
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors duration-200 w-full justify-center"
                     >
                       Start diagnostic
@@ -365,7 +365,7 @@ export default function ZohoCreatorCaseStudy() {
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <Link
-                  href="/diagnostic"
+                  href="/contact"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
                 >
                   Start your diagnostic

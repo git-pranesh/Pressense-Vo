@@ -13,7 +13,7 @@ export function SolutionSection() {
       <div className="container mx-auto px-5 sm:px-8">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground text-balance mb-6">How we build business systems</h2>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mb-16">
-          We do not sell software or push enterprise solutions. We build systems that fit your stage and grow with you. See <Link href="/how-we-work" className="text-primary hover:underline">how we work</Link>.
+          We do not sell software or push enterprise solutions. We build systems that fit your stage and grow with you. See <Link href="/how-it-works" className="text-primary hover:underline">how we work</Link>.
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           {solutionPoints.map((point, i) => (

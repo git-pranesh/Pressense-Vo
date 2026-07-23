@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   description:
     'Custom internal tools built for how your business actually works. Dedicated developer, fast fixes, ongoing support. From $3,000. Replace spreadsheets and fragile SaaS stacks.',
   alternates: {
-    canonical: '/custom-internal-tools',
+    canonical: '/custom-software-internal-tools',
   },
   openGraph: {
     title: 'Custom Internal Tools for Growing Businesses | Pressense',
     description:
       'Custom internal tools built for how your business actually works. Dedicated developer, fast fixes, ongoing support. From $3,000.',
-    url: '/custom-internal-tools',
+    url: '/custom-software-internal-tools',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Custom Internal Tools' }],
   },
@@ -41,7 +41,7 @@ export default function CustomInternalToolsPage() {
     provider: { '@type': 'Organization', name: 'Pressense', url: 'https://www.pressense.co' },
     description:
       'Custom internal tool development for growing businesses: dashboards, workflow systems, approval tools, and data pipelines. Dedicated developer and ongoing support included.',
-    url: 'https://www.pressense.co/custom-internal-tools',
+    url: 'https://www.pressense.co/custom-software-internal-tools',
     areaServed: 'Worldwide',
     offers: {
       '@type': 'Offer',
@@ -60,7 +60,7 @@ export default function CustomInternalToolsPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pressense.co' },
-      { '@type': 'ListItem', position: 2, name: 'Custom Internal Tools', item: 'https://www.pressense.co/custom-internal-tools' },
+      { '@type': 'ListItem', position: 2, name: 'Custom Internal Tools', item: 'https://www.pressense.co/custom-software-internal-tools' },
     ],
   }
 

@@ -19,7 +19,7 @@ export function AIStructuredScaleSection() {
           </div>
           <div className="mt-10 pt-8 border-t border-border/40">
             <p className="text-muted-foreground">
-              See how AI connects to the larger system: <a href="/custom-internal-tools" className="text-primary hover:underline">Internal tools</a>, <a href="/how-we-work" className="text-primary hover:underline">How we work</a>, and <a href="/playbooks" className="text-primary hover:underline">Playbooks</a>.
+              See how AI connects to the larger system: <a href="/custom-software-internal-tools" className="text-primary hover:underline">Internal tools</a>, <a href="/how-it-works" className="text-primary hover:underline">How we work</a>, and <a href="/playbooks" className="text-primary hover:underline">Playbooks</a>.
             </p>
           </div>
         </div>

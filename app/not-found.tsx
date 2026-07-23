@@ -25,7 +25,7 @@ export default function NotFound() {
               Go to Homepage
             </Link>
             <Link
-              href="/diagnostic"
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-base font-medium border border-border text-foreground hover:bg-secondary/40 transition-all duration-200"
             >
               Start Diagnostic

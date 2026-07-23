@@ -11,7 +11,7 @@ const workFAQs = [
         turns into execution:{' '}
         <Link href="/websites-conversion-systems" className="text-primary hover:underline">websites</Link>,{' '}
         <Link href="/content-authority-systems" className="text-primary hover:underline">content systems</Link>,{' '}
-        <Link href="/custom-internal-tools" className="text-primary hover:underline">internal tools</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">internal tools</Link>,{' '}
         <Link href="/crm-erp-systems" className="text-primary hover:underline">CRM workflows</Link>, AI workflows, operating systems, and advisory-led roadmaps. The focus is on the business problem, not just the deliverable.
       </>
     ),
@@ -45,7 +45,7 @@ const workFAQs = [
     answer: (
       <>
         Buyers should look for evidence of judgment: whether the problem was diagnosed properly, whether the solution matched the stage of the business, and whether the work created more clarity, visibility, consistency, or execution leverage. Ready to{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">discuss a similar problem</Link>?
+        <Link href="/contact" className="text-primary hover:underline">discuss a similar problem</Link>?
       </>
     ),
   },

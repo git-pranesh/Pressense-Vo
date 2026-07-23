@@ -24,7 +24,7 @@ export function WorkPatternsSection() {
           </div>
 
           <p className="text-sm text-muted-foreground mt-12 pt-8 border-t border-border/40">
-            See the full diagnostic of what we fix on the <a href="/what-we-fix" className="text-primary hover:text-highlight transition-colors">What We Fix</a> page.
+            See the full diagnostic of what we fix on the <a href="/about" className="text-primary hover:text-highlight transition-colors">What We Fix</a> page.
           </p>
         </div>
       </div>

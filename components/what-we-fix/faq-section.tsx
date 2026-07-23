@@ -18,7 +18,7 @@ const whatWeFixFAQs = [
     answer: (
       <>
         If the team is busy but direction is unclear, the problem is usually strategic. If the direction is clear but execution breaks down, it is usually operational. Many businesses have both, which is why Pressense starts by diagnosing the full system through our{' '}
-        <Link href="/how-we-work" className="text-primary hover:underline">diagnostic process</Link>.
+        <Link href="/how-it-works" className="text-primary hover:underline">diagnostic process</Link>.
       </>
     ),
   },
@@ -27,7 +27,7 @@ const whatWeFixFAQs = [
     answer: (
       <>
         Revenue leakage happens when leads, opportunities, customers, margins, follow-ups, or delivery quality are lost because of unclear processes, weak ownership, poor visibility, or{' '}
-        <Link href="/custom-internal-tools" className="text-primary hover:underline">broken handoffs</Link>. It is often an operating problem, not just a sales problem.
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">broken handoffs</Link>. It is often an operating problem, not just a sales problem.
       </>
     ),
   },
@@ -53,7 +53,7 @@ const whatWeFixFAQs = [
     answer: (
       <>
         A full rebuild is often unnecessary. Many businesses need one high-friction workflow, page, offer, system, or decision layer fixed first. Pressense usually starts with the highest-leverage constraint instead of changing everything at once. See{' '}
-        <Link href="/how-we-work" className="text-primary hover:underline">how the diagnostic process works</Link>.
+        <Link href="/how-it-works" className="text-primary hover:underline">how the diagnostic process works</Link>.
       </>
     ),
   },

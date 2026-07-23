@@ -145,7 +145,7 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
 
                 <div className="mt-8 pt-8 border-t border-border/40">
                   <Link
-                    href="/diagnostic"
+                    href="/contact"
                     className="inline-flex items-center justify-center w-full gap-2 px-4 py-3 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
                   >
                     Start Diagnostic
@@ -323,7 +323,7 @@ export function PlaybookPageTemplate({ playbook }: PlaybookPageTemplateProps) {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Link
-                        href={`/diagnostic?constraint=${playbook.slug}`}
+                        href={`/contact?constraint=${playbook.slug}`}
                         className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
                       >
                         Start With a Diagnostic

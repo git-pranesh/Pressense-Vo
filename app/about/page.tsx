@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     'Positioning, offers, acquisition systems, delivery operations, team structure, and founder dependency. We fix structural issues holding your business back.',
   alternates: {
-    canonical: '/what-we-fix',
+    canonical: '/about',
   },
   openGraph: {
     title: 'What We Fix | Pressense',

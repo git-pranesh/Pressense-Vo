@@ -38,7 +38,7 @@ export function AIToolsHero() {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a
-              href="/diagnostic"
+              href="/contact"
               className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic

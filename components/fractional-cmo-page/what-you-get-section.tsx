@@ -64,7 +64,7 @@ export function WhatYouGetSection() {
 
         <p className="text-sm text-muted-foreground max-w-2xl mb-3">
           Every engagement starts with a{' '}
-          <Link href="/diagnostic" className="text-primary hover:underline">free diagnostic call</Link>{' '}
+          <Link href="/contact" className="text-primary hover:underline">free diagnostic call</Link>{' '}
           to confirm fit, scope, and which tier is right for your business.
         </p>
         <p className="text-sm text-muted-foreground max-w-2xl">

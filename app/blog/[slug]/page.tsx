@@ -205,7 +205,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-4">
               <Link
-                href="/diagnostic"
+                href="/contact"
                 className="px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
               >
                 Start Your Diagnostic

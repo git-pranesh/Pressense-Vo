@@ -37,7 +37,7 @@ export function HeroBlock({ eyebrow, title, subtitle, description, primaryCta, s
         {(primary || secondary) && (
           <div className="flex flex-wrap gap-4 justify-center">
             {primary && (
-              <Link href={primary.href || '/diagnostic'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-colors">
+              <Link href={primary.href || '/contact'} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-colors">
                 {primary.text}
               </Link>
             )}

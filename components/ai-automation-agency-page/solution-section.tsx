@@ -77,7 +77,7 @@ export function SolutionSection() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/diagnostic"
+            href="/contact"
             className="inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
           >
             Get Your AI Readiness Assessment

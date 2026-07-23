@@ -48,7 +48,7 @@ export function BPAMethodologySection() {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             We start with the process, not the tool. Every automation we build is documented, tested, and handed over with a clear owner. See the full{' '}
-            <Link href="/how-we-work" className="text-primary hover:underline">
+            <Link href="/how-it-works" className="text-primary hover:underline">
               how we work
             </Link>{' '}
             page for the broader engagement model.

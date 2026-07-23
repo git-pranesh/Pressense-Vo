@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     'Tell us what feels unclear, broken, or stuck. We help identify the right next step: advisory, workflow, website, content system, or tools.',
   alternates: {
-    canonical: '/diagnostic',
+    canonical: '/contact',
   },
   openGraph: {
     title: 'Start Diagnostic | Pressense Strategy & Systems',

@@ -11,7 +11,7 @@ export function WebsitesConversionFinalCTA() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="/diagnostic"
+              href="/contact"
               className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
             >
               Start With a Diagnostic

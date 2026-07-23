@@ -126,7 +126,7 @@ export default function ToolsPage() {
               Calculators give you the data, but knowing what to do with it is where the value lives. Book a free
               30-minute diagnostic and we&apos;ll map where you&apos;re leaking growth.
             </p>
-            <Link href="/diagnostic">
+            <Link href="/contact">
               <Button size="lg" className="rounded-2xl text-base font-medium">
                 Start your diagnostic <ArrowRight className="ml-2 h-4 w-4" />
               </Button>

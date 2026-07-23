@@ -2,16 +2,16 @@ import Link from 'next/link'
 import { calculatorsData, CALCULATOR_CATEGORIES } from '@/lib/calculators'
 
 const companyLinks = [
-  { label: 'How We Work', href: '/how-we-work' },
+  { label: 'How It Works', href: '/how-it-works' },
   { label: 'Playbooks', href: '/playbooks' },
   { label: 'Tools', href: '/tools' },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'Start Diagnostic', href: '/diagnostic' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 const serviceLinks = [
   { label: 'Fractional CMO Services', href: '/fractional-cmo-services' },
-  { label: 'Custom Internal Tools', href: '/custom-internal-tools' },
+  { label: 'Custom Software & Internal Tools', href: '/custom-software-internal-tools' },
   { label: 'Revenue Operations', href: '/revenue-operations-consulting' },
   { label: 'MVP Development', href: '/mvp-development-for-startups' },
   { label: 'Framer Website Design', href: '/framer-website-design' },
@@ -67,7 +67,7 @@ export function MegaFooter() {
                 Book a free diagnostic to map your top 3 growth constraints.
               </p>
               <Link
-                href="/diagnostic"
+                href="/contact"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-highlight transition-colors"
               >
                 Start Diagnostic

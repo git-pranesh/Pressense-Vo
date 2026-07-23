@@ -227,7 +227,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
               Pressense partners with operators to turn metric problems into <em>structured systems</em>. Start with a
               free 30-minute diagnostic, we&apos;ll map where you&apos;re leaking growth and what to fix first.
             </p>
-            <Link href="/diagnostic">
+            <Link href="/contact">
               <Button size="lg" className="rounded-2xl text-base font-medium">
                 Start your diagnostic <ArrowRight className="ml-2 h-4 w-4" />
               </Button>

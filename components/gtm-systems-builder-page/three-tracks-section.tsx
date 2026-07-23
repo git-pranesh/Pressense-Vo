@@ -31,7 +31,7 @@ export function GtmSystemsBuilderThreeTracksSection() {
       body2:
         'Pressense builds custom internal tools on Replit: dashboards, automated workflows, CRM integrations, and data pipelines that eliminate the manual operations bottleneck. These are not enterprise systems. They are lean, purpose-built tools that solve one specific operational problem and free the team to work on things that cannot be automated.',
       linkText: 'Learn about custom internal tools',
-      linkHref: '/custom-internal-tools',
+      linkHref: '/custom-software-internal-tools',
     },
   ]
 

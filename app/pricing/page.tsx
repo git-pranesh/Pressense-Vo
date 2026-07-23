@@ -135,7 +135,7 @@ const services = [
         price: 'From $3,000',
         type: 'Project',
         outcome: '"Replace spreadsheets with tools your team will want to use."',
-        link: '/custom-internal-tools',
+        link: '/custom-software-internal-tools',
         deliverables: ['Requirements mapping', 'Custom tool build', 'User training', 'Post-launch support option'],
       },
       {
@@ -232,13 +232,13 @@ export default function PricingPage() {
             </p>
             <div className="flex items-center gap-3">
               <Link
-                href="/diagnostic"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
               >
                 Book a free diagnostic
               </Link>
               <Link
-                href="/how-we-work"
+                href="/how-it-works"
                 className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl text-sm font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
               >
                 How we work
@@ -297,7 +297,7 @@ export default function PricingPage() {
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2 border-t border-border/30">
                     <p className="text-xs text-muted-foreground">
                       Larger engagements?{' '}
-                      <Link href="/diagnostic" className="text-primary hover:underline">
+                      <Link href="/contact" className="text-primary hover:underline">
                         Let's scope it together.
                       </Link>
                     </p>
@@ -329,7 +329,7 @@ export default function PricingPage() {
               Every engagement starts with a free diagnostic call. We'll map your constraints, scope the work, and give you a fixed price — no surprises.
             </p>
             <Link
-              href="/diagnostic"
+              href="/contact"
               className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
             >
               Start your diagnostic

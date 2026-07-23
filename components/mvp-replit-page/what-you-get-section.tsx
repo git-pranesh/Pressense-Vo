@@ -60,7 +60,7 @@ export function MvpReplitWhatYouGetSection() {
               Sixty minutes. We scope the build, define the value loop, and give you a fixed-price estimate before the session ends. No obligation if the fit is not right.
             </p>
             <a
-              href="/diagnostic"
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
             >
               Book a diagnostic

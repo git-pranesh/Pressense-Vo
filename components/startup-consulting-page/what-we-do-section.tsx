@@ -17,7 +17,7 @@ const services = [
     title: 'Custom software and internal tools',
     description:
       'When off-the-shelf tools cannot do the job, we build custom applications: internal dashboards, CRM extensions, client portals, and AI-powered tools that match your actual workflow.',
-    href: '/custom-internal-tools',
+    href: '/custom-software-internal-tools',
   },
   {
     title: 'AI strategy consulting',

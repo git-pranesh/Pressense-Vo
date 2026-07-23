@@ -47,7 +47,7 @@ const customToolsFAQs = [
     answer: (
       <>
         Your dedicated Pressense developer stays available for fixes, improvements, and new workflows after launch. Support is provided through a direct channel with the developer who built the tool, not a helpdesk ticket system. Most clients start with a defined build engagement and move to a monthly retainer for ongoing iteration. The tool is a living system, not a one-time project.{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">Start with a workflow diagnostic</Link>.
+        <Link href="/contact" className="text-primary hover:underline">Start with a workflow diagnostic</Link>.
       </>
     ),
   },

@@ -19,7 +19,7 @@ export function NotWebDesignSection() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="/content-authority-systems" className="text-sm text-primary hover:underline">Content & Authority Systems</a>
             <span className="text-muted-foreground">/</span>
-            <a href="/work" className="text-sm text-primary hover:underline">See Our Work</a>
+            <a href="/case-studies" className="text-sm text-primary hover:underline">See Our Work</a>
           </div>
         </div>
       </div>

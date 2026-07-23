@@ -71,7 +71,7 @@ export function AIStrategyWhatYouGet() {
             How much does AI strategy consulting cost?
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-10">
-            Enterprise AI strategy firms charge $25,000 to $250,000 for engagements that end in a presentation deck. Our engagements end with working systems your team uses on day one of week five. Every tier below includes implementation, not just advice. Pricing is fixed-scope so there are no budget surprises. Larger or multi-site engagements? <a href="/diagnostic" className="text-primary hover:underline">Let&apos;s scope it together.</a>
+            Enterprise AI strategy firms charge $25,000 to $250,000 for engagements that end in a presentation deck. Our engagements end with working systems your team uses on day one of week five. Every tier below includes implementation, not just advice. Pricing is fixed-scope so there are no budget surprises. Larger or multi-site engagements? <a href="/contact" className="text-primary hover:underline">Let&apos;s scope it together.</a>
           </p>
 
           <div className="grid sm:grid-cols-3 gap-4 mb-12">

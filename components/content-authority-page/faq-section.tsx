@@ -38,7 +38,7 @@ const contentFAQs = [
         A content system will not fix a positioning problem. If the business does not yet have a clear ICP, does not know why buyers choose them over alternatives, or cannot explain what they do in two sentences, a{' '}
         <Link href="/advisory-strategy" className="text-primary hover:underline">strategy engagement</Link>{' '}
         should come first. Building content on top of unclear positioning generates volume without traction and wastes six months.{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">The diagnostic identifies which problem to solve first</Link>.
+        <Link href="/contact" className="text-primary hover:underline">The diagnostic identifies which problem to solve first</Link>.
       </>
     ),
   },

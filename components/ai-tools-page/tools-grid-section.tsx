@@ -205,7 +205,7 @@ export function ToolsGridSection() {
                       </a>
                     ) : (
                       <a
-                        href="/diagnostic"
+                        href="/contact"
                         className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
                       >
                         Ask about {tool.name.split(' ')[0]} in your diagnostic

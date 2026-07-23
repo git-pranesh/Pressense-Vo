@@ -11,7 +11,7 @@ export function CustomToolsFinalCTA() {
             You do not need to rebuild your entire business at once. The best place to start is usually one workflow that is painful, repeated, and important.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="/diagnostic" className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
+            <a href="/contact" className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent">
               Start With a Diagnostic
               <span className="w-6 h-6 rounded-full border border-primary-foreground/30 flex items-center justify-center group-hover:border-primary-foreground/60 transition-colors">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">

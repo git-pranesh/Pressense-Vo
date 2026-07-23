@@ -96,7 +96,7 @@ export function FramerPricingSection() {
 
         <p className="mt-8 text-sm text-muted-foreground max-w-2xl">
           All prices exclude GST. Framer hosting ($20–$40/month) billed directly by Framer. Copy must be finalised before build starts — this is the single biggest factor in timeline.{' '}
-          <Link href="/diagnostic" className="text-primary hover:underline">Book your diagnostic to get a fixed-price estimate.</Link>
+          <Link href="/contact" className="text-primary hover:underline">Book your diagnostic to get a fixed-price estimate.</Link>
         </p>
       </div>
     </section>

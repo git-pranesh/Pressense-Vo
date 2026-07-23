@@ -181,7 +181,7 @@ export default function CaseStudiesPage() {
                 The diagnostic takes 20 minutes. It tells you exactly where the gap is and what to fix first.
               </p>
               <Link
-                href="/diagnostic"
+                href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
               >
                 Start your diagnostic

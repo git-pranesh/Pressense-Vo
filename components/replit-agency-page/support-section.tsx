@@ -60,7 +60,7 @@ export function ReplitAgencySupportSection() {
             <p className="text-sm text-muted-foreground">Sprint retainer pricing is scoped on a call — based on the features you want to add and the level of support you need.</p>
           </div>
           <a
-            href="/diagnostic"
+            href="/contact"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 whitespace-nowrap"
           >
             Book a diagnostic

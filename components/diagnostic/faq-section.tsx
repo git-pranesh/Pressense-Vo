@@ -7,7 +7,7 @@ const diagnosticFAQs = [
     answer: (
       <>
         After you submit, Pressense reviews the context and determines whether a diagnostic conversation makes sense. The goal is to understand the business problem before suggesting a scope, system, or implementation path. Learn more about{' '}
-        <Link href="/how-we-work" className="text-primary hover:underline">how the diagnostic process works</Link>.
+        <Link href="/how-it-works" className="text-primary hover:underline">how the diagnostic process works</Link>.
       </>
     ),
   },
@@ -16,7 +16,7 @@ const diagnosticFAQs = [
     answer: (
       <>
         Founders, operators, and business leaders should start a diagnostic if they are dealing with unclear growth, weak positioning,{' '}
-        <Link href="/custom-internal-tools" className="text-primary hover:underline">broken workflows</Link>, scattered tools, poor visibility,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">broken workflows</Link>, scattered tools, poor visibility,{' '}
         <Link href="/content-authority-systems" className="text-primary hover:underline">inconsistent content</Link>,{' '}
         <Link href="/websites-conversion-systems" className="text-primary hover:underline">website confusion</Link>, or execution bottlenecks.
       </>

@@ -22,7 +22,7 @@ const crmErpFAQs = [
     answer: (
       <>
         Use a platform like HubSpot or Salesforce when your sales process fits their standard model and your team will actually use it. Build something custom when the workflow is genuinely specific, when multiple systems need to be unified, or when off-the-shelf tools require so much configuration that you are paying for features you do not use. Pressense maps the workflow first and recommends a tool only after understanding how the business actually operates. See{' '}
-        <Link href="/custom-internal-tools" className="text-primary hover:underline">custom internal tools</Link>{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">custom internal tools</Link>{' '}
         for cases where a bespoke build makes more sense.
       </>
     ),
@@ -37,7 +37,7 @@ const crmErpFAQs = [
     answer: (
       <>
         A CRM implementation for a business with a defined sales process takes two to four weeks from workflow mapping to live deployment. An ERP-lite system connecting sales, operations, and finance takes six to twelve weeks depending on complexity. The diagnostic sprint to map the workflow and define requirements takes one week and happens before any tool selection or build begins.{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">Start with the diagnostic</Link>.
+        <Link href="/contact" className="text-primary hover:underline">Start with the diagnostic</Link>.
       </>
     ),
   },

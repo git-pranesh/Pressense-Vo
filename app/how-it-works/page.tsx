@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     'We diagnose, plan, execute, and measure. Our structured approach helps businesses scale from scattered growth to operational clarity.',
   alternates: {
-    canonical: '/how-we-work',
+    canonical: '/how-it-works',
   },
   openGraph: {
     title: 'How We Work | Pressense',

@@ -78,7 +78,7 @@ export function SeoSaasWhatWeBuildSection() {
               We set up conversion tracking so organic trial sign-ups and demo requests are attributed to specific content. Your monthly report shows revenue pipeline, not page views.
             </p>
             <a
-              href="/diagnostic"
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
             >
               Book a diagnostic

@@ -33,7 +33,7 @@ const advisoryFAQs = [
       <>
         Pressense advisory connects strategy with execution. The diagnosis does not end with a slide deck. It leads into a practical roadmap and, where useful, into execution through{' '}
         <Link href="/websites-conversion-systems" className="text-primary hover:underline">websites</Link>,{' '}
-        <Link href="/custom-internal-tools" className="text-primary hover:underline">internal tools</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">internal tools</Link>,{' '}
         <Link href="/content-authority-systems" className="text-primary hover:underline">content systems</Link>,{' '}
         <Link href="/ai-automation-agency" className="text-primary hover:underline">AI workflows</Link>, or operating processes. The goal is not a report. It is a business that moves differently after the engagement.
       </>

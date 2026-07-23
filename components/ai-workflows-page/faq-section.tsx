@@ -57,9 +57,9 @@ const aiFAQs = [
     answer: (
       <>
         Yes. AI workflows often work best when connected to{' '}
-        <Link href="/custom-internal-tools" className="text-primary hover:underline">internal tools</Link>,{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">internal tools</Link>,{' '}
         <Link href="/custom-crm-development" className="text-primary hover:underline">CRM systems</Link>, reporting dashboards, content systems, or operational processes.{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">Start with one workflow</Link>.
+        <Link href="/contact" className="text-primary hover:underline">Start with one workflow</Link>.
       </>
     ),
   },

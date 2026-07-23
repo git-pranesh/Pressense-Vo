@@ -95,7 +95,7 @@ export function OpenAIPricingSection() {
 
         <p className="mt-8 text-sm text-muted-foreground max-w-2xl">
           All prices exclude GST. OpenAI API usage billed separately and depends on volume. Full cost estimate provided after the free diagnostic session.{' '}
-          <Link href="/diagnostic" className="text-primary hover:underline">Book your diagnostic here.</Link>
+          <Link href="/contact" className="text-primary hover:underline">Book your diagnostic here.</Link>
         </p>
       </div>
     </section>
