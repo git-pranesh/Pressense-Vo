@@ -1,9 +1,24 @@
 import type { Metadata, Viewport } from 'next'
+import { Halant, Geist } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { MegaFooter } from '@/components/mega-footer'
 import './globals.css'
+
+const halant = Halant({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-halant',
+  display: 'swap',
+})
+
+const geist = Geist({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-geist',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.pressense.co'),
@@ -41,7 +56,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#F3F0EC',
+  themeColor: '#FCF6EF',
   width: 'device-width',
   initialScale: 1,
 }
@@ -55,11 +70,8 @@ export default function RootLayout({
     <html lang="en" className="bg-background">
       <head>
         <StructuredData />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-sans antialiased">
+      <body className={`${halant.variable} ${geist.variable} font-sans antialiased`}>
         <a href="#main-content" className="sr-only focus:not-sr-only">
           Skip to main content
         </a>
