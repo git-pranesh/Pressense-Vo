@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { VisualCard } from '@/components/visual-card'
 
 export const metadata: Metadata = {
   title: 'AI Integration | Pressense',
@@ -18,23 +19,33 @@ export default function AiIntegrationPage() {
 
       {/* Hero */}
       <section className="py-24 lg:py-32 border-b border-border/40">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">Service</span>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
-            AI that removes work, not a demo that looks impressive
-          </h1>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-4">
-            A chatbot bolted onto your website that nobody uses isn&apos;t the goal. Cutting the hours your team spends on repetitive, judgment-light tasks is.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8">
-            We find where AI actually saves time in your operation, then build it into the tools you already use. Included after your diagnostic.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
-          >
-            Start a Free Diagnostic
-          </Link>
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <span className="eyebrow-pill">AI Integration</span>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
+                AI that removes work, not a demo that looks impressive
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                A chatbot bolted onto your website that nobody uses isn&apos;t the goal. Cutting the hours your team spends on repetitive, judgment-light tasks is.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                We find where AI actually saves time in your operation, then build it into the tools you already use. Included after your diagnostic.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+              >
+                Start a Free Diagnostic
+              </Link>
+            </div>
+            <VisualCard
+              aspectRatio="4 / 3"
+              style={{ minHeight: '380px' }}
+              imageUrl="/images/botanical-hero.png"
+              imageAlt="Orange coral flower against a deep teal background"
+            />
+          </div>
         </div>
       </section>
 

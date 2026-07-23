@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { VisualCard } from '@/components/visual-card'
 
 export const metadata: Metadata = {
   title: 'Custom Software & Internal Tools | Pressense',
@@ -19,23 +20,32 @@ export default function CustomSoftwarePage() {
     <main>
       {/* Hero */}
       <section className="py-24 lg:py-32 border-b border-border/40">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-tight">
-            Software built around your business, not the other way around
-          </h1>
-          <p className="mt-6 text-lg sm:text-xl text-muted-foreground leading-relaxed">
-            Spreadsheets that break. CRMs your team fights instead of using. WhatsApp threads holding together work that should run itself.
-          </p>
-          <p className="mt-4 text-lg sm:text-xl text-muted-foreground leading-relaxed">
-            We diagnose what&apos;s actually slowing you down, then build the internal tool that fixes it. If you qualify, we&apos;ll build the first piece for free.
-          </p>
-          <div className="mt-8">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
-            >
-              Start a Free Diagnostic
-            </Link>
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <span className="eyebrow-pill">Custom Software & Internal Tools</span>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-tight mb-6">
+                Software built around your business, not the other way around
+              </h1>
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-4">
+                Spreadsheets that break. CRMs your team fights instead of using. WhatsApp threads holding together work that should run itself.
+              </p>
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8">
+                We diagnose what&apos;s actually slowing you down, then build the internal tool that fixes it. If you qualify, we&apos;ll build the first piece for free.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
+              >
+                Start a Free Diagnostic
+              </Link>
+            </div>
+            <VisualCard
+              aspectRatio="4 / 3"
+              style={{ minHeight: '380px' }}
+              imageUrl="/images/botanical-hero.png"
+              imageAlt="Orange coral flower against a deep teal background"
+            />
           </div>
         </div>
       </section>

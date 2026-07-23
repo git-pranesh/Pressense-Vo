@@ -255,7 +255,12 @@ export default function HomePage() {
               </div>
             </div>
             {/* Visual — right */}
-            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '400px' }} />
+            <VisualCard
+              aspectRatio="4 / 3"
+              style={{ minHeight: '400px' }}
+              imageUrl="/images/botanical-hero.png"
+              imageAlt="Orange coral flower against a deep teal background"
+            />
           </div>
         </div>
       </section>
@@ -265,7 +270,13 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Visual — left (alternates rhythm) */}
-            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '400px' }} className="order-last lg:order-first" />
+            <VisualCard
+              aspectRatio="4 / 3"
+              style={{ minHeight: '400px' }}
+              className="order-last lg:order-first"
+              imageUrl="/images/botanical-hero.png"
+              imageAlt="Orange coral flower against a deep teal background"
+            />
             {/* Text — right */}
             <div>
               <span className="eyebrow-pill">What We Do</span>
@@ -321,7 +332,13 @@ export default function HomePage() {
               </div>
             </div>
             {/* Visual — right */}
-            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '400px' }} className="sticky top-24" />
+            <VisualCard
+              aspectRatio="4 / 3"
+              style={{ minHeight: '400px' }}
+              className="sticky top-24"
+              imageUrl="/images/botanical-hero.png"
+              imageAlt="Orange coral flower against a deep teal background"
+            />
           </div>
         </div>
       </section>

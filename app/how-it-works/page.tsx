@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { VisualCard } from '@/components/visual-card'
 
 export const metadata: Metadata = {
   title: 'How an Engagement Works | Pressense',
@@ -26,14 +27,24 @@ export default function HowItWorksPage() {
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <section className="grid-bg border-b border-border">
-        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
-          <span className="eyebrow-pill">How It Works</span>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground leading-[1.08] text-balance">
-            How an engagement works
-          </h1>
-          <p className="mt-6 text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-            We look at your business before we recommend anything. No pitch on day one.
-          </p>
+        <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <span className="eyebrow-pill">How It Works</span>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground leading-[1.05] text-balance mb-6">
+                How an engagement works
+              </h1>
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+                We look at your business before we recommend anything. No pitch on day one.
+              </p>
+            </div>
+            <VisualCard
+              aspectRatio="4 / 3"
+              style={{ minHeight: '360px' }}
+              imageUrl="/images/botanical-hero-wide.png"
+              imageAlt="Orange coral flower against a deep teal background"
+            />
+          </div>
         </div>
       </section>
 
