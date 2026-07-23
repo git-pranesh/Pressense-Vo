@@ -108,7 +108,7 @@ export function VisualCard({
 
       {/* Optional badge — top-right pill */}
       {badge && (
-        <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-semibold bg-[#FCF6EF]/80 text-[#2B180A] backdrop-blur-sm">
+        <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-semibold bg-[#EDEBE5]/80 text-[#1A0F06] backdrop-blur-sm">
           {badge}
         </span>
       )}

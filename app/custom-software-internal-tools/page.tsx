@@ -83,7 +83,7 @@ export default function CustomSoftwarePage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <span className="eyebrow-pill">Who It&apos;s For</span>
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+            <div className="rounded-2xl border border-[#D4CFC7] bg-[#E8E5DE] p-8">
               <span className="eyebrow-pill">Good fit</span>
               <ul className="space-y-3 text-base text-muted-foreground leading-relaxed">
                 <li>Founder-led businesses between $1M and $50M in revenue.</li>
@@ -91,9 +91,9 @@ export default function CustomSoftwarePage() {
                 <li>Companies that tried an off-the-shelf CRM or ERP and found it forced changes to how the team actually operates.</li>
               </ul>
             </div>
-            <div className="rounded-2xl bg-[#2B180A] p-8">
+            <div className="rounded-2xl bg-[#1A0F06] p-8">
               <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a good fit</span>
-              <ul className="space-y-3 text-base text-[#FCF6EF]/80 leading-relaxed">
+              <ul className="space-y-3 text-base text-[#EDEBE5]/80 leading-relaxed">
                 <li>Pre-revenue startups still finding their product.</li>
                 <li>Companies looking for the cheapest build available, regardless of fit.</li>
                 <li>Teams unwilling to change a broken process even after seeing the diagnostic.</li>

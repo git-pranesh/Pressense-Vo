@@ -76,7 +76,7 @@ export default function CustomCrmPage() {
           <span className="eyebrow-pill">Who It&apos;s For</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Good fit</h2>
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+            <div className="rounded-2xl border border-[#D4CFC7] bg-[#E8E5DE] p-8">
               <span className="eyebrow-pill">Good fit</span>
               <ul className="space-y-3 text-base text-muted-foreground leading-relaxed">
                 <li>Teams that tried an off-the-shelf CRM and stopped using it properly within months.</li>
@@ -84,9 +84,9 @@ export default function CustomCrmPage() {
                 <li>Companies that need sales, delivery, and finance to see the same information without three separate spreadsheets.</li>
               </ul>
             </div>
-            <div className="rounded-2xl bg-[#2B180A] p-8">
+            <div className="rounded-2xl bg-[#1A0F06] p-8">
               <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a good fit</span>
-              <ul className="space-y-3 text-base text-[#FCF6EF]/80 leading-relaxed">
+              <ul className="space-y-3 text-base text-[#EDEBE5]/80 leading-relaxed">
                 <li>Teams with a simple, low-volume sales process where a basic off-the-shelf tool genuinely does the job.</li>
                 <li>Businesses not ready to define what their actual sales process should be.</li>
               </ul>

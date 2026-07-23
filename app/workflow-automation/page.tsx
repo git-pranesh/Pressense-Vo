@@ -76,7 +76,7 @@ export default function WorkflowAutomationPage() {
           <span className="eyebrow-pill">Who It&apos;s For</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this the right fit?</h2>
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+            <div className="rounded-2xl border border-[#D4CFC7] bg-[#E8E5DE] p-8">
               <span className="eyebrow-pill">Good fit</span>
               <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
                 <li>Businesses where the same task gets done manually, over and over, by more than one person.</li>
@@ -84,9 +84,9 @@ export default function WorkflowAutomationPage() {
                 <li>Companies already using several tools that don&apos;t currently share information with each other.</li>
               </ul>
             </div>
-            <div className="rounded-2xl bg-[#2B180A] p-8">
+            <div className="rounded-2xl bg-[#1A0F06] p-8">
               <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a good fit</span>
-              <ul className="space-y-3 text-sm text-[#FCF6EF]/80 leading-relaxed">
+              <ul className="space-y-3 text-sm text-[#EDEBE5]/80 leading-relaxed">
                 <li>Businesses still figuring out what their process should even be.</li>
                 <li>Companies looking to automate a process that&apos;s fundamentally broken instead of fixing it first.</li>
               </ul>

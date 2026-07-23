@@ -78,7 +78,7 @@ export default function FractionalCmoPage() {
           <span className="eyebrow-pill">Who It&apos;s For</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this the right fit?</h2>
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+            <div className="rounded-2xl border border-[#D4CFC7] bg-[#E8E5DE] p-8">
               <span className="eyebrow-pill">Good fit</span>
               <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
                 <li>Businesses whose internal systems and operations are already solid, or close to it.</li>
@@ -86,9 +86,9 @@ export default function FractionalCmoPage() {
                 <li>Companies ready to commit to a strategy for more than a single campaign cycle.</li>
               </ul>
             </div>
-            <div className="rounded-2xl bg-[#2B180A] p-8">
+            <div className="rounded-2xl bg-[#1A0F06] p-8">
               <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a good fit</span>
-              <ul className="space-y-3 text-sm text-[#FCF6EF]/80 leading-relaxed">
+              <ul className="space-y-3 text-sm text-[#EDEBE5]/80 leading-relaxed">
                 <li>Businesses whose core operations are still the real bottleneck.</li>
                 <li>Companies looking for a single campaign or one-off project rather than ongoing strategic direction.</li>
               </ul>

@@ -4,35 +4,35 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Light warm palette */
-  --background: #FCF6EF;                /* warm cream */
-  --foreground: #2B180A;                /* near-black brown */
-  --card: #F3EBE0;                      /* slightly darker cream for cards */
-  --card-foreground: #2B180A;
-  --popover: #F3EBE0;
-  --popover-foreground: #2B180A;
-  --primary: #2B180A;                   /* near-black brown — buttons, CTAs */
-  --primary-foreground: #FCF6EF;        /* warm cream text on brown */
-  --secondary: #EDE3D6;                 /* muted cream — secondary surfaces */
-  --secondary-foreground: #2B180A;
-  --muted: #EDE3D6;                     /* muted background areas */
-  --muted-foreground: #7A6555;          /* warm medium brown — captions, meta */
-  --accent: #2B180A;                    /* near-black brown accent */
-  --accent-foreground: #FCF6EF;
+  /* Claura-matched dusty warm palette */
+  --background: #EDEBE5;                /* dusty warm grey-cream — Claura's exact tone */
+  --foreground: #1A0F06;                /* deep near-black brown — richer than before */
+  --card: #E5E2DB;                      /* slightly darker dusty card surface */
+  --card-foreground: #1A0F06;
+  --popover: #E5E2DB;
+  --popover-foreground: #1A0F06;
+  --primary: #1A0F06;                   /* deep brown — buttons, CTAs */
+  --primary-foreground: #EDEBE5;        /* dusty cream text on dark brown */
+  --secondary: #E0DDD6;                 /* muted dusty surface */
+  --secondary-foreground: #1A0F06;
+  --muted: #E0DDD6;                     /* muted background areas */
+  --muted-foreground: #6B5D51;          /* cooler, more muted warm brown */
+  --accent: #1A0F06;
+  --accent-foreground: #EDEBE5;
   --destructive: #C0392B;
-  --destructive-foreground: #FCF6EF;
-  --border: #DDD3C4;                    /* warm light brown borders */
-  --input: #EDE3D6;
-  --ring: #2B180A;
+  --destructive-foreground: #EDEBE5;
+  --border: #D4CFC7;                    /* very subtle warm grey border */
+  --input: #E0DDD6;
+  --ring: #1A0F06;
   --radius: 0.75rem;
 
   /* Custom tokens */
-  --surface: #F3EBE0;
-  --surface-border: #DDD3C4;
-  --highlight: #3D2412;                 /* hover state for primary buttons */
-  --text-dim: #A08878;                  /* dimmed warm brown */
-  --grid-line: #DDD3C4;
-  --button-bg: #2B180A;
+  --surface: #E5E2DB;
+  --surface-border: #D4CFC7;
+  --highlight: #2E1A0A;                 /* hover state for primary buttons */
+  --text-dim: #9A8C80;                  /* dimmed warm brown */
+  --grid-line: #D4CFC7;
+  --button-bg: #1A0F06;
   --button-radius: 12px;
   --radius: 0.75rem;
 
@@ -53,25 +53,25 @@
 
 /* Keep studio dark — Sanity's own theme handles /studio */
 .dark {
-  --background: #FCF6EF;
-  --foreground: #2B180A;
-  --card: #F3EBE0;
-  --card-foreground: #2B180A;
-  --popover: #F3EBE0;
-  --popover-foreground: #2B180A;
-  --primary: #2B180A;
-  --primary-foreground: #FCF6EF;
-  --secondary: #EDE3D6;
-  --secondary-foreground: #2B180A;
-  --muted: #EDE3D6;
-  --muted-foreground: #7A6555;
-  --accent: #2B180A;
-  --accent-foreground: #FCF6EF;
+  --background: #EDEBE5;
+  --foreground: #1A0F06;
+  --card: #E5E2DB;
+  --card-foreground: #1A0F06;
+  --popover: #E5E2DB;
+  --popover-foreground: #1A0F06;
+  --primary: #1A0F06;
+  --primary-foreground: #EDEBE5;
+  --secondary: #E0DDD6;
+  --secondary-foreground: #1A0F06;
+  --muted: #E0DDD6;
+  --muted-foreground: #6B5D51;
+  --accent: #1A0F06;
+  --accent-foreground: #EDEBE5;
   --destructive: #C0392B;
-  --destructive-foreground: #FCF6EF;
-  --border: #DDD3C4;
-  --input: #EDE3D6;
-  --ring: #2B180A;
+  --destructive-foreground: #EDEBE5;
+  --border: #D4CFC7;
+  --input: #E0DDD6;
+  --ring: #1A0F06;
 }
 
 @theme inline {
@@ -150,24 +150,24 @@
   }
 }
 
-/* Shared card — lifts visually above the cream page background */
+/* Shared card — lifts visually above the dusty page background */
 .glass-card {
-  background: #FFFDFA;
-  border: 1px solid #E8E0D5;
+  background: #E8E5DE;
+  border: 1px solid #D4CFC7;
   border-radius: 18px;
   padding: 36px;
-  box-shadow: 0 2px 8px rgba(43, 24, 10, 0.05), 0 1px 2px rgba(43, 24, 10, 0.04);
+  box-shadow: 0 2px 8px rgba(26, 15, 6, 0.05), 0 1px 2px rgba(26, 15, 6, 0.04);
 }
 
-/* Primary button — dark brown, cream text, 12px radius */
+/* Primary button — deep brown, dusty cream text, 12px radius */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   padding: 12px 24px;
-  background: #2B180A;
-  color: #FCF6EF;
+  background: #1A0F06;
+  color: #EDEBE5;
   font-family: var(--font-geist), 'Inter', sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
@@ -178,7 +178,7 @@
   transition: background-color 0.2s ease;
 }
 .btn-primary:hover {
-  background: #3D2412;
+  background: #2E1A0A;
 }
 
 /* Eyebrow pill tag — Claura-style small rounded label above headings */
@@ -187,13 +187,13 @@
   align-items: center;
   padding: 3px 10px;
   border-radius: 999px;
-  border: 1px solid #DDD3C4;
+  border: 1px solid #C8C2BA;
   background: transparent;
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #7A6555;
+  color: #6B5D51;
   margin-bottom: 1.25rem;
   font-family: var(--font-geist), 'Inter', sans-serif;
 }

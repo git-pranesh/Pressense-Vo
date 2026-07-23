@@ -129,7 +129,7 @@ export default function HomePage() {
 
           {/* Dot-grid decorative divider */}
           <div
-            className="mt-14 rounded-2xl overflow-hidden relative w-full border border-[#E8E0D5]"
+            className="mt-14 rounded-2xl overflow-hidden relative w-full border border-[#D4CFC7]"
             style={{ aspectRatio: '4 / 1', maxHeight: '140px' }}
             aria-hidden="true"
           >
@@ -139,7 +139,7 @@ export default function HomePage() {
               style={{
                 backgroundImage: 'radial-gradient(circle, #C4A882 1.1px, transparent 1.1px)',
                 backgroundSize: '20px 20px',
-                backgroundColor: '#FFFDFA',
+                backgroundColor: '#E8E5DE',
               }}
             />
             {/* Warm orange-coral blob, blurred, fades the dots at center */}
@@ -154,7 +154,7 @@ export default function HomePage() {
             <div
               className="absolute inset-0"
               style={{
-                background: 'radial-gradient(ellipse 85% 85% at 50% 50%, transparent 28%, #FFFDFA 100%)',
+                background: 'radial-gradient(ellipse 85% 85% at 50% 50%, transparent 28%, #E8E5DE 100%)',
               }}
             />
           </div>
@@ -346,7 +346,7 @@ export default function HomePage() {
                 <Link
                   key={service.title}
                   href={service.href}
-                  className="group flex flex-col gap-3 rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8 hover:border-[#C4B5A5] hover:shadow-sm transition-all duration-200"
+                  className="group flex flex-col gap-3 rounded-2xl border border-[#D4CFC7] bg-[#E8E5DE] p-8 hover:border-[#B8B0A6] hover:shadow-sm transition-all duration-200"
                 >
                   <div className="flex items-center gap-3">
                     <span
@@ -388,7 +388,7 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl">
           <span className="eyebrow-pill">Who We Work With</span>
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-[#E8E0D5] bg-[#FFFDFA] p-8">
+            <div className="rounded-2xl border border-[#D4CFC7] bg-[#E8E5DE] p-8">
               <span className="eyebrow-pill">Good fit</span>
               <ul className="space-y-3">
                 {goodFit.map((item) => (
@@ -398,11 +398,11 @@ export default function HomePage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl bg-[#2B180A] p-8">
+            <div className="rounded-2xl bg-[#1A0F06] p-8">
               <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a fit</span>
               <ul className="space-y-3">
                 {notFit.map((item) => (
-                  <li key={item} className="text-sm text-[#FCF6EF]/80 leading-relaxed">
+                  <li key={item} className="text-sm text-[#EDEBE5]/80 leading-relaxed">
                     {item}
                   </li>
                 ))}

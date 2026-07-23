@@ -29,7 +29,11 @@ export function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 bg-[#FCF6EF] border-b border-[#EDE3D6]"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#EDEBE5]/95 backdrop-blur-md border-b border-[#D4CFC7]/60'
+          : 'bg-[#EDEBE5] border-b border-transparent'
+      }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
@@ -62,7 +66,7 @@ export function Header() {
         <div className="hidden lg:block">
           <Link
             href="/contact"
-            className="font-sans inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-[#2B180A] text-[#FCF6EF] hover:opacity-90 transition-opacity duration-200"
+            className="font-sans inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] hover:opacity-90 transition-opacity duration-200"
             style={{ borderRadius: '12px' }}
             aria-label="Start a diagnostic"
           >
@@ -94,12 +98,12 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-[#FCF6EF] border-t border-[#EDE3D6] px-6 py-5 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-[#EDEBE5] border-t border-[#D4CFC7] px-6 py-5 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-sm font-medium text-[#2B180A] py-2 border-b border-[#EDE3D6] last:border-0 no-underline"
+              className="font-sans text-sm font-medium text-[#1A0F06] py-2 border-b border-[#D4CFC7] last:border-0 no-underline"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -107,7 +111,7 @@ export function Header() {
           ))}
           <Link
             href="/contact"
-            className="font-sans mt-3 inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-[#2B180A] text-[#FCF6EF] w-fit"
+            className="font-sans mt-3 inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] w-fit"
             style={{ borderRadius: '12px' }}
             onClick={() => setMenuOpen(false)}
           >
