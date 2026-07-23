@@ -127,15 +127,25 @@
   --color-ring: var(--ring);
 }
 
+/* Runtime font custom properties — @theme inline tokens are compile-time only
+   in Tailwind v4 and do not emit real CSS custom properties at runtime.
+   Declaring them here (after @theme inline) gives var(--font-heading) and
+   var(--font-sans) real cascade values for the @layer base h1-h6 rule. */
+:root {
+  --font-heading: var(--font-halant), Georgia, serif;
+  --font-sans: var(--font-geist), 'Inter', sans-serif;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+    font-family: var(--font-halant), Georgia, serif;
   }
 }
 
