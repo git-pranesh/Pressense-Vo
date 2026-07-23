@@ -6,7 +6,7 @@ export const playbooks: PlaybookData[] = [
     title: 'Fixing the Founder Bottleneck',
     subheadline: 'A diagnostic framework for founder-led businesses where too many decisions, approvals, escalations, and workflows still depend on the founder.',
     bestFor: 'Founder-led businesses where growth creates more founder pressure instead of more leverage.',
-    relatedService: { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+    relatedService: { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
     primarySymptom: 'The business slows down when the founder is unavailable.',
     whoFor: [
       'Founders involved in too many recurring decisions',
@@ -71,7 +71,7 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the business has no clear strategy, customer segment, or offer direction, start with strategic advisory first. A founder bottleneck cannot be fixed only through delegation if the real issue is unclear business direction.',
     howPressenseHelps: [
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'How We Work', href: '/how-it-works' },
@@ -95,7 +95,7 @@ export const playbooks: PlaybookData[] = [
     title: 'Pricing Leakage & Revenue Clarity',
     subheadline: 'A diagnostic framework for businesses that are selling, but may be losing margin through unclear pricing, discounting, weak packaging, or poor value communication.',
     bestFor: 'Businesses where revenue is active but profit, pricing confidence, or margin clarity is weak.',
-    relatedService: { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+    relatedService: { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
     primarySymptom: 'Revenue is growing, but profit does not improve proportionally.',
     whoFor: [
       'Businesses with inconsistent pricing',
@@ -161,7 +161,7 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the offer itself is unclear or the business does not know its ideal customer, pricing changes alone will not fix the problem. Start with positioning, customer clarity, and offer structure first.',
     howPressenseHelps: [
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Start Diagnostic', href: '/contact' },
@@ -253,7 +253,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
@@ -433,7 +433,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
@@ -615,7 +615,7 @@ export const playbooks: PlaybookData[] = [
     howPressenseHelps: [
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'What We Fix', href: '/about' },
       { name: 'Start Diagnostic', href: '/contact' },
     ],
@@ -707,7 +707,7 @@ export const playbooks: PlaybookData[] = [
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
@@ -908,7 +908,7 @@ export const playbooks: PlaybookData[] = [
     title: 'GTM Clarity Reset',
     subheadline: 'A diagnostic framework for businesses where marketing, sales, positioning, audience, offer, and channel decisions feel active but scattered.',
     bestFor: 'Founder-led businesses entering a market, repositioning, or trying to make growth more focused.',
-    relatedService: { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+    relatedService: { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
     primarySymptom: 'The business is doing growth activity, but the direction feels unclear.',
     whoFor: [
       'Founders unsure who to target first',
@@ -975,7 +975,7 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the business has no capacity to execute, a GTM reset may create clarity but not momentum. Fix team ownership and operating rhythm alongside GTM strategy.',
     howPressenseHelps: [
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
@@ -999,7 +999,7 @@ export const playbooks: PlaybookData[] = [
     title: 'Revenue Leakage Diagnostic',
     subheadline: 'A diagnostic framework for businesses where leads, follow-ups, margins, handoffs, customer opportunities, or delivery quality are being lost through unclear systems.',
     bestFor: 'Businesses that are busy but suspect revenue is slipping through operational gaps.',
-    relatedService: { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+    relatedService: { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
     primarySymptom: 'The business is generating activity, but too much value is being lost before, during, or after the sale.',
     whoFor: [
       'Businesses with missed follow-ups',
@@ -1067,7 +1067,7 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the business does not have enough demand yet, revenue leakage may not be the main constraint. Start with GTM clarity, positioning, website, or content before optimizing leakage.',
     howPressenseHelps: [
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
