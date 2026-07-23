@@ -29,7 +29,7 @@ const services = [
         price: 'From $2,000',
         type: 'Project',
         outcome: '"A clear AI adoption roadmap — not hype, just the opportunities that matter for your business."',
-        link: '/ai-strategy-consulting',
+        link: '/ai-integration',
         deliverables: ['AI capability audit', 'Prioritised opportunities list', '90-day implementation roadmap', 'ROI projection model'],
       },
       {
@@ -37,7 +37,7 @@ const services = [
         price: 'From $2,000',
         type: 'Project',
         outcome: '"Eliminate the repetitive work — automate the processes that slow you down."',
-        link: '/ai-workflows-automation',
+        link: '/ai-integration',
         deliverables: ['Workflow mapping & design', 'API integrations (HubSpot, Slack, etc.)', 'Error handling & monitoring', 'Ongoing support option'],
       },
       {
@@ -66,7 +66,7 @@ const services = [
         price: 'From $1,500/month',
         type: 'Retainer',
         outcome: '"CMO-level strategy without the $250K salary — embedded, accountable, results-focused."',
-        link: '/fractional-cmo-services',
+        link: '/fractional-cmo',
         deliverables: ['Marketing audit & positioning', 'GTM strategy & 90-day roadmap', 'Demand gen engine setup', 'Board-ready dashboards'],
       },
       {
@@ -74,7 +74,7 @@ const services = [
         price: 'From $2,000',
         type: 'Project',
         outcome: '"Strategy, content, and internal tools — all connected into one GTM system."',
-        link: '/gtm-systems-builder',
+        link: '/fractional-cmo',
         deliverables: ['GTM strategy + ICP definition', 'SEO content programme setup', 'Internal tools audit', 'Integrated 90-day roadmap'],
       },
       {
@@ -82,7 +82,7 @@ const services = [
         price: 'From $2,000/month',
         type: 'Retainer',
         outcome: '"Content that feeds your pipeline — built as a system, not a batch of blog posts."',
-        link: '/gtm-content-systems',
+        link: '/fractional-cmo',
         deliverables: ['ICP and positioning statement', 'Topic cluster architecture', 'Monthly content production', 'CRM attribution and reporting'],
       },
       {
@@ -90,7 +90,7 @@ const services = [
         price: 'From $2,000',
         type: 'Project',
         outcome: '"Organic pipeline from content — written for buyers, structured for Google."',
-        link: '/seo-content-for-saas',
+        link: '/fractional-cmo',
         deliverables: ['Keyword gap analysis', 'Pillar page and cluster articles', 'Comparison and alternative pages', 'FAQPage schema on every piece'],
       },
       {
@@ -98,7 +98,7 @@ const services = [
         price: 'From $2,500',
         type: 'Project',
         outcome: '"Why your product isn\'t converting — and exactly how to fix it."',
-        link: '/gtm-strategy-consultant',
+        link: '/fractional-cmo',
         deliverables: ['PRESS Framework 8-week sprint', 'ICP & positioning document', 'Channel strategy & playbook', 'Sales motion design'],
       },
       {
@@ -106,7 +106,7 @@ const services = [
         price: 'From $3,000',
         type: 'Project',
         outcome: '"A go-to-market that works for your stage — whether pre-revenue or scaling."',
-        link: '/saas-go-to-market-strategy',
+        link: '/fractional-cmo',
         deliverables: ['SaaS GTM framework', 'Buyer journey mapping', 'Channel & messaging strategy', 'Launch checklist & roadmap'],
       },
       {
@@ -127,7 +127,7 @@ const services = [
         price: 'From $5,000',
         type: 'Project',
         outcome: '"A CRM built for how you actually sell — no Salesforce bloat, no workarounds."',
-        link: '/custom-crm-development',
+        link: '/custom-crm',
         deliverables: ['Custom data model', 'Workflow automation', 'Integrations (email, calendar, etc.)', 'Team training & handover'],
       },
       {
@@ -143,7 +143,7 @@ const services = [
         price: 'From $5,000',
         type: 'Project',
         outcome: '"A live product in 8 weeks — production-ready code, not a prototype."',
-        link: '/mvp-development-for-startups',
+        link: '/custom-software-internal-tools',
         deliverables: ['Core feature build', 'Production-grade security & auth', 'Optional GTM playbook', 'Handoff-ready codebase'],
       },
       {
@@ -151,7 +151,7 @@ const services = [
         price: 'From $3,000',
         type: 'Project',
         outcome: '"Validated and live in six weeks — built on Replit, owned by you."',
-        link: '/mvp-development-replit',
+        link: '/custom-software-internal-tools',
         deliverables: ['Core value loop build', 'User auth and database setup', '2-3 third-party integrations', 'Production deployment on Replit'],
       },
       {
@@ -159,7 +159,7 @@ const services = [
         price: 'From $1,500',
         type: 'Advisory',
         outcome: '"Operations that scale — systems designed to grow with your business."',
-        link: '/business-systems-consultant',
+        link: '/custom-software-internal-tools',
         deliverables: ['Operations audit', 'Bottleneck identification', 'Systems architecture & roadmap', 'Implementation support'],
       },
     ],
@@ -172,7 +172,7 @@ const services = [
         price: 'From $2,000',
         type: 'Project',
         outcome: '"AI integrated into your workflow — document analysis, content generation, decision support."',
-        link: '/claude-api-integration',
+        link: '/ai-integration',
         deliverables: ['API architecture design', 'Prompt engineering & testing', 'Production deployment', 'Usage monitoring setup'],
       },
       {
@@ -180,7 +180,7 @@ const services = [
         price: 'From $2,000',
         type: 'Project',
         outcome: '"GPT-4o embedded in your systems — conversational tools that drive revenue."',
-        link: '/openai-integration-services',
+        link: '/ai-integration',
         deliverables: ['Integration architecture', 'Model fine-tuning & prompts', 'Rate limiting & cost controls', 'Performance monitoring'],
       },
     ],
@@ -193,7 +193,7 @@ const services = [
         price: 'From $500',
         type: 'Advisory',
         outcome: '"A sounding board with execution — GTM, AI systems, custom software, all in one."',
-        link: '/consulting-firm-for-startups',
+        link: '/custom-software-internal-tools',
         deliverables: ['Founder Advisory Sessions', 'Diagnostic calls & roadmaps', 'Project-based work as needed', 'Ongoing advisor option'],
       },
       {
@@ -201,7 +201,7 @@ const services = [
         price: 'From $1,500',
         type: 'Project',
         outcome: '"Full-stack apps built fast — Replit development paired with Vercel deployment and ongoing support."',
-        link: '/replit-development-agency',
+        link: '/custom-software-internal-tools',
         deliverables: ['8-week engagement sprint', 'Production-grade Replit builds', 'Vercel deployment & CI/CD', '24-48hr bug fix SLA'],
       },
       {
@@ -209,7 +209,7 @@ const services = [
         price: 'From $2,000',
         type: 'Project',
         outcome: '"Beautiful, fast, interactive — website design that converts."',
-        link: '/framer-website-design',
+        link: '/custom-software-internal-tools',
         deliverables: ['Framer site build', 'Responsive design', 'Integrations (CMS, forms, etc.)', 'Domain setup & handoff'],
       },
     ],
