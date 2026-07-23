@@ -35,51 +35,65 @@ export function Header() {
           : 'bg-[#EDEBE5] border-b border-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group" aria-label="Pressense homepage">
-          <div className="w-7 h-7 rounded border border-primary/40 flex items-center justify-center group-hover:border-primary transition-colors">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
-              <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.5" />
-              <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.5" />
-              <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
-            </svg>
-          </div>
-          <span className="text-sm font-semibold tracking-wide text-foreground">PRESSENSE</span>
-        </Link>
+      {/* Desktop: 3-col grid — links | centred logo | CTA */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 hidden lg:grid lg:grid-cols-3 items-center">
 
-        {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+        {/* Col 1 — left-aligned nav links */}
+        <nav className="flex items-center gap-6" aria-label="Main navigation">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-sm font-medium text-[#2B180A] hover:opacity-70 transition-opacity duration-200 tracking-wide no-underline"
+              className="font-sans text-sm font-normal text-foreground/70 hover:text-foreground transition-colors duration-200 no-underline"
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        {/* CTA */}
-        <div className="hidden lg:block">
-          <Link
-            href="/contact"
-            className="font-sans inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] hover:opacity-90 transition-opacity duration-200"
-            style={{ borderRadius: '12px' }}
-            aria-label="Start a diagnostic"
-          >
-            Start Diagnostic
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+        {/* Col 2 — centred wordmark */}
+        <div className="flex justify-center">
+          <Link href="/" className="flex items-center gap-2 group" aria-label="Pressense homepage">
+            <div className="w-6 h-6 rounded border border-foreground/30 flex items-center justify-center group-hover:border-foreground/60 transition-colors">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
+                <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
+                <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
+                <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
+              </svg>
+            </div>
+            <span className="text-sm font-semibold tracking-widest text-foreground uppercase">Pressense</span>
           </Link>
         </div>
 
-        {/* Mobile menu button */}
+        {/* Col 3 — right-aligned pill CTA */}
+        <div className="flex justify-end">
+          <Link
+            href="/contact"
+            className="font-sans inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] hover:opacity-85 transition-opacity duration-200"
+            aria-label="Book a free call"
+          >
+            Book a free call
+          </Link>
+        </div>
+      </div>
+
+      {/* Mobile: logo left, hamburger right */}
+      <div className="max-w-7xl mx-auto px-6 h-16 flex lg:hidden items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 group" aria-label="Pressense homepage">
+          <div className="w-6 h-6 rounded border border-foreground/30 flex items-center justify-center">
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <rect x="0.5" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
+              <rect x="8" y="0.5" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
+              <rect x="0.5" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.45" />
+              <rect x="8" y="8" width="5.5" height="5.5" stroke="currentColor" strokeOpacity="0.9" />
+            </svg>
+          </div>
+          <span className="text-sm font-semibold tracking-widest text-foreground uppercase">Pressense</span>
+        </Link>
+
         <button
-          className="lg:hidden p-2 text-muted-foreground hover:text-foreground"
+          className="p-2 text-muted-foreground hover:text-foreground"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -96,14 +110,14 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu drawer */}
       {menuOpen && (
         <div className="lg:hidden bg-[#EDEBE5] border-t border-[#D4CFC7] px-6 py-5 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-sm font-medium text-[#1A0F06] py-2 border-b border-[#D4CFC7] last:border-0 no-underline"
+              className="font-sans text-sm font-normal text-foreground/70 py-2.5 border-b border-[#D4CFC7] last:border-0 no-underline hover:text-foreground transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -111,11 +125,10 @@ export function Header() {
           ))}
           <Link
             href="/contact"
-            className="font-sans mt-3 inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] w-fit"
-            style={{ borderRadius: '12px' }}
+            className="font-sans mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium bg-[#1A0F06] text-[#EDEBE5] w-fit"
             onClick={() => setMenuOpen(false)}
           >
-            Start Diagnostic
+            Book a free call
           </Link>
         </div>
       )}
