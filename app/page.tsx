@@ -237,7 +237,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Stats ─────────────────────────────────────────────────── */}
-      <section className="pb-24 lg:pb-32">
+      <section className="pb-16 lg:pb-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <AnchorCard
             eyebrow="By the numbers"
@@ -316,7 +316,7 @@ export default function HomePage() {
                   <span
                     key={tag}
                     className="text-xs px-3 py-1 rounded-full border"
-                    style={{ borderColor: 'rgba(237,235,229,0.15)', color: 'rgba(237,235,229,0.4)' }}
+                    style={{ borderColor: 'rgba(237,235,229,0.35)', color: 'rgba(237,235,229,0.65)' }}
                   >
                     {tag}
                   </span>
@@ -381,16 +381,16 @@ export default function HomePage() {
             {/* Good fit — large, airy, border only */}
             <div
               className="rounded-3xl border p-10 flex flex-col justify-between"
-              style={{ borderColor: '#D4CFC7', background: 'transparent', minHeight: '380px' }}
+              style={{ borderColor: '#C8C2BA', background: '#E8E5DF', minHeight: '380px' }}
             >
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/50 mb-8">
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-8">
                   Good fit
                 </p>
                 <ul className="space-y-5">
                   {goodFit.map((item) => (
                     <li key={item} className="flex gap-3 items-start">
-                      <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-[#FF9A5C]" aria-hidden="true" />
+                      <span className="mt-2 shrink-0 h-2 w-2 rounded-full bg-[#FF9A5C]" aria-hidden="true" />
                       <span className="text-base text-foreground/70 leading-relaxed">{item}</span>
                     </li>
                   ))}
@@ -409,15 +409,15 @@ export default function HomePage() {
             {/* Not a fit — muted, faded tone */}
             <div
               className="rounded-3xl p-10 flex flex-col"
-              style={{ background: '#E0DDD6', minHeight: '380px' }}
+              style={{ background: '#D8D4CC', minHeight: '380px' }}
             >
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/40 mb-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/50 mb-8">
                 Not a fit
               </p>
               <ul className="space-y-5">
                 {notFit.map((item) => (
                   <li key={item} className="flex gap-3 items-start">
-                    <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-foreground/20" aria-hidden="true" />
+                    <span className="mt-2 shrink-0 h-2 w-2 rounded-full bg-foreground/25" aria-hidden="true" />
                     <span className="text-base text-foreground/40 leading-relaxed">{item}</span>
                   </li>
                 ))}

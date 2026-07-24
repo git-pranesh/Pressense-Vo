@@ -19,9 +19,10 @@ export function ServicesToggle({ services }: ServicesToggleProps) {
         <Link
           key={service.title}
           href={service.href}
-          className="group flex flex-col justify-between rounded-2xl p-7 transition-colors duration-200"
+          className="group flex flex-col justify-between rounded-2xl p-7 transition-all duration-200 border hover:border-[#B8B0A6] hover:bg-[#DEDAD2]"
           style={{
             background: '#E5E2DB',
+            borderColor: '#D4CFC7',
             minHeight: '240px',
           }}
         >
@@ -59,7 +60,7 @@ export function ServicesToggle({ services }: ServicesToggleProps) {
           {/* Bottom — learn more */}
           <div className="mt-6">
             <span
-              className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-widest transition-colors duration-150"
+              className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-widest transition-colors duration-150 group-hover:text-foreground"
               style={{ color: '#9A8C80' }}
             >
               Learn more

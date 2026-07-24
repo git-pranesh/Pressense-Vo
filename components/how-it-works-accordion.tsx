@@ -21,7 +21,7 @@ export function HowItWorksAccordion({ steps }: { steps: Step[] }) {
           <button
             key={step.label}
             onClick={() => setActive(i)}
-            className="w-full text-left flex items-center justify-between gap-4 py-2 group transition-all duration-200"
+            className="w-full text-left flex items-center justify-between gap-4 py-2 group transition-all duration-200 cursor-pointer"
             aria-expanded={active === i}
           >
             <span
