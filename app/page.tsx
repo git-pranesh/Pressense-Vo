@@ -100,6 +100,51 @@ const notFit = [
   "You're not ready to change how something works today, even if it isn't working.",
 ]
 
+const caseStudyStrip = [
+  {
+    slug: 'two-location-clinic',
+    industry: 'Healthcare, Australia',
+    stat: '105 hrs / month',
+    title: '140 hours of admin, automated.',
+    blurb: 'A specialist clinic was losing 140 hours a month to manual referral administration. We mapped the workflow, quantified the cost, and built the missing operational layer.',
+  },
+  {
+    slug: 'commercial-contractor',
+    industry: 'Construction, Sydney',
+    stat: 'A$91k / year',
+    title: '116 hours recovered. Seven days faster.',
+    blurb: 'A Sydney contractor was losing 161 hours a month to spreadsheets and manual reconciliation. We built the missing commercial-control layer.',
+  },
+  {
+    slug: 'ontario-distributor',
+    industry: 'Distribution, Ontario',
+    stat: '354 hrs / month',
+    title: '479 hours of order admin, automated.',
+    blurb: 'A family-owned Ontario distributor was drowning in email chains and pricing spreadsheets. We replaced it with a controlled order-management system.',
+  },
+  {
+    slug: 'interior-design-crm',
+    industry: 'Interior Design, India',
+    stat: '100% discount traceability',
+    title: 'The sales process that enforces itself.',
+    blurb: 'A growing interior design company was running its sales process through a master spreadsheet and employee memory. We replaced it with a system that makes the process unavoidable.',
+  },
+  {
+    slug: 'interiors-quotation-platform',
+    industry: 'Architecture, Bangalore',
+    stat: '78–104 hrs / month',
+    title: 'Seven pricing sheets, one controlled platform.',
+    blurb: 'A Bangalore architecture firm was running its entire commercial process across seven Google Sheets. We built the missing quotation layer around the way the business already worked.',
+  },
+  {
+    slug: 'zoho-creator',
+    industry: 'Enterprise Software',
+    stat: 'Multi-year GTM',
+    title: 'The GTM system that carries an enterprise buyer.',
+    blurb: 'A mature low-code platform had real differentiation but a GTM system that could not carry an enterprise buyer from first search to internal business case. We built it.',
+  },
+]
+
 const clients = [
   'AstraZeneca',
   'Zoho',
@@ -194,23 +239,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Trust Strip ───────────────────────────────────────────── */}
-      <section className="py-8">
-        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-          <div className="flex flex-wrap items-center gap-y-2">
-            <span className="text-xs font-medium text-muted-foreground/50 uppercase tracking-widest shrink-0 mr-6">
-              Worked with teams at
-            </span>
-            {clients.map((name, i) => (
-              <span key={name} className="flex items-center">
-                {i > 0 && <span className="mx-4 h-3 w-px bg-foreground/15" aria-hidden="true" />}
-                <span className="text-sm font-medium text-muted-foreground/70">{name}</span>
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── The Problem ───────────────────────────────────────────── */}
       <section className="py-10 lg:py-20">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
@@ -233,6 +261,96 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Inside the Fix ────────────────────────────────────────── */}
+      <section className="pb-10 lg:pb-20" aria-label="Case studies">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+
+          {/* Header row */}
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <span className="eyebrow-pill">Inside the fix</span>
+              <h2 className="text-2xl sm:text-3xl font-normal text-foreground leading-tight mt-3">
+                Real problems. What we found. What we built.
+              </h2>
+            </div>
+            <Link
+              href="/case-studies"
+              className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors no-underline shrink-0 mb-1"
+            >
+              All case studies
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </Link>
+          </div>
+
+          {/* Scroll strip */}
+          <div
+            className="flex gap-4 overflow-x-auto pb-4 -mx-5 px-5 sm:-mx-8 sm:px-8"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {caseStudyStrip.map((cs) => (
+              <Link
+                key={cs.slug}
+                href={`/case-studies/${cs.slug}`}
+                className="no-underline shrink-0 group"
+                style={{ width: 'clamp(260px, 34vw, 320px)' }}
+              >
+                <div
+                  className="h-full rounded-2xl border p-6 flex flex-col gap-4 transition-all duration-200 group-hover:border-foreground/30 group-hover:shadow-sm"
+                  style={{ background: '#E8E5DF', borderColor: '#D4CFC7' }}
+                >
+                  {/* Industry tag */}
+                  <span
+                    className="self-start text-[11px] font-medium tracking-wide uppercase px-2.5 py-1 rounded-full border"
+                    style={{ background: 'rgba(26,15,6,0.05)', color: '#6B5D51', borderColor: '#C8C2BA' }}
+                  >
+                    {cs.industry}
+                  </span>
+
+                  {/* Outcome stat */}
+                  <p
+                    className="font-normal leading-none"
+                    style={{ fontFamily: "'EB Garamond', Georgia, serif", fontSize: 'clamp(28px, 4vw, 38px)', color: '#1A0F06' }}
+                  >
+                    {cs.stat}
+                  </p>
+
+                  {/* Title */}
+                  <p className="text-sm font-semibold leading-snug" style={{ color: '#1A0F06' }}>
+                    {cs.title}
+                  </p>
+
+                  {/* Blurb */}
+                  <p className="text-sm leading-relaxed mt-auto" style={{ color: '#6B5D51' }}>
+                    {cs.blurb}
+                  </p>
+
+                  {/* Arrow */}
+                  <span
+                    className="self-start text-xs font-medium flex items-center gap-1 transition-colors"
+                    style={{ color: '#6B5D51' }}
+                  >
+                    Read the case study
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile "all" link */}
+          <div className="sm:hidden mt-5">
+            <Link href="/case-studies" className="text-sm font-medium text-muted-foreground hover:text-foreground no-underline">
+              All case studies →
+            </Link>
+          </div>
+
         </div>
       </section>
 
