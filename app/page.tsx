@@ -7,11 +7,11 @@ import { HowItWorksAccordion } from '@/components/how-it-works-accordion'
 import { CaseStudyStrip } from '@/components/case-study-strip'
 
 export const metadata: Metadata = {
-  title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
+  title: 'AI Automation & Internal Tools for SMBs | Pressense',
   description:
     "Nobody has actually sat down and figured out what's slowing you down. We do that first. Then we build the internal tools and software that fix it.",
   openGraph: {
-    title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
+    title: 'AI Automation & Internal Tools for SMBs | Pressense',
     description:
       "Nobody has actually sat down and figured out what's slowing you down. We do that first. Then we build the internal tools and software that fix it.",
     url: '/',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
+    title: 'AI Automation & Internal Tools for SMBs | Pressense',
     description:
       "Nobody has actually sat down and figured out what's slowing you down. We do that first. Then we build the internal tools and software that fix it.",
     images: ['/og-image.jpg'],
