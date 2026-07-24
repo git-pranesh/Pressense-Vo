@@ -37,9 +37,12 @@ export function ServicesToggle({ services }: ServicesToggleProps) {
                 {String(i + 1).padStart(2, '0')}
               </span>
               <span
-                className={`text-base sm:text-lg font-medium leading-snug text-balance transition-all duration-150 ${
-                  active === i ? 'font-semibold' : ''
-                }`}
+                className="text-base sm:text-xl leading-snug text-balance transition-all duration-150"
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontWeight: active === i ? 500 : 400,
+                  color: active === i ? 'var(--foreground)' : undefined,
+                }}
               >
                 {service.title}
               </span>
@@ -69,7 +72,10 @@ export function ServicesToggle({ services }: ServicesToggleProps) {
             {String(active + 1).padStart(2, '0')} / {String(services.length).padStart(2, '0')}
           </span>
 
-          <h3 className="text-xl sm:text-2xl font-semibold text-foreground leading-tight text-balance mb-4">
+          <h3
+            className="text-2xl sm:text-3xl font-normal text-foreground leading-tight text-balance mb-4"
+            style={{ fontFamily: 'var(--font-heading)' }}
+          >
             {services[active].title}
           </h3>
 

@@ -167,7 +167,7 @@ export default function HomePage() {
 
           {/* Dot-grid card — tall, full content width, rounded top corners */}
           <div
-            className="w-full rounded-t-3xl overflow-hidden relative"
+            className="w-full rounded-3xl overflow-hidden relative"
             style={{ aspectRatio: '16 / 7', minHeight: '320px' }}
             aria-hidden="true"
           >
@@ -383,31 +383,54 @@ export default function HomePage() {
       {/* ── Who We Work With ─────────────────────────────────────── */}
       <section className="pb-24 lg:pb-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-          <span className="eyebrow-pill">Who We Work With</span>
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="rounded-2xl border border-[#D4CFC7] p-8" style={{ background: '#E8E5DE' }}>
-              <span className="eyebrow-pill">Good fit</span>
-              <ul className="space-y-3 mt-1">
-                {goodFit.map((item) => (
-                  <li key={item} className="text-sm text-muted-foreground leading-relaxed flex gap-2.5">
-                    <span className="mt-1.5 shrink-0 h-1.5 w-1.5 rounded-full bg-[#FF9A5C]" aria-hidden="true" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+          <div className="mb-12">
+            <span className="eyebrow-pill">Who We Work With</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground leading-tight text-balance max-w-xl">
+              You&apos;re in the right place if&hellip;
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {/* Good fit — large, airy, border only */}
+            <div
+              className="rounded-3xl border p-10 flex flex-col justify-between"
+              style={{ borderColor: '#D4CFC7', background: 'transparent', minHeight: '380px' }}
+            >
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/50 mb-8">
+                  Good fit
+                </p>
+                <ul className="space-y-5">
+                  {goodFit.map((item) => (
+                    <li key={item} className="flex gap-3 items-start">
+                      <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-[#FF9A5C]" aria-hidden="true" />
+                      <span className="text-base text-foreground/70 leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-10">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors"
+                >
+                  Start a conversation
+                </Link>
+              </div>
             </div>
-            <div className="rounded-2xl p-8" style={{ background: '#1A0F06' }}>
-              <span
-                className="eyebrow-pill"
-                style={{ borderColor: 'rgba(237,235,229,0.2)', color: 'rgba(237,235,229,0.55)' }}
-              >
+
+            {/* Not a fit — muted, faded tone */}
+            <div
+              className="rounded-3xl p-10 flex flex-col"
+              style={{ background: '#E0DDD6', minHeight: '380px' }}
+            >
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/40 mb-8">
                 Not a fit
-              </span>
-              <ul className="space-y-3 mt-1">
+              </p>
+              <ul className="space-y-5">
                 {notFit.map((item) => (
-                  <li key={item} className="text-sm leading-relaxed flex gap-2.5" style={{ color: 'rgba(237,235,229,0.6)' }}>
-                    <span className="mt-1.5 shrink-0 h-1.5 w-1.5 rounded-full" style={{ background: 'rgba(237,235,229,0.25)' }} aria-hidden="true" />
-                    {item}
+                  <li key={item} className="flex gap-3 items-start">
+                    <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-foreground/20" aria-hidden="true" />
+                    <span className="text-base text-foreground/40 leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
