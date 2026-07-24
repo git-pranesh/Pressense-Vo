@@ -73,20 +73,20 @@ function mapConstraintToArea(constraint: string): string {
   return mapping[constraint] || ''
 }
 
-/* ── Shared dark-panel input styles — underline treatment ── */
+/* ── Light-panel input styles — underline treatment ── */
 const inputCls =
-  'w-full bg-transparent px-0 py-3 text-sm outline-none transition-colors border-0 border-b placeholder:text-[rgba(237,235,229,0.25)]'
+  'w-full bg-transparent px-0 py-3 text-sm outline-none transition-colors border-0 border-b placeholder:text-[#B8B0A6]'
 const inputStyle = {
-  borderColor: 'rgba(237,235,229,0.18)',
-  color: '#EDEBE5',
+  borderColor: '#C8C2BA',
+  color: '#1A0F06',
 }
-const inputFocusBorderStyle = 'focus:border-b-[rgba(237,235,229,0.6)]'
+const inputFocusBorderStyle = 'focus:border-b-[#1A0F06]'
 const labelCls = 'block text-[11px] font-medium uppercase tracking-wider mb-2'
-const labelStyle = { color: 'rgba(237,235,229,0.45)' }
+const labelStyle = { color: '#9A8C80' }
 const sectionTitleCls = 'text-[10px] font-semibold uppercase tracking-widest mb-6 pb-3 border-b'
-const sectionTitleStyle = { color: 'rgba(237,235,229,0.25)', borderColor: 'rgba(237,235,229,0.08)' }
+const sectionTitleStyle = { color: '#9A8C80', borderColor: '#D4CFC7' }
 const errorCls = 'mt-1.5 text-xs'
-const errorStyle = { color: '#F87171' }
+const errorStyle = { color: '#B91C1C' }
 
 export function DiagnosticForm() {
   const router = useRouter()
@@ -154,16 +154,16 @@ export function DiagnosticForm() {
 
       {/* Header */}
       <div className="mb-10">
-        <p className="text-[10px] font-semibold uppercase tracking-widest mb-3" style={{ color: 'rgba(237,235,229,0.35)' }}>
+        <p className="text-[10px] font-semibold uppercase tracking-widest mb-3" style={{ color: '#9A8C80' }}>
           Diagnostic form
         </p>
         <h2
           className="font-normal leading-snug text-balance mb-3"
-          style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(24px, 3vw, 32px)', color: '#EDEBE5' }}
+          style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(24px, 3vw, 32px)', color: '#1A0F06' }}
         >
           Tell us about your business.
         </h2>
-        <p className="text-sm leading-relaxed" style={{ color: 'rgba(237,235,229,0.45)' }}>
+        <p className="text-sm leading-relaxed" style={{ color: '#6B5D51' }}>
           You don&apos;t need to know the exact solution yet. The diagnostic figures that out.
         </p>
       </div>
@@ -299,13 +299,13 @@ export function DiagnosticForm() {
                   value={formData.area}
                   onChange={(e) => updateField('area', e.target.value)}
                 >
-                  <option value="" style={{ background: '#1A0F06' }}>Select an area</option>
+                  <option value="" style={{ background: '#F4F2EE' }}>Select an area</option>
                   {areaOptions.map((o) => (
-                    <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
+                    <option key={o.value} value={o.value} style={{ background: '#F4F2EE' }}>{o.label}</option>
                   ))}
                 </select>
                 <svg className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                  <path d="M2 4l4 4 4-4" stroke="rgba(237,235,229,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 4l4 4 4-4" stroke="#9A8C80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
             </div>
@@ -343,13 +343,13 @@ export function DiagnosticForm() {
                   value={formData.timeline}
                   onChange={(e) => updateField('timeline', e.target.value)}
                 >
-                  <option value="" style={{ background: '#1A0F06' }}>Select timeline</option>
+                  <option value="" style={{ background: '#F4F2EE' }}>Select timeline</option>
                   {timelineOptions.map((o) => (
-                    <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
+                    <option key={o.value} value={o.value} style={{ background: '#F4F2EE' }}>{o.label}</option>
                   ))}
                 </select>
                 <svg className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                  <path d="M2 4l4 4 4-4" stroke="rgba(237,235,229,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 4l4 4 4-4" stroke="#9A8C80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
             </div>
@@ -364,13 +364,13 @@ export function DiagnosticForm() {
                   value={formData.budget}
                   onChange={(e) => updateField('budget', e.target.value)}
                 >
-                  <option value="" style={{ background: '#1A0F06' }}>Select range</option>
+                  <option value="" style={{ background: '#F4F2EE' }}>Select range</option>
                   {budgetOptions.map((o) => (
-                    <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
+                    <option key={o.value} value={o.value} style={{ background: '#F4F2EE' }}>{o.label}</option>
                   ))}
                 </select>
                 <svg className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                  <path d="M2 4l4 4 4-4" stroke="rgba(237,235,229,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 4l4 4 4-4" stroke="#9A8C80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
             </div>
@@ -383,7 +383,7 @@ export function DiagnosticForm() {
             type="submit"
             disabled={isSubmitting}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-sm font-medium transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
-            style={{ background: '#EDEBE5', color: '#1A0F06' }}
+            style={{ background: '#1A0F06', color: '#EDEBE5' }}
           >
             {isSubmitting ? (
               <>
@@ -402,7 +402,7 @@ export function DiagnosticForm() {
               </>
             )}
           </button>
-          <p className="mt-4 text-xs" style={{ color: 'rgba(237,235,229,0.3)' }}>
+          <p className="mt-4 text-xs" style={{ color: '#9A8C80' }}>
             We respond within a couple of business days.
           </p>
         </div>

@@ -117,10 +117,10 @@ export default function ContactPage() {
 
             </div>
 
-            {/* Right — dark form panel */}
+            {/* Right — form panel */}
             <div
-              className="rounded-2xl overflow-hidden"
-              style={{ background: '#1A0F06' }}
+              className="rounded-2xl overflow-hidden border"
+              style={{ background: '#F4F2EE', borderColor: '#D4CFC7' }}
             >
               <Suspense fallback={
                 <div className="py-20 flex justify-center">
