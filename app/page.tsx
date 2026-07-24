@@ -390,7 +390,7 @@ export default function HomePage() {
                 <ul className="space-y-5">
                   {goodFit.map((item) => (
                     <li key={item} className="flex gap-3 items-start">
-                      <span className="mt-2 shrink-0 h-2 w-2 rounded-full bg-[#FF9A5C]" aria-hidden="true" />
+                      <span className="mt-2 shrink-0 h-2 w-2 rounded-full bg-[#6B5D51]" aria-hidden="true" />
                       <span className="text-base text-foreground/70 leading-relaxed">{item}</span>
                     </li>
                   ))}

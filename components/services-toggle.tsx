@@ -30,7 +30,7 @@ export function ServicesToggle({ services }: ServicesToggleProps) {
           <div className="flex items-start justify-between mb-6">
             <span
               className="text-[11px] font-semibold tabular-nums"
-              style={{ color: '#FF9A5C' }}
+              style={{ color: '#6B5D51' }}
             >
               {String(i + 1).padStart(2, '0')}
             </span>

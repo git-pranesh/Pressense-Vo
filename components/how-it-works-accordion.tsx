@@ -37,11 +37,10 @@ export function HowItWorksAccordion({ steps }: { steps: Step[] }) {
             </span>
             <span
               className="shrink-0 text-sm font-medium transition-opacity duration-200"
-              style={{ color: active === i ? '#FF9A5C' : 'transparent' }}
-              aria-hidden="true"
+              style={{ color: active === i ? '#6B5D51' : 'transparent' }}
             >
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M4 10h12M12 5l5 5-5 5" stroke="#FF9A5C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M4 10h12M12 5l5 5-5 5" stroke="#6B5D51" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
           </button>
@@ -68,7 +67,7 @@ export function HowItWorksAccordion({ steps }: { steps: Step[] }) {
         >
           <span
             className="block text-xs font-semibold uppercase tracking-widest mb-6"
-            style={{ color: '#FF9A5C' }}
+            style={{ color: '#6B5D51' }}
           >
             {String(active + 1).padStart(2, '0')} / {String(steps.length).padStart(2, '0')}
           </span>
