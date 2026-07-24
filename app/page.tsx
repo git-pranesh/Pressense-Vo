@@ -105,6 +105,27 @@ const notFit = [
   "You're not ready to change how something works today, even if it isn't working.",
 ]
 
+const featuredCaseStudies = [
+  {
+    slug: 'two-location-clinic',
+    client: '140 Hours of Admin, Automated',
+    industry: 'Private Healthcare, Australia',
+    summary: '105 staff hours released every month. A$53,000 in annual capacity recovered. A two-location specialist clinic was losing 140 hours a month to manual referral admin. We mapped the workflow, quantified the cost, and built the missing operational layer.',
+  },
+  {
+    slug: 'commercial-contractor',
+    client: '116 Hours Recovered. Seven Days Faster.',
+    industry: 'Commercial Construction, Sydney',
+    summary: '72% reduction in commercial administration. 116 staff hours released every month. A$91,000 in annual capacity. A Sydney contractor was losing 161 hours a month to spreadsheets and manual reconciliation. We built the missing commercial-control layer.',
+  },
+  {
+    slug: 'ontario-distributor',
+    client: '479 Hours of Order Admin, Automated',
+    industry: 'Industrial Distribution, Ontario',
+    summary: '78% faster order processing. 354 staff hours released every month. C$182,000 in annual capacity. A family-owned Ontario distributor was losing 479 hours a month across email chains, pricing spreadsheets and manual ERP entry.',
+  },
+]
+
 const caseStudyStrip = [
   {
     slug: 'two-location-clinic',
@@ -327,21 +348,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Stats ─────────────────────────────────────────────────── */}
+      {/* ── Featured case studies ─────────────────────────────────── */}
       <section className="pb-10 lg:pb-20">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-          <AnchorCard
-            eyebrow="By the numbers"
-            headline="What the work actually produces."
-            body="Real figures from real engagements. Not estimates — hours recovered, capacity released, timelines compressed."
-            ctaLabel={undefined}
-            ctaHref={undefined}
-            stats={[
-              { value: '116 hrs', label: 'recovered every month — commercial construction, Sydney' },
-              { value: '354 hrs', label: 'released every month — industrial distribution, Ontario' },
-              { value: '2–4 weeks', label: 'to first working software, across all engagements' },
-            ]}
-          />
+          <div className="grid sm:grid-cols-3 gap-4">
+            {featuredCaseStudies.map((cs) => (
+              <Link
+                key={cs.slug}
+                href={`/case-studies/${cs.slug}`}
+                className="group flex flex-col rounded-2xl overflow-hidden border no-underline transition-all duration-200 hover:border-[#B8B0A6]"
+                style={{ background: '#E8E5DF', borderColor: '#D4CFC7' }}
+                aria-label={`Read the ${cs.client} case study`}
+              >
+                <div className="flex flex-col h-full p-6">
+                  <span
+                    className="self-start text-[10px] font-medium tracking-wide uppercase px-2.5 py-1 rounded-full border mb-5"
+                    style={{ background: 'rgba(26,15,6,0.05)', color: '#6B5D51', borderColor: '#C8C2BA' }}
+                  >
+                    {cs.industry}
+                  </span>
+
+                  <h3
+                    className="font-normal leading-tight text-balance mb-4"
+                    style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(22px, 2.5vw, 30px)', color: '#1A0F06' }}
+                  >
+                    {cs.client}
+                  </h3>
+
+                  <p className="text-xs leading-relaxed mb-auto" style={{ color: '#6B5D51' }}>
+                    {cs.summary}
+                  </p>
+
+                  <span
+                    className="mt-6 self-start inline-flex items-center gap-1.5 text-xs font-medium group-hover:gap-2.5 transition-all duration-200"
+                    style={{ color: '#1A0F06' }}
+                  >
+                    Read case study
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M2 7h10M8 3.5L11.5 7 8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
