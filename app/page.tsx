@@ -165,53 +165,35 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Dot-grid card — tall, full content width, rounded top corners */}
+          {/* Hero image card — real photo with dot mesh overlay */}
           <div
             className="w-full rounded-3xl overflow-hidden relative"
             style={{ aspectRatio: '16 / 7', minHeight: '320px' }}
             aria-hidden="true"
           >
-            {/* Dot grid base */}
+            {/* Base photo */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/hero-botanical-opt.jpg"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover object-center"
+              loading="eager"
+              decoding="async"
+            />
+            {/* Dot mesh overlay — sits on top of photo */}
             <div
               className="absolute inset-0"
               style={{
-                backgroundImage: 'radial-gradient(circle, rgba(180,160,130,0.7) 1.5px, transparent 1.5px)',
+                backgroundImage: 'radial-gradient(circle, rgba(237,235,229,0.55) 1.5px, transparent 1.5px)',
                 backgroundSize: '24px 24px',
-                backgroundColor: '#E3DFD7',
               }}
             />
-            {/* Coral bloom — centred right */}
+            {/* Edge fade — blends card edges into page bg */}
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  'radial-gradient(ellipse 55% 110% at 65% 55%, #FF8C5A 0%, #FF6040 20%, rgba(255,110,60,0.25) 55%, transparent 75%)',
-                filter: 'blur(38px)',
-              }}
-            />
-            {/* Secondary warm halo */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'radial-gradient(ellipse 30% 60% at 78% 35%, rgba(255,185,100,0.6) 0%, transparent 65%)',
-                filter: 'blur(24px)',
-              }}
-            />
-            {/* Deep teal shadow at base, mimics flower stem shadow */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'radial-gradient(ellipse 35% 50% at 62% 90%, rgba(28,53,48,0.35) 0%, transparent 70%)',
-              }}
-            />
-            {/* Edge fade — merges card into page bg */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'radial-gradient(ellipse 80% 75% at 50% 50%, transparent 40%, #EDEBE5 100%)',
+                  'radial-gradient(ellipse 90% 80% at 50% 50%, transparent 35%, rgba(237,235,229,0.85) 75%, #EDEBE5 100%)',
               }}
             />
           </div>
