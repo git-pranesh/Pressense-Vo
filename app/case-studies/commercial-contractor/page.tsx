@@ -350,11 +350,11 @@ export default function CommercialContractorCaseStudy() {
                   ))}
                   <div
                     className="grid grid-cols-[1fr_auto_auto_auto] items-center px-5 py-3.5 text-sm font-bold"
-                    style={{ borderTop: '2px solid rgba(26,15,6,0.12)', background: 'rgba(26,15,6,0.03)' }}
+                    style={{ background: '#1A0F06' }}
                   >
-                    <span style={{ color: '#1A0F06' }}>Total</span>
+                    <span style={{ color: '#EDEBE5' }}>Total</span>
                     <span className="col-span-2 pr-6" />
-                    <span className="text-right" style={{ color: '#1A0F06' }}>161.3 hrs</span>
+                    <span className="text-right" style={{ color: '#EDEBE5' }}>161.3 hrs</span>
                   </div>
                 </div>
                 <p className="mt-4 text-sm" style={{ color: '#6B5D51' }}>
@@ -405,7 +405,7 @@ export default function CommercialContractorCaseStudy() {
                 </p>
                 <div className="space-y-6">
                   {systemModules.map((m, i) => (
-                    <div key={m.title} className="rounded-2xl border border-border/50 p-6" style={{ background: 'rgba(26,15,6,0.015)' }}>
+                    <div key={m.title} className="rounded-2xl border p-6" style={{ background: '#E8E5DF', borderColor: '#D4CFC7' }}>
                       <div className="flex items-start gap-4">
                         <span className="shrink-0 text-xs font-bold tabular-nums mt-0.5" style={{ color: '#6B5D51' }}>
                           0{i + 1}
@@ -425,42 +425,48 @@ export default function CommercialContractorCaseStudy() {
                 <h2 id="workflow-heading" className="text-xs font-semibold tracking-widest uppercase mb-8" style={{ color: '#6B5D51' }}>
                   The new workflow
                 </h2>
-                <div className="grid sm:grid-cols-2 gap-px bg-border/40 rounded-2xl overflow-hidden">
+                <div className="grid sm:grid-cols-2 gap-5">
                   {/* Before */}
-                  <div className="bg-background p-6">
-                    <p className="text-xs font-bold uppercase tracking-widest mb-5" style={{ color: '#6B5D51' }}>Before</p>
-                    <ol className="space-y-3">
-                      {beforeSteps.map((step, i) => (
-                        <li key={step} className="flex items-start gap-3">
-                          <span
-                            className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold mt-0.5"
-                            style={{ background: 'rgba(26,15,6,0.07)', color: '#6B5D51' }}
-                            aria-hidden="true"
-                          >
-                            {i + 1}
-                          </span>
-                          <span className="text-sm leading-snug" style={{ color: '#4A3F35' }}>{step}</span>
-                        </li>
-                      ))}
-                    </ol>
+                  <div className="rounded-2xl border overflow-hidden" style={{ borderColor: '#D4CFC7' }}>
+                    <div className="px-5 py-3 border-b" style={{ background: '#D4CFC7', borderColor: '#C8C2BA' }}>
+                      <span className="text-xs font-semibold tracking-wide uppercase" style={{ color: '#6B5D51' }}>Before</span>
+                    </div>
+                    <div className="p-5" style={{ background: '#E8E5DF' }}>
+                      <ol className="flex flex-col gap-3">
+                        {beforeSteps.map((step, i) => (
+                          <li key={step} className="flex items-start gap-3">
+                            <span
+                              className="shrink-0 w-5 h-5 rounded-full border flex items-center justify-center text-[10px] font-semibold mt-0.5"
+                              style={{ background: '#EDEBE5', borderColor: '#C8C2BA', color: '#6B5D51' }}
+                            >
+                              {i + 1}
+                            </span>
+                            <span className="text-sm leading-relaxed" style={{ color: '#3D3128' }}>{step}</span>
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
                   </div>
                   {/* After */}
-                  <div className="p-6" style={{ background: 'rgba(26,15,6,0.03)' }}>
-                    <p className="text-xs font-bold uppercase tracking-widest mb-5" style={{ color: '#1A0F06' }}>After</p>
-                    <ol className="space-y-3">
-                      {afterSteps.map((step, i) => (
-                        <li key={step} className="flex items-start gap-3">
-                          <span
-                            className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold mt-0.5"
-                            style={{ background: 'rgba(26,15,6,0.12)', color: '#1A0F06' }}
-                            aria-hidden="true"
-                          >
-                            {i + 1}
-                          </span>
-                          <span className="text-sm leading-snug font-medium" style={{ color: '#1A0F06' }}>{step}</span>
-                        </li>
-                      ))}
-                    </ol>
+                  <div className="rounded-2xl border overflow-hidden" style={{ borderColor: '#1A0F06' }}>
+                    <div className="px-5 py-3 border-b" style={{ background: '#1A0F06', borderColor: '#1A0F06' }}>
+                      <span className="text-xs font-semibold tracking-wide uppercase" style={{ color: 'rgba(237,235,229,0.6)' }}>After</span>
+                    </div>
+                    <div className="p-5" style={{ background: '#EDEBE5' }}>
+                      <ol className="flex flex-col gap-3">
+                        {afterSteps.map((step, i) => (
+                          <li key={step} className="flex items-start gap-3">
+                            <span
+                              className="shrink-0 w-5 h-5 rounded-full border flex items-center justify-center text-[10px] font-semibold mt-0.5"
+                              style={{ background: '#1A0F06', borderColor: '#1A0F06', color: '#EDEBE5' }}
+                            >
+                              {i + 1}
+                            </span>
+                            <span className="text-sm leading-relaxed" style={{ color: '#3D3128' }}>{step}</span>
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -499,33 +505,33 @@ export default function CommercialContractorCaseStudy() {
                   ))}
                   <div
                     className="grid grid-cols-[1fr_auto_auto_auto] items-center px-5 py-3.5 text-sm font-bold"
-                    style={{ borderTop: '2px solid rgba(26,15,6,0.12)', background: 'rgba(26,15,6,0.03)' }}
+                    style={{ background: '#1A0F06' }}
                   >
-                    <span style={{ color: '#1A0F06' }}>Total</span>
-                    <span className="text-right pr-6" style={{ color: '#6B5D51' }}>161.3 hrs</span>
-                    <span className="text-right pr-6" style={{ color: '#6B5D51' }}>44.8 hrs</span>
-                    <span className="text-right" style={{ color: '#1A0F06' }}>116.5 hrs</span>
+                    <span style={{ color: '#EDEBE5' }}>Total</span>
+                    <span className="text-right pr-6" style={{ color: 'rgba(237,235,229,0.6)' }}>161.3 hrs</span>
+                    <span className="text-right pr-6" style={{ color: 'rgba(237,235,229,0.6)' }}>44.8 hrs</span>
+                    <span className="text-right font-bold" style={{ color: '#EDEBE5' }}>116.5 hrs</span>
                   </div>
                 </div>
 
                 {/* Additional results */}
                 <div className="grid sm:grid-cols-3 gap-4 mb-10">
                   {additionalResults.map((r) => (
-                    <div key={r.stat} className="rounded-2xl border border-border/50 p-5" style={{ background: 'rgba(26,15,6,0.02)' }}>
+                    <div key={r.stat} className="rounded-2xl border p-5 text-center" style={{ background: '#1A0F06', borderColor: '#1A0F06' }}>
                       <p
-                        className="font-bold leading-none mb-2"
-                        style={{ fontFamily: GARAMOND, fontSize: '2rem', color: '#1A0F06' }}
+                        className="font-normal leading-none mb-2"
+                        style={{ fontFamily: GARAMOND, fontSize: '2rem', color: '#EDEBE5' }}
                       >
                         {r.stat}
                       </p>
-                      <p className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: '#6B5D51' }}>{r.label}</p>
-                      <p className="text-xs leading-relaxed" style={{ color: '#4A3F35' }}>{r.detail}</p>
+                      <p className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: 'rgba(237,235,229,0.6)' }}>{r.label}</p>
+                      <p className="text-xs leading-relaxed" style={{ color: 'rgba(237,235,229,0.5)' }}>{r.detail}</p>
                     </div>
                   ))}
                 </div>
 
                 {/* Working capital narrative */}
-                <div className="rounded-2xl border border-border/50 p-6 space-y-4" style={{ background: 'rgba(26,15,6,0.02)' }}>
+                <div className="rounded-2xl border p-6 space-y-4" style={{ background: '#E8E5DF', borderColor: '#D4CFC7' }}>
                   <p className="font-semibold text-sm" style={{ color: '#1A0F06' }}>A$360,000 working-capital timing improvement</p>
                   <p className="text-sm leading-relaxed" style={{ color: '#4A3F35' }}>
                     Before the system, the monthly client-claim process took an average of 9.5 days after the project cut-off. With evidence, progress, variations and cost information collected throughout the month, the claim pack could be finalised in approximately 2.5 days. That moved approximately A$1.55 million in monthly claims into the payment process seven days earlier.
