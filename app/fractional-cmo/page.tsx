@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
-import { VisualCard } from '@/components/visual-card'
 
 export const metadata: Metadata = {
   title: 'Fractional CMO | Pressense',
@@ -56,37 +55,25 @@ export default function FractionalCmoPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="pt-28 pb-16">
+      <section className="pt-24 pb-10">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <span className="eyebrow-pill">Fractional CMO</span>
-              <h1
-                className="font-normal leading-tight text-balance mb-5"
-                style={{ fontFamily: GARAMOND, fontSize: 'clamp(36px, 5vw, 58px)' }}
-              >
+          <div className="relative w-full rounded-3xl overflow-hidden" style={{ backgroundImage: 'url(/images/service-hero-bg-opt.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.42)' }} aria-hidden="true" />
+            <div className="relative z-10 px-8 py-16 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+              <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Fractional CMO</span>
+              <h1 className="font-normal leading-tight text-balance mb-5" style={{ fontFamily: GARAMOND, fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}>
                 Marketing leadership, once the foundation can hold the weight.
               </h1>
-              <p className="text-base leading-relaxed text-muted-foreground mb-8 max-w-md">
+              <p className="text-base leading-relaxed mb-8 max-w-md" style={{ color: 'rgba(237,235,229,0.72)' }}>
                 For clients whose operations are already solid — we step in on positioning, go-to-market, and growth strategy without the cost of a full-time hire.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors"
-                >
-                  Book a free call
-                </Link>
-                <Link
-                  href="/how-it-works"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-foreground/20 text-sm font-medium text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-colors"
-                >
-                  How we work
-                  <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-foreground/10 text-xs">→</span>
+                <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors" style={{ background: '#EDEBE5', color: '#1A0F06' }}>Book a free call</Link>
+                <Link href="/how-it-works" className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors" style={{ border: '1px solid rgba(237,235,229,0.3)', color: 'rgba(237,235,229,0.8)' }}>
+                  How we work <span className="inline-flex items-center justify-center w-5 h-5 rounded-full" style={{ background: 'rgba(237,235,229,0.15)' }}>→</span>
                 </Link>
               </div>
             </div>
-            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '340px' }} />
           </div>
         </div>
       </section>
