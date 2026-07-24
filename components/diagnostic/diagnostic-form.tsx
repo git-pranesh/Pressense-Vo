@@ -73,19 +73,18 @@ function mapConstraintToArea(constraint: string): string {
   return mapping[constraint] || ''
 }
 
-/* ── Shared dark-panel input styles ─────────────────────── */
+/* ── Shared dark-panel input styles — underline treatment ── */
 const inputCls =
-  'w-full rounded-lg px-4 py-3 text-sm outline-none transition-colors placeholder:text-[rgba(237,235,229,0.3)] focus:ring-1'
+  'w-full bg-transparent px-0 py-3 text-sm outline-none transition-colors border-0 border-b placeholder:text-[rgba(237,235,229,0.25)]'
 const inputStyle = {
-  background: 'rgba(237,235,229,0.07)',
-  border: '1px solid rgba(237,235,229,0.14)',
+  borderColor: 'rgba(237,235,229,0.18)',
   color: '#EDEBE5',
 }
-const inputFocusRingColor = 'focus:ring-[rgba(237,235,229,0.25)]'
-const labelCls = 'block text-xs font-medium mb-2'
-const labelStyle = { color: 'rgba(237,235,229,0.6)' }
+const inputFocusBorderStyle = 'focus:border-b-[rgba(237,235,229,0.6)]'
+const labelCls = 'block text-[11px] font-medium uppercase tracking-wider mb-2'
+const labelStyle = { color: 'rgba(237,235,229,0.45)' }
 const sectionTitleCls = 'text-[10px] font-semibold uppercase tracking-widest mb-6 pb-3 border-b'
-const sectionTitleStyle = { color: 'rgba(237,235,229,0.35)', borderColor: 'rgba(237,235,229,0.1)' }
+const sectionTitleStyle = { color: 'rgba(237,235,229,0.25)', borderColor: 'rgba(237,235,229,0.08)' }
 const errorCls = 'mt-1.5 text-xs'
 const errorStyle = { color: '#F87171' }
 
@@ -184,7 +183,7 @@ export function DiagnosticForm() {
               <input
                 id="name"
                 type="text"
-                className={`${inputCls} ${inputFocusRingColor}`}
+                className={`${inputCls} ${inputFocusBorderStyle}`}
                 style={inputStyle}
                 value={formData.name}
                 onChange={(e) => updateField('name', e.target.value)}
@@ -202,7 +201,7 @@ export function DiagnosticForm() {
               <input
                 id="email"
                 type="email"
-                className={`${inputCls} ${inputFocusRingColor}`}
+                className={`${inputCls} ${inputFocusBorderStyle}`}
                 style={inputStyle}
                 value={formData.email}
                 onChange={(e) => updateField('email', e.target.value)}
@@ -220,7 +219,7 @@ export function DiagnosticForm() {
               <input
                 id="company"
                 type="text"
-                className={`${inputCls} ${inputFocusRingColor}`}
+                className={`${inputCls} ${inputFocusBorderStyle}`}
                 style={inputStyle}
                 value={formData.company}
                 onChange={(e) => updateField('company', e.target.value)}
@@ -237,7 +236,7 @@ export function DiagnosticForm() {
               </label>
               <textarea
                 id="whatDoes"
-                className={`${inputCls} ${inputFocusRingColor} resize-none`}
+                className={`${inputCls} ${inputFocusBorderStyle} resize-none`}
                 style={inputStyle}
                 rows={2}
                 value={formData.whatDoes}
@@ -260,7 +259,7 @@ export function DiagnosticForm() {
               </label>
               <textarea
                 id="problem"
-                className={`${inputCls} ${inputFocusRingColor} resize-none`}
+                className={`${inputCls} ${inputFocusBorderStyle} resize-none`}
                 style={inputStyle}
                 rows={4}
                 value={formData.problem}
@@ -278,7 +277,7 @@ export function DiagnosticForm() {
               </label>
               <textarea
                 id="attempts"
-                className={`${inputCls} ${inputFocusRingColor} resize-none`}
+                className={`${inputCls} ${inputFocusBorderStyle} resize-none`}
                 style={inputStyle}
                 rows={3}
                 value={formData.attempts}
@@ -292,18 +291,23 @@ export function DiagnosticForm() {
               <label htmlFor="area" className={labelCls} style={labelStyle}>
                 Which area feels most relevant?
               </label>
-              <select
-                id="area"
-                className={`${inputCls} ${inputFocusRingColor}`}
-                style={{ ...inputStyle, appearance: 'none' as const }}
-                value={formData.area}
-                onChange={(e) => updateField('area', e.target.value)}
-              >
-                <option value="" style={{ background: '#1A0F06' }}>Select an area</option>
-                {areaOptions.map((o) => (
-                  <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
-                ))}
-              </select>
+              <div className="relative">
+                <select
+                  id="area"
+                  className={`${inputCls} ${inputFocusBorderStyle} appearance-none cursor-pointer`}
+                  style={inputStyle}
+                  value={formData.area}
+                  onChange={(e) => updateField('area', e.target.value)}
+                >
+                  <option value="" style={{ background: '#1A0F06' }}>Select an area</option>
+                  {areaOptions.map((o) => (
+                    <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
+                  ))}
+                </select>
+                <svg className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 4l4 4 4-4" stroke="rgba(237,235,229,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
             </div>
 
             {/* Outcome */}
@@ -313,7 +317,7 @@ export function DiagnosticForm() {
               </label>
               <textarea
                 id="outcome"
-                className={`${inputCls} ${inputFocusRingColor} resize-none`}
+                className={`${inputCls} ${inputFocusBorderStyle} resize-none`}
                 style={inputStyle}
                 rows={2}
                 value={formData.outcome}
@@ -331,34 +335,44 @@ export function DiagnosticForm() {
 
             <div>
               <label htmlFor="timeline" className={labelCls} style={labelStyle}>When do you want to start?</label>
-              <select
-                id="timeline"
-                className={`${inputCls} ${inputFocusRingColor}`}
-                style={{ ...inputStyle, appearance: 'none' as const }}
-                value={formData.timeline}
-                onChange={(e) => updateField('timeline', e.target.value)}
-              >
-                <option value="" style={{ background: '#1A0F06' }}>Select timeline</option>
-                {timelineOptions.map((o) => (
-                  <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
-                ))}
-              </select>
+              <div className="relative">
+                <select
+                  id="timeline"
+                  className={`${inputCls} ${inputFocusBorderStyle} appearance-none cursor-pointer`}
+                  style={inputStyle}
+                  value={formData.timeline}
+                  onChange={(e) => updateField('timeline', e.target.value)}
+                >
+                  <option value="" style={{ background: '#1A0F06' }}>Select timeline</option>
+                  {timelineOptions.map((o) => (
+                    <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
+                  ))}
+                </select>
+                <svg className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 4l4 4 4-4" stroke="rgba(237,235,229,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
             </div>
 
             <div>
               <label htmlFor="budget" className={labelCls} style={labelStyle}>Budget range (optional)</label>
-              <select
-                id="budget"
-                className={`${inputCls} ${inputFocusRingColor}`}
-                style={{ ...inputStyle, appearance: 'none' as const }}
-                value={formData.budget}
-                onChange={(e) => updateField('budget', e.target.value)}
-              >
-                <option value="" style={{ background: '#1A0F06' }}>Select range</option>
-                {budgetOptions.map((o) => (
-                  <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
-                ))}
-              </select>
+              <div className="relative">
+                <select
+                  id="budget"
+                  className={`${inputCls} ${inputFocusBorderStyle} appearance-none cursor-pointer`}
+                  style={inputStyle}
+                  value={formData.budget}
+                  onChange={(e) => updateField('budget', e.target.value)}
+                >
+                  <option value="" style={{ background: '#1A0F06' }}>Select range</option>
+                  {budgetOptions.map((o) => (
+                    <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
+                  ))}
+                </select>
+                <svg className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 4l4 4 4-4" stroke="rgba(237,235,229,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
