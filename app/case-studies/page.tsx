@@ -89,6 +89,16 @@ const caseStudies = [
       'Six mandatory gates. Hourly SLA breach detection. 100% discount traceability. 14 live management reports. A growing interior design company was running its sales process through a master spreadsheet and employee memory. We replaced it with a system that makes the process unavoidable.',
     tags: ['Custom CRM', 'Workflow Automation', 'Sales Operations', 'Interior Design'],
   },
+  {
+    slug: 'interiors-quotation-platform',
+    client: 'Seven Pricing Sheets, One Controlled Platform',
+    industry: 'Architecture and Interiors, Bangalore',
+    engagementType: 'Custom Quotation Platform',
+    duration: 'Internal tools engagement',
+    summary:
+      '335 client records centralised. 19 users across three governed roles. 78–104 hours of monthly capacity released. A Bangalore architecture and interiors firm was running its entire commercial process through seven Google Sheets. We built the missing controlled quotation layer around the way the business already priced and delivered projects.',
+    tags: ['Custom Software', 'Quotation Platform', 'Architecture', 'Interiors'],
+  },
 ]
 
 export default function CaseStudiesPage() {
