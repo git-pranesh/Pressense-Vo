@@ -4,6 +4,7 @@ import { AnchorCard } from '@/components/anchor-card'
 import { ServicesToggle } from '@/components/services-toggle'
 import { FlowerPanel } from '@/components/flower-panel'
 import { HowItWorksAccordion } from '@/components/how-it-works-accordion'
+import { CaseStudyStrip } from '@/components/case-study-strip'
 
 export const metadata: Metadata = {
   title: 'Diagnostic-First Build Partner for Founder-Led Businesses | Pressense',
@@ -167,11 +168,11 @@ const caseStudyStrip = [
     stat: 'Multi-year GTM',
     title: 'The GTM system that carries an enterprise buyer.',
     blurb: 'A mature low-code platform had real differentiation but a GTM system that could not carry an enterprise buyer from first search to internal business case. We built it.',
-    bg: '#E8E5DF',
-    fg: '#1A0F06',
-    fgDim: '#6B5D51',
-    tagBg: 'rgba(26,15,6,0.06)',
-    tagBorder: '#C8C2BA',
+    bg: '#2A1A2E',
+    fg: '#EDEBE5',
+    fgDim: 'rgba(237,235,229,0.55)',
+    tagBg: 'rgba(237,235,229,0.1)',
+    tagBorder: 'rgba(237,235,229,0.18)',
   },
 ]
 
@@ -317,81 +318,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Scroll strip wrapper — fade on right edge signals more content */}
-          <div className="relative -mx-5 sm:-mx-8">
-            {/* Right fade */}
-            <div
-              className="pointer-events-none absolute right-0 top-0 bottom-4 w-24 z-10"
-              style={{ background: 'linear-gradient(to right, transparent, var(--background))' }}
-              aria-hidden="true"
-            />
-
-            <div
-              className="flex gap-3 overflow-x-auto pb-4 px-5 sm:px-8"
-              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}
-            >
-              {caseStudyStrip.map((cs) => (
-                <Link
-                  key={cs.slug}
-                  href={`/case-studies/${cs.slug}`}
-                  className="no-underline shrink-0 group"
-                  style={{ width: 'clamp(260px, 32vw, 300px)' }}
-                >
-                  <div
-                    className="h-full rounded-2xl p-6 flex flex-col gap-5 transition-all duration-200 group-hover:scale-[1.01] group-hover:shadow-lg"
-                    style={{ background: cs.bg }}
-                  >
-                    {/* Industry tag */}
-                    <span
-                      className="self-start text-[10px] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-full border"
-                      style={{ background: cs.tagBg, color: cs.fgDim, borderColor: cs.tagBorder }}
-                    >
-                      {cs.industry}
-                    </span>
-
-                    {/* Outcome stat — large Garamond */}
-                    <p
-                      className="font-normal leading-none"
-                      style={{ fontFamily: "'EB Garamond', Georgia, serif", fontSize: 'clamp(30px, 3.5vw, 42px)', color: cs.fg }}
-                    >
-                      {cs.stat}
-                    </p>
-
-                    {/* Title */}
-                    <p className="text-sm font-semibold leading-snug" style={{ color: cs.fg }}>
-                      {cs.title}
-                    </p>
-
-                    {/* Blurb */}
-                    <p className="text-xs leading-relaxed" style={{ color: cs.fgDim }}>
-                      {cs.blurb}
-                    </p>
-
-                    {/* Arrow link */}
-                    <span
-                      className="self-start text-xs font-medium flex items-center gap-1.5"
-                      style={{ color: cs.fgDim }}
-                    >
-                      Read the case study
-                      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                        <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </span>
-                  </div>
-                </Link>
-              ))}
-
-              {/* Spacer so last card isn't hidden under the fade */}
-              <div className="shrink-0 w-16" aria-hidden="true" />
-            </div>
-          </div>
-
-          {/* Mobile "all" link */}
-          <div className="sm:hidden mt-5">
-            <Link href="/case-studies" className="text-sm font-medium text-muted-foreground hover:text-foreground no-underline">
-              All case studies →
-            </Link>
-          </div>
+          <CaseStudyStrip cards={caseStudyStrip} />
 
         </div>
       </section>
