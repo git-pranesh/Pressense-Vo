@@ -76,7 +76,7 @@
 
 @theme inline {
   --font-sans: var(--font-geist), 'Inter', sans-serif;
-  --font-heading: var(--font-halant), Georgia, serif;
+  --font-heading: var(--font-halant), 'EB Garamond', Georgia, serif;
   --font-mono: 'Geist Mono', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -133,7 +133,7 @@
    Declaring them here (after @theme inline) gives var(--font-heading) and
    var(--font-sans) real cascade values for the @layer base h1-h6 rule. */
 :root {
-  --font-heading: var(--font-halant), Georgia, serif;
+  --font-heading: var(--font-halant), 'EB Garamond', Georgia, serif;
   --font-sans: var(--font-geist), 'Inter', sans-serif;
 }
 

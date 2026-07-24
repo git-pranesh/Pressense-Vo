@@ -1,14 +1,15 @@
 import type { Metadata, Viewport } from 'next'
-import { Halant, Geist } from 'next/font/google'
+import { EB_Garamond, Geist } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { StructuredData } from '@/components/structured-data'
 import { Header } from '@/components/header'
 import { MegaFooter } from '@/components/mega-footer'
 import './globals.css'
 
-const halant = Halant({
+const ebGaramond = EB_Garamond({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '800'],
+  style: ['normal', 'italic'],
   variable: '--font-halant',
   display: 'swap',
 })
@@ -71,7 +72,7 @@ export default function RootLayout({
       <head>
         <StructuredData />
       </head>
-      <body className={`${halant.variable} ${geist.variable} font-sans antialiased`}>
+        <body className={`${ebGaramond.variable} ${geist.variable} font-sans antialiased`}>
         <a href="#main-content" className="sr-only focus:not-sr-only">
           Skip to main content
         </a>
