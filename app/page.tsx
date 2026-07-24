@@ -165,18 +165,17 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Hero image card — real photo with dot mesh overlay */}
+          {/* Hero image card — natural proportions, no cropping */}
           <div
             className="w-full rounded-3xl overflow-hidden relative"
-            style={{ aspectRatio: '16 / 7', minHeight: '320px' }}
             aria-hidden="true"
           >
-            {/* Base photo */}
+            {/* Base photo — full natural size */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/hero-botanical-opt.jpg"
               alt=""
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="w-full h-auto block"
               loading="eager"
               decoding="async"
             />
