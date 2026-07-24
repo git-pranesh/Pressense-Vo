@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const phases = [
   {
     number: '01',
-    label: 'Phase 1 — Diagnose',
+    label: 'Phase 1: Diagnose',
     title: 'We find the actual problem first',
     duration: 'About a week',
     body: [
@@ -35,7 +35,7 @@ const phases = [
   },
   {
     number: '02',
-    label: 'Phase 2 — Build',
+    label: 'Phase 2: Build',
     title: 'We build what fixes it',
     duration: 'Weeks, not months',
     body: [
@@ -46,7 +46,7 @@ const phases = [
   },
   {
     number: '03',
-    label: 'Phase 3 — Grow',
+    label: 'Phase 3: Grow',
     title: 'Some clients bring us in further',
     duration: 'Optional',
     body: [
@@ -93,7 +93,7 @@ export default function HowItWorksPage() {
             {phases.map((phase) => (
               <div key={phase.number} className="grid lg:grid-cols-[1fr_2fr] gap-6 lg:gap-20 items-start">
 
-                {/* Left — large number + label */}
+                {/* Left, large number + label */}
                 <div className="flex items-center lg:flex-col lg:items-start gap-4 lg:gap-4 lg:pt-1">
                   <span
                     className="leading-none select-none shrink-0"
@@ -110,7 +110,7 @@ export default function HowItWorksPage() {
                   <span className="eyebrow-pill" style={{ marginBottom: 0 }}>{phase.label}</span>
                 </div>
 
-                {/* Right — heading + body + duration */}
+                {/* Right, heading + body + duration */}
                 <div>
                   <h2
                     className="font-normal text-foreground leading-tight text-balance mb-6"

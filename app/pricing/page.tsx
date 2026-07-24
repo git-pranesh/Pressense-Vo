@@ -6,7 +6,7 @@ const GARAMOND = '"EB Garamond", Georgia, serif'
 
 export const metadata: Metadata = {
   title: 'Pricing | Pressense',
-  description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service — final pricing depends on scope.',
+  description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service, final pricing depends on scope.',
   openGraph: {
     title: 'Pricing | Pressense',
     description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service.',
@@ -105,7 +105,7 @@ export default function PricingPage() {
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <p className="text-sm text-muted-foreground/70 mb-12 max-w-xl">
-            Free diagnostic first — then a clear number. The diagnostic costs nothing. Once we know what you actually need, you get a specific quote, not a guess.
+            Free diagnostic first, then a clear number. The diagnostic costs nothing. Once we know what you actually need, you get a specific quote, not a guess.
           </p>
           <div className="flex flex-col gap-4">
             {services.map((service) => (

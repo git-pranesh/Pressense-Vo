@@ -4,7 +4,7 @@ import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Custom CRM | Pressense',
-  description: 'A CRM built around how your team actually sells — not a generic template your team quietly abandons.',
+  description: 'A CRM built around how your team actually sells, not a generic template your team quietly abandons.',
   alternates: { canonical: '/custom-crm' },
 }
 
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: 'Will our team need full retraining?',
-    a: 'Some training, yes — but it is built around how your team already works. The learning curve is smaller than switching to another off-the-shelf platform because the CRM matches your existing process.',
+    a: 'Some training, yes, but it is built around how your team already works. The learning curve is smaller than switching to another off-the-shelf platform because the CRM matches your existing process.',
   },
   {
     q: 'Can it integrate with tools we already use?',
@@ -65,7 +65,7 @@ export default function CustomCrmPage() {
                 A CRM your team actually opens.
               </h1>
               <p className="text-base leading-relaxed mb-8 max-w-md" style={{ color: 'rgba(237,235,229,0.72)' }}>
-                Most CRMs get bought, half-configured, then quietly abandoned while everyone goes back to spreadsheets. We build one shaped around how your team actually sells — so it gets used.
+                Most CRMs get bought, half-configured, then quietly abandoned while everyone goes back to spreadsheets. We build one shaped around how your team actually sells, so it gets used.
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
                 <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors" style={{ background: '#EDEBE5', color: '#1A0F06' }}>Book a free call</Link>
@@ -91,7 +91,7 @@ export default function CustomCrmPage() {
                 Built around your process, not a template.
               </h2>
               <p className="text-base leading-relaxed text-muted-foreground">
-                Every part of the CRM ties back to how your team actually sells and delivers — so adoption is high from day one.
+                Every part of the CRM ties back to how your team actually sells and delivers, so adoption is high from day one.
               </p>
             </div>
             <ul className="space-y-4 pt-2">

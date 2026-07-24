@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       "Nobody has actually sat down and figured out what's slowing you down. We do that first. Then we build the internal tools and software that fix it.",
     url: '/',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense — Diagnostic-First Build Partner' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense, Diagnostic-First Build Partner' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -31,7 +31,7 @@ const services = [
   {
     title: 'Custom Software & Internal Tools',
     description:
-      "We replace spreadsheets, WhatsApp threads, and manual approvals with a system built around your team's real workflow — dashboards, internal CRMs, whatever the diagnostic points to.",
+      "We replace spreadsheets, WhatsApp threads, and manual approvals with a system built around your team's real workflow, dashboards, internal CRMs, whatever the diagnostic points to.",
     href: '/custom-software-internal-tools',
   },
   {
@@ -64,7 +64,7 @@ const howItWorksSteps = [
   {
     label: 'Diagnose',
     description:
-      "We trace how work moves through your business right now — approvals, handoffs, reporting, the parts still living in spreadsheets. You get a clear picture of what's actually broken.",
+      "We trace how work moves through your business right now, approvals, handoffs, reporting, the parts still living in spreadsheets. You get a clear picture of what's actually broken.",
     detail: 'Typically takes one working session. No preparation needed from your team.',
   },
   {
@@ -76,14 +76,14 @@ const howItWorksSteps = [
   {
     label: 'Deploy',
     description:
-      "We hand over something your team actually uses — with documentation, handover sessions, and a short support window built in.",
+      "We hand over something your team actually uses, with documentation, handover sessions, and a short support window built in.",
     detail: 'We stay until it sticks, not just until it ships.',
   },
   {
     label: 'Optimise',
     description:
       "Once the operational side is solid, some clients bring us in for go-to-market and fractional CMO work too. Few of our clients stop after step three.",
-    detail: 'Optional — only if the operations are already running cleanly.',
+    detail: 'Optional, only if the operations are already running cleanly.',
   },
 ]
 
@@ -117,7 +117,7 @@ export default function HomePage() {
       <section className="pt-24 pb-10">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
 
-          {/* Hero card — full background image with curved edges */}
+          {/* Hero card, full background image with curved edges */}
           <div
             className="relative w-full rounded-3xl overflow-hidden"
             style={{
@@ -254,7 +254,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── We handle everything — Claura-style display accordion ── */}
+      {/* ── We handle everything, Claura-style display accordion ── */}
       <section className="py-12 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <span className="eyebrow-pill">How It Works</span>
@@ -289,7 +289,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Not your typical agency — comparison ─────────────────── */}
+      {/* ── Not your typical agency, comparison ─────────────────── */}
       <section className="py-12 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="text-center mb-10 lg:mb-12">
@@ -378,7 +378,7 @@ export default function HomePage() {
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
-            {/* Good fit — large, airy, border only */}
+            {/* Good fit, large, airy, border only */}
             <div
               className="rounded-3xl border p-10 flex flex-col justify-between"
               style={{ borderColor: '#C8C2BA', background: '#E8E5DF', minHeight: '380px' }}
@@ -406,7 +406,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Not a fit — muted, faded tone */}
+            {/* Not a fit, muted, faded tone */}
             <div
               className="rounded-3xl p-10 flex flex-col"
               style={{ background: '#D8D4CC', minHeight: '380px' }}

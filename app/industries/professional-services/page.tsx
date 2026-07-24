@@ -12,13 +12,13 @@ const HERO_BG  = '/images/service-hero-bg-opt.jpg'
 const problems = [
   'Hours get logged in one tool. Invoices get built in another. Nobody can see the gap until a project is already underwater.',
   'Assignments go out over Slack. Progress lives in someone\'s head or a half-updated shared doc.',
-  'Past around a dozen people, the generic PM tool that worked fine stops being enough — billing, utilisation, and profitability need visibility it was never built to give.',
+  'Past around a dozen people, the generic PM tool that worked fine stops being enough, billing, utilisation, and profitability need visibility it was never built to give.',
 ]
 
 const solutions = [
   {
     title: 'Time-to-invoice pipeline',
-    body: 'Logged hours flow straight into billing — cutting out the manual handoff between tracking and invoicing so nothing gets missed or double-handled.',
+    body: 'Logged hours flow straight into billing, cutting out the manual handoff between tracking and invoicing so nothing gets missed or double-handled.',
   },
   {
     title: 'Utilisation & capacity dashboard',
@@ -30,7 +30,7 @@ const solutions = [
   },
   {
     title: 'Profitability-by-project view',
-    body: 'Shows which clients and projects are actually making money — not just which ones are busy.',
+    body: 'Shows which clients and projects are actually making money, not just which ones are busy.',
   },
 ]
 
@@ -48,7 +48,7 @@ const notFit = [
 const faqs = [
   {
     q: 'We already use a project management tool. Why would we need something custom?',
-    a: 'Most PM tools handle tasks well and billing poorly. If time, invoicing, and utilisation all live in different places, that gap is usually where the real cost is — and that\'s what we build to fix.',
+    a: 'Most PM tools handle tasks well and billing poorly. If time, invoicing, and utilisation all live in different places, that gap is usually where the real cost is, and that\'s what we build to fix.',
   },
   {
     q: 'Is this the same as a full PSA platform like the big providers offer?',
@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     q: 'What\'s a realistic timeline to see something working?',
-    a: 'Usually a focused first piece — like a time-to-invoice connection — within a few weeks of the diagnostic.',
+    a: 'Usually a focused first piece, like a time-to-invoice connection, within a few weeks of the diagnostic.',
   },
 ]
 
@@ -129,7 +129,7 @@ export default function ProfessionalServicesPage() {
             </div>
             <div className="space-y-5 pt-1">
               <p className="text-base text-muted-foreground leading-relaxed">
-                Here&apos;s a pattern worth checking: pull up your last quarter and compare hours actually spent on a project against what was scoped. Most firms who haven&apos;t automated this discover they&apos;ve been over-delivering by a wide margin — quietly, for months — because nobody had a clean way to see it happening in real time.
+                Here&apos;s a pattern worth checking: pull up your last quarter and compare hours actually spent on a project against what was scoped. Most firms who haven&apos;t automated this discover they&apos;ve been over-delivering by a wide margin, quietly, for months, because nobody had a clean way to see it happening in real time.
               </p>
               <ul className="space-y-4">
                 {problems.map((p) => (
@@ -159,7 +159,7 @@ export default function ProfessionalServicesPage() {
             </div>
             <div className="space-y-5 pt-1">
               <p className="text-base text-muted-foreground leading-relaxed">
-                The diagnostic tells us exactly where the disconnect is costing you — whether that&apos;s utilisation blindness, slow invoicing, or scope creep nobody&apos;s tracking. From there we build the specific connection that closes it.
+                The diagnostic tells us exactly where the disconnect is costing you, whether that&apos;s utilisation blindness, slow invoicing, or scope creep nobody&apos;s tracking. From there we build the specific connection that closes it.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
                 We&apos;ve also built retainer and budget-burn trackers for agencies watching a monthly cap closely, and custom reporting for firms that needed something a standard PSA tool didn&apos;t offer out of the box.

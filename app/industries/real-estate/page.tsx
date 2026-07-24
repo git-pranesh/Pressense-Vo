@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: 'We manage property, not just brokerage deals. Does this still apply to us?',
-    a: 'Yes. Property management firms deal with a parallel version of the same problem — tracking maintenance, renewals, and rent status across a portfolio — and the approach is the same.',
+    a: 'Yes. Property management firms deal with a parallel version of the same problem, tracking maintenance, renewals, and rent status across a portfolio, and the approach is the same.',
   },
   {
     q: 'How fast could we see a working first version?',
@@ -165,7 +165,7 @@ export default function RealEstatePage() {
           </div>
 
           <p className="mt-10 text-base leading-relaxed text-muted-foreground max-w-2xl">
-            None of this is a people problem. It&apos;s a systems problem — tools that were each built for one thing, none of them built to connect.
+            None of this is a people problem. It&apos;s a systems problem, tools that were each built for one thing, none of them built to connect.
           </p>
         </div>
       </section>
@@ -185,7 +185,7 @@ export default function RealEstatePage() {
             </div>
             <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
-                We don&apos;t ask you to rip out your CRM or transaction software. The diagnostic tells us where the disconnect between your tools is actually costing you — commission tracking, compliance, or onboarding — and we build to connect what&apos;s already there.
+                We don&apos;t ask you to rip out your CRM or transaction software. The diagnostic tells us where the disconnect between your tools is actually costing you, commission tracking, compliance, or onboarding, and we build to connect what&apos;s already there.
               </p>
               <p>
                 Sometimes that&apos;s a deal tracker shaped around your specific transaction lifecycle instead of a generic contact database. Sometimes it&apos;s automated alerts before a license or COI expires, so nothing holds up a closing at the last minute. The goal is one place where the real status of a deal lives, instead of five.

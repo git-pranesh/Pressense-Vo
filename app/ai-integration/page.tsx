@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     q: 'What if AI gets something wrong?',
-    a: 'We build in review steps for anything with real consequences. AI drafts or flags — a person confirms before anything final happens, especially early on.',
+    a: 'We build in review steps for anything with real consequences. AI drafts or flags, a person confirms before anything final happens, especially early on.',
   },
 ]
 
@@ -65,7 +65,7 @@ export default function AiIntegrationPage() {
                 AI that removes work, not a demo that looks impressive.
               </h1>
               <p className="text-base leading-relaxed mb-8 max-w-md" style={{ color: 'rgba(237,235,229,0.72)' }}>
-                We find where AI actually saves time in your operation, then build it into the tools you already use — not bolted on as a feature nobody touches.
+                We find where AI actually saves time in your operation, then build it into the tools you already use, not bolted on as a feature nobody touches.
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
                 <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors" style={{ background: '#EDEBE5', color: '#1A0F06' }}>Book a free call</Link>

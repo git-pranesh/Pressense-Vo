@@ -7,7 +7,7 @@ import { AnchorCard } from '@/components/anchor-card'
 export const metadata: Metadata = {
   title: 'Case Studies | Pressense',
   description:
-    'Real GTM, strategy, and content engagements from Pressense. Including work with Zoho Creator and OneMagnify — see what we found and what we built to fix it.',
+    'Real GTM, strategy, and content engagements from Pressense. Including work with Zoho Creator and OneMagnify, see what we found and what we built to fix it.',
   openGraph: {
     title: 'Case Studies | Pressense',
     description:
@@ -36,7 +36,7 @@ const caseStudies = [
     engagementType: 'Embedded GTM Partner',
     duration: 'Multi-year retainer',
     summary:
-      "Low-code platforms sell into two audiences at once. Zoho Creator had a mature product and real differentiation — but the GTM system around it wasn't built to carry an enterprise buyer from first search to internal business case. We built it.",
+      "Low-code platforms sell into two audiences at once. Zoho Creator had a mature product and real differentiation, but the GTM system around it wasn't built to carry an enterprise buyer from first search to internal business case. We built it.",
     tags: ['GTM Systems', 'SEO / AEO', 'Competitive Intelligence', 'Content Strategy'],
   },
   {
@@ -83,7 +83,7 @@ export default function CaseStudiesPage() {
                   <em className="italic">We share what we fixed, and how.</em>
                 </h1>
                 <p className="text-lg leading-relaxed max-w-xl" style={{ color: 'rgba(237,235,229,0.72)' }}>
-                  Every engagement starts with a broken system. Here is what we found — and what we built to fix it.
+                  Every engagement starts with a broken system. Here is what we found, and what we built to fix it.
                 </p>
               </div>
             </div>

@@ -6,12 +6,12 @@ import { DiagnosticForm } from '@/components/diagnostic/diagnostic-form'
 export const metadata: Metadata = {
   title: 'Contact | Pressense',
   description:
-    'Tell us what is actually going on. Not a sales call — a real look at what is slowing your business down, and whether we are the right people to fix it.',
+    'Tell us what is actually going on. Not a sales call, a real look at what is slowing your business down, and whether we are the right people to fix it.',
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Contact | Pressense',
     description:
-      'Tell us what is actually going on. Not a sales call — a real look at what is slowing your business down.',
+      'Tell us what is actually going on. Not a sales call, a real look at what is slowing your business down.',
     type: 'website',
   },
 }
@@ -87,7 +87,7 @@ export default function ContactPage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground/40 shrink-0" />
-              Anyone who wants a quote without a conversation first — we don&apos;t price anything before understanding what&apos;s actually needed.
+              Anyone who wants a quote without a conversation first, we don&apos;t price anything before understanding what&apos;s actually needed.
             </li>
           </ul>
         </div>

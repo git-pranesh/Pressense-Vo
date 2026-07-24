@@ -3,11 +3,6 @@ import { AnchorCard } from '@/components/anchor-card'
 
 const GARAMOND = '"EB Garamond", Georgia, serif'
 
-const HERO_BG = `
-  radial-gradient(ellipse at 70% 30%, rgba(74,93,58,0.82) 0%, transparent 60%),
-  radial-gradient(ellipse at 20% 80%, rgba(120,80,40,0.55) 0%, transparent 55%),
-  radial-gradient(ellipse at 50% 50%, rgba(42,52,38,0.9) 0%, transparent 100%)
-`
 
 export const metadata = {
   title: 'Custom Software for Clinics & Small Practices | Pressense',
@@ -17,11 +12,11 @@ export const metadata = {
 const problems = [
   {
     title: 'Intake and scheduling disconnect',
-    body: 'A patient calls to book, someone writes it down, later it gets typed into the scheduling system — maybe correctly, maybe not. A referral or faxed order arrives and sits in a shared inbox until someone has time to work it, sometimes a day or two later.',
+    body: 'A patient calls to book, someone writes it down, later it gets typed into the scheduling system, maybe correctly, maybe not. A referral or faxed order arrives and sits in a shared inbox until someone has time to work it, sometimes a day or two later.',
   },
   {
     title: 'Billing denial rate that compounds',
-    body: 'Claims get denied at a real, meaningful rate, and every denial means more manual work chasing down why, correcting it, and resubmitting. KFF\'s analysis of ~425 million claims found close to one in five in-network claims were denied in 2023. That\'s not a fringe problem — that\'s routine.',
+    body: 'Claims get denied at a real, meaningful rate, and every denial means more manual work chasing down why, correcting it, and resubmitting. KFF\'s analysis of ~425 million claims found close to one in five in-network claims were denied in 2023. That\'s not a fringe problem, that\'s routine.',
   },
   {
     title: 'Protocol that lives in someone\'s head',
@@ -78,7 +73,7 @@ const faqs = [
   },
   {
     q: "What's a realistic first step?",
-    a: 'Usually a focused piece — like digital intake or a referral tracker — within a few weeks of the diagnostic. Not a full system overhaul on day one.',
+    a: 'Usually a focused piece, like digital intake or a referral tracker, within a few weeks of the diagnostic. Not a full system overhaul on day one.',
   },
 ]
 
@@ -86,11 +81,17 @@ export default function HealthcarePage() {
   return (
     <main>
       {/* ── Hero ─────────────────────────────────────────────────── */}
-      <section className="px-4 sm:px-6 pt-6 pb-10 lg:pb-16">
-        <div className="container mx-auto max-w-5xl">
-          <div className="relative overflow-hidden rounded-3xl" style={{ background: HERO_BG, backgroundColor: '#2A3426' }}>
-            {/* Noise overlay */}
-            <div className="absolute inset-0 opacity-[0.18]" style={{ backgroundImage: 'url("/images/noise.png")', backgroundSize: '200px 200px' }} aria-hidden="true" />
+      <section className="pt-24 pb-10">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div
+            className="relative w-full rounded-3xl overflow-hidden"
+            style={{
+              backgroundImage: 'url(/images/service-hero-bg-opt.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.48)' }} aria-hidden="true" />
             <div className="relative z-10 px-6 py-10 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
               <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Healthcare</span>
               <h1
@@ -155,7 +156,7 @@ export default function HealthcarePage() {
                 We build around your EHR, not instead of it
               </h2>
               <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                We&apos;re not proposing you replace your EHR or switch billing systems. The diagnostic tells us exactly where the disconnect is costing you real time — whether that&apos;s intake, referral tracking, or billing follow-up — and we build to close that specific gap.
+                We&apos;re not proposing you replace your EHR or switch billing systems. The diagnostic tells us exactly where the disconnect is costing you real time, whether that&apos;s intake, referral tracking, or billing follow-up, and we build to close that specific gap.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
                 Anything that touches patient information gets scoped with HIPAA requirements in mind from the start, as part of how we plan the build, not as an afterthought.

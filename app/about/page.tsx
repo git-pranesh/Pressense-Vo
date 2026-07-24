@@ -64,7 +64,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
-            {/* Left — copy */}
+            {/* Left, copy */}
             <div>
               <span className="eyebrow-pill">Why we work this way</span>
               <h2 className="font-normal text-foreground mb-6" style={{ fontFamily: GARAMOND, fontSize: 'clamp(26px, 4vw, 44px)' }}>
@@ -80,7 +80,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right — founder photo with noisy gradient treatment */}
+            {/* Right, founder photo with noisy gradient treatment */}
             <div className="relative">
               {/* Outer container with site-matching rounded corners */}
               <div className="relative rounded-2xl overflow-hidden" style={{ aspectRatio: '4/5' }}>
@@ -94,7 +94,7 @@ export default function AboutPage() {
                   className="object-cover object-top"
                 />
 
-                {/* Warm amber colour tint — matches hero bg palette */}
+                {/* Warm amber colour tint, matches hero bg palette */}
                 <div
                   className="absolute inset-0"
                   style={{
@@ -104,7 +104,7 @@ export default function AboutPage() {
                   aria-hidden="true"
                 />
 
-                {/* Noise grain layer — SVG feTurbulence approach via background */}
+                {/* Noise grain layer, SVG feTurbulence approach via background */}
                 <div
                   className="absolute inset-0"
                   style={{
@@ -146,7 +146,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4">
               <p className="text-base text-muted-foreground leading-relaxed">
-                Almost every founder we work with is dealing with some version of the same problem. Sales lives in WhatsApp. Client information sits in three different spreadsheets. Nobody can tell you what the pipeline actually looks like right now. Growth is stalled, or it&apos;s chaotic — sometimes both.
+                Almost every founder we work with is dealing with some version of the same problem. Sales lives in WhatsApp. Client information sits in three different spreadsheets. Nobody can tell you what the pipeline actually looks like right now. Growth is stalled, or it&apos;s chaotic, sometimes both.
               </p>
               <p className="text-base font-medium text-foreground leading-relaxed">
                 We come in and build the fix ourselves.
@@ -188,7 +188,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4">
               <p className="text-base text-muted-foreground leading-relaxed">
-                Used well, it gives a team more time, better decisions, and fewer things falling through the cracks. We care about punctuality, structure, and communicating early — before something turns into a problem.
+                Used well, it gives a team more time, better decisions, and fewer things falling through the cracks. We care about punctuality, structure, and communicating early, before something turns into a problem.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
                 We stay hands-on with building, not just advising, because that&apos;s what keeps the work honest.

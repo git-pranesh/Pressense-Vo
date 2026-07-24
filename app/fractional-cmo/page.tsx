@@ -4,7 +4,7 @@ import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Fractional CMO | Pressense',
-  description: 'Senior marketing leadership on a retainer basis — once the operations underneath it can hold the weight.',
+  description: 'Senior marketing leadership on a retainer basis, once the operations underneath it can hold the weight.',
   alternates: { canonical: '/fractional-cmo' },
 }
 
@@ -35,7 +35,7 @@ const notFit = [
 const faqs = [
   {
     q: 'How is this different from hiring a marketing agency?',
-    a: 'An agency usually executes a specific channel — ads or content. This is senior strategic direction across the whole go-to-market motion, closer to what an in-house CMO would own.',
+    a: 'An agency usually executes a specific channel, ads or content. This is senior strategic direction across the whole go-to-market motion, closer to what an in-house CMO would own.',
   },
   {
     q: 'Do we need to fix our operations first?',
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: 'How many hours a week does this involve?',
-    a: 'It depends on the engagement — but it is ongoing involvement, not a single project delivered and forgotten.',
+    a: 'It depends on the engagement, but it is ongoing involvement, not a single project delivered and forgotten.',
   },
   {
     q: 'How long does a typical engagement run?',
@@ -65,7 +65,7 @@ export default function FractionalCmoPage() {
                 Marketing leadership, once the foundation can hold the weight.
               </h1>
               <p className="text-base leading-relaxed mb-8 max-w-md" style={{ color: 'rgba(237,235,229,0.72)' }}>
-                For clients whose operations are already solid — we step in on positioning, go-to-market, and growth strategy without the cost of a full-time hire.
+                For clients whose operations are already solid, we step in on positioning, go-to-market, and growth strategy without the cost of a full-time hire.
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
                 <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors" style={{ background: '#EDEBE5', color: '#1A0F06' }}>Book a free call</Link>

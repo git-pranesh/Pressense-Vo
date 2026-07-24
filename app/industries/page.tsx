@@ -222,7 +222,7 @@ export default function IndustriesPage() {
                 <li key={item.industry} className="flex gap-3 items-start">
                   <span className="mt-2 shrink-0 h-2 w-2 rounded-full bg-[#6B5D51]" aria-hidden="true" />
                   <span className="text-base text-foreground/75 leading-relaxed">
-                    <span className="font-medium text-foreground">{item.industry} — </span>
+                    <span className="font-medium text-foreground">{item.industry}, </span>
                     {item.detail}
                   </span>
                 </li>

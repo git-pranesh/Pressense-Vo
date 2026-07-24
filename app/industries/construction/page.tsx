@@ -70,7 +70,7 @@ const problemItems = [
   },
   {
     heading: 'Compliance tracked in a spreadsheet next to your PM software',
-    body: 'Lien waivers and certificates of insurance get tracked the same way — by hand, in a spreadsheet running alongside whatever project management software you already bought. One expired COI can hold up a draw or idle a crew, and nobody notices until it already has.',
+    body: 'Lien waivers and certificates of insurance get tracked the same way, by hand, in a spreadsheet running alongside whatever project management software you already bought. One expired COI can hold up a draw or idle a crew, and nobody notices until it already has.',
   },
   {
     heading: 'Change orders moving through email',
@@ -107,7 +107,7 @@ export default function ConstructionPage() {
                 Built for how construction actually runs, not how software assumes it does.
               </h1>
               <p className="text-base leading-relaxed mb-8 max-w-md" style={{ color: 'rgba(237,235,229,0.72)' }}>
-                Your project management software handles the big picture. The details that actually create risk — lien waivers, pay app reconciliation, change orders — still live in a spreadsheet next to it.
+                Your project management software handles the big picture. The details that actually create risk, lien waivers, pay app reconciliation, change orders, still live in a spreadsheet next to it.
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
                 <Link
@@ -185,7 +185,7 @@ export default function ConstructionPage() {
             </div>
             <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
-                After the diagnostic, we know exactly which part of this is costing you the most — whether that&apos;s pay app reconciliation, compliance tracking, or change order pricing.
+                After the diagnostic, we know exactly which part of this is costing you the most, whether that&apos;s pay app reconciliation, compliance tracking, or change order pricing.
               </p>
               <p>
                 We build this to sit alongside your existing project management software, not replace it. The goal is closing the specific gap, not starting over with a new system nobody wants to learn.
@@ -230,7 +230,7 @@ export default function ConstructionPage() {
           </div>
 
           <p className="mt-8 text-sm leading-relaxed text-muted-foreground max-w-2xl">
-            We&apos;ve also built bid comparison tools, subcontractor onboarding portals, and project-specific dashboards that don&apos;t fit neatly into a category — because the tool follows whatever the diagnostic finds, not the other way around.
+            We&apos;ve also built bid comparison tools, subcontractor onboarding portals, and project-specific dashboards that don&apos;t fit neatly into a category, because the tool follows whatever the diagnostic finds, not the other way around.
           </p>
         </div>
       </section>

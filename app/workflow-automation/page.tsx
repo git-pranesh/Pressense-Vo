@@ -4,7 +4,7 @@ import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Workflow Automation | Pressense',
-  description: 'We map your most time-consuming workflows and automate them — so your team stops doing work a computer should be doing.',
+  description: 'We map your most time-consuming workflows and automate them, so your team stops doing work a computer should be doing.',
   alternates: { canonical: '/workflow-automation' },
 }
 
@@ -35,7 +35,7 @@ const notFit = [
 const faqs = [
   {
     q: 'Do we need to have the workflow fully documented first?',
-    a: 'No — we help you map it. Part of our process is understanding how work actually happens, not just how it is supposed to happen.',
+    a: 'No, we help you map it. Part of our process is understanding how work actually happens, not just how it is supposed to happen.',
   },
   {
     q: 'What tools do you automate across?',
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: 'What happens when the workflow changes?',
-    a: 'We build automations with change in mind. Adjustments are handled quickly — we stay involved so you are not locked into a static system.',
+    a: 'We build automations with change in mind. Adjustments are handled quickly, we stay involved so you are not locked into a static system.',
   },
   {
     q: 'How do we know what is worth automating?',
@@ -65,7 +65,7 @@ export default function WorkflowAutomationPage() {
                 Stop doing work a computer should be doing.
               </h1>
               <p className="text-base leading-relaxed mb-8 max-w-md" style={{ color: 'rgba(237,235,229,0.72)' }}>
-                We map your most time-consuming workflows and automate them — so your team gets hours back every week and handoffs stop falling through the cracks.
+                We map your most time-consuming workflows and automate them, so your team gets hours back every week and handoffs stop falling through the cracks.
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
                 <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors" style={{ background: '#EDEBE5', color: '#1A0F06' }}>Book a free call</Link>
@@ -91,7 +91,7 @@ export default function WorkflowAutomationPage() {
                 Automation that runs reliably.
               </h2>
               <p className="text-base leading-relaxed text-muted-foreground">
-                We do not just connect tools — we design the logic, handle the edge cases, and make sure the automation holds up in the real world.
+                We do not just connect tools, we design the logic, handle the edge cases, and make sure the automation holds up in the real world.
               </p>
             </div>
             <ul className="space-y-4 pt-2">

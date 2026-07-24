@@ -4,7 +4,7 @@ import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Custom Software & Internal Tools | Pressense',
-  description: 'We build internal software and tools shaped around how your team actually works — not the other way around.',
+  description: 'We build internal software and tools shaped around how your team actually works, not the other way around.',
   alternates: { canonical: '/custom-software-internal-tools' },
 }
 
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: 'What if our requirements change mid-build?',
-    a: 'We work in short sprints with regular check-ins. Scope changes are handled transparently — we will tell you the impact before acting on anything.',
+    a: 'We work in short sprints with regular check-ins. Scope changes are handled transparently, we will tell you the impact before acting on anything.',
   },
   {
     q: 'Can you integrate with our existing tools?',
@@ -71,7 +71,7 @@ export default function CustomSoftwarePage() {
                 Software built around how you actually work.
               </h1>
               <p className="text-base leading-relaxed mb-8 max-w-md" style={{ color: 'rgba(237,235,229,0.72)' }}>
-                Stop adapting your process to fit generic tools. We build internal software shaped around your team — saving hours every week from day one.
+                Stop adapting your process to fit generic tools. We build internal software shaped around your team, saving hours every week from day one.
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
                 <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors" style={{ background: '#EDEBE5', color: '#1A0F06' }}>
@@ -99,7 +99,7 @@ export default function CustomSoftwarePage() {
                 Tools your team will actually use.
               </h2>
               <p className="text-base leading-relaxed text-muted-foreground">
-                Every tool we build is designed for adoption — clean interfaces, fast performance, and zero onboarding friction.
+                Every tool we build is designed for adoption, clean interfaces, fast performance, and zero onboarding friction.
               </p>
             </div>
             <ul className="space-y-4 pt-2">

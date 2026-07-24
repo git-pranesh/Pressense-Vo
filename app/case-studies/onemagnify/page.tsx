@@ -7,14 +7,14 @@ import { AnchorCard } from '@/components/anchor-card'
 export const metadata: Metadata = {
   title: 'OneMagnify Website Migration Case Study | Pressense',
   description:
-    'How Pressense delivered 250+ pages of enterprise content for OneMagnify\'s Webflow-to-HubSpot migration — one editorial and SEO standard across every service line.',
+    'How Pressense delivered 250+ pages of enterprise content for OneMagnify\'s Webflow-to-HubSpot migration, one editorial and SEO standard across every service line.',
   openGraph: {
     title: 'OneMagnify Website Migration Case Study | Pressense',
     description:
-      'How Pressense delivered 250+ pages of enterprise content for OneMagnify\'s Webflow-to-HubSpot migration — one editorial and SEO standard across every service line.',
+      'How Pressense delivered 250+ pages of enterprise content for OneMagnify\'s Webflow-to-HubSpot migration, one editorial and SEO standard across every service line.',
     url: '/case-studies/onemagnify',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense — OneMagnify Case Study' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense, OneMagnify Case Study' }],
   },
   alternates: {
     canonical: '/case-studies/onemagnify',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'OneMagnify Website Migration Case Study | Pressense',
     description:
-      'How Pressense delivered 250+ pages of enterprise content for OneMagnify\'s Webflow-to-HubSpot migration — one editorial and SEO standard across every service line.',
+      'How Pressense delivered 250+ pages of enterprise content for OneMagnify\'s Webflow-to-HubSpot migration, one editorial and SEO standard across every service line.',
     images: ['/og-image.jpg'],
   },
 }
@@ -39,7 +39,7 @@ const deliverables = [
   {
     title: 'Core service and solution pages',
     description:
-      "OneMagnify's primary offerings across brand, media, data and analytics, and customer experience — each rebuilt around outcome-led messaging rather than generic agency language. Every page had its own approved structure and followed a consistent voice across the full set.",
+      "OneMagnify's primary offerings across brand, media, data and analytics, and customer experience, each rebuilt around outcome-led messaging rather than generic agency language. Every page had its own approved structure and followed a consistent voice across the full set.",
   },
   {
     title: 'Technology-partnership pages',
@@ -49,7 +49,7 @@ const deliverables = [
   {
     title: 'Corporate and regional pages',
     description:
-      'Office and location content rebuilt to reflect OneMagnify\'s physical presence and culture accurately, alongside standard local SEO requirements. Factual accuracy was a hard requirement — no placeholder claims, no approximations.',
+      'Office and location content rebuilt to reflect OneMagnify\'s physical presence and culture accurately, alongside standard local SEO requirements. Factual accuracy was a hard requirement, no placeholder claims, no approximations.',
   },
   {
     title: 'Client case-study content',
@@ -81,7 +81,7 @@ export default function OneMagnifyCaseStudy() {
     <>
       <PageStructuredData
         pageName="OneMagnify Website Migration Case Study"
-        pageDescription="How Pressense delivered 250+ pages of enterprise content for OneMagnify's Webflow-to-HubSpot migration — one editorial and SEO standard across every service line."
+        pageDescription="How Pressense delivered 250+ pages of enterprise content for OneMagnify's Webflow-to-HubSpot migration, one editorial and SEO standard across every service line."
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: 'Case Studies', url: '/case-studies' },
@@ -119,7 +119,7 @@ export default function OneMagnifyCaseStudy() {
                   250 pages. One standard. Zero shortcuts.
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-                  When Squaircle led OneMagnify&apos;s platform migration from Webflow to HubSpot CMS, the technology layer had a plan. The content layer needed one too — built page for page, service line by service line, to a single editorial and SEO standard.
+                  When Squaircle led OneMagnify&apos;s platform migration from Webflow to HubSpot CMS, the technology layer had a plan. The content layer needed one too, built page for page, service line by service line, to a single editorial and SEO standard.
                 </p>
                 {/* Engagement meta */}
                 <div className="grid grid-cols-2 gap-3">
@@ -161,7 +161,7 @@ export default function OneMagnifyCaseStudy() {
                     Squaircle was engaged to lead OneMagnify's broader website transformation: a full platform migration from Webflow to HubSpot CMS, alongside a rebuilt content architecture designed to support organic growth rather than function as a static corporate brochure.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    A migration at that scale needed more than new templates and a new CMS. It needed content built to match — page for page, service line for service line, at the same standard across the entire site.
+                    A migration at that scale needed more than new templates and a new CMS. It needed content built to match, page for page, service line for service line, at the same standard across the entire site.
                   </p>
                 </div>
 
@@ -174,10 +174,10 @@ export default function OneMagnifyCaseStudy() {
                     Content and platform built to move together
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
-                    Squaircle brought in Pressense as the specialist delivery partner for the content layer, working directly alongside Squaircle's delivery leads throughout the migration. The two workstreams were built to move together — not sequentially.
+                    Squaircle brought in Pressense as the specialist delivery partner for the content layer, working directly alongside Squaircle's delivery leads throughout the migration. The two workstreams were built to move together, not sequentially.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
-                    As the HubSpot template architecture was finalised, content was written directly against it, not adapted afterward. That meant every page type — core service page, technology-partnership page, regional office page, or client case study — had to follow its own approved structure while reading as one consistent brand voice across the full 250-plus page set.
+                    As the HubSpot template architecture was finalised, content was written directly against it, not adapted afterward. That meant every page type, core service page, technology-partnership page, regional office page, or client case study, had to follow its own approved structure while reading as one consistent brand voice across the full 250-plus page set.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     Three things defined how the work had to run.

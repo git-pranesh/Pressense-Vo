@@ -7,14 +7,14 @@ import { AnchorCard } from '@/components/anchor-card'
 export const metadata: Metadata = {
   title: 'Zoho Creator GTM Case Study | Pressense',
   description:
-    'How Pressense built a reusable GTM and content system for Zoho Creator — enterprise buyer education, competitive intelligence, and search-led lead generation.',
+    'How Pressense built a reusable GTM and content system for Zoho Creator, enterprise buyer education, competitive intelligence, and search-led lead generation.',
   openGraph: {
     title: 'Zoho Creator GTM Case Study | Pressense',
     description:
-      'How Pressense built a reusable GTM and content system for Zoho Creator — enterprise buyer education, competitive intelligence, and search-led lead generation.',
+      'How Pressense built a reusable GTM and content system for Zoho Creator, enterprise buyer education, competitive intelligence, and search-led lead generation.',
     url: '/case-studies/zoho-creator',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense — Zoho Creator Case Study' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense, Zoho Creator Case Study' }],
   },
   alternates: {
     canonical: '/case-studies/zoho-creator',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Zoho Creator GTM Case Study | Pressense',
     description:
-      'How Pressense built a reusable GTM and content system for Zoho Creator — enterprise buyer education, competitive intelligence, and search-led lead generation.',
+      'How Pressense built a reusable GTM and content system for Zoho Creator, enterprise buyer education, competitive intelligence, and search-led lead generation.',
     images: ['/og-image.jpg'],
   },
 }
@@ -96,7 +96,7 @@ export default function ZohoCreatorCaseStudy() {
     <>
       <PageStructuredData
         pageName="Zoho Creator GTM Case Study"
-        pageDescription="How Pressense built a reusable GTM and content system for Zoho Creator — enterprise buyer education, competitive intelligence, and search-led lead generation."
+        pageDescription="How Pressense built a reusable GTM and content system for Zoho Creator, enterprise buyer education, competitive intelligence, and search-led lead generation."
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: 'Case Studies', url: '/case-studies' },
@@ -151,7 +151,7 @@ export default function ZohoCreatorCaseStudy() {
           </div>
         </section>
 
-        {/* Body — two-column layout on large screens */}
+        {/* Body, two-column layout on large screens */}
         <section className="py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="grid lg:grid-cols-[1fr_340px] gap-16 items-start">
@@ -263,7 +263,7 @@ export default function ZohoCreatorCaseStudy() {
                     Specific content topics and performance figures from this engagement are confidential and cannot be published here.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    What can be said: the work moved Zoho Creator from ad hoc content production to a structured, repeatable system for enterprise buyer education, competitive positioning, and lead generation — one built to keep compounding after the engagement itself.
+                    What can be said: the work moved Zoho Creator from ad hoc content production to a structured, repeatable system for enterprise buyer education, competitive positioning, and lead generation, one built to keep compounding after the engagement itself.
                   </p>
                 </div>
 
@@ -279,7 +279,7 @@ export default function ZohoCreatorCaseStudy() {
                     It loses because the buyer can not find, trust, or defend the information they need before a decision gets made internally.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    That is the gap Pressense closed for Zoho Creator: not content for its own sake, but the research, positioning, and infrastructure that let a technical buyer do their own diligence and arrive at a confident decision — with Zoho Creator already ahead in that process.
+                    That is the gap Pressense closed for Zoho Creator: not content for its own sake, but the research, positioning, and infrastructure that let a technical buyer do their own diligence and arrive at a confident decision, with Zoho Creator already ahead in that process.
                   </p>
                 </div>
 
