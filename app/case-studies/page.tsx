@@ -59,6 +59,16 @@ const caseStudies = [
       '105 staff hours released every month. A$53,000 in annual capacity recovered. A two-location specialist clinic was losing 140 hours a month to manual referral admin. We mapped the workflow, quantified the cost, and built the missing operational layer.',
     tags: ['Workflow Automation', 'Internal Tools', 'Healthcare', 'Operational Efficiency'],
   },
+  {
+    slug: 'commercial-contractor',
+    client: '116 Hours Recovered. Seven Days Faster.',
+    industry: 'Commercial Construction, Sydney',
+    engagementType: 'Commercial Workflow System',
+    duration: 'Internal tools engagement',
+    summary:
+      '72% reduction in commercial administration. 116 staff hours released every month. A$91,000 in annual capacity. A$360,000 working-capital timing improvement. A Sydney contractor was losing 161 hours a month to spreadsheets, email chains and manual reconciliation. We built the missing commercial-control layer.',
+    tags: ['Custom Software', 'Workflow Automation', 'Construction', 'Commercial Operations'],
+  },
 ]
 
 export default function CaseStudiesPage() {
