@@ -196,7 +196,7 @@ export default function ProfessionalServicesPage() {
               Examples from firms like yours
             </h2>
             <p className="mt-3 text-base text-muted-foreground max-w-xl">
-              Not a fixed menu. What actually gets built depends on what the diagnostic finds.
+              What actually gets built depends on what the diagnostic finds.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">

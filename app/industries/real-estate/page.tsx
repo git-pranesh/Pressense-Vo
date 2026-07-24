@@ -150,7 +150,7 @@ export default function RealEstatePage() {
         </div>
       </section>
 
-      {/* ── The Problem ──────────────────────────────────────────── */}
+      {/* ── The Problem ─────────────────���────────────────────────── */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="mb-12">
@@ -217,7 +217,7 @@ export default function RealEstatePage() {
               className="font-normal text-balance leading-tight max-w-lg"
               style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
             >
-              Examples, not a menu.
+              What this can look like
             </h2>
             <p className="mt-4 text-base text-muted-foreground leading-relaxed max-w-xl">
               What we actually build depends on what the diagnostic finds in your business.
@@ -303,7 +303,7 @@ export default function RealEstatePage() {
         </div>
       </section>
 
-      {/* ── FAQ ──────────────────────────────────────────────────── */}
+      {/* ── FAQ ─────────────────────────────────���────────────────── */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <span className="eyebrow-pill">FAQ</span>
