@@ -106,7 +106,7 @@ export default function CaseStudiesPage() {
                   duration={study.duration}
                   summary={study.summary}
                   tags={study.tags}
-                  imageSrc={i === 0 ? '/images/botanical-hero.png' : '/images/botanical-hero-2.png'}
+
                 />
               ))}
             </div>
