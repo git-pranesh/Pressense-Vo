@@ -65,7 +65,7 @@ export default function HowItWorksPage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="relative w-full rounded-3xl overflow-hidden" style={{ backgroundImage: 'url(/images/pages-hero-bg-opt.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.42)' }} aria-hidden="true" />
-            <div className="relative z-10 px-8 py-16 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+            <div className="relative z-10 px-6 py-10 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
               <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>How It Works</span>
               <h1 className="font-normal leading-[1.05] text-balance mb-6" style={{ fontFamily: GARAMOND, fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}>
                 How an engagement works
@@ -73,7 +73,7 @@ export default function HowItWorksPage() {
               <p className="text-lg leading-relaxed mb-8" style={{ color: 'rgba(237,235,229,0.72)' }}>
                 We look at your business before we recommend anything. No pitch on day one.
               </p>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
                 <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium transition-colors" style={{ background: '#EDEBE5', color: '#1A0F06' }}>
                   Book a free call
                 </Link>

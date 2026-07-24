@@ -134,7 +134,7 @@ export default function HomePage() {
             />
 
             {/* Content sits on top */}
-            <div className="relative z-10 px-8 py-16 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+            <div className="relative z-10 px-6 py-10 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
 
               {/* Star rating row */}
               <div className="flex items-center gap-2.5 mb-8">
@@ -164,7 +164,7 @@ export default function HomePage() {
               </p>
 
               {/* CTA row */}
-              <div className="flex flex-wrap items-center gap-3">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold hover:bg-[#d4d1cc] transition-colors"
@@ -212,7 +212,7 @@ export default function HomePage() {
       </section>
 
       {/* ── The Problem ───────────────────────────────────────────── */}
-      <section className="py-16 lg:py-24">
+      <section className="py-10 lg:py-20">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
@@ -237,7 +237,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Stats ─────────────────────────────────────────────────── */}
-      <section className="pb-16 lg:pb-24">
+      <section className="pb-10 lg:pb-20">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <AnchorCard
             eyebrow="By the numbers"
@@ -255,10 +255,10 @@ export default function HomePage() {
       </section>
 
       {/* ── We handle everything — Claura-style display accordion ── */}
-      <section className="py-24 lg:py-32">
+      <section className="py-12 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <span className="eyebrow-pill">How It Works</span>
-          <h2 className="text-3xl sm:text-4xl font-normal text-foreground mb-16 text-balance max-w-xl" style={{ fontFamily: '"EB Garamond", Georgia, serif' }}>
+          <h2 className="text-3xl sm:text-4xl font-normal text-foreground mb-10 lg:mb-16 text-balance max-w-xl" style={{ fontFamily: '"EB Garamond", Georgia, serif' }}>
             We handle everything so you don&apos;t have to.
           </h2>
           <HowItWorksAccordion steps={howItWorksSteps} />
@@ -266,16 +266,16 @@ export default function HomePage() {
       </section>
 
       {/* ── Services ──────────────────────────────────────────────── */}
-      <section className="py-24 lg:py-32">
+      <section className="py-12 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-          <div className="mb-12">
+          <div className="mb-8 lg:mb-12">
             <span className="eyebrow-pill">Services</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground leading-tight text-balance" style={{ fontFamily: '"EB Garamond", Georgia, serif' }}>
               What we actually do
             </h2>
           </div>
           <ServicesToggle services={services} />
-          <div className="mt-10">
+          <div className="mt-8 lg:mt-10">
             <Link
               href="/pricing"
               className="inline-flex items-center gap-2 text-sm font-medium text-foreground/60 hover:text-foreground transition-colors"
@@ -290,9 +290,9 @@ export default function HomePage() {
       </section>
 
       {/* ── Not your typical agency — comparison ─────────────────── */}
-      <section className="py-24 lg:py-32">
+      <section className="py-12 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10 lg:mb-12">
             <span className="eyebrow-pill">Why us</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground text-balance" style={{ fontFamily: '"EB Garamond", Georgia, serif' }}>
               We&apos;re not your typical agency.
@@ -369,9 +369,9 @@ export default function HomePage() {
       </section>
 
       {/* ── Who We Work With ─────────────────────────────────────── */}
-      <section className="pb-24 lg:pb-32">
+      <section className="py-12 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-          <div className="mb-12">
+          <div className="mb-8 lg:mb-12">
             <span className="eyebrow-pill">Who We Work With</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground leading-tight text-balance max-w-xl" style={{ fontFamily: '"EB Garamond", Georgia, serif' }}>
               You&apos;re in the right place if&hellip;
@@ -428,7 +428,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Final CTA ─────────────────────────────────────────────── */}
-      <section className="pb-24 lg:pb-32">
+      <section className="pb-12 lg:pb-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <AnchorCard
             eyebrow="Where to start"
