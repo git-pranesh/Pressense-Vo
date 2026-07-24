@@ -66,16 +66,27 @@ export default function CaseStudiesPage() {
       <main className="min-h-screen">
 
         {/* ── Hero ─────────────────────────────────────────────── */}
-        <section className="border-b border-border pt-28 pb-16">
+        <section className="pt-24 pb-10">
           <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-            <span className="eyebrow-pill">Case Studies</span>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground leading-[1.05] text-balance max-w-3xl">
-              We don&apos;t share testimonials.{' '}
-              <em style={{ fontStyle: 'italic', fontWeight: 400 }}>We share what we fixed, and how.</em>
-            </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Every engagement starts with a broken system. Here is what we found — and what we built to fix it.
-            </p>
+            <div
+              className="relative w-full rounded-3xl overflow-hidden"
+              style={{ backgroundImage: 'url(/images/secondary-hero-bg-opt.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
+              <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.48)' }} aria-hidden="true" />
+              <div className="relative z-10 px-8 py-16 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+                <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Case Studies</span>
+                <h1
+                  className="font-normal leading-[1.05] text-balance mb-6"
+                  style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}
+                >
+                  We don&apos;t share testimonials.{' '}
+                  <em className="italic">We share what we fixed, and how.</em>
+                </h1>
+                <p className="text-lg leading-relaxed max-w-xl" style={{ color: 'rgba(237,235,229,0.72)' }}>
+                  Every engagement starts with a broken system. Here is what we found — and what we built to fix it.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 

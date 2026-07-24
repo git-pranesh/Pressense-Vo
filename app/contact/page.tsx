@@ -21,21 +21,32 @@ export default function ContactPage() {
     <main>
 
       {/* Hero */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-tight">
-            Tell us what&apos;s actually going on
-          </h1>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            Not a sales call. A real look at what&apos;s slowing your business down, and whether we&apos;re the right people to fix it.
-          </p>
-          <div className="mt-8">
-            <a
-              href="#diagnostic-form"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
-            >
-              Start the Diagnostic Form Below
-            </a>
+      <section className="pt-24 pb-10">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div
+            className="relative w-full rounded-3xl overflow-hidden"
+            style={{ backgroundImage: 'url(/images/secondary-hero-bg-opt.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
+            <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.48)' }} aria-hidden="true" />
+            <div className="relative z-10 px-8 py-16 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+              <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Contact</span>
+              <h1
+                className="font-normal text-balance leading-tight mb-6"
+                style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}
+              >
+                Tell us what&apos;s actually going on
+              </h1>
+              <p className="text-lg leading-relaxed mb-8" style={{ color: 'rgba(237,235,229,0.72)' }}>
+                Not a sales call. A real look at what&apos;s slowing your business down, and whether we&apos;re the right people to fix it.
+              </p>
+              <a
+                href="#diagnostic-form"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium transition-colors"
+                style={{ background: '#EDEBE5', color: '#1A0F06' }}
+              >
+                Start the Diagnostic Form Below
+              </a>
+            </div>
           </div>
         </div>
       </section>
