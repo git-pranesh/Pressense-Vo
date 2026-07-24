@@ -19,32 +19,63 @@ export function HowItWorksAccordion({ steps }: { steps: Step[] }) {
       {/* Left — display-scale step labels */}
       <div>
         {steps.map((step, i) => (
-          <button
-            key={step.label}
-            onClick={() => setActive(i)}
-            className="w-full text-left flex items-center justify-between gap-4 py-2 group transition-all duration-200 cursor-pointer"
-            aria-expanded={active === i}
-          >
-            <span
-              className="leading-none tracking-tight transition-all duration-300"
-              style={{
-                fontFamily: '"EB Garamond", Georgia, serif',
-                fontSize: 'clamp(48px, 7vw, 80px)',
-                fontWeight: 400,
-                color: active === i ? '#1A0F06' : 'rgba(26,15,6,0.15)',
-              }}
+          <div key={step.label}>
+            <button
+              onClick={() => setActive(i)}
+              className="w-full text-left flex items-center justify-between gap-4 py-2 group transition-all duration-200 cursor-pointer"
+              aria-expanded={active === i}
             >
-              {step.label}
-            </span>
-            <span
-              className="shrink-0 text-sm font-medium transition-opacity duration-200"
-              style={{ color: active === i ? '#6B5D51' : 'transparent' }}
-            >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M4 10h12M12 5l5 5-5 5" stroke="#6B5D51" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-          </button>
+              <span
+                className="leading-none tracking-tight transition-all duration-300"
+                style={{
+                  fontFamily: '"EB Garamond", Georgia, serif',
+                  fontSize: 'clamp(38px, 7vw, 80px)',
+                  fontWeight: 400,
+                  color: active === i ? '#1A0F06' : 'rgba(26,15,6,0.15)',
+                }}
+              >
+                {step.label}
+              </span>
+              <span
+                className="shrink-0 transition-all duration-200"
+                style={{ color: active === i ? '#6B5D51' : 'transparent' }}
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M4 10h12M12 5l5 5-5 5" stroke="#6B5D51" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+            </button>
+
+            {/* Mobile-only inline expand panel */}
+            {active === i && (
+              <div
+                className="lg:hidden mb-4 rounded-xl overflow-hidden"
+                style={{
+                  backgroundImage: `url(${step.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              >
+                <div
+                  className="p-5"
+                  style={{ background: 'rgba(10,8,5,0.58)' }}
+                >
+                  <span
+                    className="block text-xs font-semibold uppercase tracking-widest mb-3"
+                    style={{ color: 'rgba(237,235,229,0.5)' }}
+                  >
+                    {String(i + 1).padStart(2, '0')} / {String(steps.length).padStart(2, '0')}
+                  </span>
+                  <p className="text-base leading-relaxed mb-2" style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: '20px', color: '#EDEBE5' }}>
+                    {step.description}
+                  </p>
+                  <p className="text-sm leading-relaxed" style={{ color: 'rgba(237,235,229,0.6)' }}>
+                    {step.detail}
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
         ))}
 
         <div className="mt-10">

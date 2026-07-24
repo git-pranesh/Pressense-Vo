@@ -643,9 +643,9 @@ export default function CommercialContractorCaseStudy() {
           <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
             <AnchorCard
               headline="Find out what your admin is actually costing you."
-              subheadline="We map the workflow, quantify the cost and build the missing operational layer. No pitch until we have identified the problem."
-              primaryCta={{ label: 'Start a free diagnostic', href: '/contact' }}
-              secondaryCta={{ label: 'See all case studies', href: '/case-studies' }}
+              body="We map the workflow, quantify the cost and build the missing operational layer. No pitch until we have identified the problem."
+              ctaLabel="Start a free diagnostic"
+              ctaHref="/contact"
               stats={[
                 { value: '116 hrs', label: 'Released / month' },
                 { value: 'A$91k', label: 'Annual capacity' },
