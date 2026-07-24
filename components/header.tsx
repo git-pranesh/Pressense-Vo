@@ -11,6 +11,14 @@ const services = [
   { label: 'Fractional CMO',                   href: '/fractional-cmo' },
 ]
 
+const industries = [
+  { label: 'Construction',          href: '/industries/construction' },
+  { label: 'Manufacturing',         href: '/industries/manufacturing' },
+  { label: 'Professional Services', href: '/industries/professional-services' },
+  { label: 'Real Estate',           href: '/industries/real-estate' },
+  { label: 'Healthcare',            href: '/industries/healthcare' },
+]
+
 const navLinks = [
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'Pricing',      href: '/pricing' },
@@ -20,11 +28,14 @@ const navLinks = [
 ]
 
 export function Header() {
-  const [scrolled,       setScrolled]       = useState(false)
-  const [menuOpen,       setMenuOpen]       = useState(false)
-  const [servicesOpen,   setServicesOpen]   = useState(false)   // desktop dropdown
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
-  const dropdownRef = useRef<HTMLDivElement>(null)
+  const [scrolled,              setScrolled]              = useState(false)
+  const [menuOpen,              setMenuOpen]              = useState(false)
+  const [servicesOpen,          setServicesOpen]          = useState(false)
+  const [industriesOpen,        setIndustriesOpen]        = useState(false)
+  const [mobileServicesOpen,    setMobileServicesOpen]    = useState(false)
+  const [mobileIndustriesOpen,  setMobileIndustriesOpen]  = useState(false)
+  const dropdownRef   = useRef<HTMLDivElement>(null)
+  const industriesRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 24)
@@ -32,11 +43,14 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Close dropdown on outside click
+  // Close dropdowns on outside click
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setServicesOpen(false)
+      }
+      if (industriesRef.current && !industriesRef.current.contains(e.target as Node)) {
+        setIndustriesOpen(false)
       }
     }
     document.addEventListener('mousedown', handler)
@@ -116,6 +130,60 @@ export function Header() {
                     className="flex items-center px-5 py-3 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-[#E3E0D9] transition-colors duration-150 first:rounded-t-2xl last:rounded-b-2xl"
                   >
                     {svc.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Industries dropdown trigger */}
+          <div
+            ref={industriesRef}
+            className="relative"
+            onMouseEnter={() => setIndustriesOpen(true)}
+            onMouseLeave={() => setIndustriesOpen(false)}
+          >
+            <button
+              className="flex items-center gap-1 font-sans text-sm font-medium text-foreground/70 hover:text-foreground transition-colors duration-200 cursor-pointer"
+              aria-haspopup="true"
+              aria-expanded={industriesOpen}
+              onClick={() => setIndustriesOpen(v => !v)}
+            >
+              Industries
+              <svg
+                width="12" height="12" viewBox="0 0 12 12" fill="none"
+                className={`transition-transform duration-200 ${industriesOpen ? 'rotate-180' : ''}`}
+                aria-hidden="true"
+              >
+                <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            {/* Dropdown panel */}
+            {industriesOpen && (
+              <div
+                className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 rounded-2xl border border-[#D4CFC7] bg-[#EDEBE5] shadow-lg py-2 z-50"
+                role="menu"
+              >
+                <div className="absolute -top-3 left-0 right-0 h-3" />
+                {/* Overview link */}
+                <Link
+                  href="/industries"
+                  role="menuitem"
+                  onClick={() => setIndustriesOpen(false)}
+                  className="flex items-center px-5 py-3 text-sm font-medium text-foreground/50 hover:text-foreground hover:bg-[#E3E0D9] transition-colors duration-150 rounded-t-2xl border-b border-[#D4CFC7]/60"
+                >
+                  Overview
+                </Link>
+                {industries.map((ind) => (
+                  <Link
+                    key={ind.href}
+                    href={ind.href}
+                    role="menuitem"
+                    onClick={() => setIndustriesOpen(false)}
+                    className="flex items-center px-5 py-3 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-[#E3E0D9] transition-colors duration-150 last:rounded-b-2xl"
+                  >
+                    {ind.label}
                   </Link>
                 ))}
               </div>
@@ -210,6 +278,46 @@ export function Header() {
                     onClick={() => { setMenuOpen(false); setMobileServicesOpen(false) }}
                   >
                     {svc.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Industries expandable row */}
+          <div className="border-b border-[#D4CFC7]">
+            <button
+              className="w-full flex items-center justify-between font-sans text-sm font-medium text-foreground/70 py-2 hover:text-foreground transition-colors"
+              onClick={() => setMobileIndustriesOpen(v => !v)}
+              aria-expanded={mobileIndustriesOpen}
+            >
+              Industries
+              <svg
+                width="12" height="12" viewBox="0 0 12 12" fill="none"
+                className={`transition-transform duration-200 ${mobileIndustriesOpen ? 'rotate-180' : ''}`}
+                aria-hidden="true"
+              >
+                <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            {mobileIndustriesOpen && (
+              <div className="pb-2 flex flex-col gap-0.5">
+                <Link
+                  href="/industries"
+                  className="flex items-center pl-4 py-2 text-sm text-foreground/50 hover:text-foreground transition-colors rounded-lg"
+                  onClick={() => { setMenuOpen(false); setMobileIndustriesOpen(false) }}
+                >
+                  Overview
+                </Link>
+                {industries.map((ind) => (
+                  <Link
+                    key={ind.href}
+                    href={ind.href}
+                    className="flex items-center pl-4 py-2 text-sm text-foreground/60 hover:text-foreground transition-colors rounded-lg"
+                    onClick={() => { setMenuOpen(false); setMobileIndustriesOpen(false) }}
+                  >
+                    {ind.label}
                   </Link>
                 ))}
               </div>
