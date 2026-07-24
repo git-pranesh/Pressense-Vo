@@ -67,24 +67,28 @@ const howItWorksSteps = [
     description:
       "We trace how work moves through your business right now, approvals, handoffs, reporting, the parts still living in spreadsheets. You get a clear picture of what's actually broken.",
     detail: 'Typically takes one working session. No preparation needed from your team.',
+    image: '/images/hero-bg-opt.jpg',
   },
   {
     label: 'Build',
     description:
       "We build the internal tool or system that fixes the bottleneck we found. If you qualify, the first small piece is free before you spend anything.",
     detail: 'We ship fast. Most clients see working software within two to four weeks.',
+    image: '/images/service-hero-bg-opt.jpg',
   },
   {
     label: 'Deploy',
     description:
       "We hand over something your team actually uses, with documentation, handover sessions, and a short support window built in.",
     detail: 'We stay until it sticks, not just until it ships.',
+    image: '/images/secondary-hero-bg-opt.jpg',
   },
   {
     label: 'Optimise',
     description:
       "Once the operational side is solid, some clients bring us in for go-to-market and fractional CMO work too. Few of our clients stop after step three.",
     detail: 'Optional, only if the operations are already running cleanly.',
+    image: '/images/pages-hero-bg-opt.jpg',
   },
 ]
 
@@ -328,14 +332,14 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <AnchorCard
             eyebrow="By the numbers"
-            headline="The AI agency built for you."
-            body="Real businesses. Measurable results. Delivered in weeks, not months."
+            headline="What the work actually produces."
+            body="Figures pulled from client engagements. Hours recovered, capacity released, timelines compressed."
             ctaLabel={undefined}
             ctaHref={undefined}
             stats={[
-              { value: '50+', label: 'Businesses helped' },
-              { value: '35%', label: 'Average time saved' },
-              { value: '45 days', label: 'To first working tool' },
+              { value: '116 hrs', label: 'Recovered per month, construction client' },
+              { value: '354 hrs', label: 'Released per month, distribution client' },
+              { value: '2–4 wks', label: 'To first working software' },
             ]}
           />
         </div>

@@ -7,6 +7,7 @@ interface Step {
   label: string
   description: string
   detail: string
+  image: string
 }
 
 export function HowItWorksAccordion({ steps }: { steps: Step[] }) {
@@ -59,33 +60,50 @@ export function HowItWorksAccordion({ steps }: { steps: Step[] }) {
         </div>
       </div>
 
-      {/* Right — active step detail card, sticky */}
+      {/* Right — active step detail card, sticky, with photo background */}
       <div className="hidden lg:block sticky top-28">
         <div
-          className="rounded-2xl p-8 border"
-          style={{ background: '#E5E2DB', borderColor: '#D4CFC7' }}
+          className="relative rounded-2xl overflow-hidden"
+          style={{
+            backgroundImage: `url(${steps[active].image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: '420px',
+          }}
         >
-          <span
-            className="block text-xs font-semibold uppercase tracking-widest mb-6"
-            style={{ color: '#6B5D51' }}
-          >
-            {String(active + 1).padStart(2, '0')} / {String(steps.length).padStart(2, '0')}
-          </span>
+          {/* Dark overlay for legibility */}
+          <div
+            className="absolute inset-0"
+            style={{ background: 'rgba(10,8,5,0.52)' }}
+            aria-hidden="true"
+          />
 
-          <h3
-            className="text-2xl sm:text-3xl font-normal text-foreground leading-snug text-balance mb-4"
-            style={{ fontFamily: '"EB Garamond", Georgia, serif' }}
-          >
-            {steps[active].label}
-          </h3>
+          {/* Content */}
+          <div className="relative z-10 p-8 flex flex-col h-full" style={{ minHeight: '420px' }}>
+            <span
+              className="block text-xs font-semibold uppercase tracking-widest mb-auto"
+              style={{ color: 'rgba(237,235,229,0.55)' }}
+            >
+              {String(active + 1).padStart(2, '0')} / {String(steps.length).padStart(2, '0')}
+            </span>
 
-          <p className="text-base text-muted-foreground leading-relaxed mb-4">
-            {steps[active].description}
-          </p>
+            <div className="mt-auto">
+              <h3
+                className="text-3xl sm:text-4xl font-normal leading-snug text-balance mb-4"
+                style={{ fontFamily: '"EB Garamond", Georgia, serif', color: '#EDEBE5' }}
+              >
+                {steps[active].label}
+              </h3>
 
-          <p className="text-sm leading-relaxed" style={{ color: '#9A8C80' }}>
-            {steps[active].detail}
-          </p>
+              <p className="text-base leading-relaxed mb-4" style={{ color: 'rgba(237,235,229,0.8)' }}>
+                {steps[active].description}
+              </p>
+
+              <p className="text-sm leading-relaxed" style={{ color: 'rgba(237,235,229,0.5)' }}>
+                {steps[active].detail}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
