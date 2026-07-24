@@ -51,7 +51,7 @@ const caseStudies = [
   },
   {
     slug: 'two-location-clinic',
-    client: 'Two-Location Clinic',
+    client: '140 Hours of Admin, Automated',
     industry: 'Private Healthcare, Australia',
     engagementType: 'Workflow Blueprint',
     duration: 'Internal tools engagement',

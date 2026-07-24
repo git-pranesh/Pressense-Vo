@@ -4,13 +4,13 @@ import { PageStructuredData } from '@/components/page-structured-data'
 import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
-  title: 'Two-Location Clinic Workflow Case Study | Pressense',
+  title: '140 Hours of Admin, Automated | Pressense',
   description:
-    'How a custom referral-workflow system released 105 administrative hours and A$53,000 in annual operational capacity for a privately owned healthcare clinic in Australia.',
+    'A specialist clinic was losing 140 hours a month to manual referral administration. We mapped the workflow, quantified the cost, and built the missing operational layer. 105 hours released. A$53,000 recovered annually.',
   openGraph: {
-    title: 'Two-Location Clinic Workflow Case Study | Pressense',
+    title: '140 Hours of Admin, Automated | Pressense',
     description:
-      'How a custom referral-workflow system released 105 administrative hours and A$53,000 in annual operational capacity for a privately owned healthcare clinic in Australia.',
+      'A specialist clinic was losing 140 hours a month to manual referral administration. We mapped the workflow, quantified the cost, and built the missing operational layer. 105 hours released. A$53,000 recovered annually.',
     url: '/case-studies/two-location-clinic',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Healthcare Workflow Case Study' }],
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   alternates: { canonical: '/case-studies/two-location-clinic' },
   twitter: {
     card: 'summary_large_image',
-    title: 'Two-Location Clinic Workflow Case Study | Pressense',
+    title: '140 Hours of Admin, Automated | Pressense',
     description:
-      'How a custom referral-workflow system released 105 administrative hours and A$53,000 in annual operational capacity for a privately owned healthcare clinic in Australia.',
+      'A specialist clinic was losing 140 hours a month to manual referral administration. 105 hours released. A$53,000 recovered annually.',
     images: ['/og-image.jpg'],
   },
 }
@@ -137,12 +137,12 @@ export default function TwoLocationClinicCaseStudy() {
   return (
     <>
       <PageStructuredData
-        pageName="Two-Location Clinic Workflow Case Study"
-        pageDescription="How a custom referral-workflow system released 105 administrative hours and A$53,000 in annual operational capacity for a privately owned healthcare clinic in Australia."
+        pageName="140 Hours of Admin, Automated"
+        pageDescription="A specialist clinic was losing 140 hours a month to manual referral administration. We mapped the workflow, quantified the cost, and built the missing operational layer."
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: 'Case Studies', url: '/case-studies' },
-          { name: 'Two-Location Clinic', url: '/case-studies/two-location-clinic' },
+          { name: '140 Hours of Admin, Automated', url: '/case-studies/two-location-clinic' },
         ]}
       />
 
@@ -165,7 +165,7 @@ export default function TwoLocationClinicCaseStudy() {
                     <path d="M4.5 2.5L7.5 6l-3 3.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </li>
-                <li className="text-foreground font-medium" aria-current="page">Two-Location Clinic</li>
+                <li className="text-foreground font-medium" aria-current="page">140 Hours of Admin, Automated</li>
               </ol>
             </nav>
 
@@ -187,7 +187,7 @@ export default function TwoLocationClinicCaseStudy() {
                 className="font-normal leading-[1.06] text-balance mb-6"
                 style={{ fontFamily: GARAMOND, fontSize: 'clamp(26px, 4vw, 54px)', color: '#1A0F06' }}
               >
-                How a two-location clinic reclaimed 105 administrative hours every month
+                140 hours of admin, automated.
               </h1>
               <p className="text-lg leading-relaxed max-w-2xl" style={{ color: '#6B5D51' }}>
                 A privately owned specialist and allied-health clinic. Two metro locations. Thirty-one staff. A practice-management system that worked perfectly for records, and an invisible chain of manual work that was costing 140 hours a month around it.
