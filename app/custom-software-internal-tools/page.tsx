@@ -5,198 +5,203 @@ import { VisualCard } from '@/components/visual-card'
 
 export const metadata: Metadata = {
   title: 'Custom Software & Internal Tools | Pressense',
-  description:
-    'Software built around your business, not the other way around. We diagnose what is slowing you down, then build the internal tool that fixes it.',
+  description: 'We build internal software and tools shaped around how your team actually works — not the other way around.',
   alternates: { canonical: '/custom-software-internal-tools' },
-  openGraph: {
-    title: 'Custom Software & Internal Tools | Pressense',
-    description: 'Software built around your business, not the other way around.',
-    url: '/custom-software-internal-tools',
-    type: 'website',
-  },
 }
+
+const GARAMOND = '"EB Garamond", Georgia, serif'
+
+const whatWeDeliver = [
+  'Custom internal dashboards and admin panels',
+  'Workflow and approval automation tools',
+  'Data pipeline and reporting systems',
+  'API integrations between your existing tools',
+  'Client portals and self-service platforms',
+  'Legacy system replacement and modernisation',
+]
+
+const goodFit = [
+  'Teams managing work across 4+ disconnected tools',
+  'Businesses where a single workflow bottleneck costs hours every week',
+  'Companies that have outgrown off-the-shelf SaaS',
+  'Founders who know what they want but cannot find it in the market',
+]
+
+const notFit = [
+  'Businesses looking for a quick website or landing page',
+  'Teams not ready to document their existing processes',
+  'Projects requiring a full consumer-facing product from scratch',
+]
+
+const faqs = [
+  {
+    q: 'How long does a typical project take?',
+    a: 'Most internal tools ship within 4–8 weeks. Simpler automations can be live in under 2 weeks. We scope everything before starting so there are no surprises.',
+  },
+  {
+    q: 'Do we need a technical team to maintain it?',
+    a: 'No. We build with maintainability in mind and hand over full documentation. We also offer ongoing support retainers if you prefer us to stay involved.',
+  },
+  {
+    q: 'What if our requirements change mid-build?',
+    a: 'We work in short sprints with regular check-ins. Scope changes are handled transparently — we will tell you the impact before acting on anything.',
+  },
+  {
+    q: 'Can you integrate with our existing tools?',
+    a: 'Yes. We work with Salesforce, HubSpot, Notion, Airtable, Slack, and custom APIs. If it has an API, we can connect to it.',
+  },
+]
 
 export default function CustomSoftwarePage() {
   return (
     <main>
       {/* Hero */}
-      <section className="pt-28 pb-16 border-b border-border">
+      <section className="pt-28 pb-16">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <span className="eyebrow-pill">Custom Software & Internal Tools</span>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance leading-tight mb-6">
-                Software built around your business, not the other way around
-              </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-4">
-                Spreadsheets that break. CRMs your team fights instead of using. WhatsApp threads holding together work that should run itself.
-              </p>
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8">
-                We diagnose what&apos;s actually slowing you down, then build the internal tool that fixes it. If you qualify, we&apos;ll build the first piece for free.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
+              <h1
+                className="font-normal leading-tight text-balance mb-5"
+                style={{ fontFamily: GARAMOND, fontSize: 'clamp(36px, 5vw, 58px)' }}
               >
-                Start a Free Diagnostic
-              </Link>
+                Software built around how you actually work.
+              </h1>
+              <p className="text-base leading-relaxed text-muted-foreground mb-8 max-w-md">
+                Stop adapting your process to fit generic tools. We build internal software shaped around your team — saving hours every week from day one.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors"
+                >
+                  Book a free call
+                </Link>
+                <Link
+                  href="/how-it-works"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-foreground/20 text-sm font-medium text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-colors"
+                >
+                  How we work
+                  <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-foreground/10 text-xs">→</span>
+                </Link>
+              </div>
             </div>
-            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '380px' }} />
+            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '340px' }} />
           </div>
         </div>
       </section>
 
-      {/* The Problem */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">The Problem</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What this usually looks like</h2>
-          <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
-            <p>
-              A founder is still approving things a system should handle on its own. The team tracks orders, leads, or inventory in a spreadsheet that only one person really understands. The CRM everyone paid for sits half-used because it forces the sales team to work in a way that doesn&apos;t match how they sell.
-            </p>
-            <p>
-              Handoffs get lost between departments. Delivery doesn&apos;t know what sales promised. Finance finds out about a change three weeks late. Pulling a simple report takes half a day of copying numbers between tabs.
-            </p>
-            <p>
-              None of this gets fixed by buying another piece of software off a shelf. It gets fixed by building something around how the work already happens.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* The Solution */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">The Solution</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">We build the tool your business actually needs</h2>
-          <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
-            <p>
-              After the diagnostic, we know exactly where the break is. That&apos;s what we build around, not a generic feature list.
-            </p>
-            <p>
-              Sometimes it&apos;s a dashboard that replaces five spreadsheets. Sometimes it&apos;s a lightweight internal CRM that matches your actual sales process. Sometimes it&apos;s a tool that connects the systems you already use, so information stops getting typed in twice.
-            </p>
-            <p>
-              The goal is simple. Your team should open the tool and already know how to use it, because it was shaped around how they already do the work.
-            </p>
+      {/* What We Deliver */}
+      <section className="py-20">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <span className="eyebrow-pill">What We Deliver</span>
+              <h2
+                className="font-normal text-balance mb-4 leading-tight"
+                style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
+              >
+                Tools your team will actually use.
+              </h2>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                Every tool we build is designed for adoption — clean interfaces, fast performance, and zero onboarding friction.
+              </p>
+            </div>
+            <ul className="space-y-4 pt-2">
+              {whatWeDeliver.map((item) => (
+                <li key={item} className="flex gap-3 items-start">
+                  <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-[#FF9A5C]" aria-hidden="true" />
+                  <span className="text-base text-foreground/75 leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
       {/* Who It's For */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">Who It&apos;s For</span>
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-[#D4CFC7] bg-[#E8E5DE] p-8">
-              <span className="eyebrow-pill">Good fit</span>
-              <ul className="space-y-3 text-base text-muted-foreground leading-relaxed">
-                <li>Founder-led businesses between $1M and $50M in revenue.</li>
-                <li>Teams where critical work still lives in spreadsheets or someone&apos;s memory.</li>
-                <li>Companies that tried an off-the-shelf CRM or ERP and found it forced changes to how the team actually operates.</li>
-              </ul>
+      <section className="py-20">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div className="mb-12">
+            <span className="eyebrow-pill">Who It&apos;s For</span>
+            <h2
+              className="font-normal text-balance leading-tight max-w-lg"
+              style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
+            >
+              You&apos;re in the right place if&hellip;
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-5">
+            <div
+              className="rounded-3xl border p-10 flex flex-col justify-between"
+              style={{ borderColor: '#D4CFC7', minHeight: '360px' }}
+            >
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/50 mb-8">Good fit</p>
+                <ul className="space-y-5">
+                  {goodFit.map((item) => (
+                    <li key={item} className="flex gap-3 items-start">
+                      <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-[#FF9A5C]" aria-hidden="true" />
+                      <span className="text-base text-foreground/70 leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-10">
+                <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors">
+                  Start a conversation
+                </Link>
+              </div>
             </div>
-            <div className="rounded-2xl bg-[#1A0F06] p-8">
-              <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a good fit</span>
-              <ul className="space-y-3 text-base text-[#EDEBE5]/80 leading-relaxed">
-                <li>Pre-revenue startups still finding their product.</li>
-                <li>Companies looking for the cheapest build available, regardless of fit.</li>
-                <li>Teams unwilling to change a broken process even after seeing the diagnostic.</li>
+            <div className="rounded-3xl p-10" style={{ background: '#E0DDD6', minHeight: '360px' }}>
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/40 mb-8">Not a fit</p>
+              <ul className="space-y-5">
+                {notFit.map((item) => (
+                  <li key={item} className="flex gap-3 items-start">
+                    <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-foreground/20" aria-hidden="true" />
+                    <span className="text-base text-foreground/40 leading-relaxed">{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Methodology */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">Methodology</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">How we get there</h2>
-          <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
-            <p>
-              We start with the diagnostic. A short, structured look at where work slows down, duplicates, or gets lost. You get a plain map of the problem, not a sales deck.
-            </p>
-            <p>
-              From there, we scope exactly what to build. No guessing at features. Every part of the build ties back to something we found in the diagnostic.
-            </p>
-            <p>
-              We build in stages, with your team seeing working software early, not after months of silence. Once it&apos;s live, we stay involved to fix issues fast and adjust as your business changes.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* What You Get */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">What You Get</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What&apos;s included</h2>
-          <ul className="space-y-4">
-            {[
-              'A structured diagnostic of your current operations.',
-              'A working internal tool built around what we found, not a generic template.',
-              'A free first build for qualifying businesses, so you see real work before spending anything.',
-              'Direct access to the person building your tool, not a rotating support queue.',
-              'Ongoing fixes and updates after launch.',
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-base sm:text-lg text-muted-foreground">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="mt-0.5 shrink-0 text-primary" aria-hidden="true">
-                  <circle cx="10" cy="10" r="9.5" stroke="currentColor" strokeOpacity="0.4" />
-                  <path d="M6.5 10l2 2 4.5-4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
+      <section className="py-20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <span className="eyebrow-pill">FAQ</span>
-          <div className="space-y-8">
-            {[
-              {
-                q: 'How is this different from buying an off-the-shelf CRM or ERP?',
-                a: 'Off-the-shelf tools ask your team to change how they work to fit the software. We build the software to fit how your team already works.',
-              },
-              {
-                q: "What's the free MVP offer?",
-                a: "For businesses we think are a strong fit, we'll build a small first piece of your tool for free. You see real, working software before committing to the full project.",
-              },
-              {
-                q: 'How long does a build take?',
-                a: 'Depends on scope, but most projects move from diagnostic to a working first version within a few weeks, not months.',
-              },
-              {
-                q: 'Do you replace our existing tools entirely, or work alongside them?',
-                a: 'Either. Sometimes we replace a spreadsheet or a CRM outright. Sometimes we build something that connects your existing tools so they finally talk to each other.',
-              },
-              {
-                q: 'What happens after the tool is built?',
-                a: 'We stay involved. Fixes, adjustments, and support as your business changes, not a one-time delivery.',
-              },
-            ].map(({ q, a }) => (
-              <div key={q}>
-                <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">{q}</h3>
-                <p className="text-base text-muted-foreground leading-relaxed">{a}</p>
+          <h2
+            className="font-normal text-balance mb-12"
+            style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
+          >
+            Your questions answered.
+          </h2>
+          <dl className="divide-y divide-foreground/10">
+            {faqs.map((faq) => (
+              <div key={faq.q} className="py-6">
+                <dt
+                  className="font-normal text-foreground text-xl leading-snug mb-3"
+                  style={{ fontFamily: GARAMOND }}
+                >
+                  {faq.q}
+                </dt>
+                <dd className="text-base text-muted-foreground leading-relaxed">{faq.a}</dd>
               </div>
             ))}
-          </div>
+          </dl>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section>
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+      {/* Bottom CTA */}
+      <section className="py-20">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <AnchorCard
             eyebrow="Where to start"
-            headline="Find out what's actually slowing you down"
-            body="Start with the diagnostic. No commitment past that first step."
-            ctaLabel="Start a Free Diagnostic"
+            headline="Turn confusion into clarity, today."
+            body="Book a free 30-minute assessment and we'll show you exactly where software can save you time and money."
+            ctaLabel="Book a call"
             ctaHref="/contact"
           />
         </div>

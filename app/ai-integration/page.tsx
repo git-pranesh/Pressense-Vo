@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
 import { VisualCard } from '@/components/visual-card'
@@ -6,186 +6,203 @@ import { VisualCard } from '@/components/visual-card'
 export const metadata: Metadata = {
   title: 'AI Integration | Pressense',
   description: 'We find where AI actually saves time in your operation, then build it into the tools you already use.',
-  openGraph: {
-    title: 'AI Integration | Pressense',
-    description: 'We find where AI actually saves time in your operation, then build it into the tools you already use.',
-    url: '/ai-integration',
-    type: 'website',
-  },
+  alternates: { canonical: '/ai-integration' },
 }
+
+const GARAMOND = '"EB Garamond", Georgia, serif'
+
+const whatWeDeliver = [
+  'AI-assisted lead scoring and qualification',
+  'Automated document summarisation and data extraction',
+  'First-pass email and response drafting',
+  'Intelligent routing and triage for inbound requests',
+  'Custom AI built into your existing internal tools',
+  'Human-in-the-loop review flows for high-stakes outputs',
+]
+
+const goodFit = [
+  'Teams doing repetitive summarising, sorting, or drafting at real volume',
+  'Businesses with existing tools and data clean enough for AI to work reliably',
+  'Companies that want AI to save time on something specific, not AI as a general idea',
+  'Founders who want honest guidance on where AI actually helps vs where it does not',
+]
+
+const notFit = [
+  'Businesses hoping AI will fix a process that is fundamentally broken',
+  'Teams without any existing data or workflow for AI to plug into',
+  'Companies looking for a chatbot widget as a marketing feature rather than an operational tool',
+]
+
+const faqs = [
+  {
+    q: 'What AI models do you use?',
+    a: 'Whatever fits the task best. Sometimes that is GPT, sometimes Claude, sometimes something smaller and cheaper for a simple job. We do not default to whatever is trendiest.',
+  },
+  {
+    q: 'Is our data safe?',
+    a: 'We build with data handling in mind from the start and walk you through exactly how your data is used before anything goes live.',
+  },
+  {
+    q: 'Will this replace our team?',
+    a: 'No. It is built to remove repetitive work, not the people doing the job. Most clients redirect that saved time toward work that actually needs a person.',
+  },
+  {
+    q: 'What if AI gets something wrong?',
+    a: 'We build in review steps for anything with real consequences. AI drafts or flags — a person confirms before anything final happens, especially early on.',
+  },
+]
 
 export default function AiIntegrationPage() {
   return (
-    <main className="min-h-screen bg-background">
-
+    <main>
       {/* Hero */}
-      <section className="pt-28 pb-16 border-b border-border">
+      <section className="pt-28 pb-16">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <span className="eyebrow-pill">AI Integration</span>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
-                AI that removes work, not a demo that looks impressive
-              </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                A chatbot bolted onto your website that nobody uses isn&apos;t the goal. Cutting the hours your team spends on repetitive, judgment-light tasks is.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                We find where AI actually saves time in your operation, then build it into the tools you already use. Included after your diagnostic.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
+              <h1
+                className="font-normal leading-tight text-balance mb-5"
+                style={{ fontFamily: GARAMOND, fontSize: 'clamp(36px, 5vw, 58px)' }}
               >
-                Start a Free Diagnostic
-              </Link>
+                AI that removes work, not a demo that looks impressive.
+              </h1>
+              <p className="text-base leading-relaxed text-muted-foreground mb-8 max-w-md">
+                We find where AI actually saves time in your operation, then build it into the tools you already use — not bolted on as a feature nobody touches.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors"
+                >
+                  Book a free call
+                </Link>
+                <Link
+                  href="/how-it-works"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-foreground/20 text-sm font-medium text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-colors"
+                >
+                  How we work
+                  <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-foreground/10 text-xs">→</span>
+                </Link>
+              </div>
             </div>
-            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '380px' }} />
+            <VisualCard aspectRatio="4 / 3" style={{ minHeight: '340px' }} />
           </div>
         </div>
       </section>
 
-      {/* The Problem */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">The Problem</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What this usually looks like</h2>
-          <p className="text-base text-muted-foreground leading-relaxed mb-4">
-            A business hears &ldquo;add AI&rdquo; and ends up with a chatbot widget that answers three questions and gets ignored by everyone. Or a team member spends hours a week summarizing documents, drafting the same type of email, or sorting through leads by hand, work a model could do in seconds if it were actually wired into the process.
-          </p>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            The gap isn&apos;t a lack of interest in AI. It&apos;s that most AI gets bolted onto a business instead of built into how the business actually runs.
-          </p>
-        </div>
-      </section>
-
-      {/* The Solution */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">The Solution</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">We build AI into work you&apos;re already doing</h2>
-          <p className="text-base text-muted-foreground leading-relaxed mb-4">
-            After the diagnostic, we know which tasks are repetitive enough, and low-risk enough, for AI to genuinely help with. That&apos;s what we build around.
-          </p>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Sometimes it&apos;s summarizing incoming leads before they hit a salesperson&apos;s inbox. Sometimes it&apos;s drafting first-pass responses to common client questions. Sometimes it&apos;s pulling structured data out of documents your team currently reads by hand. We connect this directly to your existing tools, so it fits into a workflow your team already has, instead of adding a new one.
-          </p>
+      {/* What We Deliver */}
+      <section className="py-20">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <span className="eyebrow-pill">What We Deliver</span>
+              <h2
+                className="font-normal text-balance mb-4 leading-tight"
+                style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
+              >
+                AI built into how you already work.
+              </h2>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                We connect AI to real workflows, test on real data, and make sure the output is something your team can trust and act on.
+              </p>
+            </div>
+            <ul className="space-y-4 pt-2">
+              {whatWeDeliver.map((item) => (
+                <li key={item} className="flex gap-3 items-start">
+                  <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-[#FF9A5C]" aria-hidden="true" />
+                  <span className="text-base text-foreground/75 leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* Who It's For */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">Who It&apos;s For</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Is this right for you?</h2>
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-[#D4CFC7] bg-[#E8E5DE] p-8">
-              <span className="eyebrow-pill">Good fit</span>
-              <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
-                <li>Teams doing repetitive tasks like summarizing, sorting, or drafting by hand, at real volume.</li>
-                <li>Businesses with existing tools and data clean enough for AI to work with reliably.</li>
-                <li>{'Companies that want AI to save time on something specific, not "AI" as a general idea.'}</li>
-              </ul>
+      <section className="py-20">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div className="mb-12">
+            <span className="eyebrow-pill">Who It&apos;s For</span>
+            <h2
+              className="font-normal text-balance leading-tight max-w-lg"
+              style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
+            >
+              You&apos;re in the right place if&hellip;
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-5">
+            <div
+              className="rounded-3xl border p-10 flex flex-col justify-between"
+              style={{ borderColor: '#D4CFC7', minHeight: '360px' }}
+            >
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/50 mb-8">Good fit</p>
+                <ul className="space-y-5">
+                  {goodFit.map((item) => (
+                    <li key={item} className="flex gap-3 items-start">
+                      <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-[#FF9A5C]" aria-hidden="true" />
+                      <span className="text-base text-foreground/70 leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-10">
+                <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors">
+                  Start a conversation
+                </Link>
+              </div>
             </div>
-            <div className="rounded-2xl bg-[#1A0F06] p-8">
-              <span className="eyebrow-pill" style={{ borderColor: 'rgba(252,246,239,0.25)', color: 'rgba(252,246,239,0.6)' }}>Not a good fit</span>
-              <ul className="space-y-3 text-sm text-[#EDEBE5]/80 leading-relaxed">
-                <li>{'Businesses hoping AI will fix a process that\'s fundamentally broken, rather than automate a working one.'}</li>
-                <li>Teams without any existing data or workflow for AI to plug into.</li>
+            <div className="rounded-3xl p-10" style={{ background: '#E0DDD6', minHeight: '360px' }}>
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/40 mb-8">Not a fit</p>
+              <ul className="space-y-5">
+                {notFit.map((item) => (
+                  <li key={item} className="flex gap-3 items-start">
+                    <span className="mt-2 shrink-0 h-1.5 w-1.5 rounded-full bg-foreground/20" aria-hidden="true" />
+                    <span className="text-base text-foreground/40 leading-relaxed">{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Methodology */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">Methodology</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">How we get there</h2>
-          <p className="text-base text-muted-foreground leading-relaxed mb-4">
-            The diagnostic identifies which parts of your workflow are repetitive enough to hand off, and which ones still genuinely need a person&apos;s judgment. We&apos;re honest when a task isn&apos;t a good fit for AI, even if it sounds appealing on paper.
-          </p>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            We build and test on real examples from your business, not generic samples. Once it&apos;s live, we monitor how it performs and adjust before rolling it out further.
-          </p>
-        </div>
-      </section>
-
-      {/* What You Get */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
-        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <span className="eyebrow-pill">What You Get</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">What&apos;s included</h2>
-          <ul className="space-y-3">
-            {[
-              'An audit of where AI can save real time in your workflow.',
-              'A working integration built into your existing tools, tested on your actual data.',
-              'Documentation your team can actually follow.',
-              'Support after launch to fix and adjust as needed.',
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-base text-muted-foreground leading-relaxed">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" className="mt-0.5 shrink-0" aria-hidden="true">
-                  <circle cx="9" cy="9" r="8.5" stroke="currentColor" strokeOpacity="0.4" />
-                  <path d="M5.5 9l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       {/* FAQ */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
+      <section className="py-20">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <span className="eyebrow-pill">FAQ</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">Common questions</h2>
-          <dl className="space-y-8">
-            {[
-              {
-                q: 'What AI models do you use?',
-                a: "Whatever fits the task best. Sometimes that's GPT, sometimes Claude, sometimes something smaller and cheaper for a simple job. We don't default to whatever's trendiest.",
-              },
-              {
-                q: 'Is our data safe if we use AI on it?',
-                a: "We build with data handling in mind from the start, and we'll walk you through exactly how your data is used before anything goes live.",
-              },
-              {
-                q: 'Will this replace our team?',
-                a: "No. It's built to remove repetitive work, not the people doing the job. Most clients redirect that saved time toward work that actually needs a person.",
-              },
-              {
-                q: 'What if AI gets something wrong?',
-                a: 'We build in review steps for anything with real consequences. AI drafts or flags, a person confirms before anything final happens, especially early on.',
-              },
-              {
-                q: 'How do you decide if a task is a good fit for AI?',
-                a: "Volume, repetitiveness, and how much judgment the task actually requires. The diagnostic tells us this directly, so we're not guessing or forcing AI where it doesn't belong.",
-              },
-            ].map(({ q, a }) => (
-              <div key={q}>
-                <dt className="text-base font-semibold text-foreground mb-2">{q}</dt>
-                <dd className="text-base text-muted-foreground leading-relaxed">{a}</dd>
+          <h2
+            className="font-normal text-balance mb-12"
+            style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
+          >
+            Your questions answered.
+          </h2>
+          <dl className="divide-y divide-foreground/10">
+            {faqs.map((faq) => (
+              <div key={faq.q} className="py-6">
+                <dt className="font-normal text-foreground text-xl leading-snug mb-3" style={{ fontFamily: GARAMOND }}>
+                  {faq.q}
+                </dt>
+                <dd className="text-base text-muted-foreground leading-relaxed">{faq.a}</dd>
               </div>
             ))}
           </dl>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section>
-        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+      {/* Bottom CTA */}
+      <section className="py-20">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <AnchorCard
             eyebrow="Where to start"
-            headline="Find out where AI could actually save you time"
-            body="Start with the diagnostic. We'll tell you honestly what's worth automating and what isn't."
-            ctaLabel="Start a Free Diagnostic"
+            headline="Turn confusion into clarity, today."
+            body="Book a free 30-minute assessment and we will tell you honestly where AI can save you time and where it cannot."
+            ctaLabel="Book a call"
             ctaHref="/contact"
           />
         </div>
       </section>
-
     </main>
   )
 }
