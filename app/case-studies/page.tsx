@@ -69,6 +69,16 @@ const caseStudies = [
       '72% reduction in commercial administration. 116 staff hours released every month. A$91,000 in annual capacity. A$360,000 working-capital timing improvement. A Sydney contractor was losing 161 hours a month to spreadsheets, email chains and manual reconciliation. We built the missing commercial-control layer.',
     tags: ['Custom Software', 'Workflow Automation', 'Construction', 'Commercial Operations'],
   },
+  {
+    slug: 'ontario-distributor',
+    client: '479 Hours of Order Admin, Automated',
+    industry: 'Industrial Distribution, Ontario',
+    engagementType: 'Order and Operations Control System',
+    duration: 'Internal tools engagement',
+    summary:
+      '78% faster order processing. 354 staff hours released every month. C$182,000 in annual capacity. 21% order-volume growth without hiring. A family-owned Ontario distributor was losing 479 hours a month across email chains, pricing spreadsheets and manual ERP entry. We built the missing commercial layer.',
+    tags: ['Custom Software', 'Workflow Automation', 'Distribution', 'Order Operations'],
+  },
 ]
 
 export default function CaseStudiesPage() {
