@@ -1,9 +1,24 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Custom Software for Agencies & Consultancies | Pressense',
   description: 'We diagnose where your team is losing billable hours and margin, then build the tool that connects time, billing, and capacity properly.',
+  alternates: { canonical: '/industries/professional-services' },
+  openGraph: {
+    title: 'Custom Software for Agencies & Consultancies | Pressense',
+    description: 'We diagnose where your team is losing billable hours and margin, then build the tool that connects time, billing, and capacity properly.',
+    url: '/industries/professional-services',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Professional Services Software' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Software for Agencies & Consultancies | Pressense',
+    description: 'We diagnose where your team is losing billable hours and margin, then build the tool that connects time, billing, and capacity properly.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'

@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   title: 'Custom Software for Real Estate & Property Firms | Pressense',
   description: 'We diagnose where deals, commissions, and compliance tracking are breaking down across your tool stack, then build what actually connects them.',
   alternates: { canonical: '/industries/real-estate' },
+  openGraph: {
+    title: 'Custom Software for Real Estate & Property Firms | Pressense',
+    description: 'We diagnose where deals, commissions, and compliance tracking are breaking down, then build what actually connects them.',
+    url: '/industries/real-estate',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Real Estate Software' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Software for Real Estate & Property Firms | Pressense',
+    description: 'We diagnose where deals, commissions, and compliance tracking are breaking down, then build what actually connects them.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'

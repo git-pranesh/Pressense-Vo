@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   title: 'Custom Software for Construction & Contractors | Pressense',
   description: 'We diagnose what\'s actually slowing down your construction operations, then build the compliance, pay app, and change order tools your PM software doesn\'t cover.',
   alternates: { canonical: '/industries/construction' },
+  openGraph: {
+    title: 'Custom Software for Construction & Contractors | Pressense',
+    description: 'We diagnose what\'s slowing down your construction operations, then build the tools your PM software doesn\'t cover.',
+    url: '/industries/construction',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Construction Software' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Software for Construction & Contractors | Pressense',
+    description: 'We diagnose what\'s slowing down your construction operations, then build the tools your PM software doesn\'t cover.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'

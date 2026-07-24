@@ -10,9 +10,16 @@ export const metadata: Metadata = {
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Contact | Pressense',
-    description:
-      'Tell us what is actually going on. Not a sales call, a real look at what is slowing your business down.',
+    description: 'Tell us what is actually going on. Not a sales call, a real look at what is slowing your business down.',
+    url: '/contact',
     type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Contact' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact | Pressense',
+    description: 'Tell us what is actually going on. Not a sales call, a real look at what is slowing your business down.',
+    images: ['/og-image.jpg'],
   },
 }
 

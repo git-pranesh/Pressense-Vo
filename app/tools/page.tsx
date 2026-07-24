@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/tools',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free SaaS Calculators & Tools | Pressense',
+    description: 'Free SaaS calculators for CAC, LTV, churn, NRR, burn rate, and more. Instant results with operator-grade benchmarks.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function ToolsPage() {

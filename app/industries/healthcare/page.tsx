@@ -1,12 +1,26 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
 
 const GARAMOND = '"EB Garamond", Georgia, serif'
 
-
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Custom Software for Clinics & Small Practices | Pressense',
   description: 'We diagnose where intake, scheduling, and billing are breaking down in your practice, then build the tool that connects them, without replacing your EHR.',
+  alternates: { canonical: '/industries/healthcare' },
+  openGraph: {
+    title: 'Custom Software for Clinics & Small Practices | Pressense',
+    description: 'We diagnose where intake, scheduling, and billing are breaking down in your practice, then build the tool that connects them.',
+    url: '/industries/healthcare',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Healthcare Software' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Software for Clinics & Small Practices | Pressense',
+    description: 'We diagnose where intake, scheduling, and billing are breaking down in your practice, then build the tool that connects them.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const problems = [

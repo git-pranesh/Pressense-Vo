@@ -3,9 +3,22 @@ import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
-  title: 'Workflow Automation | Pressense',
-  description: 'We map your most time-consuming workflows and automate them, so your team stops doing work a computer should be doing.',
+  title: 'Workflow Automation for SMBs | Pressense',
+  description: 'We map your most time-consuming workflows and automate them so your team stops doing work a computer should handle. Real hours recovered, not dashboards.',
   alternates: { canonical: '/workflow-automation' },
+  openGraph: {
+    title: 'Workflow Automation for SMBs | Pressense',
+    description: 'We map your most time-consuming workflows and automate them, so your team stops doing work a computer should be doing.',
+    url: '/workflow-automation',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Workflow Automation' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Workflow Automation for SMBs | Pressense',
+    description: 'We map your most time-consuming workflows and automate them, so your team stops doing work a computer should be doing.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'

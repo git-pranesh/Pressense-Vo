@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   title: 'Custom Software for SMB Manufacturers | Pressense',
   description: 'We diagnose where your production and inventory data is actually breaking down, then build the tool that gives you real-time visibility, not another spreadsheet.',
   alternates: { canonical: '/industries/manufacturing' },
+  openGraph: {
+    title: 'Custom Software for SMB Manufacturers | Pressense',
+    description: 'We diagnose where your production and inventory data is breaking down, then build the tool that gives you real-time visibility.',
+    url: '/industries/manufacturing',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Manufacturing Software' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Software for SMB Manufacturers | Pressense',
+    description: 'We diagnose where your production and inventory data is breaking down, then build the tool that gives you real-time visibility.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'
@@ -314,7 +327,7 @@ export default function ManufacturingPage() {
         </div>
       </section>
 
-      {/* ── Final CTA ────────────────────────────────────────────── */}
+      {/* ── Final CTA ──────────────────────────────��─────────────── */}
       <section className="pb-16 lg:pb-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <AnchorCard

@@ -7,11 +7,19 @@ const GARAMOND = '"EB Garamond", Georgia, serif'
 export const metadata: Metadata = {
   title: 'Pricing | Pressense',
   description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service, final pricing depends on scope.',
+  alternates: { canonical: '/pricing' },
   openGraph: {
     title: 'Pricing | Pressense',
     description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service.',
     url: '/pricing',
     type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Pricing' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pricing | Pressense',
+    description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service.',
+    images: ['/og-image.jpg'],
   },
 }
 

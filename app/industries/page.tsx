@@ -3,9 +3,22 @@ import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
-  title: 'Industries | Pressense',
+  title: 'Industries We Serve | Pressense',
   description: 'We work across construction, manufacturing, professional services, real estate, and healthcare. The businesses look different. The problem underneath is usually the same.',
   alternates: { canonical: '/industries' },
+  openGraph: {
+    title: 'Industries We Serve | Pressense',
+    description: 'Construction, manufacturing, professional services, real estate, and healthcare. The businesses look different. The problem underneath is usually the same.',
+    url: '/industries',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Industries' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Industries We Serve | Pressense',
+    description: 'Construction, manufacturing, professional services, real estate, and healthcare. The problem underneath is usually the same.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'

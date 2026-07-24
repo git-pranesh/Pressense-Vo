@@ -5,11 +5,19 @@ import { ChevronRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Privacy Policy | Pressense',
   description: 'Learn how Pressense collects, uses, and protects your personal information when using our calculators and services.',
+  alternates: { canonical: '/privacy' },
   openGraph: {
     title: 'Privacy Policy | Pressense',
     description: 'Learn how Pressense collects, uses, and protects your personal information.',
+    url: '/privacy',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Pressense Privacy Policy' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Privacy Policy' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | Pressense',
+    description: 'Learn how Pressense collects, uses, and protects your personal information.',
+    images: ['/og-image.jpg'],
   },
 }
 

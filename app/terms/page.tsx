@@ -5,11 +5,19 @@ import { ChevronRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Terms of Service | Pressense',
   description: 'Review the terms and conditions governing your use of Pressense calculators, tools, and consulting services.',
+  alternates: { canonical: '/terms' },
   openGraph: {
     title: 'Terms of Service | Pressense',
     description: 'Terms and conditions for using Pressense calculators and services.',
+    url: '/terms',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Pressense Terms of Service' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Terms of Service' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Service | Pressense',
+    description: 'Terms and conditions for using Pressense calculators and services.',
+    images: ['/og-image.jpg'],
   },
 }
 
