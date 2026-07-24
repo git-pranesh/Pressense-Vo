@@ -31,17 +31,17 @@ export const metadata: Metadata = {
 const caseStudies = [
   {
     slug: 'zoho-creator',
-    client: 'Zoho Creator',
+    client: 'The GTM System That Carries an Enterprise Buyer',
     industry: 'Enterprise Software / Low-Code',
     engagementType: 'Embedded GTM Partner',
     duration: 'Multi-year retainer',
     summary:
-      "Low-code platforms sell into two audiences at once. Zoho Creator had a mature product and real differentiation, but the GTM system around it wasn't built to carry an enterprise buyer from first search to internal business case. We built it.",
+      "Low-code platforms sell into two audiences at once. The client had a mature product and real differentiation, but the GTM system around it was not built to carry an enterprise buyer from first search to internal business case. We built it.",
     tags: ['GTM Systems', 'SEO / AEO', 'Competitive Intelligence', 'Content Strategy'],
   },
   {
     slug: 'onemagnify',
-    client: 'OneMagnify',
+    client: '250 Pages. One Standard. Zero Shortcuts.',
     industry: 'Global Marketing & CX',
     engagementType: 'Embedded Content & SEO Delivery Partner',
     duration: 'Website migration project',

@@ -1,35 +1,34 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageStructuredData } from '@/components/page-structured-data'
-import { FlowerPanel } from '@/components/flower-panel'
 import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
-  title: 'OneMagnify Website Migration Case Study | Pressense',
+  title: '250 Pages. One Standard. Zero Shortcuts. | Pressense',
   description:
-    'How Pressense delivered 250+ pages of enterprise content for OneMagnify\'s Webflow-to-HubSpot migration, one editorial and SEO standard across every service line.',
+    'How Pressense delivered 250+ pages of enterprise content for a platform migration from Webflow to HubSpot CMS, one editorial and SEO standard across every service line.',
   openGraph: {
-    title: 'OneMagnify Website Migration Case Study | Pressense',
+    title: '250 Pages. One Standard. Zero Shortcuts. | Pressense',
     description:
-      'How Pressense delivered 250+ pages of enterprise content for OneMagnify\'s Webflow-to-HubSpot migration, one editorial and SEO standard across every service line.',
+      'How Pressense delivered 250+ pages of enterprise content for a platform migration from Webflow to HubSpot CMS, one editorial and SEO standard across every service line.',
     url: '/case-studies/onemagnify',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense, OneMagnify Case Study' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Website Migration Case Study' }],
   },
   alternates: {
     canonical: '/case-studies/onemagnify',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'OneMagnify Website Migration Case Study | Pressense',
+    title: '250 Pages. One Standard. Zero Shortcuts. | Pressense',
     description:
-      'How Pressense delivered 250+ pages of enterprise content for OneMagnify\'s Webflow-to-HubSpot migration, one editorial and SEO standard across every service line.',
+      'How Pressense delivered 250+ pages of enterprise content for a platform migration from Webflow to HubSpot CMS, one editorial and SEO standard across every service line.',
     images: ['/og-image.jpg'],
   },
 }
 
 const engagementMeta = [
-  { label: 'Client', value: 'OneMagnify' },
+  { label: 'Client', value: 'Global Marketing & CX' },
   { label: 'Industry', value: 'Global Marketing & CX' },
   { label: 'Partner', value: 'Squaircle' },
   { label: 'Scope', value: '250+ pages' },
@@ -39,12 +38,12 @@ const deliverables = [
   {
     title: 'Core service and solution pages',
     description:
-      "OneMagnify's primary offerings across brand, media, data and analytics, and customer experience, each rebuilt around outcome-led messaging rather than generic agency language. Every page had its own approved structure and followed a consistent voice across the full set.",
+      "The client's primary offerings across brand, media, data and analytics, and customer experience, each rebuilt around outcome-led messaging rather than generic agency language. Every page had its own approved structure and followed a consistent voice across the full set.",
   },
   {
     title: 'Technology-partnership pages',
     description:
-      "Positioning for OneMagnify's role across its key platform relationships, built with precision: implementation and integration partner, not platform owner. Each page met its own SEO requirements while fitting into the broader site architecture.",
+      "Positioning for The client's role across its key platform relationships, built with precision: implementation and integration partner, not platform owner. Each page met its own SEO requirements while fitting into the broader site architecture.",
   },
   {
     title: 'Corporate and regional pages',
@@ -80,12 +79,12 @@ export default function OneMagnifyCaseStudy() {
   return (
     <>
       <PageStructuredData
-        pageName="OneMagnify Website Migration Case Study"
-        pageDescription="How Pressense delivered 250+ pages of enterprise content for OneMagnify's Webflow-to-HubSpot migration, one editorial and SEO standard across every service line."
+        pageName="250 Pages. One Standard. Zero Shortcuts."
+        pageDescription="How Pressense delivered 250+ pages of enterprise content for a platform migration, one editorial and SEO standard across every service line."
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: 'Case Studies', url: '/case-studies' },
-          { name: 'OneMagnify', url: '/case-studies/onemagnify' },
+          { name: '250 Pages. One Standard.', url: '/case-studies/onemagnify' },
         ]}
       />
 
@@ -107,31 +106,27 @@ export default function OneMagnifyCaseStudy() {
                     <path d="M4.5 2.5L7.5 6l-3 3.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </li>
-                <li className="text-foreground font-medium" aria-current="page">OneMagnify</li>
+                <li className="text-foreground font-medium" aria-current="page">250 Pages. One Standard.</li>
               </ol>
             </nav>
 
-            {/* Two-col: text + FlowerPanel */}
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-end pt-4 pb-0">
-              <div className="pb-16">
-                <span className="eyebrow-pill">Global Marketing &amp; Customer Experience</span>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.05] mb-6 text-balance">
-                  250 pages. One standard. Zero shortcuts.
-                </h1>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-                  When Squaircle led OneMagnify&apos;s platform migration from Webflow to HubSpot CMS, the technology layer had a plan. The content layer needed one too, built page for page, service line by service line, to a single editorial and SEO standard.
-                </p>
-                {/* Engagement meta */}
-                <div className="grid grid-cols-2 gap-3">
-                  {engagementMeta.map((item) => (
-                    <div key={item.label} className="rounded-xl p-4 border border-border bg-secondary/40">
-                      <p className="text-xs font-medium text-muted-foreground mb-1">{item.label}</p>
-                      <p className="text-sm font-semibold text-foreground">{item.value}</p>
-                    </div>
-                  ))}
-                </div>
+            <div className="pt-4 pb-16 max-w-2xl">
+              <span className="eyebrow-pill">Global Marketing &amp; Customer Experience</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.05] mb-6 text-balance">
+                250 pages. One standard. Zero shortcuts.
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-10">
+                When Squaircle led the client&apos;s platform migration from Webflow to HubSpot CMS, the technology layer had a plan. The content layer needed one too, built page for page, service line by service line, to a single editorial and SEO standard.
+              </p>
+              {/* Engagement meta */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {engagementMeta.map((item) => (
+                  <div key={item.label} className="rounded-xl p-4 border border-border bg-secondary/40">
+                    <p className="text-xs font-medium text-muted-foreground mb-1">{item.label}</p>
+                    <p className="text-sm font-semibold text-foreground">{item.value}</p>
+                  </div>
+                ))}
               </div>
-              <FlowerPanel src="/images/botanical-hero-2.png" minHeight={480} className="rounded-b-none" />
             </div>
           </div>
         </section>
@@ -155,10 +150,10 @@ export default function OneMagnifyCaseStudy() {
                     Breadth is a strength in the market. On a website, it becomes a problem.
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
-                    OneMagnify runs a wide portfolio of services spanning brand strategy, media, data and analytics, customer experience, and commerce technology. That breadth is a genuine competitive strength. On a website, it becomes a liability the moment each service line reads like it was written by a different team, to a different standard, on a different day.
+                    The client runs a wide portfolio of services spanning brand strategy, media, data and analytics, customer experience, and commerce technology. That breadth is a genuine competitive strength. On a website, it becomes a liability the moment each service line reads like it was written by a different team, to a different standard, on a different day.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
-                    Squaircle was engaged to lead OneMagnify's broader website transformation: a full platform migration from Webflow to HubSpot CMS, alongside a rebuilt content architecture designed to support organic growth rather than function as a static corporate brochure.
+                    Squaircle was engaged to lead the client's broader website transformation: a full platform migration from Webflow to HubSpot CMS, alongside a rebuilt content architecture designed to support organic growth rather than function as a static corporate brochure.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     A migration at that scale needed more than new templates and a new CMS. It needed content built to match, page for page, service line for service line, at the same standard across the entire site.
@@ -244,13 +239,13 @@ export default function OneMagnifyCaseStudy() {
                     A website that reads like one team built it
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
-                    The migration gave OneMagnify a single content system spanning more than 250 pages, live on a new CMS, built to one editorial and SEO standard across every service line, technology partnership, and location.
+                    The migration gave the client a single content system spanning more than 250 pages, live on a new CMS, built to one editorial and SEO standard across every service line, technology partnership, and location.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
                     What had been a website with inconsistent depth by section became a platform where every page, regardless of topic, met the same bar for clarity, accuracy, and search readiness.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Specific traffic and lead outcomes sit with OneMagnify and Squaircle's ongoing measurement of the site. What Pressense delivered was the system underneath it: content built once, to a standard rigorous enough to scale across hundreds of pages without losing consistency along the way.
+                    Specific traffic and lead outcomes sit with the client and Squaircle's ongoing measurement of the site. What Pressense delivered was the system underneath it: content built once, to a standard rigorous enough to scale across hundreds of pages without losing consistency along the way.
                   </p>
                 </div>
 

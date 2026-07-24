@@ -1,35 +1,34 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageStructuredData } from '@/components/page-structured-data'
-import { FlowerPanel } from '@/components/flower-panel'
 import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
-  title: 'Zoho Creator GTM Case Study | Pressense',
+  title: 'The GTM System That Carries an Enterprise Buyer | Pressense',
   description:
-    'How Pressense built a reusable GTM and content system for Zoho Creator, enterprise buyer education, competitive intelligence, and search-led lead generation.',
+    'How Pressense built a reusable GTM and content system for a leading low-code platform: enterprise buyer education, competitive intelligence, and search-led lead generation.',
   openGraph: {
-    title: 'Zoho Creator GTM Case Study | Pressense',
+    title: 'The GTM System That Carries an Enterprise Buyer | Pressense',
     description:
-      'How Pressense built a reusable GTM and content system for Zoho Creator, enterprise buyer education, competitive intelligence, and search-led lead generation.',
+      'How Pressense built a reusable GTM and content system for a leading low-code platform: enterprise buyer education, competitive intelligence, and search-led lead generation.',
     url: '/case-studies/zoho-creator',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense, Zoho Creator Case Study' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense GTM Case Study' }],
   },
   alternates: {
     canonical: '/case-studies/zoho-creator',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zoho Creator GTM Case Study | Pressense',
+    title: 'The GTM System That Carries an Enterprise Buyer | Pressense',
     description:
-      'How Pressense built a reusable GTM and content system for Zoho Creator, enterprise buyer education, competitive intelligence, and search-led lead generation.',
+      'How Pressense built a reusable GTM and content system for a leading low-code platform: enterprise buyer education, competitive intelligence, and search-led lead generation.',
     images: ['/og-image.jpg'],
   },
 }
 
 const engagementMeta = [
-  { label: 'Client', value: 'Zoho Creator' },
+  { label: 'Client', value: 'Enterprise Software / Low-Code' },
   { label: 'Industry', value: 'Enterprise Software / Low-Code' },
   { label: 'Engagement', value: 'Embedded GTM Partner' },
   { label: 'Duration', value: 'Multi-year retainer' },
@@ -54,7 +53,7 @@ const deliverables = [
   {
     title: 'Cross-sell landing page strategy',
     description:
-      'Positioning frameworks for how Zoho Creator should sit next to adjacent products in the Zoho suite, built around an "extension, not replacement" logic so that cross-sell content grew usage without undercutting any single product\'s story.',
+      'Positioning frameworks for how the client should sit next to adjacent products in the product suite, built around an "extension, not replacement" logic so that cross-sell content grew usage without undercutting any single product\'s story.',
   },
   {
     title: 'Enterprise lead-generation strategy',
@@ -82,7 +81,7 @@ const approachLayers = [
   {
     number: '04',
     heading: 'Cross-sell and ecosystem positioning',
-    body: 'Messaging that let Zoho Creator sit naturally alongside other products in the Zoho suite, expanding usage without making any one product sound incomplete.',
+    body: "Messaging that let the client's products sit naturally alongside other products in the product suite, expanding usage without making any one product sound incomplete.",
   },
   {
     number: '05',
@@ -95,12 +94,12 @@ export default function ZohoCreatorCaseStudy() {
   return (
     <>
       <PageStructuredData
-        pageName="Zoho Creator GTM Case Study"
-        pageDescription="How Pressense built a reusable GTM and content system for Zoho Creator, enterprise buyer education, competitive intelligence, and search-led lead generation."
+        pageName="The GTM System That Carries an Enterprise Buyer"
+        pageDescription="How Pressense built a reusable GTM and content system for a leading low-code platform: enterprise buyer education, competitive intelligence, and search-led lead generation."
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: 'Case Studies', url: '/case-studies' },
-          { name: 'Zoho Creator', url: '/case-studies/zoho-creator' },
+          { name: 'The GTM System That Carries an Enterprise Buyer', url: '/case-studies/zoho-creator' },
         ]}
       />
 
@@ -122,31 +121,27 @@ export default function ZohoCreatorCaseStudy() {
                     <path d="M4.5 2.5L7.5 6l-3 3.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </li>
-                <li className="text-foreground font-medium" aria-current="page">Zoho Creator</li>
+                <li className="text-foreground font-medium" aria-current="page">The GTM System That Carries an Enterprise Buyer</li>
               </ol>
             </nav>
 
-            {/* Two-col: text + FlowerPanel */}
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-end pt-4 pb-0">
-              <div className="pb-16">
-                <span className="eyebrow-pill">Enterprise Software / Low-Code</span>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.05] mb-6 text-balance">
-                  Building a go-to-market system for Zoho Creator
-                </h1>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-                  Low-code platforms sell into two audiences at once. The end user wants to build something in an afternoon. The decision-maker wants to know how it behaves at 10,000 users, under audit, with three integrations bolted on. Most GTM content is written for one of them. We built a system that works for both.
-                </p>
-                {/* Engagement meta */}
-                <div className="grid grid-cols-2 gap-3">
-                  {engagementMeta.map((item) => (
-                    <div key={item.label} className="rounded-xl p-4 border border-border bg-secondary/40">
-                      <p className="text-xs font-medium text-muted-foreground mb-1">{item.label}</p>
-                      <p className="text-sm font-semibold text-foreground">{item.value}</p>
-                    </div>
-                  ))}
-                </div>
+            <div className="pt-4 pb-16 max-w-2xl">
+              <span className="eyebrow-pill">Enterprise Software / Low-Code</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.05] mb-6 text-balance">
+                The GTM system that carries an enterprise buyer
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-10">
+                Low-code platforms sell into two audiences at once. The end user wants to build something in an afternoon. The decision-maker wants to know how it behaves at 10,000 users, under audit, with three integrations bolted on. Most GTM content is written for one of them. We built a system that works for both.
+              </p>
+              {/* Engagement meta */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {engagementMeta.map((item) => (
+                  <div key={item.label} className="rounded-xl p-4 border border-border bg-secondary/40">
+                    <p className="text-xs font-medium text-muted-foreground mb-1">{item.label}</p>
+                    <p className="text-sm font-semibold text-foreground">{item.value}</p>
+                  </div>
+                ))}
               </div>
-              <FlowerPanel minHeight={480} className="rounded-b-none" />
             </div>
           </div>
         </section>
@@ -168,7 +163,7 @@ export default function ZohoCreatorCaseStudy() {
                     The product was mature. The GTM system around it was not.
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
-                    Zoho Creator is a low-code application platform serving enterprise and mid-market customers. The product was strong. The differentiation was real. But the content and GTM system around it was not built to carry an enterprise buyer from first search to internal business case.
+                    The client is a low-code application platform serving enterprise and mid-market customers. The product was strong. The differentiation was real. But the content and GTM system around it was not built to carry an enterprise buyer from first search to internal business case.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
                     Comparison content was thin. Competitive positioning existed in slide decks, not in anything a prospect could find or a sales rep could point to. And the website was not doing the work a modern enterprise buyer expects a vendor site to do before they ever speak to sales.
@@ -257,13 +252,13 @@ export default function ZohoCreatorCaseStudy() {
                     From ad hoc production to a compounding system
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
-                    The engagement produced a reusable GTM and content system for Zoho Creator: technical education, competitive positioning, decision-stage content, and cross-sell messaging designed to work together rather than as disconnected deliverables.
+                    The engagement produced a reusable GTM and content system for the client: technical education, competitive positioning, decision-stage content, and cross-sell messaging designed to work together rather than as disconnected deliverables.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
                     Specific content topics and performance figures from this engagement are confidential and cannot be published here.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    What can be said: the work moved Zoho Creator from ad hoc content production to a structured, repeatable system for enterprise buyer education, competitive positioning, and lead generation, one built to keep compounding after the engagement itself.
+                    What can be said: the work moved the client from ad hoc content production to a structured, repeatable system for enterprise buyer education, competitive positioning, and lead generation, one built to keep compounding after the engagement itself.
                   </p>
                 </div>
 
@@ -279,7 +274,7 @@ export default function ZohoCreatorCaseStudy() {
                     It loses because the buyer can not find, trust, or defend the information they need before a decision gets made internally.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    That is the gap Pressense closed for Zoho Creator: not content for its own sake, but the research, positioning, and infrastructure that let a technical buyer do their own diligence and arrive at a confident decision, with Zoho Creator already ahead in that process.
+                    That is the gap Pressense closed for the client: not content for its own sake, but the research, positioning, and infrastructure that let a technical buyer do their own diligence and arrive at a confident decision, with the client already ahead in that process.
                   </p>
                 </div>
 
