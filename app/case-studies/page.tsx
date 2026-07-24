@@ -129,8 +129,7 @@ export default function CaseStudiesPage() {
                   className="font-normal leading-[1.05] text-balance mb-6"
                   style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(26px, 5vw, 58px)', color: '#EDEBE5' }}
                 >
-                  We don&apos;t share testimonials.{' '}
-                  <em className="italic">We share what we fixed, and how.</em>
+                  Inside the fix.
                 </h1>
                 <p className="text-lg leading-relaxed max-w-xl" style={{ color: 'rgba(237,235,229,0.72)' }}>
                   Every engagement starts with a broken system. Here is what we found, and what we built to fix it.

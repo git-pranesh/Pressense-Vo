@@ -20,11 +20,13 @@ const industries = [
 ]
 
 const navLinks = [
-  { label: 'How It Works', href: '/how-it-works' },
-  { label: 'Pricing',      href: '/pricing' },
   { label: 'Case Studies', href: '/case-studies' },
-  { label: 'About',        href: '/about' },
+  { label: 'Pricing',      href: '/pricing' },
   { label: 'Tools',        href: '/tools' },
+]
+
+const navLinksBefore = [
+  { label: 'About', href: '/about' },
 ]
 
 export function Header() {
@@ -89,6 +91,17 @@ export function Header() {
 
         {/* Nav links */}
         <nav className="flex items-center gap-7" aria-label="Main navigation">
+
+          {/* About (before dropdowns) */}
+          {navLinksBefore.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="font-sans text-sm font-medium text-foreground/70 hover:text-foreground transition-colors duration-200 no-underline"
+            >
+              {link.label}
+            </Link>
+          ))}
 
           {/* Services dropdown trigger */}
           <div
@@ -250,6 +263,18 @@ export function Header() {
       {/* ── Mobile drawer ───────────────────────────────────────── */}
       {menuOpen && (
         <div className="lg:hidden bg-[#EDEBE5] border-t border-[#D4CFC7] px-6 py-5 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
+
+          {/* About */}
+          {navLinksBefore.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="font-sans text-sm font-medium text-foreground/70 py-2 border-b border-[#D4CFC7] no-underline hover:text-foreground transition-colors"
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
 
           {/* Services expandable row */}
           <div className="border-b border-[#D4CFC7]">
