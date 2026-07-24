@@ -37,9 +37,8 @@ export function ServicesToggle({ services }: ServicesToggleProps) {
                 {String(i + 1).padStart(2, '0')}
               </span>
               <span
-                className="text-base sm:text-xl leading-snug text-balance transition-all duration-150"
+                className="heading-font text-base sm:text-xl leading-snug text-balance transition-all duration-150"
                 style={{
-                  fontFamily: 'var(--font-heading)',
                   fontWeight: active === i ? 500 : 400,
                   color: active === i ? 'var(--foreground)' : undefined,
                 }}

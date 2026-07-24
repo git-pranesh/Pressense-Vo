@@ -114,7 +114,7 @@ export default function HomePage() {
     <main>
 
       {/* ── Hero ──────────────────────────────────────────────────── */}
-      <section className="pt-28 pb-0">
+      <section className="pt-28 pb-10">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
 
           {/* Star rating row */}
@@ -281,7 +281,7 @@ export default function HomePage() {
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <span className="eyebrow-pill">How It Works</span>
-          <h2 className="text-3xl sm:text-4xl font-normal text-foreground mb-16 text-balance max-w-xl">
+          <h2 className="text-3xl sm:text-4xl font-normal text-foreground mb-16 text-balance max-w-xl" style={{ fontFamily: 'var(--font-heading)' }}>
             We handle everything so you don&apos;t have to.
           </h2>
           <HowItWorksAccordion steps={howItWorksSteps} />
@@ -293,7 +293,7 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="mb-12">
             <span className="eyebrow-pill">Services</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground leading-tight text-balance">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground leading-tight text-balance" style={{ fontFamily: 'var(--font-heading)' }}>
               What we actually do
             </h2>
           </div>
@@ -317,7 +317,7 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="text-center mb-12">
             <span className="eyebrow-pill">Why us</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground text-balance">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground text-balance" style={{ fontFamily: 'var(--font-heading)' }}>
               We&apos;re not your typical agency.
             </h2>
           </div>
@@ -385,7 +385,7 @@ export default function HomePage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="mb-12">
             <span className="eyebrow-pill">Who We Work With</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground leading-tight text-balance max-w-xl">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-foreground leading-tight text-balance max-w-xl" style={{ fontFamily: 'var(--font-heading)' }}>
               You&apos;re in the right place if&hellip;
             </h2>
           </div>

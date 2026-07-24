@@ -146,8 +146,15 @@
     font-family: var(--font-sans);
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-halant), Georgia, serif;
+    font-family: var(--font-halant), 'EB Garamond', Georgia, serif;
+    font-weight: 400;
   }
+}
+
+/* Hard override outside of @layer so nothing beats it */
+h1, h2, h3, h4, h5, h6,
+.heading-font {
+  font-family: var(--font-halant), 'EB Garamond', Georgia, serif !important;
 }
 
 /* Shared card — lifts visually above the dusty page background */
