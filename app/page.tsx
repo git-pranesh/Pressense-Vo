@@ -150,7 +150,7 @@ export default function HomePage() {
 
               {/* Heading */}
               <h1
-                className="text-5xl sm:text-6xl lg:text-[72px] font-normal leading-[1.06] text-balance max-w-3xl mb-6"
+                className="text-[2rem] sm:text-5xl lg:text-[72px] font-normal leading-[1.1] text-balance max-w-3xl mb-6"
                 style={{ color: '#EDEBE5', fontFamily: '"EB Garamond", Georgia, serif' }}
               >
                 Many businesses don&apos;t have a marketing problem. They have a{' '}

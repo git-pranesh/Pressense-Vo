@@ -32,7 +32,7 @@ export default function ContactPage() {
               <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Contact</span>
               <h1
                 className="font-normal text-balance leading-tight mb-6"
-                style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}
+                style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(26px, 5vw, 58px)', color: '#EDEBE5' }}
               >
                 Tell us what&apos;s actually going on
               </h1>
@@ -52,7 +52,7 @@ export default function ContactPage() {
       </section>
 
       {/* Who we work with */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
+      <section className="py-10 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 grid gap-10 md:grid-cols-2">
           <div>
             <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-4">Who we work with</h2>
@@ -73,7 +73,7 @@ export default function ContactPage() {
       </section>
 
       {/* Who we're not right for */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
+      <section className="py-10 lg:py-20 border-b border-border/40">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-4">Who we&apos;re probably not right for</h2>
           <ul className="space-y-3 text-muted-foreground leading-relaxed list-none">
@@ -94,7 +94,7 @@ export default function ContactPage() {
       </section>
 
       {/* What happens next */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
+      <section className="py-10 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-8">What happens after you submit this</h2>
           <ol className="space-y-4">
@@ -116,7 +116,7 @@ export default function ContactPage() {
       </section>
 
       {/* Form */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
+      <section className="py-10 lg:py-20 border-b border-border/40">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 mb-10">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-2">Start here</h2>
           <p className="text-muted-foreground leading-relaxed">
@@ -129,7 +129,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
+      <section className="py-10 lg:py-20 border-b border-border/40 bg-secondary/20">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-8">FAQ</h2>
           <dl className="space-y-8">
@@ -165,7 +165,7 @@ export default function ContactPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 lg:py-32">
+      <section className="py-10 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <p className="text-muted-foreground mb-6 leading-relaxed">
             Not ready to fill out the form? Browse the services first.

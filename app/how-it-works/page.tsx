@@ -67,7 +67,7 @@ export default function HowItWorksPage() {
             <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.42)' }} aria-hidden="true" />
             <div className="relative z-10 px-6 py-10 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
               <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>How It Works</span>
-              <h1 className="font-normal leading-[1.05] text-balance mb-6" style={{ fontFamily: GARAMOND, fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}>
+              <h1 className="font-normal leading-[1.05] text-balance mb-6" style={{ fontFamily: GARAMOND, fontSize: 'clamp(26px, 5vw, 58px)', color: '#EDEBE5' }}>
                 How an engagement works
               </h1>
               <p className="text-lg leading-relaxed mb-8" style={{ color: 'rgba(237,235,229,0.72)' }}>
@@ -87,19 +87,19 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ── Phases ───────────────────────────────────────────────── */}
-      <section className="py-24 lg:py-32">
+      <section className="py-12 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-          <div className="flex flex-col gap-24 lg:gap-32">
+          <div className="flex flex-col gap-12 lg:gap-24">
             {phases.map((phase) => (
-              <div key={phase.number} className="grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-20 items-start">
+              <div key={phase.number} className="grid lg:grid-cols-[1fr_2fr] gap-6 lg:gap-20 items-start">
 
                 {/* Left — large number + label */}
-                <div className="flex lg:flex-col items-baseline lg:items-start gap-5 lg:gap-4 lg:pt-1">
+                <div className="flex items-center lg:flex-col lg:items-start gap-4 lg:gap-4 lg:pt-1">
                   <span
-                    className="leading-none select-none"
+                    className="leading-none select-none shrink-0"
                     style={{
                       fontFamily: GARAMOND,
-                      fontSize: 'clamp(64px, 8vw, 100px)',
+                      fontSize: 'clamp(48px, 8vw, 100px)',
                       fontWeight: 400,
                       color: 'rgba(26,15,6,0.10)',
                     }}
@@ -107,14 +107,14 @@ export default function HowItWorksPage() {
                   >
                     {phase.number}
                   </span>
-                  <span className="eyebrow-pill">{phase.label}</span>
+                  <span className="eyebrow-pill" style={{ marginBottom: 0 }}>{phase.label}</span>
                 </div>
 
                 {/* Right — heading + body + duration */}
                 <div>
                   <h2
-                    className="font-normal text-foreground leading-tight text-balance mb-8"
-                    style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
+                    className="font-normal text-foreground leading-tight text-balance mb-6"
+                    style={{ fontFamily: GARAMOND, fontSize: 'clamp(24px, 4vw, 44px)' }}
                   >
                     {phase.title}
                   </h2>

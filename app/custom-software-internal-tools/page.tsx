@@ -66,7 +66,7 @@ export default function CustomSoftwarePage() {
               <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Custom Software &amp; Internal Tools</span>
               <h1
                 className="font-normal leading-tight text-balance mb-5"
-                style={{ fontFamily: GARAMOND, fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}
+                style={{ fontFamily: GARAMOND, fontSize: 'clamp(26px, 5vw, 58px)', color: '#EDEBE5' }}
               >
                 Software built around how you actually work.
               </h1>

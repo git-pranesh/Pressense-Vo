@@ -87,7 +87,7 @@ export default function PricingPage() {
             <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.42)' }} aria-hidden="true" />
             <div className="relative z-10 px-6 py-10 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
               <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Pricing</span>
-              <h1 className="font-normal text-balance mb-6 leading-tight" style={{ fontFamily: GARAMOND, fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}>
+              <h1 className="font-normal text-balance mb-6 leading-tight" style={{ fontFamily: GARAMOND, fontSize: 'clamp(26px, 5vw, 58px)', color: '#EDEBE5' }}>
                 How pricing works
               </h1>
               <p className="text-lg leading-relaxed mb-4" style={{ color: 'rgba(237,235,229,0.72)' }}>

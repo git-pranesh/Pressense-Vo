@@ -33,7 +33,7 @@ export function AnchorCard({
         aria-hidden="true"
       />
       {/* Content */}
-      <div className="relative z-10 px-8 py-12 sm:px-12 sm:py-14 lg:px-16 lg:py-16 max-w-2xl">
+      <div className="relative z-10 px-5 py-8 sm:px-12 sm:py-14 lg:px-16 lg:py-16 max-w-2xl">
         {eyebrow && (
           <span
             className="eyebrow-pill mb-5"
@@ -53,20 +53,13 @@ export function AnchorCard({
           {body}
         </p>
 
-        {/* Stats — 3-col grid so they always sit in one row */}
+        {/* Stats — wraps to 2 cols on mobile, full row on sm+ */}
         {stats && stats.length > 0 && (
-          <div
-            className="mb-8"
-            style={{ display: 'grid', gridTemplateColumns: `repeat(${stats.length}, minmax(0, 1fr))`, gap: '0' }}
-          >
-            {stats.map((s, i) => (
-              <div
-                key={s.label}
-                className="flex flex-col pr-6"
-                style={i > 0 ? { borderLeft: '1px solid rgba(237,235,229,0.12)', paddingLeft: '1.5rem' } : {}}
-              >
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-8">
+            {stats.map((s) => (
+              <div key={s.label} className="flex flex-col">
                 <span
-                  className="text-4xl lg:text-5xl font-bold leading-none tracking-tight"
+                  className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-none tracking-tight"
                   style={{ color: '#EDEBE5' }}
                 >
                   {s.value}

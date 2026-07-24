@@ -73,11 +73,11 @@ export default function CaseStudiesPage() {
               style={{ backgroundImage: 'url(/images/secondary-hero-bg-opt.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
               <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.48)' }} aria-hidden="true" />
-              <div className="relative z-10 px-8 py-16 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+              <div className="relative z-10 px-6 py-10 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
                 <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Case Studies</span>
                 <h1
                   className="font-normal leading-[1.05] text-balance mb-6"
-                  style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}
+                  style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(26px, 5vw, 58px)', color: '#EDEBE5' }}
                 >
                   We don&apos;t share testimonials.{' '}
                   <em className="italic">We share what we fixed, and how.</em>
