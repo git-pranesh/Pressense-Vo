@@ -3,9 +3,22 @@ import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
-  title: 'Fractional CMO | Pressense',
-  description: 'Senior marketing leadership on a retainer basis, once the operations underneath it can hold the weight.',
+  title: 'Fractional CMO Services for Growing Businesses | Pressense',
+  description: 'Senior marketing leadership on a retainer, once the operations underneath can hold the weight. Strategy, positioning, and GTM execution.',
   alternates: { canonical: '/fractional-cmo' },
+  openGraph: {
+    title: 'Fractional CMO Services for Growing Businesses | Pressense',
+    description: 'Senior marketing leadership on a retainer basis, once the operations underneath it can hold the weight.',
+    url: '/fractional-cmo',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Fractional CMO' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fractional CMO Services for Growing Businesses | Pressense',
+    description: 'Senior marketing leadership on a retainer basis, once the operations underneath it can hold the weight.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'

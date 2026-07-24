@@ -3,9 +3,22 @@ import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
-  title: 'AI Integration | Pressense',
-  description: 'We find where AI actually saves time in your operation, then build it into the tools you already use.',
+  title: 'AI Integration for Business Operations | Pressense',
+  description: 'We find where AI actually saves time in your operation, then build it into the tools you already use. No hype — only changes that recover measurable hours.',
   alternates: { canonical: '/ai-integration' },
+  openGraph: {
+    title: 'AI Integration for Business Operations | Pressense',
+    description: 'We find where AI actually saves time in your operation, then build it into the tools you already use.',
+    url: '/ai-integration',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense AI Integration' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Integration for Business Operations | Pressense',
+    description: 'We find where AI actually saves time in your operation, then build it into the tools you already use.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'

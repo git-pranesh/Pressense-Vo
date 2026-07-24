@@ -3,9 +3,22 @@ import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
-  title: 'Custom CRM | Pressense',
-  description: 'A CRM built around how your team actually sells, not a generic template your team quietly abandons.',
+  title: 'Custom CRM Development for SMBs | Pressense',
+  description: 'A CRM built around how your team actually sells, not a generic template your team quietly abandons. Built after a diagnostic, shipped in weeks.',
   alternates: { canonical: '/custom-crm' },
+  openGraph: {
+    title: 'Custom CRM Development for SMBs | Pressense',
+    description: 'A CRM built around how your team actually sells, not a generic template your team quietly abandons.',
+    url: '/custom-crm',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Custom CRM' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom CRM Development for SMBs | Pressense',
+    description: 'A CRM built around how your team actually sells, not a generic template your team quietly abandons.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'

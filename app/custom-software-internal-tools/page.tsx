@@ -4,8 +4,21 @@ import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Custom Software & Internal Tools | Pressense',
-  description: 'We build internal software and tools shaped around how your team actually works, not the other way around.',
+  description: 'We build internal software and tools shaped around how your team actually works. Starts with a diagnostic. Ships in 2–4 weeks.',
   alternates: { canonical: '/custom-software-internal-tools' },
+  openGraph: {
+    title: 'Custom Software & Internal Tools | Pressense',
+    description: 'We build internal software and tools shaped around how your team actually works, not the other way around.',
+    url: '/custom-software-internal-tools',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Custom Software & Internal Tools' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Software & Internal Tools | Pressense',
+    description: 'We build internal software and tools shaped around how your team actually works, not the other way around.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 const GARAMOND = '"EB Garamond", Georgia, serif'
