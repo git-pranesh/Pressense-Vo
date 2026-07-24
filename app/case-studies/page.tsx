@@ -79,6 +79,16 @@ const caseStudies = [
       '78% faster order processing. 354 staff hours released every month. C$182,000 in annual capacity. 21% order-volume growth without hiring. A family-owned Ontario distributor was losing 479 hours a month across email chains, pricing spreadsheets and manual ERP entry. We built the missing commercial layer.',
     tags: ['Custom Software', 'Workflow Automation', 'Distribution', 'Order Operations'],
   },
+  {
+    slug: 'interior-design-crm',
+    client: 'The Sales Process That Enforces Itself',
+    industry: 'Interior Design & Home Renovation, India',
+    engagementType: 'Custom CRM Build',
+    duration: 'Internal tools engagement',
+    summary:
+      'Six mandatory gates. Hourly SLA breach detection. 100% discount traceability. 14 live management reports. A growing interior design company was running its sales process through a master spreadsheet and employee memory. We replaced it with a system that makes the process unavoidable.',
+    tags: ['Custom CRM', 'Workflow Automation', 'Sales Operations', 'Interior Design'],
+  },
 ]
 
 export default function CaseStudiesPage() {
