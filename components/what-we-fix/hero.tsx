@@ -42,7 +42,7 @@ export function WhatWeFixHero() {
 
           {/* CTA */}
           <Link
-            href="/diagnostic"
+            href="/contact"
             className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             aria-label="Start a diagnostic"
           >

@@ -54,7 +54,7 @@ export function ApproachSection() {
           <p className="text-lg text-muted-foreground leading-relaxed">
             The same structured process, adapted to your context.{' '}
             <Link
-              href="/how-we-work"
+              href="/how-it-works"
               className="text-primary hover:text-highlight underline underline-offset-4 transition-colors"
             >
               See the full methodology

@@ -49,7 +49,7 @@ export function PatternsSection() {
           <p className="text-lg text-muted-foreground leading-relaxed">
             Different industries. Different stages. The same structural problems.{' '}
             <Link
-              href="/what-we-fix"
+              href="/about"
               className="text-primary hover:text-highlight underline underline-offset-4 transition-colors"
             >
               See the full list

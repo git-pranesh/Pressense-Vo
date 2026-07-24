@@ -1,342 +1,227 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { AnchorCard } from '@/components/anchor-card'
+
+const GARAMOND = '"EB Garamond", Georgia, serif'
 
 export const metadata: Metadata = {
-  title: 'Service Pricing | Pressense',
-  description: 'Transparent pricing for all Pressense services — AI automation, GTM strategy, custom development, integrations, and business consulting. All services include a free diagnostic.',
+  title: 'Pricing | Pressense',
+  description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service, final pricing depends on scope.',
+  alternates: { canonical: '/pricing' },
   openGraph: {
-    title: 'Service Pricing | Pressense',
-    description: 'Transparent pricing for all Pressense services — AI automation, GTM strategy, custom development, integrations, and business consulting.',
+    title: 'Pricing | Pressense',
+    description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service.',
     url: '/pricing',
     type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense Pricing' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pricing | Pressense',
+    description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service.',
+    images: ['/og-image.jpg'],
   },
 }
 
 const services = [
   {
-    category: 'AI & Automation',
-    items: [
-      {
-        name: 'AI Automation Agency',
-        price: 'From $2,000',
-        type: 'Project',
-        outcome: '"Systems that think and act — AI workflows embedded into your business operations."',
-        link: '/ai-automation-agency',
-        deliverables: ['8-week engagement', 'AI workflow architecture', 'Tool stack setup (n8n/Make/Zapier)', 'Team training & documentation'],
-      },
-      {
-        name: 'AI Strategy Consulting',
-        price: 'From $2,000',
-        type: 'Project',
-        outcome: '"A clear AI adoption roadmap — not hype, just the opportunities that matter for your business."',
-        link: '/ai-strategy-consulting',
-        deliverables: ['AI capability audit', 'Prioritised opportunities list', '90-day implementation roadmap', 'ROI projection model'],
-      },
-      {
-        name: 'AI Workflows & Automation',
-        price: 'From $2,000',
-        type: 'Project',
-        outcome: '"Eliminate the repetitive work — automate the processes that slow you down."',
-        link: '/ai-workflows-automation',
-        deliverables: ['Workflow mapping & design', 'API integrations (HubSpot, Slack, etc.)', 'Error handling & monitoring', 'Ongoing support option'],
-      },
-      {
-        name: 'Workflow Automation Consulting',
-        price: 'From $1,200',
-        type: 'Project',
-        outcome: '"Workflows that work — built to scale as your business grows."',
-        link: '/workflow-automation-consulting',
-        deliverables: ['Process audit & redesign', 'Tool selection & setup', 'Custom automation builds', '30-day post-launch support'],
-      },
-      {
-        name: 'Business Process Automation Consulting',
-        price: 'From $2,500',
-        type: 'Project',
-        outcome: '"Efficiency that sticks — automation that your team will actually use."',
-        link: '/business-process-automation-consulting',
-        deliverables: ['Full process audit', 'Automation opportunity map', 'Tool stack implementation', 'Team training & rollout'],
-      },
-    ],
+    name: 'Custom Software & Internal Tools',
+    price: 'From $3,000',
+    type: 'Project',
+    description: 'A working internal tool built around your actual process, not a generic template. Includes the diagnostic that scopes it.',
+    link: '/custom-software-internal-tools',
   },
   {
-    category: 'Strategy & GTM',
-    items: [
-      {
-        name: 'Fractional CMO Services',
-        price: 'From $1,500/month',
-        type: 'Retainer',
-        outcome: '"CMO-level strategy without the $250K salary — embedded, accountable, results-focused."',
-        link: '/fractional-cmo-services',
-        deliverables: ['Marketing audit & positioning', 'GTM strategy & 90-day roadmap', 'Demand gen engine setup', 'Board-ready dashboards'],
-      },
-      {
-        name: 'GTM Systems Builder',
-        price: 'From $2,000',
-        type: 'Project',
-        outcome: '"Strategy, content, and internal tools — all connected into one GTM system."',
-        link: '/gtm-systems-builder',
-        deliverables: ['GTM strategy + ICP definition', 'SEO content programme setup', 'Internal tools audit', 'Integrated 90-day roadmap'],
-      },
-      {
-        name: 'GTM Content Systems',
-        price: 'From $2,000/month',
-        type: 'Retainer',
-        outcome: '"Content that feeds your pipeline — built as a system, not a batch of blog posts."',
-        link: '/gtm-content-systems',
-        deliverables: ['ICP and positioning statement', 'Topic cluster architecture', 'Monthly content production', 'CRM attribution and reporting'],
-      },
-      {
-        name: 'SEO Content for SaaS',
-        price: 'From $2,000',
-        type: 'Project',
-        outcome: '"Organic pipeline from content — written for buyers, structured for Google."',
-        link: '/seo-content-for-saas',
-        deliverables: ['Keyword gap analysis', 'Pillar page and cluster articles', 'Comparison and alternative pages', 'FAQPage schema on every piece'],
-      },
-      {
-        name: 'GTM Strategy Consultant',
-        price: 'From $2,500',
-        type: 'Project',
-        outcome: '"Why your product isn\'t converting — and exactly how to fix it."',
-        link: '/gtm-strategy-consultant',
-        deliverables: ['PRESS Framework 8-week sprint', 'ICP & positioning document', 'Channel strategy & playbook', 'Sales motion design'],
-      },
-      {
-        name: 'SaaS Go-To-Market Strategy',
-        price: 'From $3,000',
-        type: 'Project',
-        outcome: '"A go-to-market that works for your stage — whether pre-revenue or scaling."',
-        link: '/saas-go-to-market-strategy',
-        deliverables: ['SaaS GTM framework', 'Buyer journey mapping', 'Channel & messaging strategy', 'Launch checklist & roadmap'],
-      },
-      {
-        name: 'Revenue Operations Consulting',
-        price: 'From $2,000/month',
-        type: 'Retainer',
-        outcome: '"Pipeline visibility that sticks — CRM as a growth system, not a contact database."',
-        link: '/revenue-operations-consulting',
-        deliverables: ['CRM architecture & design', 'Pipeline process automation', 'Forecasting & reporting setup', 'Cross-functional workflows'],
-      },
-    ],
+    name: 'Workflow Automation',
+    price: 'From $1,200',
+    type: 'Project',
+    description: 'We find where work is duplicating or stalling, then automate the repetitive parts so your team stops chasing status updates by hand.',
+    link: '/workflow-automation',
   },
   {
-    category: 'Development & Build',
-    items: [
-      {
-        name: 'Custom CRM Development',
-        price: 'From $5,000',
-        type: 'Project',
-        outcome: '"A CRM built for how you actually sell — no Salesforce bloat, no workarounds."',
-        link: '/custom-crm-development',
-        deliverables: ['Custom data model', 'Workflow automation', 'Integrations (email, calendar, etc.)', 'Team training & handover'],
-      },
-      {
-        name: 'Custom Internal Tools',
-        price: 'From $3,000',
-        type: 'Project',
-        outcome: '"Replace spreadsheets with tools your team will want to use."',
-        link: '/custom-internal-tools',
-        deliverables: ['Requirements mapping', 'Custom tool build', 'User training', 'Post-launch support option'],
-      },
-      {
-        name: 'MVP Development for Startups',
-        price: 'From $5,000',
-        type: 'Project',
-        outcome: '"A live product in 8 weeks — production-ready code, not a prototype."',
-        link: '/mvp-development-for-startups',
-        deliverables: ['Core feature build', 'Production-grade security & auth', 'Optional GTM playbook', 'Handoff-ready codebase'],
-      },
-      {
-        name: 'MVP Development on Replit',
-        price: 'From $3,000',
-        type: 'Project',
-        outcome: '"Validated and live in six weeks — built on Replit, owned by you."',
-        link: '/mvp-development-replit',
-        deliverables: ['Core value loop build', 'User auth and database setup', '2-3 third-party integrations', 'Production deployment on Replit'],
-      },
-      {
-        name: 'Business Systems Consultant',
-        price: 'From $1,500',
-        type: 'Advisory',
-        outcome: '"Operations that scale — systems designed to grow with your business."',
-        link: '/business-systems-consultant',
-        deliverables: ['Operations audit', 'Bottleneck identification', 'Systems architecture & roadmap', 'Implementation support'],
-      },
-    ],
+    name: 'Custom CRM',
+    price: 'From $5,000',
+    type: 'Project',
+    description: 'A CRM shaped around how your team actually sells and delivers, with the integrations you already rely on built in from day one.',
+    link: '/custom-crm',
   },
   {
-    category: 'Technical Integrations',
-    items: [
-      {
-        name: 'Claude API Integration',
-        price: 'From $2,000',
-        type: 'Project',
-        outcome: '"AI integrated into your workflow — document analysis, content generation, decision support."',
-        link: '/claude-api-integration',
-        deliverables: ['API architecture design', 'Prompt engineering & testing', 'Production deployment', 'Usage monitoring setup'],
-      },
-      {
-        name: 'OpenAI Integration Services',
-        price: 'From $2,000',
-        type: 'Project',
-        outcome: '"GPT-4o embedded in your systems — conversational tools that drive revenue."',
-        link: '/openai-integration-services',
-        deliverables: ['Integration architecture', 'Model fine-tuning & prompts', 'Rate limiting & cost controls', 'Performance monitoring'],
-      },
-    ],
+    name: 'AI Integration',
+    price: 'From $2,000',
+    type: 'Project',
+    description: 'AI added to tools you already use, aimed at cutting specific manual work. Not a chatbot for the sake of having one.',
+    link: '/ai-integration',
   },
   {
-    category: 'Consulting & Advisory',
-    items: [
-      {
-        name: 'Consulting Firm for Startups',
-        price: 'From $500',
-        type: 'Advisory',
-        outcome: '"A sounding board with execution — GTM, AI systems, custom software, all in one."',
-        link: '/consulting-firm-for-startups',
-        deliverables: ['Founder Advisory Sessions', 'Diagnostic calls & roadmaps', 'Project-based work as needed', 'Ongoing advisor option'],
-      },
-      {
-        name: 'Replit Development Agency',
-        price: 'From $1,500',
-        type: 'Project',
-        outcome: '"Full-stack apps built fast — Replit development paired with Vercel deployment and ongoing support."',
-        link: '/replit-development-agency',
-        deliverables: ['8-week engagement sprint', 'Production-grade Replit builds', 'Vercel deployment & CI/CD', '24-48hr bug fix SLA'],
-      },
-      {
-        name: 'Framer Website Design',
-        price: 'From $2,000',
-        type: 'Project',
-        outcome: '"Beautiful, fast, interactive — website design that converts."',
-        link: '/framer-website-design',
-        deliverables: ['Framer site build', 'Responsive design', 'Integrations (CMS, forms, etc.)', 'Domain setup & handoff'],
-      },
-    ],
+    name: 'Fractional CMO',
+    price: 'From $1,500/month',
+    type: 'Retainer',
+    description: 'Ongoing positioning and go-to-market support, for clients whose operations are already solid enough to build growth on top of.',
+    link: '/fractional-cmo',
+  },
+]
+
+const faqs = [
+  {
+    q: "Why isn't there a fixed price for everything?",
+    a: "Because the right price depends on what you actually need, and we don't know that until the diagnostic is done. A fixed number without that context would be a guess.",
+  },
+  {
+    q: 'Is the diagnostic really free?',
+    a: 'Yes. No cost, no obligation to continue after it.',
+  },
+  {
+    q: 'What decides if I qualify for a free first build?',
+    a: "What the diagnostic finds, and how clearly scoped the first piece of work is. We'll tell you directly if you qualify.",
+  },
+  {
+    q: 'Do these prices include ongoing support?',
+    a: "Support terms vary by project and are agreed on before the build starts. Ask during your diagnostic call and we'll spell it out.",
+  },
+  {
+    q: 'Can I start with a smaller project before committing to something bigger?',
+    a: 'Yes. Many clients start with one focused piece of work, see how it goes, and expand from there.',
   },
 ]
 
 export default function PricingPage() {
   return (
-    <main className="min-h-screen bg-background">
-      {/* Hero */}
-      <section className="py-20 lg:py-28 border-b border-border/40">
-        <div className="container mx-auto px-5 sm:px-8">
-          <div className="max-w-3xl">
-            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Pricing</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
-              Transparent pricing. No surprises.
-            </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8">
-              Every service includes a free diagnostic to confirm scope and pricing. Pick a service below — all prices are project-based or monthly retainers, depending on engagement type.
-            </p>
-            <div className="flex items-center gap-3">
-              <Link
-                href="/diagnostic"
-                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
-              >
-                Book a free diagnostic
-              </Link>
-              <Link
-                href="/how-we-work"
-                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl text-sm font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
-              >
-                How we work
-              </Link>
+    <main>
+
+      {/* ── Hero ─────────────────────────────────────────────────── */}
+      <section className="pt-24 pb-10">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div className="relative w-full rounded-3xl overflow-hidden" style={{ backgroundImage: 'url(/images/pages-hero-bg-opt.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.42)' }} aria-hidden="true" />
+            <div className="relative z-10 px-6 py-10 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+              <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Pricing</span>
+              <h1 className="font-normal text-balance mb-6 leading-tight" style={{ fontFamily: GARAMOND, fontSize: 'clamp(26px, 5vw, 58px)', color: '#EDEBE5' }}>
+                How pricing works
+              </h1>
+              <p className="text-lg leading-relaxed mb-4" style={{ color: 'rgba(237,235,229,0.72)' }}>
+                Every engagement starts with a diagnostic. We don&apos;t quote a build until we know exactly what needs building.
+              </p>
+              <p className="text-lg leading-relaxed" style={{ color: 'rgba(237,235,229,0.72)' }}>
+                The ranges below give you a realistic starting point for each service. Final pricing depends on scope, which the diagnostic defines.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services by category */}
-      {services.map((category) => (
-        <section key={category.category} className="py-16 lg:py-20 border-b border-border/40">
-          <div className="container mx-auto px-5 sm:px-8">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-10">{category.category}</h2>
-            
-            <div className="grid gap-6 md:gap-8">
-              {category.items.map((service) => (
-                <div key={service.name} className="glass-card rounded-2xl p-6 sm:p-8 border border-border/40 flex flex-col gap-5">
-                  {/* Header row */}
-                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-semibold text-foreground">{service.name}</h3>
-                      <div className="flex flex-wrap items-center gap-3 mt-2">
-                        <span className="inline-flex items-center px-3 py-1 rounded-lg border border-primary/30 bg-primary/5 text-xs font-semibold text-primary">
-                          {service.price}
-                        </span>
-                        <span className="text-xs font-medium text-muted-foreground bg-secondary/40 px-2.5 py-1 rounded">
-                          {service.type}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Outcome statement */}
-                  <p className="text-base text-foreground italic leading-relaxed">
-                    {service.outcome}
-                  </p>
-
-                  {/* Deliverables */}
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5">Includes</p>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {service.deliverables.map((item) => (
-                        <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="mt-0.5 shrink-0" aria-hidden="true">
-                            <circle cx="8" cy="8" r="7.5" stroke="currentColor" strokeOpacity="0.5" />
-                            <path d="M5 8l1.5 1.5 3.5-3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Escape valve + CTA */}
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2 border-t border-border/30">
-                    <p className="text-xs text-muted-foreground">
-                      Larger engagements?{' '}
-                      <Link href="/diagnostic" className="text-primary hover:underline">
-                        Let's scope it together.
-                      </Link>
-                    </p>
-                    <Link
-                      href={service.link}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+      {/* ── Services ─────────────────────────────────────────────── */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
+          <p className="text-sm text-muted-foreground/70 mb-12 max-w-xl">
+            Free diagnostic first, then a clear number. The diagnostic costs nothing. Once we know what you actually need, you get a specific quote, not a guess.
+          </p>
+          <div className="flex flex-col gap-4">
+            {services.map((service) => (
+              <div
+                key={service.name}
+                className="rounded-3xl border p-8 sm:p-10 flex flex-col sm:flex-row sm:items-start gap-6"
+                style={{ borderColor: 'rgba(180,172,162,0.4)', background: 'transparent' }}
+              >
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-baseline gap-4 mb-3">
+                    <h3
+                      className="font-normal text-foreground text-balance"
+                      style={{ fontFamily: GARAMOND, fontSize: 'clamp(20px, 2.5vw, 26px)' }}
                     >
-                      Full details
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                        <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </Link>
+                      {service.name}
+                    </h3>
+                    <span
+                      className="text-sm font-semibold"
+                      style={{ color: '#B05A2A' }}
+                    >
+                      {service.price}
+                    </span>
+                    <span
+                      className="text-xs font-medium px-2.5 py-1 rounded-full"
+                      style={{ background: 'rgba(26,15,6,0.06)', color: 'rgba(26,15,6,0.5)' }}
+                    >
+                      {service.type}
+                    </span>
                   </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      ))}
-
-      {/* CTA footer */}
-      <section className="py-16 lg:py-20">
-        <div className="container mx-auto px-5 sm:px-8 max-w-2xl">
-          <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-4">
-              Ready to get started?
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Every engagement starts with a free diagnostic call. We'll map your constraints, scope the work, and give you a fixed price — no surprises.
-            </p>
-            <Link
-              href="/diagnostic"
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
-            >
-              Start your diagnostic
-            </Link>
+                <Link
+                  href={service.link}
+                  className="shrink-0 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors self-start sm:self-center whitespace-nowrap"
+                  aria-label={`Learn more about ${service.name}`}
+                >
+                  Learn more
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* ── Free build ───────────────────────────────────────────── */}
+      <section className="pb-24 lg:pb-32">
+        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
+          <div
+            className="rounded-3xl p-8 sm:p-10"
+            style={{ background: 'rgba(26,15,6,0.04)' }}
+          >
+            <h2
+              className="font-normal text-foreground mb-5"
+              style={{ fontFamily: GARAMOND, fontSize: 'clamp(24px, 3vw, 34px)' }}
+            >
+              About the free build
+            </h2>
+            <p className="text-base text-muted-foreground leading-relaxed mb-4">
+              For businesses we think are a strong fit, we&apos;ll build a small first piece of your project for free before you commit to the rest. You get real, working software in your hands, and you decide from there whether to continue.
+            </p>
+            <p className="text-base text-muted-foreground leading-relaxed">
+              Not every business qualifies. It depends on what the diagnostic finds and how clear the scope is.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ────────────────────────────���─────────────────────── */}
+      <section className="pb-24 lg:pb-32">
+        <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
+          <h2
+            className="font-normal text-foreground mb-12"
+            style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
+          >
+            Common questions
+          </h2>
+          <dl className="flex flex-col divide-y" style={{ borderColor: 'rgba(180,172,162,0.3)' }}>
+            {faqs.map((faq) => (
+              <div key={faq.q} className="py-7">
+                <dt
+                  className="font-normal text-foreground mb-3"
+                  style={{ fontFamily: GARAMOND, fontSize: '1.2rem' }}
+                >
+                  {faq.q}
+                </dt>
+                <dd className="text-base text-muted-foreground leading-relaxed">{faq.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      {/* ── Final CTA ────────────────────────────────────────────── */}
+      <section>
+        <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+          <AnchorCard
+            eyebrow="Where to start"
+            headline="Get a real number, not a guess"
+            body="Start with the diagnostic. It's free, and it's the only way to know what this would actually cost you."
+            ctaLabel="Start a Free Diagnostic"
+            ctaHref="/contact"
+          />
+        </div>
+      </section>
+
     </main>
   )
 }

@@ -43,7 +43,7 @@ export function DiagnosticApproach() {
             </div>
             <div className="mt-8">
               <Link
-                href="/#how-we-work"
+                href="/how-it-works"
                 className="inline-flex items-center gap-2 text-primary font-medium hover:underline underline-offset-4"
               >
                 See our four-step approach

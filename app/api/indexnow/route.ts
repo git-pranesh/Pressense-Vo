@@ -8,14 +8,14 @@ const HOST = 'www.pressense.co'
 const ALL_URLS = [
   // Core pages
   `https://${HOST}/`,
-  `https://${HOST}/what-we-fix`,
-  `https://${HOST}/how-we-work`,
+  `https://${HOST}/about`,
+  `https://${HOST}/how-it-works`,
   `https://${HOST}/work`,
   `https://${HOST}/playbooks`,
-  `https://${HOST}/diagnostic`,
+  `https://${HOST}/contact`,
   // Solution pages
   `https://${HOST}/advisory-strategy`,
-  `https://${HOST}/custom-internal-tools`,
+  `https://${HOST}/custom-software-internal-tools`,
   `https://${HOST}/websites-conversion-systems`,
   `https://${HOST}/crm-erp-systems`,
   `https://${HOST}/content-authority-systems`,

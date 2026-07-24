@@ -1,20 +1,5 @@
 import { client } from './sanity.client'
 
-// ─── Service Pages ─────────────────────────────────────────────────────────
-
-export async function getServicePage(slug: string) {
-  const query = `*[_type == "servicePage" && slug.current == $slug][0]{
-    _id, _type, title, slug, metaDescription, metaTitle,
-    ogImage, canonicalUrl, noIndex,
-    blocks[]{ _type, _key, ... }
-  }`
-  return await client.fetch(query, { slug })
-}
-
-export async function getAllServicePageSlugs() {
-  return await client.fetch(`*[_type == "servicePage"]{ "slug": slug.current }`)
-}
-
 // ─── Blog Posts ────────────────────────────────────────────────────────────
 
 export async function getAllBlogPosts() {

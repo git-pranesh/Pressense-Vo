@@ -12,7 +12,7 @@ const customToolsFAQs = [
     answer: (
       <>
         A custom tool is worth building when the workflow is repeated, important, painful, and not handled well by current tools. The decision point is usually one of four situations: the off-the-shelf SaaS requires so much configuration that you are essentially building in it anyway; the workflow involves multiple steps and multiple people that no single SaaS tool covers; the team has accumulated four or more tools that each handle one part of a workflow that should be unified; or per-seat SaaS pricing has become more expensive than a one-time build. See{' '}
-        <Link href="/crm-erp-systems" className="text-primary hover:underline">CRM and ERP systems</Link>{' '}
+        <Link href="/custom-crm" className="text-primary hover:underline">CRM and ERP systems</Link>{' '}
         for the data and operations side of this decision.
       </>
     ),
@@ -47,7 +47,7 @@ const customToolsFAQs = [
     answer: (
       <>
         Your dedicated Pressense developer stays available for fixes, improvements, and new workflows after launch. Support is provided through a direct channel with the developer who built the tool, not a helpdesk ticket system. Most clients start with a defined build engagement and move to a monthly retainer for ongoing iteration. The tool is a living system, not a one-time project.{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">Start with a workflow diagnostic</Link>.
+        <Link href="/contact" className="text-primary hover:underline">Start with a workflow diagnostic</Link>.
       </>
     ),
   },

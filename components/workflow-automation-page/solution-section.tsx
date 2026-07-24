@@ -97,7 +97,7 @@ export function SolutionSection() {
             operations playbooks
           </Link>
           , or{' '}
-          <Link href="/diagnostic" className="text-primary hover:underline">
+          <Link href="/contact" className="text-primary hover:underline">
             book a free diagnostic
           </Link>{' '}
           to start with your own process map.

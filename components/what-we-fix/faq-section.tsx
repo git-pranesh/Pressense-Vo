@@ -7,9 +7,9 @@ const whatWeFixFAQs = [
     answer: (
       <>
         Pressense helps with growth bottlenecks, weak positioning, revenue leakage, unclear GTM direction, manual workflows, poor{' '}
-        <Link href="/websites-conversion-systems" className="text-primary hover:underline">website communication</Link>, inconsistent{' '}
-        <Link href="/content-authority-systems" className="text-primary hover:underline">content</Link>, scattered tools, weak{' '}
-        <Link href="/crm-erp-systems" className="text-primary hover:underline">CRM visibility</Link>, and execution gaps between strategy and implementation.
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">website communication</Link>, inconsistent{' '}
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">content</Link>, scattered tools, weak{' '}
+        <Link href="/custom-crm" className="text-primary hover:underline">CRM visibility</Link>, and execution gaps between strategy and implementation.
       </>
     ),
   },
@@ -18,7 +18,7 @@ const whatWeFixFAQs = [
     answer: (
       <>
         If the team is busy but direction is unclear, the problem is usually strategic. If the direction is clear but execution breaks down, it is usually operational. Many businesses have both, which is why Pressense starts by diagnosing the full system through our{' '}
-        <Link href="/how-we-work" className="text-primary hover:underline">diagnostic process</Link>.
+        <Link href="/how-it-works" className="text-primary hover:underline">diagnostic process</Link>.
       </>
     ),
   },
@@ -27,7 +27,7 @@ const whatWeFixFAQs = [
     answer: (
       <>
         Revenue leakage happens when leads, opportunities, customers, margins, follow-ups, or delivery quality are lost because of unclear processes, weak ownership, poor visibility, or{' '}
-        <Link href="/custom-internal-tools" className="text-primary hover:underline">broken handoffs</Link>. It is often an operating problem, not just a sales problem.
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">broken handoffs</Link>. It is often an operating problem, not just a sales problem.
       </>
     ),
   },
@@ -36,7 +36,7 @@ const whatWeFixFAQs = [
     answer: (
       <>
         More marketing may not be the answer. The issue could be unclear positioning, weak website communication, poor lead qualification, inconsistent follow-up, or a mismatch between the offer and the market. Pressense helps identify the{' '}
-        <Link href="/advisory-strategy" className="text-primary hover:underline">real constraint</Link> first.
+        <Link href="/custom-software-internal-tools" className="text-primary hover:underline">real constraint</Link> first.
       </>
     ),
   },
@@ -53,7 +53,7 @@ const whatWeFixFAQs = [
     answer: (
       <>
         A full rebuild is often unnecessary. Many businesses need one high-friction workflow, page, offer, system, or decision layer fixed first. Pressense usually starts with the highest-leverage constraint instead of changing everything at once. See{' '}
-        <Link href="/how-we-work" className="text-primary hover:underline">how the diagnostic process works</Link>.
+        <Link href="/how-it-works" className="text-primary hover:underline">how the diagnostic process works</Link>.
       </>
     ),
   },

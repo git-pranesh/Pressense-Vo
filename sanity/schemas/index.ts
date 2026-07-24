@@ -1,4 +1,3 @@
-import servicePage from './service-page'
 import blogPost from './blog-post'
 import playbook from './playbook'
 import heroBlock from './hero-block'
@@ -14,7 +13,7 @@ import whoItsForBlock from './who-its-for-block'
 import videoBlock from './video-block'
 
 export const schemaTypes = [
-  servicePage, blogPost, playbook,
+  blogPost, playbook,
   heroBlock, richTextBlock, faqBlock, processStepsBlock,
   ctaBannerBlock, statsGridBlock, comparisonTableBlock,
   testimonialsBlock, imageTextBlock, whoItsForBlock, videoBlock,

@@ -15,7 +15,7 @@ const systemsFAQs = [
     answer: (
       <>
         Pricing depends on scope and engagement structure. Business systems consulting at Pressense starts from $1,500 for a consulting or advisory engagement. Full 90-day retainers covering audit, design, build, and handover are scoped after the diagnostic. Enterprise-scale or multi-department transformations are scoped separately. See our{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">
+        <Link href="/contact" className="text-primary hover:underline">
           free diagnostic
         </Link>{' '}
         for a no-obligation scope assessment.
@@ -47,7 +47,7 @@ const systemsFAQs = [
     answer: (
       <>
         Yes. Pressense is based in India and works with B2B SaaS companies, agencies, and service businesses across the US, UK, Australia, and globally. All work is done remotely. Our clients in India and the Asia-Pacific region benefit from the same methodology as our US clients. Time zone overlap is managed during onboarding.{' '}
-        <Link href="/diagnostic" className="text-primary hover:underline">
+        <Link href="/contact" className="text-primary hover:underline">
           Book a diagnostic call
         </Link>{' '}
         to discuss your situation.

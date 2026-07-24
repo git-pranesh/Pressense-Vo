@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Pressense',
+    description: 'Insights on AI automation, GTM strategy, business systems, and operational excellence for growing businesses.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 function formatDate(dateString: string): string {

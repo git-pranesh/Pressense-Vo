@@ -13,7 +13,7 @@ export function FractionalCMOCTA() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/diagnostic"
+              href="/contact"
               className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
             >
               Book a Free Diagnostic
@@ -24,7 +24,7 @@ export function FractionalCMOCTA() {
               </span>
             </Link>
             <Link
-              href="/packages"
+              href="/pricing"
               className="group inline-flex items-center gap-2 px-9 py-5 rounded-2xl text-base font-semibold border border-border/40 text-foreground hover:border-primary/40 transition-all duration-200"
             >
               View Packages

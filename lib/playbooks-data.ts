@@ -6,7 +6,7 @@ export const playbooks: PlaybookData[] = [
     title: 'Fixing the Founder Bottleneck',
     subheadline: 'A diagnostic framework for founder-led businesses where too many decisions, approvals, escalations, and workflows still depend on the founder.',
     bestFor: 'Founder-led businesses where growth creates more founder pressure instead of more leverage.',
-    relatedService: { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+    relatedService: { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
     primarySymptom: 'The business slows down when the founder is unavailable.',
     whoFor: [
       'Founders involved in too many recurring decisions',
@@ -71,11 +71,11 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the business has no clear strategy, customer segment, or offer direction, start with strategic advisory first. A founder bottleneck cannot be fixed only through delegation if the real issue is unclear business direction.',
     howPressenseHelps: [
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
-      { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
+      { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-      { name: 'How We Work', href: '/how-we-work' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'How We Work', href: '/how-it-works' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'What is a founder bottleneck?', answer: 'A founder bottleneck happens when too many decisions, approvals, relationships, or workflows depend on the founder. The business may be growing, but execution slows because the team cannot move without founder input.' },
@@ -95,7 +95,7 @@ export const playbooks: PlaybookData[] = [
     title: 'Pricing Leakage & Revenue Clarity',
     subheadline: 'A diagnostic framework for businesses that are selling, but may be losing margin through unclear pricing, discounting, weak packaging, or poor value communication.',
     bestFor: 'Businesses where revenue is active but profit, pricing confidence, or margin clarity is weak.',
-    relatedService: { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+    relatedService: { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
     primarySymptom: 'Revenue is growing, but profit does not improve proportionally.',
     whoFor: [
       'Businesses with inconsistent pricing',
@@ -161,10 +161,10 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the offer itself is unclear or the business does not know its ideal customer, pricing changes alone will not fix the problem. Start with positioning, customer clarity, and offer structure first.',
     howPressenseHelps: [
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'What is pricing leakage?', answer: 'Pricing leakage happens when the business loses value through underpricing, excessive discounts, unclear packages, poor qualification, or delivery effort that is not reflected in the price.' },
@@ -253,8 +253,8 @@ export const playbooks: PlaybookData[] = [
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'Why do sales and marketing get disconnected?', answer: 'They often work from different definitions of the buyer, offer, problem, and success. Without shared language and feedback, marketing creates activity while sales handles objections separately.' },
@@ -274,7 +274,7 @@ export const playbooks: PlaybookData[] = [
     title: 'Customer Onboarding That Sticks',
     subheadline: 'A diagnostic framework for businesses that win customers but struggle with activation, handover, education, retention, or early success.',
     bestFor: 'Businesses where customers buy but do not reach value quickly or consistently.',
-    relatedService: { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+    relatedService: { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
     primarySymptom: 'Customer success depends too much on manual guidance.',
     whoFor: [
       'Businesses with inconsistent onboarding',
@@ -340,11 +340,11 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the product or service does not clearly deliver value, onboarding will not fix the core issue. Start with product, offer, or customer-fit clarity first.',
     howPressenseHelps: [
-      { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'What is customer onboarding?', answer: 'Customer onboarding is the process that helps a new customer understand, adopt, and get value from what they purchased. Good onboarding creates clarity, confidence, and early success.' },
@@ -433,8 +433,8 @@ export const playbooks: PlaybookData[] = [
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'What is a visibility system?', answer: 'A visibility system is a repeatable way to turn expertise into market-facing content, website clarity, trust signals, and authority assets.' },
@@ -454,7 +454,7 @@ export const playbooks: PlaybookData[] = [
     title: 'Systems Audit & Debt Clearance',
     subheadline: 'A diagnostic framework for businesses slowed by spreadsheets, WhatsApp, email, disconnected SaaS tools, manual reporting, and workflows that no longer scale.',
     bestFor: 'Operations-heavy businesses that need visibility, ownership, and cleaner workflows.',
-    relatedService: { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+    relatedService: { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
     primarySymptom: 'The business is growing, but execution feels slower, messier, and harder to see.',
     whoFor: [
       'Teams using too many spreadsheets',
@@ -520,11 +520,11 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the business strategy is unclear, a systems audit may expose problems but not resolve the direction. Start with advisory if the business does not know what it is trying to scale.',
     howPressenseHelps: [
-      { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
-      { name: 'How We Work', href: '/how-we-work' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'How We Work', href: '/how-it-works' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'What is systems debt?', answer: 'Systems debt is the operational mess that builds when a business grows on top of spreadsheets, manual work, disconnected tools, unclear ownership, and undocumented processes.' },
@@ -615,9 +615,9 @@ export const playbooks: PlaybookData[] = [
     howPressenseHelps: [
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
-      { name: 'What We Fix', href: '/what-we-fix' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
+      { name: 'What We Fix', href: '/about' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'Why do good-looking websites fail?', answer: 'A website can look polished and still fail if buyers do not understand what the business does, who it helps, why it matters, and what to do next.' },
@@ -705,10 +705,10 @@ export const playbooks: PlaybookData[] = [
     whenNotRightMove: 'If the sales process itself is unclear, CRM changes will not fix it. Start with sales process, qualification, and GTM clarity before implementation.',
     howPressenseHelps: [
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-      { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'Why do CRMs fail?', answer: 'CRMs often fail because the process is unclear, fields are poorly designed, ownership is weak, data quality is low, or the team does not see value in using the system.' },
@@ -795,10 +795,10 @@ export const playbooks: PlaybookData[] = [
     whenNotRightMove: 'If the workflow is unclear, sensitive, high-risk, or too variable, AI should not be the first move. Start with process clarity, templates, or ownership rules.',
     howPressenseHelps: [
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
-      { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'What is AI workflow readiness?', answer: 'AI workflow readiness means a process has clear inputs, outputs, ownership, review standards, and enough repetition for AI to support it without creating more confusion.' },
@@ -818,7 +818,7 @@ export const playbooks: PlaybookData[] = [
     title: 'Internal Tool Readiness Playbook',
     subheadline: 'A diagnostic framework for businesses deciding whether to build custom internal software, use SaaS, automate, or simplify the process first.',
     bestFor: 'Businesses considering dashboards, portals, trackers, approval systems, CRM workflows, or operations tools.',
-    relatedService: { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+    relatedService: { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
     primarySymptom: 'The team knows a workflow is painful but is unsure whether software is the right fix.',
     whoFor: [
       'Businesses outgrowing spreadsheets',
@@ -884,11 +884,11 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'Do not build an internal tool if the workflow is unclear, the team is not ready, SaaS solves the problem, or the issue is strategic rather than operational.',
     howPressenseHelps: [
-      { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
       { name: 'AI Workflows', href: '/ai-workflows-automation' },
-      { name: 'How We Work', href: '/how-we-work' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'How We Work', href: '/how-it-works' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'When should a business build an internal tool?', answer: 'Build when the workflow is repeated, important, painful, involves multiple people, affects revenue or delivery, and is not handled well by current tools.' },
@@ -908,7 +908,7 @@ export const playbooks: PlaybookData[] = [
     title: 'GTM Clarity Reset',
     subheadline: 'A diagnostic framework for businesses where marketing, sales, positioning, audience, offer, and channel decisions feel active but scattered.',
     bestFor: 'Founder-led businesses entering a market, repositioning, or trying to make growth more focused.',
-    relatedService: { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+    relatedService: { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
     primarySymptom: 'The business is doing growth activity, but the direction feels unclear.',
     whoFor: [
       'Founders unsure who to target first',
@@ -975,11 +975,11 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the business has no capacity to execute, a GTM reset may create clarity but not momentum. Fix team ownership and operating rhythm alongside GTM strategy.',
     howPressenseHelps: [
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'Content & Authority', href: '/content-authority-systems' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'What is GTM clarity?', answer: 'GTM clarity means the business knows who it is targeting, what problem it solves, how to position the offer, what message to lead with, and which channels deserve focus.' },
@@ -999,7 +999,7 @@ export const playbooks: PlaybookData[] = [
     title: 'Revenue Leakage Diagnostic',
     subheadline: 'A diagnostic framework for businesses where leads, follow-ups, margins, handoffs, customer opportunities, or delivery quality are being lost through unclear systems.',
     bestFor: 'Businesses that are busy but suspect revenue is slipping through operational gaps.',
-    relatedService: { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+    relatedService: { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
     primarySymptom: 'The business is generating activity, but too much value is being lost before, during, or after the sale.',
     whoFor: [
       'Businesses with missed follow-ups',
@@ -1067,11 +1067,11 @@ export const playbooks: PlaybookData[] = [
     ],
     whenNotRightMove: 'If the business does not have enough demand yet, revenue leakage may not be the main constraint. Start with GTM clarity, positioning, website, or content before optimizing leakage.',
     howPressenseHelps: [
-      { name: 'Advisory & Strategy', href: '/advisory-strategy' },
+      { name: 'Advisory & Strategy', href: '/custom-software-internal-tools' },
       { name: 'CRM & ERP Systems', href: '/crm-erp-systems' },
-      { name: 'Custom Internal Tools', href: '/custom-internal-tools' },
+      { name: 'Custom Internal Tools', href: '/custom-software-internal-tools' },
       { name: 'Websites & Conversion', href: '/websites-conversion-systems' },
-      { name: 'Start Diagnostic', href: '/diagnostic' },
+      { name: 'Start Diagnostic', href: '/contact' },
     ],
     faqs: [
       { question: 'What is revenue leakage?', answer: 'Revenue leakage is value lost through missed leads, slow follow-up, poor qualification, excessive discounting, weak handoffs, unclear margins, delivery inefficiency, or poor retention.' },

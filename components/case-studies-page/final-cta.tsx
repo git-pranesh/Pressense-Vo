@@ -31,7 +31,7 @@ export function CaseStudiesFinalCTA() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/diagnostic"
+              href="/contact"
               className="group inline-flex items-center gap-3 px-9 py-5 rounded-2xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent"
               aria-label="Start a diagnostic"
             >
@@ -56,7 +56,7 @@ export function CaseStudiesFinalCTA() {
             </Link>
 
             <Link
-              href="/how-we-work"
+              href="/how-it-works"
               className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-medium border border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 transition-all duration-200"
               aria-label="Learn more about our methodology"
             >

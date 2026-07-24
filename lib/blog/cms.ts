@@ -278,7 +278,7 @@ The fastest path to value:
 4. Map one workflow in detail
 5. Build a proof of concept
 
-If you need help identifying opportunities or building your first AI workflow, [start with a diagnostic](/diagnostic).
+If you need help identifying opportunities or building your first AI workflow, [start with a diagnostic](/contact).
       `,
       publishedAt: '2024-01-15T10:00:00Z',
       author: { name: 'Pressense' },
@@ -382,7 +382,7 @@ The fix is not more tools. It is:
 4. Build in checkpoints and visibility
 5. Train and enforce
 
-If you are seeing these signs, [start with a diagnostic](/diagnostic) to identify your highest-impact system improvements.
+If you are seeing these signs, [start with a diagnostic](/contact) to identify your highest-impact system improvements.
       `,
       publishedAt: '2024-01-05T10:00:00Z',
       author: { name: 'Pressense' },

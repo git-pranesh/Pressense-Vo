@@ -4,76 +4,80 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Light warm palette — Perplexity-inspired */
-  --background: #F3F0EC;                /* warm off-white — main bg */
-  --foreground: #0A0A0A;                /* near-black text */
-  --card: #EDE9E3;                      /* slightly darker cream for cards */
-  --card-foreground: #0A0A0A;
-  --popover: #EDE9E3;
-  --popover-foreground: #0A0A0A;
-  --primary: #0A0A0A;                   /* black — buttons, CTAs */
-  --primary-foreground: #F3F0EC;        /* warm white text on black */
-  --secondary: #E5E1DA;                 /* muted cream — secondary surfaces */
-  --secondary-foreground: #0A0A0A;
-  --muted: #E8E4DD;                     /* muted background areas */
-  --muted-foreground: #6B6560;          /* warm medium grey — captions, meta */
-  --accent: #1A1A1A;                    /* near-black accent */
-  --accent-foreground: #F3F0EC;
+  /* Claura-matched dusty warm palette */
+  --background: #EDEBE5;                /* dusty warm grey-cream — Claura's exact tone */
+  --foreground: #1A0F06;                /* deep near-black brown — richer than before */
+  --card: #E5E2DB;                      /* slightly darker dusty card surface */
+  --card-foreground: #1A0F06;
+  --popover: #E5E2DB;
+  --popover-foreground: #1A0F06;
+  --primary: #1A0F06;                   /* deep brown — buttons, CTAs */
+  --primary-foreground: #EDEBE5;        /* dusty cream text on dark brown */
+  --secondary: #E0DDD6;                 /* muted dusty surface */
+  --secondary-foreground: #1A0F06;
+  --muted: #E0DDD6;                     /* muted background areas */
+  --muted-foreground: #6B5D51;          /* cooler, more muted warm brown */
+  --accent: #1A0F06;
+  --accent-foreground: #EDEBE5;
   --destructive: #C0392B;
-  --destructive-foreground: #F3F0EC;
-  --border: #D4CFC8;                    /* warm light grey borders */
-  --input: #E5E1DA;
-  --ring: #0A0A0A;
+  --destructive-foreground: #EDEBE5;
+  --border: rgba(180, 172, 162, 0.25);  /* near-invisible — whitespace separates sections */
+  --input: #E0DDD6;
+  --ring: #1A0F06;
   --radius: 0.75rem;
 
   /* Custom tokens */
-  --surface: #EDE9E3;
-  --surface-border: #D4CFC8;
-  --highlight: #1A1A1A;
-  --text-dim: #9B958F;                  /* dimmed warm grey */
-  --grid-line: #D8D4CD;
+  --surface: #E5E2DB;
+  --surface-border: #D4CFC7;
+  --highlight: #2E1A0A;                 /* hover state for primary buttons */
+  --text-dim: #9A8C80;                  /* dimmed warm brown */
+  --grid-line: #D4CFC7;
+  --button-bg: #1A0F06;
+  --button-radius: 9999px;
+  --radius: 0.75rem;
 
-  --chart-1: #0A0A0A;
-  --chart-2: #6B6560;
-  --chart-3: #9B958F;
-  --chart-4: #C4BFB8;
-  --chart-5: #3D3A36;
-  --sidebar: #EDE9E3;
-  --sidebar-foreground: #0A0A0A;
-  --sidebar-primary: #0A0A0A;
-  --sidebar-primary-foreground: #F3F0EC;
-  --sidebar-accent: #E5E1DA;
-  --sidebar-accent-foreground: #0A0A0A;
-  --sidebar-border: #D4CFC8;
-  --sidebar-ring: #0A0A0A;
+  --chart-1: #2B180A;
+  --chart-2: #7A6555;
+  --chart-3: #A08878;
+  --chart-4: #C4B5A5;
+  --chart-5: #4A2E18;
+  --sidebar: #F3EBE0;
+  --sidebar-foreground: #2B180A;
+  --sidebar-primary: #2B180A;
+  --sidebar-primary-foreground: #FCF6EF;
+  --sidebar-accent: #EDE3D6;
+  --sidebar-accent-foreground: #2B180A;
+  --sidebar-border: #DDD3C4;
+  --sidebar-ring: #2B180A;
 }
 
 /* Keep studio dark — Sanity's own theme handles /studio */
 .dark {
-  --background: #F3F0EC;
-  --foreground: #0A0A0A;
-  --card: #EDE9E3;
-  --card-foreground: #0A0A0A;
-  --popover: #EDE9E3;
-  --popover-foreground: #0A0A0A;
-  --primary: #0A0A0A;
-  --primary-foreground: #F3F0EC;
-  --secondary: #E5E1DA;
-  --secondary-foreground: #0A0A0A;
-  --muted: #E8E4DD;
-  --muted-foreground: #6B6560;
-  --accent: #1A1A1A;
-  --accent-foreground: #F3F0EC;
+  --background: #EDEBE5;
+  --foreground: #1A0F06;
+  --card: #E5E2DB;
+  --card-foreground: #1A0F06;
+  --popover: #E5E2DB;
+  --popover-foreground: #1A0F06;
+  --primary: #1A0F06;
+  --primary-foreground: #EDEBE5;
+  --secondary: #E0DDD6;
+  --secondary-foreground: #1A0F06;
+  --muted: #E0DDD6;
+  --muted-foreground: #6B5D51;
+  --accent: #1A0F06;
+  --accent-foreground: #EDEBE5;
   --destructive: #C0392B;
-  --destructive-foreground: #F3F0EC;
-  --border: #D4CFC8;
-  --input: #E5E1DA;
-  --ring: #0A0A0A;
+  --destructive-foreground: #EDEBE5;
+  --border: rgba(180, 172, 162, 0.25);
+  --input: #E0DDD6;
+  --ring: #1A0F06;
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Geist', 'Geist Fallback', sans-serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-sans: var(--font-geist), 'Inter', sans-serif;
+  --font-heading: var(--font-halant), 'EB Garamond', Georgia, serif;
+  --font-mono: 'Geist Mono', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -117,25 +121,96 @@
   --color-highlight: var(--highlight);
   --color-text-dim: var(--text-dim);
   --color-grid-line: var(--grid-line);
+  --color-button-bg: var(--button-bg);
+  --color-button-radius: var(--button-radius);
 
   /* Ensure ring/focus colors resolve to dark, not purple */
   --color-ring: var(--ring);
 }
 
+/* Runtime font custom properties — @theme inline tokens are compile-time only
+   in Tailwind v4 and do not emit real CSS custom properties at runtime.
+   Declaring them here (after @theme inline) gives var(--font-heading) and
+   var(--font-sans) real cascade values for the @layer base h1-h6 rule. */
+:root {
+  --font-heading: var(--font-halant), 'EB Garamond', Georgia, serif;
+  --font-sans: var(--font-geist), 'Inter', sans-serif;
+}
+
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
+  }
+  *:focus-visible {
+    @apply outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "EB Garamond", Georgia, serif;
+    font-weight: 400;
+  }
+  a, button {
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
   }
 }
 
-/* Light mode card — paper-like with soft shadow instead of glass */
+/* Hard override outside of @layer — beats every Tailwind utility */
+h1, h2, h3, h4, h5, h6,
+.heading-font {
+  font-family: "EB Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
+}
+
+/* Shared card — lifts visually above the dusty page background */
 .glass-card {
-  background: #EDE9E3;
-  border: 1px solid #D4CFC8;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  background: #E8E5DE;
+  border: 1px solid #D4CFC7;
+  border-radius: 18px;
+  padding: 36px;
+  box-shadow: 0 2px 8px rgba(26, 15, 6, 0.05), 0 1px 2px rgba(26, 15, 6, 0.04);
+}
+
+/* Primary button — deep brown, dusty cream text, 12px radius */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 12px 24px;
+  background: #1A0F06;
+  color: #EDEBE5;
+  font-family: var(--font-geist), 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.btn-primary:hover {
+  background: #2E1A0A;
+}
+
+/* Eyebrow pill tag — Claura-style small rounded label above headings */
+.eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid #B8B0A6;
+  background: transparent;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6B5D51;
+  margin-bottom: 1.25rem;
+  font-family: var(--font-geist), 'Inter', sans-serif;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
 
 /* Subtle grid background — very light on warm white */

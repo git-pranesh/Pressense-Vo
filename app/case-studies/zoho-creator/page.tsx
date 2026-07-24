@@ -1,33 +1,34 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageStructuredData } from '@/components/page-structured-data'
+import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
-  title: 'Zoho Creator GTM Case Study | Pressense',
+  title: 'The GTM System That Carries an Enterprise Buyer | Pressense',
   description:
-    'How Pressense built a reusable GTM and content system for Zoho Creator — enterprise buyer education, competitive intelligence, and search-led lead generation.',
+    'How Pressense built a reusable GTM and content system for a leading low-code platform: enterprise buyer education, competitive intelligence, and search-led lead generation.',
   openGraph: {
-    title: 'Zoho Creator GTM Case Study | Pressense',
+    title: 'The GTM System That Carries an Enterprise Buyer | Pressense',
     description:
-      'How Pressense built a reusable GTM and content system for Zoho Creator — enterprise buyer education, competitive intelligence, and search-led lead generation.',
+      'How Pressense built a reusable GTM and content system for a leading low-code platform: enterprise buyer education, competitive intelligence, and search-led lead generation.',
     url: '/case-studies/zoho-creator',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense — Zoho Creator Case Study' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Pressense GTM Case Study' }],
   },
   alternates: {
     canonical: '/case-studies/zoho-creator',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zoho Creator GTM Case Study | Pressense',
+    title: 'The GTM System That Carries an Enterprise Buyer | Pressense',
     description:
-      'How Pressense built a reusable GTM and content system for Zoho Creator — enterprise buyer education, competitive intelligence, and search-led lead generation.',
+      'How Pressense built a reusable GTM and content system for a leading low-code platform: enterprise buyer education, competitive intelligence, and search-led lead generation.',
     images: ['/og-image.jpg'],
   },
 }
 
 const engagementMeta = [
-  { label: 'Client', value: 'Zoho Creator' },
+  { label: 'Client', value: 'Enterprise Software / Low-Code' },
   { label: 'Industry', value: 'Enterprise Software / Low-Code' },
   { label: 'Engagement', value: 'Embedded GTM Partner' },
   { label: 'Duration', value: 'Multi-year retainer' },
@@ -52,7 +53,7 @@ const deliverables = [
   {
     title: 'Cross-sell landing page strategy',
     description:
-      'Positioning frameworks for how Zoho Creator should sit next to adjacent products in the Zoho suite, built around an "extension, not replacement" logic so that cross-sell content grew usage without undercutting any single product\'s story.',
+      'Positioning frameworks for how the client should sit next to adjacent products in the product suite, built around an "extension, not replacement" logic so that cross-sell content grew usage without undercutting any single product\'s story.',
   },
   {
     title: 'Enterprise lead-generation strategy',
@@ -80,7 +81,7 @@ const approachLayers = [
   {
     number: '04',
     heading: 'Cross-sell and ecosystem positioning',
-    body: 'Messaging that let Zoho Creator sit naturally alongside other products in the Zoho suite, expanding usage without making any one product sound incomplete.',
+    body: "Messaging that let the client's products sit naturally alongside other products in the product suite, expanding usage without making any one product sound incomplete.",
   },
   {
     number: '05',
@@ -93,26 +94,20 @@ export default function ZohoCreatorCaseStudy() {
   return (
     <>
       <PageStructuredData
-        pageName="Zoho Creator GTM Case Study"
-        pageDescription="How Pressense built a reusable GTM and content system for Zoho Creator — enterprise buyer education, competitive intelligence, and search-led lead generation."
+        pageName="The GTM System That Carries an Enterprise Buyer"
+        pageDescription="How Pressense built a reusable GTM and content system for a leading low-code platform: enterprise buyer education, competitive intelligence, and search-led lead generation."
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: 'Case Studies', url: '/case-studies' },
-          { name: 'Zoho Creator', url: '/case-studies/zoho-creator' },
+          { name: 'The GTM System That Carries an Enterprise Buyer', url: '/case-studies/zoho-creator' },
         ]}
       />
 
       <main className="min-h-screen">
 
         {/* Hero */}
-        <section
-          className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden border-b border-border/40"
-          aria-label="Case study introduction"
-        >
-          <div className="absolute inset-0 grid-bg opacity-40" aria-hidden="true" />
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/4 rounded-full blur-3xl" aria-hidden="true" />
-
-          <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+        <section className="border-b border-border pt-24 pb-0" aria-label="Case study introduction">
+          <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
             {/* Breadcrumb */}
             <nav aria-label="Breadcrumb" className="mb-8">
               <ol className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -126,37 +121,32 @@ export default function ZohoCreatorCaseStudy() {
                     <path d="M4.5 2.5L7.5 6l-3 3.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </li>
-                <li className="text-foreground font-medium" aria-current="page">Zoho Creator</li>
+                <li className="text-foreground font-medium" aria-current="page">The GTM System That Carries an Enterprise Buyer</li>
               </ol>
             </nav>
 
-            <div className="max-w-4xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-5">
-                Enterprise Software / Low-Code
-              </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
-                Building a go-to-market system for Zoho Creator
+            <div className="pt-4 pb-16 max-w-2xl">
+              <span className="eyebrow-pill">Enterprise Software / Low-Code</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.05] mb-6 text-balance">
+                The GTM system that carries an enterprise buyer
               </h1>
-              <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-10">
                 Low-code platforms sell into two audiences at once. The end user wants to build something in an afternoon. The decision-maker wants to know how it behaves at 10,000 users, under audit, with three integrations bolted on. Most GTM content is written for one of them. We built a system that works for both.
               </p>
-            </div>
-
-            {/* Engagement meta */}
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-              {engagementMeta.map((item) => (
-                <div key={item.label} className="glass-card rounded-xl p-4 border border-border/50">
-                  <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-1.5">
-                    {item.label}
-                  </p>
-                  <p className="text-sm font-semibold text-foreground">{item.value}</p>
-                </div>
-              ))}
+              {/* Engagement meta */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {engagementMeta.map((item) => (
+                  <div key={item.label} className="rounded-xl p-4 border border-border bg-secondary/40">
+                    <p className="text-xs font-medium text-muted-foreground mb-1">{item.label}</p>
+                    <p className="text-sm font-semibold text-foreground">{item.value}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Body — two-column layout on large screens */}
+        {/* Body, two-column layout on large screens */}
         <section className="py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="grid lg:grid-cols-[1fr_340px] gap-16 items-start">
@@ -173,7 +163,7 @@ export default function ZohoCreatorCaseStudy() {
                     The product was mature. The GTM system around it was not.
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
-                    Zoho Creator is a low-code application platform serving enterprise and mid-market customers. The product was strong. The differentiation was real. But the content and GTM system around it was not built to carry an enterprise buyer from first search to internal business case.
+                    The client is a low-code application platform serving enterprise and mid-market customers. The product was strong. The differentiation was real. But the content and GTM system around it was not built to carry an enterprise buyer from first search to internal business case.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
                     Comparison content was thin. Competitive positioning existed in slide decks, not in anything a prospect could find or a sales rep could point to. And the website was not doing the work a modern enterprise buyer expects a vendor site to do before they ever speak to sales.
@@ -262,13 +252,13 @@ export default function ZohoCreatorCaseStudy() {
                     From ad hoc production to a compounding system
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
-                    The engagement produced a reusable GTM and content system for Zoho Creator: technical education, competitive positioning, decision-stage content, and cross-sell messaging designed to work together rather than as disconnected deliverables.
+                    The engagement produced a reusable GTM and content system for the client: technical education, competitive positioning, decision-stage content, and cross-sell messaging designed to work together rather than as disconnected deliverables.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed mb-5">
                     Specific content topics and performance figures from this engagement are confidential and cannot be published here.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    What can be said: the work moved Zoho Creator from ad hoc content production to a structured, repeatable system for enterprise buyer education, competitive positioning, and lead generation — one built to keep compounding after the engagement itself.
+                    What can be said: the work moved the client from ad hoc content production to a structured, repeatable system for enterprise buyer education, competitive positioning, and lead generation, one built to keep compounding after the engagement itself.
                   </p>
                 </div>
 
@@ -284,7 +274,7 @@ export default function ZohoCreatorCaseStudy() {
                     It loses because the buyer can not find, trust, or defend the information they need before a decision gets made internally.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    That is the gap Pressense closed for Zoho Creator: not content for its own sake, but the research, positioning, and infrastructure that let a technical buyer do their own diligence and arrive at a confident decision — with Zoho Creator already ahead in that process.
+                    That is the gap Pressense closed for the client: not content for its own sake, but the research, positioning, and infrastructure that let a technical buyer do their own diligence and arrive at a confident decision, with the client already ahead in that process.
                   </p>
                 </div>
 
@@ -322,7 +312,7 @@ export default function ZohoCreatorCaseStudy() {
                       The diagnostic takes 20 minutes and tells you exactly where your GTM system is leaking.
                     </p>
                     <Link
-                      href="/diagnostic"
+                      href="/contact"
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-highlight transition-colors duration-200 w-full justify-center"
                     >
                       Start diagnostic
@@ -351,35 +341,19 @@ export default function ZohoCreatorCaseStudy() {
         </section>
 
         {/* Bottom CTA */}
-        <section className="py-20 lg:py-28 border-t border-border/40">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
-            <div className="max-w-2xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
-                Work with us
-              </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight mb-4 text-balance">
-                Want to know if your GTM system has the same gaps?
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                The diagnostic takes 20 minutes. It tells you exactly where the gap is and what to fix first.
-              </p>
-              <div className="flex flex-wrap items-center gap-4">
-                <Link
-                  href="/diagnostic"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
-                >
-                  Start your diagnostic
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                    <path d="M2 7h10M8 3.5L11.5 7 8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </Link>
-                <Link
-                  href="/case-studies"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-                >
-                  Back to case studies
-                </Link>
-              </div>
+        <section>
+          <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+            <AnchorCard
+              eyebrow="Work with us"
+              headline="Want to know if your GTM system has the same gaps?"
+              body="The diagnostic takes 20 minutes. It tells you exactly where the gap is and what to fix first."
+              ctaLabel="Start your diagnostic"
+              ctaHref="/contact"
+            />
+            <div className="mt-6">
+              <Link href="/case-studies" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200">
+                ← Back to case studies
+              </Link>
             </div>
           </div>
         </section>

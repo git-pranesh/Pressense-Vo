@@ -24,7 +24,7 @@ const cmoFAQs = [
   },
   {
     question: 'What if the automation breaks or our workflow changes?',
-    answer: (<>We handle ongoing support and adjustments. Workflows change as businesses grow and we build with that in mind. Most clients keep a retainer for maintenance, monitoring, and iterative improvements. <Link href="/diagnostic" className="text-primary hover:underline">Talk to us about ongoing support</Link>.</>),
+    answer: (<>We handle ongoing support and adjustments. Workflows change as businesses grow and we build with that in mind. Most clients keep a retainer for maintenance, monitoring, and iterative improvements. <Link href="/contact" className="text-primary hover:underline">Talk to us about ongoing support</Link>.</>),
   },
 ]
 

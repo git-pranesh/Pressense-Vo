@@ -399,7 +399,7 @@ export function PlaybookDetails() {
               {/* CTA */}
               <div className="pt-8 border-t border-border/40">
                 <a
-                  href={`/diagnostic?constraint=${playbook.id}`}
+                  href={`/contact?constraint=${playbook.id}`}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-base font-medium bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200"
                 >
                   Diagnose This Constraint

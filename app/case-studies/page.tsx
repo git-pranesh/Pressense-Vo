@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageStructuredData } from '@/components/page-structured-data'
+import { CaseStudyCard } from '@/components/case-study-card'
+import { AnchorCard } from '@/components/anchor-card'
 
 export const metadata: Metadata = {
   title: 'Case Studies | Pressense',
   description:
-    'Real GTM, strategy, and content engagements from Pressense. Including work with Zoho Creator and OneMagnify — see what we found and what we built to fix it.',
+    'Real GTM, strategy, and content engagements from Pressense. Including work with Zoho Creator and OneMagnify, see what we found and what we built to fix it.',
   openGraph: {
     title: 'Case Studies | Pressense',
     description:
@@ -29,23 +31,73 @@ export const metadata: Metadata = {
 const caseStudies = [
   {
     slug: 'zoho-creator',
-    client: 'Zoho Creator',
+    client: 'The GTM System That Carries an Enterprise Buyer',
     industry: 'Enterprise Software / Low-Code',
     engagementType: 'Embedded GTM Partner',
     duration: 'Multi-year retainer',
     summary:
-      "Low-code platforms sell into two audiences at once. Zoho Creator had a mature product and real differentiation — but the GTM system around it wasn't built to carry an enterprise buyer from first search to internal business case. We built it.",
+      "Low-code platforms sell into two audiences at once. The client had a mature product and real differentiation, but the GTM system around it was not built to carry an enterprise buyer from first search to internal business case. We built it.",
     tags: ['GTM Systems', 'SEO / AEO', 'Competitive Intelligence', 'Content Strategy'],
   },
   {
     slug: 'onemagnify',
-    client: 'OneMagnify',
+    client: '250 Pages. One Standard. Zero Shortcuts.',
     industry: 'Global Marketing & CX',
     engagementType: 'Embedded Content & SEO Delivery Partner',
     duration: 'Website migration project',
     summary:
       'A 250+ page platform migration from Webflow to HubSpot CMS needed more than new templates. It needed content built page for page, service line by service line, to a single editorial and SEO standard. We were the specialist delivery layer that made that possible.',
     tags: ['Content at Scale', 'SEO Architecture', 'Platform Migration', 'Editorial Governance'],
+  },
+  {
+    slug: 'two-location-clinic',
+    client: '140 Hours of Admin, Automated',
+    industry: 'Private Healthcare, Australia',
+    engagementType: 'Workflow Blueprint',
+    duration: 'Internal tools engagement',
+    summary:
+      '105 staff hours released every month. A$53,000 in annual capacity recovered. A two-location specialist clinic was losing 140 hours a month to manual referral admin. We mapped the workflow, quantified the cost, and built the missing operational layer.',
+    tags: ['Workflow Automation', 'Internal Tools', 'Healthcare', 'Operational Efficiency'],
+  },
+  {
+    slug: 'commercial-contractor',
+    client: '116 Hours Recovered. Seven Days Faster.',
+    industry: 'Commercial Construction, Sydney',
+    engagementType: 'Commercial Workflow System',
+    duration: 'Internal tools engagement',
+    summary:
+      '72% reduction in commercial administration. 116 staff hours released every month. A$91,000 in annual capacity. A$360,000 working-capital timing improvement. A Sydney contractor was losing 161 hours a month to spreadsheets, email chains and manual reconciliation. We built the missing commercial-control layer.',
+    tags: ['Custom Software', 'Workflow Automation', 'Construction', 'Commercial Operations'],
+  },
+  {
+    slug: 'ontario-distributor',
+    client: '479 Hours of Order Admin, Automated',
+    industry: 'Industrial Distribution, Ontario',
+    engagementType: 'Order and Operations Control System',
+    duration: 'Internal tools engagement',
+    summary:
+      '78% faster order processing. 354 staff hours released every month. C$182,000 in annual capacity. 21% order-volume growth without hiring. A family-owned Ontario distributor was losing 479 hours a month across email chains, pricing spreadsheets and manual ERP entry. We built the missing commercial layer.',
+    tags: ['Custom Software', 'Workflow Automation', 'Distribution', 'Order Operations'],
+  },
+  {
+    slug: 'interior-design-crm',
+    client: 'The Sales Process That Enforces Itself',
+    industry: 'Interior Design & Home Renovation, India',
+    engagementType: 'Custom CRM Build',
+    duration: 'Internal tools engagement',
+    summary:
+      'Six mandatory gates. Hourly SLA breach detection. 100% discount traceability. 14 live management reports. A growing interior design company was running its sales process through a master spreadsheet and employee memory. We replaced it with a system that makes the process unavoidable.',
+    tags: ['Custom CRM', 'Workflow Automation', 'Sales Operations', 'Interior Design'],
+  },
+  {
+    slug: 'interiors-quotation-platform',
+    client: 'Seven Pricing Sheets, One Controlled Platform',
+    industry: 'Architecture and Interiors, Bangalore',
+    engagementType: 'Custom Quotation Platform',
+    duration: 'Internal tools engagement',
+    summary:
+      '335 client records centralised. 19 users across three governed roles. 78–104 hours of monthly capacity released. A Bangalore architecture and interiors firm was running its entire commercial process through seven Google Sheets. We built the missing controlled quotation layer around the way the business already priced and delivered projects.',
+    tags: ['Custom Software', 'Quotation Platform', 'Architecture', 'Interiors'],
   },
 ]
 
@@ -62,136 +114,67 @@ export default function CaseStudiesPage() {
       />
 
       <main className="min-h-screen">
-        {/* Hero */}
-        <section
-          className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden"
-          aria-label="Case studies introduction"
-        >
-          <div className="absolute inset-0 grid-bg opacity-40" aria-hidden="true" />
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" aria-hidden="true" />
 
-          <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
-            <div className="max-w-3xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-6">
-                Case Studies
-              </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.08] mb-6 text-balance">
-                We don&apos;t share testimonials.{' '}
-                <span className="text-muted-foreground font-light">
-                  We share what we fixed, and how.
-                </span>
-              </h1>
-              <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Every engagement starts with a broken system. Here is what we found — and what we built to fix it.
-              </p>
+        {/* ── Hero ─────────────────────────────────────────────── */}
+        <section className="pt-24 pb-10">
+          <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+            <div
+              className="relative w-full rounded-3xl overflow-hidden"
+              style={{ backgroundImage: 'url(/images/secondary-hero-bg-opt.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
+              <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.48)' }} aria-hidden="true" />
+              <div className="relative z-10 px-6 py-10 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+                <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Case Studies</span>
+                <h1
+                  className="font-normal leading-[1.05] text-balance mb-6"
+                  style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(26px, 5vw, 58px)', color: '#EDEBE5' }}
+                >
+                  Inside the fix.
+                </h1>
+                <p className="text-lg leading-relaxed max-w-xl" style={{ color: 'rgba(237,235,229,0.72)' }}>
+                  Every engagement starts with a broken system. Here is what we found, and what we built to fix it.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Card grid */}
-        <section
-          className="py-20 lg:py-28"
-          aria-labelledby="case-studies-grid-heading"
-        >
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        {/* ── Card grid ────────────────────────────────────────── */}
+        <section className="py-16 lg:py-20" aria-labelledby="case-studies-grid-heading">
+          <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
             <h2 className="sr-only" id="case-studies-grid-heading">All case studies</h2>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {caseStudies.map((study) => (
-                <article
+            <div className="grid lg:grid-cols-2 gap-5">
+              {caseStudies.map((study, i) => (
+                <CaseStudyCard
                   key={study.slug}
-                  className="glass-card rounded-2xl border border-border/50 p-8 flex flex-col gap-6 group hover:border-border transition-colors duration-200"
-                >
-                  {/* Client + meta */}
-                  <div className="flex flex-col gap-3">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-1.5">
-                          {study.industry}
-                        </p>
-                        <h3 className="text-2xl font-semibold text-foreground">
-                          {study.client}
-                        </h3>
-                      </div>
-                    </div>
+                  slug={study.slug}
+                  client={study.client}
+                  industry={study.industry}
+                  engagementType={study.engagementType}
+                  duration={study.duration}
+                  summary={study.summary}
+                  tags={study.tags}
 
-                    {/* Engagement meta row */}
-                    <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                      <span className="flex items-center gap-1.5">
-                        <span className="w-1 h-1 rounded-full bg-muted-foreground/50 inline-block" aria-hidden="true" />
-                        {study.engagementType}
-                      </span>
-                      <span className="flex items-center gap-1.5">
-                        <span className="w-1 h-1 rounded-full bg-muted-foreground/50 inline-block" aria-hidden="true" />
-                        {study.duration}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Divider */}
-                  <div className="border-t border-border/40" />
-
-                  {/* Summary */}
-                  <p className="text-base text-muted-foreground leading-relaxed flex-1">
-                    {study.summary}
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {study.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs font-medium px-3 py-1 rounded-full bg-secondary text-foreground/70 border border-border/50"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* CTA */}
-                  <Link
-                    href={`/case-studies/${study.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-muted-foreground transition-colors duration-200 group-hover:gap-3"
-                    aria-label={`Read the ${study.client} case study`}
-                  >
-                    Read case study
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                      <path d="M2 7h10M8 3.5L11.5 7 8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </Link>
-                </article>
+                />
               ))}
-
-
             </div>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-20 lg:py-28 border-t border-border/40">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
-            <div className="max-w-2xl">
-              <p className="text-xs font-semibold tracking-widest uppercase text-primary/70 mb-4">
-                Work with us
-              </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight mb-4 text-balance">
-                Want to know if your system has the same problems?
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                The diagnostic takes 20 minutes. It tells you exactly where the gap is and what to fix first.
-              </p>
-              <Link
-                href="/diagnostic"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-highlight transition-colors duration-200 text-base"
-              >
-                Start your diagnostic
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M2 7h10M8 3.5L11.5 7 8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </Link>
-            </div>
+        {/* ── Final CTA ─────────────────────────────────────────── */}
+        <section>
+          <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
+            <AnchorCard
+              eyebrow="Work with us"
+              headline="Want to know if your system has the same problems?"
+              body="The diagnostic takes 20 minutes. It tells you exactly where the gap is and what to fix first."
+              ctaLabel="Start your diagnostic"
+              ctaHref="/contact"
+            />
           </div>
         </section>
+
       </main>
     </>
   )
