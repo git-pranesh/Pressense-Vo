@@ -306,8 +306,15 @@ export default function HomePage() {
             {/* Other agencies card */}
             <div
               className="rounded-3xl p-8 flex flex-col gap-6 overflow-hidden relative"
-              style={{ background: '#1A0F06', minHeight: '420px' }}
+              style={{
+                backgroundImage: 'url(/images/comparison-agencies-opt.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                minHeight: '420px',
+              }}
             >
+              {/* Dark overlay for text legibility */}
+              <div className="absolute inset-0 rounded-3xl" style={{ background: 'rgba(10,6,2,0.55)' }} aria-hidden="true" />
               <div className="flex flex-wrap gap-2 relative z-10">
                 {['Slow delivery', 'Vague scope', 'No diagnosis', 'Template solutions', 'Hidden costs'].map((tag) => (
                   <span
@@ -333,10 +340,14 @@ export default function HomePage() {
             <div
               className="rounded-3xl p-8 flex flex-col gap-6 overflow-hidden relative"
               style={{
-                background: 'linear-gradient(135deg, #C45A1A 0%, #E8804A 40%, #F4A96A 100%)',
+                backgroundImage: 'url(/images/comparison-pressense-opt.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
                 minHeight: '420px',
               }}
             >
+              {/* Light overlay so white text stays readable over the pale teal */}
+              <div className="absolute inset-0 rounded-3xl" style={{ background: 'rgba(8,40,38,0.35)' }} aria-hidden="true" />
               <div className="flex flex-wrap gap-2 relative z-10">
                 {['Diagnostic first', 'Fixed scope', 'Real ownership', 'Fast shipping', 'Free first piece'].map((tag) => (
                   <span
