@@ -247,27 +247,33 @@ export default function CommercialContractorCaseStudy() {
             <p className="text-xs font-semibold tracking-widest uppercase mb-8" style={{ color: '#6B5D51' }}>
               Outcome
             </p>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-border/40">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {outcomeStats.map((s) => (
-                <div key={s.label} className="bg-background p-8">
-                  <p
-                    className="font-bold leading-none mb-2"
-                    style={{ fontFamily: GARAMOND, fontSize: 'clamp(32px, 4vw, 52px)', color: '#1A0F06' }}
+                <div
+                  key={s.label}
+                  className="rounded-2xl p-5 lg:p-7 border flex flex-col gap-2"
+                  style={{ background: '#E8E5DF', borderColor: '#D4CFC7' }}
+                >
+                  <span
+                    className="font-normal leading-none"
+                    style={{ fontFamily: GARAMOND, fontSize: 'clamp(32px, 4vw, 48px)', color: '#1A0F06' }}
                   >
                     {s.value}
-                  </p>
-                  <p className="text-sm leading-snug" style={{ color: '#6B5D51' }}>{s.label}</p>
+                  </span>
+                  <span className="text-sm leading-snug" style={{ color: '#6B5D51' }}>
+                    {s.label}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ── Main content + sidebar ─────────────────────────────────── */}
+        {/* ── Main content + sidebar ─────────────────────────────────��─ */}
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl py-16">
           <div className="lg:grid lg:grid-cols-[1fr_300px] lg:gap-16 items-start">
 
-            {/* ── Left column ──────────────────────────────────────── */}
+            {/* ── Left column ────────────────���─────────────────────── */}
             <div className="space-y-20">
 
               {/* The client */}
@@ -278,18 +284,11 @@ export default function CommercialContractorCaseStudy() {
                 <p className="text-base leading-relaxed mb-8" style={{ color: '#4A3F35' }}>
                   A privately owned commercial construction company based in Sydney, delivering office fit-outs, refurbishments and small-to-medium commercial projects across New South Wales. The contractor already used established construction and accounting software. But its commercial team still maintained a collection of spreadsheets beside those systems. The systems recorded pieces of the project. They did not create one reliable commercial workflow.
                 </p>
-                <div className="rounded-2xl border border-border/60 overflow-hidden">
-                  {clientProfile.map((row, i) => (
-                    <div
-                      key={row.label}
-                      className="flex items-center justify-between px-5 py-3 text-sm"
-                      style={{
-                        background: i % 2 === 0 ? 'rgba(26,15,6,0.02)' : 'transparent',
-                        borderTop: i > 0 ? '1px solid rgba(26,15,6,0.06)' : 'none',
-                      }}
-                    >
-                      <span style={{ color: '#6B5D51' }}>{row.label}</span>
-                      <span className="font-medium" style={{ color: '#1A0F06' }}>{row.value}</span>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  {clientProfile.map((item) => (
+                    <div key={item.label} className="rounded-xl p-4 border" style={{ background: '#E8E5DF', borderColor: '#D4CFC7' }}>
+                      <p className="text-xs font-medium mb-1" style={{ color: '#6B5D51' }}>{item.label}</p>
+                      <p className="text-sm font-semibold" style={{ color: '#1A0F06' }}>{item.value}</p>
                     </div>
                   ))}
                 </div>
@@ -303,13 +302,19 @@ export default function CommercialContractorCaseStudy() {
                 <p className="text-xl leading-relaxed mb-10 text-balance" style={{ fontFamily: GARAMOND, color: '#1A0F06' }}>
                   Every month ended with the same scramble. Good software surrounded a broken information chain.
                 </p>
-                <div className="space-y-6">
-                  {painPoints.map((p) => (
-                    <div key={p.heading} className="pl-5 border-l-2 border-border/60">
-                      <p className="font-semibold mb-1.5 text-sm" style={{ color: '#1A0F06' }}>{p.heading}</p>
-                      <p className="text-sm leading-relaxed" style={{ color: '#4A3F35' }}>{p.body}</p>
-                    </div>
-                  ))}
+                <div className="rounded-2xl border p-6 lg:p-8" style={{ background: '#E8E5DF', borderColor: '#D4CFC7' }}>
+                  <p className="text-xs font-semibold tracking-widest uppercase mb-5" style={{ color: '#6B5D51' }}>Operational symptoms</p>
+                  <div className="flex flex-col gap-5">
+                    {painPoints.map((p) => (
+                      <div key={p.heading} className="flex items-start gap-3">
+                        <span className="mt-1.5 shrink-0 h-1.5 w-1.5 rounded-full" style={{ background: '#6B5D51' }} aria-hidden="true" />
+                        <div>
+                          <p className="text-sm font-semibold mb-1" style={{ color: '#1A0F06' }}>{p.heading}</p>
+                          <p className="text-sm leading-relaxed" style={{ color: '#3D3128' }}>{p.body}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </section>
 
