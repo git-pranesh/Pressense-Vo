@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 interface AnchorCardProps {
@@ -8,8 +7,6 @@ interface AnchorCardProps {
   ctaLabel?: string
   ctaHref?: string
   stats?: { value: string; label: string }[]
-  /** Override the flower image src — defaults to botanical-hero.png */
-  imageSrc?: string
 }
 
 export function AnchorCard({
@@ -19,7 +16,6 @@ export function AnchorCard({
   ctaLabel = 'Start a Free Diagnostic',
   ctaHref = '/contact',
   stats,
-  imageSrc = '/images/botanical-hero.png',
 }: AnchorCardProps) {
   return (
     <div
@@ -36,30 +32,8 @@ export function AnchorCard({
         style={{ background: 'rgba(20, 12, 4, 0.45)' }}
         aria-hidden="true"
       />
-      {/* Flower image — bleeds from the right, softly faded */}
-      <div
-        className="absolute inset-y-0 right-0 w-1/2 sm:w-2/5 pointer-events-none select-none"
-        aria-hidden="true"
-      >
-        <Image
-          src={imageSrc}
-          alt=""
-          fill
-          className="object-cover object-center"
-          sizes="(max-width: 640px) 50vw, 40vw"
-          priority={false}
-        />
-        {/* Left-to-right fade so the image melts into the card bg */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(to right, rgba(20,12,4,0.85) 0%, rgba(20,12,4,0.4) 40%, transparent 100%)',
-          }}
-        />
-      </div>
-
       {/* Content */}
-      <div className="relative z-10 px-8 py-12 sm:px-12 sm:py-14 lg:px-16 lg:py-16 min-w-0" style={{ width: stats ? '70%' : '60%' }}>
+      <div className="relative z-10 px-8 py-12 sm:px-12 sm:py-14 lg:px-16 lg:py-16 max-w-2xl">
         {eyebrow && (
           <span
             className="eyebrow-pill mb-5"
