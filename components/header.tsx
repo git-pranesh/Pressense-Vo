@@ -113,14 +113,8 @@ export function Header() {
                     href={svc.href}
                     role="menuitem"
                     onClick={() => setServicesOpen(false)}
-                    className="flex items-center gap-3 px-5 py-3 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-[#E3E0D9] transition-colors duration-150 first:rounded-t-2xl last:rounded-b-2xl"
+                    className="flex items-center px-5 py-3 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-[#E3E0D9] transition-colors duration-150 first:rounded-t-2xl last:rounded-b-2xl"
                   >
-                    <span
-                      className="text-xs font-semibold tabular-nums shrink-0"
-                      style={{ color: '#6B5D51' }}
-                    >
-                      0{i + 1}
-                    </span>
                     {svc.label}
                   </Link>
                 ))}
@@ -212,10 +206,9 @@ export function Header() {
                   <Link
                     key={svc.href}
                     href={svc.href}
-                    className="flex items-center gap-3 pl-4 py-2 text-sm text-foreground/60 hover:text-foreground transition-colors rounded-lg"
+                    className="flex items-center pl-4 py-2 text-sm text-foreground/60 hover:text-foreground transition-colors rounded-lg"
                     onClick={() => { setMenuOpen(false); setMobileServicesOpen(false) }}
                   >
-                    <span className="text-xs font-semibold tabular-nums" style={{ color: '#6B5D51' }}>0{i + 1}</span>
                     {svc.label}
                   </Link>
                 ))}
