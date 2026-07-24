@@ -145,12 +145,12 @@ export default function HomePage() {
                     </svg>
                   ))}
                 </div>
-                <span className="text-xs font-medium" style={{ color: 'rgba(237,235,229,0.7)' }}>Helped over 50+ businesses</span>
+                <span className="text-xs font-medium" style={{ color: 'rgba(237,235,229,0.7)' }}>Helped 50+ businesses</span>
               </div>
 
               {/* Heading */}
               <h1
-                className="text-5xl sm:text-6xl lg:text-[72px] font-normal leading-[1.06] tracking-tight text-balance max-w-3xl mb-6"
+                className="text-5xl sm:text-6xl lg:text-[72px] font-normal leading-[1.06] text-balance max-w-3xl mb-6"
                 style={{ color: '#EDEBE5', fontFamily: '"EB Garamond", Georgia, serif' }}
               >
                 Many businesses don&apos;t have a marketing problem. They have a{' '}
@@ -167,14 +167,14 @@ export default function HomePage() {
               <div className="flex flex-wrap items-center gap-3">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold hover:bg-[#d4d1cc] transition-colors"
                   style={{ background: '#EDEBE5', color: '#1A0F06' }}
                 >
                   Book a free call
                 </Link>
                 <Link
                   href="/how-it-works"
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-colors"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium hover:border-[rgba(237,235,229,0.6)] hover:text-[rgba(237,235,229,1)] transition-colors"
                   style={{ border: '1px solid rgba(237,235,229,0.3)', color: 'rgba(237,235,229,0.8)' }}
                 >
                   How we work
@@ -197,13 +197,14 @@ export default function HomePage() {
       {/* ── Trust Strip ───────────────────────────────────────────── */}
       <section className="py-8">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
-          <div className="flex flex-wrap items-baseline gap-x-8 gap-y-2">
-            <span className="text-xs font-medium text-muted-foreground/50 uppercase tracking-widest shrink-0">
+          <div className="flex flex-wrap items-center gap-y-2">
+            <span className="text-xs font-medium text-muted-foreground/50 uppercase tracking-widest shrink-0 mr-6">
               Worked with teams at
             </span>
-            {clients.map((name) => (
-              <span key={name} className="text-sm font-medium text-muted-foreground/60">
-                {name}
+            {clients.map((name, i) => (
+              <span key={name} className="flex items-center">
+                {i > 0 && <span className="mx-4 h-3 w-px bg-foreground/15" aria-hidden="true" />}
+                <span className="text-sm font-medium text-muted-foreground/70">{name}</span>
               </span>
             ))}
           </div>
@@ -211,7 +212,7 @@ export default function HomePage() {
       </section>
 
       {/* ── The Problem ───────────────────────────────────────────── */}
-      <section className="py-24 lg:py-32">
+      <section className="py-16 lg:py-24">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
@@ -224,10 +225,10 @@ export default function HomePage() {
               <p className="text-base text-muted-foreground leading-relaxed mb-5">
                 You&apos;ve hired good people. You&apos;ve paid for the tools. Growth still feels slower than it should be.
               </p>
-              <p className="text-base text-muted-foreground/70 leading-relaxed mb-5">
+              <p className="text-base text-muted-foreground leading-relaxed mb-5">
                 Your best people are stuck approving things a system should handle. The real work runs through a spreadsheet nobody wants to touch. The CRM made your team change how they work, instead of fitting how they already work.
               </p>
-              <p className="text-base text-muted-foreground/70 leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 We&apos;ve seen this enough times to know it&apos;s rarely a people problem. Usually, nobody has mapped where the actual break is.
               </p>
             </div>
