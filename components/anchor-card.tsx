@@ -24,8 +24,18 @@ export function AnchorCard({
   return (
     <div
       className="relative rounded-3xl overflow-hidden"
-      style={{ background: '#1C3530' }}
+      style={{
+        backgroundImage: 'url(/images/cta-bg-opt.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
+      {/* Dark overlay so text remains legible */}
+      <div
+        className="absolute inset-0"
+        style={{ background: 'rgba(20, 12, 4, 0.45)' }}
+        aria-hidden="true"
+      />
       {/* Flower image — bleeds from the right, softly faded */}
       <div
         className="absolute inset-y-0 right-0 w-1/2 sm:w-2/5 pointer-events-none select-none"
@@ -43,7 +53,7 @@ export function AnchorCard({
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to right, #1C3530 0%, rgba(28,53,48,0.6) 40%, transparent 100%)',
+            background: 'linear-gradient(to right, rgba(20,12,4,0.85) 0%, rgba(20,12,4,0.4) 40%, transparent 100%)',
           }}
         />
       </div>
