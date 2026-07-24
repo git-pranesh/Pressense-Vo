@@ -9,7 +9,7 @@ export type CaseStudyCard = {
   slug: string
   industry: string
   stat: string
-  title: string
+  title?: string
   blurb: string
   bg: string
   fg: string
@@ -94,17 +94,12 @@ export function CaseStudyStrip({ cards }: Props) {
                   {cs.industry}
                 </span>
 
-                {/* Outcome stat */}
+                {/* Headline — same as case study card client title */}
                 <p
-                  className="font-normal leading-none"
-                  style={{ fontFamily: GARAMOND, fontSize: 'clamp(30px, 3.5vw, 42px)', color: cs.fg }}
+                  className="font-normal leading-snug text-balance"
+                  style={{ fontFamily: GARAMOND, fontSize: 'clamp(22px, 2.8vw, 30px)', color: cs.fg }}
                 >
                   {cs.stat}
-                </p>
-
-                {/* Title */}
-                <p className="text-sm font-semibold leading-snug" style={{ color: cs.fg }}>
-                  {cs.title}
                 </p>
 
                 {/* Blurb */}

@@ -130,8 +130,7 @@ const caseStudyStrip = [
   {
     slug: 'two-location-clinic',
     industry: 'Healthcare, Australia',
-    stat: '105 hrs / month',
-    title: '140 hours of admin, automated.',
+    stat: '140 Hours of Admin, Automated.',
     blurb: 'A specialist clinic was losing 140 hours a month to manual referral administration. We mapped the workflow, quantified the cost, and built the missing operational layer.',
     bg: '#1A0F06',
     fg: '#EDEBE5',
@@ -142,8 +141,7 @@ const caseStudyStrip = [
   {
     slug: 'commercial-contractor',
     industry: 'Construction, Sydney',
-    stat: 'A$91k / year',
-    title: '116 hours recovered. Seven days faster.',
+    stat: '116 Hours Recovered. Seven Days Faster.',
     blurb: 'A Sydney contractor was losing 161 hours a month to spreadsheets and manual reconciliation. We built the missing commercial-control layer.',
     bg: '#2E1A0A',
     fg: '#EDEBE5',
@@ -154,8 +152,7 @@ const caseStudyStrip = [
   {
     slug: 'ontario-distributor',
     industry: 'Distribution, Ontario',
-    stat: '354 hrs / month',
-    title: '479 hours of order admin, automated.',
+    stat: '479 Hours of Order Admin, Automated.',
     blurb: 'A family-owned Ontario distributor was drowning in email chains and pricing spreadsheets. We replaced it with a controlled order-management system.',
     bg: '#1C2318',
     fg: '#EDEBE5',
@@ -166,8 +163,7 @@ const caseStudyStrip = [
   {
     slug: 'interior-design-crm',
     industry: 'Interior Design, India',
-    stat: '100% traceability',
-    title: 'The sales process that enforces itself.',
+    stat: 'The Sales Process That Enforces Itself.',
     blurb: 'A growing interior design company was running its sales process through a master spreadsheet and employee memory. We replaced it with a system that makes the process unavoidable.',
     bg: '#241810',
     fg: '#EDEBE5',
@@ -178,8 +174,7 @@ const caseStudyStrip = [
   {
     slug: 'interiors-quotation-platform',
     industry: 'Architecture, Bangalore',
-    stat: '78–104 hrs / month',
-    title: 'Seven pricing sheets, one controlled platform.',
+    stat: 'Seven Pricing Sheets, One Controlled Platform.',
     blurb: 'A Bangalore architecture firm was running its entire commercial process across seven Google Sheets. We built the missing quotation layer around the way the business already worked.',
     bg: '#1E2328',
     fg: '#EDEBE5',
@@ -190,8 +185,7 @@ const caseStudyStrip = [
   {
     slug: 'zoho-creator',
     industry: 'Enterprise Software',
-    stat: 'Multi-year GTM',
-    title: 'The GTM system that carries an enterprise buyer.',
+    stat: 'The GTM System That Carries an Enterprise Buyer.',
     blurb: 'A mature low-code platform had real differentiation but a GTM system that could not carry an enterprise buyer from first search to internal business case. We built it.',
     bg: '#2A1A2E',
     fg: '#EDEBE5',
