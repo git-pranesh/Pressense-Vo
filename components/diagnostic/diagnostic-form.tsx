@@ -81,10 +81,10 @@ const inputStyle = {
   color: '#1A0F06',
 }
 const inputFocusBorderStyle = 'focus:border-b-[#1A0F06]'
-const labelCls = 'block text-[11px] font-medium uppercase tracking-wider mb-2'
-const labelStyle = { color: '#9A8C80' }
+const labelCls = 'block text-[11px] font-semibold uppercase tracking-wider mb-2'
+const labelStyle = { color: '#1A0F06' }
 const sectionTitleCls = 'text-[10px] font-semibold uppercase tracking-widest mb-6 pb-3 border-b'
-const sectionTitleStyle = { color: '#9A8C80', borderColor: '#D4CFC7' }
+const sectionTitleStyle = { color: '#3D2B1A', borderColor: '#D4CFC7' }
 const errorCls = 'mt-1.5 text-xs'
 const errorStyle = { color: '#B91C1C' }
 
