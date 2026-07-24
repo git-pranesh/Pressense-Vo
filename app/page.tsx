@@ -107,7 +107,7 @@ export default function HomePage() {
     <main>
 
       {/* ── Hero — full-width text intro, botanical image below ── */}
-      <section className="border-b border-border">
+      <section>
         <div className="container mx-auto px-5 sm:px-8 pt-28 pb-0 max-w-5xl">
           {/* Eyebrow + heading + sub + CTAs — centred */}
           <div className="max-w-3xl mx-auto text-center pb-16">
@@ -123,13 +123,13 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-highlight transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground text-sm font-semibold hover:bg-highlight transition-colors"
               >
                 Start a Free Diagnostic
               </Link>
               <Link
                 href="/how-it-works"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-border text-sm font-medium text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-foreground/20 text-sm font-medium text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-colors"
               >
                 How we work
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -185,7 +185,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Trust Strip ──────────────────────────────────────────── */}
-      <section className="border-b border-border">
+      <section>
         <div className="container mx-auto px-5 sm:px-8 py-6 max-w-5xl">
           <div className="flex flex-wrap items-center gap-3">
             <span className="eyebrow-pill" style={{ marginBottom: 0 }}>Teams at</span>
@@ -200,7 +200,7 @@ export default function HomePage() {
       </section>
 
       {/* ── The Problem — full-width centred copy ────────────────── */}
-      <section className="border-b border-border">
+      <section>
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-3xl text-center">
           <span className="eyebrow-pill">The Problem</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground leading-tight text-balance mb-8">
@@ -219,7 +219,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Stats inside AnchorCard ───────────────────────────────── */}
-      <section className="border-b border-border">
+      <section>
         <div className="container mx-auto px-5 sm:px-8 py-12 lg:py-16 max-w-5xl">
           <AnchorCard
             eyebrow="By the numbers"
@@ -237,7 +237,7 @@ export default function HomePage() {
       </section>
 
       {/* ── We handle everything — steps + sticky flower ─────────── */}
-      <section className="border-b border-border">
+      <section>
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <div className="max-w-2xl mb-16">
             <span className="eyebrow-pill">How It Works</span>
@@ -281,7 +281,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Services — interactive toggle list ───────────────────── */}
-      <section className="border-b border-border bg-secondary/30">
+      <section className="bg-secondary/30">
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <div className="max-w-2xl mb-12">
             <span className="eyebrow-pill">Services</span>
@@ -305,7 +305,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Who We Work With ─────────────────────────────────────── */}
-      <section className="border-b border-border">
+      <section>
         <div className="container mx-auto px-5 sm:px-8 py-24 lg:py-32 max-w-5xl">
           <span className="eyebrow-pill">Who We Work With</span>
           <div className="grid sm:grid-cols-2 gap-6">

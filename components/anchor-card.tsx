@@ -91,7 +91,7 @@ export function AnchorCard({
         {ctaLabel && ctaHref && (
           <Link
             href={ctaHref}
-            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-semibold transition-opacity hover:opacity-85"
+            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-sm font-semibold transition-opacity hover:opacity-85"
             style={{ background: '#EDEBE5', color: '#1C3530' }}
           >
             {ctaLabel}
