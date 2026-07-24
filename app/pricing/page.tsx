@@ -2,6 +2,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { AnchorCard } from '@/components/anchor-card'
 
+const GARAMOND = '"EB Garamond", Georgia, serif'
+
 export const metadata: Metadata = {
   title: 'Pricing | Pressense',
   description: 'Every engagement starts with a free diagnostic. See realistic starting prices for each service — final pricing depends on scope.',
@@ -76,13 +78,16 @@ const faqs = [
 
 export default function PricingPage() {
   return (
-    <main className="min-h-screen bg-background">
+    <main>
 
-      {/* Hero */}
-      <section className="pt-28 pb-16 border-b border-border">
+      {/* ── Hero ─────────────────────────────────────────────────── */}
+      <section className="pt-28 pb-16">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
           <span className="eyebrow-pill">Pricing</span>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance mb-6 leading-tight">
+          <h1
+            className="font-normal text-foreground text-balance mb-6 leading-tight"
+            style={{ fontFamily: GARAMOND, fontSize: 'clamp(36px, 5vw, 58px)' }}
+          >
             How pricing works
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -94,23 +99,37 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Services */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
+      {/* ── Services ─────────────────────────────────────────────── */}
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <p className="text-base text-muted-foreground mb-10">
-            Free diagnostic. Then a clear number. The diagnostic itself costs nothing. Once we know what you actually need, you get a specific quote, not a guess.
+          <p className="text-sm text-muted-foreground/70 mb-12 max-w-xl">
+            Free diagnostic first — then a clear number. The diagnostic costs nothing. Once we know what you actually need, you get a specific quote, not a guess.
           </p>
-          <div className="flex flex-col gap-px border border-border/40 rounded-2xl overflow-hidden">
-            {services.map((service, i) => (
+          <div className="flex flex-col gap-4">
+            {services.map((service) => (
               <div
                 key={service.name}
-                className={`p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-5 ${i < services.length - 1 ? 'border-b border-border/40' : ''} bg-background hover:bg-secondary/20 transition-colors`}
+                className="rounded-3xl border p-8 sm:p-10 flex flex-col sm:flex-row sm:items-start gap-6"
+                style={{ borderColor: 'rgba(180,172,162,0.4)', background: 'transparent' }}
               >
                 <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-baseline gap-3 mb-2">
-                    <h3 className="text-base font-semibold text-foreground">{service.name}</h3>
-                    <span className="text-sm font-medium text-primary">{service.price}</span>
-                    <span className="text-xs text-muted-foreground bg-secondary/60 px-2 py-0.5 rounded">
+                  <div className="flex flex-wrap items-baseline gap-4 mb-3">
+                    <h3
+                      className="font-normal text-foreground text-balance"
+                      style={{ fontFamily: GARAMOND, fontSize: 'clamp(20px, 2.5vw, 26px)' }}
+                    >
+                      {service.name}
+                    </h3>
+                    <span
+                      className="text-sm font-semibold"
+                      style={{ color: '#B05A2A' }}
+                    >
+                      {service.price}
+                    </span>
+                    <span
+                      className="text-xs font-medium px-2.5 py-1 rounded-full"
+                      style={{ background: 'rgba(26,15,6,0.06)', color: 'rgba(26,15,6,0.5)' }}
+                    >
                       {service.type}
                     </span>
                   </div>
@@ -118,7 +137,8 @@ export default function PricingPage() {
                 </div>
                 <Link
                   href={service.link}
-                  className="shrink-0 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors self-start sm:self-center mt-1 sm:mt-0"
+                  className="shrink-0 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors self-start sm:self-center whitespace-nowrap"
+                  aria-label={`Learn more about ${service.name}`}
                 >
                   Learn more
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
@@ -131,27 +151,47 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Free MVP section */}
-      <section className="py-24 lg:py-32 border-b border-border/40 bg-secondary/20">
+      {/* ── Free build ───────────────────────────────────────────── */}
+      <section className="pb-24 lg:pb-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-5">About the free build</h2>
-          <p className="text-base text-muted-foreground leading-relaxed mb-4">
-            For businesses we think are a strong fit, we&apos;ll build a small first piece of your project for free before you commit to the rest. You get real, working software in your hands, and you decide from there whether to continue.
-          </p>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Not every business qualifies. It depends on what the diagnostic finds and how clear the scope is.
-          </p>
+          <div
+            className="rounded-3xl p-8 sm:p-10"
+            style={{ background: 'rgba(26,15,6,0.04)' }}
+          >
+            <h2
+              className="font-normal text-foreground mb-5"
+              style={{ fontFamily: GARAMOND, fontSize: 'clamp(24px, 3vw, 34px)' }}
+            >
+              About the free build
+            </h2>
+            <p className="text-base text-muted-foreground leading-relaxed mb-4">
+              For businesses we think are a strong fit, we&apos;ll build a small first piece of your project for free before you commit to the rest. You get real, working software in your hands, and you decide from there whether to continue.
+            </p>
+            <p className="text-base text-muted-foreground leading-relaxed">
+              Not every business qualifies. It depends on what the diagnostic finds and how clear the scope is.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-24 lg:py-32 border-b border-border/40">
+      {/* ── FAQ ──────────────────────────────────────────────────── */}
+      <section className="pb-24 lg:pb-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-10">Common questions</h2>
-          <dl className="flex flex-col gap-8">
+          <h2
+            className="font-normal text-foreground mb-12"
+            style={{ fontFamily: GARAMOND, fontSize: 'clamp(28px, 4vw, 44px)' }}
+          >
+            Common questions
+          </h2>
+          <dl className="flex flex-col divide-y" style={{ borderColor: 'rgba(180,172,162,0.3)' }}>
             {faqs.map((faq) => (
-              <div key={faq.q}>
-                <dt className="text-base font-semibold text-foreground mb-2">{faq.q}</dt>
+              <div key={faq.q} className="py-7">
+                <dt
+                  className="font-normal text-foreground mb-3"
+                  style={{ fontFamily: GARAMOND, fontSize: '1.2rem' }}
+                >
+                  {faq.q}
+                </dt>
                 <dd className="text-base text-muted-foreground leading-relaxed">{faq.a}</dd>
               </div>
             ))}
@@ -159,7 +199,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* ── Final CTA ────────────────────────────────────────────── */}
       <section>
         <div className="container mx-auto px-5 sm:px-8 py-16 lg:py-20 max-w-5xl">
           <AnchorCard
