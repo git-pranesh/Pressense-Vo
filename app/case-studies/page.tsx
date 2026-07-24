@@ -49,6 +49,16 @@ const caseStudies = [
       'A 250+ page platform migration from Webflow to HubSpot CMS needed more than new templates. It needed content built page for page, service line by service line, to a single editorial and SEO standard. We were the specialist delivery layer that made that possible.',
     tags: ['Content at Scale', 'SEO Architecture', 'Platform Migration', 'Editorial Governance'],
   },
+  {
+    slug: 'two-location-clinic',
+    client: 'Two-Location Clinic',
+    industry: 'Private Healthcare, Australia',
+    engagementType: 'Workflow Blueprint (Anonymous)',
+    duration: 'Internal tools engagement',
+    summary:
+      'A privately owned specialist clinic with 31 staff was losing 140 hours a month to manual referral administration. The practice-management software was fine. The problem was everything happening around it. We mapped the workflow, quantified the cost, and designed the missing operational layer.',
+    tags: ['Workflow Automation', 'Internal Tools', 'Healthcare', 'Operational Efficiency'],
+  },
 ]
 
 export default function CaseStudiesPage() {
