@@ -49,7 +49,7 @@ export function AnchorCard({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 px-8 py-12 sm:px-12 sm:py-14 lg:px-16 lg:py-16 w-3/5 max-w-2xl min-w-0">
+      <div className="relative z-10 px-8 py-12 sm:px-12 sm:py-14 lg:px-16 lg:py-16 min-w-0" style={{ width: stats ? '70%' : '60%' }}>
         {eyebrow && (
           <span
             className="eyebrow-pill mb-5"
@@ -69,11 +69,18 @@ export function AnchorCard({
           {body}
         </p>
 
-        {/* Stats row — shown when stats are provided instead of CTA */}
+        {/* Stats — 3-col grid so they always sit in one row */}
         {stats && stats.length > 0 && (
-          <div className="flex flex-wrap gap-x-10 gap-y-5 mb-8">
-            {stats.map((s) => (
-              <div key={s.label} className="flex flex-col">
+          <div
+            className="mb-8"
+            style={{ display: 'grid', gridTemplateColumns: `repeat(${stats.length}, minmax(0, 1fr))`, gap: '0' }}
+          >
+            {stats.map((s, i) => (
+              <div
+                key={s.label}
+                className="flex flex-col pr-6"
+                style={i > 0 ? { borderLeft: '1px solid rgba(237,235,229,0.12)', paddingLeft: '1.5rem' } : {}}
+              >
                 <span
                   className="text-4xl lg:text-5xl font-bold leading-none tracking-tight"
                   style={{ color: '#EDEBE5' }}

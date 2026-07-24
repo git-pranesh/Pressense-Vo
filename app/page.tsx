@@ -289,7 +289,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Services ──────────────────────────────────────────────── */}
-      <section className="py-24 lg:py-32" style={{ background: '#E5E2DB' }}>
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <div className="mb-12">
             <span className="eyebrow-pill">Services</span>
