@@ -333,13 +333,13 @@ export default function HomePage() {
           <AnchorCard
             eyebrow="By the numbers"
             headline="What the work actually produces."
-            body="Figures pulled from client engagements. Hours recovered, capacity released, timelines compressed."
+            body="Real figures from real engagements. Not estimates — hours recovered, capacity released, timelines compressed."
             ctaLabel={undefined}
             ctaHref={undefined}
             stats={[
-              { value: '116 hrs', label: 'Recovered per month, construction client' },
-              { value: '354 hrs', label: 'Released per month, distribution client' },
-              { value: '2–4 wks', label: 'To first working software' },
+              { value: '116 hrs', label: 'recovered every month — commercial construction, Sydney' },
+              { value: '354 hrs', label: 'released every month — industrial distribution, Ontario' },
+              { value: '2–4 weeks', label: 'to first working software, across all engagements' },
             ]}
           />
         </div>

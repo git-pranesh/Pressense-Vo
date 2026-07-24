@@ -64,7 +64,7 @@ export function AnchorCard({
                 >
                   {s.value}
                 </span>
-                <span className="mt-1.5 text-xs font-medium uppercase tracking-wider" style={{ color: 'rgba(237,235,229,0.5)' }}>
+                <span className="mt-1.5 text-xs font-normal leading-snug" style={{ color: 'rgba(237,235,229,0.55)' }}>
                   {s.label}
                 </span>
               </div>
