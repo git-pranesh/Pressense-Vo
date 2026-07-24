@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
 
 interface Service {
@@ -14,88 +13,63 @@ interface ServicesToggleProps {
 }
 
 export function ServicesToggle({ services }: ServicesToggleProps) {
-  const [active, setActive] = useState(0)
-
   return (
-    <div className="grid lg:grid-cols-2 gap-0 lg:gap-16 items-start">
-      {/* Left — interactive list */}
-      <div className="divide-y divide-border">
-        {services.map((service, i) => (
-          <button
-            key={service.title}
-            onClick={() => setActive(i)}
-            className={`w-full text-left py-5 flex items-start justify-between gap-4 group transition-colors duration-150 ${
-              active === i ? 'text-foreground' : 'text-muted-foreground/60 hover:text-foreground/80'
-            }`}
-            aria-expanded={active === i}
-          >
-            <div className="flex items-baseline gap-4">
-              <span
-                className="text-[11px] font-semibold tabular-nums shrink-0 transition-colors duration-150"
-                style={{ color: active === i ? '#FF9A5C' : undefined }}
-              >
-                {String(i + 1).padStart(2, '0')}
-              </span>
-              <span
-                className="text-base sm:text-xl leading-snug text-balance transition-all duration-150"
-                style={{
-                  fontFamily: '"EB Garamond", Georgia, serif',
-                  fontWeight: active === i ? 500 : 400,
-                  color: active === i ? 'var(--foreground)' : undefined,
-                }}
-              >
-                {service.title}
-              </span>
-            </div>
-            {/* Plus / minus indicator */}
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {services.map((service, i) => (
+        <Link
+          key={service.title}
+          href={service.href}
+          className="group flex flex-col justify-between rounded-2xl p-7 transition-colors duration-200"
+          style={{
+            background: '#E5E2DB',
+            minHeight: '240px',
+          }}
+        >
+          {/* Top row — number + arrow */}
+          <div className="flex items-start justify-between mb-6">
             <span
-              className="shrink-0 mt-0.5 text-lg leading-none transition-transform duration-200"
+              className="text-[11px] font-semibold tabular-nums"
+              style={{ color: '#FF9A5C' }}
+            >
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <span
+              className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
               aria-hidden="true"
             >
-              {active === i ? '−' : '+'}
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="#1A0F06" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </span>
-          </button>
-        ))}
-      </div>
+          </div>
 
-      {/* Right — active service detail panel */}
-      <div className="hidden lg:block sticky top-28">
-        <div
-          className="rounded-2xl p-10 border border-border/60"
-          style={{ background: '#E5E2DB' }}
-        >
-          {/* Eyebrow number */}
-          <span
-            className="block text-xs font-semibold mb-4 tabular-nums"
-            style={{ color: '#FF9A5C' }}
-          >
-            {String(active + 1).padStart(2, '0')} / {String(services.length).padStart(2, '0')}
-          </span>
+          {/* Title */}
+          <div className="flex-1">
+            <h3
+              className="text-xl sm:text-2xl font-normal leading-snug text-balance mb-3"
+              style={{ fontFamily: '"EB Garamond", Georgia, serif', color: '#1A0F06' }}
+            >
+              {service.title}
+            </h3>
+            <p className="text-sm leading-relaxed" style={{ color: '#6B5F54' }}>
+              {service.description}
+            </p>
+          </div>
 
-          <h3
-            className="text-2xl sm:text-3xl font-normal text-foreground leading-tight text-balance mb-4"
-            style={{ fontFamily: '"EB Garamond", Georgia, serif' }}
-          >
-            {services[active].title}
-          </h3>
-
-          <p className="text-base text-muted-foreground leading-relaxed mb-8">
-            {services[active].description}
-          </p>
-
-          <Link
-            href={services[active].href}
-            className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-muted-foreground transition-colors"
-          >
-            Learn more
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
-        </div>
-
-        {/* Mobile: show description inline below each toggled item */}
-      </div>
+          {/* Bottom — learn more */}
+          <div className="mt-6">
+            <span
+              className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-widest transition-colors duration-150"
+              style={{ color: '#9A8C80' }}
+            >
+              Learn more
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 6h8M6.5 3l3 3-3 3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </span>
+          </div>
+        </Link>
+      ))}
     </div>
   )
 }
