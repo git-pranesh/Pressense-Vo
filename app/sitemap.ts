@@ -1,7 +1,15 @@
 import type { MetadataRoute } from 'next'
+import { calculatorsData } from '@/lib/calculators'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.pressense.co'
+
+  const toolUrls: MetadataRoute.Sitemap = calculatorsData.map((calc) => ({
+    url: `${baseUrl}/tools/${calc.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }))
 
   return [
     // Core
@@ -41,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Tools
     { url: `${baseUrl}/tools`,                                               lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/tools/workflow-automation-roi-calculator`,            lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    ...toolUrls,
 
     // Blog
     { url: `${baseUrl}/blog`,                                                lastModified: new Date(), changeFrequency: 'weekly',  priority: 0.7 },
