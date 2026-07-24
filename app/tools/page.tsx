@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calculator } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { calculatorsData, CALCULATOR_CATEGORIES, CATEGORY_DESCRIPTIONS } from '@/lib/calculators'
 
@@ -57,24 +57,20 @@ export default function ToolsPage() {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-border/40">
-        <div className="absolute inset-0 bg-grid-pattern opacity-40" aria-hidden="true" />
-        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-              <Calculator className="h-6 w-6" />
+      <section className="pt-24 pb-10">
+        <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
+          <div className="relative w-full rounded-3xl overflow-hidden" style={{ backgroundImage: 'url(/images/pages-hero-bg-opt.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="absolute inset-0" style={{ background: 'rgba(10, 8, 5, 0.42)' }} aria-hidden="true" />
+            <div className="relative z-10 px-8 py-16 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+              <span className="eyebrow-pill mb-6 inline-block" style={{ borderColor: 'rgba(237,235,229,0.25)', color: 'rgba(237,235,229,0.6)' }}>Tools Library</span>
+              <h1 className="font-normal leading-tight text-balance mb-6" style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(36px, 5vw, 58px)', color: '#EDEBE5' }}>
+                Free calculators with operator-grade benchmarks
+              </h1>
+              <p className="text-lg leading-relaxed mb-8" style={{ color: 'rgba(237,235,229,0.72)' }}>
+                Calculate your unit economics, model growth scenarios, and benchmark against industry standards. No signup required — just enter your numbers and get instant insights.
+              </p>
+              <p className="text-sm font-medium" style={{ color: 'rgba(237,235,229,0.5)' }}>{calculatorsData.length} calculators</p>
             </div>
-            <p className="text-xs font-semibold tracking-widest uppercase text-secondary">Tools Library</p>
-          </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6 max-w-4xl leading-[1.05]">
-            Free calculators with operator-grade benchmarks
-          </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl leading-relaxed mb-8">
-            Calculate your unit economics, model growth scenarios, and benchmark against industry standards. No signup
-            required, just enter your numbers and get instant insights.
-          </p>
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
-            <span className="font-medium text-foreground">{calculatorsData.length} calculators</span>
           </div>
         </div>
       </section>
