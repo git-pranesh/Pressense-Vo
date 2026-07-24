@@ -1,17 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { useSearchParams } from 'next/navigation'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { Label } from '@/components/ui/label'
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select'
 
 const areaOptions = [
   { value: 'advisory-strategy', label: 'Advisory & Strategy' },
@@ -26,15 +17,15 @@ const areaOptions = [
 const timelineOptions = [
   { value: 'immediate', label: 'Immediately' },
   { value: '1-month', label: 'Within 1 month' },
-  { value: '1-3-months', label: '1-3 months' },
+  { value: '1-3-months', label: '1–3 months' },
   { value: '3-plus', label: '3+ months' },
 ]
 
 const budgetOptions = [
   { value: 'under-10k', label: 'Under $10K' },
-  { value: '10k-25k', label: '$10K - $25K' },
-  { value: '25k-50k', label: '$25K - $50K' },
-  { value: '50k-100k', label: '$50K - $100K' },
+  { value: '10k-25k', label: '$10K – $25K' },
+  { value: '25k-50k', label: '$25K – $50K' },
+  { value: '50k-100k', label: '$50K – $100K' },
   { value: 'over-100k', label: '$100K+' },
 ]
 
@@ -64,46 +55,59 @@ const initialFormData: FormData = {
   budget: '',
 }
 
+function mapConstraintToArea(constraint: string): string {
+  const mapping: Record<string, string> = {
+    'founder-bottleneck': 'advisory-strategy',
+    'pricing-leakage': 'advisory-strategy',
+    'revenue-leakage': 'advisory-strategy',
+    'gtm-clarity': 'advisory-strategy',
+    'sales-marketing-connection': 'crm-erp',
+    'crm-adoption': 'crm-erp',
+    'customer-onboarding': 'internal-tools',
+    'internal-tool-readiness': 'internal-tools',
+    'visibility-personal-brand': 'content-authority',
+    'website-clarity-conversion': 'websites-conversion',
+    'ai-workflow-readiness': 'ai-workflows',
+    'systems-audit': 'not-sure',
+  }
+  return mapping[constraint] || ''
+}
+
+/* ── Shared dark-panel input styles ─────────────────────── */
+const inputCls =
+  'w-full rounded-lg px-4 py-3 text-sm outline-none transition-colors placeholder:text-[rgba(237,235,229,0.3)] focus:ring-1'
+const inputStyle = {
+  background: 'rgba(237,235,229,0.07)',
+  border: '1px solid rgba(237,235,229,0.14)',
+  color: '#EDEBE5',
+}
+const inputFocusRingColor = 'focus:ring-[rgba(237,235,229,0.25)]'
+const labelCls = 'block text-xs font-medium mb-2'
+const labelStyle = { color: 'rgba(237,235,229,0.6)' }
+const sectionTitleCls = 'text-[10px] font-semibold uppercase tracking-widest mb-6 pb-3 border-b'
+const sectionTitleStyle = { color: 'rgba(237,235,229,0.35)', borderColor: 'rgba(237,235,229,0.1)' }
+const errorCls = 'mt-1.5 text-xs'
+const errorStyle = { color: '#F87171' }
+
 export function DiagnosticForm() {
+  const router = useRouter()
   const searchParams = useSearchParams()
   const constraintParam = searchParams.get('constraint')
-  
+
   const [formData, setFormData] = useState<FormData>({
     ...initialFormData,
     area: constraintParam ? mapConstraintToArea(constraintParam) : '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({})
-
-  function mapConstraintToArea(constraint: string): string {
-    const mapping: Record<string, string> = {
-      'founder-bottleneck': 'advisory-strategy',
-      'pricing-leakage': 'advisory-strategy',
-      'revenue-leakage': 'advisory-strategy',
-      'gtm-clarity': 'advisory-strategy',
-      'sales-marketing-connection': 'crm-erp',
-      'crm-adoption': 'crm-erp',
-      'customer-onboarding': 'internal-tools',
-      'internal-tool-readiness': 'internal-tools',
-      'visibility-personal-brand': 'content-authority',
-      'website-clarity-conversion': 'websites-conversion',
-      'ai-workflow-readiness': 'ai-workflows',
-      'systems-audit': 'not-sure',
-    }
-    return mapping[constraint] || ''
-  }
 
   const updateField = (field: keyof FormData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
-    if (errors[field]) {
-      setErrors((prev) => ({ ...prev, [field]: undefined }))
-    }
+    if (errors[field]) setErrors((prev) => ({ ...prev, [field]: undefined }))
   }
 
   const validate = (): boolean => {
     const newErrors: Partial<Record<keyof FormData, string>> = {}
-
     if (!formData.name.trim()) newErrors.name = 'Name is required'
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required'
@@ -112,18 +116,14 @@ export function DiagnosticForm() {
     }
     if (!formData.company.trim()) newErrors.company = 'Company is required'
     if (!formData.problem.trim()) newErrors.problem = 'Please describe your situation'
-
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-
     if (!validate()) return
-
     setIsSubmitting(true)
-
     try {
       const response = await fetch('/api/diagnostic', {
         method: 'POST',
@@ -140,12 +140,8 @@ export function DiagnosticForm() {
           context: `Area: ${formData.area}\n\nWhat they've tried: ${formData.attempts}\n\nDesired outcome: ${formData.outcome}`,
         }),
       })
-
-      if (!response.ok) {
-        throw new Error('Submission failed')
-      }
-
-      setIsSubmitted(true)
+      if (!response.ok) throw new Error('Submission failed')
+      router.push('/thank-you')
     } catch (error) {
       console.error('Form submission error:', error)
       alert('There was an error submitting your request. Please try again.')
@@ -154,334 +150,250 @@ export function DiagnosticForm() {
     }
   }
 
-  if (isSubmitted) {
-    return (
-      <section
-        id="diagnostic-form"
-        className="py-20 lg:py-28 border-t border-border/40"
-        aria-labelledby="form-success-heading"
-      >
-        <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
-          <div className="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-6">
-            <svg
-              width="28"
-              height="28"
-              viewBox="0 0 28 28"
-              fill="none"
-              aria-hidden="true"
-              className="text-primary"
-            >
-              <path
-                d="M6 14l6 6L22 8"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-          <h2
-            className="text-3xl font-semibold text-foreground mb-4"
-            id="form-success-heading"
-          >
-            Diagnostic request received.
-          </h2>
-          <p className="text-muted-foreground leading-relaxed">
-            Thanks. We will review the context and respond if there is a clear fit for a diagnostic conversation.
-          </p>
-        </div>
-      </section>
-    )
-  }
-
   return (
-    <section
-      id="diagnostic-form"
-      className="py-20 lg:py-28 border-t border-border/40"
-      aria-labelledby="form-heading"
-    >
-      <div className="max-w-3xl mx-auto px-6 lg:px-8">
-        {/* Section header */}
-        <div className="mb-12 text-center">
-          <p className="text-sm uppercase tracking-widest text-primary mb-4">
-            Share the context
-          </p>
-          <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground text-balance"
-            id="form-heading"
+    <div id="diagnostic-form" className="p-6 sm:p-10">
+
+      {/* Header */}
+      <div className="mb-10">
+        <p className="text-[10px] font-semibold uppercase tracking-widest mb-3" style={{ color: 'rgba(237,235,229,0.35)' }}>
+          Diagnostic form
+        </p>
+        <h2
+          className="font-normal leading-snug text-balance mb-3"
+          style={{ fontFamily: '"EB Garamond", Georgia, serif', fontSize: 'clamp(24px, 3vw, 32px)', color: '#EDEBE5' }}
+        >
+          Tell us about your business.
+        </h2>
+        <p className="text-sm leading-relaxed" style={{ color: 'rgba(237,235,229,0.45)' }}>
+          You don&apos;t need to know the exact solution yet. The diagnostic figures that out.
+        </p>
+      </div>
+
+      <form onSubmit={handleSubmit} className="space-y-10" noValidate>
+
+        {/* ── Section 1: Basic info ── */}
+        <div>
+          <p className={sectionTitleCls} style={sectionTitleStyle}>Basic information</p>
+          <div className="grid gap-5 sm:grid-cols-2">
+
+            {/* Name */}
+            <div>
+              <label htmlFor="name" className={labelCls} style={labelStyle}>
+                Name <span style={{ color: '#F87171' }}>*</span>
+              </label>
+              <input
+                id="name"
+                type="text"
+                className={`${inputCls} ${inputFocusRingColor}`}
+                style={inputStyle}
+                value={formData.name}
+                onChange={(e) => updateField('name', e.target.value)}
+                placeholder="Jane Doe"
+                aria-invalid={!!errors.name}
+              />
+              {errors.name && <p className={errorCls} style={errorStyle}>{errors.name}</p>}
+            </div>
+
+            {/* Email */}
+            <div>
+              <label htmlFor="email" className={labelCls} style={labelStyle}>
+                Work email <span style={{ color: '#F87171' }}>*</span>
+              </label>
+              <input
+                id="email"
+                type="email"
+                className={`${inputCls} ${inputFocusRingColor}`}
+                style={inputStyle}
+                value={formData.email}
+                onChange={(e) => updateField('email', e.target.value)}
+                placeholder="jane@company.com"
+                aria-invalid={!!errors.email}
+              />
+              {errors.email && <p className={errorCls} style={errorStyle}>{errors.email}</p>}
+            </div>
+
+            {/* Company */}
+            <div className="sm:col-span-2">
+              <label htmlFor="company" className={labelCls} style={labelStyle}>
+                Company / website <span style={{ color: '#F87171' }}>*</span>
+              </label>
+              <input
+                id="company"
+                type="text"
+                className={`${inputCls} ${inputFocusRingColor}`}
+                style={inputStyle}
+                value={formData.company}
+                onChange={(e) => updateField('company', e.target.value)}
+                placeholder="Acme Inc. or https://company.com"
+                aria-invalid={!!errors.company}
+              />
+              {errors.company && <p className={errorCls} style={errorStyle}>{errors.company}</p>}
+            </div>
+
+            {/* What does business do */}
+            <div className="sm:col-span-2">
+              <label htmlFor="whatDoes" className={labelCls} style={labelStyle}>
+                What does the business do?
+              </label>
+              <textarea
+                id="whatDoes"
+                className={`${inputCls} ${inputFocusRingColor} resize-none`}
+                style={inputStyle}
+                rows={2}
+                value={formData.whatDoes}
+                onChange={(e) => updateField('whatDoes', e.target.value)}
+                placeholder="Brief description of your product, service, or business model..."
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* ── Section 2: Diagnostic context ── */}
+        <div>
+          <p className={sectionTitleCls} style={sectionTitleStyle}>Diagnostic context</p>
+          <div className="space-y-5">
+
+            {/* Problem */}
+            <div>
+              <label htmlFor="problem" className={labelCls} style={labelStyle}>
+                What feels unclear, broken, or stuck right now? <span style={{ color: '#F87171' }}>*</span>
+              </label>
+              <textarea
+                id="problem"
+                className={`${inputCls} ${inputFocusRingColor} resize-none`}
+                style={inputStyle}
+                rows={4}
+                value={formData.problem}
+                onChange={(e) => updateField('problem', e.target.value)}
+                placeholder="Describe the main challenge or constraint in your business right now..."
+                aria-invalid={!!errors.problem}
+              />
+              {errors.problem && <p className={errorCls} style={errorStyle}>{errors.problem}</p>}
+            </div>
+
+            {/* Attempts */}
+            <div>
+              <label htmlFor="attempts" className={labelCls} style={labelStyle}>
+                What have you already tried?
+              </label>
+              <textarea
+                id="attempts"
+                className={`${inputCls} ${inputFocusRingColor} resize-none`}
+                style={inputStyle}
+                rows={3}
+                value={formData.attempts}
+                onChange={(e) => updateField('attempts', e.target.value)}
+                placeholder="Past consultants, internal efforts, tools, frameworks..."
+              />
+            </div>
+
+            {/* Area */}
+            <div>
+              <label htmlFor="area" className={labelCls} style={labelStyle}>
+                Which area feels most relevant?
+              </label>
+              <select
+                id="area"
+                className={`${inputCls} ${inputFocusRingColor}`}
+                style={{ ...inputStyle, appearance: 'none' as const }}
+                value={formData.area}
+                onChange={(e) => updateField('area', e.target.value)}
+              >
+                <option value="" style={{ background: '#1A0F06' }}>Select an area</option>
+                {areaOptions.map((o) => (
+                  <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
+                ))}
+              </select>
+            </div>
+
+            {/* Outcome */}
+            <div>
+              <label htmlFor="outcome" className={labelCls} style={labelStyle}>
+                What would a useful outcome look like?
+              </label>
+              <textarea
+                id="outcome"
+                className={`${inputCls} ${inputFocusRingColor} resize-none`}
+                style={inputStyle}
+                rows={2}
+                value={formData.outcome}
+                onChange={(e) => updateField('outcome', e.target.value)}
+                placeholder="Describe what success would look like..."
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* ── Section 3: Timeline & budget ── */}
+        <div>
+          <p className={sectionTitleCls} style={sectionTitleStyle}>Timeline &amp; budget</p>
+          <div className="grid gap-5 sm:grid-cols-2">
+
+            <div>
+              <label htmlFor="timeline" className={labelCls} style={labelStyle}>When do you want to start?</label>
+              <select
+                id="timeline"
+                className={`${inputCls} ${inputFocusRingColor}`}
+                style={{ ...inputStyle, appearance: 'none' as const }}
+                value={formData.timeline}
+                onChange={(e) => updateField('timeline', e.target.value)}
+              >
+                <option value="" style={{ background: '#1A0F06' }}>Select timeline</option>
+                {timelineOptions.map((o) => (
+                  <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="budget" className={labelCls} style={labelStyle}>Budget range (optional)</label>
+              <select
+                id="budget"
+                className={`${inputCls} ${inputFocusRingColor}`}
+                style={{ ...inputStyle, appearance: 'none' as const }}
+                value={formData.budget}
+                onChange={(e) => updateField('budget', e.target.value)}
+              >
+                <option value="" style={{ background: '#1A0F06' }}>Select range</option>
+                {budgetOptions.map((o) => (
+                  <option key={o.value} value={o.value} style={{ background: '#1A0F06' }}>{o.label}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Submit ── */}
+        <div className="pt-2">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-sm font-medium transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
+            style={{ background: '#EDEBE5', color: '#1A0F06' }}
           >
-            Tell us about your business.
-          </h2>
-          <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            You do not need to know the exact solution yet. The purpose of the diagnostic is to understand the constraint before deciding what to build or change.
+            {isSubmitting ? (
+              <>
+                <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                </svg>
+                Submitting...
+              </>
+            ) : (
+              <>
+                Request Diagnostic
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </>
+            )}
+          </button>
+          <p className="mt-4 text-xs" style={{ color: 'rgba(237,235,229,0.3)' }}>
+            We respond within a couple of business days.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-8" noValidate>
-          {/* Basic Info */}
-          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
-              Basic Information
-            </h3>
-
-            <div className="grid gap-6 sm:grid-cols-2">
-              {/* Name */}
-              <div className="space-y-2">
-                <Label htmlFor="name">
-                  Name <span className="text-destructive">*</span>
-                </Label>
-                <Input
-                  id="name"
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) => updateField('name', e.target.value)}
-                  placeholder="Jane Doe"
-                  aria-invalid={!!errors.name}
-                  aria-describedby={errors.name ? 'name-error' : undefined}
-                />
-                {errors.name && (
-                  <p id="name-error" className="text-sm text-destructive">
-                    {errors.name}
-                  </p>
-                )}
-              </div>
-
-              {/* Email */}
-              <div className="space-y-2">
-                <Label htmlFor="email">
-                  Work Email <span className="text-destructive">*</span>
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => updateField('email', e.target.value)}
-                  placeholder="jane@company.com"
-                  aria-invalid={!!errors.email}
-                  aria-describedby={errors.email ? 'email-error' : undefined}
-                />
-                {errors.email && (
-                  <p id="email-error" className="text-sm text-destructive">
-                    {errors.email}
-                  </p>
-                )}
-              </div>
-
-              {/* Company */}
-              <div className="space-y-2 sm:col-span-2">
-                <Label htmlFor="company">
-                  Company / Website <span className="text-destructive">*</span>
-                </Label>
-                <Input
-                  id="company"
-                  type="text"
-                  value={formData.company}
-                  onChange={(e) => updateField('company', e.target.value)}
-                  placeholder="Acme Inc. or https://company.com"
-                  aria-invalid={!!errors.company}
-                  aria-describedby={errors.company ? 'company-error' : undefined}
-                />
-                {errors.company && (
-                  <p id="company-error" className="text-sm text-destructive">
-                    {errors.company}
-                  </p>
-                )}
-              </div>
-
-              {/* What does the business do */}
-              <div className="space-y-2 sm:col-span-2">
-                <Label htmlFor="whatDoes">What does the business do?</Label>
-                <Textarea
-                  id="whatDoes"
-                  value={formData.whatDoes}
-                  onChange={(e) => updateField('whatDoes', e.target.value)}
-                  placeholder="Brief description of your product, service, or business model..."
-                  rows={2}
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Diagnostic Context */}
-          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
-              Diagnostic Context
-            </h3>
-
-            <div className="space-y-6">
-              {/* Problem */}
-              <div className="space-y-2">
-                <Label htmlFor="problem">
-                  What feels unclear, broken, or stuck right now?{' '}
-                  <span className="text-destructive">*</span>
-                </Label>
-                <Textarea
-                  id="problem"
-                  value={formData.problem}
-                  onChange={(e) => updateField('problem', e.target.value)}
-                  placeholder="Describe the main challenge or constraint in your business right now..."
-                  rows={4}
-                  aria-invalid={!!errors.problem}
-                  aria-describedby={errors.problem ? 'problem-error' : undefined}
-                />
-                {errors.problem && (
-                  <p id="problem-error" className="text-sm text-destructive">
-                    {errors.problem}
-                  </p>
-                )}
-              </div>
-
-              {/* Attempts */}
-              <div className="space-y-2">
-                <Label htmlFor="attempts">What have you already tried?</Label>
-                <Textarea
-                  id="attempts"
-                  value={formData.attempts}
-                  onChange={(e) => updateField('attempts', e.target.value)}
-                  placeholder="Past consultants, internal efforts, tools, frameworks..."
-                  rows={3}
-                />
-              </div>
-
-              {/* Area */}
-              <div className="space-y-2">
-                <Label htmlFor="area">Which area feels most relevant?</Label>
-                <Select
-                  value={formData.area}
-                  onValueChange={(value) => updateField('area', value)}
-                >
-                  <SelectTrigger id="area">
-                    <SelectValue placeholder="Select an area" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {areaOptions.map((option) => (
-                      <SelectItem key={option.value} value={option.value}>
-                        {option.label}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              {/* Outcome */}
-              <div className="space-y-2">
-                <Label htmlFor="outcome">What would a useful outcome look like?</Label>
-                <Textarea
-                  id="outcome"
-                  value={formData.outcome}
-                  onChange={(e) => updateField('outcome', e.target.value)}
-                  placeholder="Describe what success would look like..."
-                  rows={2}
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Timeline & Budget */}
-          <div className="rounded-2xl border border-border/60 bg-card/30 backdrop-blur-sm p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-foreground mb-6">
-              Timeline & Budget
-            </h3>
-
-            <div className="grid gap-6 sm:grid-cols-2">
-              {/* Timeline */}
-              <div className="space-y-2">
-                <Label htmlFor="timeline">Timeline</Label>
-                <Select
-                  value={formData.timeline}
-                  onValueChange={(value) => updateField('timeline', value)}
-                >
-                  <SelectTrigger id="timeline">
-                    <SelectValue placeholder="When do you want to start?" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {timelineOptions.map((option) => (
-                      <SelectItem key={option.value} value={option.value}>
-                        {option.label}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              {/* Budget */}
-              <div className="space-y-2">
-                <Label htmlFor="budget">Budget range (optional)</Label>
-                <Select
-                  value={formData.budget}
-                  onValueChange={(value) => updateField('budget', value)}
-                >
-                  <SelectTrigger id="budget">
-                    <SelectValue placeholder="Select budget range" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {budgetOptions.map((option) => (
-                      <SelectItem key={option.value} value={option.value}>
-                        {option.label}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-          </div>
-
-          {/* Submit */}
-          <div className="flex justify-center pt-4">
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="group inline-flex items-center gap-3 px-10 py-4 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-highlight transition-all duration-200 glow-accent disabled:opacity-60 disabled:cursor-not-allowed"
-              aria-label="Request diagnostic"
-            >
-              {isSubmitting ? (
-                <>
-                  <svg
-                    className="animate-spin h-5 w-5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    aria-hidden="true"
-                  >
-                    <circle
-                      className="opacity-25"
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                    />
-                    <path
-                      className="opacity-75"
-                      fill="currentColor"
-                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-                    />
-                  </svg>
-                  Submitting...
-                </>
-              ) : (
-                <>
-                  Request Diagnostic
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M2 7h10M8 3l4 4-4 4"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </>
-              )}
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+      </form>
+    </div>
   )
 }
