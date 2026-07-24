@@ -114,87 +114,82 @@ export default function HomePage() {
     <main>
 
       {/* ── Hero ──────────────────────────────────────────────────── */}
-      <section className="pt-28 pb-10">
+      <section className="pt-24 pb-10">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
 
-          {/* Star rating row */}
-          <div className="flex items-center gap-2.5 mb-8">
-            <div className="flex items-center gap-0.5" aria-label="5 stars">
-              {[...Array(5)].map((_, i) => (
-                <svg key={i} width="14" height="14" viewBox="0 0 14 14" fill="#1A0F06" aria-hidden="true">
-                  <path d="M7 1l1.545 3.13L12 4.635l-2.5 2.435.59 3.44L7 8.885l-3.09 1.625.59-3.44L2 4.635l3.455-.505L7 1z" />
-                </svg>
-              ))}
-            </div>
-            <span className="text-xs text-muted-foreground font-medium">Helped over 50+ businesses</span>
-          </div>
-
-          {/* Heading */}
-          <h1 className="text-5xl sm:text-6xl lg:text-[72px] font-normal text-foreground leading-[1.06] tracking-tight text-balance max-w-3xl mb-6">
-            Many businesses don&apos;t have a marketing problem. They have a{' '}
-            <em className="italic">diagnosis</em>{' '}
-            problem.
-          </h1>
-
-          {/* Sub */}
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-xl mb-8">
-            Nobody has actually sat down and figured out what&apos;s slowing you down. We do that first. Then we build the internal tools and software that fix it.
-          </p>
-
-          {/* CTA row */}
-          <div className="flex flex-wrap items-center gap-3 mb-16">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground text-sm font-semibold hover:bg-highlight transition-colors"
-            >
-              Book a free call
-            </Link>
-            <Link
-              href="/how-it-works"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-foreground/20 text-sm font-medium text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-colors"
-            >
-              How we work
-              <span
-                className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-foreground/10"
-                aria-hidden="true"
-              >
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <path d="M2 5h6M5.5 2.5L8 5l-2.5 2.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </span>
-            </Link>
-          </div>
-
-          {/* Hero image card — natural proportions, no cropping */}
+          {/* Hero card — full background image with curved edges */}
           <div
-            className="w-full rounded-3xl overflow-hidden relative"
-            aria-hidden="true"
+            className="relative w-full rounded-3xl overflow-hidden"
+            style={{
+              backgroundImage: 'url(/images/hero-bg-opt.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
           >
-            {/* Base photo — full natural size */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/hero-botanical-opt.jpg"
-              alt=""
-              className="w-full h-auto block"
-              loading="eager"
-              decoding="async"
-            />
-            {/* Dot mesh overlay — sits on top of photo */}
+            {/* Subtle dark overlay so text is readable */}
             <div
               className="absolute inset-0"
-              style={{
-                backgroundImage: 'radial-gradient(circle, rgba(237,235,229,0.55) 1.5px, transparent 1.5px)',
-                backgroundSize: '24px 24px',
-              }}
+              style={{ background: 'rgba(10, 8, 5, 0.38)' }}
+              aria-hidden="true"
             />
-            {/* Edge fade — blends card edges into page bg */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'radial-gradient(ellipse 90% 80% at 50% 50%, transparent 35%, rgba(237,235,229,0.85) 75%, #EDEBE5 100%)',
-              }}
-            />
+
+            {/* Content sits on top */}
+            <div className="relative z-10 px-8 py-16 sm:px-14 sm:py-20 lg:px-16 lg:py-24 max-w-3xl">
+
+              {/* Star rating row */}
+              <div className="flex items-center gap-2.5 mb-8">
+                <div className="flex items-center gap-0.5" aria-label="5 stars">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} width="14" height="14" viewBox="0 0 14 14" fill="#EDEBE5" aria-hidden="true">
+                      <path d="M7 1l1.545 3.13L12 4.635l-2.5 2.435.59 3.44L7 8.885l-3.09 1.625.59-3.44L2 4.635l3.455-.505L7 1z" />
+                    </svg>
+                  ))}
+                </div>
+                <span className="text-xs font-medium" style={{ color: 'rgba(237,235,229,0.7)' }}>Helped over 50+ businesses</span>
+              </div>
+
+              {/* Heading */}
+              <h1
+                className="text-5xl sm:text-6xl lg:text-[72px] font-normal leading-[1.06] tracking-tight text-balance max-w-3xl mb-6"
+                style={{ color: '#EDEBE5', fontFamily: '"EB Garamond", Georgia, serif' }}
+              >
+                Many businesses don&apos;t have a marketing problem. They have a{' '}
+                <em className="italic">diagnosis</em>{' '}
+                problem.
+              </h1>
+
+              {/* Sub */}
+              <p className="text-lg leading-relaxed max-w-xl mb-10" style={{ color: 'rgba(237,235,229,0.72)' }}>
+                Nobody has actually sat down and figured out what&apos;s slowing you down. We do that first. Then we build the internal tools and software that fix it.
+              </p>
+
+              {/* CTA row */}
+              <div className="flex flex-wrap items-center gap-3">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold transition-colors"
+                  style={{ background: '#EDEBE5', color: '#1A0F06' }}
+                >
+                  Book a free call
+                </Link>
+                <Link
+                  href="/how-it-works"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-colors"
+                  style={{ border: '1px solid rgba(237,235,229,0.3)', color: 'rgba(237,235,229,0.8)' }}
+                >
+                  How we work
+                  <span
+                    className="inline-flex items-center justify-center w-5 h-5 rounded-full"
+                    style={{ background: 'rgba(237,235,229,0.15)' }}
+                    aria-hidden="true"
+                  >
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                      <path d="M2 5h6M5.5 2.5L8 5l-2.5 2.5" stroke="rgba(237,235,229,0.9)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
