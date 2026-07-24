@@ -25,8 +25,9 @@ export function HowItWorksAccordion({ steps }: { steps: Step[] }) {
             aria-expanded={active === i}
           >
             <span
-              className="heading-font leading-none tracking-tight transition-all duration-300"
+              className="leading-none tracking-tight transition-all duration-300"
               style={{
+                fontFamily: '"EB Garamond", Georgia, serif',
                 fontSize: 'clamp(48px, 7vw, 80px)',
                 fontWeight: 400,
                 color: active === i ? '#1A0F06' : 'rgba(26,15,6,0.15)',
@@ -74,7 +75,7 @@ export function HowItWorksAccordion({ steps }: { steps: Step[] }) {
 
           <h3
             className="text-2xl sm:text-3xl font-normal text-foreground leading-snug text-balance mb-4"
-            style={{ fontFamily: 'var(--font-heading)' }}
+            style={{ fontFamily: '"EB Garamond", Georgia, serif' }}
           >
             {steps[active].label}
           </h3>
