@@ -282,13 +282,14 @@ export default function HealthcarePage() {
         </div>
       </section>
 
-      {/* ── CTA ──────────────────────────────────────────────────── */}
+      {/* ── CTA ───────────────────────────────────────────────────�� */}
       <section className="pb-12 lg:pb-20">
         <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
           <AnchorCard
             headline="Find out what's actually slowing your front desk down"
             body="Start with the diagnostic. We'll walk through how intake, scheduling, and billing really move through your practice before recommending anything."
-            cta={{ label: 'Start a Free Diagnostic', href: '/contact' }}
+            ctaLabel="Start a Free Diagnostic"
+            ctaHref="/contact"
             stats={[
               { value: '~20%', label: 'In-network claim denial rate' },
               { value: '2–3 days', label: 'Avg. referral lag without a tracker' },

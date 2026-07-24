@@ -290,7 +290,8 @@ export default function ProfessionalServicesPage() {
             eyebrow="Start Here"
             headline="Find out where the margin is actually going"
             body="Start with the diagnostic. We'll look at how time, billing, and capacity really move through your firm before recommending anything."
-            cta={{ label: 'Start a Free Diagnostic', href: '/contact' }}
+            ctaLabel="Start a Free Diagnostic"
+            ctaHref="/contact"
             stats={[
               { value: '50+', label: 'Businesses helped' },
               { value: '35%', label: 'Average time saved' },
