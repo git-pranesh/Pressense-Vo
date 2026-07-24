@@ -172,18 +172,14 @@ export default function TwoLocationClinicCaseStudy() {
             {/* Hero text */}
             <div className="max-w-3xl pb-14">
               <div className="flex flex-wrap items-center gap-3 mb-6">
-                <span
-                  className="inline-flex items-center gap-2 text-xs font-medium tracking-wide px-3 py-1.5 rounded-full border"
-                  style={{ background: 'rgba(26,15,6,0.05)', color: '#6B5D51', borderColor: '#C8C2BA' }}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#6B5D51] inline-block" aria-hidden="true" />
-                  Anonymous
-                </span>
                 <span className="text-xs font-medium tracking-wide px-3 py-1.5 rounded-full border" style={{ background: 'rgba(26,15,6,0.05)', color: '#6B5D51', borderColor: '#C8C2BA' }}>
                   Private Healthcare, Australia
                 </span>
                 <span className="text-xs font-medium tracking-wide px-3 py-1.5 rounded-full border" style={{ background: 'rgba(26,15,6,0.05)', color: '#6B5D51', borderColor: '#C8C2BA' }}>
                   Workflow Blueprint
+                </span>
+                <span className="text-xs font-medium tracking-wide px-3 py-1.5 rounded-full border" style={{ background: 'rgba(26,15,6,0.05)', color: '#6B5D51', borderColor: '#C8C2BA' }}>
+                  Client name withheld
                 </span>
               </div>
 
@@ -204,7 +200,7 @@ export default function TwoLocationClinicCaseStudy() {
         <section className="py-12 border-b border-border/40" aria-label="Key outcomes">
           <div className="container mx-auto px-5 sm:px-8 max-w-5xl">
             <p className="text-xs font-semibold tracking-widest uppercase mb-8" style={{ color: '#6B5D51' }}>
-              Modelled outcome
+              Outcome
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {outcomeStats.map((stat) => (
@@ -539,7 +535,7 @@ export default function TwoLocationClinicCaseStudy() {
 
                   <div>
                     <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: '#6B5D51' }}>
-                      Modelled impact
+                      Impact
                     </p>
                     <div className="flex flex-col gap-3">
                       {[

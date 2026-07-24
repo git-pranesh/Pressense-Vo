@@ -53,10 +53,10 @@ const caseStudies = [
     slug: 'two-location-clinic',
     client: 'Two-Location Clinic',
     industry: 'Private Healthcare, Australia',
-    engagementType: 'Workflow Blueprint (Anonymous)',
+    engagementType: 'Workflow Blueprint',
     duration: 'Internal tools engagement',
     summary:
-      'A privately owned specialist clinic with 31 staff was losing 140 hours a month to manual referral administration. The practice-management software was fine. The problem was everything happening around it. We mapped the workflow, quantified the cost, and designed the missing operational layer.',
+      '105 staff hours released every month. A$53,000 in annual capacity recovered. A two-location specialist clinic was losing 140 hours a month to manual referral admin. We mapped the workflow, quantified the cost, and built the missing operational layer.',
     tags: ['Workflow Automation', 'Internal Tools', 'Healthcare', 'Operational Efficiency'],
   },
 ]
