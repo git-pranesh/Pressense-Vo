@@ -11,7 +11,7 @@ interface MetricCardProps {
 
 export function MetricCard({ label, value, sublabel, description, accent = 'default', className }: MetricCardProps) {
   const colorClass =
-    accent === 'primary' ? 'text-primary' : accent === 'secondary' ? 'text-secondary' : 'text-foreground'
+    accent === 'primary' ? 'text-primary' : accent === 'secondary' ? 'text-foreground' : 'text-foreground'
   const displaySublabel = sublabel || description
   return (
     <div className={`rounded-xl border border-border/60 bg-background/40 p-4 ${className || ''}`}>
@@ -36,7 +36,7 @@ interface PrimaryProps {
 
 export function PrimaryMetric({ label, value, sublabel, comparison, accent = 'primary' }: PrimaryProps) {
   const colorClass =
-    accent === 'primary' ? 'text-primary' : accent === 'secondary' ? 'text-secondary' : 'text-foreground'
+    accent === 'primary' ? 'text-primary' : accent === 'secondary' ? 'text-foreground' : 'text-foreground'
   const displaySublabel = sublabel || comparison
   return (
     <div className="rounded-2xl border border-border/60 bg-background/40 p-6 sm:p-8">

@@ -16,7 +16,7 @@
   --secondary: #E0DDD6;                 /* muted dusty surface */
   --secondary-foreground: #1A0F06;
   --muted: #E0DDD6;                     /* muted background areas */
-  --muted-foreground: #6B5D51;          /* cooler, more muted warm brown */
+  --muted-foreground: #3D2B1A;          /* darkened — passes WCAG AA on parchment */
   --accent: #1A0F06;
   --accent-foreground: #EDEBE5;
   --destructive: #C0392B;
@@ -30,7 +30,7 @@
   --surface: #E5E2DB;
   --surface-border: #D4CFC7;
   --highlight: #2E1A0A;                 /* hover state for primary buttons */
-  --text-dim: #9A8C80;                  /* dimmed warm brown */
+  --text-dim: #4A3728;                  /* dimmed warm brown — darkened for legibility */
   --grid-line: #D4CFC7;
   --button-bg: #1A0F06;
   --button-radius: 9999px;
@@ -64,7 +64,7 @@
   --secondary: #E0DDD6;
   --secondary-foreground: #1A0F06;
   --muted: #E0DDD6;
-  --muted-foreground: #6B5D51;
+  --muted-foreground: #3D2B1A;
   --accent: #1A0F06;
   --accent-foreground: #EDEBE5;
   --destructive: #C0392B;
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #6B5D51;
+  color: #3D2B1A;
   margin-bottom: 1.25rem;
   font-family: var(--font-geist), 'Inter', sans-serif;
   transition: border-color 0.15s ease, color 0.15s ease;
