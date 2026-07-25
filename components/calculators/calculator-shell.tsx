@@ -109,12 +109,12 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
           {/* Formula */}
           <div className="mt-6 rounded-xl border border-border/60 bg-card/40 p-5">
             <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-2">Formula</p>
-            <code className="text-sm font-mono text-foreground/90 break-words">{calcMeta.formula}</code>
+            <code className="text-sm font-mono text-foreground break-words">{calcMeta.formula}</code>
             <p className="text-xs text-muted-foreground mt-3">
-              <span className="font-semibold text-foreground/80">Benchmarks:</span> {calcMeta.benchmarks}
+              <span className="font-semibold text-foreground">Benchmarks:</span> {calcMeta.benchmarks}
             </p>
             <p className="text-xs text-muted-foreground mt-2">
-              <span className="font-semibold text-foreground/80">Sources:</span> OpenView 2024 SaaS Benchmarks, ChartMogul
+              <span className="font-semibold text-foreground">Sources:</span> OpenView 2024 SaaS Benchmarks, ChartMogul
               Retention Reports, ProfitWell Pricing Studies, and Pressense operator data.
             </p>
           </div>
@@ -126,12 +126,12 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
           {/* Formula */}
           <div className="mt-6 rounded-xl border border-border/60 bg-card/40 p-5">
             <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-2">Formula</p>
-            <code className="text-sm font-mono text-foreground/90 break-words">{calcMeta.formula}</code>
+            <code className="text-sm font-mono text-foreground break-words">{calcMeta.formula}</code>
             <p className="text-xs text-muted-foreground mt-3">
-              <span className="font-semibold text-foreground/80">Benchmarks:</span> {calcMeta.benchmarks}
+              <span className="font-semibold text-foreground">Benchmarks:</span> {calcMeta.benchmarks}
             </p>
             <p className="text-xs text-muted-foreground mt-2">
-              <span className="font-semibold text-foreground/80">Sources:</span> OpenView 2024 SaaS Benchmarks, ChartMogul
+              <span className="font-semibold text-foreground">Sources:</span> OpenView 2024 SaaS Benchmarks, ChartMogul
               Retention Reports, ProfitWell Pricing Studies, and Pressense operator data.
             </p>
           </div>
@@ -179,7 +179,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
             <div className="mt-4 flex gap-3 rounded-xl border border-border/60 bg-background/40 p-4">
               <Info className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" aria-hidden="true" />
               <p className="text-xs">
-                <strong className="text-foreground">Disclaimer:</strong> This calculator is for educational and planning
+                <strong className="text-foreground font-semibold">Disclaimer:</strong> This calculator is for educational and planning
                 purposes only. Outputs are estimates based on the inputs you provide and industry benchmarks, not
                 financial, tax, legal, or investment advice. Validate all results with a qualified professional before
                 making decisions about funding, valuation, hiring, or capital allocation.

@@ -101,8 +101,8 @@ export default function ToolsPage() {
                       {calc.title}
                     </h3>
                     <p className="text-sm text-muted-foreground mb-4">{calc.shortDescription}</p>
-                    <p className="text-xs text-muted-foreground/80 mb-4">
-                      <span className="font-medium text-foreground/80">Benchmarks:</span> {calc.benchmarks}
+                    <p className="text-xs text-muted-foreground mb-4">
+                      <span className="font-medium text-foreground">Benchmarks:</span> {calc.benchmarks}
                     </p>
                     <span className="inline-flex items-center gap-1 text-sm text-primary">
                       Open calculator <ArrowRight className="h-3.5 w-3.5" />
