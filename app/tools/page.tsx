@@ -120,7 +120,7 @@ export default function ToolsPage() {
         <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-gradient-to-br from-card to-background p-8 sm:p-12 lg:p-16">
           <div className="absolute inset-0 bg-grid-pattern opacity-30" aria-hidden="true" />
           <div className="relative max-w-3xl">
-            <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">Pressense Diagnostic</p>
+            <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-4">Pressense Diagnostic</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
               Need help interpreting your numbers?
             </h2>

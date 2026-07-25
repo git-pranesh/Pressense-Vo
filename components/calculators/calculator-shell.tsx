@@ -49,7 +49,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
             <ChevronRight className="h-3 w-3" />
             <span className="text-foreground">{calcMeta.title}</span>
           </nav>
-          <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">{calcMeta.category}</p>
+          <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-4">{calcMeta.category}</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6 max-w-4xl leading-[1.05]">
             {calcMeta.title}
           </h1>
@@ -200,7 +200,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
                 href={`/tools/${r.slug}`}
                 className="group rounded-2xl border border-border/60 bg-card/40 p-6 hover-elevate transition-all hover:border-primary/40"
               >
-                <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-2">{r.category}</p>
+                <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-2">{r.category}</p>
                 <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {r.title}
                 </h3>
@@ -219,7 +219,7 @@ export function CalculatorShell({ meta, calculator, children, inputs, results, i
         <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-gradient-to-br from-card to-background p-8 sm:p-12 lg:p-16">
           <div className="absolute inset-0 bg-grid-pattern opacity-30" aria-hidden="true" />
           <div className="relative max-w-3xl">
-            <p className="text-xs font-semibold tracking-widest uppercase text-secondary mb-4">Pressense Diagnostic</p>
+            <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-4">Pressense Diagnostic</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
               Want help fixing this <em className="text-primary not-italic">{categoryToLabel(calcMeta.category)}</em> metric?
             </h2>
