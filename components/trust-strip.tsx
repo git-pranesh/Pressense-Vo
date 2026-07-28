@@ -4,22 +4,28 @@ const logos = [
   {
     name: 'Posha',
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Posha_Wordmark_RGB_Black-LUX8uHTxyaltB17e8Erc6uX25w7kTr.webp',
+    scale: 1,
   },
   {
     name: 'Zoho',
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Zoho-logo-1XsmnNiazELvEDqwvkZQXPGebfQVjX.png',
+    scale: 1,
   },
   {
     name: 'Tint Tone and Shade',
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tts-logo-black-1I01q1zOVqkuHv7n5iK5BQ9pJD8Mcr.avif',
+    scale: 1,
   },
   {
     name: 'Pixellu',
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pixellu%2BLogo-JDfBPRzKgKnkbjuHpTaMAX7v9uRuHM.webp',
+    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pixellu%2BLogo-8MN3laE516px6QtUeLVx2lORy9rRyS.webp',
+    // Square image with heavy padding — scale up so the wordmark matches others visually
+    scale: 3.2,
   },
   {
     name: 'One Magnify',
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201390-UQOHkb9NqfcYvCKapHNcIKinIkaDPc.webp',
+    scale: 1,
   },
 ]
 
@@ -56,12 +62,13 @@ export function TrustStrip() {
               className="flex-shrink-0 flex items-center justify-center px-10"
             >
               {/* Fixed-height container: every logo fills the same 40px tall slot, capped at 140px wide */}
-              <div className="relative h-10 w-[140px]">
+              <div className="relative h-10 w-[140px] overflow-hidden">
                 <Image
                   src={logo.src}
                   alt={logo.name}
                   fill
                   className="object-contain opacity-50 hover:opacity-80 transition-opacity duration-200 grayscale"
+                  style={{ transform: `scale(${logo.scale})` }}
                   unoptimized
                 />
               </div>
