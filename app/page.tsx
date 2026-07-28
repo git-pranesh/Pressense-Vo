@@ -5,6 +5,7 @@ import { ServicesToggle } from '@/components/services-toggle'
 import { FlowerPanel } from '@/components/flower-panel'
 import { HowItWorksAccordion } from '@/components/how-it-works-accordion'
 import { CaseStudyStrip } from '@/components/case-study-strip'
+import { TrustStrip } from '@/components/trust-strip'
 
 export const metadata: Metadata = {
   title: 'AI Automation & Internal Tools for SMBs | Pressense',
@@ -267,6 +268,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── Brand Marquee ─────────────────────────────────────────── */}
+      <TrustStrip />
 
       {/* ── The Problem ───────────────────────────────────────────── */}
       <section className="py-10 lg:py-20">
