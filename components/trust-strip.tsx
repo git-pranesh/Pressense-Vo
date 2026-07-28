@@ -4,32 +4,22 @@ const logos = [
   {
     name: 'Posha',
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Posha_Wordmark_RGB_Black-LUX8uHTxyaltB17e8Erc6uX25w7kTr.webp',
-    width: 120,
-    height: 40,
   },
   {
     name: 'Zoho',
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Zoho-logo-1XsmnNiazELvEDqwvkZQXPGebfQVjX.png',
-    width: 96,
-    height: 40,
   },
   {
     name: 'Tint Tone and Shade',
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tts-logo-black-1I01q1zOVqkuHv7n5iK5BQ9pJD8Mcr.avif',
-    width: 120,
-    height: 40,
   },
   {
     name: 'Pixellu',
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pixellu%2BLogo-JDfBPRzKgKnkbjuHpTaMAX7v9uRuHM.webp',
-    width: 120,
-    height: 40,
   },
   {
     name: 'One Magnify',
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201390-UQOHkb9NqfcYvCKapHNcIKinIkaDPc.webp',
-    width: 160,
-    height: 48,
   },
 ]
 
@@ -65,14 +55,16 @@ export function TrustStrip() {
               key={`${logo.name}-${i}`}
               className="flex-shrink-0 flex items-center justify-center px-10"
             >
-              <Image
-                src={logo.src}
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                className="h-8 w-auto object-contain opacity-50 hover:opacity-80 transition-opacity duration-200 grayscale"
-                unoptimized
-              />
+              {/* Fixed-height container: every logo fills the same 40px tall slot, capped at 140px wide */}
+              <div className="relative h-10 w-[140px]">
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  fill
+                  className="object-contain opacity-50 hover:opacity-80 transition-opacity duration-200 grayscale"
+                  unoptimized
+                />
+              </div>
             </div>
           ))}
         </div>
